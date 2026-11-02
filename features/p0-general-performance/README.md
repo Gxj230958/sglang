@@ -2,7 +2,7 @@
 
 ## Summary
 
-`<MODEL_NAME>` general-performance tracking measures controlled one-batch efficiency and online-serving behavior across representative workloads and platforms. The project is `<STATUS>`; its target is `<PERFORMANCE_GOAL>` under `<SERVICE_LEVEL_OBJECTIVE>`, compared with `<REFERENCE_IMPLEMENTATION>` using identical methodology. Related code work is `<CODE_BRANCH_OR_PR>`, with dependencies on `<DEPENDENCIES>`.
+`zai-org/GLM-5-1028-Provider` general-performance tracking measures controlled one-batch efficiency and online-serving behavior across representative workloads and platforms. Status: Not started. No performance has been measured; the H200 bring-up ran with CUDA graph disabled and recorded no performance metric. The target is `<PERFORMANCE_GOAL>` under `<SERVICE_LEVEL_OBJECTIVE>`, compared with `<REFERENCE_IMPLEMENTATION>` using identical methodology. Related code work is `<CODE_BRANCH_OR_PR>`, with dependencies on `<DEPENDENCIES>`.
 
 ## Scope
 
@@ -36,9 +36,7 @@
 
 ## Performance Results
 
-| Date | Platform | Configuration | Workload | Metric | Baseline | Candidate | Delta | Gate | Round |
-|---|---|---|---|---|---:|---:|---:|---|---|
-| `<YYYY-MM-DD>` | `<PLATFORM>` | `<CONFIGURATION>` | `<WORKLOAD_ID>` | `<METRIC>` | `<BASELINE>` | `<CANDIDATE>` | `<DELTA>` | `<GATE>` | `data/data@<YYYY-MM-DD>-<CODE_SHA>/repro.md` |
+No performance results recorded yet.
 
 ## Release Profiles
 
@@ -52,19 +50,20 @@
 
 ## Stages
 
-### Stage 1: Freeze methodology and baseline — `<STATUS>`
+### Stage 1: Freeze methodology and baseline — Not started
 
 - [ ] Pin workloads, metrics, warmup, repetitions, and environment.
 - [ ] Measure `<REFERENCE_IMPLEMENTATION>` on required platforms.
 - [ ] Record capacity and failure boundaries.
+- Next action: define the workload matrix and methodology, then measure the H200 TP8 configuration with CUDA graph enabled after it passes the correctness accuracy gate.
 
-### Stage 2: Optimize release profiles — `<STATUS>`
+### Stage 2: Optimize release profiles — Not started
 
 - [ ] Measure `<CANDIDATE_CONFIGURATION_SET>`.
 - [ ] Attribute material changes to code, configuration, or environment.
 - [ ] Select profiles that satisfy correctness and service-level gates.
 
-### Stage 3: Revalidate locked artifacts — `<STATUS>`
+### Stage 3: Revalidate locked artifacts — Not started
 
 - [ ] Rerun the required matrix on `<CODE_SHA>` and `<MODEL_REVISION>`.
 - [ ] Confirm no release profile depends on an unpinned component.
@@ -72,6 +71,4 @@
 
 ## Experiments
 
-| ID | Date | Topic | Basic Setting | Result | Round |
-|---|---|---|---|---|---|
-| E01 | `<YYYY-MM-DD>` | `<TOPIC>` | `<HARDWARE>; <WORKLOAD_ID>; <CONFIGURATION>` | `<RESULT>` | `data/data@<YYYY-MM-DD>-<CODE_SHA>/repro.md` |
+No experiments recorded yet.

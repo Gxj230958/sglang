@@ -1,0 +1,42 @@
+{
+  "id": "c86c1ef986964258a010906f0e17886c",
+  "object": "chat.completion",
+  "created": 1793594248,
+  "model": "/path/to/GLM-5-1028-Provider",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Red",
+        "reasoning_content": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop",
+      "matched_stop": 154827
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 54,
+    "total_tokens": 57,
+    "completion_tokens": 3,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 25
+    },
+    "reasoning_tokens": 1,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1
+    }
+  },
+  "metadata": {
+    "weight_version": "default",
+    "weight_versions": [
+      {
+        "version": "default",
+        "start": 0,
+        "end": 3
+      }
+    ]
+  }
+}

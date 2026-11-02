@@ -1,0 +1,39 @@
+{
+  "id": "9cd471b8ef6b40ce8db0349e17178791",
+  "object": "chat.completion",
+  "created": 1793611182,
+  "model": "/path/to/GLM-5-1028-Provider",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Quantum computing uses qubits that can exist in superposition, representing 0 and 1 simultaneously, and become entangled so their states are correlated. This allows quantum computers to explore many possibilities at once, offering exponential speedups for specific problems like factoring large numbers and simulating quantum systems. However, they're still largely experimental, with challenges in maintaining coherence and correcting errors before they can outperform classical computers for most practical tasks.",
+        "reasoning_content": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop",
+      "matched_stop": 154827
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 20,
+    "total_tokens": 110,
+    "completion_tokens": 90,
+    "prompt_tokens_details": null,
+    "reasoning_tokens": 1,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1
+    }
+  },
+  "metadata": {
+    "weight_version": "default",
+    "weight_versions": [
+      {
+        "version": "default",
+        "start": 0,
+        "end": 90
+      }
+    ]
+  }
+}

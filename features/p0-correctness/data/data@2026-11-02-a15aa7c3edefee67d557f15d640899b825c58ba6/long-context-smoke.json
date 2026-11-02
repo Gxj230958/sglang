@@ -1,0 +1,39 @@
+{
+  "id": "9221096c307b4c18ba84d7020714e76e",
+  "object": "chat.completion",
+  "created": 1793594253,
+  "model": "/path/to/GLM-5-1028-Provider",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "ZEBRA-7419",
+        "reasoning_content": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop",
+      "matched_stop": 154827
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2747,
+    "total_tokens": 2756,
+    "completion_tokens": 9,
+    "prompt_tokens_details": null,
+    "reasoning_tokens": 1,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1
+    }
+  },
+  "metadata": {
+    "weight_version": "default",
+    "weight_versions": [
+      {
+        "version": "default",
+        "start": 0,
+        "end": 9
+      }
+    ]
+  }
+}

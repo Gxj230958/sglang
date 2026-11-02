@@ -2,6 +2,17 @@
 
 This repository template separates upstream SGLang mirrors, Day-0 model implementation work, reference implementations, and project tracking across four branches.
 
+## Model
+
+This branch tracks Day-0 support for `zai-org/GLM-5-1028-Provider`, a GLM LoopLM checkpoint (`GlmLoopForConditionalGeneration`): a multimodal FP8 MoE model of approximately 754B parameters whose 78 physical decoder layers run as 106 effective layer slots, with MLA and DSA sparse attention.
+
+Current status: bring-up in progress; not release-ready.
+
+- Implementation: `radixark/sglang-zai` branch `glm-5-lp` at `a15aa7c3`; model revision `7e66c405`.
+- On 8 H200 GPUs at TP8 (Triton MoE, FlashMLA Sparse, BF16 KV cache, CUDA graph and MTP disabled), the configuration, model, attention, and checkpoint-map tests pass, and text, image, and long-context requests return correct answers that stop normally ([Correctness E01](features/p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6/repro.md)).
+- GSM8K-200 reached 95.50% accuracy with 100% stop rate and 0% truncation. Built-in NextN/MTP generated with `accept len=2.27`, and decode execution logged `cuda graph: True` ([Correctness E02](features/p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6-mtp-cuda-graph/repro.md)). Performance and disaggregated deployment have not been validated.
+- Release scope, owners, gates, and artifacts are tracked in [Day-0 Delivery](day0-delivery/README.md).
+
 ## Branches
 - `track`(default): Stores planning, validation, feature evidence, and release-delivery records on standalone orphan history.
 - `sglang-main`: Mirrors the latest upstream SGLang `main` and provides the clean baseline for starting or updating Day-0 model work. It is deliberately not named `main`, so upstream's `push: branches: [main]` workflows do not fire in this repository on every sync.
@@ -82,21 +93,21 @@ The catalog contains P0 and P1 tracking projects. New top-level features follow 
 
 | Project | Purpose | Status | Assignees |
 |---|---|---|---|
-| `features/p0-correctness/` | Validate model quality, API behavior, feature compatibility, and regression gates. | `<STATUS>` | `<OWNER>` |
-| [Tool-Call Parser](features/p0-tool-call-parser/README.md) | Implement and validate the tool-call detector and parser auto-detection against the model's native call format. | `<STATUS>` | `<OWNER>` |
-| [Reasoning Parser](features/p0-reasoning-parser/README.md) | Implement and validate the reasoning parser, thinking defaults, and supported reasoning levels. | `<STATUS>` | `<OWNER>` |
-| `features/p0-general-performance/` | Track one-batch and serving performance across representative workloads and hardware. | `<STATUS>` | `<OWNER>` |
-| `features/p0-agentx-performance/` | Measure agentic-workload latency, throughput, concurrency scaling, and cache behavior. | `<STATUS>` | `<OWNER>` |
+| `features/p0-correctness/` | Validate model quality, API behavior, feature compatibility, and regression gates. | In progress | `<OWNER>` |
+| [Tool-Call Parser](features/p0-tool-call-parser/README.md) | Implement and validate the tool-call detector and parser auto-detection against the model's native call format. | Not started | `<OWNER>` |
+| [Reasoning Parser](features/p0-reasoning-parser/README.md) | Implement and validate the reasoning parser, thinking defaults, and supported reasoning levels. | Not started | `<OWNER>` |
+| `features/p0-general-performance/` | Track one-batch and serving performance across representative workloads and hardware. | Not started | `<OWNER>` |
+| `features/p0-agentx-performance/` | Measure agentic-workload latency, throughput, concurrency scaling, and cache behavior. | Not started | `<OWNER>` |
 | `features/p0-kernel-opt/` | Track kernel bottlenecks, optimization stages, microbenchmarks, and end-to-end impact. | `<STATUS>` | `<OWNER>` |
-| `features/p0-spec-decoding-training/` | Track draft-model training, checkpoint selection, evaluation, and release readiness. | `<STATUS>` | `<OWNER>` |
+| `features/p0-spec-decoding-training/` | Track draft-model training, checkpoint selection, evaluation, and release readiness. | In progress | `<OWNER>` |
 | [Prefill–Decode Disaggregation](features/p0-pd-disagg/README.md) | Separate prefill and decode resources and validate routing, KV transfer, and latency. | Not started | `<OWNER>` |
 | [Hierarchical KV Caching (HiCache)](features/p0-hicache/README.md) | Reuse prompt prefixes across GPU, host, and storage cache tiers. | Not started | `<OWNER>` |
 | [MegaMoE](features/p0-megamoe/README.md) | Evaluate and integrate the selected MegaMoE implementation. | Not started | `<OWNER>` |
-| [Parallelism](features/p0-parallelism/README.md) | Complete the shared design, then implement selected parallelism strategies. | Not started | `<OWNER>` |
-| [Breakable CUDA Graph](features/p1-breakable-cuda-graph/README.md) | Combine captured graph segments with operations that require eager execution. | Not started | `<OWNER>` |
+| [Parallelism](features/p0-parallelism/README.md) | Complete the shared design, then implement selected parallelism strategies. | In progress | `<OWNER>` |
+| [Breakable CUDA Graph](features/p1-breakable-cuda-graph/README.md) | Combine captured graph segments with operations that require eager execution. | In progress | `<OWNER>` |
 | [Unified Memory](features/p1-unified-memory/README.md) | Evaluate memory-management support, capacity, and latency tradeoffs. | Not started | `<OWNER>` |
 | [Multimodal Optimization](features/p1-multimodal-opt/README.md) | Select and validate encoder and serving optimizations for multimodal workloads. | Not started | `<OWNER>` |
-| [Multi-Platform Support](features/p1-multi-platform/README.md) | Select and validate hardware platforms required for the model release. | Not started | `<OWNER>` |
+| [Multi-Platform Support](features/p1-multi-platform/README.md) | Select and validate hardware platforms required for the model release. | In progress | `<OWNER>` |
 | [Reinforcement Learning](features/p1-rl/README.md) | Define and validate serving integration for reinforcement-learning workflows. | Not started | `<OWNER>` |
 
 Recommended status values are `Not started`, `In progress`, `Blocked`, and `Complete`.

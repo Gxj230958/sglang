@@ -2,7 +2,7 @@
 
 ## Summary
 
-`<MODEL_NAME>` requires an SGLang tool-call detector that reproduces the model's native tool-use behavior through the OpenAI-compatible serving API. The project is `<STATUS>`; its current target is `<GOAL>`, constrained by `<CONSTRAINTS>`, and validated against raw outputs from `<MODEL_REVISION>` rendered with the pinned chat template. Related code work is tracked in `<CODE_BRANCH_OR_PR>`, with dependencies on `<DEPENDENCIES>`. Tool calls interrupting reasoning are validated jointly with `features/p0-reasoning-parser/`.
+`<MODEL_NAME>` requires an SGLang tool-call detector that reproduces the model's native tool-use behavior through the OpenAI-compatible serving API. Status: Not started. Its current target is `<GOAL>`, constrained by `<CONSTRAINTS>`, and validated against raw outputs from `<MODEL_REVISION>` rendered with the pinned chat template. Related code work is tracked in `<CODE_BRANCH_OR_PR>`, with dependencies on `<DEPENDENCIES>`. Tool calls interrupting reasoning are validated jointly with `features/p0-reasoning-parser/`.
 
 This project gates the release only when `<MODEL_NAME>` natively emits tool calls. If the model has no tool-use capability, record the not-applicable decision with its evidence in this Summary and exclude the project from `<RELEASE_SCOPE>`.
 
@@ -62,7 +62,7 @@ This project gates the release only when `<MODEL_NAME>` natively emits tool call
 
 ## Stages
 
-### Stage 1: Pin the format contract — `<STATUS>`
+### Stage 1: Pin the format contract — Not started
 
 - [ ] Pin `<MODEL_REVISION>`, tokenizer revision, and chat-template revision; record rendered prompts and raw outputs for every contract case (`<OWNER>`).
 - [ ] Record reference behavior from `<REFERENCE_IMPLEMENTATION>` where one exists, including escaping, whitespace, and optional-opener conventions.
@@ -70,13 +70,13 @@ This project gates the release only when `<MODEL_NAME>` natively emits tool call
 - [ ] Pin the latest published chat-template revision and record the markers and fingerprints detection relies on.
 - [ ] Identify the nearest existing detector and list every shared-code consumer that the implementation may affect.
 
-### Stage 2: Implement and unit-validate the detector — `<STATUS>`
+### Stage 2: Implement and unit-validate the detector — Not started
 
 - [ ] Implement the detector; register names in the parser registry and the dependency-free name list, and add auto-detection rules with sibling negative cases and an architecture-based fallback (`<OWNER>`).
 - [ ] Add chunk-boundary, EOS, schema-union, and auto-detection regression cases to the registered parser unit suites; verify cases for newly supported behavior fail on the pre-implementation base, while preservation cases (sibling negative cases and existing behavior) pass on both base and implementation.
 - [ ] Run the full parser unit selection plus every sibling detector suite that shares modified code on `<CODE_SHA>`.
 
-### Stage 3: Validate serving and certify for release — `<STATUS>`
+### Stage 3: Validate serving and certify for release — Not started
 
 - [ ] Serve the pinned model on `<HARDWARE>` with the vendor's reference configuration and exercise streaming and non-streaming tool requests with explicit parser flags and with `auto`; record responses and `finish_reason` for every matrix row.
 - [ ] Replay repeated multi-turn and agentic traces against both flag modes; record schema-failure rates, marker leaks, and raw-format stability.

@@ -2,9 +2,11 @@
 
 ## Summary
 
-`<MODEL_NAME>` tracking for sharing long-prompt computation across GPUs during prefill. Status: Not started. Related code work: `<CODE_BRANCH_OR_PR>`. Target workload and hardware: `<WORKLOAD>` on `<HARDWARE>`; acceptance thresholds remain to be defined.
+`zai-org/GLM-5-1028-Provider` tracking for sharing long-prompt computation across GPUs during prefill. Status: Not started. Related code work: `radixark/sglang-zai` branch `glm-5-lp` at `a15aa7c3`. Target workload and hardware: `<WORKLOAD>` on `<HARDWARE>`; acceptance thresholds remain to be defined.
 
 Prerequisite: complete [Analysis and Design](../analysis-and-design/README.md) before implementation.
+
+Current constraint: the implementation at `a15aa7c3` rejects `--attn-cp-size > 1` and `--enable-prefill-cp` because the current-cycle window is built over the whole packed query range. Supporting Prefill CP for this model requires an implementation change; see [Analysis and Design](../analysis-and-design/README.md).
 
 ## How It Works
 

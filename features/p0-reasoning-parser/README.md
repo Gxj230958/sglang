@@ -2,7 +2,7 @@
 
 ## Summary
 
-`<MODEL_NAME>` requires an SGLang reasoning parser that reproduces the model's thinking behavior, including its supported reasoning levels, through the OpenAI-compatible serving API. The project is `<STATUS>`; its current target is `<GOAL>`, constrained by `<CONSTRAINTS>`, and validated against raw outputs from `<MODEL_REVISION>` rendered with the pinned chat template. Related code work is tracked in `<CODE_BRANCH_OR_PR>`, with dependencies on `<DEPENDENCIES>`. Tool calls interrupting reasoning are validated jointly with `features/p0-tool-call-parser/`.
+`<MODEL_NAME>` requires an SGLang reasoning parser that reproduces the model's thinking behavior, including its supported reasoning levels, through the OpenAI-compatible serving API. Status: Not started. Its current target is `<GOAL>`, constrained by `<CONSTRAINTS>`, and validated against raw outputs from `<MODEL_REVISION>` rendered with the pinned chat template. Related code work is tracked in `<CODE_BRANCH_OR_PR>`, with dependencies on `<DEPENDENCIES>`. Tool calls interrupting reasoning are validated jointly with `features/p0-tool-call-parser/`.
 
 This project gates the release only when `<MODEL_NAME>` exposes thinking or reasoning output. If the model has no reasoning capability, record the not-applicable decision with its evidence in this Summary and exclude the project from `<RELEASE_SCOPE>`. If the model supports thinking but no reasoning levels, reduce the level-specific criteria and matrix rows to thinking on/off and record that reduction here.
 
@@ -63,7 +63,7 @@ This project gates the release only when `<MODEL_NAME>` exposes thinking or reas
 
 ## Stages
 
-### Stage 1: Pin the reasoning contract — `<STATUS>`
+### Stage 1: Pin the reasoning contract — Not started
 
 - [ ] Pin `<MODEL_REVISION>`, tokenizer revision, and chat-template revision; record rendered prompts and raw outputs for thinking on/off and every reasoning level (`<OWNER>`).
 - [ ] Enumerate `<REASONING_LEVEL_SET>` and record the per-level template mapping, the omitted-level default, the unsupported-level contract, and the effort-over-disabled contract, with reference behavior from `<REFERENCE_IMPLEMENTATION>` where one exists.
@@ -72,13 +72,13 @@ This project gates the release only when `<MODEL_NAME>` exposes thinking or reas
 - [ ] Pin the latest published chat-template revision and record the markers and fingerprints detection relies on.
 - [ ] Identify the nearest existing reasoning parser and list every shared-code consumer that the implementation may affect, including grammar backends that consume reasoning state.
 
-### Stage 2: Implement and unit-validate the parser — `<STATUS>`
+### Stage 2: Implement and unit-validate the parser — Not started
 
 - [ ] Implement the reasoning parser and level handling, including field/kwargs/default precedence and conflict behavior; register names in the parser registry and the dependency-free name list, and add reasoning-mode and auto-detection rules with sibling negative cases (`<OWNER>`).
 - [ ] Add regression cases for marker stripping, EOS and truncation, per-level behavior, precedence and conflicts, explicit-`false` toggles, and auto-detection to the registered parser unit suites; verify cases for newly supported behavior fail on the pre-implementation base, while preservation cases (sibling negative cases and existing behavior) pass on both base and implementation.
 - [ ] Run the full parser unit selection plus every sibling parser suite that shares modified code on `<CODE_SHA>`.
 
-### Stage 3: Validate serving and certify for release — `<STATUS>`
+### Stage 3: Validate serving and certify for release — Not started
 
 - [ ] Serve the pinned model on `<HARDWARE>` with the vendor's reference configuration and exercise streaming and non-streaming requests at every reasoning level with explicit parser flags and with `auto`; record content routing and stop behavior for every matrix row.
 - [ ] Probe Responses API and Anthropic adapter level handling against the chat-completions contract.

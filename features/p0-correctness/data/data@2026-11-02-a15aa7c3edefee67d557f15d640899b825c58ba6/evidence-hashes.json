@@ -1,0 +1,32 @@
+[
+  {
+    "source": "/scratch/glm5-loop-config-tests.log",
+    "sha256_as_captured": "d1eda95f0950677118541e4429ea527486f07f608b056424c14e7193dd4fc837",
+    "sha256_after_redaction": "d0c8c4c1f0ad5ad0bb906d3bd89085c5f4b2197e2314bef7ad263926b4d11558",
+    "file": "config-tests.log.gz"
+  },
+  {
+    "source": "/scratch/glm5-loop-model-tests.log",
+    "sha256_as_captured": "c221255b48b935d0a52caac86d329cea7c43b9ac4a8b5550c7f53e8ddbd9c5ab",
+    "sha256_after_redaction": "c221255b48b935d0a52caac86d329cea7c43b9ac4a8b5550c7f53e8ddbd9c5ab",
+    "file": "model-tests.log.gz"
+  },
+  {
+    "source": "/scratch/glm5-loop-attention-tests.log",
+    "sha256_as_captured": "22da87a4f6ee0fda74bd7e3b356af70e047a37e5c12b0566fa0ad649ed4832fb",
+    "sha256_after_redaction": "22da87a4f6ee0fda74bd7e3b356af70e047a37e5c12b0566fa0ad649ed4832fb",
+    "file": "attention-tests.log.gz"
+  },
+  {
+    "source": "/scratch/glm5-loop-checkpoint-map-tests.log",
+    "sha256_as_captured": "c8da9c6b1fceabc5c8053bab5fb8e4b6832d81ba7f38933f924f15ebbf87f027",
+    "sha256_after_redaction": "c8da9c6b1fceabc5c8053bab5fb8e4b6832d81ba7f38933f924f15ebbf87f027",
+    "file": "checkpoint-map-tests.log.gz"
+  },
+  {
+    "source": "/scratch/glm5-server-baseline.log",
+    "sha256_as_captured": "478f26f32a43572f559b0e8146454ad1f3c5125ba97951907a63869745b01e5b",
+    "sha256_after_redaction": "c54f5552d648a041accbe23ecff0f97036eb8fa52eb2e5791520b4aa1ad54baa",
+    "file": "server-baseline.log.gz"
+  }
+]

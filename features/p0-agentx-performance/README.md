@@ -2,7 +2,7 @@
 
 ## Summary
 
-`<MODEL_NAME>` AgentX performance tracking replays representative agentic workloads to measure user-visible latency, throughput, concurrency scaling, prefix reuse, and cache behavior. The project is `<STATUS>`; its target envelope is `<TARGET_ENVELOPE>` under `<SERVICE_LEVEL_OBJECTIVE>`. Related code work is `<CODE_BRANCH_OR_PR>`, with dependencies on `<TRACE_SOURCE>`, `<CACHE_CONFIGURATION>`, and `<GENERAL_PERFORMANCE_BASELINE>`.
+`zai-org/GLM-5-1028-Provider` AgentX performance tracking replays representative agentic workloads to measure user-visible latency, throughput, concurrency scaling, prefix reuse, and cache behavior. Status: Not started. No agentic workload has been run. The target envelope is `<TARGET_ENVELOPE>` under `<SERVICE_LEVEL_OBJECTIVE>`. Related code work is `<CODE_BRANCH_OR_PR>`, with dependencies on `<TRACE_SOURCE>`, `<CACHE_CONFIGURATION>`, and `<GENERAL_PERFORMANCE_BASELINE>`.
 
 ## Scope
 
@@ -38,9 +38,7 @@
 
 ## Concurrency Envelope
 
-| Date | Platform | Configuration | Trace | Concurrency | Latency | Throughput | Cache Metric | Error Rate | Round |
-|---|---|---|---|---:|---:|---:|---:|---:|---|
-| `<YYYY-MM-DD>` | `<PLATFORM>` | `<CONFIGURATION>` | `<TRACE_ID>` | `<CONCURRENCY>` | `<LATENCY>` | `<THROUGHPUT>` | `<CACHE_RESULT>` | `<ERROR_RATE>` | `data/data@<YYYY-MM-DD>-<CODE_SHA>/repro.md` |
+No concurrency results recorded yet.
 
 ## Recommended Operating Envelope
 
@@ -54,19 +52,20 @@
 
 ## Stages
 
-### Stage 1: Establish trace and baseline — `<STATUS>`
+### Stage 1: Establish trace and baseline — Not started
 
 - [ ] Pin and sanitize `<TRACE_SOURCE>`.
 - [ ] Define latency, throughput, cache, and reliability metrics.
 - [ ] Run the baseline concurrency sweep.
+- Next action: select and pin a sanitized agentic trace source; start the baseline sweep after the general-performance baseline exists.
 
-### Stage 2: Map the operating envelope — `<STATUS>`
+### Stage 2: Map the operating envelope — Not started
 
 - [ ] Sweep `<CONFIGURATION_SET>` across `<CONCURRENCY_RANGE>`.
 - [ ] Attribute cache, scheduler, and memory-pressure transitions.
 - [ ] Identify recommended and unsafe operating bands.
 
-### Stage 3: Certify release behavior — `<STATUS>`
+### Stage 3: Certify release behavior — Not started
 
 - [ ] Rerun the selected envelope on locked artifacts.
 - [ ] Confirm trace privacy and reproducibility requirements.
@@ -74,6 +73,4 @@
 
 ## Experiments
 
-| ID | Date | Topic | Basic Setting | Result | Round |
-|---|---|---|---|---|---|
-| E01 | `<YYYY-MM-DD>` | `<TOPIC>` | `<HARDWARE>; <TRACE_ID>; <CONCURRENCY_RANGE>` | `<RESULT>` | `data/data@<YYYY-MM-DD>-<CODE_SHA>/repro.md` |
+No experiments recorded yet.

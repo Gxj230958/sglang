@@ -1,0 +1,2 @@
+[2026-11-02 09:19:32] The server is fired up and ready to roll!
+[2026-11-02 09:19:42 TP0] Decode batch, #running-req: 1, #token: 128, token usage: 0.00, accept len: 2.27, accept rate: 0.42, cuda graph: True, gen throughput (token/s): 5.88, #queue-req: 0

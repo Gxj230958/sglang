@@ -2,7 +2,7 @@
 
 ## Summary
 
-This directory coordinates the release bundle for `<MODEL_NAME>`. It owns immutable artifact pins, release gates, sign-off, and the three in-repository deliverables: cookbook guidance, Docker material, and the release blog. The delivery is `<STATUS>` for target date `<RELEASE_DATE>`, with release cut `<CODE_SHA>` and model revision `<MODEL_REVISION>`.
+This directory coordinates the release bundle for `zai-org/GLM-5-1028-Provider`. It owns immutable artifact pins, release gates, sign-off, and the three in-repository deliverables: cookbook guidance, Docker material, and the release blog. The delivery is not release-ready. The current implementation commit is `a15aa7c3` and the current model revision is `7e66c405`; neither is a release cut. The target date, owners, release commit, container image, and release decision are unresolved.
 
 An artifact without an immutable pin and reviewed validation evidence cannot ship.
 
@@ -10,25 +10,25 @@ An artifact without an immutable pin and reviewed validation evidence cannot shi
 
 | Responsibility | Owner | Reviewer | Status |
 |---|---|---|---|
-| Release coordination | `<OWNER>` | `<REVIEWER>` | `<STATUS>` |
-| SGLang code | `<OWNER>` | `<REVIEWER>` | `<STATUS>` |
-| Model artifacts | `<OWNER>` | `<REVIEWER>` | `<STATUS>` |
-| Correctness sign-off | `<OWNER>` | `<REVIEWER>` | `<STATUS>` |
-| Performance sign-off | `<OWNER>` | `<REVIEWER>` | `<STATUS>` |
-| Docker | `<OWNER>` | `<REVIEWER>` | `<STATUS>` |
-| Cookbook | `<OWNER>` | `<REVIEWER>` | `<STATUS>` |
-| Blog | `<OWNER>` | `<REVIEWER>` | `<STATUS>` |
+| Release coordination | `<OWNER>` | `<REVIEWER>` | Not started |
+| SGLang code | `<OWNER>` | `<REVIEWER>` | In progress |
+| Model artifacts | `<OWNER>` | `<REVIEWER>` | In progress |
+| Correctness sign-off | `<OWNER>` | `<REVIEWER>` | Not started |
+| Performance sign-off | `<OWNER>` | `<REVIEWER>` | Not started |
+| Docker | `<OWNER>` | `<REVIEWER>` | Not started |
+| Cookbook | `<OWNER>` | `<REVIEWER>` | Not started |
+| Blog | `<OWNER>` | `<REVIEWER>` | Not started |
 
 ## Release Status
 
 | Field | Value |
 |---|---|
-| Model | `<MODEL_NAME>` |
+| Model | `zai-org/GLM-5-1028-Provider` |
 | Target date | `<RELEASE_DATE>` |
 | Release owner | `<OWNER>` |
-| Overall status | `<STATUS>` |
-| Current blocker | `<BLOCKER_OR_NONE>` |
-| Release decision | `<GO_OR_NO_GO_OR_PENDING>` |
+| Overall status | In progress; not release-ready |
+| Current blocker | Release scope, owners, and gates are undefined. The H200 bring-up ([Correctness E01](../features/p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6/repro.md)) and baseline accuracy plus ordinary decode-graph/MTP smoke ([Correctness E02](../features/p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6-mtp-cuda-graph/repro.md)) have evidence, but release gates are not passed. |
+| Release decision | Pending |
 | Decision timestamp | `<YYYY-MM-DD_HHMM_TIMEZONE>` |
 
 ## Artifact Lock
@@ -37,68 +37,77 @@ An artifact without an immutable pin and reviewed validation evidence cannot shi
 
 | Artifact | Immutable Pin or Link | Validation | Owner | Status |
 |---|---|---|---|---|
-| SGLang release commit | `<FULL_CODE_SHA>` | `<VALIDATION_LINK>` | `<OWNER>` | `<STATUS>` |
-| SGLang pull request | `<PR_URL>` | `<REVIEW_STATUS>` | `<OWNER>` | `<STATUS>` |
+| SGLang release commit | `<FULL_CODE_SHA>` | None | `<OWNER>` | Not started |
+| SGLang implementation commit (current, not a release cut) | `a15aa7c3edefee67d557f15d640899b825c58ba6` (`radixark/sglang-zai` branch `glm-5-lp`) | [Correctness E01](../features/p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6/repro.md) | `<OWNER>` | In progress |
+| SGLang pull request | `<PR_URL>` | None | `<OWNER>` | Not started |
 | Tracking pull request | `<TRACKING_PR_URL>` | `<REVIEW_STATUS>` | `<OWNER>` | `<STATUS>` |
-| Release issue | `<ISSUE_URL>` | `<ISSUE_STATUS>` | `<OWNER>` | `<STATUS>` |
+| Release issue | `<ISSUE_URL>` | None | `<OWNER>` | Not started |
 
 ### Model Revisions
 
 | Artifact | Repository | Immutable Revision | Checksum | Validation | Owner | Status |
 |---|---|---|---|---|---|---|
-| Target model | `<MODEL_REPOSITORY>` | `<MODEL_REVISION>` | `<CHECKSUM>` | `<VALIDATION_LINK>` | `<OWNER>` | `<STATUS>` |
-| Draft model | `<DRAFT_MODEL_REPOSITORY>` | `<DRAFT_MODEL_REVISION>` | `<CHECKSUM>` | `<VALIDATION_LINK>` | `<OWNER>` | `<STATUS>` |
-| Tokenizer or processor | `<ARTIFACT_REPOSITORY>` | `<ARTIFACT_REVISION>` | `<CHECKSUM>` | `<VALIDATION_LINK>` | `<OWNER>` | `<STATUS>` |
+| Target model | `zai-org/GLM-5-1028-Provider` | `7e66c40540c64bbf85e2a3c6d7264fbc514b4b43` | `<CHECKSUM>` | [Correctness E01](../features/p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6/repro.md) | `<OWNER>` | In progress |
+| Draft model | `<DRAFT_MODEL_REPOSITORY>`; the target checkpoint contains one NextN/MTP layer | `<DRAFT_MODEL_REVISION>` | `<CHECKSUM>` | None | `<OWNER>` | Not started |
+| Tokenizer and processor | `zai-org/GLM-5-1028-Provider` (bundled with the target model) | `7e66c40540c64bbf85e2a3c6d7264fbc514b4b43` | `<CHECKSUM>` | [Correctness E01](../features/p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6/repro.md) | `<OWNER>` | In progress |
 
 ### Docker Images
 
 | Profile | Architecture | Recipe Commit | Image Reference | Digest | Runtime Validation | Status |
 |---|---|---|---|---|---|---|
-| `<PROFILE>` | `<ARCHITECTURE>` | `<CODE_SHA>` | `<IMAGE_REFERENCE>` | `<IMAGE_DIGEST>` | `<VALIDATION_LINK>` | `<STATUS>` |
+| `<PROFILE>` | `<ARCHITECTURE>` | `<CODE_SHA>` | `<IMAGE_REFERENCE>` | `<IMAGE_DIGEST>` | None | Not started |
 
 ### Non-Git Dependencies
 
 | Dependency | Version or Checksum | Source | License or Access | Validation | Owner | Status |
 |---|---|---|---|---|---|---|
-| `<DEPENDENCY>` | `<VERSION_OR_CHECKSUM>` | `<SOURCE_URL>` | `<LICENSE_OR_ACCESS>` | `<VALIDATION_LINK>` | `<OWNER>` | `<STATUS>` |
+| torch | `2.14.1+cu130` (observed in E01, not locked) | `<SOURCE_URL>` | `<LICENSE_OR_ACCESS>` | [Correctness E01](../features/p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6/repro.md) | `<OWNER>` | In progress |
+| flashinfer | `0.7.1` (observed in E01, not locked) | `<SOURCE_URL>` | `<LICENSE_OR_ACCESS>` | [Correctness E01](../features/p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6/repro.md) | `<OWNER>` | In progress |
+| transformers | `5.19.0` (observed in E01, not locked) | `<SOURCE_URL>` | `<LICENSE_OR_ACCESS>` | [Correctness E01](../features/p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6/repro.md) | `<OWNER>` | In progress |
+| sgl-flash-mla | `1.0.0` (observed in E01, not locked) | `<SOURCE_URL>` | `<LICENSE_OR_ACCESS>` | [Correctness E01](../features/p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6/repro.md) | `<OWNER>` | In progress |
+| sglang-kernel | `0.4.10` (observed in E01, not locked) | `<SOURCE_URL>` | `<LICENSE_OR_ACCESS>` | [Correctness E01](../features/p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6/repro.md) | `<OWNER>` | In progress |
 
 ## Release Validation Matrix
 
 | Gate | Required Artifact Set | Required Platforms | Evidence | Reviewer | Status |
 |---|---|---|---|---|---|
-| Correctness | `<CODE_SHA>; <MODEL_REVISION>; <IMAGE_DIGEST>` | `<PLATFORM_SET>` | `<CORRECTNESS_LINK>` | `<REVIEWER>` | `<STATUS>` |
-| General performance | `<CODE_SHA>; <MODEL_REVISION>; <IMAGE_DIGEST>` | `<PLATFORM_SET>` | `<PERFORMANCE_LINK>` | `<REVIEWER>` | `<STATUS>` |
-| AgentX performance | `<CODE_SHA>; <MODEL_REVISION>; <IMAGE_DIGEST>` | `<PLATFORM_SET>` | `<AGENTX_LINK>` | `<REVIEWER>` | `<STATUS>` |
-| Kernel compatibility | `<CODE_SHA>; <IMAGE_DIGEST>` | `<PLATFORM_SET>` | `<KERNEL_LINK>` | `<REVIEWER>` | `<STATUS>` |
-| Speculative decoding | `<CODE_SHA>; <MODEL_REVISION>; <DRAFT_MODEL_REVISION>` | `<PLATFORM_SET>` | `<SPEC_LINK>` | `<REVIEWER>` | `<STATUS>` |
-| Docker runtime | `<IMAGE_DIGEST>; <MODEL_REVISION>` | `<PLATFORM_SET>` | `<DOCKER_LINK>` | `<REVIEWER>` | `<STATUS>` |
+| Correctness | `<CODE_SHA>; <MODEL_REVISION>; <IMAGE_DIGEST>` | `<PLATFORM_SET>` | [Correctness E01](../features/p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6/repro.md): bring-up; [Correctness E02](../features/p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6-mtp-cuda-graph/repro.md): baseline 95.50% accuracy with 100% stop rate, plus ordinary decode-graph/MTP smoke. API, configuration, and release gates are undefined. | `<REVIEWER>` | In progress |
+| General performance | `<CODE_SHA>; <MODEL_REVISION>; <IMAGE_DIGEST>` | `<PLATFORM_SET>` | None | `<REVIEWER>` | Not started |
+| AgentX performance | `<CODE_SHA>; <MODEL_REVISION>; <IMAGE_DIGEST>` | `<PLATFORM_SET>` | None | `<REVIEWER>` | Not started |
+| Kernel compatibility | `<CODE_SHA>; <IMAGE_DIGEST>` | `<PLATFORM_SET>` | None | `<REVIEWER>` | Not started |
+| Speculative decoding | `<CODE_SHA>; <MODEL_REVISION>; <DRAFT_MODEL_REVISION>` | `<PLATFORM_SET>` | [Correctness E02](../features/p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6-mtp-cuda-graph/repro.md): built-in NextN/MTP returned `accept len=2.27` with `cuda graph: True`; performance and release handoff remain open | `<REVIEWER>` | In progress |
+| Docker runtime | `<IMAGE_DIGEST>; <MODEL_REVISION>` | `<PLATFORM_SET>` | None; no image has been built | `<REVIEWER>` | Not started |
 
 ## Delivery Stages
 
-### Stage 1: Freeze release scope — `<STATUS>`
+### Stage 1: Freeze release scope — Not started
 
 - [ ] Name all required capabilities and supported platforms.
 - [ ] Assign owners and reviewers.
 - [ ] Define correctness, performance, compatibility, and publication gates.
 - [ ] Record explicit out-of-scope items.
+- Missing release gates: text accuracy and stop rate; reasoning and tool-call API behavior; MTP; CUDA graph replay; required parallel, KV-cache, and disaggregated configurations; general and AgentX performance; Docker runtime.
+- Next action: name the release owner, target date, required platforms, and required capabilities, then define the gates above.
 
-### Stage 2: Lock code and model artifacts — `<STATUS>`
+### Stage 2: Lock code and model artifacts — In progress
 
+- Current pins: implementation commit `a15aa7c3edefee67d557f15d640899b825c58ba6` and model revision `7e66c40540c64bbf85e2a3c6d7264fbc514b4b43`; they bind current evidence and are not release locks.
 - [ ] Pin the SGLang release commit and public pull request.
 - [ ] Pin target-model, draft-model, tokenizer, and processor revisions.
 - [ ] Pin non-Git dependencies with versions or checksums.
 - [ ] Confirm artifact access and license requirements.
 
-### Stage 3: Complete validation — `<STATUS>`
+### Stage 3: Complete validation — In progress
 
 - [ ] Pass `features/p0-correctness/` gates on locked artifacts.
+- Bring-up evidence: [Correctness E01](../features/p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6/repro.md); no release gate has passed.
 - [ ] Pass `features/p0-general-performance/` gates on locked artifacts.
 - [ ] Pass `features/p0-agentx-performance/` gates on locked artifacts.
 - [ ] Pass `features/p0-kernel-opt/` compatibility gates.
 - [ ] Pass speculative-decoding training and inference handoff gates.
 - [ ] Resolve every missing matrix cell with an explicit release decision.
 
-### Stage 4: Build and publish Docker artifacts — `<STATUS>`
+### Stage 4: Build and publish Docker artifacts — Not started
 
 - [ ] Review recipes and dependency pins in `docker/`.
 - [ ] Build every required architecture from a clean context.
@@ -106,7 +115,7 @@ An artifact without an immutable pin and reviewed validation evidence cannot shi
 - [ ] Publish immutable image digests and verify registry metadata.
 - [ ] Record rollback images and procedures.
 
-### Stage 5: Finalize cookbook — `<STATUS>`
+### Stage 5: Finalize cookbook — Not started
 
 - [ ] Document installation and prerequisites.
 - [ ] Publish validated launch profiles by workload and platform.
@@ -114,7 +123,7 @@ An artifact without an immutable pin and reviewed validation evidence cannot shi
 - [ ] Bind every command to locked artifacts.
 - [ ] Complete technical and user review.
 
-### Stage 6: Finalize blog — `<STATUS>`
+### Stage 6: Finalize blog — Not started
 
 - [ ] Approve the audience, outline, and owners.
 - [ ] Bind every technical claim and number to reviewed evidence.
@@ -122,7 +131,7 @@ An artifact without an immutable pin and reviewed validation evidence cannot shi
 - [ ] Remove internal-only references and sensitive information.
 - [ ] Complete technical, editorial, and release review.
 
-### Stage 7: Release sign-off — `<STATUS>`
+### Stage 7: Release sign-off — Not started
 
 - [ ] Confirm every artifact-lock row required for release is immutable.
 - [ ] Confirm every release gate has reviewed evidence.

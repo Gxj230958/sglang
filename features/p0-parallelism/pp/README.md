@@ -2,9 +2,11 @@
 
 ## Summary
 
-`<MODEL_NAME>` tracking for partitioning model execution across pipeline stages for the target context lengths and topology. Status: Not started. Related code work: `<CODE_BRANCH_OR_PR>`. Target workload and hardware: `<WORKLOAD>` on `<HARDWARE>`; acceptance thresholds remain to be defined.
+`zai-org/GLM-5-1028-Provider` tracking for partitioning model execution across pipeline stages for the target context lengths and topology. Status: Not started. Related code work: `radixark/sglang-zai` branch `glm-5-lp` at `a15aa7c3`. Target workload and hardware: `<WORKLOAD>` on `<HARDWARE>`; acceptance thresholds remain to be defined.
 
 Prerequisite: complete [Analysis and Design](../analysis-and-design/README.md) before implementation.
+
+Current constraint: the implementation at `a15aa7c3` rejects `--pipeline-parallel-size > 1` because a stage boundary inside the loop region would split the damp blend from the cycle it commits. Supporting Pipeline Parallelism for this model requires an implementation change; see [Analysis and Design](../analysis-and-design/README.md).
 
 ## How It Works
 

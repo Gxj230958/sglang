@@ -1,0 +1,20 @@
+[
+  {
+    "source": "/root/.sgl_eval/sgl_eval_gsm8k_20261102-083119/output-rs0.jsonl",
+    "sha256_as_captured": "eadabc97df2d20024b95dc9d0db32a07cbd4901c12c9846c3b980f3d85d81da6",
+    "sha256_after_redaction": "eadabc97df2d20024b95dc9d0db32a07cbd4901c12c9846c3b980f3d85d81da6",
+    "file": "output-rs0.jsonl.gz"
+  },
+  {
+    "source": "/root/.sgl_eval/sgl_eval_gsm8k_20261102-083119/metrics.json",
+    "sha256_as_captured": "43a88ff260c08dbe33d47b420ba8b2898d6b11b44592875f45e91f8198aff521",
+    "sha256_after_redaction": "ca8c69b76bb59af75ef1f643b64bad56433b890a86793bbc8576d59fea75242b",
+    "file": "metrics.json"
+  },
+  {
+    "source": "/scratch/glm5-mtp-smoke.json",
+    "sha256_as_captured": "353ff9c6d5de1386a833c1530963c83ce0e76e436bcec9d7440de3aa9822b165",
+    "sha256_after_redaction": "59f6740ce2e00ce68eb0395c0782ef136c71d188268e2a1550b29fc0268669ad",
+    "file": "mtp-smoke.json"
+  }
+]

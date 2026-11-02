@@ -1,6 +1,6 @@
 # Feature Catalog
 
-This index organizes the `<MODEL_NAME>` Day-0 feature projects into priority tiers and records the ordering dependencies between them. Each project owns its summary, stages, and experiment evidence in its own README; this file only defines relative priority and execution order.
+This index organizes the `zai-org/GLM-5-1028-Provider` Day-0 feature projects into priority tiers and records the ordering dependencies between them. Each project owns its summary, stages, and experiment evidence in its own README; this file only defines relative priority and execution order.
 
 ## Tiers
 
@@ -81,31 +81,31 @@ P1 projects are omitted because the bullets below specify selection rules, not f
 
 | Feature | Tier | Purpose | Status |
 |---|---|---|---|
-| [p0-correctness/](p0-correctness/README.md) | P0 | Validate model quality, API behavior, feature compatibility, and release-gating regressions. | `<STATUS>` |
-| [p0-tool-call-parser/](p0-tool-call-parser/README.md) | P0 | Implement and validate the tool-call detector and parser auto-detection against the model's native call format. | `<STATUS>` |
-| [p0-reasoning-parser/](p0-reasoning-parser/README.md) | P0 | Implement and validate the reasoning parser, thinking defaults, and supported reasoning levels. | `<STATUS>` |
-| [p0-general-performance/](p0-general-performance/README.md) | P0 | Measure one-batch and online-serving performance and enforce release regression gates. | `<STATUS>` |
-| [p0-agentx-performance/](p0-agentx-performance/README.md) | P0 | Measure agentic-workload latency, throughput, concurrency scaling, and cache behavior. | `<STATUS>` |
+| [p0-correctness/](p0-correctness/README.md) | P0 | Validate model quality, API behavior, feature compatibility, and release-gating regressions. | In progress |
+| [p0-tool-call-parser/](p0-tool-call-parser/README.md) | P0 | Implement and validate the tool-call detector and parser auto-detection against the model's native call format. | Not started |
+| [p0-reasoning-parser/](p0-reasoning-parser/README.md) | P0 | Implement and validate the reasoning parser, thinking defaults, and supported reasoning levels. | Not started |
+| [p0-general-performance/](p0-general-performance/README.md) | P0 | Measure one-batch and online-serving performance and enforce release regression gates. | Not started |
+| [p0-agentx-performance/](p0-agentx-performance/README.md) | P0 | Measure agentic-workload latency, throughput, concurrency scaling, and cache behavior. | Not started |
 | [p0-kernel-opt/](p0-kernel-opt/README.md) | P0 | Connect profile evidence to kernel changes, microbenchmarks, and end-to-end impact. | `<STATUS>` |
-| [p0-spec-decoding-training/](p0-spec-decoding-training/README.md) | P0 | Train, evaluate, select, and hand off a speculative-decoding draft model. | `<STATUS>` |
-| [p0-pd-disagg/](p0-pd-disagg/README.md) | P0 | Separate prefill and decode resources for predictable latency and independent capacity tuning. | `<STATUS>` |
+| [p0-spec-decoding-training/](p0-spec-decoding-training/README.md) | P0 | Train, evaluate, select, and hand off a speculative-decoding draft model. | In progress |
+| [p0-pd-disagg/](p0-pd-disagg/README.md) | P0 | Separate prefill and decode resources for predictable latency and independent capacity tuning. | Not started |
 | [p0-hicache/](p0-hicache/README.md) | P0 | Reuse prompt prefixes across GPU, host, and storage cache tiers. | `<STATUS>` |
 | [p0-megamoe/](p0-megamoe/README.md) | P0 | Evaluate and integrate the selected MegaMoE implementation. | `<STATUS>` |
-| [p0-parallelism/](p0-parallelism/README.md) | P0 | Choose and implement the parallelism design for the target workload and topology. | `<STATUS>` |
-| [p0-parallelism/analysis-and-design/](p0-parallelism/analysis-and-design/README.md) | P0 | Prerequisite design: topology, rank mapping, composition constraints, and validation plan. | `<STATUS>` |
+| [p0-parallelism/](p0-parallelism/README.md) | P0 | Choose and implement the parallelism design for the target workload and topology. | In progress |
+| [p0-parallelism/analysis-and-design/](p0-parallelism/analysis-and-design/README.md) | P0 | Prerequisite design: topology, rank mapping, composition constraints, and validation plan. | In progress |
 | [p0-parallelism/dp-attention/](p0-parallelism/dp-attention/README.md) | P0 | Scale attention request capacity with data-parallel attention. | `<STATUS>` |
-| [p0-parallelism/prefill-cp/](p0-parallelism/prefill-cp/README.md) | P0 | Partition long-prompt computation across GPUs during prefill. | `<STATUS>` |
-| [p0-parallelism/decode-cp/](p0-parallelism/decode-cp/README.md) | P0 | Reduce per-rank decode KV storage and reads. | `<STATUS>` |
-| [p0-parallelism/pp/](p0-parallelism/pp/README.md) | P0 | Partition model execution across pipeline stages. | `<STATUS>` |
+| [p0-parallelism/prefill-cp/](p0-parallelism/prefill-cp/README.md) | P0 | Partition long-prompt computation across GPUs during prefill. | Not started |
+| [p0-parallelism/decode-cp/](p0-parallelism/decode-cp/README.md) | P0 | Reduce per-rank decode KV storage and reads. | Not started |
+| [p0-parallelism/pp/](p0-parallelism/pp/README.md) | P0 | Partition model execution across pipeline stages. | Not started |
 | [p0-parallelism/wide-ep/](p0-parallelism/wide-ep/README.md) | P0 | Plan and validate expert parallelism across the device and node topology. | `<STATUS>` |
-| [p1-breakable-cuda-graph/](p1-breakable-cuda-graph/README.md) | P1 | Retain graph replay benefits around operations that require eager execution. | `<STATUS>` |
+| [p1-breakable-cuda-graph/](p1-breakable-cuda-graph/README.md) | P1 | Retain graph replay benefits around operations that require eager execution. | In progress |
 | [p1-unified-memory/](p1-unified-memory/README.md) | P1 | Evaluate unified-memory support, capacity, and latency tradeoffs. | `<STATUS>` |
-| [p1-multimodal-opt/](p1-multimodal-opt/README.md) | P1 | Select encoder and serving optimizations for multimodal workloads. | `<STATUS>` |
+| [p1-multimodal-opt/](p1-multimodal-opt/README.md) | P1 | Select encoder and serving optimizations for multimodal workloads. | Not started |
 | [p1-multimodal-opt/epd-disagg/](p1-multimodal-opt/epd-disagg/README.md) | P1 | Scale multimodal encoding separately from prefill and decode. | `<STATUS>` |
 | [p1-multimodal-opt/dp-encoder/](p1-multimodal-opt/dp-encoder/README.md) | P1 | Process encoder batches in parallel within the chosen parallel layout. | `<STATUS>` |
 | [p1-multimodal-opt/encoder-cuda-graph/](p1-multimodal-opt/encoder-cuda-graph/README.md) | P1 | Reduce repeated launch overhead in vision-encoder execution. | `<STATUS>` |
-| [p1-multi-platform/](p1-multi-platform/README.md) | P1 | Select and validate the hardware platforms required for the release. | `<STATUS>` |
-| [p1-multi-platform/nvidia-hopper/](p1-multi-platform/nvidia-hopper/README.md) | P1 | Establish and validate the selected NVIDIA Hopper configurations. | `<STATUS>` |
+| [p1-multi-platform/](p1-multi-platform/README.md) | P1 | Select and validate the hardware platforms required for the release. | In progress |
+| [p1-multi-platform/nvidia-hopper/](p1-multi-platform/nvidia-hopper/README.md) | P1 | Establish and validate the selected NVIDIA Hopper configurations. | In progress |
 | [p1-multi-platform/amd/](p1-multi-platform/amd/README.md) | P1 | Establish and validate the selected AMD configurations. | `<STATUS>` |
 | [p1-multi-platform/intel-xpu-xeon/](p1-multi-platform/intel-xpu-xeon/README.md) | P1 | Establish and validate the selected Intel XPU and Xeon configurations. | `<STATUS>` |
 | [p1-multi-platform/ascend-npu/](p1-multi-platform/ascend-npu/README.md) | P1 | Establish and validate the selected Ascend NPU configurations. | `<STATUS>` |

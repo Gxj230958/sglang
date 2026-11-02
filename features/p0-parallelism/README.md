@@ -2,7 +2,7 @@
 
 ## Summary
 
-`<MODEL_NAME>` tracking for choosing a compatible parallelism design for the target model, workload, and hardware topology. Status: Not started. Related code work: `<CODE_BRANCH_OR_PR>`. Target workload and hardware: `<WORKLOAD>` on `<HARDWARE>`; acceptance thresholds remain to be defined.
+`zai-org/GLM-5-1028-Provider` tracking for choosing a compatible parallelism design for the target model, workload, and hardware topology. Status: In progress. Related code work: `radixark/sglang-zai` branch `glm-5-lp` at `a15aa7c3`. The only validated layout is plain TP8 on 8 H200 GPUs ([Correctness E01](../p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6/repro.md)). The implementation rejects pipeline parallelism, prefill context parallelism, and decode context parallelism at launch; these constraints are recorded in [Analysis and Design](analysis-and-design/README.md), which is not complete. Target workload and acceptance thresholds remain to be defined.
 
 **Complete [Analysis and Design](analysis-and-design/README.md) before implementing DP Attention, Prefill CP, Decode CP, PP, or WideEP.** The design must record the chosen features, rank mapping, composition constraints, communication interfaces, and acceptance gates.
 
@@ -42,8 +42,10 @@ We select the features we need from the subdirectories below for implementation.
 
 ## Stages
 
-### Stage 1: Define requirements and design — Not started
+### Stage 1: Define requirements and design — In progress
 
+- Baseline: `--tp-size 8` without expert parallelism or attention data parallelism, validated on 8 H200 GPUs in [Correctness E01](../p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6/repro.md).
+- Constraint: `--pipeline-parallel-size > 1`, `--attn-cp-size > 1`, `--enable-prefill-cp`, and `--dcp-size > 1` are rejected at launch at `a15aa7c3`; see [Analysis and Design](analysis-and-design/README.md).
 - [ ] Record the target workloads, dependencies, configuration boundaries, and acceptance thresholds.
 - [ ] Complete Analysis and Design before starting any concrete parallelism implementation.
 - [ ] Record selected and deferred subprojects with the reasons for each decision.

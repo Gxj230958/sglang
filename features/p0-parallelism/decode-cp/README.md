@@ -2,9 +2,11 @@
 
 ## Summary
 
-`<MODEL_NAME>` tracking for reducing per-rank decode KV storage and reads for supported attention paths. Status: Not started. Related code work: `<CODE_BRANCH_OR_PR>`. Target workload and hardware: `<WORKLOAD>` on `<HARDWARE>`; acceptance thresholds remain to be defined.
+`zai-org/GLM-5-1028-Provider` tracking for reducing per-rank decode KV storage and reads for supported attention paths. Status: Not started. Related code work: `radixark/sglang-zai` branch `glm-5-lp` at `a15aa7c3`. Target workload and hardware: `<WORKLOAD>` on `<HARDWARE>`; acceptance thresholds remain to be defined.
 
 Prerequisite: complete [Analysis and Design](../analysis-and-design/README.md) before implementation.
+
+Current constraint: the implementation at `a15aa7c3` rejects `--dcp-size > 1` because both KV banks must be available on the same attention rank. Supporting Decode CP for this model requires an implementation change; see [Analysis and Design](../analysis-and-design/README.md).
 
 ## How It Works
 

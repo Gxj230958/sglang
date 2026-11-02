@@ -2,7 +2,7 @@
 
 ## Summary
 
-`<MODEL_NAME>` speculative-decoding training tracking covers data preparation, draft architecture, training recipes, checkpoint evaluation, selection, and inference handoff. The project is `<STATUS>`; its target is `<DRAFT_QUALITY_GOAL>` under `<TRAINING_CONSTRAINTS>`. Related work is `<TRAINING_BRANCH_OR_RUN>`, with dependencies on `<DATA_REVISION>`, `<TARGET_MODEL_REVISION>`
+`zai-org/GLM-5-1028-Provider` speculative-decoding training tracking covers data preparation, draft architecture, training recipes, checkpoint evaluation, selection, and inference handoff. Status: In progress. The target checkpoint at revision `7e66c405` contains one NextN/MTP draft layer. The built-in draft returned a coherent response with `finish_reason=stop` and `accept len=2.27` under EAGLE 3/1/4 with decode CUDA graph on H200 ([Correctness E02](../p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6-mtp-cuda-graph/repro.md)). No separate draft training has started. The target is `<DRAFT_QUALITY_GOAL>` under `<TRAINING_CONSTRAINTS>`. Related work is `<TRAINING_BRANCH_OR_RUN>`, with dependencies on `<DATA_REVISION>`, `<TARGET_MODEL_REVISION>`
 
 ## Scope
 
@@ -60,19 +60,20 @@
 
 ## Stages
 
-### Stage 1: Freeze data and recipe — `<STATUS>`
+### Stage 1: Freeze data and recipe — In progress
 
 - [ ] Pin target model, dataset, preprocessing, and training code.
 - [ ] Define offline, acceptance, quality, and serving gates.
 - [ ] Validate a small reproducibility run.
+- Next action: measure the built-in NextN/MTP layer's generation correctness and acceptance length, then decide whether a separately trained draft is required.
 
-### Stage 2: Train and compare checkpoints — `<STATUS>`
+### Stage 2: Train and compare checkpoints — Not started
 
 - [ ] Execute `<TRAINING_RUN_SET>`.
 - [ ] Evaluate checkpoints with stable offline methodology.
 - [ ] Send candidate checkpoints through inference acceptance and serving tests.
 
-### Stage 3: Select and publish — `<STATUS>`
+### Stage 3: Select and publish — Not started
 
 - [ ] Select `<CHECKPOINT_REVISION>` using reviewed evidence.
 - [ ] Publish immutable artifacts, provenance, and checksums.
@@ -80,6 +81,4 @@
 
 ## Experiments
 
-| ID | Date | Topic | Basic Setting | Result | Round |
-|---|---|---|---|---|---|
-| E01 | `<YYYY-MM-DD>` | `<TOPIC>` | `<TRAINING_HARDWARE>; <DATA_REVISION>; <CHECKPOINT_REVISION>` | `<RESULT>` | `data/data@<YYYY-MM-DD>-<CODE_SHA>/repro.md` |
+No experiments recorded yet.

@@ -2,7 +2,7 @@
 
 ## Summary
 
-`<MODEL_NAME>` tracking for retaining graph replay benefits around operations that require eager execution. Status: Not started. Related code work: `<CODE_BRANCH_OR_PR>`. Target workload and hardware: `<WORKLOAD>` on `<HARDWARE>`; acceptance thresholds remain to be defined.
+`zai-org/GLM-5-1028-Provider` tracking for retaining graph replay benefits around operations that require eager execution. Status: In progress. Related code work: `radixark/sglang-zai` branch `glm-5-lp` at `a15aa7c3`. Ordinary decode CUDA graph with EAGLE 3/1/4 returned a normal response with `accept len=2.27` and `cuda graph: True` ([Correctness E02](../p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6-mtp-cuda-graph/repro.md)). This is prerequisite evidence only; no breakable backend or eager/graph boundary has been exercised.
 
 ## How It Works
 
@@ -33,15 +33,17 @@ Reference: [Breakable CUDA Graph guide](https://docs.sglang.io/docs/advanced_fea
 
 ## Stages
 
-### Stage 1: Define requirements and design — Not started
+### Stage 1: Define requirements and design — In progress
 
 - [ ] Record the target workloads, dependencies, configuration boundaries, and acceptance thresholds.
+- Current scope: H200 TP8, EAGLE 3/1/4, and decode CUDA graph; replay must preserve generation correctness and normal stop behavior.
 
 ### Stage 2: Implement and validate the selected scope — Not started
 
 - [ ] Link implementation work from an exact code commit or pull request.
 - [ ] Record correctness and performance evidence in a self-contained experiment round.
+- Next action: select the breakable backend, exercise an eager/graph boundary, and compare the result with eager execution.
 
 ## Experiments
 
-No experiments recorded yet.
+No breakable-graph experiment is recorded. Ordinary decode-graph prerequisite evidence is recorded in [Correctness E02](../p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6-mtp-cuda-graph/repro.md).
