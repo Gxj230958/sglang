@@ -1,0 +1,53 @@
+name: Sync SGLang Main
+
+on:
+  schedule:
+    # Run away from the top of the hour to reduce GitHub Actions queue delays.
+    - cron: "17 */12 * * *"
+  workflow_dispatch:
+
+# The pushes below rewrite .github/workflows/** whenever upstream touches a
+# workflow file, and GITHUB_TOKEN can never do that -- `permissions:` has no
+# `workflows:` key to grant. A GitHub App installation token carrying
+# Workflows: write does the writing instead.
+permissions:
+  contents: read
+
+concurrency:
+  group: sync-sglang-main
+  cancel-in-progress: false
+
+jobs:
+  sync-branch:
+    name: Fast-forward ${{ matrix.target_branch }} from upstream
+    strategy:
+      fail-fast: false
+      matrix:
+        # Keep both branches as exact, fast-forward-only mirrors. The
+        # `sglang-main` name avoids upstream workflows keyed to `main`.
+        target_branch: [sglang-main, dev]
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Mint app token
+        id: app-token
+        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0
+        with:
+          app-id: ${{ vars.SYNC_APP_ID }}
+          private-key: ${{ secrets.SYNC_APP_PRIVATE_KEY }}
+
+      - name: Checkout tracking branch
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: track
+          fetch-depth: 1
+          # Persisted as the credential scripts/sync_sglang_main.sh pushes with.
+          token: ${{ steps.app-token.outputs.token }}
+
+      - name: Sync ${{ matrix.target_branch }}
+        env:
+          UPSTREAM_URL: https://github.com/sgl-project/sglang.git
+          UPSTREAM_BRANCH: main
+          TARGET_REMOTE: origin
+          TARGET_BRANCH: ${{ matrix.target_branch }}
+        run: scripts/sync_sglang_main.sh
