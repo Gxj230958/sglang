@@ -106,6 +106,7 @@ P1 projects are omitted because the bullets below specify selection rules, not f
 | [p1-multimodal-opt/encoder-cuda-graph/](p1-multimodal-opt/encoder-cuda-graph/README.md) | P1 | Reduce repeated launch overhead in vision-encoder execution. | `<STATUS>` |
 | [p1-multi-platform/](p1-multi-platform/README.md) | P1 | Select and validate the hardware platforms required for the release. | In progress |
 | [p1-multi-platform/nvidia-hopper/](p1-multi-platform/nvidia-hopper/README.md) | P1 | Establish and validate the selected NVIDIA Hopper configurations. | In progress |
+| [p1-multi-platform/nvidia-blackwell/](p1-multi-platform/nvidia-blackwell/README.md) | P1 | Establish and validate the selected NVIDIA Blackwell configurations. | In progress |
 | [p1-multi-platform/amd/](p1-multi-platform/amd/README.md) | P1 | Establish and validate the selected AMD configurations. | `<STATUS>` |
 | [p1-multi-platform/intel-xpu-xeon/](p1-multi-platform/intel-xpu-xeon/README.md) | P1 | Establish and validate the selected Intel XPU and Xeon configurations. | `<STATUS>` |
 | [p1-multi-platform/ascend-npu/](p1-multi-platform/ascend-npu/README.md) | P1 | Establish and validate the selected Ascend NPU configurations. | `<STATUS>` |

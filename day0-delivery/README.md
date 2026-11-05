@@ -2,7 +2,7 @@
 
 ## Summary
 
-This directory coordinates the release bundle for `zai-org/GLM-5-1028-Provider`. It owns immutable artifact pins, release gates, sign-off, and the three in-repository deliverables: cookbook guidance, Docker material, and the release blog. The delivery is not release-ready. The current implementation commit is `a15aa7c3` and the current model revision is `7e66c405`; neither is a release cut. The target date, owners, release commit, container image, and release decision are unresolved.
+This directory coordinates the release bundle for `zai-org/GLM-5-1028-Provider`. It owns immutable artifact pins, release gates, sign-off, and the three in-repository deliverables: cookbook guidance, Docker material, and the release blog. The delivery is not release-ready. Current evidence is pinned to implementation commits `a15aa7c3` and `8451a1bf` with model revision `7e66c405`; none is a release cut. The target date, owners, release commit, container image, and release decision are unresolved.
 
 An artifact without an immutable pin and reviewed validation evidence cannot ship.
 
@@ -38,7 +38,8 @@ An artifact without an immutable pin and reviewed validation evidence cannot shi
 | Artifact | Immutable Pin or Link | Validation | Owner | Status |
 |---|---|---|---|---|
 | SGLang release commit | `<FULL_CODE_SHA>` | None | `<OWNER>` | Not started |
-| SGLang implementation commit (current, not a release cut) | `a15aa7c3edefee67d557f15d640899b825c58ba6` (`radixark/sglang-zai` branch `glm-5-lp`) | [Correctness E01](../features/p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6/repro.md) | `<OWNER>` | In progress |
+| E01–E03 and E05 implementation commit (not a release cut) | `a15aa7c3edefee67d557f15d640899b825c58ba6` (`radixark/sglang-zai` branch `glm-5-lp`) | [Correctness E01](../features/p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6/repro.md), [E02](../features/p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6-mtp-cuda-graph/repro.md), [E03](../features/p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6-b300-mtp-evaluation/repro.md), [E05](../features/p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6-h200-mtp-evaluation/repro.md) | `<OWNER>` | In progress |
+| Optional vision SwiGLU fix (not a release cut) | `8451a1bf9d6156a8ff76f8d603abe9a89c1b1002` (`fix/glm5-lp-implementation`) | [Correctness E04](../features/p0-correctness/data/data@2026-11-03-8451a1bf9d6156a8ff76f8d603abe9a89c1b1002-swiglu-fix/repro.md) | `<OWNER>` | In progress |
 | SGLang pull request | `<PR_URL>` | None | `<OWNER>` | Not started |
 | Tracking pull request | `<TRACKING_PR_URL>` | `<REVIEW_STATUS>` | `<OWNER>` | `<STATUS>` |
 | Release issue | `<ISSUE_URL>` | None | `<OWNER>` | Not started |
@@ -91,7 +92,7 @@ An artifact without an immutable pin and reviewed validation evidence cannot shi
 
 ### Stage 2: Lock code and model artifacts — In progress
 
-- Current pins: implementation commit `a15aa7c3edefee67d557f15d640899b825c58ba6` and model revision `7e66c40540c64bbf85e2a3c6d7264fbc514b4b43`; they bind current evidence and are not release locks.
+- Current evidence pins: `a15aa7c3edefee67d557f15d640899b825c58ba6` for E01–E03 and E05, `8451a1bf9d6156a8ff76f8d603abe9a89c1b1002` for E04, and model revision `7e66c40540c64bbf85e2a3c6d7264fbc514b4b43`; they are not release locks.
 - [ ] Pin the SGLang release commit and public pull request.
 - [ ] Pin target-model, draft-model, tokenizer, and processor revisions.
 - [ ] Pin non-Git dependencies with versions or checksums.

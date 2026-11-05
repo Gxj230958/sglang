@@ -1,0 +1,50 @@
+[
+  {
+    "source": "metrics.json",
+    "sha256_as_captured": "f9f1541006b1514d7d628d60d10a252655bbb2ecb4a03c0a19c76f662517ebd0",
+    "sha256_after_redaction": "76936ac7948838766322ccbf637bb59f6965cded1044fdd23ef2c76273baf763",
+    "file": "metrics.json"
+  },
+  {
+    "source": "output-rs0.jsonl",
+    "sha256_as_captured": "088fe1bea4ab69d8f031e00ec6d689a7154c0fcbf0e2686d87347197c89459c6",
+    "sha256_after_redaction": "088fe1bea4ab69d8f031e00ec6d689a7154c0fcbf0e2686d87347197c89459c6",
+    "file": "output-rs0.jsonl.gz"
+  },
+  {
+    "source": "requests.py",
+    "sha256_as_captured": "69511bcef15f0d25098b1b06f56632878b2b255671bf6ee6d1e7dbb07d614af9",
+    "sha256_after_redaction": "0906fdd393aa8c22a9fef99218dc49b599744422e6736e50412d4305824c1f0d",
+    "file": "requests.py"
+  },
+  {
+    "source": "requests.json",
+    "sha256_as_captured": "75b544c186e9d3c35909e4c3463c5493a591757709ee243f103989e428499556",
+    "sha256_after_redaction": "75b544c186e9d3c35909e4c3463c5493a591757709ee243f103989e428499556",
+    "file": "requests.json"
+  },
+  {
+    "source": "requests.log",
+    "sha256_as_captured": "7e2ce2c1644e12a516b5cd6d467429c086b395de7c2fb9fb7fd31502d766805e",
+    "sha256_after_redaction": "7e2ce2c1644e12a516b5cd6d467429c086b395de7c2fb9fb7fd31502d766805e",
+    "file": "requests.log"
+  },
+  {
+    "source": "unit.log",
+    "sha256_as_captured": "84793b8fea4ee4a45f83ea4f5e86a38bddcfb0784f33f529da26ce33cb34afde",
+    "sha256_after_redaction": "84793b8fea4ee4a45f83ea4f5e86a38bddcfb0784f33f529da26ce33cb34afde",
+    "file": "unit.log.gz"
+  },
+  {
+    "source": "unit-prefix.log",
+    "sha256_as_captured": "a81407a7daa4558307e0b8a254c3377fb21f506a93b79b6fb0815d939ab4a5d6",
+    "sha256_after_redaction": "a81407a7daa4558307e0b8a254c3377fb21f506a93b79b6fb0815d939ab4a5d6",
+    "file": "unit-prefix.log.gz"
+  },
+  {
+    "source": "deployed-manifest.txt",
+    "sha256_as_captured": "f1b2aa3a9c864c9bcde55eb11a4fab343e71260211b6d1d86be64dbc9877dd7a",
+    "sha256_after_redaction": "f1b2aa3a9c864c9bcde55eb11a4fab343e71260211b6d1d86be64dbc9877dd7a",
+    "file": "deployed-manifest.txt.gz"
+  }
+]

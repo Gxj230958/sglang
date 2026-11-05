@@ -1,0 +1,76 @@
+[
+  {
+    "case": "text-arith",
+    "finish_reason": "stop",
+    "content_ok": true,
+    "usage": {
+      "prompt_tokens": 26,
+      "total_tokens": 119,
+      "completion_tokens": 93,
+      "prompt_tokens_details": null,
+      "reasoning_tokens": 90,
+      "completion_tokens_details": {
+        "reasoning_tokens": 90
+      }
+    },
+    "latency_s": 2.6,
+    "answer": "391"
+  },
+  {
+    "case": "text-capital",
+    "finish_reason": "stop",
+    "content_ok": true,
+    "usage": {
+      "prompt_tokens": 24,
+      "total_tokens": 27,
+      "completion_tokens": 3,
+      "prompt_tokens_details": null,
+      "reasoning_tokens": 1,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1
+      }
+    },
+    "latency_s": 0.3,
+    "answer": "Paris"
+  },
+  {
+    "case": "image-shapes",
+    "finish_reason": "stop",
+    "content_ok": true,
+    "usage": {
+      "prompt_tokens": 222,
+      "total_tokens": 320,
+      "completion_tokens": 98,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 190
+      },
+      "reasoning_tokens": 85,
+      "completion_tokens_details": {
+        "reasoning_tokens": 85
+      }
+    },
+    "latency_s": 7.7,
+    "answer": "Left: a red square. Right: a blue circle."
+  },
+  {
+    "case": "image-text",
+    "finish_reason": "stop",
+    "content_ok": true,
+    "usage": {
+      "prompt_tokens": 212,
+      "total_tokens": 223,
+      "completion_tokens": 11,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 184
+      },
+      "reasoning_tokens": 1,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1
+      }
+    },
+    "latency_s": 0.4,
+    "answer": "PURPLE ELEPHANT 734"
+  }
+]

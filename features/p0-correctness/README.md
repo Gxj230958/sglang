@@ -2,7 +2,7 @@
 
 ## Summary
 
-`zai-org/GLM-5-1028-Provider` (GLM LoopLM, `GlmLoopForConditionalGeneration`) correctness tracking covers model quality, API behavior, feature compatibility, and release-gating regressions. Status: In progress. Implementation work is on the `radixark/sglang-zai` branch `glm-5-lp`; all current evidence is pinned to code commit `a15aa7c3` and model revision `7e66c405`. The H200 bring-up ([E01](data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6/repro.md)) passed the configuration, model, attention, and checkpoint-map tests and returned correct text, image, and long-context answers that stop normally at TP8. Baseline GSM8K-200 reached 95.50% accuracy with 100% stop rate and 0% truncation; built-in NextN/MTP returned `accept len=2.27` with ordinary decode CUDA graph enabled ([E02](data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6-mtp-cuda-graph/repro.md)). Release accuracy, API, configuration, and artifact gates remain open, and the reference implementation and quality gates are not yet defined.
+`zai-org/GLM-5-1028-Provider` (GLM LoopLM, `GlmLoopForConditionalGeneration`) correctness tracking covers model quality, API behavior, feature compatibility, and release-gating regressions. Status: In progress. E01–E03 and E05 use `a15aa7c3` on `glm-5-lp`; E04 uses `8451a1bf` on `fix/glm5-lp-implementation`; all use model revision `7e66c405`. The H200 bring-up ([E01](data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6/repro.md)) passed configuration, model, attention, checkpoint-map, text, image, and long-context checks. E02 recorded H200 baseline GSM8K-200 and the built-in MTP/decode-graph smoke. B300 MTP completed full GSM8K at 93.86% accuracy with 99.24% stop rate and GPQA-4096 at 45.52% pass@1 and 69.19% pass@8; GPQA truncation was 51.33% ([E03](data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6-b300-mtp-evaluation/repro.md)). The optional vision SwiGLU fix passed 42 unit tests, text/image E2E, and full GSM8K at 95.22% accuracy with 99.32% stop rate ([E04](data/data@2026-11-03-8451a1bf9d6156a8ff76f8d603abe9a89c1b1002-swiglu-fix/repro.md)). H200 MTP completed full GSM8K at 94.31% accuracy and GPQA at 52.53% pass@1 and 75.76% pass@8 with 43.31% truncation at context length 8192 ([E05](data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6-h200-mtp-evaluation/repro.md)). Release accuracy, API, configuration, and artifact gates remain open.
 
 ## Scope
 
@@ -59,6 +59,12 @@ No reference results are recorded. The reference implementation and evaluation r
 
 GSM8K-200 on the H200 TP8 baseline reached 95.50% accuracy, 100% stop rate, 0% truncation, and 0% request errors at `a15aa7c3` and model revision `7e66c405` ([E02](data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6-mtp-cuda-graph/repro.md)).
 
+B300 MTP full GSM8K reached 93.86% accuracy, 99.24% stop rate, 0.76% truncation, and 0% request errors. B300 MTP GPQA-4096 reached 45.52% pass@1, 69.19% pass@8, and 68.69% majority@8, with 48.67% stop rate and 51.33% truncation ([E03](data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6-b300-mtp-evaluation/repro.md)). The GPQA values are specific to the 4096-token output budget.
+
+At `8451a1bf`, the optional vision SwiGLU fix passed full GSM8K with 95.22% accuracy, 99.32% stop rate, 0.68% truncation, and 0% request errors ([E04](data/data@2026-11-03-8451a1bf9d6156a8ff76f8d603abe9a89c1b1002-swiglu-fix/repro.md)).
+
+H200 MTP full GSM8K reached 94.31% accuracy, 99.39% stop rate, 0.61% truncation, and 0% request errors. H200 MTP GPQA reached 52.53% pass@1, 75.76% pass@8, and 74.49% majority@8, with 56.69% stop rate and 43.31% truncation at context length 8192 ([E05](data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6-h200-mtp-evaluation/repro.md)).
+
 ## Assignees
 
 - `<OWNER>` — `<RESPONSIBILITY>`
@@ -75,6 +81,9 @@ GSM8K-200 on the H200 TP8 baseline reached 95.50% accuracy, 100% stop rate, 0% t
 
 - Experiment [E01](data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6/repro.md): at `a15aa7c3`, the H200 TP8 baseline passed configuration, model, attention, and checkpoint-map tests and the text, image, and long-context smokes.
 - Experiment [E02](data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6-mtp-cuda-graph/repro.md): GSM8K-200 reached 95.50% accuracy with 100% stop rate and 0% truncation; built-in MTP returned `accept len=2.27` with `cuda graph: True`.
+- Experiment [E03](data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6-b300-mtp-evaluation/repro.md): B300 MTP full GSM8K reached 93.86% accuracy with 99.24% stop rate; GPQA-4096 reached 45.52% pass@1 and 69.19% pass@8 with 51.33% truncation.
+- Experiment [E04](data/data@2026-11-03-8451a1bf9d6156a8ff76f8d603abe9a89c1b1002-swiglu-fix/repro.md): at `8451a1bf`, the optional vision SwiGLU fix passed 42 unit tests, text/image E2E, and full GSM8K at 95.22% accuracy with 99.32% stop rate.
+- Experiment [E05](data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6-h200-mtp-evaluation/repro.md): H200 MTP full GSM8K reached 94.31% accuracy with 99.39% stop rate; GPQA reached 52.53% pass@1 and 75.76% pass@8 with 43.31% truncation at context length 8192.
 - [ ] Run smoke, quality, API, and configuration matrices on `<CODE_SHA>`.
 - [ ] Triage deltas and bind each issue to `<OWNER>`.
 - [ ] Add regression coverage for every fixed release-blocking issue.
@@ -92,3 +101,6 @@ GSM8K-200 on the H200 TP8 baseline reached 95.50% accuracy, 100% stop rate, 0% t
 |---|---|---|---|---|---|
 | E01 | `2026-11-02` | H200 TP8 bring-up | 8x H200; unit, kernel, and checkpoint-map tests plus text, image, and long-context smokes; TP8, Triton MoE, FlashMLA Sparse, BF16 KV, no CUDA graph, no MTP | All tests and smokes passed at `a15aa7c3` with model revision `7e66c405`. | [round](data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6/repro.md) |
 | E02 | `2026-11-02` | Baseline accuracy and MTP smoke | Subrun A: 8x H200, TP8, Triton MoE, BF16 KV, no CUDA graph and no MTP. Subrun B: same base with EAGLE 3/1/4 and decode CUDA graph. | Subrun A: 95.50% accuracy, 100% stop rate, 0% truncation. Subrun B: `accept len=2.27`; `cuda graph: True`. Results are bound to their respective subruns. | [round](data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6-mtp-cuda-graph/repro.md) |
+| E03 | `2026-11-02` | B300 MTP full evaluation | 8x B300, TP8, DeepGEMM MoE, EAGLE 3/1/4 and decode CUDA graph; full GSM8K and GPQA-Diamond with 4096 output tokens | GSM8K: 93.86% accuracy, 99.24% stop rate. GPQA-4096: 45.52% pass@1, 69.19% pass@8, 51.33% truncation. | [round](data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6-b300-mtp-evaluation/repro.md) |
+| E04 | `2026-11-03` | Optional vision SwiGLU fix | `8451a1bf`; 8x B300, TP8, DeepGEMM MoE, EAGLE 3/1/4 and decode CUDA graph; unit tests, text/image E2E and full GSM8K | 42 tests passed; all requests stopped normally. GSM8K: 95.22% accuracy, 99.32% stop rate, 0% request errors. | [round](data/data@2026-11-03-8451a1bf9d6156a8ff76f8d603abe9a89c1b1002-swiglu-fix/repro.md) |
+| E05 | `2026-11-02` | H200 MTP full evaluation | 8x H200, TP8, Triton MoE, EAGLE 3/1/4 and decode CUDA graph; full GSM8K and GPQA-Diamond with context length 8192 | GSM8K: 94.31% accuracy, 99.39% stop rate. GPQA: 52.53% pass@1, 75.76% pass@8, 43.31% truncation. | [round](data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6-h200-mtp-evaluation/repro.md) |

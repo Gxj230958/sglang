@@ -1,0 +1,68 @@
+[
+  {
+    "source": "gsm8k/metrics.json",
+    "sha256_as_captured": "2b102df7d87d4ac29c5a249d9955e2e0c504c242684b8921b6cadbf1549bae6c",
+    "sha256_after_redaction": "6b86ce4b21741db5c63f2abfcfc2560058e2abc95304b3316a54348045efc285",
+    "file": "gsm8k/metrics.json"
+  },
+  {
+    "source": "gsm8k/output-rs0.jsonl",
+    "sha256_as_captured": "cce2771df1969ed0a82a6bfc52f6260d20a6bfbfc64468d9fd5fc2e95f558006",
+    "sha256_after_redaction": "cce2771df1969ed0a82a6bfc52f6260d20a6bfbfc64468d9fd5fc2e95f558006",
+    "file": "gsm8k/output-rs0.jsonl.gz"
+  },
+  {
+    "source": "gpqa-default/metrics.json",
+    "sha256_as_captured": "85fd70c7368ce1c0b06782fcefe7a1b0478f1b4818fdeacdaa97f5e6da3bc4d2",
+    "sha256_after_redaction": "0e67213c82c536b79a7dcf0124eea87d8feb797764b4a3634d4783632d965a0c",
+    "file": "gpqa-default/metrics.json"
+  },
+  {
+    "source": "gpqa-default/output-rs0.jsonl",
+    "sha256_as_captured": "e048fd2dc8679bc0d3f0e257befbd4ed29ffbc16c481331a25a8210a4468be31",
+    "sha256_after_redaction": "e048fd2dc8679bc0d3f0e257befbd4ed29ffbc16c481331a25a8210a4468be31",
+    "file": "gpqa-default/output-rs0.jsonl.gz"
+  },
+  {
+    "source": "gpqa-default/output-rs1.jsonl",
+    "sha256_as_captured": "8f04d98bcfa81cdf150661a99d4df815685c05efdb1cb1b1669f37e59340ab5d",
+    "sha256_after_redaction": "8f04d98bcfa81cdf150661a99d4df815685c05efdb1cb1b1669f37e59340ab5d",
+    "file": "gpqa-default/output-rs1.jsonl.gz"
+  },
+  {
+    "source": "gpqa-default/output-rs2.jsonl",
+    "sha256_as_captured": "192b990ecc7ba6aef48be6c7fc6cb9d9a3c5ab4ca4df4e0c667fa1fa9cb07b7e",
+    "sha256_after_redaction": "192b990ecc7ba6aef48be6c7fc6cb9d9a3c5ab4ca4df4e0c667fa1fa9cb07b7e",
+    "file": "gpqa-default/output-rs2.jsonl.gz"
+  },
+  {
+    "source": "gpqa-default/output-rs3.jsonl",
+    "sha256_as_captured": "80fd0c547cc49be5e376a434bf699543f24585bb6451cff7c4a5c32683924070",
+    "sha256_after_redaction": "80fd0c547cc49be5e376a434bf699543f24585bb6451cff7c4a5c32683924070",
+    "file": "gpqa-default/output-rs3.jsonl.gz"
+  },
+  {
+    "source": "gpqa-default/output-rs4.jsonl",
+    "sha256_as_captured": "a0f907b878866a18669bd9843db829aea421ad4d1eadda71ff8a32193b1881a8",
+    "sha256_after_redaction": "a0f907b878866a18669bd9843db829aea421ad4d1eadda71ff8a32193b1881a8",
+    "file": "gpqa-default/output-rs4.jsonl.gz"
+  },
+  {
+    "source": "gpqa-default/output-rs5.jsonl",
+    "sha256_as_captured": "857ccfe78b305ab8a07361ecc3d304d4d66214ed40d3cb3f9365a86a243efb9d",
+    "sha256_after_redaction": "857ccfe78b305ab8a07361ecc3d304d4d66214ed40d3cb3f9365a86a243efb9d",
+    "file": "gpqa-default/output-rs5.jsonl.gz"
+  },
+  {
+    "source": "gpqa-default/output-rs6.jsonl",
+    "sha256_as_captured": "bdb2459d0b2204345e71d4a0f22e83470dc461a984b8275d2880917010afed46",
+    "sha256_after_redaction": "bdb2459d0b2204345e71d4a0f22e83470dc461a984b8275d2880917010afed46",
+    "file": "gpqa-default/output-rs6.jsonl.gz"
+  },
+  {
+    "source": "gpqa-default/output-rs7.jsonl",
+    "sha256_as_captured": "adc7aa0ca0f8fb495144757086a4e331a14819e1094a420bd02eb51d84b40dd8",
+    "sha256_after_redaction": "adc7aa0ca0f8fb495144757086a4e331a14819e1094a420bd02eb51d84b40dd8",
+    "file": "gpqa-default/output-rs7.jsonl.gz"
+  }
+]
