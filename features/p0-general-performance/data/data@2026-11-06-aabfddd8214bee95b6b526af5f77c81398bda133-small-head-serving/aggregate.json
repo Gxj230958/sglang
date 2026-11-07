@@ -1,0 +1,15 @@
+{
+  "throughput_definition": "total output tokens / end-to-end wall seconds including prefill",
+  "runs": [
+    {"input_len": 8192, "output_len": 1024, "cap": 1, "seed": 42, "run": "A", "baseline_tok_s": 50.1269468726601, "optimized_tok_s": 50.48054252927591, "gain_pct": 0.7054, "baseline_ttft_ms": 2233.802, "optimized_ttft_ms": 2087.832, "baseline_tpot_ms": 17.7851, "optimized_tpot_ms": 17.7879},
+    {"input_len": 8192, "output_len": 1024, "cap": 1, "seed": 42, "run": "B", "baseline_tok_s": 48.513960370573244, "optimized_tok_s": 50.32129630789879, "gain_pct": 3.7254, "baseline_ttft_ms": 2912.164, "optimized_ttft_ms": 2154.889, "baseline_tpot_ms": 17.7859, "optimized_tpot_ms": 17.7852},
+    {"input_len": 8192, "output_len": 1024, "cap": 64, "seed": 42, "run": "A", "baseline_tok_s": 946.3506240909828, "optimized_tok_s": 946.2066704138855, "gain_pct": -0.0152, "baseline_ttft_ms": 16459.852, "optimized_ttft_ms": 15763.142, "baseline_tpot_ms": 51.5987, "optimized_tpot_ms": 52.2914},
+    {"input_len": 8192, "output_len": 1024, "cap": 64, "seed": 42, "run": "B", "baseline_tok_s": 940.9325321838422, "optimized_tok_s": 951.7370557657862, "gain_pct": 1.1483, "baseline_ttft_ms": 16450.221, "optimized_ttft_ms": 15749.296, "baseline_tpot_ms": 51.9974, "optimized_tpot_ms": 51.9111},
+    {"input_len": 8192, "output_len": 1024, "cap": 64, "seed": 43, "run": "C", "baseline_tok_s": 936.6538257782324, "optimized_tok_s": 937.7444017788937, "gain_pct": 0.1164, "baseline_ttft_ms": 16503.002, "optimized_ttft_ms": 15770.998, "baseline_tpot_ms": 52.2587, "optimized_tpot_ms": 52.8951},
+    {"input_len": 102400, "output_len": 2048, "cap": 64, "seed": 42, "run": "A", "baseline_tok_s": 170.3849274755668, "optimized_tok_s": 175.51617335011218, "gain_pct": 3.0116, "baseline_ttft_ms": 335676.219, "optimized_ttft_ms": 326235.286, "baseline_tpot_ms": 42.6759, "optimized_tpot_ms": 41.6602}
+  ],
+  "cap64_8k_mean_throughput_gain_pct": 0.4165,
+  "cap64_8k_mean_ttft_reduction_pct": 4.3098,
+  "paired_requests": 323,
+  "early_stopped_requests": 0
+}

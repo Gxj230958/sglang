@@ -1,0 +1,23 @@
+{
+  "cases": 36,
+  "seeds": [4101, 4102, 4103],
+  "samples_per_case": 15,
+  "query_rows": 8192,
+  "topk": 2048,
+  "max_abs_error": 0.0,
+  "negative_cases": 0,
+  "median_latency_reduction_pct": [
+    {"heads": 8, "dim": 512, "context": 8192, "value": 13.516},
+    {"heads": 8, "dim": 512, "context": 16384, "value": 13.495},
+    {"heads": 8, "dim": 512, "context": 102400, "value": 7.345},
+    {"heads": 8, "dim": 576, "context": 8192, "value": 15.459},
+    {"heads": 8, "dim": 576, "context": 16384, "value": 15.601},
+    {"heads": 8, "dim": 576, "context": 102400, "value": 6.628},
+    {"heads": 32, "dim": 512, "context": 8192, "value": 13.449},
+    {"heads": 32, "dim": 512, "context": 16384, "value": 13.456},
+    {"heads": 32, "dim": 512, "context": 102400, "value": 7.347},
+    {"heads": 32, "dim": 576, "context": 8192, "value": 16.262},
+    {"heads": 32, "dim": 576, "context": 16384, "value": 15.943},
+    {"heads": 32, "dim": 576, "context": 102400, "value": 7.010}
+  ]
+}

@@ -1,0 +1,551 @@
+[
+  {
+    "name": "N1",
+    "tag": "L2_cold",
+    "prompt_tokens": 4482,
+    "want": 64,
+    "got": "64",
+    "ok": true,
+    "finish": {
+      "type": "stop",
+      "matched": 154827
+    },
+    "cached_tokens": 0,
+    "cached_tokens_details": {},
+    "completion_tokens": 3,
+    "latency_s": 0.48,
+    "output_ids": [
+      154842,
+      102636,
+      154827
+    ],
+    "final": "64",
+    "text": "</think>64"
+  },
+  {
+    "name": "N1",
+    "tag": "L2_warm",
+    "prompt_tokens": 4482,
+    "want": 64,
+    "got": "64",
+    "ok": true,
+    "finish": {
+      "type": "stop",
+      "matched": 154827
+    },
+    "cached_tokens": 4480,
+    "cached_tokens_details": {
+      "device": 4480,
+      "host": 0
+    },
+    "completion_tokens": 3,
+    "latency_s": 0.247,
+    "output_ids": [
+      154842,
+      102636,
+      154827
+    ],
+    "final": "64",
+    "text": "</think>64"
+  },
+  {
+    "name": "S1",
+    "tag": "L2_cold",
+    "prompt_tokens": 1470,
+    "want": 56,
+    "got": "56",
+    "ok": true,
+    "finish": {
+      "type": "stop",
+      "matched": 154827
+    },
+    "cached_tokens": 0,
+    "cached_tokens_details": {},
+    "completion_tokens": 3,
+    "latency_s": 0.31,
+    "output_ids": [
+      154842,
+      101917,
+      154827
+    ],
+    "final": "56",
+    "text": "</think>56"
+  },
+  {
+    "name": "S1",
+    "tag": "L2_warm",
+    "prompt_tokens": 1470,
+    "want": 56,
+    "got": "56",
+    "ok": true,
+    "finish": {
+      "type": "stop",
+      "matched": 154827
+    },
+    "cached_tokens": 1408,
+    "cached_tokens_details": {
+      "device": 1408,
+      "host": 0
+    },
+    "completion_tokens": 3,
+    "latency_s": 0.293,
+    "output_ids": [
+      154842,
+      101917,
+      154827
+    ],
+    "final": "56",
+    "text": "</think>56"
+  },
+  {
+    "event": "filler",
+    "requests": 24,
+    "prompt_tokens": 98304
+  },
+  {
+    "name": "N1",
+    "tag": "L2_host_restore",
+    "prompt_tokens": 4482,
+    "want": 64,
+    "got": "64",
+    "ok": true,
+    "finish": {
+      "type": "stop",
+      "matched": 154827
+    },
+    "cached_tokens": 4480,
+    "cached_tokens_details": {
+      "device": 0,
+      "host": 4480
+    },
+    "completion_tokens": 3,
+    "latency_s": 0.255,
+    "output_ids": [
+      154842,
+      102636,
+      154827
+    ],
+    "final": "64",
+    "text": "</think>64"
+  },
+  {
+    "name": "S1",
+    "tag": "L2_host_restore",
+    "prompt_tokens": 1470,
+    "want": 56,
+    "got": "56",
+    "ok": true,
+    "finish": {
+      "type": "stop",
+      "matched": 154827
+    },
+    "cached_tokens": 1408,
+    "cached_tokens_details": {
+      "device": 0,
+      "host": 1408
+    },
+    "completion_tokens": 3,
+    "latency_s": 0.294,
+    "output_ids": [
+      154842,
+      101917,
+      154827
+    ],
+    "final": "56",
+    "text": "</think>56"
+  },
+  {
+    "name": "N2",
+    "tag": "L2_shared_prefix_after_host_restore",
+    "prompt_tokens": 4482,
+    "want": 18,
+    "got": "18",
+    "ok": true,
+    "finish": {
+      "type": "stop",
+      "matched": 154827
+    },
+    "cached_tokens": 4416,
+    "cached_tokens_details": {
+      "device": 4416,
+      "host": 0
+    },
+    "completion_tokens": 3,
+    "latency_s": 0.313,
+    "output_ids": [
+      154842,
+      99243,
+      154827
+    ],
+    "final": "18",
+    "text": "</think>18"
+  },
+  {
+    "name": "N1",
+    "tag": "L2_after_flush",
+    "prompt_tokens": 4482,
+    "want": 64,
+    "got": "64",
+    "ok": true,
+    "finish": {
+      "type": "stop",
+      "matched": 154827
+    },
+    "cached_tokens": 0,
+    "cached_tokens_details": {},
+    "completion_tokens": 3,
+    "latency_s": 0.371,
+    "output_ids": [
+      154842,
+      102636,
+      154827
+    ],
+    "final": "64",
+    "text": "</think>64"
+  },
+  {
+    "name": "N1",
+    "tag": "L3_A_cold",
+    "prompt_tokens": 4482,
+    "want": 64,
+    "got": "64",
+    "ok": true,
+    "finish": {
+      "type": "stop",
+      "matched": 154827
+    },
+    "cached_tokens": 0,
+    "cached_tokens_details": {},
+    "completion_tokens": 3,
+    "latency_s": 4.961,
+    "output_ids": [
+      154842,
+      102636,
+      154827
+    ],
+    "final": "64",
+    "text": "</think>64"
+  },
+  {
+    "name": "N1",
+    "tag": "L3_A_warm",
+    "prompt_tokens": 4482,
+    "want": 64,
+    "got": "64",
+    "ok": true,
+    "finish": {
+      "type": "stop",
+      "matched": 154827
+    },
+    "cached_tokens": 4480,
+    "cached_tokens_details": {
+      "device": 4480,
+      "host": 0,
+      "storage": 0,
+      "storage_backend": "HiCacheFile"
+    },
+    "completion_tokens": 3,
+    "latency_s": 0.271,
+    "output_ids": [
+      154842,
+      102636,
+      154827
+    ],
+    "final": "64",
+    "text": "</think>64"
+  },
+  {
+    "name": "S1",
+    "tag": "L3_A_cold",
+    "prompt_tokens": 1470,
+    "want": 56,
+    "got": "56",
+    "ok": true,
+    "finish": {
+      "type": "stop",
+      "matched": 154827
+    },
+    "cached_tokens": 0,
+    "cached_tokens_details": {},
+    "completion_tokens": 3,
+    "latency_s": 0.325,
+    "output_ids": [
+      154842,
+      101917,
+      154827
+    ],
+    "final": "56",
+    "text": "</think>56"
+  },
+  {
+    "name": "S1",
+    "tag": "L3_A_warm",
+    "prompt_tokens": 1470,
+    "want": 56,
+    "got": "56",
+    "ok": true,
+    "finish": {
+      "type": "stop",
+      "matched": 154827
+    },
+    "cached_tokens": 1408,
+    "cached_tokens_details": {
+      "device": 1408,
+      "host": 0,
+      "storage": 0,
+      "storage_backend": "HiCacheFile"
+    },
+    "completion_tokens": 3,
+    "latency_s": 0.302,
+    "output_ids": [
+      154842,
+      101917,
+      154827
+    ],
+    "final": "56",
+    "text": "</think>56"
+  },
+  {
+    "event": "L3_store_after_warm",
+    "bin": 186,
+    "indexer": 93,
+    "kv": 93,
+    "bytes": 743309568
+  },
+  {
+    "event": "L3_store_after_flush",
+    "bin": 186,
+    "indexer": 93,
+    "kv": 93,
+    "bytes": 743309568
+  },
+  {
+    "name": "N1",
+    "tag": "L3_B_storage_restore",
+    "prompt_tokens": 4482,
+    "want": 64,
+    "got": "64",
+    "ok": true,
+    "finish": {
+      "type": "stop",
+      "matched": 154827
+    },
+    "cached_tokens": 4480,
+    "cached_tokens_details": {
+      "device": 0,
+      "host": 0,
+      "storage": 4480,
+      "storage_backend": "HiCacheFile"
+    },
+    "completion_tokens": 3,
+    "latency_s": 1.093,
+    "output_ids": [
+      154842,
+      102636,
+      154827
+    ],
+    "final": "64",
+    "text": "</think>64"
+  },
+  {
+    "name": "S1",
+    "tag": "L3_B_storage_restore",
+    "prompt_tokens": 1470,
+    "want": 56,
+    "got": "56",
+    "ok": true,
+    "finish": {
+      "type": "stop",
+      "matched": 154827
+    },
+    "cached_tokens": 1408,
+    "cached_tokens_details": {
+      "device": 0,
+      "host": 0,
+      "storage": 1408,
+      "storage_backend": "HiCacheFile"
+    },
+    "completion_tokens": 3,
+    "latency_s": 0.458,
+    "output_ids": [
+      154842,
+      101917,
+      154827
+    ],
+    "final": "56",
+    "text": "</think>56"
+  },
+  {
+    "name": "N2",
+    "tag": "L3_B_storage_restore",
+    "prompt_tokens": 4482,
+    "want": 18,
+    "got": "18",
+    "ok": true,
+    "finish": {
+      "type": "stop",
+      "matched": 154827
+    },
+    "cached_tokens": 4416,
+    "cached_tokens_details": {
+      "device": 0,
+      "host": 0,
+      "storage": 4416,
+      "storage_backend": "HiCacheFile"
+    },
+    "completion_tokens": 3,
+    "latency_s": 0.675,
+    "output_ids": [
+      154842,
+      99243,
+      154827
+    ],
+    "final": "18",
+    "text": "</think>18"
+  },
+  {
+    "event": "L3_store_after_clear",
+    "name": "N1",
+    "bin": 112,
+    "indexer": 53,
+    "kv": 59,
+    "bytes": 470497536
+  },
+  {
+    "event": "L3_store_after_clear",
+    "name": "N1",
+    "bin": 0,
+    "indexer": 0,
+    "kv": 0,
+    "bytes": 0
+  },
+  {
+    "name": "N1",
+    "tag": "L3_C_recompute",
+    "prompt_tokens": 4482,
+    "want": 64,
+    "got": "64",
+    "ok": true,
+    "finish": {
+      "type": "stop",
+      "matched": 154827
+    },
+    "cached_tokens": 0,
+    "cached_tokens_details": {},
+    "completion_tokens": 3,
+    "latency_s": 0.645,
+    "output_ids": [
+      154842,
+      102636,
+      154827
+    ],
+    "final": "64",
+    "text": "</think>64"
+  },
+  {
+    "event": "L3_store_after_clear",
+    "name": "S1",
+    "bin": 0,
+    "indexer": 0,
+    "kv": 0,
+    "bytes": 0
+  },
+  {
+    "name": "S1",
+    "tag": "L3_C_recompute",
+    "prompt_tokens": 1470,
+    "want": 56,
+    "got": "56",
+    "ok": true,
+    "finish": {
+      "type": "stop",
+      "matched": 154827
+    },
+    "cached_tokens": 0,
+    "cached_tokens_details": {},
+    "completion_tokens": 3,
+    "latency_s": 0.384,
+    "output_ids": [
+      154842,
+      101917,
+      154827
+    ],
+    "final": "56",
+    "text": "</think>56"
+  },
+  {
+    "event": "L3_store_after_clear",
+    "name": "N2",
+    "bin": 0,
+    "indexer": 0,
+    "kv": 0,
+    "bytes": 0
+  },
+  {
+    "name": "N2",
+    "tag": "L3_C_recompute",
+    "prompt_tokens": 4482,
+    "want": 18,
+    "got": "18",
+    "ok": true,
+    "finish": {
+      "type": "stop",
+      "matched": 154827
+    },
+    "cached_tokens": 0,
+    "cached_tokens_details": {},
+    "completion_tokens": 47,
+    "latency_s": 1.034,
+    "output_ids": [
+      785,
+      1196,
+      374,
+      10156,
+      911,
+      46645,
+      4343,
+      220,
+      99082,
+      13,
+      6771,
+      752,
+      1477,
+      432,
+      304,
+      279,
+      1467,
+      382,
+      60424,
+      1389,
+      4343,
+      220,
+      99082,
+      25,
+      29995,
+      220,
+      99082,
+      27170,
+      220,
+      99200,
+      81053,
+      315,
+      1509,
+      220,
+      99243,
+      382,
+      4416,
+      279,
+      1509,
+      1372,
+      374,
+      220,
+      99243,
+      13,
+      154842,
+      99243,
+      154827
+    ],
+    "final": "18",
+    "text": "The user is asking about ledger entry 15. Let me find it in the text.\n\nLedger entry 15: warehouse 15 shipped 50 crates of item 18.\n\nSo the item number is 18.</think>18"
+  }
+]

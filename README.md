@@ -8,9 +8,11 @@ This branch tracks Day-0 support for `zai-org/GLM-5-1028-Provider`, a GLM LoopLM
 
 Current status: bring-up in progress; not release-ready.
 
-- Implementation: `radixark/sglang-zai` branch `glm-5-lp` at `a15aa7c3`; model revision `7e66c405`.
+- Current implementation: `radixark/sglang-zai` branch `glm-5-lp` at `77c2b3bd`; model revision `7e66c405`. Earlier evidence remains pinned to its original commits.
 - On 8 H200 GPUs at TP8 (Triton MoE, FlashMLA Sparse, BF16 KV cache, CUDA graph and MTP disabled), the configuration, model, attention, and checkpoint-map tests pass, and text, image, and long-context requests return correct answers that stop normally ([Correctness E01](features/p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6/repro.md)).
-- GSM8K-200 reached 95.50% accuracy with 100% stop rate and 0% truncation. Built-in NextN/MTP generated with `accept len=2.27`, and decode execution logged `cuda graph: True` ([Correctness E02](features/p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6-mtp-cuda-graph/repro.md)). Performance and disaggregated deployment have not been validated.
+- GSM8K-200 reached 95.50% accuracy with 100% stop rate and 0% truncation. Built-in NextN/MTP generated with `accept len=2.27`, and decode execution logged `cuda graph: True` ([Correctness E02](features/p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6-mtp-cuda-graph/repro.md)). Disaggregated deployment has not been validated.
+- Small-head FlashMLA prefill passed 36 exact kernel comparisons with 6.63–16.26% lower median latency ([Kernel Optimization E01](features/p0-kernel-opt/data/data@2026-11-06-aabfddd8214bee95b6b526af5f77c81398bda133-small-head-prefill/repro.md)). Serving showed 4.31% lower cap-64 8K TTFT and +0.42% throughput ([General Performance E01](features/p0-general-performance/data/data@2026-11-06-aabfddd8214bee95b6b526af5f77c81398bda133-small-head-serving/repro.md)); the original PR was closed unmerged and superseded by [upstream PR #48891](https://github.com/sgl-project/sglang/pull/48891).
+- Host L2 and file L3 restored prefixes correctly after device eviction and a full process restart, with 18/18 semantic probes correct and stopping normally ([HiCache E01](features/p0-hicache/data/data@2026-11-06-77c2b3bd19860ffaa6294fa983820e8cad70b83b-l2-l3-file/repro.md)). Other storage backends and feature combinations remain unvalidated.
 - Release scope, owners, gates, and artifacts are tracked in [Day-0 Delivery](day0-delivery/README.md).
 
 ## Branches
@@ -96,12 +98,12 @@ The catalog contains P0 and P1 tracking projects. New top-level features follow 
 | `features/p0-correctness/` | Validate model quality, API behavior, feature compatibility, and regression gates. | In progress | `<OWNER>` |
 | [Tool-Call Parser](features/p0-tool-call-parser/README.md) | Implement and validate the tool-call detector and parser auto-detection against the model's native call format. | Not started | `<OWNER>` |
 | [Reasoning Parser](features/p0-reasoning-parser/README.md) | Implement and validate the reasoning parser, thinking defaults, and supported reasoning levels. | Not started | `<OWNER>` |
-| `features/p0-general-performance/` | Track one-batch and serving performance across representative workloads and hardware. | Not started | `<OWNER>` |
+| `features/p0-general-performance/` | Track one-batch and serving performance across representative workloads and hardware. | In progress | `<OWNER>` |
 | `features/p0-agentx-performance/` | Measure agentic-workload latency, throughput, concurrency scaling, and cache behavior. | Not started | `<OWNER>` |
-| `features/p0-kernel-opt/` | Track kernel bottlenecks, optimization stages, microbenchmarks, and end-to-end impact. | `<STATUS>` | `<OWNER>` |
+| `features/p0-kernel-opt/` | Track kernel bottlenecks, optimization stages, microbenchmarks, and end-to-end impact. | In progress | `<OWNER>` |
 | `features/p0-spec-decoding-training/` | Track draft-model training, checkpoint selection, evaluation, and release readiness. | In progress | `<OWNER>` |
 | [Prefill–Decode Disaggregation](features/p0-pd-disagg/README.md) | Separate prefill and decode resources and validate routing, KV transfer, and latency. | Not started | `<OWNER>` |
-| [Hierarchical KV Caching (HiCache)](features/p0-hicache/README.md) | Reuse prompt prefixes across GPU, host, and storage cache tiers. | Not started | `<OWNER>` |
+| [Hierarchical KV Caching (HiCache)](features/p0-hicache/README.md) | Reuse prompt prefixes across GPU, host, and storage cache tiers. | In progress | `<OWNER>` |
 | [MegaMoE](features/p0-megamoe/README.md) | Evaluate and integrate the selected MegaMoE implementation. | Not started | `<OWNER>` |
 | [Parallelism](features/p0-parallelism/README.md) | Complete the shared design, then implement selected parallelism strategies. | In progress | `<OWNER>` |
 | [Breakable CUDA Graph](features/p1-breakable-cuda-graph/README.md) | Combine captured graph segments with operations that require eager execution. | In progress | `<OWNER>` |

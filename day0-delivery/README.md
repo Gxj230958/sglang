@@ -2,7 +2,7 @@
 
 ## Summary
 
-This directory coordinates the release bundle for `zai-org/GLM-5-1028-Provider`. It owns immutable artifact pins, release gates, sign-off, and the three in-repository deliverables: cookbook guidance, Docker material, and the release blog. The delivery is not release-ready. Current evidence is pinned to implementation commits `a15aa7c3` and `8451a1bf` with model revision `7e66c405`; none is a release cut. The target date, owners, release commit, container image, and release decision are unresolved.
+This directory coordinates the release bundle for `zai-org/GLM-5-1028-Provider`. It owns immutable artifact pins, release gates, sign-off, and the three in-repository deliverables: cookbook guidance, Docker material, and the release blog. The delivery is not release-ready. Correctness evidence is pinned to implementation commits `a15aa7c3` and `8451a1bf`; small-head performance used `aabfddd`, and HiCache used `77c2b3bd`, all with model revision `7e66c405`. None is a release cut, and the small-head and HiCache rounds additionally use an unpinned compatibility configuration. The target date, owners, release commit, container image, and release decision are unresolved.
 
 An artifact without an immutable pin and reviewed validation evidence cannot ship.
 
@@ -73,9 +73,9 @@ An artifact without an immutable pin and reviewed validation evidence cannot shi
 | Gate | Required Artifact Set | Required Platforms | Evidence | Reviewer | Status |
 |---|---|---|---|---|---|
 | Correctness | `<CODE_SHA>; <MODEL_REVISION>; <IMAGE_DIGEST>` | `<PLATFORM_SET>` | [Correctness E01](../features/p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6/repro.md): bring-up; [Correctness E02](../features/p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6-mtp-cuda-graph/repro.md): baseline 95.50% accuracy with 100% stop rate, plus ordinary decode-graph/MTP smoke. API, configuration, and release gates are undefined. | `<REVIEWER>` | In progress |
-| General performance | `<CODE_SHA>; <MODEL_REVISION>; <IMAGE_DIGEST>` | `<PLATFORM_SET>` | None | `<REVIEWER>` | Not started |
+| General performance | `<CODE_SHA>; <MODEL_REVISION>; <IMAGE_DIGEST>` | `<PLATFORM_SET>` | [General Performance E01](../features/p0-general-performance/data/data@2026-11-06-aabfddd8214bee95b6b526af5f77c81398bda133-small-head-serving/repro.md): cap-64 8K TTFT −4.31% and throughput +0.42%; non-release, with rebase and locked-artifact validation pending | `<REVIEWER>` | In progress |
 | AgentX performance | `<CODE_SHA>; <MODEL_REVISION>; <IMAGE_DIGEST>` | `<PLATFORM_SET>` | None | `<REVIEWER>` | Not started |
-| Kernel compatibility | `<CODE_SHA>; <IMAGE_DIGEST>` | `<PLATFORM_SET>` | None | `<REVIEWER>` | Not started |
+| Kernel compatibility | `<CODE_SHA>; <IMAGE_DIGEST>` | `<PLATFORM_SET>` | [Kernel Optimization E01](../features/p0-kernel-opt/data/data@2026-11-06-aabfddd8214bee95b6b526af5f77c81398bda133-small-head-prefill/repro.md): exact parity in 36/36 B300 cases; upstream and remaining-platform validation pending | `<REVIEWER>` | In progress |
 | Speculative decoding | `<CODE_SHA>; <MODEL_REVISION>; <DRAFT_MODEL_REVISION>` | `<PLATFORM_SET>` | [Correctness E02](../features/p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6-mtp-cuda-graph/repro.md): built-in NextN/MTP returned `accept len=2.27` with `cuda graph: True`; performance and release handoff remain open | `<REVIEWER>` | In progress |
 | Docker runtime | `<IMAGE_DIGEST>; <MODEL_REVISION>` | `<PLATFORM_SET>` | None; no image has been built | `<REVIEWER>` | Not started |
 

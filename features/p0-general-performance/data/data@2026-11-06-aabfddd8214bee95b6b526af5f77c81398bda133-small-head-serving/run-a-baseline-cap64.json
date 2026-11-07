@@ -1,0 +1,29 @@
+{
+  "kind": "measured",
+  "result": {
+    "run_name": "baseline-cap64-8k1k",
+    "batch_size": 64,
+    "input_len": 8192,
+    "output_len": 1024,
+    "latency": 69.25128840375692,
+    "input_throughput": 17264.795020775917,
+    "output_throughput": 1685.4308180059115,
+    "overall_throughput": 8517.155616818845,
+    "last_ttft": 30.36746161011979,
+    "last_gen_throughput": 1692.5431233760612,
+    "acc_length": -1.0,
+    "total_output_tokens": 65536,
+    "num_early_stopped": 0,
+    "steady_state_output_throughput": 1682.511760330246,
+    "steady_state_window_s": 38.8735590968281,
+    "cache_hit_rate": null,
+    "profile_link": null
+  },
+  "median_ttft_s": 16.459851559251547,
+  "median_tpot_s": 0.051598670548292376,
+  "median_latency_s": 69.24665095005184,
+  "wall_output_tokens_s": 946.3506240909828,
+  "observed_decode_batch_samples": {
+    "64": 25
+  }
+}

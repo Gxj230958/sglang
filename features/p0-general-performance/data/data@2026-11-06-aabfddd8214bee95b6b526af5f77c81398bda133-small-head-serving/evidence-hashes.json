@@ -1,0 +1,15 @@
+{
+  "aggregate.json": "0fddae25d2329322935ebe41d2d2a6e01eb085305e784f551dc14877328426d2",
+  "baseline-dispatch.json": "e810f7f16f943b51c73781fae88011eaab0749e138f229c1d6878055e38ce0c1",
+  "baseline-sitecustomize.py": "5e5e5a08a061901188f11177a59bc585f44c59c69751603b82eef63bb4c8aaba",
+  "bench_capture.py": "3fc475ed24f71026eeec683d560a5daafedaefc28b59002bcd5fd9620f8f8468",
+  "comparison.json": "1924e19e2e6aa49a41bc98a66b5f0195d312bf1525e2f9be4f7e41d0b2255458",
+  "optimized-dispatch.json": "5d56e57a4c2d5f9a1e092328d17ae5e21ae0dcfc7764c6e07fb539812c0f10e9",
+  "paired-controller-exit.json": "99ad6e9dacc26229234d05c747ea7080615d7b702fb18b98a0a0c624ae55ee33",
+  "repro.md": "413105514ba4100940435cdc3e3bc06f4ea00596b88da09dab20d22d61b1aa79",
+  "run-a-baseline-cap1.json": "f311fd564ee6f1b495b71836755dd53d2d5cfdf84241973b6e66bd10c7171e2b",
+  "run-a-baseline-cap64.json": "e752a8d314d3433f970efde58475bb4f552e3d696e121225300b8540b8a327c5",
+  "run-a-controller-exit.json": "ef42e390beffa3df5b1f6a930073371d89f8c0e58ff4e0b33d193723a772bc94",
+  "run-a-optimized-cap1.json": "dc4e2ebb730ee0aee29973cf44bb5df099998ba03cc7c89a8332b863d3218219",
+  "run-a-optimized-cap64.json": "3da17a2691dbeed513ae0e4bd9157790ce7489b4bc94bc4d5245d4198894a1b6"
+}

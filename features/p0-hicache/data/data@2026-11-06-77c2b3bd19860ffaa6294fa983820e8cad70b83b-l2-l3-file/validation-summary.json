@@ -1,0 +1,23 @@
+{
+  "commit": "77c2b3bd19860ffaa6294fa983820e8cad70b83b",
+  "semantic_requests": 18,
+  "all_correct": true,
+  "all_stop": true,
+  "filler_requests": 24,
+  "l2_host_restore_tokens": {
+    "N1": 4480,
+    "S1": 1408
+  },
+  "l3_restart_storage_restore_tokens": {
+    "N1": 4480,
+    "S1": 1408,
+    "N2": 4416
+  },
+  "l3_files_after_flush": {
+    "kv": 93,
+    "indexer": 93,
+    "bytes": 743309568
+  },
+  "negative_controls": 3,
+  "negative_all_zero_cached_tokens": true
+}

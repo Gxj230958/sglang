@@ -1,0 +1,58 @@
+[
+  {
+    "cap": 1,
+    "case": "8k1k-s42",
+    "seed": 42,
+    "baseline_wall_output_tokens_s": 48.513960370573244,
+    "optimized_wall_output_tokens_s": 50.32129630789879,
+    "wall_output_tokens_s_delta_pct": 3.7253935228545254,
+    "baseline_median_ttft_s": 2.9121636389754713,
+    "optimized_median_ttft_s": 2.1548885800875723,
+    "median_ttft_delta_pct": -26.003863545055317,
+    "baseline_median_tpot_s": 0.01778590377194412,
+    "optimized_median_tpot_s": 0.01778515883177912,
+    "median_tpot_delta_pct": -0.004188373976099502
+  },
+  {
+    "cap": 64,
+    "case": "8k1k-s42",
+    "seed": 42,
+    "baseline_wall_output_tokens_s": 940.9325321838422,
+    "optimized_wall_output_tokens_s": 951.7370557657862,
+    "wall_output_tokens_s_delta_pct": 1.1482782465675134,
+    "baseline_median_ttft_s": 16.450221116654575,
+    "optimized_median_ttft_s": 15.749295687070116,
+    "median_ttft_delta_pct": -4.260887586944506,
+    "baseline_median_tpot_s": 0.05199738993388642,
+    "optimized_median_tpot_s": 0.05191105167301352,
+    "median_tpot_delta_pct": -0.16604345137837262
+  },
+  {
+    "cap": 64,
+    "case": "8k1k-s43",
+    "seed": 43,
+    "baseline_wall_output_tokens_s": 936.6538257782324,
+    "optimized_wall_output_tokens_s": 937.7444017788937,
+    "wall_output_tokens_s_delta_pct": 0.11643319769234495,
+    "baseline_median_ttft_s": 16.503002383280545,
+    "optimized_median_ttft_s": 15.7709975480102,
+    "median_ttft_delta_pct": -4.435585830199907,
+    "baseline_median_tpot_s": 0.052258700002867906,
+    "optimized_median_tpot_s": 0.05289514679261433,
+    "median_tpot_delta_pct": 1.2178771950153822
+  },
+  {
+    "cap": 64,
+    "case": "100k2k-s42",
+    "seed": 42,
+    "baseline_wall_output_tokens_s": 170.3849274755668,
+    "optimized_wall_output_tokens_s": 175.51617335011218,
+    "wall_output_tokens_s_delta_pct": 3.0115609112673525,
+    "baseline_median_ttft_s": 335.6762189439032,
+    "optimized_median_ttft_s": 326.23528590006754,
+    "median_ttft_delta_pct": -2.8125117333418936,
+    "baseline_median_tpot_s": 0.04267586582318916,
+    "optimized_median_tpot_s": 0.041660201340994754,
+    "median_tpot_delta_pct": -2.3799505003657573
+  }
+]

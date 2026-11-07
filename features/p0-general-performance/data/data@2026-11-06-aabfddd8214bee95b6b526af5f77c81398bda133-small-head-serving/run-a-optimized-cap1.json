@@ -1,0 +1,29 @@
+{
+  "kind": "measured",
+  "result": {
+    "run_name": "optimized-cap1-8k1k",
+    "batch_size": 1,
+    "input_len": 8192,
+    "output_len": 1024,
+    "latency": 20.285043478012085,
+    "input_throughput": 3923.680451211093,
+    "output_throughput": 56.27236940690355,
+    "overall_throughput": 454.3248827634832,
+    "last_ttft": 2.087835669051856,
+    "last_gen_throughput": 56.20427401203679,
+    "acc_length": -1.0,
+    "total_output_tokens": 1024,
+    "num_early_stopped": 0,
+    "steady_state_output_throughput": 56.21795654606814,
+    "steady_state_window_s": 18.19703281391412,
+    "cache_hit_rate": null,
+    "profile_link": null
+  },
+  "median_ttft_s": 2.0878320578485727,
+  "median_tpot_s": 0.017787910864041172,
+  "median_latency_s": 20.284864871762693,
+  "wall_output_tokens_s": 50.48054252927591,
+  "observed_decode_batch_samples": {
+    "1": 25
+  }
+}

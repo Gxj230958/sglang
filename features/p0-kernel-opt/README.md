@@ -2,7 +2,7 @@
 
 ## Summary
 
-`<MODEL_NAME>` kernel-optimization tracking connects profile evidence to kernel changes, microbenchmarks, and end-to-end serving impact. The project is `<STATUS>`; its target is `<KERNEL_GOAL>` without violating `<CORRECTNESS_OR_PORTABILITY_CONSTRAINT>`. Related code work is `<CODE_BRANCH_OR_PR>`, with dependencies on `<BACKEND_OR_HARDWARE_DEPENDENCIES>`.
+`zai-org/GLM-5-1028-Provider` kernel-optimization tracking connects profile evidence to kernel changes, microbenchmarks, and end-to-end serving impact. Status: In progress. [E01](data/data@2026-11-06-aabfddd8214bee95b6b526af5f77c81398bda133-small-head-prefill/repro.md) validates the SM100 small-head FlashMLA sparse-prefill specialization on 8 and 32 local heads with BF16 Q/KV. All 36 cases match native head64 exactly and reduce median latency by 6.63–16.26%. Serving impact is linked separately. The original integration PR was closed unmerged and superseded by [upstream PR #48891](https://github.com/sgl-project/sglang/pull/48891); release gates remain open.
 
 ## Scope
 
@@ -18,34 +18,34 @@
 
 - Configuration-only tuning with no kernel change.
 - Optimizations without correctness coverage or a supported fallback.
-- Microbenchmark wins that do not improve a target end-to-end workload.
+- Release claims from kernel-only results or an unmerged implementation.
 
 ## Success Criteria
 
-- [ ] Every optimization starts from profile evidence pinned to `<CODE_SHA>`.
-- [ ] Numerical parity meets `<PARITY_GATE>` across required shapes and dtypes.
-- [ ] Microbenchmark improvement meets `<MICROBENCHMARK_GATE>`.
-- [ ] End-to-end improvement meets `<END_TO_END_GATE>` without regression elsewhere.
-- [ ] Dispatch boundaries and fallback behavior are tested.
-- [ ] Required hardware and software architectures are covered.
+- [x] E01 numerical parity is exact across all 36 measured shapes and dtypes.
+- [ ] Define parity, performance, and portability gates for the remaining required shapes and platforms.
+- [ ] Confirm microbenchmark and end-to-end gains on the locked upstream release candidate.
+- [ ] Complete dispatch and fallback validation beyond the measured B300 cases.
 
 ## Kernel Inventory
 
 | Kernel or Region | Operation | Shapes and Dtypes | Backend | Bottleneck | Baseline | Target | Owner | Status |
 |---|---|---|---|---|---|---|---|---|
-| `<KERNEL>` | `<OPERATION>` | `<SHAPES_AND_DTYPES>` | `<BACKEND>` | `<BOTTLENECK>` | `<BASELINE>` | `<TARGET>` | `<OWNER>` | `<STATUS>` |
+| FlashMLA sparse prefill | DSA sparse attention with padded query heads | 8/32 local heads; D512/D576; BF16 Q/KV; top-k 2048 | SM100 FlashMLA | Padded-head softmax and output work | Native head64 | Compact small-head output | `<OWNER>` | E01 passed on B300; non-release |
 
 ## Optimization Results
 
 | Date | Kernel | Platform | Shape | Metric | Baseline | Candidate | Delta | Parity | End-to-End Impact | Round |
 |---|---|---|---|---|---:|---:|---:|---|---|---|
-| `<YYYY-MM-DD>` | `<KERNEL>` | `<PLATFORM>` | `<SHAPE>` | `<METRIC>` | `<BASELINE>` | `<CANDIDATE>` | `<DELTA>` | `<PARITY_RESULT>` | `<END_TO_END_RESULT>` | `data/data@<YYYY-MM-DD>-<CODE_SHA>/repro.md` |
+| 2026-11-06 | Small-head sparse prefill | B300 | 8/32 heads; D512/D576; 8K–100K context | Median kernel latency | Native head64 | Compact small-head | −6.63–16.26% | Exact in 36/36 cases | [Serving E01](../p0-general-performance/data/data@2026-11-06-aabfddd8214bee95b6b526af5f77c81398bda133-small-head-serving/repro.md) | [E01](data/data@2026-11-06-aabfddd8214bee95b6b526af5f77c81398bda133-small-head-prefill/repro.md) |
 
 ## Dispatch and Fallback Matrix
 
 | Hardware | Shape or Mode | Preferred Path | Fallback | Gate | Status | Evidence |
 |---|---|---|---|---|---|---|
-| `<HARDWARE>` | `<SHAPE_OR_MODE>` | `<PREFERRED_PATH>` | `<FALLBACK_PATH>` | `<GATE>` | `<STATUS>` | `<ROUND_PATH>` |
+| SM100 FlashMLA 1.0.3 | Prefill; 8/32 heads; BF16 Q/KV; no LSE | Compact small-head | Native head64 for LSE, dual-bank, decode, or unsupported shapes | Exact active-output parity | E01 passed for measured shapes | [E01](data/data@2026-11-06-aabfddd8214bee95b6b526af5f77c81398bda133-small-head-prefill/repro.md) |
+| Older or mismatched FlashMLA wheel | Public capability probe unavailable | Native head64 | Native head64 | No startup failure | Probe behavior checked; serving not rerun | [Serving E01](../p0-general-performance/data/data@2026-11-06-aabfddd8214bee95b6b526af5f77c81398bda133-small-head-serving/repro.md) |
+| Hopper and other platforms | All small-head-eligible shapes | Native backend | Native backend | No architecture regression claimed | Not covered | None |
 
 ## Assignees
 
@@ -53,26 +53,24 @@
 
 ## Stages
 
-### Stage 1: Profile and prioritize — `<STATUS>`
+### Stage 1: Profile and prioritize — In progress
 
-- [ ] Capture `<PROFILE_TYPE>` on representative workloads.
-- [ ] Rank kernel regions by user-visible impact.
-- [ ] Define parity, performance, and portability gates.
+- [x] Identify padded-head sparse-prefill work as the optimization target; completed 2026-11-06.
+- [ ] Rank the remaining kernel regions by user-visible impact on locked release profiles.
 
-### Stage 2: Implement and microbenchmark — `<STATUS>`
+### Stage 2: Implement and microbenchmark — In progress
 
-- [ ] Implement `<OPTIMIZATION>` with explicit dispatch boundaries.
-- [ ] Validate required shapes, dtypes, edge cases, and fallbacks.
-- [ ] Record microbenchmark results and profile changes.
+- [x] Measure the small-head specialization on 8/32 heads and D512/D576; completed 2026-11-06.
+- [x] Confirm exact parity and positive latency reduction in all 36 cases; completed 2026-11-06.
+- [ ] Cover the remaining eligible head counts, edge cases, and platforms on the release candidate.
 
-### Stage 3: Prove end-to-end impact — `<STATUS>`
+### Stage 3: Prove end-to-end impact — In progress
 
-- [ ] Run correctness and general-performance gates.
-- [ ] Attribute end-to-end changes to the kernel work.
-- [ ] Rerun on locked release artifacts and required platforms.
+- [x] Record serving TTFT and throughput with actual small-head dispatch; completed 2026-11-06.
+- [ ] Repeat long-context serving and rerun on locked release artifacts.
 
 ## Experiments
 
 | ID | Date | Topic | Basic Setting | Result | Round |
 |---|---|---|---|---|---|
-| E01 | `<YYYY-MM-DD>` | `<TOPIC>` | `<HARDWARE>; <KERNEL>; <SHAPE>` | `<RESULT>` | `data/data@<YYYY-MM-DD>-<CODE_SHA>/repro.md` |
+| E01 | 2026-11-06 | Small-head FlashMLA sparse prefill | B300; 8/32 heads; D512/D576; 8K–100K context | 36/36 exact; median latency −6.63–16.26%; no negative case | [round](data/data@2026-11-06-aabfddd8214bee95b6b526af5f77c81398bda133-small-head-prefill/repro.md) |

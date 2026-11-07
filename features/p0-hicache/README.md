@@ -2,7 +2,7 @@
 
 ## Summary
 
-`<MODEL_NAME>` tracking for reusing prompt prefixes beyond GPU cache capacity. Status: Not started. Related code work: `<CODE_BRANCH_OR_PR>`. Target workload and hardware: `<WORKLOAD>` on `<HARDWARE>`; acceptance thresholds remain to be defined.
+`zai-org/GLM-5-1028-Provider` tracking for reusing prompt prefixes beyond GPU cache capacity. Status: In progress. [E01](data/data@2026-11-06-77c2b3bd19860ffaa6294fa983820e8cad70b83b-l2-l3-file/repro.md) validates host L2 and file L3 on 8×B300 with BF16 KV. Host restore, file restore after a full process restart, and clear-and-recompute all returned correct answers with normal stop behavior in 18/18 semantic probes. Mooncake, direct external linker, FP8 KV, MTP, and other IO/layout combinations remain unvalidated.
 
 ## How It Works
 
@@ -18,16 +18,19 @@ Design reference: [HiCache system design](https://docs.sglang.io/docs/advanced_f
 
 - Cache-tier sizing, storage integration, and prefix-reuse workloads.
 - Prefetch, write policies, eviction, and cold/warm cache comparisons.
+- Host L2 and file L3 with BF16 KV, write-through, kernel IO, and page-first layout.
 
 ### Out of Scope
 
 - Unselected configurations and unsupported feature combinations.
 - Performance or support claims without reproducible evidence.
+- Mooncake, direct external linker, FP8 KV, MTP, and alternative IO/layout combinations unless separately validated.
 
 ## Success Criteria
 
-- [ ] Cache hits, misses, and evictions preserve output correctness.
+- [x] E01 cache hits, misses, evictions, process restart, and clear-and-recompute preserve output correctness in the covered cases.
 - [ ] Cache hit rate, TTFT, transfer volume, and memory usage meet `<CACHE_PERFORMANCE_GATE>`.
+- [ ] Validate the remaining required storage backends and feature combinations.
 
 ## Assignees
 
@@ -35,15 +38,19 @@ Design reference: [HiCache system design](https://docs.sglang.io/docs/advanced_f
 
 ## Stages
 
-### Stage 1: Define requirements and design — Not started
+### Stage 1: Define requirements and design — In progress
 
-- [ ] Record the target workloads, dependencies, configuration boundaries, and acceptance thresholds.
+- [x] Record the E01 workloads, dependencies, configuration boundaries, and correctness checks; completed 2026-11-06.
+- [ ] Define acceptance thresholds for hit rate, TTFT, transfer volume, and host/storage capacity.
 
-### Stage 2: Implement and validate the selected scope — Not started
+### Stage 2: Implement and validate the selected scope — In progress
 
-- [ ] Link implementation work from an exact code commit or pull request.
-- [ ] Record correctness and performance evidence in a self-contained experiment round.
+- [x] Validate host L2 and file L3 at `77c2b3bd19860ffaa6294fa983820e8cad70b83b`; completed 2026-11-06.
+- [x] Record raw cache-source evidence and negative controls in a self-contained experiment round; completed 2026-11-06.
+- [ ] Validate Mooncake, direct external linker, FP8 KV, MTP, and additional IO/layout combinations as required.
 
 ## Experiments
 
-No experiments recorded yet.
+| ID | Date | Topic | Basic Setting | Result | Round |
+|---|---|---|---|---|---|
+| E01 | 2026-11-06 | Host L2 and file L3 | 8×B300 TP8; BF16 KV; 65K device pool; 98K filler tokens | Host restore 4480/1408 tokens; restart storage restore 4480/1408/4416 tokens; 18/18 correct and stop | [round](data/data@2026-11-06-77c2b3bd19860ffaa6294fa983820e8cad70b83b-l2-l3-file/repro.md) |
