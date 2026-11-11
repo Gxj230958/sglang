@@ -1,0 +1,4 @@
+[2026-11-11 20:42:23] Use flashinfer_trtllm as MoE runner backend on sm100 for DeepseekV3ForCausalLM
+RESOLVED [] flashinfer_trtllm none True flashmla_sparse bfloat16 fp8
+RESOLVED ['--ep-size', '8', '--attn-dp-size', '8', '--moe-a2a-backend', 'deepep'] auto deepep False flashmla_sparse bfloat16 fp8
+JOB_DONE

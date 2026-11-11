@@ -1,0 +1,32 @@
+H=16 rows=4 dual=0 cfg=(0,0,0,64) err 2.7e-03 us 6.67
+H=16 rows=4 dual=0 cfg=(8,4,512,64) err 3.4e-03 us 7.45
+H=16 rows=4 dual=0 cfg=(16,4,296,64) err 3.0e-03 us 6.60
+H=16 rows=4 dual=0 cfg=(16,4,512,64) err 3.3e-03 us 6.68
+H=16 rows=4 dual=0 cfg=(16,8,512,64) err 3.0e-03 us 7.22
+H=16 rows=4 dual=0 cfg=(32,4,296,64) err 3.1e-03 us 7.68
+H=16 rows=4 dual=0 cfg=(32,8,296,64) err 2.9e-03 us 8.40
+H=16 rows=4 dual=0 cfg=(32,4,512,64) err 3.0e-03 us 7.72
+H=16 rows=4 dual=0 cfg=(32,8,512,64) err 3.2e-03 us 8.44
+H=16 rows=4 dual=0 cfg=(32,8,148,64) err 2.9e-03 us 8.30
+H=16 rows=4 dual=0 cfg=(16,4,424,64) err 2.9e-03 us 6.69
+H=16 rows=4 dual=0 cfg=(32,8,424,64) err 2.9e-03 us 8.36
+H=16 rows=4 dual=0 cfg=(8,4,296,64) err 2.8e-03 us 7.71
+H=16 rows=4 dual=0 cfg=(8,8,512,64) err 2.7e-03 us 7.90
+BEST H=16 rows=4 dual=0 (16, 4, 296, 64) 6.60 us vs default 6.67
+H=16 rows=8 dual=0 cfg=(0,0,0,64) err 2.8e-03 us 9.40
+H=16 rows=8 dual=0 cfg=(8,4,512,64) err 2.7e-03 us 9.94
+H=16 rows=8 dual=0 cfg=(16,4,296,64) err 3.0e-03 us 9.44
+H=16 rows=8 dual=0 cfg=(16,4,512,64) err 2.6e-03 us 9.38
+H=16 rows=8 dual=0 cfg=(16,8,512,64) err 2.2e-03 us 10.13
+H=16 rows=8 dual=0 cfg=(32,4,296,64) err 2.2e-03 us 10.94
+H=16 rows=8 dual=0 cfg=(32,8,296,64) err 3.0e-03 us 14.22
+H=16 rows=8 dual=0 cfg=(32,4,512,64) err 2.9e-03 us 11.01
+H=16 rows=8 dual=0 cfg=(32,8,512,64) err 3.0e-03 us 14.30
+H=16 rows=8 dual=0 cfg=(32,8,148,64) err 3.0e-03 us 11.51
+H=16 rows=8 dual=0 cfg=(16,4,424,64) err 3.2e-03 us 9.32
+H=16 rows=8 dual=0 cfg=(32,8,424,64) err 3.4e-03 us 14.32
+H=16 rows=8 dual=0 cfg=(8,4,296,64) err 3.0e-03 us 10.37
+H=16 rows=8 dual=0 cfg=(8,8,512,64) err 2.7e-03 us 11.41
+BEST H=16 rows=8 dual=0 (16, 4, 424, 64) 9.32 us vs default 9.40
+RIG_DONE
+JOB_DONE

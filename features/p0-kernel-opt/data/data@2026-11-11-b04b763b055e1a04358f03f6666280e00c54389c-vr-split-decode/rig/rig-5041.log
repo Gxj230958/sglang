@@ -1,0 +1,52 @@
+/opt/sglang/lib/python3.12/site-packages/triton/knobs.py:504: UserWarning: TRITON_DEFAULT_FP_FUSION is unset: defaulting to FP fusion ENABLED for backward compatibility in Triton 3.9. The default will change to DISABLED in Triton 3.10; set TRITON_DEFAULT_FP_FUSION=1 to keep fusion enabled or =0 to adopt the new default early and silence this warning.
+  warn_once(FP_FUSION_DEFAULT_WARNING)
+rows=24 dual=0 cfg=(0,0,0,64) err 3.1e-03 us 15.07
+rows=24 dual=0 cfg=(8,4,848,64) err 2.9e-03 us 21.76
+rows=24 dual=0 cfg=(8,4,1696,64) err 2.7e-03 us 21.71
+rows=24 dual=0 cfg=(8,4,3392,64) err 2.9e-03 us 21.83
+rows=24 dual=0 cfg=(8,8,1696,64) err 3.3e-03 us 15.20
+BEST rows=24 dual=0 (0, 0, 0, 64) 15.07 us vs default 15.07
+rows=24 dual=1 cfg=(0,0,0,64) err 2.6e-03 us 16.24
+rows=24 dual=1 cfg=(8,4,848,64) err 3.4e-03 us 22.55
+rows=24 dual=1 cfg=(8,4,1696,64) err 3.2e-03 us 22.53
+rows=24 dual=1 cfg=(8,4,3392,64) err 2.7e-03 us 22.43
+rows=24 dual=1 cfg=(8,8,1696,64) err 3.0e-03 us 15.43
+BEST rows=24 dual=1 (8, 8, 1696, 64) 15.43 us vs default 16.24
+rows=32 dual=0 cfg=(0,0,0,64) err 2.8e-03 us 18.65
+rows=32 dual=0 cfg=(8,4,848,64) err 2.7e-03 us 15.16
+rows=32 dual=0 cfg=(8,4,1696,64) err 2.1e-03 us 25.71
+rows=32 dual=0 cfg=(8,4,3392,64) err 2.7e-03 us 25.54
+rows=32 dual=0 cfg=(8,8,1696,64) err 3.1e-03 us 19.41
+BEST rows=32 dual=0 (8, 4, 848, 64) 15.16 us vs default 18.65
+rows=32 dual=1 cfg=(0,0,0,64) err 2.6e-03 us 18.94
+rows=32 dual=1 cfg=(8,4,848,64) err 3.1e-03 us 16.01
+rows=32 dual=1 cfg=(8,4,1696,64) err 2.5e-03 us 26.67
+rows=32 dual=1 cfg=(8,4,3392,64) err 3.1e-03 us 26.63
+rows=32 dual=1 cfg=(8,8,1696,64) err 2.5e-03 us 19.77
+BEST rows=32 dual=1 (8, 4, 848, 64) 16.01 us vs default 18.94
+rows=48 dual=0 cfg=(0,0,0,64) err 2.6e-03 us 25.36
+rows=48 dual=0 cfg=(8,4,848,64) err 2.5e-03 us 34.05
+rows=48 dual=0 cfg=(8,4,1696,64) err 3.0e-03 us 37.45
+rows=48 dual=0 cfg=(8,4,3392,64) err 2.6e-03 us 37.39
+rows=48 dual=0 cfg=(8,8,1696,64) err 2.6e-03 us 25.83
+BEST rows=48 dual=0 (0, 0, 0, 64) 25.36 us vs default 25.36
+rows=48 dual=1 cfg=(0,0,0,64) err 2.0e-03 us 27.02
+rows=48 dual=1 cfg=(8,4,848,64) err 3.0e-03 us 34.22
+rows=48 dual=1 cfg=(8,4,1696,64) err 3.1e-03 us 37.88
+rows=48 dual=1 cfg=(8,4,3392,64) err 3.2e-03 us 37.70
+rows=48 dual=1 cfg=(8,8,1696,64) err 3.1e-03 us 26.29
+BEST rows=48 dual=1 (8, 8, 1696, 64) 26.29 us vs default 27.02
+rows=64 dual=0 cfg=(0,0,0,64) err 2.8e-03 us 30.62
+rows=64 dual=0 cfg=(8,4,848,64) err 3.1e-03 us 23.30
+rows=64 dual=0 cfg=(8,4,1696,64) err 2.6e-03 us 39.44
+rows=64 dual=0 cfg=(8,4,3392,64) err 2.2e-03 us 49.17
+rows=64 dual=0 cfg=(8,8,1696,64) err 2.2e-03 us 28.71
+BEST rows=64 dual=0 (8, 4, 848, 64) 23.30 us vs default 30.62
+rows=64 dual=1 cfg=(0,0,0,64) err 2.7e-03 us 31.53
+rows=64 dual=1 cfg=(8,4,848,64) err 2.3e-03 us 24.39
+rows=64 dual=1 cfg=(8,4,1696,64) err 3.4e-03 us 41.34
+rows=64 dual=1 cfg=(8,4,3392,64) err 2.9e-03 us 49.72
+rows=64 dual=1 cfg=(8,8,1696,64) err 2.2e-03 us 29.26
+BEST rows=64 dual=1 (8, 4, 848, 64) 24.39 us vs default 31.53
+RIG_DONE
+JOB_DONE

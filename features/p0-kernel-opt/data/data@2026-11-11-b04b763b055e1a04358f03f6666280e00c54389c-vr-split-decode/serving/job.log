@@ -1,0 +1,7 @@
+ARM_START arm=stack-trtllm nodes=vr-r38-cn[03,02] 19:45:41
+ARM_READY arm=stack-trtllm ready=1 19:49:03
+ARM_BENCH_RC 0 19:55:31
+srun: forcing job termination
+srun: Job step aborted: Waiting up to 122 seconds for job step to finish.
+[2026-11-11T19:55:36.145] error: *** STEP 5050.0 ON vr-r38-cn03 CANCELLED AT 2026-11-11T19:55:36 DUE to SIGNAL Killed ***
+JOB_DONE

@@ -1,0 +1,7 @@
+ARM_START arm=base nodes=vr-r38-cn[03,02] 18:33:12
+ARM_READY arm=base ready=1 18:53:07
+ARM_BENCH_RC 0 19:00:03
+srun: forcing job termination
+srun: Job step aborted: Waiting up to 122 seconds for job step to finish.
+[2026-11-11T19:00:08.654] error: *** STEP 5018.0 ON vr-r38-cn03 CANCELLED AT 2026-11-11T19:00:08 DUE to SIGNAL Killed ***
+JOB_DONE

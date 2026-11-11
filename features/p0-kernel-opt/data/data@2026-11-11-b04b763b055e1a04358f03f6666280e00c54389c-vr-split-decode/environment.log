@@ -1,0 +1,45 @@
+name, memory.total [MiB], driver_version
+NVIDIA Graphics Device, 286524 MiB, 620.47
+capability (10, 7) sms 212 13.4
+apache-tvm-ffi                           0.1.11
+deepseek-recipe                          0.2.0
+flash-attn-4                             4.0.0b38
+flashinfer-cubin                         0.7.2
+flashinfer-jit-cache                     0.7.2+cu134
+flashinfer-jit-cache-sm100a              0.7.2+cu134
+flashinfer-jit-cache-sm103a              0.7.2+cu134
+flashinfer-jit-cache-sm107a              0.7.2+cu134
+flashinfer-jit-cache-sm110a              0.7.2+cu134
+flashinfer-jit-cache-sm120f              0.7.2+cu134
+flashinfer-jit-cache-sm121a              0.7.2+cu134
+flashinfer-jit-cache-sm80                0.7.2+cu134
+flashinfer-jit-cache-sm89                0.7.2+cu134
+flashinfer-jit-cache-sm90a               0.7.2+cu134
+flashinfer-python                        0.7.2
+nvidia-cutlass-dsl                       4.8.0
+nvidia-cutlass-dsl-libs-base             4.8.0
+nvidia-cutlass-dsl-libs-core             4.8.0
+nvidia-cutlass-dsl-libs-cu12             4.8.0
+nvidia-cutlass-dsl-libs-cu13             4.8.0
+sgl-deep-ep                              0.1.2.post1+cu134
+sgl-deep-gemm                            0.2.6+cu134
+sgl-flash-mla                            1.0.0
+sgl-nvidia-mega                          0.1.0.dev0                   /sgl-workspace/sgl-nvidia-mega
+sglang                                   0.0.0.dev1+g732d34b93        /sgl-workspace/sglang/python
+sglang-kernel                            0.4.10
+sglang-msa-mono                          0.1.0                        /sgl-workspace/minimax-msa/integrations/sglang
+sglang-router                            0.3.2
+torch                                    2.15.0+cu134
+torch_c_dlpack_ext                       0.1.5
+torch_memory_saver                       0.0.10
+torchaudio                               2.11.1+cu134
+torchvision                              0.29.2+cu134
+transformers                             5.19.0
+triton                                   3.9.0
+Name: sgl-deep-gemm
+Version: 0.0.0
+Name: sgl-flash-mla
+Version: 1.0.0
+Cuda compilation tools, release 13.4, V13.4.59
+Build cuda_13.4.r13.4/compiler.38657139_0
+JOB_DONE

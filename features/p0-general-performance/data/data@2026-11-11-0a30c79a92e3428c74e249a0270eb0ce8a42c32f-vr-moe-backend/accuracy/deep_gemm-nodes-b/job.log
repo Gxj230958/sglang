@@ -1,0 +1,7 @@
+ARM_START arm=acc-deepgemm nodes=vr-r38-cn[06,08] 20:43:52
+ARM_READY arm=acc-deepgemm ready=1 21:02:31
+ARM_BENCH_RC 0 21:05:27
+srun: forcing job termination
+srun: Job step aborted: Waiting up to 122 seconds for job step to finish.
+[2026-11-11T21:05:33.045] error: *** STEP 5083.0 ON vr-r38-cn06 CANCELLED AT 2026-11-11T21:05:33 DUE to SIGNAL Killed ***
+JOB_DONE

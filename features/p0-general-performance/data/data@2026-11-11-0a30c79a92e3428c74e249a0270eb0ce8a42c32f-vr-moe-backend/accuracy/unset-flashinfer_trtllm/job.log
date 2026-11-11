@@ -1,0 +1,7 @@
+ARM_START arm=acc-unset nodes=vr-r38-cn[03,02] 21:06:39
+ARM_READY arm=acc-unset ready=1 21:09:36
+ARM_BENCH_RC 0 21:12:42
+srun: forcing job termination
+srun: Job step aborted: Waiting up to 122 seconds for job step to finish.
+[2026-11-11T21:12:48.205] error: *** STEP 5091.0 ON vr-r38-cn03 CANCELLED AT 2026-11-11T21:12:48 DUE to SIGNAL Killed ***
+JOB_DONE

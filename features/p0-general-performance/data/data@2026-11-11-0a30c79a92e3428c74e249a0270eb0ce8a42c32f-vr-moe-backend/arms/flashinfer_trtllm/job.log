@@ -1,0 +1,10 @@
+ARM_START arm=moe-flashinfer_trtllm nodes=vr-r38-cn[06,08] 19:01:42
+ARM_READY arm=moe-flashinfer_trtllm ready=1 19:24:23
+ARM_BENCH_RC 0 19:30:50
+srun: forcing job termination
+srun: Job step aborted: Waiting up to 122 seconds for job step to finish.
+[2026-11-11T19:30:55.477] error: *** STEP 5024.0 ON vr-r38-cn06 CANCELLED AT 2026-11-11T19:30:55 DUE to SIGNAL Killed ***
+srun: error: vr-r38-cn06: task 0: Killed
+srun: Terminating StepId=5024.0
+[2026-11-11T19:30:59.977] error: pyxis: child 2782318 terminated with signal 15
+JOB_DONE

@@ -1,0 +1,48 @@
+rows=4 dual=0 cfg=(0,0,0,64) err 2.0e-03 us 5.85
+rows=4 dual=0 cfg=(16,4,296,64) err 3.2e-03 us 6.25
+BEST rows=4 dual=0 (0, 0, 0, 64) 5.85 us vs default 5.85
+rows=4 dual=1 cfg=(0,0,0,64) err 2.3e-03 us 6.23
+rows=4 dual=1 cfg=(16,4,296,64) err 2.7e-03 us 6.48
+BEST rows=4 dual=1 (0, 0, 0, 64) 6.23 us vs default 6.23
+rows=8 dual=0 cfg=(0,0,0,64) err 3.5e-03 us 7.97
+rows=8 dual=0 cfg=(16,4,296,64) err 2.5e-03 us 8.90
+BEST rows=8 dual=0 (0, 0, 0, 64) 7.97 us vs default 7.97
+rows=8 dual=1 cfg=(0,0,0,64) err 3.2e-03 us 8.29
+rows=8 dual=1 cfg=(16,4,296,64) err 3.4e-03 us 8.87
+BEST rows=8 dual=1 (0, 0, 0, 64) 8.29 us vs default 8.29
+rows=16 dual=0 cfg=(0,0,0,64) err 2.9e-03 us 11.43
+rows=16 dual=0 cfg=(16,4,296,64) err 3.0e-03 us 12.33
+BEST rows=16 dual=0 (0, 0, 0, 64) 11.43 us vs default 11.43
+rows=16 dual=1 cfg=(0,0,0,64) err 2.8e-03 us 11.66
+rows=16 dual=1 cfg=(16,4,296,64) err 3.1e-03 us 12.43
+BEST rows=16 dual=1 (0, 0, 0, 64) 11.66 us vs default 11.66
+rows=32 dual=0 cfg=(0,0,0,64) err 2.1e-03 us 15.40
+rows=32 dual=0 cfg=(16,4,296,64) err 3.3e-03 us 18.64
+BEST rows=32 dual=0 (0, 0, 0, 64) 15.40 us vs default 15.40
+rows=32 dual=1 cfg=(0,0,0,64) err 3.0e-03 us 16.10
+rows=32 dual=1 cfg=(16,4,296,64) err 2.6e-03 us 18.95
+BEST rows=32 dual=1 (0, 0, 0, 64) 16.10 us vs default 16.10
+rows=64 dual=0 cfg=(0,0,0,64) err 3.1e-03 us 23.55
+rows=64 dual=0 cfg=(16,4,296,64) err 2.6e-03 us 30.86
+BEST rows=64 dual=0 (0, 0, 0, 64) 23.55 us vs default 23.55
+rows=64 dual=1 cfg=(0,0,0,64) err 2.2e-03 us 24.58
+rows=64 dual=1 cfg=(16,4,296,64) err 2.5e-03 us 31.64
+BEST rows=64 dual=1 (0, 0, 0, 64) 24.58 us vs default 24.58
+RIG_DONE
+CFG (8, 4, 512) (16, 4, 296) 8192
+
+<frozen importlib._bootstrap>:488
+  <frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyObject has no __module__ attribute
+
+test_glm_loop_attention.py::TestGlmLoopAttention::test_dep_split_workspace_and_graph_replay
+  /opt/sglang/lib/python3.12/site-packages/triton/knobs.py:504: UserWarning: TRITON_DEFAULT_FP_FUSION is unset: defaulting to FP fusion ENABLED for backward compatibility in Triton 3.9. The default will change to DISABLED in Triton 3.10; set TRITON_DEFAULT_FP_FUSION=1 to keep fusion enabled or =0 to adopt the new default early and silence this warning.
+    warn_once(FP_FUSION_DEFAULT_WARNING)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+SUBFAILED(route='flashmla_sparse') ../nfs_home/glm5-lcd/test_glm_loop_attention.py::TestGlmLoopAttention::test_row_chunked_prefill_keeps_the_single_call_bits
+SUBFAILED(route='trtllm') ../nfs_home/glm5-lcd/test_glm_loop_attention.py::TestGlmLoopAttention::test_row_chunked_prefill_keeps_the_single_call_bits
+!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 2 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!
+2 failed, 8 passed, 20 warnings, 27 subtests passed in 69.06s (0:01:09)
+sys:1: DeprecationWarning: builtin type swigvarlink has no __module__ attribute
+JOB_DONE

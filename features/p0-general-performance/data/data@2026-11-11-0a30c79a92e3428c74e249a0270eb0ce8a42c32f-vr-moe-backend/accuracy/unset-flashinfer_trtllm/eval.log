@@ -1,0 +1,11 @@
+=== GSM8K acc-unset 21:10:00
+/nfs_home/glm5-lcd/src-stack/python/sglang/test/few_shot_gsm8k.py:184: DeprecationWarning: sglang.test.few_shot_gsm8k is deprecated. Use `sgl-eval run gsm8k` or sglang.test.sgl_eval_utils.run_sgl_eval instead.
+  run_eval(args)
+Accuracy: 0.931
+Invalid: 0.000
+Latency: 153.897 s
+Output throughput: 867.835 token/s
+=== ACCEPT
+mean accept len 2.85342 over 38 lines
+      2 moe_runner_backend': 'flashinfer_trtllm'
+EVAL_DONE

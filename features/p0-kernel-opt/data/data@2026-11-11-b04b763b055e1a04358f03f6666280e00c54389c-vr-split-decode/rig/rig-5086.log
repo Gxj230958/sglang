@@ -1,0 +1,38 @@
+H=64 rows=2 dual=0 cfg=(0,0,0,64) err 3.1e-03 us 9.08
+H=64 rows=2 dual=0 cfg=(32,8,148,64) err 3.2e-03 us 8.51
+H=64 rows=2 dual=0 cfg=(32,4,296,64) err 3.3e-03 us 7.90
+H=64 rows=2 dual=0 cfg=(16,4,296,64) err 2.9e-03 us 9.03
+H=64 rows=2 dual=0 cfg=(32,4,512,64) err 3.2e-03 us 7.94
+BEST H=64 rows=2 dual=0 (32, 4, 296, 64) 7.90 us vs default 9.08
+H=64 rows=2 dual=1 cfg=(0,0,0,64) err 2.4e-03 us 9.07
+H=64 rows=2 dual=1 cfg=(32,8,148,64) err 3.0e-03 us 8.62
+H=64 rows=2 dual=1 cfg=(32,4,296,64) err 3.0e-03 us 8.08
+H=64 rows=2 dual=1 cfg=(16,4,296,64) err 3.1e-03 us 9.08
+H=64 rows=2 dual=1 cfg=(32,4,512,64) err 3.4e-03 us 8.15
+BEST H=64 rows=2 dual=1 (32, 4, 296, 64) 8.08 us vs default 9.07
+H=64 rows=3 dual=0 cfg=(0,0,0,64) err 2.9e-03 us 8.40
+H=64 rows=3 dual=0 cfg=(32,8,148,64) err 2.6e-03 us 10.98
+H=64 rows=3 dual=0 cfg=(32,4,296,64) err 3.2e-03 us 8.26
+H=64 rows=3 dual=0 cfg=(16,4,296,64) err 3.1e-03 us 8.45
+H=64 rows=3 dual=0 cfg=(32,4,512,64) err 2.5e-03 us 8.24
+BEST H=64 rows=3 dual=0 (32, 4, 512, 64) 8.24 us vs default 8.40
+H=64 rows=3 dual=1 cfg=(0,0,0,64) err 3.1e-03 us 8.50
+H=64 rows=3 dual=1 cfg=(32,8,148,64) err 2.6e-03 us 11.15
+H=64 rows=3 dual=1 cfg=(32,4,296,64) err 3.0e-03 us 8.57
+H=64 rows=3 dual=1 cfg=(16,4,296,64) err 3.0e-03 us 8.52
+H=64 rows=3 dual=1 cfg=(32,4,512,64) err 2.5e-03 us 8.60
+BEST H=64 rows=3 dual=1 (0, 0, 0, 64) 8.50 us vs default 8.50
+H=64 rows=12 dual=0 cfg=(0,0,0,64) err 2.5e-03 us 22.20
+H=64 rows=12 dual=0 cfg=(32,8,148,64) err 3.2e-03 us 31.58
+H=64 rows=12 dual=0 cfg=(32,4,296,64) err 3.3e-03 us 19.31
+H=64 rows=12 dual=0 cfg=(16,4,296,64) err 2.7e-03 us 22.20
+H=64 rows=12 dual=0 cfg=(32,4,512,64) err 3.0e-03 us 18.99
+BEST H=64 rows=12 dual=0 (32, 4, 512, 64) 18.99 us vs default 22.20
+H=64 rows=12 dual=1 cfg=(0,0,0,64) err 3.2e-03 us 22.42
+H=64 rows=12 dual=1 cfg=(32,8,148,64) err 2.2e-03 us 32.25
+H=64 rows=12 dual=1 cfg=(32,4,296,64) err 3.0e-03 us 21.23
+H=64 rows=12 dual=1 cfg=(16,4,296,64) err 2.8e-03 us 22.41
+H=64 rows=12 dual=1 cfg=(32,4,512,64) err 2.8e-03 us 19.80
+BEST H=64 rows=12 dual=1 (32, 4, 512, 64) 19.80 us vs default 22.42
+RIG_DONE
+JOB_DONE

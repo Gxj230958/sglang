@@ -1,0 +1,7 @@
+ARM_START arm=moe-triton nodes=vr-r38-cn[03,02] 19:01:42
+ARM_READY arm=moe-triton ready=1 19:16:24
+ARM_BENCH_RC 0 19:23:06
+srun: forcing job termination
+srun: Job step aborted: Waiting up to 122 seconds for job step to finish.
+[2026-11-11T19:23:12.077] error: *** STEP 5023.0 ON vr-r38-cn03 CANCELLED AT 2026-11-11T19:23:12 DUE to SIGNAL Killed ***
+JOB_DONE

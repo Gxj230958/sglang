@@ -1,0 +1,17 @@
+H=16 rows=64 dual=0 cfg=(0,0,0,64) err 2.8e-03 us 32.16
+H=16 rows=64 dual=0 cfg=(8,4,512,64) err 2.9e-03 us 34.27
+H=16 rows=64 dual=0 cfg=(16,4,296,64) err 3.0e-03 us 32.12
+H=16 rows=64 dual=0 cfg=(16,4,512,64) err 2.2e-03 us 32.37
+H=16 rows=64 dual=0 cfg=(16,8,512,64) err 2.8e-03 us 42.77
+H=16 rows=64 dual=0 cfg=(32,4,296,64) err 2.9e-03 us 46.03
+H=16 rows=64 dual=0 cfg=(32,8,296,64) err 2.8e-03 us 61.24
+H=16 rows=64 dual=0 cfg=(32,4,512,64) err 2.5e-03 us 43.23
+H=16 rows=64 dual=0 cfg=(32,8,512,64) err 2.6e-03 us 54.10
+H=16 rows=64 dual=0 cfg=(32,8,148,64) err 2.5e-03 us 59.79
+H=16 rows=64 dual=0 cfg=(16,4,424,64) err 2.4e-03 us 32.15
+H=16 rows=64 dual=0 cfg=(32,8,424,64) err 3.2e-03 us 61.22
+H=16 rows=64 dual=0 cfg=(8,4,296,64) err 2.8e-03 us 46.01
+H=16 rows=64 dual=0 cfg=(8,8,512,64) err 3.2e-03 us 48.17
+BEST H=16 rows=64 dual=0 (16, 4, 296, 64) 32.12 us vs default 32.16
+RIG_DONE
+JOB_DONE

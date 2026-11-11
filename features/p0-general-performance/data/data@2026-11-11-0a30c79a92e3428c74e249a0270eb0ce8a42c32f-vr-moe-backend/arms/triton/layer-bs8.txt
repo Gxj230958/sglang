@@ -1,0 +1,37 @@
+   15.8 us gap   -0.1 grid [32, 1, 8]     blk [128, 1, 1]  _split_kernel
+    2.0 us gap   -0.1 grid [32, 8, 4]     blk [128, 1, 1]  _reduce_kernel
+    2.9 us gap   -0.3 grid [64, 1, 1]     blk [256, 1, 1]  _sm107_tst_64x16_64x16_2x2_2cta_h_bz_TNT
+    2.1 us gap   -1.2 grid [16, 1, 1]     blk [256, 1, 1]  per_token_group_quant_flat_kernel
+    5.6 us gap   -0.2 grid [212, 1, 1]    blk [256, 1, 1]  sm100_fp8_fp4_gemm_1d1d_impl
+    6.2 us gap   -0.3 grid [32, 6, 1]     blk [128, 1, 1]  twoshotAllreduceKernel
+    7.5 us gap   -4.7 grid [32, 4, 1]     blk [192, 1, 1]  rmsNormLamport
+    8.6 us gap   -6.3 grid [128, 1, 1]    blk [256, 1, 1]  m107_tss_64x16_64x16_1x2_h_bz_splitK_TNT
+    2.9 us gap   -1.2 grid [8, 2, 1]      blk [32, 16, 1]  splitKreduce_kernel
+    3.6 us gap   -1.0 grid [32, 1, 1]     blk [32, 1, 1]   _router_triton_kernel
+    1.3 us gap    0.1 grid [424, 2, 1]    blk [512, 1, 1]  
+    2.6 us gap    0.1 grid [2, 1, 1]      blk [1024, 1, 1] void moe_align_block_size_kernel
+    1.2 us gap    0.1 grid [2, 1, 1]      blk [256, 1, 1]  void count_and_sort_expert_tokens_kernel
+    1.5 us gap   -0.3 grid [48, 1, 1]     blk [256, 1, 1]  per_token_group_quant_flat_kernel
+   61.2 us gap   -0.1 grid [1036, 1, 1]   blk [128, 1, 1]  fused_moe_kernel
+   25.1 us gap  -24.0 grid [18, 1, 1]     blk [256, 1, 1]  act_and_mul_kernel
+    1.4 us gap   -0.4 grid [18, 1, 1]     blk [256, 1, 1]  per_token_group_quant_flat_kernel
+   72.0 us gap   -0.2 grid [12432, 1, 1]  blk [128, 1, 1]  fused_moe_kernel
+    3.1 us gap   -0.7 grid [32, 3, 1]     blk [512, 1, 1]  _moe_sum_reduce_kernel
+    1.7 us gap   -0.1 grid [256, 1, 1]    blk [256, 1, 1]  memcpy32_post
+    4.7 us gap    0.4 grid [32, 6, 1]     blk [128, 1, 1]  twoshotAllreduceKernel
+    5.9 us gap   -2.5 grid [32, 4, 1]     blk [192, 1, 1]  rmsNormLamport
+    5.9 us gap   -4.8 grid [48, 1, 1]     blk [256, 1, 1]  per_token_group_quant_flat_kernel
+    7.9 us gap   -0.4 grid [212, 1, 1]    blk [256, 1, 1]  sm100_fp8_fp4_gemm_1d1d_impl
+    1.6 us gap    0.2 grid [32, 1, 1]     blk [64, 1, 1]   rmsnorm_kernel
+    1.5 us gap   -1.1 grid [32, 1, 1]     blk [32, 1, 1]   rmsnorm_kernel
+    1.7 us gap   -0.1 grid [16, 1, 1]     blk [256, 1, 1]  per_token_group_quant_flat_kernel
+    5.1 us gap   -0.4 grid [212, 1, 1]    blk [256, 1, 1]  sm100_fp8_fp4_gemm_1d1d_impl
+    2.6 us gap   -0.2 grid [128, 1, 1]    blk [256, 1, 1]  _sm107_tst_64x16_64x16_2x2_2cta_h_bz_TNT
+    2.1 us gap   -0.1 grid [32, 1, 1]     blk [128, 1, 1]  _triton_mrope_forward_fused
+    1.5 us gap   -0.4 grid [32, 1, 1]     blk [32, 1, 1]   set_mla_kv_buffer_kernel
+layer total us 218.9140625
+[112, 1, 1] 4 20
+[112, 1, 1] 6 90
+[212, 1, 1] 4 268
+[212, 1, 1] 6 841
+[212, 1, 1] 8 646
