@@ -1,0 +1,437 @@
+[
+ {
+  "file": "2026-11-12-1826-xinyuan-710bcb2a3e-window-slot-kv-fix-merged.md",
+  "source": "generated for this round",
+  "sha256": "c7b076cabbe1cfc2ac772d4fd525ccf53188511d3026aadd8981a4b28e056182"
+ },
+ {
+  "file": "ctl.sh",
+  "source": "/scratch/cc-swa/bin/ctl.sh",
+  "sha256": "a862edfdb47fae09c038d63469b6a2274998d90ed5c0399ae452158d5a49f3e7"
+ },
+ {
+  "file": "eval.sh",
+  "source": "/scratch/cc-swa/bin/eval.sh",
+  "sha256": "eeef3b0f5c186f6b03c474325cb24442bcd7122eb5c402e4ffef0f7bea0d66e3"
+ },
+ {
+  "file": "fp8ctl.sh",
+  "source": "/scratch/cc-swa/bin/fp8ctl.sh",
+  "sha256": "372cb9d7aec4de4e437dcc2ae334c5ef59ac73ffbeb155f67e543377dea3190b"
+ },
+ {
+  "file": "gate-void-flashinfer-0.7.1/eval/sgl_eval_gsm8k_20261112-183355/output-rs0.jsonl.gz",
+  "source": "/scratch/cc-swa/logs/gate42-failed-fi071/eval/sgl_eval_gsm8k_20261112-183355/output-rs0.jsonl",
+  "sha256": "555989f6808a5e02887da1d93128ab3aceb4aa90dd234426c414a535e304dfd2"
+ },
+ {
+  "file": "gate-void-flashinfer-0.7.1/gsm8k.log.gz",
+  "source": "/scratch/cc-swa/logs/gate42-failed-fi071/gsm8k.log",
+  "sha256": "e486c256f73bce6e7223a30c0de32b1ab762cb8681a037c74e13763539df6bbd"
+ },
+ {
+  "file": "gate-void-flashinfer-0.7.1/launch.sh",
+  "source": "/scratch/cc-swa/logs/gate42-failed-fi071/launch.sh",
+  "sha256": "5b006590de914e79d107b256c8f97da686745710470acdb56e61ff7b4411444a"
+ },
+ {
+  "file": "gate-void-flashinfer-0.7.1/serve.log.gz",
+  "source": "/scratch/cc-swa/logs/gate42-failed-fi071/serve.log",
+  "sha256": "62f8655eb41cca3af5ab1c518037f5b1ebda01b657c5dbe4fb136270e5dd35b2"
+ },
+ {
+  "file": "gate-void-flashinfer-0.7.1/wait.log",
+  "source": "/scratch/cc-swa/logs/gate42-failed-fi071/wait.log",
+  "sha256": "3dfa3fb239f56c778a1e9b33eb31328349edd155a95806dac4378904e88527e5"
+ },
+ {
+  "file": "gate/eval.status",
+  "source": "/scratch/cc-swa/logs/gate42/eval.status",
+  "sha256": "c90f99905d03d01981e12c71b5a913f9198f3d7841e9c1173eb5081af1ed2d7c"
+ },
+ {
+  "file": "gate/eval/sgl_eval_gsm8k_20261112-185800/metrics.json",
+  "source": "/scratch/cc-swa/logs/gate42/eval/sgl_eval_gsm8k_20261112-185800/metrics.json",
+  "sha256": "37a1c1f0ee6605dacb39449d53b02f4a3cf2bc2545cceba7eaf1ec02b91a0231"
+ },
+ {
+  "file": "gate/eval/sgl_eval_gsm8k_20261112-185800/output-rs0.jsonl.gz",
+  "source": "/scratch/cc-swa/logs/gate42/eval/sgl_eval_gsm8k_20261112-185800/output-rs0.jsonl",
+  "sha256": "8af77d13c3469495903fa78c144edcec35979cb76a51029f63ead9b99cbd0949"
+ },
+ {
+  "file": "gate/gsm8k.log.gz",
+  "source": "/scratch/cc-swa/logs/gate42/gsm8k.log",
+  "sha256": "03029eb01f98044ff4ecb8111c7dc97cb35d7c408a928a431fd764f6a9d28b5c"
+ },
+ {
+  "file": "gate/launch.sh",
+  "source": "/scratch/cc-swa/logs/gate42/launch.sh",
+  "sha256": "08a1ebdb9c5d4b7e03a24f750c91b24a74c9f7837ba417367b52d7b5171983bb"
+ },
+ {
+  "file": "gate/serve.log.gz",
+  "source": "/scratch/cc-swa/logs/gate42/serve.log",
+  "sha256": "08b45fd3224d01330c4c7d1bbbf8fa0a588e0cee5464b2eae2264cff973fed98"
+ },
+ {
+  "file": "gate/wait.log",
+  "source": "/scratch/cc-swa/logs/gate42/wait.log",
+  "sha256": "3dfa3fb239f56c778a1e9b33eb31328349edd155a95806dac4378904e88527e5"
+ },
+ {
+  "file": "midfork.py",
+  "source": "/scratch/cc-swa/bin/midfork.py",
+  "sha256": "57a55e5696f9ab61f23023443c9964b707362b9e1566a6400affd27712e4ba35"
+ },
+ {
+  "file": "prefix-full-length/launch.sh",
+  "source": "/scratch/cc-swa/logs/ctl-full/launch.sh",
+  "sha256": "396c0b3dc5442d478fc80b2e02feb48d9dee0b4d6d9555bbd9cc35bf88f01905"
+ },
+ {
+  "file": "prefix-full-length/midfork.json",
+  "source": "/scratch/cc-swa/logs/ctl-full/midfork.json",
+  "sha256": "1e7aa7bb97037c4b1578d9af8509c8a6fce9c75346f7d12c0806c7bf6025bdd1"
+ },
+ {
+  "file": "prefix-full-length/midfork.log",
+  "source": "/scratch/cc-swa/logs/ctl-full/midfork.log",
+  "sha256": "815e922aad370c55254bf52c08f4745adc9ef2aaf9d67108db621db7a88d9262"
+ },
+ {
+  "file": "prefix-full-length/serve.log.gz",
+  "source": "/scratch/cc-swa/logs/ctl-full/serve.log",
+  "sha256": "57b841defb031262b273ba0cb77c8a5182bd4b6955d43143ece373430c8e1422"
+ },
+ {
+  "file": "prefix-full-length/stress2.jsonl",
+  "source": "/scratch/cc-swa/logs/ctl-full/stress2.jsonl",
+  "sha256": "9f3715c54edd279f11290e26b68d3f8d810c2827441bc6dde14bd395824296b9"
+ },
+ {
+  "file": "prefix-full-length/stress2.log",
+  "source": "/scratch/cc-swa/logs/ctl-full/stress2.log",
+  "sha256": "e97445f5e04b7952a068f8ad9deab1d45361b39e33e40e4d8f559bd498839020"
+ },
+ {
+  "file": "prefix-full-length/stress3-c8.jsonl",
+  "source": "/scratch/cc-swa/logs/ctl-full/stress3-c8.jsonl",
+  "sha256": "b277406c71999412e57bf944a26850b0f89855996aa2dbf4d46f009e9d1a6d27"
+ },
+ {
+  "file": "prefix-full-length/stress3-c8.log",
+  "source": "/scratch/cc-swa/logs/ctl-full/stress3-c8.log",
+  "sha256": "367c623613daf4448673e9e20dcaa6bac746df25e06d9a748189eec0c51b5aff"
+ },
+ {
+  "file": "prefix-full-length/stress4.jsonl",
+  "source": "/scratch/cc-swa/logs/ctl-full/stress4.jsonl",
+  "sha256": "b897f876249cb811254ecf607336068a755ce6c39598bb5fe4d74d04f7b57fc0"
+ },
+ {
+  "file": "prefix-full-length/stress4.log",
+  "source": "/scratch/cc-swa/logs/ctl-full/stress4.log",
+  "sha256": "2700f0e8d9607b49532814e99929fcd0c4f272b0f3d6d1a5f747a01e6dcabe2f"
+ },
+ {
+  "file": "prefix-full-length/wait.log",
+  "source": "/scratch/cc-swa/logs/ctl-full/wait.log",
+  "sha256": "3dfa3fb239f56c778a1e9b33eb31328349edd155a95806dac4378904e88527e5"
+ },
+ {
+  "file": "prefix-window/launch.sh",
+  "source": "/scratch/cc-swa/logs/ctl-swa/launch.sh",
+  "sha256": "672c234ff2260c73c07286387b4527da033d508eb20b249f495eb20065dd9b70"
+ },
+ {
+  "file": "prefix-window/midfork.json",
+  "source": "/scratch/cc-swa/logs/ctl-swa/midfork.json",
+  "sha256": "bc3f98e6867af6e0078608581bcabb87b409acccc55f506fa4c05f15c79b21be"
+ },
+ {
+  "file": "prefix-window/midfork.log",
+  "source": "/scratch/cc-swa/logs/ctl-swa/midfork.log",
+  "sha256": "dd83df6f5452e07d1c1410f0f8e9cf488f7012fd15b4c3ea94150ea329d965f3"
+ },
+ {
+  "file": "prefix-window/serve.log.gz",
+  "source": "/scratch/cc-swa/logs/ctl-swa/serve.log",
+  "sha256": "507b000bc09c51637b44ba778f59affde8d972ad4b1f97236e06cab87b0ad57b"
+ },
+ {
+  "file": "prefix-window/stress2.jsonl",
+  "source": "/scratch/cc-swa/logs/ctl-swa/stress2.jsonl",
+  "sha256": "ed4d515ba276149e9eaf0e43be3687a4bf37cb6a734515739f718c7bad6d6ed7"
+ },
+ {
+  "file": "prefix-window/stress2.log",
+  "source": "/scratch/cc-swa/logs/ctl-swa/stress2.log",
+  "sha256": "1295e220e48d633bfe74dd5e21537b0a33e1e4dc3bed251566f62ce8f7ec2871"
+ },
+ {
+  "file": "prefix-window/stress3-c1.jsonl",
+  "source": "/scratch/cc-swa/logs/ctl-swa/stress3-c1.jsonl",
+  "sha256": "2f4a1afd218a0f6134e9a8a7abc272235481179bfda51ba388ec1a27efb28daa"
+ },
+ {
+  "file": "prefix-window/stress3-c1.log",
+  "source": "/scratch/cc-swa/logs/ctl-swa/stress3-c1.log",
+  "sha256": "d34694cfdd15699cf2938b6d9d872a248059f287a31ddacb96712db1df78415a"
+ },
+ {
+  "file": "prefix-window/stress4.jsonl",
+  "source": "/scratch/cc-swa/logs/ctl-swa/stress4.jsonl",
+  "sha256": "a8647323c84e1188ed3ac9e756a6c136d1918c0e4e447bde435fa1f9537fa717"
+ },
+ {
+  "file": "prefix-window/stress4.log",
+  "source": "/scratch/cc-swa/logs/ctl-swa/stress4.log",
+  "sha256": "b76b6d1147cbe55da9754d31509f49a0afef9bbd50effab12cc4c42aed2b7560"
+ },
+ {
+  "file": "prefix-window/wait.log",
+  "source": "/scratch/cc-swa/logs/ctl-swa/wait.log",
+  "sha256": "3dfa3fb239f56c778a1e9b33eb31328349edd155a95806dac4378904e88527e5"
+ },
+ {
+  "file": "probe.py",
+  "source": "/scratch/cc-swa/bin/probe.py",
+  "sha256": "c9574ace555b108fa74ab4b5e4703d4f495a0e85784fa760b63a1f30103a5ba9"
+ },
+ {
+  "file": "repro.md",
+  "source": "generated for this round",
+  "sha256": "cf3e17cbcdfc3562fbea00e235a5cb6b0661cde590bdfa911d1f48cabab7ff9c"
+ },
+ {
+  "file": "serve.sh",
+  "source": "/scratch/cc-swa/bin/serve.sh",
+  "sha256": "a993b9cb4622ffafe9794ff819039a95cc30d11933269bfa6c32128579f53be8"
+ },
+ {
+  "file": "stress.py",
+  "source": "/scratch/cc-swa/bin/stress.py",
+  "sha256": "10c5bcab28f4e4cd514384d84b1c94d889bb5981515bbf0f0cec90cc3ed31db4"
+ },
+ {
+  "file": "summary.json",
+  "source": "generated for this round",
+  "sha256": "08dc7d2d3532dc92303634bc82395f3ff78f1b4b39b5f5d67145ac3783b19e8b"
+ },
+ {
+  "file": "trtllm-bf16/eval.status",
+  "source": "/scratch/cc-swa/logs/trt-bf16/eval.status",
+  "sha256": "c90f99905d03d01981e12c71b5a913f9198f3d7841e9c1173eb5081af1ed2d7c"
+ },
+ {
+  "file": "trtllm-bf16/eval/sgl_eval_gsm8k_20261112-211228/metrics.json",
+  "source": "/scratch/cc-swa/logs/trt-bf16/eval/sgl_eval_gsm8k_20261112-211228/metrics.json",
+  "sha256": "0549e805ee7343d5b02bcd30c5c5cd96f1172d8eb07c7be478920196537a2383"
+ },
+ {
+  "file": "trtllm-bf16/eval/sgl_eval_gsm8k_20261112-211228/output-rs0.jsonl.gz",
+  "source": "/scratch/cc-swa/logs/trt-bf16/eval/sgl_eval_gsm8k_20261112-211228/output-rs0.jsonl",
+  "sha256": "90ad9ceacfddad8041f59de36ed7d14cbacf1d8a3dae3b385f8cc3394ec34cd1"
+ },
+ {
+  "file": "trtllm-bf16/gsm8k.log.gz",
+  "source": "/scratch/cc-swa/logs/trt-bf16/gsm8k.log",
+  "sha256": "fce5d696a03119ac13539f44fdfa6d49dac4503ce5cb3a4ed1d74b0f33d8d8ea"
+ },
+ {
+  "file": "trtllm-bf16/launch.sh",
+  "source": "/scratch/cc-swa/logs/trt-bf16/launch.sh",
+  "sha256": "f89b5242256805efe102d476eefa0f69a28d8d7b267a10eef9e2e41ac7f8eef3"
+ },
+ {
+  "file": "trtllm-bf16/midfork.json",
+  "source": "/scratch/cc-swa/logs/trt-bf16/midfork.json",
+  "sha256": "bc3f98e6867af6e0078608581bcabb87b409acccc55f506fa4c05f15c79b21be"
+ },
+ {
+  "file": "trtllm-bf16/midfork.log",
+  "source": "/scratch/cc-swa/logs/trt-bf16/midfork.log",
+  "sha256": "7187c0a340ddc758eebd8367008bf6197906296db14b9a99fe3481396c43bea9"
+ },
+ {
+  "file": "trtllm-bf16/probe.json",
+  "source": "/scratch/cc-swa/logs/trt-bf16/probe.json",
+  "sha256": "871a48271312b6f34ff85e400355d8487efcb93b405c6a6aa30e717f8c42bf32"
+ },
+ {
+  "file": "trtllm-bf16/probe.log",
+  "source": "/scratch/cc-swa/logs/trt-bf16/probe.log",
+  "sha256": "57121cb03b7b2fa64e7b49a46f69abf487136ce5d535884d39e3bb42f34f0434"
+ },
+ {
+  "file": "trtllm-bf16/serve.log.gz",
+  "source": "/scratch/cc-swa/logs/trt-bf16/serve.log",
+  "sha256": "75c5c707b2c56401cba9e96b4ec7c2abaf2af9c0a4778cdf30d157ff566417c8"
+ },
+ {
+  "file": "trtllm-bf16/wait.log",
+  "source": "/scratch/cc-swa/logs/trt-bf16/wait.log",
+  "sha256": "3dfa3fb239f56c778a1e9b33eb31328349edd155a95806dac4378904e88527e5"
+ },
+ {
+  "file": "trtllm-fp8-full-length-stress/ctl.status",
+  "source": "/scratch/cc-swa/logs/fp8-full/ctl.status",
+  "sha256": "943f13c0d320b257c0a2cf98128eb0d6478699855228299799f85e921ca49c93"
+ },
+ {
+  "file": "trtllm-fp8-full-length-stress/launch.sh",
+  "source": "/scratch/cc-swa/logs/fp8-full/launch.sh",
+  "sha256": "e3cffd464d44c6090b5d0e92cc34baeedcb701d120455da65d670666102728f7"
+ },
+ {
+  "file": "trtllm-fp8-full-length-stress/probe.json",
+  "source": "/scratch/cc-swa/logs/fp8-full/probe.json",
+  "sha256": "fbd94ac9870ffcaf6a599bc0a56957543cbbfcd8f8b9ec0e635d110c614bb3ff"
+ },
+ {
+  "file": "trtllm-fp8-full-length-stress/probe.log",
+  "source": "/scratch/cc-swa/logs/fp8-full/probe.log",
+  "sha256": "e6cd1a35984bfb8bb426732f8af22ec3e6a8c8d585ca2d271a2e63f344ca6a73"
+ },
+ {
+  "file": "trtllm-fp8-full-length-stress/serve.log.gz",
+  "source": "/scratch/cc-swa/logs/fp8-full/serve.log",
+  "sha256": "452dd451a5b9511512369914c5dd3bcb9656c3a4dc2990d3f9b4ab9c4664b5a9"
+ },
+ {
+  "file": "trtllm-fp8-full-length-stress/stress-c1.jsonl",
+  "source": "/scratch/cc-swa/logs/fp8-full/stress-c1.jsonl",
+  "sha256": "609bbf94c612e061fbc6a47feb7c1fc25c5db74fb73359f357115dc3256dd9d5"
+ },
+ {
+  "file": "trtllm-fp8-full-length-stress/stress-c1.log",
+  "source": "/scratch/cc-swa/logs/fp8-full/stress-c1.log",
+  "sha256": "6375c8a5ce30fb70415ab6f59e4034e66d2fa3492f3facc034fb178166c8c488"
+ },
+ {
+  "file": "trtllm-fp8-full-length-stress/stress-c8.jsonl",
+  "source": "/scratch/cc-swa/logs/fp8-full/stress-c8.jsonl",
+  "sha256": "f1b9a371010ce11b83da5d8671ffcd4d7e51ec97dbbdf6b19f305747be1bfde2"
+ },
+ {
+  "file": "trtllm-fp8-full-length-stress/stress-c8.log",
+  "source": "/scratch/cc-swa/logs/fp8-full/stress-c8.log",
+  "sha256": "dc658a5728aa878acf31a7fc31a5ead374b38145bca9f6a306549723f759de64"
+ },
+ {
+  "file": "trtllm-fp8-full-length-stress/wait.log",
+  "source": "/scratch/cc-swa/logs/fp8-full/wait.log",
+  "sha256": "3dfa3fb239f56c778a1e9b33eb31328349edd155a95806dac4378904e88527e5"
+ },
+ {
+  "file": "trtllm-fp8-window-stress/ctl.status",
+  "source": "/scratch/cc-swa/logs/fp8-swa/ctl.status",
+  "sha256": "943f13c0d320b257c0a2cf98128eb0d6478699855228299799f85e921ca49c93"
+ },
+ {
+  "file": "trtllm-fp8-window-stress/launch.sh",
+  "source": "/scratch/cc-swa/logs/fp8-swa/launch.sh",
+  "sha256": "2f7f2702916b8c31817eaa3650eefd1bc4600866e9e734a9d99c2cfc74fb166e"
+ },
+ {
+  "file": "trtllm-fp8-window-stress/probe.json",
+  "source": "/scratch/cc-swa/logs/fp8-swa/probe.json",
+  "sha256": "89305bc69c61ae128688cc68dfcb600e2f00534d94086e7701a7f9b4eac1f544"
+ },
+ {
+  "file": "trtllm-fp8-window-stress/probe.log",
+  "source": "/scratch/cc-swa/logs/fp8-swa/probe.log",
+  "sha256": "2a84be32d8beccacadc64fbf400cdce42f88a0a69d9aed3d76515ad9e4d6ccc8"
+ },
+ {
+  "file": "trtllm-fp8-window-stress/serve.log.gz",
+  "source": "/scratch/cc-swa/logs/fp8-swa/serve.log",
+  "sha256": "8eae36328d29ed1d9b483dba44078b415853833205d4ec6eae401340ffc59453"
+ },
+ {
+  "file": "trtllm-fp8-window-stress/stress-c1.jsonl",
+  "source": "/scratch/cc-swa/logs/fp8-swa/stress-c1.jsonl",
+  "sha256": "6365f21264b46058762ed152ceaaa93ed2e94cd108fd38fed9f3473fdb5c39bf"
+ },
+ {
+  "file": "trtllm-fp8-window-stress/stress-c1.log",
+  "source": "/scratch/cc-swa/logs/fp8-swa/stress-c1.log",
+  "sha256": "1170f1a3a1b3f17a5399f3d5dec42d3847d9c172338408e22bc6d0c868c3af20"
+ },
+ {
+  "file": "trtllm-fp8-window-stress/stress-c8.jsonl",
+  "source": "/scratch/cc-swa/logs/fp8-swa/stress-c8.jsonl",
+  "sha256": "5c6e40d0c0d3fb677860ebbf5e9a7c19d9e719fffafd8bda30250fc0a468bffd"
+ },
+ {
+  "file": "trtllm-fp8-window-stress/stress-c8.log",
+  "source": "/scratch/cc-swa/logs/fp8-swa/stress-c8.log",
+  "sha256": "acb72768433fcaa0614b3ec038e963b327d64494895c1e66238422c169332e9d"
+ },
+ {
+  "file": "trtllm-fp8-window-stress/wait.log",
+  "source": "/scratch/cc-swa/logs/fp8-swa/wait.log",
+  "sha256": "3dfa3fb239f56c778a1e9b33eb31328349edd155a95806dac4378904e88527e5"
+ },
+ {
+  "file": "trtllm-fp8/eval.status",
+  "source": "/scratch/cc-swa/logs/trt-fp8/eval.status",
+  "sha256": "c90f99905d03d01981e12c71b5a913f9198f3d7841e9c1173eb5081af1ed2d7c"
+ },
+ {
+  "file": "trtllm-fp8/eval/sgl_eval_gsm8k_20261112-213428/metrics.json",
+  "source": "/scratch/cc-swa/logs/trt-fp8/eval/sgl_eval_gsm8k_20261112-213428/metrics.json",
+  "sha256": "82d33c9c9ee7049ba3e0f963209e052791e14157203e8422158dd237ddf873d3"
+ },
+ {
+  "file": "trtllm-fp8/eval/sgl_eval_gsm8k_20261112-213428/output-rs0.jsonl.gz",
+  "source": "/scratch/cc-swa/logs/trt-fp8/eval/sgl_eval_gsm8k_20261112-213428/output-rs0.jsonl",
+  "sha256": "44edaa995baba0a66f9e8a37f851ee62050fb58d4dd6ef92efbd1717beec5762"
+ },
+ {
+  "file": "trtllm-fp8/gsm8k.log.gz",
+  "source": "/scratch/cc-swa/logs/trt-fp8/gsm8k.log",
+  "sha256": "8ead85fc28af1aaed88b7d6b3c425e41d994a408016db56dbcdd811ff5e81f85"
+ },
+ {
+  "file": "trtllm-fp8/launch.sh",
+  "source": "/scratch/cc-swa/logs/trt-fp8/launch.sh",
+  "sha256": "2f7f2702916b8c31817eaa3650eefd1bc4600866e9e734a9d99c2cfc74fb166e"
+ },
+ {
+  "file": "trtllm-fp8/midfork.json",
+  "source": "/scratch/cc-swa/logs/trt-fp8/midfork.json",
+  "sha256": "bc3f98e6867af6e0078608581bcabb87b409acccc55f506fa4c05f15c79b21be"
+ },
+ {
+  "file": "trtllm-fp8/midfork.log",
+  "source": "/scratch/cc-swa/logs/trt-fp8/midfork.log",
+  "sha256": "7187c0a340ddc758eebd8367008bf6197906296db14b9a99fe3481396c43bea9"
+ },
+ {
+  "file": "trtllm-fp8/probe.json",
+  "source": "/scratch/cc-swa/logs/trt-fp8/probe.json",
+  "sha256": "6432edff31e743aae0d8fc685d4a324b9d0c4327c3b8858ded043f7786ba4b89"
+ },
+ {
+  "file": "trtllm-fp8/probe.log",
+  "source": "/scratch/cc-swa/logs/trt-fp8/probe.log",
+  "sha256": "913b197663a780ffb8e92b2428cbe2840d0c3982258693912232c3b56761f6c3"
+ },
+ {
+  "file": "trtllm-fp8/serve.log.gz",
+  "source": "/scratch/cc-swa/logs/trt-fp8/serve.log",
+  "sha256": "ab0770c1bed8ea13a1f1d0c8bf29dcf5d1de177f22b467f4b400aecafa2379d1"
+ },
+ {
+  "file": "trtllm-fp8/wait.log",
+  "source": "/scratch/cc-swa/logs/trt-fp8/wait.log",
+  "sha256": "3dfa3fb239f56c778a1e9b33eb31328349edd155a95806dac4378904e88527e5"
+ },
+ {
+  "file": "wait.sh",
+  "source": "/scratch/cc-swa/bin/wait.sh",
+  "sha256": "c9799b19dcbcccf516de3d466f87dd084f51deccbca571521ec29b80e3c39c00"
+ }
+]

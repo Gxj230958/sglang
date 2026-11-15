@@ -1,0 +1,9 @@
+dep8-bf16 READY 08:46:03
+dep8-bf16 off rc=0 08:48:38
+dep8-bf16 think rc=0 08:50:11
+tp8-bf16 READY 08:55:28
+tp8-bf16 off rc=0 08:57:48
+tp8-bf16 think rc=0 09:00:10
+dep8-fp8-think READY 09:02:56
+dep8-fp8-think think rc=0 09:05:19
+DONE

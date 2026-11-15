@@ -1,0 +1,122 @@
+[
+ {
+  "file": "2026-11-14-2230-xinyuan-8d9f8c2134-window-hicache-fix-landed-on-branch.md",
+  "source": "generated for this round",
+  "sha256": "0e659763f186aca87444613a34048b5cc50b402abfd3ab768d74a9b15ce048f8"
+ },
+ {
+  "file": "hc.sh",
+  "source": "/scratch/cc-regate/hc.sh",
+  "sha256": "686e545d6a4790b0d04e49bcfa57b7079b7e50edbc54e9eda47444c5b9ce1496"
+ },
+ {
+  "file": "hicache.py",
+  "source": "/scratch/cc-swa/bin/hicache.py",
+  "sha256": "f0ea440ab6cb78bfc242f930910b4edcbe94784a949ab82eca4d66514c1a76b7"
+ },
+ {
+  "file": "l2/eval/sgl_eval_gsm8k_20261113-104020/metrics.json",
+  "source": "/scratch/cc-regate/logs/hc-swa/eval/sgl_eval_gsm8k_20261113-104020/metrics.json",
+  "sha256": "fb0663294e4b6582a5355342542cde3eb361d42ae33b7d7bfaaeeb3b02669181"
+ },
+ {
+  "file": "l2/eval/sgl_eval_gsm8k_20261113-104020/output-rs0.jsonl.gz",
+  "source": "/scratch/cc-regate/logs/hc-swa/eval/sgl_eval_gsm8k_20261113-104020/output-rs0.jsonl",
+  "sha256": "2363468f91c5ac87cccf2d410be13a6db14d2be7fca9d08c0ca36c9f70f36e11"
+ },
+ {
+  "file": "l2/fill2.log",
+  "source": "/scratch/cc-regate/logs/hc-swa/fill2.log",
+  "sha256": "942fb603cb23cab018241b8b685bd2419b668cfb358743654ade2c02a0e645c3"
+ },
+ {
+  "file": "l2/gsm8k.log.gz",
+  "source": "/scratch/cc-regate/logs/hc-swa/gsm8k.log",
+  "sha256": "b6cfd50a136390706eaf68645c2d5e911e9dad9c692514e4ea2c96f2d85b595c"
+ },
+ {
+  "file": "l2/launch.sh",
+  "source": "/scratch/cc-regate/logs/hc-swa/launch.sh",
+  "sha256": "71d7e5ce79b17e850be646ac60131ee23eedfe5e95ebe53c0b4293d7323aa912"
+ },
+ {
+  "file": "l2/midfork-a.json",
+  "source": "/scratch/cc-regate/logs/hc-swa/midfork-a.json",
+  "sha256": "dda783a1326aa0659862313f8ec2f0931d273079dc270987173ee915e22019f4"
+ },
+ {
+  "file": "l2/midfork-a.log",
+  "source": "/scratch/cc-regate/logs/hc-swa/midfork-a.log",
+  "sha256": "8aee76db3a0731f426bce9079e70c1aec79e66ad5819e388c7d485debf1bad32"
+ },
+ {
+  "file": "l2/midfork-b.json",
+  "source": "/scratch/cc-regate/logs/hc-swa/midfork-b.json",
+  "sha256": "619cfee9a998386675b2d84f4dc23121e86e0aaa6d3617616fcb83ccb294345b"
+ },
+ {
+  "file": "l2/midfork-b.log",
+  "source": "/scratch/cc-regate/logs/hc-swa/midfork-b.log",
+  "sha256": "a747ea20d0f186df40b585b27a5c33ea7670609a6f48297fc1af1ccb6d7531b1"
+ },
+ {
+  "file": "l2/prefetch-after-b.txt",
+  "source": "/scratch/cc-regate/logs/hc-swa/prefetch-after-b.txt",
+  "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+ },
+ {
+  "file": "l2/prefetch-before-b.txt",
+  "source": "/scratch/cc-regate/logs/hc-swa/prefetch-before-b.txt",
+  "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+ },
+ {
+  "file": "l2/serve.log.gz",
+  "source": "/scratch/cc-regate/logs/hc-swa/serve.log",
+  "sha256": "34a22239032a55f84c7014e1c89918d25850221d8b524b0ddfcf95b73eda185d"
+ },
+ {
+  "file": "l2/status",
+  "source": "/scratch/cc-regate/logs/hc-swa/status",
+  "sha256": "c0a5fe0752945cf3a28bc2381df4b3d0475ed26d29639a2472e9dc24ce26f85a"
+ },
+ {
+  "file": "l3-restart/launch.sh",
+  "source": "/scratch/cc-regate/logs/hc-l3/launch.sh",
+  "sha256": "71d7e5ce79b17e850be646ac60131ee23eedfe5e95ebe53c0b4293d7323aa912"
+ },
+ {
+  "file": "l3-restart/midfork-c.json",
+  "source": "/scratch/cc-regate/logs/hc-l3/midfork-c.json",
+  "sha256": "619cfee9a998386675b2d84f4dc23121e86e0aaa6d3617616fcb83ccb294345b"
+ },
+ {
+  "file": "l3-restart/midfork-c.log",
+  "source": "/scratch/cc-regate/logs/hc-l3/midfork-c.log",
+  "sha256": "a747ea20d0f186df40b585b27a5c33ea7670609a6f48297fc1af1ccb6d7531b1"
+ },
+ {
+  "file": "l3-restart/serve.log.gz",
+  "source": "/scratch/cc-regate/logs/hc-l3/serve.log",
+  "sha256": "20a769e79289c3faf8cc2c5f64f8f16f20b83d29791ba24ae46fb879f3cdcc77"
+ },
+ {
+  "file": "lib.sh",
+  "source": "/scratch/cc-regate/lib.sh",
+  "sha256": "8bb874d512be1a6684414fe5a99d13f3a5272348dbc9402ce7f69da498e66f29"
+ },
+ {
+  "file": "midfork.py",
+  "source": "/scratch/cc-swa/bin/midfork.py",
+  "sha256": "57a55e5696f9ab61f23023443c9964b707362b9e1566a6400affd27712e4ba35"
+ },
+ {
+  "file": "repro.md",
+  "source": "generated for this round",
+  "sha256": "486c437ca040cef5feabe04648ec52babc58350a9aa0d5a2859adcba70d5b5a8"
+ },
+ {
+  "file": "summary.json",
+  "source": "generated for this round",
+  "sha256": "6a1b7a3ed58caa36964dd98e18081b9608f13db879bf2a96fb66566c1a150f21"
+ }
+]

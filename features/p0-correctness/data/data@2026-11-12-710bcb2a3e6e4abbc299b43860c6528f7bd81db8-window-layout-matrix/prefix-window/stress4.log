@@ -1,0 +1,2 @@
+{"9000": {"total": 300, "stop": 300, "correct": 300, "error": 0}, "20000": {"total": 300, "stop": 300, "correct": 299, "error": 0}}
+BAD {"n": 20000, "k": 128, "prompt_tokens": 20717, "cached": 0, "finish": "stop", "ntok": 6, "correct": false, "tokens": ["</think>", "66", "1", "0", "23", "<|user|>"]}

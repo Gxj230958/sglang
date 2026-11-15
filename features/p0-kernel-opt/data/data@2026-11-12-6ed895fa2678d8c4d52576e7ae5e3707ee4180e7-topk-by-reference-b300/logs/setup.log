@@ -1,0 +1,24 @@
+base bd3eb4a1b0e459ea
+full 7ca9050153c7030d
+clean 9960a74165cb6235
+verify ded9923266ebf80b
+Files src-base/python/sglang/srt/models/glm_loop.py and src-clean/python/sglang/srt/models/glm_loop.py differ
+Files src-base/python/sglang/srt/layers/attention/dsa/dsa_loop.py and src-full/python/sglang/srt/layers/attention/dsa/dsa_loop.py differ
+Files src-base/python/sglang/srt/mem_cache/kv_cache_configurator.py and src-full/python/sglang/srt/mem_cache/kv_cache_configurator.py differ
+Files src-base/python/sglang/srt/models/glm_loop.py and src-full/python/sglang/srt/models/glm_loop.py differ
+Files src-base/python/sglang/srt/models/glm_loop.py and src-verify/python/sglang/srt/models/glm_loop.py differ
+ERROR: Could not find a version that satisfies the requirement flashinfer-cubin==0.7.3 (from versions: 0.4.0, 0.4.1, 0.5.0, 0.5.1, 0.5.2, 0.5.3, 0.6.0, 0.6.1, 0.6.2, 0.6.3, 0.6.4, 0.6.5, 0.6.6, 0.6.7, 0.6.7.post1, 0.6.7.post2, 0.6.7.post3, 0.6.8rc1, 0.6.8, 0.6.8.post1, 0.6.9rc1, 0.6.9, 0.6.10rc1, 0.6.10, 0.6.10.post1, 0.6.11rc1, 0.6.11, 0.6.11.post1, 0.6.11.post2, 0.6.11.post3, 0.6.12rc1, 0.6.12rc2, 0.6.12rc3, 0.6.12, 0.6.13rc1, 0.6.13rc2, 0.6.13)
+ERROR: No matching distribution found for flashinfer-cubin==0.7.3
+Installing collected packages: flashinfer-jit-cache
+Successfully installed flashinfer-jit-cache-0.7.3+cu130
+flashinfer_jit_cache flashinfer_jit_cache-0.7.3+cu130.dist-info sitecustomize.py 
+Ignoring incompatible flashinfer-jit-cache package (kernels will be JIT-compiled instead): flashinfer-jit-cache version (0.7.3+cu130) does not match flashinfer version (0.7.2). Run `flashinfer download-kernels` to install matching kernel wheels, or set FLASHINFER_DISABLE_VERSION_CHECK=1 to use the installed version anyway.
+flashinfer 0.7.2 /opt/sglang/lib/python3.12/site-packages/flashinfer/__init__.py
+flashinfer-python 0.7.2
+flashinfer-cubin 0.7.2
+flashinfer-jit-cache 0.7.3+cu130
+sgl-deep-gemm 0.2.3.post2
+sgl-flash-mla 1.0.0
+deep_gemm /opt/sglang/lib/python3.12/site-packages/deep_gemm/__init__.py
+flash_mla /opt/sglang/lib/python3.12/site-packages/flash_mla/__init__.py
+sglang /scratch/cc-pr43/src-base/python/sglang/__init__.py

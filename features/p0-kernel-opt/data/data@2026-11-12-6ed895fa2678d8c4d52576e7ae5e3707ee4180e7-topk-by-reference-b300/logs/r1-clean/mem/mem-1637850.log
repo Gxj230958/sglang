@@ -1,0 +1,17 @@
+21:04:49 epoch=boot dev=0 alloc_mib=0 max_alloc_mib=0 max_reserved_mib=0 free_mib=268485
+21:09:00 epoch=bench-serve dev=0 alloc_mib=0 max_alloc_mib=0 max_reserved_mib=0 free_mib=63224
+21:09:12 epoch=bench-decode dev=0 alloc_mib=0 max_alloc_mib=0 max_reserved_mib=0 free_mib=58221
+21:09:21 epoch=lp-8192-0 dev=0 alloc_mib=0 max_alloc_mib=0 max_reserved_mib=0 free_mib=58341
+21:09:36 epoch=lp-8192-1 dev=0 alloc_mib=0 max_alloc_mib=0 max_reserved_mib=0 free_mib=58341
+21:09:51 epoch=lp-8192-2 dev=0 alloc_mib=0 max_alloc_mib=0 max_reserved_mib=0 free_mib=58341
+21:10:03 epoch=lp-8192-3 dev=0 alloc_mib=0 max_alloc_mib=0 max_reserved_mib=0 free_mib=58341
+21:10:18 epoch=lp-8192-4 dev=0 alloc_mib=0 max_alloc_mib=0 max_reserved_mib=0 free_mib=58341
+21:10:30 epoch=lp-8192-5 dev=0 alloc_mib=0 max_alloc_mib=0 max_reserved_mib=0 free_mib=58341
+21:10:45 epoch=lp-32000-0 dev=0 alloc_mib=0 max_alloc_mib=0 max_reserved_mib=0 free_mib=58341
+21:11:00 epoch=lp-32000-1 dev=0 alloc_mib=0 max_alloc_mib=0 max_reserved_mib=0 free_mib=58337
+21:11:15 epoch=lp-32000-2 dev=0 alloc_mib=0 max_alloc_mib=0 max_reserved_mib=0 free_mib=58337
+21:11:30 epoch=lp-32000-3 dev=0 alloc_mib=0 max_alloc_mib=0 max_reserved_mib=0 free_mib=58337
+21:11:45 epoch=lp-32000-4 dev=0 alloc_mib=0 max_alloc_mib=0 max_reserved_mib=0 free_mib=58337
+21:12:00 epoch=lp-32000-5 dev=0 alloc_mib=0 max_alloc_mib=0 max_reserved_mib=0 free_mib=58337
+21:12:12 epoch=suite dev=0 alloc_mib=0 max_alloc_mib=0 max_reserved_mib=0 free_mib=43981
+21:13:42 epoch=gsm8k dev=0 alloc_mib=0 max_alloc_mib=0 max_reserved_mib=0 free_mib=55325

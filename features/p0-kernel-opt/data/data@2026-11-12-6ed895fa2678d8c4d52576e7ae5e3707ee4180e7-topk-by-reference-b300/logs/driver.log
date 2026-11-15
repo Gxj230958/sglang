@@ -1,0 +1,52 @@
+19:09:31 start pre
+19:20:01 end pre: cmd rc=0;DONE;
+19:20:01 start v-tp8
+19:33:40 end v-tp8: server NOT_READY;DONE;
+19:33:40 start v-dep8
+19:34:48 start v-tp8
+19:54:33 end v-tp8: server READY 19:40:24 startup_s=335;suite rc=0 19:41:54;gsm8k300 rc=0 19:51:16;lp:8192+32000 rc=0 19:54:08;valdump rc=0 19:54:23;server ALIVE_AT_END;DONE;
+19:54:33 start v-dep8
+20:30:05 end v-dep8: server READY 20:12:25 startup_s=1072;suite rc=0 20:14:42;gsm8k300 rc=0 20:26:11;lp:8192+32000 rc=0 20:29:13;valdump rc=0 20:29:53;server ALIVE_AT_END;DONE;
+20:30:05 DRIVER_DONE box/jobs1.txt
+20:30:19 start r1-base
+20:55:44 end r1-base: server READY 20:35:51 startup_s=332;perf:1 rc=1 20:36:10;lp:8192+32000 rc=0 20:39:04;suite rc=0 20:40:33;gsm8k rc=0 20:55:34;server ALIVE_AT_END;DONE;
+20:55:44 start r1-full
+21:04:05 end r1-full: server READY 21:00:46 startup_s=301;perf:1 rc=1 21:01:01;lp:8192+32000 rc=0 21:03:55;server ALIVE_AT_END;DONE;
+21:04:05 start r1-clean
+21:29:47 end r1-clean: server READY 21:08:56 startup_s=292;perf:1 rc=1 21:09:18;lp:8192+32000 rc=0 21:12:11;suite rc=0 21:13:40;gsm8k rc=0 21:29:36;server ALIVE_AT_END;DONE;
+21:29:47 start r2-clean
+21:39:25 end r2-clean: server READY 21:34:38 startup_s=291;perf:2 rc=0 21:36:23;lp:8192+32000 rc=0 21:39:16;server ALIVE_AT_END;DONE;
+21:39:25 start r2-base
+21:49:08 end r2-base: server READY 21:44:18 startup_s=292;perf:2 rc=0 21:46:05;lp:8192+32000 rc=0 21:48:58;server ALIVE_AT_END;DONE;
+21:49:08 start r2-full
+21:58:52 end r2-full: server READY 21:54:00 startup_s=292;perf:2 rc=0 21:55:48;lp:8192+32000 rc=0 21:58:42;server ALIVE_AT_END;DONE;
+21:58:52 start r3-full
+22:08:37 end r3-full: server READY 22:03:44 startup_s=292;perf:3 rc=0 22:05:34;lp:8192+32000 rc=0 22:08:27;server ALIVE_AT_END;DONE;
+22:08:37 start r3-clean
+22:18:21 end r3-clean: server READY 22:13:29 startup_s=292;perf:3 rc=0 22:15:18;lp:8192+32000 rc=0 22:18:11;server ALIVE_AT_END;DONE;
+22:18:21 start r3-base
+22:28:06 end r3-base: server READY 22:23:13 startup_s=292;perf:3 rc=0 22:25:02;lp:8192+32000 rc=0 22:27:55;server ALIVE_AT_END;DONE;
+22:28:06 start d1-base
+22:59:27 end d1-base: server READY 22:30:17 startup_s=131;perf:1 rc=0 22:32:21;lp:8192+32000+120000 rc=0 22:37:25;suite rc=0 22:39:16;gsm8k rc=0 22:59:18;server ALIVE_AT_END;DONE;
+22:59:27 start d1-clean
+23:39:46 end d1-clean: server READY 23:01:39 startup_s=132;perf:1 rc=0 23:03:40;lp:8192+32000+120000 rc=0 23:08:44;suite rc=0 23:10:36;gsm8k rc=0 23:39:37;server ALIVE_AT_END;DONE;
+23:39:46 start d2-clean
+23:49:23 end d2-clean: server READY 23:42:08 startup_s=142;perf:2 rc=0 23:44:09;lp:8192+32000+120000 rc=0 23:49:13;server ALIVE_AT_END;DONE;
+23:49:23 start d2-base
+23:58:47 end d2-base: server READY 23:51:34 startup_s=131;perf:2 rc=0 23:53:33;lp:8192+32000+120000 rc=0 23:58:38;server ALIVE_AT_END;DONE;
+23:58:47 start r4-base
+00:08:30 end r4-base: server READY 00:03:38 startup_s=291;perf:4 rc=0 00:05:27;lp:8192+32000 rc=0 00:08:20;server ALIVE_AT_END;DONE;
+00:08:30 start r4-full
+00:18:14 end r4-full: server READY 00:13:22 startup_s=291;perf:4 rc=0 00:15:11;lp:8192+32000 rc=0 00:18:04;server ALIVE_AT_END;DONE;
+00:18:14 start r4-clean
+00:27:57 end r4-clean: server READY 00:23:06 startup_s=292;perf:4 rc=0 00:24:54;lp:8192+32000 rc=0 00:27:47;server ALIVE_AT_END;DONE;
+00:27:57 start d1-full
+00:37:25 end d1-full: server READY 00:30:09 startup_s=132;perf:1 rc=0 00:32:11;lp:8192+32000+120000 rc=0 00:37:16;server ALIVE_AT_END;DONE;
+00:37:25 start d2-full
+00:46:50 end d2-full: server READY 00:39:37 startup_s=132;perf:2 rc=0 00:41:36;lp:8192+32000+120000 rc=0 00:46:41;server ALIVE_AT_END;DONE;
+00:46:50 start d3-clean
+01:19:59 end d3-clean: server READY 00:49:01 startup_s=131;gsm8k rc=0 01:19:50;server ALIVE_AT_END;DONE;
+01:19:59 start d3-base
+01:46:28 end d3-base: server READY 01:22:21 startup_s=141;gsm8k rc=0 01:46:18;server ALIVE_AT_END;DONE;
+01:46:28 DRIVER_DONE box/jobs2.txt
+01:47:01 start d4-base

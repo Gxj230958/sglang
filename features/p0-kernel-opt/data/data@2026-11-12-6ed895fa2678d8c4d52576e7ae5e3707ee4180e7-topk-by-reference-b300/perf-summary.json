@@ -1,0 +1,1389 @@
+{
+ "d1-base": {
+  "bench_decode": {
+   "mean_itl_ms": 14.96,
+   "mean_ttft_ms": 454.04,
+   "output_tok_per_s": 489.05,
+   "successful_requests": 48.0
+  },
+  "bench_serve": {
+   "mean_itl_ms": 27.12,
+   "mean_ttft_ms": 680.52,
+   "output_tok_per_s": 523.36,
+   "successful_requests": 96.0
+  },
+  "gpu0_rank_mib_by_epoch": {
+   "bench-decode": {
+    "alloc": 231688,
+    "max_alloc": 232306,
+    "max_reserved": 237940
+   },
+   "bench-serve": {
+    "alloc": 231613,
+    "max_alloc": 236224,
+    "max_reserved": 237940
+   },
+   "boot": {
+    "alloc": 231670,
+    "max_alloc": 232863,
+    "max_reserved": 233802
+   },
+   "gsm8k": {
+    "alloc": 231616,
+    "max_alloc": 232531,
+    "max_reserved": 234414
+   },
+   "lp-120000": {
+    "alloc": 233486,
+    "max_alloc": 236682,
+    "max_reserved": 262060
+   },
+   "lp-32000": {
+    "alloc": 231612,
+    "max_alloc": 233307,
+    "max_reserved": 234642
+   },
+   "lp-8192": {
+    "alloc": 231707,
+    "max_alloc": 234985,
+    "max_reserved": 237638
+   },
+   "suite": {
+    "alloc": 231613,
+    "max_alloc": 235008,
+    "max_reserved": 236982
+   }
+  },
+  "long_prefill_s": {
+   "120000": {
+    "median": 8.5776,
+    "min": 8.5312,
+    "reps": 6
+   },
+   "32000": {
+    "median": 2.1401,
+    "min": 2.1295,
+    "reps": 6
+   },
+   "8192": {
+    "median": 0.5643,
+    "min": 0.5583,
+    "reps": 6
+   }
+  },
+  "status": [
+   "server READY 22:30:17 startup_s=131",
+   "perf:1 rc=0 22:32:21",
+   "lp:8192+32000+120000 rc=0 22:37:25",
+   "suite rc=0 22:39:16",
+   "gsm8k rc=0 22:59:18",
+   "server ALIVE_AT_END",
+   "DONE"
+  ]
+ },
+ "d1-clean": {
+  "bench_decode": {
+   "mean_itl_ms": 14.71,
+   "mean_ttft_ms": 436.67,
+   "output_tok_per_s": 494.42,
+   "successful_requests": 48.0
+  },
+  "bench_serve": {
+   "mean_itl_ms": 26.9,
+   "mean_ttft_ms": 635.52,
+   "output_tok_per_s": 530.29,
+   "successful_requests": 96.0
+  },
+  "gpu0_rank_mib_by_epoch": {
+   "bench-decode": {
+    "alloc": 231613,
+    "max_alloc": 232337,
+    "max_reserved": 237624
+   },
+   "bench-serve": {
+    "alloc": 231635,
+    "max_alloc": 235919,
+    "max_reserved": 237624
+   },
+   "boot": {
+    "alloc": 231473,
+    "max_alloc": 232863,
+    "max_reserved": 233802
+   },
+   "gsm8k": {
+    "alloc": 231627,
+    "max_alloc": 231894,
+    "max_reserved": 234414
+   },
+   "lp-120000": {
+    "alloc": 233567,
+    "max_alloc": 236682,
+    "max_reserved": 261934
+   },
+   "lp-32000": {
+    "alloc": 233306,
+    "max_alloc": 233307,
+    "max_reserved": 234642
+   },
+   "lp-8192": {
+    "alloc": 231612,
+    "max_alloc": 234985,
+    "max_reserved": 237638
+   },
+   "suite": {
+    "alloc": 231710,
+    "max_alloc": 235008,
+    "max_reserved": 236982
+   }
+  },
+  "long_prefill_s": {
+   "120000": {
+    "median": 8.5953,
+    "min": 8.5238,
+    "reps": 6
+   },
+   "32000": {
+    "median": 2.141,
+    "min": 2.1342,
+    "reps": 6
+   },
+   "8192": {
+    "median": 0.5606,
+    "min": 0.55,
+    "reps": 6
+   }
+  },
+  "status": [
+   "server READY 23:01:39 startup_s=132",
+   "perf:1 rc=0 23:03:40",
+   "lp:8192+32000+120000 rc=0 23:08:44",
+   "suite rc=0 23:10:36",
+   "gsm8k rc=0 23:39:37",
+   "server ALIVE_AT_END",
+   "DONE"
+  ]
+ },
+ "d1-full": {
+  "bench_decode": {
+   "mean_itl_ms": 14.89,
+   "mean_ttft_ms": 433.46,
+   "output_tok_per_s": 496.11,
+   "successful_requests": 48.0
+  },
+  "bench_serve": {
+   "mean_itl_ms": 27.18,
+   "mean_ttft_ms": 654.27,
+   "output_tok_per_s": 528.55,
+   "successful_requests": 96.0
+  },
+  "gpu0_rank_mib_by_epoch": {
+   "after-lp": {
+    "alloc": 231612,
+    "max_alloc": 231612,
+    "max_reserved": 234642
+   },
+   "bench-decode": {
+    "alloc": 231613,
+    "max_alloc": 232219,
+    "max_reserved": 237624
+   },
+   "bench-serve": {
+    "alloc": 231635,
+    "max_alloc": 235916,
+    "max_reserved": 237624
+   },
+   "boot": {
+    "alloc": 232051,
+    "max_alloc": 232863,
+    "max_reserved": 233802
+   },
+   "lp-120000": {
+    "alloc": 234460,
+    "max_alloc": 236682,
+    "max_reserved": 261422
+   },
+   "lp-32000": {
+    "alloc": 231887,
+    "max_alloc": 233307,
+    "max_reserved": 234642
+   },
+   "lp-8192": {
+    "alloc": 233450,
+    "max_alloc": 234979,
+    "max_reserved": 237638
+   }
+  },
+  "long_prefill_s": {
+   "120000": {
+    "median": 8.668,
+    "min": 8.6215,
+    "reps": 6
+   },
+   "32000": {
+    "median": 2.1625,
+    "min": 2.1516,
+    "reps": 6
+   },
+   "8192": {
+    "median": 0.569,
+    "min": 0.5575,
+    "reps": 6
+   }
+  },
+  "status": [
+   "server READY 00:30:09 startup_s=132",
+   "perf:1 rc=0 00:32:11",
+   "lp:8192+32000+120000 rc=0 00:37:16",
+   "server ALIVE_AT_END",
+   "DONE"
+  ]
+ },
+ "d2-base": {
+  "bench_decode": {
+   "mean_itl_ms": 14.33,
+   "mean_ttft_ms": 396.77,
+   "output_tok_per_s": 515.95,
+   "successful_requests": 48.0
+  },
+  "bench_serve": {
+   "mean_itl_ms": 26.67,
+   "mean_ttft_ms": 621.67,
+   "output_tok_per_s": 538.68,
+   "successful_requests": 96.0
+  },
+  "gpu0_rank_mib_by_epoch": {
+   "after-lp": {
+    "alloc": 231612,
+    "max_alloc": 231612,
+    "max_reserved": 234642
+   },
+   "bench-decode": {
+    "alloc": 231690,
+    "max_alloc": 232337,
+    "max_reserved": 238334
+   },
+   "bench-serve": {
+    "alloc": 232010,
+    "max_alloc": 236525,
+    "max_reserved": 238334
+   },
+   "boot": {
+    "alloc": 230852,
+    "max_alloc": 232863,
+    "max_reserved": 233802
+   },
+   "lp-120000": {
+    "alloc": 234399,
+    "max_alloc": 236682,
+    "max_reserved": 262060
+   },
+   "lp-32000": {
+    "alloc": 233306,
+    "max_alloc": 233307,
+    "max_reserved": 234642
+   },
+   "lp-8192": {
+    "alloc": 233302,
+    "max_alloc": 234985,
+    "max_reserved": 237638
+   }
+  },
+  "long_prefill_s": {
+   "120000": {
+    "median": 8.5867,
+    "min": 8.5297,
+    "reps": 6
+   },
+   "32000": {
+    "median": 2.1877,
+    "min": 2.1323,
+    "reps": 6
+   },
+   "8192": {
+    "median": 0.5636,
+    "min": 0.5567,
+    "reps": 6
+   }
+  },
+  "status": [
+   "server READY 23:51:34 startup_s=131",
+   "perf:2 rc=0 23:53:33",
+   "lp:8192+32000+120000 rc=0 23:58:38",
+   "server ALIVE_AT_END",
+   "DONE"
+  ]
+ },
+ "d2-clean": {
+  "bench_decode": {
+   "mean_itl_ms": 14.07,
+   "mean_ttft_ms": 434.66,
+   "output_tok_per_s": 518.8,
+   "successful_requests": 48.0
+  },
+  "bench_serve": {
+   "mean_itl_ms": 27.41,
+   "mean_ttft_ms": 665.21,
+   "output_tok_per_s": 519.65,
+   "successful_requests": 96.0
+  },
+  "gpu0_rank_mib_by_epoch": {
+   "after-lp": {
+    "alloc": 231612,
+    "max_alloc": 231612,
+    "max_reserved": 234642
+   },
+   "bench-decode": {
+    "alloc": 231613,
+    "max_alloc": 232219,
+    "max_reserved": 236554
+   },
+   "bench-serve": {
+    "alloc": 231614,
+    "max_alloc": 234993,
+    "max_reserved": 236554
+   },
+   "boot": {
+    "alloc": 231670,
+    "max_alloc": 232863,
+    "max_reserved": 233802
+   },
+   "lp-120000": {
+    "alloc": 233307,
+    "max_alloc": 236682,
+    "max_reserved": 261934
+   },
+   "lp-32000": {
+    "alloc": 233306,
+    "max_alloc": 233307,
+    "max_reserved": 234642
+   },
+   "lp-8192": {
+    "alloc": 232753,
+    "max_alloc": 234985,
+    "max_reserved": 237638
+   }
+  },
+  "long_prefill_s": {
+   "120000": {
+    "median": 8.5859,
+    "min": 8.5139,
+    "reps": 6
+   },
+   "32000": {
+    "median": 2.1554,
+    "min": 2.1389,
+    "reps": 6
+   },
+   "8192": {
+    "median": 0.5648,
+    "min": 0.5614,
+    "reps": 6
+   }
+  },
+  "status": [
+   "server READY 23:42:08 startup_s=142",
+   "perf:2 rc=0 23:44:09",
+   "lp:8192+32000+120000 rc=0 23:49:13",
+   "server ALIVE_AT_END",
+   "DONE"
+  ]
+ },
+ "d2-full": {
+  "bench_decode": {
+   "mean_itl_ms": 14.34,
+   "mean_ttft_ms": 405.2,
+   "output_tok_per_s": 517.41,
+   "successful_requests": 48.0
+  },
+  "bench_serve": {
+   "mean_itl_ms": 26.91,
+   "mean_ttft_ms": 653.22,
+   "output_tok_per_s": 531.71,
+   "successful_requests": 96.0
+  },
+  "gpu0_rank_mib_by_epoch": {
+   "bench-decode": {
+    "alloc": 231613,
+    "max_alloc": 232337,
+    "max_reserved": 237608
+   },
+   "bench-serve": {
+    "alloc": 232013,
+    "max_alloc": 235479,
+    "max_reserved": 237608
+   },
+   "boot": {
+    "alloc": 231473,
+    "max_alloc": 232863,
+    "max_reserved": 233802
+   },
+   "lp-120000": {
+    "alloc": 232589,
+    "max_alloc": 236682,
+    "max_reserved": 261422
+   },
+   "lp-32000": {
+    "alloc": 233306,
+    "max_alloc": 233307,
+    "max_reserved": 234642
+   },
+   "lp-8192": {
+    "alloc": 231852,
+    "max_alloc": 234979,
+    "max_reserved": 237638
+   }
+  },
+  "long_prefill_s": {
+   "120000": {
+    "median": 8.6489,
+    "min": 8.6033,
+    "reps": 6
+   },
+   "32000": {
+    "median": 2.163,
+    "min": 2.1575,
+    "reps": 6
+   },
+   "8192": {
+    "median": 0.5696,
+    "min": 0.5656,
+    "reps": 6
+   }
+  },
+  "status": [
+   "server READY 00:39:37 startup_s=132",
+   "perf:2 rc=0 00:41:36",
+   "lp:8192+32000+120000 rc=0 00:46:41",
+   "server ALIVE_AT_END",
+   "DONE"
+  ]
+ },
+ "d3-base": {
+  "gpu0_rank_mib_by_epoch": {
+   "boot": {
+    "alloc": 231670,
+    "max_alloc": 232863,
+    "max_reserved": 233802
+   },
+   "gsm8k": {
+    "alloc": 231654,
+    "max_alloc": 232526,
+    "max_reserved": 233868
+   }
+  },
+  "status": [
+   "server READY 01:22:21 startup_s=141",
+   "gsm8k rc=0 01:46:18",
+   "server ALIVE_AT_END",
+   "DONE"
+  ]
+ },
+ "d3-clean": {
+  "gpu0_rank_mib_by_epoch": {
+   "boot": {
+    "alloc": 231670,
+    "max_alloc": 232863,
+    "max_reserved": 233802
+   },
+   "gsm8k": {
+    "alloc": 231653,
+    "max_alloc": 232516,
+    "max_reserved": 234472
+   }
+  },
+  "status": [
+   "server READY 00:49:01 startup_s=131",
+   "gsm8k rc=0 01:19:50",
+   "server ALIVE_AT_END",
+   "DONE"
+  ]
+ },
+ "pre": {
+  "status": [
+   "cmd rc=0",
+   "DONE"
+  ]
+ },
+ "r1-base": {
+  "bench_decode": {
+   "mean_itl_ms": null,
+   "mean_ttft_ms": null,
+   "output_tok_per_s": null,
+   "successful_requests": null
+  },
+  "bench_serve": {
+   "mean_itl_ms": null,
+   "mean_ttft_ms": null,
+   "output_tok_per_s": null,
+   "successful_requests": null
+  },
+  "gpu0_rank_mib_by_epoch": {
+   "bench-decode": {
+    "alloc": 199905,
+    "max_alloc": 199907,
+    "max_reserved": 200580
+   },
+   "bench-serve": {
+    "alloc": 199905,
+    "max_alloc": 199905,
+    "max_reserved": 200580
+   },
+   "boot": {
+    "alloc": 200729,
+    "max_alloc": 204409,
+    "max_reserved": 204670
+   },
+   "gsm8k": {
+    "alloc": 199969,
+    "max_alloc": 200140,
+    "max_reserved": 203488
+   },
+   "lp-32000": {
+    "alloc": 201774,
+    "max_alloc": 210123,
+    "max_reserved": 214824
+   },
+   "lp-8192": {
+    "alloc": 201234,
+    "max_alloc": 202788,
+    "max_reserved": 204760
+   },
+   "suite": {
+    "alloc": 199908,
+    "max_alloc": 206349,
+    "max_reserved": 214824
+   }
+  },
+  "long_prefill_s": {
+   "32000": {
+    "median": 1.8994,
+    "min": 1.8988,
+    "reps": 6
+   },
+   "8192": {
+    "median": 0.5407,
+    "min": 0.5369,
+    "reps": 6
+   }
+  },
+  "status": [
+   "server READY 20:35:51 startup_s=332",
+   "perf:1 rc=1 20:36:10",
+   "lp:8192+32000 rc=0 20:39:04",
+   "suite rc=0 20:40:33",
+   "gsm8k rc=0 20:55:34",
+   "server ALIVE_AT_END",
+   "DONE"
+  ]
+ },
+ "r1-clean": {
+  "bench_decode": {
+   "mean_itl_ms": null,
+   "mean_ttft_ms": null,
+   "output_tok_per_s": null,
+   "successful_requests": null
+  },
+  "bench_serve": {
+   "mean_itl_ms": null,
+   "mean_ttft_ms": null,
+   "output_tok_per_s": null,
+   "successful_requests": null
+  },
+  "gpu0_rank_mib_by_epoch": {
+   "bench-decode": {
+    "alloc": 199905,
+    "max_alloc": 199907,
+    "max_reserved": 200582
+   },
+   "bench-serve": {
+    "alloc": 199905,
+    "max_alloc": 199905,
+    "max_reserved": 200582
+   },
+   "boot": {
+    "alloc": 200667,
+    "max_alloc": 204409,
+    "max_reserved": 204670
+   },
+   "gsm8k": {
+    "alloc": 200127,
+    "max_alloc": 200127,
+    "max_reserved": 203490
+   },
+   "lp-32000": {
+    "alloc": 209702,
+    "max_alloc": 210124,
+    "max_reserved": 214822
+   },
+   "lp-8192": {
+    "alloc": 199907,
+    "max_alloc": 202789,
+    "max_reserved": 204760
+   },
+   "suite": {
+    "alloc": 200494,
+    "max_alloc": 206349,
+    "max_reserved": 214824
+   }
+  },
+  "long_prefill_s": {
+   "32000": {
+    "median": 1.9009,
+    "min": 1.8933,
+    "reps": 6
+   },
+   "8192": {
+    "median": 0.5671,
+    "min": 0.5345,
+    "reps": 6
+   }
+  },
+  "status": [
+   "server READY 21:08:56 startup_s=292",
+   "perf:1 rc=1 21:09:18",
+   "lp:8192+32000 rc=0 21:12:11",
+   "suite rc=0 21:13:40",
+   "gsm8k rc=0 21:29:36",
+   "server ALIVE_AT_END",
+   "DONE"
+  ]
+ },
+ "r1-full": {
+  "bench_decode": {
+   "mean_itl_ms": null,
+   "mean_ttft_ms": null,
+   "output_tok_per_s": null,
+   "successful_requests": null
+  },
+  "bench_serve": {
+   "mean_itl_ms": null,
+   "mean_ttft_ms": null,
+   "output_tok_per_s": null,
+   "successful_requests": null
+  },
+  "gpu0_rank_mib_by_epoch": {
+   "bench-decode": {
+    "alloc": 199905,
+    "max_alloc": 199907,
+    "max_reserved": 200582
+   },
+   "bench-serve": {
+    "alloc": 199905,
+    "max_alloc": 199905,
+    "max_reserved": 200582
+   },
+   "boot": {
+    "alloc": 200668,
+    "max_alloc": 204409,
+    "max_reserved": 204670
+   },
+   "lp-32000": {
+    "alloc": 207737,
+    "max_alloc": 210124,
+    "max_reserved": 212834
+   },
+   "lp-8192": {
+    "alloc": 199907,
+    "max_alloc": 202789,
+    "max_reserved": 204760
+   }
+  },
+  "long_prefill_s": {
+   "32000": {
+    "median": 1.9066,
+    "min": 1.9001,
+    "reps": 6
+   },
+   "8192": {
+    "median": 0.5398,
+    "min": 0.5385,
+    "reps": 6
+   }
+  },
+  "status": [
+   "server READY 21:00:46 startup_s=301",
+   "perf:1 rc=1 21:01:01",
+   "lp:8192+32000 rc=0 21:03:55",
+   "server ALIVE_AT_END",
+   "DONE"
+  ]
+ },
+ "r2-base": {
+  "bench_decode": {
+   "mean_itl_ms": 12.16,
+   "mean_ttft_ms": 398.26,
+   "output_tok_per_s": 604.84,
+   "successful_requests": 48.0
+  },
+  "bench_serve": {
+   "mean_itl_ms": 22.58,
+   "mean_ttft_ms": 627.97,
+   "output_tok_per_s": 624.47,
+   "successful_requests": 96.0
+  },
+  "gpu0_rank_mib_by_epoch": {
+   "after-lp": {
+    "alloc": 199909,
+    "max_alloc": 199909,
+    "max_reserved": 214824
+   },
+   "bench-decode": {
+    "alloc": 199911,
+    "max_alloc": 200379,
+    "max_reserved": 208858
+   },
+   "bench-serve": {
+    "alloc": 201272,
+    "max_alloc": 205279,
+    "max_reserved": 208858
+   },
+   "boot": {
+    "alloc": 200667,
+    "max_alloc": 204409,
+    "max_reserved": 204670
+   },
+   "lp-32000": {
+    "alloc": 199912,
+    "max_alloc": 210126,
+    "max_reserved": 214824
+   },
+   "lp-8192": {
+    "alloc": 201297,
+    "max_alloc": 202790,
+    "max_reserved": 204762
+   }
+  },
+  "long_prefill_s": {
+   "32000": {
+    "median": 1.9066,
+    "min": 1.905,
+    "reps": 6
+   },
+   "8192": {
+    "median": 0.5423,
+    "min": 0.5398,
+    "reps": 6
+   }
+  },
+  "status": [
+   "server READY 21:44:18 startup_s=292",
+   "perf:2 rc=0 21:46:05",
+   "lp:8192+32000 rc=0 21:48:58",
+   "server ALIVE_AT_END",
+   "DONE"
+  ]
+ },
+ "r2-clean": {
+  "bench_decode": {
+   "mean_itl_ms": 11.97,
+   "mean_ttft_ms": 389.3,
+   "output_tok_per_s": 610.66,
+   "successful_requests": 48.0
+  },
+  "bench_serve": {
+   "mean_itl_ms": 22.78,
+   "mean_ttft_ms": 605.33,
+   "output_tok_per_s": 623.57,
+   "successful_requests": 96.0
+  },
+  "gpu0_rank_mib_by_epoch": {
+   "bench-decode": {
+    "alloc": 199911,
+    "max_alloc": 200379,
+    "max_reserved": 208836
+   },
+   "bench-serve": {
+    "alloc": 201022,
+    "max_alloc": 205210,
+    "max_reserved": 208836
+   },
+   "boot": {
+    "alloc": 200667,
+    "max_alloc": 204409,
+    "max_reserved": 204670
+   },
+   "lp-32000": {
+    "alloc": 209213,
+    "max_alloc": 210126,
+    "max_reserved": 214828
+   },
+   "lp-8192": {
+    "alloc": 199909,
+    "max_alloc": 202791,
+    "max_reserved": 204762
+   }
+  },
+  "long_prefill_s": {
+   "32000": {
+    "median": 1.9066,
+    "min": 1.9036,
+    "reps": 6
+   },
+   "8192": {
+    "median": 0.5428,
+    "min": 0.538,
+    "reps": 6
+   }
+  },
+  "status": [
+   "server READY 21:34:38 startup_s=291",
+   "perf:2 rc=0 21:36:23",
+   "lp:8192+32000 rc=0 21:39:16",
+   "server ALIVE_AT_END",
+   "DONE"
+  ]
+ },
+ "r2-full": {
+  "bench_decode": {
+   "mean_itl_ms": 12.14,
+   "mean_ttft_ms": 390.33,
+   "output_tok_per_s": 607.3,
+   "successful_requests": 48.0
+  },
+  "bench_serve": {
+   "mean_itl_ms": 23.65,
+   "mean_ttft_ms": 635.76,
+   "output_tok_per_s": 598.69,
+   "successful_requests": 96.0
+  },
+  "gpu0_rank_mib_by_epoch": {
+   "bench-decode": {
+    "alloc": 199912,
+    "max_alloc": 200562,
+    "max_reserved": 208362
+   },
+   "bench-serve": {
+    "alloc": 200332,
+    "max_alloc": 205329,
+    "max_reserved": 208362
+   },
+   "boot": {
+    "alloc": 200668,
+    "max_alloc": 204409,
+    "max_reserved": 204670
+   },
+   "lp-32000": {
+    "alloc": 208094,
+    "max_alloc": 210126,
+    "max_reserved": 212834
+   },
+   "lp-8192": {
+    "alloc": 201345,
+    "max_alloc": 202790,
+    "max_reserved": 204762
+   }
+  },
+  "long_prefill_s": {
+   "32000": {
+    "median": 1.9569,
+    "min": 1.915,
+    "reps": 6
+   },
+   "8192": {
+    "median": 0.5433,
+    "min": 0.5389,
+    "reps": 6
+   }
+  },
+  "status": [
+   "server READY 21:54:00 startup_s=292",
+   "perf:2 rc=0 21:55:48",
+   "lp:8192+32000 rc=0 21:58:42",
+   "server ALIVE_AT_END",
+   "DONE"
+  ]
+ },
+ "r3-base": {
+  "bench_decode": {
+   "mean_itl_ms": 12.61,
+   "mean_ttft_ms": 384.53,
+   "output_tok_per_s": 586.5,
+   "successful_requests": 48.0
+  },
+  "bench_serve": {
+   "mean_itl_ms": 23.48,
+   "mean_ttft_ms": 632.91,
+   "output_tok_per_s": 607.08,
+   "successful_requests": 96.0
+  },
+  "gpu0_rank_mib_by_epoch": {
+   "bench-decode": {
+    "alloc": 199912,
+    "max_alloc": 200441,
+    "max_reserved": 210066
+   },
+   "bench-serve": {
+    "alloc": 201645,
+    "max_alloc": 205907,
+    "max_reserved": 210066
+   },
+   "boot": {
+    "alloc": 200667,
+    "max_alloc": 204409,
+    "max_reserved": 204670
+   },
+   "lp-32000": {
+    "alloc": 204567,
+    "max_alloc": 210126,
+    "max_reserved": 214826
+   },
+   "lp-8192": {
+    "alloc": 199909,
+    "max_alloc": 202790,
+    "max_reserved": 204762
+   }
+  },
+  "long_prefill_s": {
+   "32000": {
+    "median": 1.9095,
+    "min": 1.9043,
+    "reps": 6
+   },
+   "8192": {
+    "median": 0.5418,
+    "min": 0.5384,
+    "reps": 6
+   }
+  },
+  "status": [
+   "server READY 22:23:13 startup_s=292",
+   "perf:3 rc=0 22:25:02",
+   "lp:8192+32000 rc=0 22:27:55",
+   "server ALIVE_AT_END",
+   "DONE"
+  ]
+ },
+ "r3-clean": {
+  "bench_decode": {
+   "mean_itl_ms": 12.71,
+   "mean_ttft_ms": 355.95,
+   "output_tok_per_s": 584.84,
+   "successful_requests": 48.0
+  },
+  "bench_serve": {
+   "mean_itl_ms": 23.45,
+   "mean_ttft_ms": 603.88,
+   "output_tok_per_s": 608.78,
+   "successful_requests": 96.0
+  },
+  "gpu0_rank_mib_by_epoch": {
+   "bench-decode": {
+    "alloc": 199912,
+    "max_alloc": 200620,
+    "max_reserved": 210154
+   },
+   "bench-serve": {
+    "alloc": 199931,
+    "max_alloc": 205951,
+    "max_reserved": 210154
+   },
+   "boot": {
+    "alloc": 200668,
+    "max_alloc": 204409,
+    "max_reserved": 204670
+   },
+   "lp-32000": {
+    "alloc": 208524,
+    "max_alloc": 210126,
+    "max_reserved": 214826
+   },
+   "lp-8192": {
+    "alloc": 199909,
+    "max_alloc": 202791,
+    "max_reserved": 204764
+   }
+  },
+  "long_prefill_s": {
+   "32000": {
+    "median": 1.9091,
+    "min": 1.9072,
+    "reps": 6
+   },
+   "8192": {
+    "median": 0.5464,
+    "min": 0.5388,
+    "reps": 6
+   }
+  },
+  "status": [
+   "server READY 22:13:29 startup_s=292",
+   "perf:3 rc=0 22:15:18",
+   "lp:8192+32000 rc=0 22:18:11",
+   "server ALIVE_AT_END",
+   "DONE"
+  ]
+ },
+ "r3-full": {
+  "bench_decode": {
+   "mean_itl_ms": 12.52,
+   "mean_ttft_ms": 391.88,
+   "output_tok_per_s": 588.94,
+   "successful_requests": 48.0
+  },
+  "bench_serve": {
+   "mean_itl_ms": 23.67,
+   "mean_ttft_ms": 610.23,
+   "output_tok_per_s": 604.82,
+   "successful_requests": 96.0
+  },
+  "gpu0_rank_mib_by_epoch": {
+   "bench-decode": {
+    "alloc": 199912,
+    "max_alloc": 200380,
+    "max_reserved": 209282
+   },
+   "bench-serve": {
+    "alloc": 201507,
+    "max_alloc": 205951,
+    "max_reserved": 209280
+   },
+   "boot": {
+    "alloc": 200668,
+    "max_alloc": 204409,
+    "max_reserved": 204670
+   },
+   "lp-32000": {
+    "alloc": 207014,
+    "max_alloc": 210126,
+    "max_reserved": 212834
+   },
+   "lp-8192": {
+    "alloc": 199909,
+    "max_alloc": 202791,
+    "max_reserved": 204764
+   }
+  },
+  "long_prefill_s": {
+   "32000": {
+    "median": 1.9164,
+    "min": 1.909,
+    "reps": 6
+   },
+   "8192": {
+    "median": 0.547,
+    "min": 0.5411,
+    "reps": 6
+   }
+  },
+  "status": [
+   "server READY 22:03:44 startup_s=292",
+   "perf:3 rc=0 22:05:34",
+   "lp:8192+32000 rc=0 22:08:27",
+   "server ALIVE_AT_END",
+   "DONE"
+  ]
+ },
+ "r4-base": {
+  "bench_decode": {
+   "mean_itl_ms": 12.67,
+   "mean_ttft_ms": 446.85,
+   "output_tok_per_s": 581.56,
+   "successful_requests": 48.0
+  },
+  "bench_serve": {
+   "mean_itl_ms": 22.58,
+   "mean_ttft_ms": 662.61,
+   "output_tok_per_s": 626.53,
+   "successful_requests": 96.0
+  },
+  "gpu0_rank_mib_by_epoch": {
+   "after-lp": {
+    "alloc": 199909,
+    "max_alloc": 199909,
+    "max_reserved": 214824
+   },
+   "bench-decode": {
+    "alloc": 199911,
+    "max_alloc": 200379,
+    "max_reserved": 209656
+   },
+   "bench-serve": {
+    "alloc": 200694,
+    "max_alloc": 205262,
+    "max_reserved": 209656
+   },
+   "boot": {
+    "alloc": 200668,
+    "max_alloc": 204409,
+    "max_reserved": 204670
+   },
+   "lp-32000": {
+    "alloc": 199912,
+    "max_alloc": 210126,
+    "max_reserved": 214826
+   },
+   "lp-8192": {
+    "alloc": 201400,
+    "max_alloc": 202790,
+    "max_reserved": 204762
+   }
+  },
+  "long_prefill_s": {
+   "32000": {
+    "median": 1.9092,
+    "min": 1.9049,
+    "reps": 6
+   },
+   "8192": {
+    "median": 0.5432,
+    "min": 0.5376,
+    "reps": 6
+   }
+  },
+  "status": [
+   "server READY 00:03:38 startup_s=291",
+   "perf:4 rc=0 00:05:27",
+   "lp:8192+32000 rc=0 00:08:20",
+   "server ALIVE_AT_END",
+   "DONE"
+  ]
+ },
+ "r4-clean": {
+  "bench_decode": {
+   "mean_itl_ms": 12.42,
+   "mean_ttft_ms": 413.33,
+   "output_tok_per_s": 591.93,
+   "successful_requests": 48.0
+  },
+  "bench_serve": {
+   "mean_itl_ms": 23.0,
+   "mean_ttft_ms": 613.19,
+   "output_tok_per_s": 617.46,
+   "successful_requests": 96.0
+  },
+  "gpu0_rank_mib_by_epoch": {
+   "bench-decode": {
+    "alloc": 199912,
+    "max_alloc": 200562,
+    "max_reserved": 208548
+   },
+   "bench-serve": {
+    "alloc": 202085,
+    "max_alloc": 205310,
+    "max_reserved": 208548
+   },
+   "boot": {
+    "alloc": 200668,
+    "max_alloc": 204409,
+    "max_reserved": 204670
+   },
+   "lp-32000": {
+    "alloc": 204993,
+    "max_alloc": 210126,
+    "max_reserved": 214826
+   },
+   "lp-8192": {
+    "alloc": 200005,
+    "max_alloc": 202790,
+    "max_reserved": 204762
+   }
+  },
+  "long_prefill_s": {
+   "32000": {
+    "median": 1.9075,
+    "min": 1.9034,
+    "reps": 6
+   },
+   "8192": {
+    "median": 0.5424,
+    "min": 0.5364,
+    "reps": 6
+   }
+  },
+  "status": [
+   "server READY 00:23:06 startup_s=292",
+   "perf:4 rc=0 00:24:54",
+   "lp:8192+32000 rc=0 00:27:47",
+   "server ALIVE_AT_END",
+   "DONE"
+  ]
+ },
+ "r4-full": {
+  "bench_decode": {
+   "mean_itl_ms": 12.51,
+   "mean_ttft_ms": 424.62,
+   "output_tok_per_s": 586.78,
+   "successful_requests": 48.0
+  },
+  "bench_serve": {
+   "mean_itl_ms": 23.07,
+   "mean_ttft_ms": 636.95,
+   "output_tok_per_s": 616.75,
+   "successful_requests": 96.0
+  },
+  "gpu0_rank_mib_by_epoch": {
+   "bench-decode": {
+    "alloc": 199950,
+    "max_alloc": 200562,
+    "max_reserved": 207590
+   },
+   "bench-serve": {
+    "alloc": 200500,
+    "max_alloc": 205310,
+    "max_reserved": 207590
+   },
+   "boot": {
+    "alloc": 200669,
+    "max_alloc": 204409,
+    "max_reserved": 204670
+   },
+   "lp-32000": {
+    "alloc": 200285,
+    "max_alloc": 210126,
+    "max_reserved": 212838
+   },
+   "lp-8192": {
+    "alloc": 201560,
+    "max_alloc": 202791,
+    "max_reserved": 204762
+   }
+  },
+  "long_prefill_s": {
+   "32000": {
+    "median": 1.9142,
+    "min": 1.9087,
+    "reps": 6
+   },
+   "8192": {
+    "median": 0.5443,
+    "min": 0.5416,
+    "reps": 6
+   }
+  },
+  "status": [
+   "server READY 00:13:22 startup_s=291",
+   "perf:4 rc=0 00:15:11",
+   "lp:8192+32000 rc=0 00:18:04",
+   "server ALIVE_AT_END",
+   "DONE"
+  ]
+ },
+ "v-dep8": {
+  "gpu0_rank_mib_by_epoch": {
+   "after-lp": {
+    "alloc": 231920,
+    "max_alloc": 235550,
+    "max_reserved": 238182
+   },
+   "boot": {
+    "alloc": 231611,
+    "max_alloc": 232863,
+    "max_reserved": 234304
+   },
+   "gsm8k": {
+    "alloc": 231617,
+    "max_alloc": 231899,
+    "max_reserved": 234428
+   },
+   "lp-32000": {
+    "alloc": 231964,
+    "max_alloc": 233306,
+    "max_reserved": 234666
+   },
+   "lp-8192": {
+    "alloc": 231612,
+    "max_alloc": 235427,
+    "max_reserved": 238146
+   },
+   "suite": {
+    "alloc": 231773,
+    "max_alloc": 234732,
+    "max_reserved": 236860
+   }
+  },
+  "long_prefill_s": {
+   "32000": {
+    "median": 3.5232,
+    "min": 2.1299,
+    "reps": 6
+   },
+   "8192": {
+    "median": 0.5571,
+    "min": 0.5511,
+    "reps": 6
+   }
+  },
+  "status": [
+   "server READY 20:12:25 startup_s=1072",
+   "suite rc=0 20:14:42",
+   "gsm8k300 rc=0 20:26:11",
+   "lp:8192+32000 rc=0 20:29:13",
+   "valdump rc=0 20:29:53",
+   "server ALIVE_AT_END",
+   "DONE"
+  ],
+  "topk_compare": {
+   "checks_per_rank": [
+    124635,
+    124642,
+    124649,
+    124656,
+    124663
+   ],
+   "mismatches": 0,
+   "ranks": 8
+  }
+ },
+ "v-tp8": {
+  "gpu0_rank_mib_by_epoch": {
+   "after-lp": {
+    "alloc": 203707,
+    "max_alloc": 207443,
+    "max_reserved": 216212
+   },
+   "boot": {
+    "alloc": 200729,
+    "max_alloc": 204409,
+    "max_reserved": 204678
+   },
+   "gsm8k": {
+    "alloc": 199935,
+    "max_alloc": 201102,
+    "max_reserved": 204498
+   },
+   "lp-32000": {
+    "alloc": 205606,
+    "max_alloc": 211702,
+    "max_reserved": 216208
+   },
+   "lp-8192": {
+    "alloc": 202006,
+    "max_alloc": 203239,
+    "max_reserved": 204768
+   },
+   "suite": {
+    "alloc": 200264,
+    "max_alloc": 207441,
+    "max_reserved": 212094
+   }
+  },
+  "long_prefill_s": {
+   "32000": {
+    "median": 1.9097,
+    "min": 1.9068,
+    "reps": 6
+   },
+   "8192": {
+    "median": 0.537,
+    "min": 0.5324,
+    "reps": 6
+   }
+  },
+  "status": [
+   "server READY 19:40:24 startup_s=335",
+   "suite rc=0 19:41:54",
+   "gsm8k300 rc=0 19:51:16",
+   "lp:8192+32000 rc=0 19:54:08",
+   "valdump rc=0 19:54:23",
+   "server ALIVE_AT_END",
+   "DONE"
+  ],
+  "topk_compare": {
+   "checks_per_rank": [
+    197260
+   ],
+   "mismatches": 0,
+   "ranks": 8
+  }
+ }
+}

@@ -1,0 +1,102 @@
+[
+ {
+  "file": "2026-11-15-0828-xinyuan-1c6afefe8a-window-default-preview.md",
+  "source": "generated for this round",
+  "sha256": "f050a43b7701c83efeba3d45ce2d0736a86a05c00cf58094b6eee97655b29ae9"
+ },
+ {
+  "file": "dep8/eval/sgl_eval_gsm8k_20261115-074916/metrics.json",
+  "source": "/scratch/cc-merge/logs/eval/sgl_eval_gsm8k_20261115-074916/metrics.json",
+  "sha256": "d7c409f5326a10649e7734332c5f54e86568ce02c9f5a61c6bedcade0447f2ea"
+ },
+ {
+  "file": "dep8/eval/sgl_eval_gsm8k_20261115-074916/output-rs0.jsonl.gz",
+  "source": "/scratch/cc-merge/logs/eval/sgl_eval_gsm8k_20261115-074916/output-rs0.jsonl",
+  "sha256": "15cafefaf935b177805822d0e8d47c2cc89244f4cbf2d540670b8126048c8141"
+ },
+ {
+  "file": "dep8/gsm8k.log.gz",
+  "source": "/scratch/cc-merge/logs/gsm8k.log",
+  "sha256": "349f3dd9b5a27d02823deeaa45cbf4f77cc158039254018f4a0773501959a944"
+ },
+ {
+  "file": "dep8/launch.sh",
+  "source": "/scratch/cc-merge/logs/launch.sh",
+  "sha256": "24e88fa54ea77f1a90cf20cfed568ec15e3dddb9e36c16b10726c2094e8a9b92"
+ },
+ {
+  "file": "dep8/midfork.json",
+  "source": "/scratch/cc-merge/logs/midfork.json",
+  "sha256": "bc5ce07b89ff7334ba5040df199cc0540997f5de4fa0653a93d81a4b8c1c9b66"
+ },
+ {
+  "file": "dep8/midfork.log",
+  "source": "/scratch/cc-merge/logs/midfork.log",
+  "sha256": "5f2cf05ff1ed5f14ba10f3d4f5ea5b03e907b768047e6b320ddbf5acc5552e7a"
+ },
+ {
+  "file": "dep8/probe.json",
+  "source": "/scratch/cc-merge/logs/probe.json",
+  "sha256": "42a7c38039baf21f67bac43da6e12c116056ed2a34724c14f395312d7dafb1e4"
+ },
+ {
+  "file": "dep8/probe.log",
+  "source": "/scratch/cc-merge/logs/probe.log",
+  "sha256": "ea20abf7fb14405ca66e7b4dbdd07c26288deea6b48ee523c305ab51451ec96f"
+ },
+ {
+  "file": "dep8/serve.log.gz",
+  "source": "/scratch/cc-merge/logs/serve.log",
+  "sha256": "4a70370e658c4a2c2890188d6ce19528d521179718e5fd17630f5e44eee13667"
+ },
+ {
+  "file": "dep8/suite.json",
+  "source": "/scratch/cc-merge/logs/suite.json",
+  "sha256": "7636bc5bb2089ddb5201e2926ac6d1caa347af61b2b6ae19e349cf0d803b4b4e"
+ },
+ {
+  "file": "dep8/suite.log",
+  "source": "/scratch/cc-merge/logs/suite.log",
+  "sha256": "0f190bb349b5ef0b0635d250777090fe210398b755b1c39602e8a88a1218a80e"
+ },
+ {
+  "file": "gate-swadef.out",
+  "source": "/scratch/cc-merge/gate-swadef.out",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+ },
+ {
+  "file": "gate-swadef.sh",
+  "source": "/scratch/cc-merge/gate-swadef.sh",
+  "sha256": "2df2eec47d1eda2d9f548be10746631212d8098472210a64d3a9e074d769947a"
+ },
+ {
+  "file": "midfork.py",
+  "source": "/scratch/cc-merge/midfork.py",
+  "sha256": "57a55e5696f9ab61f23023443c9964b707362b9e1566a6400affd27712e4ba35"
+ },
+ {
+  "file": "probe.py",
+  "source": "/scratch/cc-merge/probe.py",
+  "sha256": "c9574ace555b108fa74ab4b5e4703d4f495a0e85784fa760b63a1f30103a5ba9"
+ },
+ {
+  "file": "repro.md",
+  "source": "generated for this round",
+  "sha256": "582e5045c3f53fe60d7f0fce0276de1088631866ee2a81eed6b9228bfa00cb04"
+ },
+ {
+  "file": "status",
+  "source": "/scratch/cc-merge/status",
+  "sha256": "4aa02321494f3df64c4fe82b8477901fbaa4072573d3ce5ffaa9de8f1bb93b5f"
+ },
+ {
+  "file": "suite.py",
+  "source": "/scratch/cc-merge/suite.py",
+  "sha256": "ede865a6f6f919e89a11efbed4ba12c91b1181446836ec3945e68b5967d411cf"
+ },
+ {
+  "file": "summary.json",
+  "source": "generated for this round",
+  "sha256": "ee3fa7359c5fa4356c3f181dd5e080c3c341e7733f43993b2b0d21cc7395e85f"
+ }
+]

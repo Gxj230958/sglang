@@ -1,0 +1,142 @@
+[
+ {
+  "file": "eval.sh",
+  "source": "/scratch/cc-swa/bin/eval.sh",
+  "sha256": "eeef3b0f5c186f6b03c474325cb24442bcd7122eb5c402e4ffef0f7bea0d66e3"
+ },
+ {
+  "file": "omitted-files.json",
+  "source": "generated for this round",
+  "sha256": "3103dda5ff362f6787c2ddac47c5fa4edd8204b4e5269060b7a83ae4a2e63fde"
+ },
+ {
+  "file": "probe.py",
+  "source": "/scratch/cc-swa/bin/probe.py",
+  "sha256": "c9574ace555b108fa74ab4b5e4703d4f495a0e85784fa760b63a1f30103a5ba9"
+ },
+ {
+  "file": "rdma-auto-decode/launch.sh",
+  "source": "/scratch/cc-swa/logs/pd-d-rdma-flaky/launch.sh",
+  "sha256": "e520da2bffd4084e0de9cb4c3a1c2dc3ef81a2eef213cd037d3a3c0c1231410a"
+ },
+ {
+  "file": "rdma-auto-prefill/launch.sh",
+  "source": "/scratch/cc-swa/logs/pd-p-rdma-flaky/launch.sh",
+  "sha256": "5273332cdc1366775fd36ea4a15d1ba6aa45575f3e39be537cbd9e7721a107af"
+ },
+ {
+  "file": "repro.md",
+  "source": "generated for this round",
+  "sha256": "38e7040fa4762eab318f67637042ebbb76cd55948d7102b87a53b60aa84cecf6"
+ },
+ {
+  "file": "run1-client/eval.status",
+  "source": "/scratch/cc-swa/logs/pd-router-run1/eval.status",
+  "sha256": "c90f99905d03d01981e12c71b5a913f9198f3d7841e9c1173eb5081af1ed2d7c"
+ },
+ {
+  "file": "run1-client/eval/sgl_eval_gsm8k_20261112-202139/metrics.json",
+  "source": "/scratch/cc-swa/logs/pd-router-run1/eval/sgl_eval_gsm8k_20261112-202139/metrics.json",
+  "sha256": "7eda643d5e4edfa997e09a51f56c7cb908fa8990e26834739e0dd700820dbd5a"
+ },
+ {
+  "file": "run1-client/eval/sgl_eval_gsm8k_20261112-202139/output-rs0.jsonl.gz",
+  "source": "/scratch/cc-swa/logs/pd-router-run1/eval/sgl_eval_gsm8k_20261112-202139/output-rs0.jsonl",
+  "sha256": "bce31f8458f306c3777e69c4d5989b523f2d8f64b4070489ca6723cfc9de721d"
+ },
+ {
+  "file": "run1-client/gsm8k.log.gz",
+  "source": "/scratch/cc-swa/logs/pd-router-run1/gsm8k.log",
+  "sha256": "c43a31d2ce9f1e0e2cef825396f51b4eef0a659220627dc13907c2769ba16a5a"
+ },
+ {
+  "file": "run1-client/probe.json",
+  "source": "/scratch/cc-swa/logs/pd-router-run1/probe.json",
+  "sha256": "667ec7c01aa4604f7d875d4e5301bf9bbb309a9164149a1d7d7a999fe03e03dc"
+ },
+ {
+  "file": "run1-client/probe.log",
+  "source": "/scratch/cc-swa/logs/pd-router-run1/probe.log",
+  "sha256": "1dc69bbeccf8fb50caf0aea2cb701cf6033c52e7103f66931bb0797c82a1965d"
+ },
+ {
+  "file": "run1-client/serve.log.gz",
+  "source": "/scratch/cc-swa/logs/pd-router-run1/serve.log",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+ },
+ {
+  "file": "run1-client/stress1.jsonl",
+  "source": "/scratch/cc-swa/logs/pd-router-run1/stress1.jsonl",
+  "sha256": "95e86318dd2d03f69528b4191a859d5277ffe50d51c0aa86d918661351777114"
+ },
+ {
+  "file": "run1-client/stress1.log",
+  "source": "/scratch/cc-swa/logs/pd-router-run1/stress1.log",
+  "sha256": "a6f6c688843c80246a000e8ac04ad556ef52da235f238a3cf0657de003b96e61"
+ },
+ {
+  "file": "run1-client/wait.log",
+  "source": "/scratch/cc-swa/logs/pd-router-run1/wait.log",
+  "sha256": "3dfa3fb239f56c778a1e9b33eb31328349edd155a95806dac4378904e88527e5"
+ },
+ {
+  "file": "run1-decode/launch.sh",
+  "source": "/scratch/cc-swa/logs/pd-d-run1/launch.sh",
+  "sha256": "a55d04bba24c377ce0676848a105c05ea0aa01fc187326c7b5ff9140d3116800"
+ },
+ {
+  "file": "run1-prefill/launch.sh",
+  "source": "/scratch/cc-swa/logs/pd-p-run1/launch.sh",
+  "sha256": "c386e8165800b5c367728f4a730254dc396814996c6b85c76fb3f4bd76650e4c"
+ },
+ {
+  "file": "run2-client/probe-cold.json",
+  "source": "/scratch/cc-swa/logs/pd-router/probe-cold.json",
+  "sha256": "871a48271312b6f34ff85e400355d8487efcb93b405c6a6aa30e717f8c42bf32"
+ },
+ {
+  "file": "run2-client/probe-cold.log",
+  "source": "/scratch/cc-swa/logs/pd-router/probe-cold.log",
+  "sha256": "57121cb03b7b2fa64e7b49a46f69abf487136ce5d535884d39e3bb42f34f0434"
+ },
+ {
+  "file": "run2-client/stress2.jsonl",
+  "source": "/scratch/cc-swa/logs/pd-router/stress2.jsonl",
+  "sha256": "3e56e880502d7646edb0442d6f01a827bb67095385be183d697dfd1f34c31e79"
+ },
+ {
+  "file": "run2-client/stress2.log",
+  "source": "/scratch/cc-swa/logs/pd-router/stress2.log",
+  "sha256": "18fdfd5c9c0fd2c7a595298a5179751909960d22e50f14fc7695f40d60a1b918"
+ },
+ {
+  "file": "run2-decode/launch.sh",
+  "source": "/scratch/cc-swa/logs/pd-d/launch.sh",
+  "sha256": "a55d04bba24c377ce0676848a105c05ea0aa01fc187326c7b5ff9140d3116800"
+ },
+ {
+  "file": "run2-prefill/launch.sh",
+  "source": "/scratch/cc-swa/logs/pd-p/launch.sh",
+  "sha256": "c386e8165800b5c367728f4a730254dc396814996c6b85c76fb3f4bd76650e4c"
+ },
+ {
+  "file": "serve.sh",
+  "source": "/scratch/cc-swa/bin/serve.sh",
+  "sha256": "a993b9cb4622ffafe9794ff819039a95cc30d11933269bfa6c32128579f53be8"
+ },
+ {
+  "file": "stress.py",
+  "source": "/scratch/cc-swa/bin/stress.py",
+  "sha256": "10c5bcab28f4e4cd514384d84b1c94d889bb5981515bbf0f0cec90cc3ed31db4"
+ },
+ {
+  "file": "summary.json",
+  "source": "generated for this round",
+  "sha256": "b70efcbe141555fd0d18455b7e17ccb19423e25e43340c991c5a1798677b64a3"
+ },
+ {
+  "file": "wait.sh",
+  "source": "/scratch/cc-swa/bin/wait.sh",
+  "sha256": "c9799b19dcbcccf516de3d466f87dd084f51deccbca571521ec29b80e3c39c00"
+ }
+]

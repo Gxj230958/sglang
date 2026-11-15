@@ -1,0 +1,3 @@
+{"tokens": ["</think>", "79", "7", "2", "21", "<|user|>"], "completion_tokens": 6, "text": "797221", "finish_reason": "stop", "prompt_tokens": 120935, "cached_tokens": 0, "target": 110000, "record": 1208, "expected": "797221", "correct": true}
+{"tokens": ["</think>", "70", "9", "29", "5", "<|user|>"], "completion_tokens": 6, "text": "709295", "finish_reason": "stop", "prompt_tokens": 120936, "cached_tokens": 120896, "target": 110000, "record": 4230, "expected": "709295", "correct": true}
+{"tokens": ["</think>", "9", "68", "4", "27", "<|user|>"], "completion_tokens": 6, "text": "968427", "finish_reason": "stop", "prompt_tokens": 120936, "cached_tokens": 120896, "target": 110000, "record": 8458, "expected": "968427", "correct": true}

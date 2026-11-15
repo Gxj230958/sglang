@@ -1,0 +1,72 @@
+[
+ {
+  "file": "combo.sh",
+  "source": "/scratch/cc-combo/combo.sh",
+  "sha256": "cdc49a0d40c6809031f3417d6404729d86cbcdf930698de97c15e2f7916c725a"
+ },
+ {
+  "file": "dep8/eval/sgl_eval_gsm8k_20261113-121349/metrics.json",
+  "source": "/scratch/cc-combo/logs/dep8/eval/sgl_eval_gsm8k_20261113-121349/metrics.json",
+  "sha256": "2eed3e0c73b4a76be7d4d011c69a9e9fc52281d21db2fd9095f9eeb0bc835d81"
+ },
+ {
+  "file": "dep8/eval/sgl_eval_gsm8k_20261113-121349/output-rs0.jsonl.gz",
+  "source": "/scratch/cc-combo/logs/dep8/eval/sgl_eval_gsm8k_20261113-121349/output-rs0.jsonl",
+  "sha256": "918fb3eabe2b05f77f3aa864ffec62e5a74769488ce02ff6615497d9eec6f3f9"
+ },
+ {
+  "file": "dep8/gsm8k.log.gz",
+  "source": "/scratch/cc-combo/logs/dep8/gsm8k.log",
+  "sha256": "d7e7be5cf07fdcb453dd4f11d738e2f2efb364d62ddf6cc69f9870518b208ebb"
+ },
+ {
+  "file": "dep8/launch.sh",
+  "source": "/scratch/cc-combo/logs/dep8/launch.sh",
+  "sha256": "013bf18e18b0538a8748b26bf248dbc3a54054e2b53e32628d573a65fac89607"
+ },
+ {
+  "file": "dep8/midfork.json",
+  "source": "/scratch/cc-combo/logs/dep8/midfork.json",
+  "sha256": "5695e6097b49183ca9edf27f63a7411f6412c82705c2de1d2d796b86a4169a76"
+ },
+ {
+  "file": "dep8/midfork.log",
+  "source": "/scratch/cc-combo/logs/dep8/midfork.log",
+  "sha256": "7353be9d1ee5f3dad8f7a0d5433acafc454ec2ce6fe928f0a6f05a32f5897b6b"
+ },
+ {
+  "file": "dep8/probe.json",
+  "source": "/scratch/cc-combo/logs/dep8/probe.json",
+  "sha256": "0aa634778107fa5c4b97234e66528c829eca9ef82eae720107e72b141aebc648"
+ },
+ {
+  "file": "dep8/probe.log",
+  "source": "/scratch/cc-combo/logs/dep8/probe.log",
+  "sha256": "104e8ac242e30a7e038f64e24fb7bfdce3fe788129c081cb6262ee103ee19691"
+ },
+ {
+  "file": "dep8/serve.log.gz",
+  "source": "/scratch/cc-combo/logs/dep8/serve.log",
+  "sha256": "dbb7fc5b6cde939423d09392a37580a01bcb209973e1d9e8f60c6e6bda17ab6b"
+ },
+ {
+  "file": "midfork.py",
+  "source": "/scratch/cc-combo/midfork.py",
+  "sha256": "57a55e5696f9ab61f23023443c9964b707362b9e1566a6400affd27712e4ba35"
+ },
+ {
+  "file": "probe.py",
+  "source": "/scratch/cc-combo/probe.py",
+  "sha256": "c9574ace555b108fa74ab4b5e4703d4f495a0e85784fa760b63a1f30103a5ba9"
+ },
+ {
+  "file": "repro.md",
+  "source": "generated for this round",
+  "sha256": "c5e798a24f2c6644f227b308ed1bdc8d0b62c4170e22ed73d8ae3dd167926692"
+ },
+ {
+  "file": "summary.json",
+  "source": "generated for this round",
+  "sha256": "5f0b281b95bbda3375c511f5fc58f059f9eacd5b341621ce7103e96adc53fd0e"
+ }
+]

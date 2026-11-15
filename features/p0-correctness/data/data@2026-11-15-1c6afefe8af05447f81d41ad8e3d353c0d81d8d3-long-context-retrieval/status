@@ -1,0 +1,10 @@
+new-window READY 08:13:20
+new-window long rc=0 08:15:38
+new-window short rc=0 08:16:10
+new-full READY 08:19:06
+new-full long rc=0 08:21:23
+new-full short rc=0 08:21:55
+old-window READY 08:24:41
+old-window long rc=0 08:27:03
+old-window short rc=0 08:27:34
+DONE

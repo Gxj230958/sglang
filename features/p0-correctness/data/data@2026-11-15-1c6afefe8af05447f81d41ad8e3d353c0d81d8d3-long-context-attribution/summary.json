@@ -1,0 +1,185 @@
+{
+ "dep8-bf16": {
+  "server_logs": {
+   "serve.log.gz": {
+    "decode_batch_lines_with_accept_len": 8,
+    "decode_batches_cuda_graph_true": 8,
+    "hicache_prefetch_success": 0,
+    "mean_accept_len": 2.6362,
+    "mismatch": 0,
+    "process_failed_for_slice": 0,
+    "rail_paused": 0,
+    "traceback": 0,
+    "transfer_failed": 0,
+    "transport_retry_counter_exceeded": 0,
+    "window_pool": [
+     "full_layer_tokens=1367744, swa_layer_tokens=136768"
+    ]
+   }
+  },
+  "stress": {
+   "long.jsonl": {
+    "by_target_length": {
+     "110000": {
+      "correct": 7,
+      "error": 0,
+      "stop": 12,
+      "stop_and_correct": 7,
+      "total": 12
+     },
+     "60000": {
+      "correct": 8,
+      "error": 0,
+      "stop": 10,
+      "stop_and_correct": 8,
+      "total": 12
+     }
+    },
+    "prompt_tokens_min_max": [
+     64696,
+     120974
+    ],
+    "stop_and_correct": 15,
+    "total": 24
+   },
+   "think.jsonl": {
+    "by_target_length": {
+     "110000": {
+      "correct": 8,
+      "error": 0,
+      "stop": 12,
+      "stop_and_correct": 8,
+      "total": 12
+     },
+     "60000": {
+      "correct": 9,
+      "error": 0,
+      "stop": 12,
+      "stop_and_correct": 9,
+      "total": 12
+     }
+    },
+    "prompt_tokens_min_max": [
+     64696,
+     120974
+    ],
+    "stop_and_correct": 17,
+    "total": 24
+   }
+  }
+ },
+ "dep8-fp8-think": {
+  "server_logs": {
+   "serve.log.gz": {
+    "decode_batch_lines_with_accept_len": 7,
+    "decode_batches_cuda_graph_true": 7,
+    "hicache_prefetch_success": 0,
+    "mean_accept_len": 2.83,
+    "mismatch": 0,
+    "process_failed_for_slice": 0,
+    "rail_paused": 0,
+    "traceback": 0,
+    "transfer_failed": 0,
+    "transport_retry_counter_exceeded": 0,
+    "window_pool": [
+     "full_layer_tokens=2656064, swa_layer_tokens=265600"
+    ]
+   }
+  },
+  "stress": {
+   "think.jsonl": {
+    "by_target_length": {
+     "110000": {
+      "correct": 8,
+      "error": 0,
+      "stop": 12,
+      "stop_and_correct": 8,
+      "total": 12
+     },
+     "60000": {
+      "correct": 10,
+      "error": 0,
+      "stop": 12,
+      "stop_and_correct": 10,
+      "total": 12
+     }
+    },
+    "prompt_tokens_min_max": [
+     64696,
+     120974
+    ],
+    "stop_and_correct": 18,
+    "total": 24
+   }
+  }
+ },
+ "tp8-bf16": {
+  "server_logs": {
+   "serve.log.gz": {
+    "decode_batch_lines_with_accept_len": 8,
+    "decode_batches_cuda_graph_true": 8,
+    "hicache_prefetch_success": 0,
+    "mean_accept_len": 2.565,
+    "mismatch": 0,
+    "process_failed_for_slice": 0,
+    "rail_paused": 0,
+    "traceback": 0,
+    "transfer_failed": 0,
+    "transport_retry_counter_exceeded": 0,
+    "window_pool": [
+     "full_layer_tokens=1195520, swa_layer_tokens=119552"
+    ]
+   }
+  },
+  "stress": {
+   "long.jsonl": {
+    "by_target_length": {
+     "110000": {
+      "correct": 6,
+      "error": 0,
+      "stop": 10,
+      "stop_and_correct": 6,
+      "total": 12
+     },
+     "60000": {
+      "correct": 10,
+      "error": 0,
+      "stop": 10,
+      "stop_and_correct": 10,
+      "total": 12
+     }
+    },
+    "prompt_tokens_min_max": [
+     64696,
+     120974
+    ],
+    "stop_and_correct": 16,
+    "total": 24
+   },
+   "think.jsonl": {
+    "by_target_length": {
+     "110000": {
+      "correct": 9,
+      "error": 0,
+      "stop": 12,
+      "stop_and_correct": 9,
+      "total": 12
+     },
+     "60000": {
+      "correct": 10,
+      "error": 0,
+      "stop": 12,
+      "stop_and_correct": 10,
+      "total": 12
+     }
+    },
+    "prompt_tokens_min_max": [
+     64696,
+     120974
+    ],
+    "stop_and_correct": 19,
+    "total": 24
+   }
+  }
+ }
+}

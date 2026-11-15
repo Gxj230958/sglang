@@ -1,0 +1,56 @@
+[
+ {
+  "text": "805458",
+  "finish": "stop",
+  "prompt_tokens": 6696,
+  "cached": 0,
+  "case": "first",
+  "expected": "805458",
+  "correct": true
+ },
+ {
+  "text": "805458",
+  "finish": "stop",
+  "prompt_tokens": 6696,
+  "cached": 6656,
+  "case": "identical",
+  "expected": "805458",
+  "correct": true
+ },
+ {
+  "text": "408893",
+  "finish": "stop",
+  "prompt_tokens": 6697,
+  "cached": 6656,
+  "case": "fork_at_end",
+  "expected": "408893",
+  "correct": true
+ },
+ {
+  "text": "317465",
+  "finish": "stop",
+  "prompt_tokens": 6703,
+  "cached": 0,
+  "case": "mid_fork_late_record",
+  "expected": "317465",
+  "correct": true
+ },
+ {
+  "text": "859979",
+  "finish": "stop",
+  "prompt_tokens": 6703,
+  "cached": 6656,
+  "case": "mid_fork_early_record",
+  "expected": "859979",
+  "correct": true
+ },
+ {
+  "text": "574210",
+  "finish": "stop",
+  "prompt_tokens": 6715,
+  "cached": 6656,
+  "case": "follow_up_turn",
+  "expected": "574210",
+  "correct": true
+ }
+]

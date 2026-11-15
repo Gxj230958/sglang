@@ -1,0 +1,155 @@
+{
+ "rdma-auto-decode/serve.log": {
+  "bytes": 661581,
+  "derived_before_omission": {
+   "decode_batch_lines_with_accept_len": 0,
+   "decode_batches_cuda_graph_true": 0,
+   "hicache_prefetch_success": 0,
+   "mismatch": 0,
+   "process_failed_for_slice": 0,
+   "rail_paused": 0,
+   "traceback": 0,
+   "transfer_failed": 4,
+   "transport_retry_counter_exceeded": 0
+  },
+  "reason": "contains private node addresses",
+  "sha256_as_captured": "29d01d4ddfb0984daac7dd5f8551b58617ba3e18e6b7c18981c2171df7a2a227",
+  "source": "/scratch/cc-swa/logs/pd-d-rdma-flaky/serve.log"
+ },
+ "rdma-auto-prefill/serve.log": {
+  "bytes": 1049038,
+  "derived_before_omission": {
+   "decode_batch_lines_with_accept_len": 0,
+   "decode_batches_cuda_graph_true": 0,
+   "hicache_prefetch_success": 0,
+   "mismatch": 0,
+   "process_failed_for_slice": 2011,
+   "rail_paused": 2011,
+   "traceback": 0,
+   "transfer_failed": 4,
+   "transport_retry_counter_exceeded": 2011,
+   "window_pool": [
+    "full_layer_tokens=422016, swa_layer_tokens=42176"
+   ]
+  },
+  "reason": "contains private node addresses",
+  "sha256_as_captured": "1ea5b4a777dfe21ff1dae91144d33dae8b62ca690829b332e39e0776e3f0b7fa",
+  "source": "/scratch/cc-swa/logs/pd-p-rdma-flaky/serve.log"
+ },
+ "run1-client/router.log": {
+  "bytes": 1191282,
+  "derived_before_omission": {
+   "decode_batch_lines_with_accept_len": 0,
+   "decode_batches_cuda_graph_true": 0,
+   "hicache_prefetch_success": 0,
+   "mismatch": 0,
+   "process_failed_for_slice": 0,
+   "rail_paused": 0,
+   "traceback": 0,
+   "transfer_failed": 0,
+   "transport_retry_counter_exceeded": 0
+  },
+  "reason": "contains private node addresses",
+  "sha256_as_captured": "439ab17bd9cf3a59de85937725fcb18afba545674dca94cd9fa768e1cc8306a7",
+  "source": "/scratch/cc-swa/logs/pd-router-run1/router.log"
+ },
+ "run1-decode/serve.log": {
+  "bytes": 416127,
+  "derived_before_omission": {
+   "accept_len_during_gsm8k": {
+    "run1-client/eval/sgl_eval_gsm8k_20261112-202139": {
+     "decode_batch_lines": 349,
+     "mean_accept_len": 2.5822
+    }
+   },
+   "decode_batch_lines_with_accept_len": 356,
+   "decode_batches_cuda_graph_true": 356,
+   "hicache_prefetch_success": 0,
+   "mean_accept_len": 2.5747,
+   "mismatch": 0,
+   "process_failed_for_slice": 0,
+   "rail_paused": 0,
+   "traceback": 0,
+   "transfer_failed": 0,
+   "transport_retry_counter_exceeded": 0
+  },
+  "reason": "contains private node addresses",
+  "sha256_as_captured": "6be2ea0e830f4e8a3acd1abed8391053f04dfa76a005c187b9eb20d47d24f12a",
+  "source": "/scratch/cc-swa/logs/pd-d-run1/serve.log"
+ },
+ "run1-prefill/serve.log": {
+  "bytes": 497953,
+  "derived_before_omission": {
+   "decode_batch_lines_with_accept_len": 0,
+   "decode_batches_cuda_graph_true": 0,
+   "hicache_prefetch_success": 0,
+   "mismatch": 0,
+   "process_failed_for_slice": 0,
+   "rail_paused": 0,
+   "traceback": 0,
+   "transfer_failed": 0,
+   "transport_retry_counter_exceeded": 0,
+   "window_pool": [
+    "full_layer_tokens=422016, swa_layer_tokens=42176"
+   ]
+  },
+  "reason": "contains private node addresses",
+  "sha256_as_captured": "0b3a68e210de3069ef7b5fff6c6b465c68fb042ddc9902f70046cd580cb54cc6",
+  "source": "/scratch/cc-swa/logs/pd-p-run1/serve.log"
+ },
+ "run2-client/router.log": {
+  "bytes": 354923,
+  "derived_before_omission": {
+   "decode_batch_lines_with_accept_len": 0,
+   "decode_batches_cuda_graph_true": 0,
+   "hicache_prefetch_success": 0,
+   "mismatch": 0,
+   "process_failed_for_slice": 0,
+   "rail_paused": 0,
+   "traceback": 0,
+   "transfer_failed": 0,
+   "transport_retry_counter_exceeded": 0
+  },
+  "reason": "contains private node addresses",
+  "sha256_as_captured": "c7ed38e081c5485526584d4657377d90ecc332bc7f2964133c3ecf1520775df3",
+  "source": "/scratch/cc-swa/logs/pd-router/router.log"
+ },
+ "run2-decode/serve.log": {
+  "bytes": 207089,
+  "derived_before_omission": {
+   "decode_batch_lines_with_accept_len": 33,
+   "decode_batches_cuda_graph_true": 33,
+   "hicache_prefetch_success": 0,
+   "mean_accept_len": 2.1155,
+   "mismatch": 0,
+   "process_failed_for_slice": 0,
+   "rail_paused": 0,
+   "traceback": 0,
+   "transfer_failed": 0,
+   "transport_retry_counter_exceeded": 0
+  },
+  "reason": "contains private node addresses",
+  "sha256_as_captured": "57824d0263ebb7be87f6f9740ad3b8a919c95de7344d07896c58ef98268957bb",
+  "source": "/scratch/cc-swa/logs/pd-d/serve.log"
+ },
+ "run2-prefill/serve.log": {
+  "bytes": 315779,
+  "derived_before_omission": {
+   "decode_batch_lines_with_accept_len": 0,
+   "decode_batches_cuda_graph_true": 0,
+   "hicache_prefetch_success": 0,
+   "mismatch": 0,
+   "process_failed_for_slice": 0,
+   "rail_paused": 0,
+   "traceback": 0,
+   "transfer_failed": 0,
+   "transport_retry_counter_exceeded": 0,
+   "window_pool": [
+    "full_layer_tokens=422016, swa_layer_tokens=42176"
+   ]
+  },
+  "reason": "contains private node addresses",
+  "sha256_as_captured": "1afa8d1942a9ec7e69309f440980bc88e66bf34ced115d5c9e3101410fe53bca",
+  "source": "/scratch/cc-swa/logs/pd-p/serve.log"
+ }
+}

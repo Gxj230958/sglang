@@ -50,11 +50,12 @@ We select the features we need from the subdirectories below for implementation.
 - [ ] Complete Analysis and Design before starting any concrete parallelism implementation.
 - [ ] Record selected and deferred subprojects with the reasons for each decision.
 
-### Stage 2: Implement and validate the selected scope — Not started
+### Stage 2: Implement and validate the selected scope — In progress
 
-- [ ] Link implementation work from an exact code commit or pull request.
-- [ ] Record correctness and performance evidence in a self-contained experiment round.
+- [x] Prefill CP for the hybrid window KV layout: `radixark/sglang-zai` pull request 57, merged as `5337c504`; evidence in [Prefill CP](prefill-cp/README.md) E01–E03; completed 2026-11-15.
+- [x] Attention DP with expert parallelism on the hybrid window KV layout (DEP4 on GB300, DEP8 on B300): evidence in [DP Attention](dp-attention/README.md) E01–E02; completed 2026-11-13.
+- [ ] Record performance evidence for the selected combinations.
 
 ## Experiments
 
-No experiments recorded yet.
+Experiment rounds are recorded in the subprojects: [Prefill CP](prefill-cp/README.md) E01–E03 and [DP Attention](dp-attention/README.md) E01–E02.

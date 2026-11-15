@@ -1,0 +1,2 @@
+v-tp8|verify|tp8|suite,gsm8k300,lp:8192+32000,valdump
+v-dep8|verify|dep8|suite,gsm8k300,lp:8192+32000,valdump

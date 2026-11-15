@@ -1,0 +1,3 @@
+00:46:59 epoch=boot dev=0 alloc_mib=0 max_alloc_mib=0 max_reserved_mib=0 free_mib=273488
+00:49:00 epoch=boot dev=0 alloc_mib=0 max_alloc_mib=0 max_reserved_mib=2 free_mib=32407
+00:49:03 epoch=gsm8k dev=0 alloc_mib=0 max_alloc_mib=0 max_reserved_mib=2 free_mib=31782

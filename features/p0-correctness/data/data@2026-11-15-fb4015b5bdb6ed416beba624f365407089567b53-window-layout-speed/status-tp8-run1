@@ -1,0 +1,25 @@
+READY tp8-window 23:09:04
+tp8-window short-c1 seed=1 rc=0 23:10:01
+tp8-window short-c32 seed=1 rc=0 23:11:08
+tp8-window long-c4 seed=1 rc=0 23:11:56
+tp8-window mt th=1 seed=1 rc=0 23:12:51
+tp8-window mt th=4 seed=1 rc=0 23:13:24
+tp8-window short-c1 seed=2 rc=0 23:14:07
+tp8-window short-c32 seed=2 rc=0 23:15:06
+tp8-window long-c4 seed=2 rc=0 23:15:55
+tp8-window mt th=1 seed=2 rc=0 23:16:50
+tp8-window mt th=4 seed=2 rc=0 23:17:24
+ALIVE tp8-window
+READY tp8-full 23:22:46
+tp8-full short-c1 seed=1 rc=0 23:23:30
+tp8-full short-c32 seed=1 rc=0 23:24:34
+tp8-full long-c4 seed=1 rc=0 23:25:24
+tp8-full mt th=1 seed=1 rc=0 23:26:19
+tp8-full mt th=4 seed=1 rc=0 23:26:52
+tp8-full short-c1 seed=2 rc=0 23:27:34
+tp8-full short-c32 seed=2 rc=0 23:28:36
+tp8-full long-c4 seed=2 rc=0 23:29:26
+tp8-full mt th=1 seed=2 rc=0 23:30:22
+tp8-full mt th=4 seed=2 rc=0 23:30:55
+ALIVE tp8-full
+DONE

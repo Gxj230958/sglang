@@ -45,6 +45,7 @@
 | 2026-11-06 | Native head64 vs small-head sparse prefill; 8×B300 TP8; BF16 KV; FlashMLA 1.0.3 | RANDOM-8K-1K | +0.42% mean cap-64 throughput; 4.31% lower mean median TTFT | [E01](data/data@2026-11-06-aabfddd8214bee95b6b526af5f77c81398bda133-small-head-serving/repro.md) |
 | 2026-11-06 | Same paired methodology | RANDOM-100K-2K | +3.01% throughput; 2.81% lower TTFT in one run | [E01](data/data@2026-11-06-aabfddd8214bee95b6b526af5f77c81398bda133-small-head-serving/repro.md) |
 | 2026-11-11 | DeepGEMM vs FlashInfer TRT-LLM MoE runner; 2×4 Vera Rubin TP8; BF16 KV; MTP 3/1/4 | RANDOM-128K-512 | Batch 1: 190.6 → 259.2 output tokens/s (+36%); batch 8: 940.3 → 1145.6 (+22%) | [E02](data/data@2026-11-11-0a30c79a92e3428c74e249a0270eb0ce8a42c32f-vr-moe-backend/repro.md) |
+| 2026-11-15 | Window KV layout (default of pull request 67) vs full-length layout; 8×B300; DEP8 `trtllm` FP8 and TP8 BF16; MTP 3/1/4 | Random IDs 2000 / 500 at caps 1 and 32, 30000 / 300 at cap 4, seeds 1/2; 8-turn chat | No difference attributable to the layout: DEP8 cap-32 1061 vs 1077 output tokens/s, TP8 cap-32 1171 vs 1175; multi-turn median TTFT within 10 ms | [Correctness E14](../p0-correctness/data/data@2026-11-15-fb4015b5bdb6ed416beba624f365407089567b53-window-layout-speed/repro.md) |
 
 ## Release Profiles
 
@@ -72,6 +73,7 @@
 - Decision: for plain TP leave `--moe-runner-backend` unset, which resolves to `flashinfer_trtllm` on SM100-class devices, instead of passing `deep_gemm`; keep DeepGEMM for DeepEP layouts. Measured on Vera Rubin only.
 - Experiment [E02](data/data@2026-11-11-0a30c79a92e3428c74e249a0270eb0ce8a42c32f-vr-moe-backend/repro.md): the TRT-LLM runner decodes 36% (batch 1) and 22% (batch 8) faster than DeepGEMM at 131072 input tokens, with GSM8K at 93.1% against 92.3–92.6%.
 - [ ] Repeat the MoE runner comparison on B300 and above 8 concurrent requests, where one GSM8K run finished 4–7% later with TRT-LLM.
+- Reference: [Kernel Optimization E03](../p0-kernel-opt/data/data@2026-11-12-6ed895fa2678d8c4d52576e7ae5e3707ee4180e7-topk-by-reference-b300/repro.md) holds a B300 serving A/B at `710bcb2a` (TP8: about 619 tok/s at 2000 input / 256 output tokens and concurrency 16; DEP8: about 531 tok/s) taken to compare a loop-state memory change. It is not a baseline round: three rounds, one seed each, unlocked environment.
 - [ ] Select profiles that satisfy correctness and service-level gates.
 
 ### Stage 3: Revalidate locked artifacts — Not started

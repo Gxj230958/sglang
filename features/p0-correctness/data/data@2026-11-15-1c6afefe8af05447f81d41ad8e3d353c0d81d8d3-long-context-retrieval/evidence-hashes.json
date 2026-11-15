@@ -1,0 +1,127 @@
+[
+ {
+  "file": "2026-11-15-0828-xinyuan-1c6afefe8a-long-context-retrieval-open.md",
+  "source": "generated for this round",
+  "sha256": "c7181ecb52f0e6172fa05b582584a7bb353701a26cedec2db67104bb9be6dbad"
+ },
+ {
+  "file": "ab.out",
+  "source": "/scratch/cc-long/ab.out",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+ },
+ {
+  "file": "ab.sh",
+  "source": "/scratch/cc-long/ab.sh",
+  "sha256": "1bd7b6d29af154028b9d6944513ebdd576f7efbd8ad3ddc8efd9727fb5cae806"
+ },
+ {
+  "file": "new-full-length/launch.sh",
+  "source": "/scratch/cc-long/logs/new-full/launch.sh",
+  "sha256": "8903f443570ad7b46cf8fa1861fc47f1265de6aee9e2cf20240ec4ec39451b63"
+ },
+ {
+  "file": "new-full-length/long.jsonl",
+  "source": "/scratch/cc-long/logs/new-full/long.jsonl",
+  "sha256": "87f69accdda37fa8d5a161cfaef2b92e904319d1bc317ef1e34e1372c0019e05"
+ },
+ {
+  "file": "new-full-length/long.log",
+  "source": "/scratch/cc-long/logs/new-full/long.log",
+  "sha256": "4d8e9b6c8fc7112a3ac128c6d3b6c6f79053fd678ec0abf385d95a4774dc63c2"
+ },
+ {
+  "file": "new-full-length/serve.log.gz",
+  "source": "/scratch/cc-long/logs/new-full/serve.log",
+  "sha256": "2b5cf3299c699c0bf9aa85b58aa17acba5ffae92134773359d029cc673cf1af9"
+ },
+ {
+  "file": "new-full-length/short.jsonl",
+  "source": "/scratch/cc-long/logs/new-full/short.jsonl",
+  "sha256": "0a2a98cb818bfaa1b3baf5fbdc71b17da2bac01925632e2846bff8838d0f5253"
+ },
+ {
+  "file": "new-full-length/short.log",
+  "source": "/scratch/cc-long/logs/new-full/short.log",
+  "sha256": "36f3140dfdff42b70e8fbc52b73394c9ec69ad326dd685be89ff89fb831ea6b5"
+ },
+ {
+  "file": "new-window/launch.sh",
+  "source": "/scratch/cc-long/logs/new-window/launch.sh",
+  "sha256": "96f5840a5d6011e0d4016e02728e7403ea50f44cba8b2372b1c56e51f8b1b071"
+ },
+ {
+  "file": "new-window/long.jsonl",
+  "source": "/scratch/cc-long/logs/new-window/long.jsonl",
+  "sha256": "289235ba91da7287e72d5e26dde7acfa0ab7217ca1e094bd0b83c996e3eb341d"
+ },
+ {
+  "file": "new-window/long.log",
+  "source": "/scratch/cc-long/logs/new-window/long.log",
+  "sha256": "7ee35a10d49518e35cbf325339b6efeba15566c891cffb1ce094e5a1e8a764cb"
+ },
+ {
+  "file": "new-window/serve.log.gz",
+  "source": "/scratch/cc-long/logs/new-window/serve.log",
+  "sha256": "43a5f50b214760010d69ff81db9a1bb2af3f2c766dbf309cfda3494a2b7f8f70"
+ },
+ {
+  "file": "new-window/short.jsonl",
+  "source": "/scratch/cc-long/logs/new-window/short.jsonl",
+  "sha256": "d8e72fbea829d254f8e485e028453b1473bafd8020368660e7fa2e7bcbba3893"
+ },
+ {
+  "file": "new-window/short.log",
+  "source": "/scratch/cc-long/logs/new-window/short.log",
+  "sha256": "6130ace65499fda79c0df11db8bd11a749fa8a863b96880d9372b39c4661d749"
+ },
+ {
+  "file": "pre-merge-window/launch.sh",
+  "source": "/scratch/cc-long/logs/old-window/launch.sh",
+  "sha256": "91350caf5fff795f481f3e10c9ea2088a9acd43f6d95e0c7329ef0f7796884d8"
+ },
+ {
+  "file": "pre-merge-window/long.jsonl",
+  "source": "/scratch/cc-long/logs/old-window/long.jsonl",
+  "sha256": "e6f0d28f7616d2ab559f071c9b9595a01f1957b68f589eefff96fb7b9a24c163"
+ },
+ {
+  "file": "pre-merge-window/long.log",
+  "source": "/scratch/cc-long/logs/old-window/long.log",
+  "sha256": "92f848029a729ec8e457d5bb2070cebd140d1588e910baa031e7a61424e8dc05"
+ },
+ {
+  "file": "pre-merge-window/serve.log.gz",
+  "source": "/scratch/cc-long/logs/old-window/serve.log",
+  "sha256": "0e0b2b566512c6026cc0cebde7564333eefedc16864d3733797c55bf27e09bd3"
+ },
+ {
+  "file": "pre-merge-window/short.jsonl",
+  "source": "/scratch/cc-long/logs/old-window/short.jsonl",
+  "sha256": "835cf562fd65a06914641021f0646b661ab9f376d726bef13691cb74739651f2"
+ },
+ {
+  "file": "pre-merge-window/short.log",
+  "source": "/scratch/cc-long/logs/old-window/short.log",
+  "sha256": "c439ffc46230f23ea1443e6f83039a540804df82ec6f160bd5e502a764033070"
+ },
+ {
+  "file": "repro.md",
+  "source": "generated for this round",
+  "sha256": "b997e3a8badca882240d752521563ce693e07ba682d87cb1dd6f4db646696db1"
+ },
+ {
+  "file": "status",
+  "source": "/scratch/cc-long/status",
+  "sha256": "0c2919197f9cc86a2f80cbed31753033d3867dc30c8d8a5594b74c7c6884ca55"
+ },
+ {
+  "file": "stress.py",
+  "source": "/scratch/cc-long/stress.py",
+  "sha256": "10c5bcab28f4e4cd514384d84b1c94d889bb5981515bbf0f0cec90cc3ed31db4"
+ },
+ {
+  "file": "summary.json",
+  "source": "generated for this round",
+  "sha256": "40bc209113404a406a681d8f374edbeef99071c228a74b3468c89d1f34dadd8c"
+ }
+]

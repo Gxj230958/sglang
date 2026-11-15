@@ -1,0 +1,5 @@
+READY 10:40:30
+probe rc=1 10:40:38
+gsm8k rc=0 10:57:55
+ALIVE_AT_END
+DONE

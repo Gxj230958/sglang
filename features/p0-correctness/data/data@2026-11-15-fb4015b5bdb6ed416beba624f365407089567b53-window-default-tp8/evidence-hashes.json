@@ -1,0 +1,72 @@
+[
+ {
+  "file": "2026-11-15-0931-xinyuan-fb4015b5bd-window-default-pull-request-open.md",
+  "source": "generated for this round",
+  "sha256": "97721bee23033dc07e075428478047bab45f900727c373d0eba3a4a58ce25ea3"
+ },
+ {
+  "file": "gate-final.out",
+  "source": "/scratch/cc-merge/gate-final.out",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+ },
+ {
+  "file": "gate.sh",
+  "source": "/scratch/cc-merge/gate.sh",
+  "sha256": "f01c2b85433326bffc45b8252097ee34d502748a0d80f77e23405927e8be6c86"
+ },
+ {
+  "file": "repro.md",
+  "source": "generated for this round",
+  "sha256": "b9bc10500e625c024a5900215573653a668f233e4dec91fdd252b8ce557e9943"
+ },
+ {
+  "file": "status",
+  "source": "/scratch/cc-merge/status",
+  "sha256": "96f2dae3764608a1ffec647b0fc04b91a0bbac208654a54181bddcab05f186b6"
+ },
+ {
+  "file": "suite.py",
+  "source": "/scratch/cc-merge/suite.py",
+  "sha256": "ede865a6f6f919e89a11efbed4ba12c91b1181446836ec3945e68b5967d411cf"
+ },
+ {
+  "file": "summary.json",
+  "source": "generated for this round",
+  "sha256": "093bcd013c19f5b8893eb6720b5c0825b4c8765a84ca6fd184e692fdfccd8146"
+ },
+ {
+  "file": "tp8/gsm8k.log.gz",
+  "source": "/scratch/cc-merge/logs/gsm8k.log",
+  "sha256": "88a7db9a447a00f4f4c46009e85a226645d3d54315a05e0a511de43e0192391b"
+ },
+ {
+  "file": "tp8/launch.sh",
+  "source": "/scratch/cc-merge/logs/launch.sh",
+  "sha256": "7dead3e5d577029b3f368e9d6e1c14daf862d245f83900e7ef346f29b0c0607d"
+ },
+ {
+  "file": "tp8/serve.log.gz",
+  "source": "/scratch/cc-merge/logs/serve.log",
+  "sha256": "e0dda203268b6d1cb148ad21dbcdb34a2117db822ece056f9623cb5a3abd4978"
+ },
+ {
+  "file": "tp8/suite.json",
+  "source": "/scratch/cc-merge/logs/suite.json",
+  "sha256": "0a9469edcd45e8253d7d86ff05d891597ea1d20c5c8adb258c3bbcf5db095859"
+ },
+ {
+  "file": "tp8/suite.log",
+  "source": "/scratch/cc-merge/logs/suite.log",
+  "sha256": "0c4830d30795bc89a3cf0c02651f505b6940959001ce933bc6d100c696020252"
+ },
+ {
+  "file": "tp8/eval/sgl_eval_gsm8k_20261115-091440/metrics.json",
+  "source": "/scratch/cc-merge/logs/eval/sgl_eval_gsm8k_20261115-091440/metrics.json",
+  "sha256": "70499c587f9e67c79a9604c70b31d2072110d514ab4431f0dfb9e35dd8d05f11"
+ },
+ {
+  "file": "tp8/eval/sgl_eval_gsm8k_20261115-091440/output-rs0.jsonl.gz",
+  "source": "/scratch/cc-merge/logs/eval/sgl_eval_gsm8k_20261115-091440/output-rs0.jsonl",
+  "sha256": "1842ceef65c63ad85f7b04d8dbcd3a58debe8a6428fa879c672dc5637cebaeb1"
+ }
+]

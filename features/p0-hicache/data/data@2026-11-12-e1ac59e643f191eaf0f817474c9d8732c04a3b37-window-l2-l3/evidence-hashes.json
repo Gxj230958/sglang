@@ -1,0 +1,147 @@
+[
+ {
+  "file": "eval.sh",
+  "source": "/scratch/cc-swa/bin/eval.sh",
+  "sha256": "eeef3b0f5c186f6b03c474325cb24442bcd7122eb5c402e4ffef0f7bea0d66e3"
+ },
+ {
+  "file": "hc-seq.sh",
+  "source": "/scratch/cc-swa/bin/hc-seq.sh",
+  "sha256": "f53ea88e020368ba7bc88491167b9028c2948c5614ee5f11c228b28ce68ca353"
+ },
+ {
+  "file": "hicache.py",
+  "source": "/scratch/cc-swa/bin/hicache.py",
+  "sha256": "f0ea440ab6cb78bfc242f930910b4edcbe94784a949ab82eca4d66514c1a76b7"
+ },
+ {
+  "file": "midfork.py",
+  "source": "/scratch/cc-swa/bin/midfork.py",
+  "sha256": "57a55e5696f9ab61f23023443c9964b707362b9e1566a6400affd27712e4ba35"
+ },
+ {
+  "file": "repro.md",
+  "source": "generated for this round",
+  "sha256": "1ef6f5cad6b6e5c0a9c00cceaa0854d3f8f62f638704c9915355a1f87d205248"
+ },
+ {
+  "file": "serve.sh",
+  "source": "/scratch/cc-swa/bin/serve.sh",
+  "sha256": "a993b9cb4622ffafe9794ff819039a95cc30d11933269bfa6c32128579f53be8"
+ },
+ {
+  "file": "size32/anchor.json",
+  "source": "/scratch/cc-swa/logs/hc-swa-run1/anchor.json",
+  "sha256": "a3e038f79ea76b50c4c725d08cbf2ae22fcef4e55028601bb94fc4ac4d5b3412"
+ },
+ {
+  "file": "size32/launch.sh",
+  "source": "/scratch/cc-swa/logs/hc-swa-run1/launch.sh",
+  "sha256": "f0630939df54fa2b8221afb756d231b2e4030bced31b4a9e61aa408f6c5e18f1"
+ },
+ {
+  "file": "size32/serve.log.gz",
+  "source": "/scratch/cc-swa/logs/hc-swa-run1/serve.log",
+  "sha256": "0c04adf1af3a7f9408bf7e5be995afed211e0169292eadf1b8380b6796d5ca95"
+ },
+ {
+  "file": "size64-l2/anchor.json",
+  "source": "/scratch/cc-swa/logs/hc-swa-run2/anchor.json",
+  "sha256": "a3e038f79ea76b50c4c725d08cbf2ae22fcef4e55028601bb94fc4ac4d5b3412"
+ },
+ {
+  "file": "size64-l2/eval.status",
+  "source": "/scratch/cc-swa/logs/hc-swa-run2/eval.status",
+  "sha256": "c90f99905d03d01981e12c71b5a913f9198f3d7841e9c1173eb5081af1ed2d7c"
+ },
+ {
+  "file": "size64-l2/eval/sgl_eval_gsm8k_20261112-212052/metrics.json",
+  "source": "/scratch/cc-swa/logs/hc-swa-run2/eval/sgl_eval_gsm8k_20261112-212052/metrics.json",
+  "sha256": "25b4f023e13f184e033b63f28df938c2971a30ac7c9f1772f5340570b74d3639"
+ },
+ {
+  "file": "size64-l2/eval/sgl_eval_gsm8k_20261112-212052/output-rs0.jsonl.gz",
+  "source": "/scratch/cc-swa/logs/hc-swa-run2/eval/sgl_eval_gsm8k_20261112-212052/output-rs0.jsonl",
+  "sha256": "37412586bbe4c43679a71d1b77dab69db7e43ed56ba34623d1485c2f3a0d5a03"
+ },
+ {
+  "file": "size64-l2/fill2.log",
+  "source": "/scratch/cc-swa/logs/hc-swa-run2/fill2.log",
+  "sha256": "942fb603cb23cab018241b8b685bd2419b668cfb358743654ade2c02a0e645c3"
+ },
+ {
+  "file": "size64-l2/gsm8k.log.gz",
+  "source": "/scratch/cc-swa/logs/hc-swa-run2/gsm8k.log",
+  "sha256": "1783846705527c5db79578a6d74588b8230f217b1c28169769551a913d215ac5"
+ },
+ {
+  "file": "size64-l2/launch.sh",
+  "source": "/scratch/cc-swa/logs/hc-swa-run2/launch.sh",
+  "sha256": "c8031853453bedd0548b309d19cbf083b730c0953f95bbc3e56c12d18f9bb5e6"
+ },
+ {
+  "file": "size64-l2/midfork-a.json",
+  "source": "/scratch/cc-swa/logs/hc-swa-run2/midfork-a.json",
+  "sha256": "dda783a1326aa0659862313f8ec2f0931d273079dc270987173ee915e22019f4"
+ },
+ {
+  "file": "size64-l2/midfork-a.log",
+  "source": "/scratch/cc-swa/logs/hc-swa-run2/midfork-a.log",
+  "sha256": "8aee76db3a0731f426bce9079e70c1aec79e66ad5819e388c7d485debf1bad32"
+ },
+ {
+  "file": "size64-l2/midfork-b.json",
+  "source": "/scratch/cc-swa/logs/hc-swa-run2/midfork-b.json",
+  "sha256": "619cfee9a998386675b2d84f4dc23121e86e0aaa6d3617616fcb83ccb294345b"
+ },
+ {
+  "file": "size64-l2/midfork-b.log",
+  "source": "/scratch/cc-swa/logs/hc-swa-run2/midfork-b.log",
+  "sha256": "a747ea20d0f186df40b585b27a5c33ea7670609a6f48297fc1af1ccb6d7531b1"
+ },
+ {
+  "file": "size64-l2/prefetch-after-b.txt",
+  "source": "/scratch/cc-swa/logs/hc-swa-run2/prefetch-after-b.txt",
+  "sha256": "cb70dd73c714ef5a42f7072000c6e868d7c804d24d2de882a48b4cfb587a5952"
+ },
+ {
+  "file": "size64-l2/prefetch-before-b.txt",
+  "source": "/scratch/cc-swa/logs/hc-swa-run2/prefetch-before-b.txt",
+  "sha256": "cb70dd73c714ef5a42f7072000c6e868d7c804d24d2de882a48b4cfb587a5952"
+ },
+ {
+  "file": "size64-l2/serve.log.gz",
+  "source": "/scratch/cc-swa/logs/hc-swa-run2/serve.log",
+  "sha256": "8fe0e71b833f6a717845366a4b032ee72059ac86e17fd63ec9d6ea3b5097d901"
+ },
+ {
+  "file": "size64-l3-restart/launch.sh",
+  "source": "/scratch/cc-swa/logs/hc-swa/launch.sh",
+  "sha256": "c8031853453bedd0548b309d19cbf083b730c0953f95bbc3e56c12d18f9bb5e6"
+ },
+ {
+  "file": "size64-l3-restart/midfork-l3.json",
+  "source": "/scratch/cc-swa/logs/hc-swa/midfork-l3.json",
+  "sha256": "619cfee9a998386675b2d84f4dc23121e86e0aaa6d3617616fcb83ccb294345b"
+ },
+ {
+  "file": "size64-l3-restart/midfork-l3.log",
+  "source": "/scratch/cc-swa/logs/hc-swa/midfork-l3.log",
+  "sha256": "a747ea20d0f186df40b585b27a5c33ea7670609a6f48297fc1af1ccb6d7531b1"
+ },
+ {
+  "file": "size64-l3-restart/serve.log.gz",
+  "source": "/scratch/cc-swa/logs/hc-swa/serve.log",
+  "sha256": "ff55c7a16011d31579319e41c0740d9e0eb1681aa26ec5c3e43d2fbd49109af8"
+ },
+ {
+  "file": "summary.json",
+  "source": "generated for this round",
+  "sha256": "628d3950cc2bdd5da15cf5b89f71eb1943a9d1fdc719d116fd33df70d3f8e80d"
+ },
+ {
+  "file": "wait.sh",
+  "source": "/scratch/cc-swa/bin/wait.sh",
+  "sha256": "c9799b19dcbcccf516de3d466f87dd084f51deccbca571521ec29b80e3c39c00"
+ }
+]

@@ -1,0 +1,2 @@
+{"600": {"total": 25, "stop": 25, "correct": 25, "error": 0}, "3000": {"total": 25, "stop": 25, "correct": 25, "error": 0}, "9000": {"total": 25, "stop": 25, "correct": 25, "error": 0}, "20000": {"total": 25, "stop": 24, "correct": 24, "error": 0}}
+BAD {"n": 20000, "k": 20, "prompt_tokens": 20719, "cached": 0, "finish": "length", "ntok": 64, "correct": false, "tokens": ["The", " user", " is", " asking", " for", " the", " code", " of", " Record", " ", "109", "4", ".", " Let", " me", " look", " through", " the", " list", " to", " find", " Record", " ", "109"]}

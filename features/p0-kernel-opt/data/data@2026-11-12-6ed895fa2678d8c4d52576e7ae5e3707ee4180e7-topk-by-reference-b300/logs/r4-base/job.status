@@ -1,0 +1,5 @@
+server READY 00:03:38 startup_s=291
+perf:4 rc=0 00:05:27
+lp:8192+32000 rc=0 00:08:20
+server ALIVE_AT_END
+DONE

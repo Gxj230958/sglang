@@ -1,0 +1,6 @@
+micro rc=0
+kernel-clean rc=0
+unit-clean rc=0
+unit-base rc=0
+topk_ownership rc=0
+DONE

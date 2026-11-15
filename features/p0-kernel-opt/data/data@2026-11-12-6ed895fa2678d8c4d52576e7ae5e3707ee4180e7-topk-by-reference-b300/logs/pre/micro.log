@@ -1,0 +1,3 @@
+{'rows': 32, 'clone7_ms': 0.042, 'blend_ref_ms': 0.017, 'blend_onebuf_ms': 0.0163, 'clone7_peak_mib': 1, 'blend_ref_peak_mib': 0, 'blend_onebuf_peak_mib': 0}
+{'rows': 8192, 'clone7_ms': 0.1723, 'blend_ref_ms': 0.2093, 'blend_onebuf_ms': 0.2096, 'clone7_peak_mib': 448, 'blend_ref_peak_mib': 192, 'blend_onebuf_peak_mib': 96}
+{'rows': 32768, 'clone7_ms': 0.5887, 'blend_ref_ms': 0.7924, 'blend_onebuf_ms': 0.7876, 'clone7_peak_mib': 1792, 'blend_ref_peak_mib': 768, 'blend_onebuf_peak_mib': 384}

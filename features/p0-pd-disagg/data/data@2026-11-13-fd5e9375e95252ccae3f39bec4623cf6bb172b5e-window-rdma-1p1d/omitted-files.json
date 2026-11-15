@@ -1,0 +1,75 @@
+{
+ "decode/serve.log": {
+  "bytes": 440202,
+  "derived_before_omission": {
+   "accept_len_during_gsm8k": {
+    "prefill-and-client/eval/sgl_eval_gsm8k_20261113-111517": {
+     "decode_batch_lines": 362,
+     "mean_accept_len": 2.5518
+    }
+   },
+   "decode_batch_lines_with_accept_len": 369,
+   "decode_batches_cuda_graph_true": 369,
+   "hicache_prefetch_success": 0,
+   "mean_accept_len": 2.5432,
+   "mismatch": 0,
+   "process_failed_for_slice": 0,
+   "rail_paused": 0,
+   "traceback": 0,
+   "transfer_failed": 0,
+   "transport_retry_counter_exceeded": 0
+  },
+  "reason": "contains private node addresses",
+  "sha256_as_captured": "a68f68d1f2c7357ef571ff2b6b84366730be738ed3ea662e94176b3971cf540c",
+  "source": "/scratch/cc-regate/logs/pd-d/serve.log"
+ },
+ "pd-p.sh": {
+  "bytes": 1966,
+  "reason": "contains private node addresses",
+  "sha256_as_captured": "d27bb76634ec006514f273385ba458c093169a879e1dfd95b7910245e22e50ee",
+  "source": "/scratch/cc-regate/pd-p.sh"
+ },
+ "pd-run.sh": {
+  "bytes": 1339,
+  "reason": "contains private node addresses",
+  "sha256_as_captured": "1ef581a363b014224598812e3aee21739f25b8736f7e60b38a595c70a729bab4",
+  "source": "/scratch/cc-regate/pd-run.sh"
+ },
+ "prefill-and-client/router.log": {
+  "bytes": 1214513,
+  "derived_before_omission": {
+   "decode_batch_lines_with_accept_len": 0,
+   "decode_batches_cuda_graph_true": 0,
+   "hicache_prefetch_success": 0,
+   "mismatch": 0,
+   "process_failed_for_slice": 0,
+   "rail_paused": 0,
+   "traceback": 0,
+   "transfer_failed": 0,
+   "transport_retry_counter_exceeded": 0
+  },
+  "reason": "contains private node addresses",
+  "sha256_as_captured": "cec3e116f20c064e0634764c454f5ff12a68aba43b7d5885751276160952b6b1",
+  "source": "/scratch/cc-regate/logs/pd-p/router.log"
+ },
+ "prefill-and-client/serve.log": {
+  "bytes": 506884,
+  "derived_before_omission": {
+   "decode_batch_lines_with_accept_len": 0,
+   "decode_batches_cuda_graph_true": 0,
+   "hicache_prefetch_success": 0,
+   "mismatch": 0,
+   "process_failed_for_slice": 0,
+   "rail_paused": 0,
+   "traceback": 0,
+   "transfer_failed": 0,
+   "transport_retry_counter_exceeded": 0,
+   "window_pool": [
+    "full_layer_tokens=422016, swa_layer_tokens=42176"
+   ]
+  },
+  "reason": "contains private node addresses",
+  "sha256_as_captured": "ed2f39ca668667775dfa4d48c8aae96b82d9e7086bc36fa1fc6c9931ed8b912f",
+  "source": "/scratch/cc-regate/logs/pd-p/serve.log"
+ }
+}

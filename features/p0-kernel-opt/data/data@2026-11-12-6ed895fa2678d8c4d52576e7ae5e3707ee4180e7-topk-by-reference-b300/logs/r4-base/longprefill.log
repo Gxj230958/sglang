@@ -1,0 +1,12 @@
+{'target': 8192, 'rep': 0, 'prompt_tokens': 8161, 'latency_s': 0.548}
+{'target': 8192, 'rep': 1, 'prompt_tokens': 8098, 'latency_s': 0.8414}
+{'target': 8192, 'rep': 2, 'prompt_tokens': 8107, 'latency_s': 0.5376}
+{'target': 8192, 'rep': 3, 'prompt_tokens': 8169, 'latency_s': 0.5448}
+{'target': 8192, 'rep': 4, 'prompt_tokens': 8133, 'latency_s': 0.5401}
+{'target': 8192, 'rep': 5, 'prompt_tokens': 8138, 'latency_s': 0.5415}
+{'target': 32000, 'rep': 0, 'prompt_tokens': 31812, 'latency_s': 1.9049}
+{'target': 32000, 'rep': 1, 'prompt_tokens': 31816, 'latency_s': 1.9096}
+{'target': 32000, 'rep': 2, 'prompt_tokens': 31796, 'latency_s': 1.9144}
+{'target': 32000, 'rep': 3, 'prompt_tokens': 31818, 'latency_s': 1.9128}
+{'target': 32000, 'rep': 4, 'prompt_tokens': 31735, 'latency_s': 1.9085}
+{'target': 32000, 'rep': 5, 'prompt_tokens': 31820, 'latency_s': 1.9088}

@@ -1,0 +1,122 @@
+[
+ {
+  "file": "2026-11-15-0906-xinyuan-1c6afefe8a-long-context-attribution-closed.md",
+  "source": "generated for this round",
+  "sha256": "8c502c3991125d48e127a7b3afdaf2a967258c79398ee061bb5ae9a9c9391199"
+ },
+ {
+  "file": "attrib.out",
+  "source": "/scratch/cc-long/attrib.out",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+ },
+ {
+  "file": "attrib.sh",
+  "source": "/scratch/cc-long/attrib.sh",
+  "sha256": "f44e9ae03141751edfa8e3099c119eac04dc17443f7d66c75936a813165aa442"
+ },
+ {
+  "file": "repro.md",
+  "source": "generated for this round",
+  "sha256": "1015f19f272557acc843235417a5462742a33ac5a2e87691cf6a9e58601ad916"
+ },
+ {
+  "file": "status",
+  "source": "/scratch/cc-long/status2",
+  "sha256": "81455718a7b6a49ef3c2d6acffbb66a279666007e0c52a1282bcf9093c00184b"
+ },
+ {
+  "file": "stress-think.py",
+  "source": "/scratch/cc-long/stress-think.py",
+  "sha256": "0bb4b9af27f5a66e1e6a8ccbdeb7cb3058de96c961f2702ab6b9bfeda3866e38"
+ },
+ {
+  "file": "stress.py",
+  "source": "/scratch/cc-long/stress.py",
+  "sha256": "10c5bcab28f4e4cd514384d84b1c94d889bb5981515bbf0f0cec90cc3ed31db4"
+ },
+ {
+  "file": "summary.json",
+  "source": "generated for this round",
+  "sha256": "e7e6af9105482a377abec8f17bb0a372b79f006ae7940aa4ff6b0ece272b39cf"
+ },
+ {
+  "file": "dep8-bf16/launch.sh",
+  "source": "/scratch/cc-long/logs/dep8-bf16/launch.sh",
+  "sha256": "dd840536765d142616715ef8f119e9042c1116d439867ae00894543eaec3dbbb"
+ },
+ {
+  "file": "dep8-bf16/long.jsonl",
+  "source": "/scratch/cc-long/logs/dep8-bf16/long.jsonl",
+  "sha256": "da36095ed668744f73280b33fd257f02134bd67ab4ebca7a7ee42fcccff0697f"
+ },
+ {
+  "file": "dep8-bf16/long.log",
+  "source": "/scratch/cc-long/logs/dep8-bf16/long.log",
+  "sha256": "fa280f18d81395e4f19a925ba50555705ee506b4af6c49c2d0ee739871f4d3d1"
+ },
+ {
+  "file": "dep8-bf16/serve.log.gz",
+  "source": "/scratch/cc-long/logs/dep8-bf16/serve.log",
+  "sha256": "a203b665724f0fdf0442a00224bdb531b7c8cd9d431097218db45e1e5e8ee38f"
+ },
+ {
+  "file": "dep8-bf16/think.jsonl",
+  "source": "/scratch/cc-long/logs/dep8-bf16/think.jsonl",
+  "sha256": "8ccb7fd80e089022c95145a17f675c21bcb2f0999f646c74cbcf584c914549eb"
+ },
+ {
+  "file": "dep8-bf16/think.log",
+  "source": "/scratch/cc-long/logs/dep8-bf16/think.log",
+  "sha256": "74e8251e4a8d87284d72322a749fee06e100f8e7df177a0be0c4e833d6baac22"
+ },
+ {
+  "file": "dep8-fp8-think/launch.sh",
+  "source": "/scratch/cc-long/logs/dep8-fp8-think/launch.sh",
+  "sha256": "bb7d489378768aecc93f6653c2b9a9e47dfafe5b884eec0474167fda96ce57d0"
+ },
+ {
+  "file": "dep8-fp8-think/serve.log.gz",
+  "source": "/scratch/cc-long/logs/dep8-fp8-think/serve.log",
+  "sha256": "7a52747f281b21846e885d323da20e01e3b08353d3af551a0f64f305ce3aa175"
+ },
+ {
+  "file": "dep8-fp8-think/think.jsonl",
+  "source": "/scratch/cc-long/logs/dep8-fp8-think/think.jsonl",
+  "sha256": "74ee1d34ae6aa93e77f0511324759c2c0f7c508a77be5e075901e114de2f86b0"
+ },
+ {
+  "file": "dep8-fp8-think/think.log",
+  "source": "/scratch/cc-long/logs/dep8-fp8-think/think.log",
+  "sha256": "af1a2960188b18d7dd86ceff1082f927c383281ca5d83bcbd46edd47edde9043"
+ },
+ {
+  "file": "tp8-bf16/launch.sh",
+  "source": "/scratch/cc-long/logs/tp8-bf16/launch.sh",
+  "sha256": "32c952f176b997c569d76cd15e3b8b6f135c86bcab367d2400e0a8e5885c37d8"
+ },
+ {
+  "file": "tp8-bf16/long.jsonl",
+  "source": "/scratch/cc-long/logs/tp8-bf16/long.jsonl",
+  "sha256": "37d23f608cccde4519e909937eede4c775e7d284d231dfeda1a3ff1a9fc9f38d"
+ },
+ {
+  "file": "tp8-bf16/long.log",
+  "source": "/scratch/cc-long/logs/tp8-bf16/long.log",
+  "sha256": "ec78fdead54b0e3cfb69403195cbe975b4acd64f8dce04db3dcdb61826889b8a"
+ },
+ {
+  "file": "tp8-bf16/serve.log.gz",
+  "source": "/scratch/cc-long/logs/tp8-bf16/serve.log",
+  "sha256": "394c99847d31e0aa2a03408d44069ff3d9a296ea61e2417c1a4c5e54c09c89a3"
+ },
+ {
+  "file": "tp8-bf16/think.jsonl",
+  "source": "/scratch/cc-long/logs/tp8-bf16/think.jsonl",
+  "sha256": "d119ea515d8fbe738377194f06fb986b7bb34313002444b2a3a17c42da369470"
+ },
+ {
+  "file": "tp8-bf16/think.log",
+  "source": "/scratch/cc-long/logs/tp8-bf16/think.log",
+  "sha256": "f7a87b2366c8eabfddb72ea450a1202118c4dcd35ef87417d7e013be6ccd6f59"
+ }
+]

@@ -1,0 +1,8 @@
+{"60000": {"total": 12, "stop": 12, "correct": 9, "error": 0}, "110000": {"total": 12, "stop": 12, "correct": 8, "error": 0}}
+BAD {"n": 60000, "k": 0, "prompt_tokens": 64712, "cached": 64704, "finish": "stop", "ntok": 108, "correct": false, "tokens": ["The", " user", " is", " asking", " for", " the", " code", " of", " Record", " ", "3", "17", "6", ".", " Let", " me", " find", " it", " in", " the", " provided", " text", ".\n\n", "Looking"]}
+BAD {"n": 60000, "k": 2, "prompt_tokens": 64764, "cached": 64704, "finish": "stop", "ntok": 5, "correct": false, "tokens": ["</think>", "148", "8", "73", "<|user|>"]}
+BAD {"n": 110000, "k": 2, "prompt_tokens": 120945, "cached": 0, "finish": "stop", "ntok": 6, "correct": false, "tokens": ["</think>", "6", "46", "5", "14", "<|user|>"]}
+BAD {"n": 60000, "k": 7, "prompt_tokens": 64749, "cached": 0, "finish": "stop", "ntok": 6, "correct": false, "tokens": ["</think>", "5", "28", "00", "6", "<|user|>"]}
+BAD {"n": 110000, "k": 8, "prompt_tokens": 120894, "cached": 120832, "finish": "stop", "ntok": 6, "correct": false, "tokens": ["</think>", "5", "39", "8", "70", "<|user|>"]}
+BAD {"n": 110000, "k": 9, "prompt_tokens": 120969, "cached": 120960, "finish": "stop", "ntok": 6, "correct": false, "tokens": ["</think>", "9", "11", "7", "35", "<|user|>"]}
+BAD {"n": 110000, "k": 11, "prompt_tokens": 120869, "cached": 120832, "finish": "stop", "ntok": 6, "correct": false, "tokens": ["</think>", "7", "70", "8", "65", "<|user|>"]}

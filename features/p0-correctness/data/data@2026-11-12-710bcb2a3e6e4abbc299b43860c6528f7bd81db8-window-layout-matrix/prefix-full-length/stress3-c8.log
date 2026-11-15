@@ -1,0 +1,3 @@
+{"9000": {"total": 150, "stop": 150, "correct": 150, "error": 0}, "20000": {"total": 150, "stop": 149, "correct": 149, "error": 0}}
+BAD {"n": 20000, "k": 141, "prompt_tokens": 20734, "cached": 0, "finish": "length", "ntok": 64, "correct": false, "tokens": ["The", " user", " is", " asking", " for", " the", " code", " of", " Record", " ", "107", "6", ".", " Let", " me", " find", " it", " in", " the", " list", ".\n\n", "Looking", " through", " the"]}
+STRESS_DONE

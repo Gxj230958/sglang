@@ -1,0 +1,7 @@
+server READY 19:40:24 startup_s=335
+suite rc=0 19:41:54
+gsm8k300 rc=0 19:51:16
+lp:8192+32000 rc=0 19:54:08
+valdump rc=0 19:54:23
+server ALIVE_AT_END
+DONE

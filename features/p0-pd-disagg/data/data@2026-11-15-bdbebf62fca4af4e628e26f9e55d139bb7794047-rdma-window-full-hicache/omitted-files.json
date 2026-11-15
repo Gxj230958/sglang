@@ -1,0 +1,242 @@
+{
+ "client.sh": {
+  "bytes": 2010,
+  "reason": "contains private node addresses",
+  "sha256_as_captured": "e6cb059efedce2fb473b7520e5585cd3833de82d577dcfe4e16085b798e0f3d6",
+  "source": "/scratch/cc-regate2/client.sh"
+ },
+ "pdfull-client/router.log": {
+  "bytes": 1214149,
+  "derived_before_omission": {
+   "decode_batch_lines_with_accept_len": 0,
+   "decode_batches_cuda_graph_true": 0,
+   "hicache_prefetch_success": 0,
+   "mismatch": 0,
+   "process_failed_for_slice": 0,
+   "rail_paused": 0,
+   "traceback": 0,
+   "transfer_failed": 0,
+   "transport_retry_counter_exceeded": 0
+  },
+  "reason": "contains private node addresses",
+  "sha256_as_captured": "5e8060aaa190dec957cb47024083ca0c197d7f23607bf697ede875d2f680df6a",
+  "source": "/scratch/cc-regate2/logs/pdfull-client/router.log"
+ },
+ "pdfull-decode/serve.log": {
+  "bytes": 407842,
+  "derived_before_omission": {
+   "accept_len_during_gsm8k": {
+    "pdfull-client/eval/sgl_eval_gsm8k_20261115-065855": {
+     "decode_batch_lines": 367,
+     "mean_accept_len": 2.6203
+    }
+   },
+   "decode_batch_lines_with_accept_len": 373,
+   "decode_batches_cuda_graph_true": 373,
+   "hicache_prefetch_success": 0,
+   "mean_accept_len": 2.611,
+   "mismatch": 0,
+   "process_failed_for_slice": 0,
+   "rail_paused": 0,
+   "traceback": 0,
+   "transfer_failed": 0,
+   "transport_retry_counter_exceeded": 0
+  },
+  "reason": "contains private node addresses",
+  "sha256_as_captured": "9894939e377f67785e1059b942a34daca18e934f8dcdbbcae5c3e5cfb9f5ad9b",
+  "source": "/scratch/cc-regate2/logs/pdfull-decode/serve.log"
+ },
+ "pdfull-prefill/serve.log": {
+  "bytes": 478514,
+  "derived_before_omission": {
+   "decode_batch_lines_with_accept_len": 0,
+   "decode_batches_cuda_graph_true": 0,
+   "hicache_prefetch_success": 0,
+   "mismatch": 0,
+   "process_failed_for_slice": 0,
+   "rail_paused": 0,
+   "traceback": 0,
+   "transfer_failed": 0,
+   "transport_retry_counter_exceeded": 0
+  },
+  "reason": "contains private node addresses",
+  "sha256_as_captured": "09f4e09858c2220f7de7a19a2da49e6b63836c3d103ac5a0be2d2756183eb3a0",
+  "source": "/scratch/cc-regate2/logs/pdfull-prefill/serve.log"
+ },
+ "pdhc-client/router.log": {
+  "bytes": 1189703,
+  "derived_before_omission": {
+   "decode_batch_lines_with_accept_len": 0,
+   "decode_batches_cuda_graph_true": 0,
+   "hicache_prefetch_success": 0,
+   "mismatch": 0,
+   "process_failed_for_slice": 0,
+   "rail_paused": 0,
+   "traceback": 0,
+   "transfer_failed": 0,
+   "transport_retry_counter_exceeded": 0
+  },
+  "reason": "contains private node addresses",
+  "sha256_as_captured": "edb2b96df44204f0c15d4838db22566531379f1981ccfb31f73554b59a6ebb63",
+  "source": "/scratch/cc-regate2/logs/pdhc-client/router.log"
+ },
+ "pdhc-decode/serve.log": {
+  "bytes": 449563,
+  "derived_before_omission": {
+   "accept_len_during_gsm8k": {
+    "pdhc-client/eval/sgl_eval_gsm8k_20261115-071537": {
+     "decode_batch_lines": 399,
+     "mean_accept_len": 2.6023
+    }
+   },
+   "decode_batch_lines_with_accept_len": 403,
+   "decode_batches_cuda_graph_true": 403,
+   "hicache_prefetch_success": 0,
+   "mean_accept_len": 2.5916,
+   "mismatch": 0,
+   "process_failed_for_slice": 0,
+   "rail_paused": 0,
+   "traceback": 0,
+   "transfer_failed": 0,
+   "transport_retry_counter_exceeded": 0
+  },
+  "reason": "contains private node addresses",
+  "sha256_as_captured": "59e6d691d8f8416c05902013f4e8d5cc944482eeda33a93b7a9467d4172757e4",
+  "source": "/scratch/cc-regate2/logs/pdhc-decode/serve.log"
+ },
+ "pdhc-prefill/serve.log": {
+  "bytes": 502876,
+  "derived_before_omission": {
+   "decode_batch_lines_with_accept_len": 0,
+   "decode_batches_cuda_graph_true": 0,
+   "hicache_prefetch_success": 0,
+   "mismatch": 0,
+   "process_failed_for_slice": 0,
+   "rail_paused": 0,
+   "traceback": 0,
+   "transfer_failed": 0,
+   "transport_retry_counter_exceeded": 0,
+   "window_pool": [
+    "full_layer_tokens=422400, swa_layer_tokens=42240"
+   ]
+  },
+  "reason": "contains private node addresses",
+  "sha256_as_captured": "74bf7249556900818d6bb3c4c06d4458cb57ddf118b6ff804f4e9a4669c70a43",
+  "source": "/scratch/cc-regate2/logs/pdhc-prefill/serve.log"
+ },
+ "pdhc3-client/router.log": {
+  "bytes": 12268,
+  "derived_before_omission": {
+   "decode_batch_lines_with_accept_len": 0,
+   "decode_batches_cuda_graph_true": 0,
+   "hicache_prefetch_success": 0,
+   "mismatch": 0,
+   "process_failed_for_slice": 0,
+   "rail_paused": 0,
+   "traceback": 0,
+   "transfer_failed": 0,
+   "transport_retry_counter_exceeded": 0
+  },
+  "reason": "contains private node addresses",
+  "sha256_as_captured": "cd8bf1e9bd5fd0a5f0550551e83a01763d674b6b093162f3b6acbd00c221bbc2",
+  "source": "/scratch/cc-regate2/logs/pdhc3-client/router.log"
+ },
+ "pdhc3-decode/serve.log": {
+  "bytes": 175198,
+  "derived_before_omission": {
+   "decode_batch_lines_with_accept_len": 0,
+   "decode_batches_cuda_graph_true": 0,
+   "hicache_prefetch_success": 0,
+   "mismatch": 0,
+   "process_failed_for_slice": 0,
+   "rail_paused": 0,
+   "traceback": 0,
+   "transfer_failed": 0,
+   "transport_retry_counter_exceeded": 0
+  },
+  "reason": "contains private node addresses",
+  "sha256_as_captured": "3cb3f1e7573cac72fb16fc6a958389e8df1061a86c842df7aa2cdf587ee41ef0",
+  "source": "/scratch/cc-regate2/logs/pdhc3-decode/serve.log"
+ },
+ "pdhc3-prefill/serve.log": {
+  "bytes": 162339,
+  "derived_before_omission": {
+   "decode_batch_lines_with_accept_len": 0,
+   "decode_batches_cuda_graph_true": 0,
+   "hicache_prefetch_success": 8,
+   "mismatch": 0,
+   "process_failed_for_slice": 0,
+   "rail_paused": 0,
+   "traceback": 0,
+   "transfer_failed": 0,
+   "transport_retry_counter_exceeded": 0,
+   "window_pool": [
+    "full_layer_tokens=422400, swa_layer_tokens=42240"
+   ]
+  },
+  "reason": "contains private node addresses",
+  "sha256_as_captured": "f0434fe183e5b60c17ae7185f60db7abe0f540c0f325b19cf22037051a85d6c7",
+  "source": "/scratch/cc-regate2/logs/pdhc3-prefill/serve.log"
+ },
+ "pdswa-client/router.log": {
+  "bytes": 1214202,
+  "derived_before_omission": {
+   "decode_batch_lines_with_accept_len": 0,
+   "decode_batches_cuda_graph_true": 0,
+   "hicache_prefetch_success": 0,
+   "mismatch": 0,
+   "process_failed_for_slice": 0,
+   "rail_paused": 0,
+   "traceback": 0,
+   "transfer_failed": 0,
+   "transport_retry_counter_exceeded": 0
+  },
+  "reason": "contains private node addresses",
+  "sha256_as_captured": "6fdc29975a93094b501ac5b3a9cddbb092d5bddc58b9b2b470f4b54e748e9b9c",
+  "source": "/scratch/cc-regate2/logs/pdswa-client/router.log"
+ },
+ "pdswa-decode/serve.log": {
+  "bytes": 446899,
+  "derived_before_omission": {
+   "accept_len_during_gsm8k": {
+    "pdswa-client/eval/sgl_eval_gsm8k_20261115-064113": {
+     "decode_batch_lines": 371,
+     "mean_accept_len": 2.7268
+    }
+   },
+   "decode_batch_lines_with_accept_len": 377,
+   "decode_batches_cuda_graph_true": 377,
+   "hicache_prefetch_success": 0,
+   "mean_accept_len": 2.7165,
+   "mismatch": 0,
+   "process_failed_for_slice": 0,
+   "rail_paused": 0,
+   "traceback": 0,
+   "transfer_failed": 0,
+   "transport_retry_counter_exceeded": 0
+  },
+  "reason": "contains private node addresses",
+  "sha256_as_captured": "cf9e28ea68d98acd2f95e3c2aea435010ad98d6568c5cdb56b3d559031d4aa31",
+  "source": "/scratch/cc-regate2/logs/pdswa-decode/serve.log"
+ },
+ "pdswa-prefill/serve.log": {
+  "bytes": 513406,
+  "derived_before_omission": {
+   "decode_batch_lines_with_accept_len": 0,
+   "decode_batches_cuda_graph_true": 0,
+   "hicache_prefetch_success": 0,
+   "mismatch": 0,
+   "process_failed_for_slice": 0,
+   "rail_paused": 0,
+   "traceback": 0,
+   "transfer_failed": 0,
+   "transport_retry_counter_exceeded": 0,
+   "window_pool": [
+    "full_layer_tokens=422400, swa_layer_tokens=42240"
+   ]
+  },
+  "reason": "contains private node addresses",
+  "sha256_as_captured": "abd7fe5324fd7e16cb3262ed060161148e242b8645a5d04a0a89a7f26ab65801",
+  "source": "/scratch/cc-regate2/logs/pdswa-prefill/serve.log"
+ }
+}

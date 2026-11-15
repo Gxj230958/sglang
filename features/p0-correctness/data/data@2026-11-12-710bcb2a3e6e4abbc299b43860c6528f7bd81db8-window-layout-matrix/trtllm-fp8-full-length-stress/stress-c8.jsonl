@@ -1,0 +1,300 @@
+{"n": 3000, "k": 0, "prompt_tokens": 2947, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "40", "7", "5", "43", "<|user|>"]}
+{"n": 9000, "k": 0, "prompt_tokens": 9184, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "240", "8", "72", "<|user|>"]}
+{"n": 20000, "k": 0, "prompt_tokens": 20768, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "370", "38", "7", "<|user|>"]}
+{"n": 3000, "k": 1, "prompt_tokens": 2965, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "89", "4", "3", "48", "<|user|>"]}
+{"n": 9000, "k": 1, "prompt_tokens": 9192, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "6", "60", "184", "<|user|>"]}
+{"n": 20000, "k": 1, "prompt_tokens": 20726, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "5", "11", "8", "13", "<|user|>"]}
+{"n": 3000, "k": 2, "prompt_tokens": 2946, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "47", "7", "89", "3", "<|user|>"]}
+{"n": 9000, "k": 2, "prompt_tokens": 9218, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "4", "11", "3", "23", "<|user|>"]}
+{"n": 20000, "k": 2, "prompt_tokens": 20696, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "202", "7", "66", "<|user|>"]}
+{"n": 3000, "k": 3, "prompt_tokens": 2955, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "9", "29", "264", "<|user|>"]}
+{"n": 9000, "k": 3, "prompt_tokens": 9182, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "5", "26", "46", "2", "<|user|>"]}
+{"n": 20000, "k": 3, "prompt_tokens": 20743, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "8", "28", "23", "6", "<|user|>"]}
+{"n": 3000, "k": 4, "prompt_tokens": 2938, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "208", "88", "5", "<|user|>"]}
+{"n": 9000, "k": 4, "prompt_tokens": 9193, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "9", "43", "50", "7", "<|user|>"]}
+{"n": 20000, "k": 4, "prompt_tokens": 20724, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "39", "6", "5", "47", "<|user|>"]}
+{"n": 3000, "k": 5, "prompt_tokens": 2947, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "90", "4", "77", "9", "<|user|>"]}
+{"n": 9000, "k": 5, "prompt_tokens": 9180, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "9", "60", "19", "3", "<|user|>"]}
+{"n": 20000, "k": 5, "prompt_tokens": 20779, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "8", "40", "9", "75", "<|user|>"]}
+{"n": 3000, "k": 6, "prompt_tokens": 2948, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "7", "35", "139", "<|user|>"]}
+{"n": 9000, "k": 6, "prompt_tokens": 9229, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "222", "69", "7", "<|user|>"]}
+{"n": 20000, "k": 6, "prompt_tokens": 20686, "cached": 0, "finish": "stop", "ntok": 56, "correct": true, "tokens": ["The", " user", " is", " asking", " for", " the", " code", " of", " Record", " ", "129", "8", ".", " Let", " me", " look", " through", " the", " list", " to", " find", " Record", " ", "129"]}
+{"n": 3000, "k": 7, "prompt_tokens": 2952, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "9", "11", "9", "68", "<|user|>"]}
+{"n": 9000, "k": 7, "prompt_tokens": 9209, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "8", "25", "102", "<|user|>"]}
+{"n": 20000, "k": 7, "prompt_tokens": 20737, "cached": 0, "finish": "stop", "ntok": 56, "correct": true, "tokens": ["The", " user", " is", " asking", " for", " the", " code", " of", " Record", " ", "6", "42", ".", " Let", " me", " look", " through", " the", " list", " to", " find", " Record", " ", "6"]}
+{"n": 3000, "k": 8, "prompt_tokens": 2944, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "6", "38", "28", "7", "<|user|>"]}
+{"n": 9000, "k": 8, "prompt_tokens": 9236, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "9", "65", "4", "19", "<|user|>"]}
+{"n": 20000, "k": 8, "prompt_tokens": 20725, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "98", "9", "600", "<|user|>"]}
+{"n": 3000, "k": 9, "prompt_tokens": 2967, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "5", "34", "5", "77", "<|user|>"]}
+{"n": 9000, "k": 9, "prompt_tokens": 9196, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "156", "30", "7", "<|user|>"]}
+{"n": 20000, "k": 9, "prompt_tokens": 20765, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "9", "26", "0", "27", "<|user|>"]}
+{"n": 3000, "k": 10, "prompt_tokens": 2945, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "127", "6", "28", "<|user|>"]}
+{"n": 9000, "k": 10, "prompt_tokens": 9198, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "45", "5", "147", "<|user|>"]}
+{"n": 20000, "k": 10, "prompt_tokens": 20746, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "88", "2", "141", "<|user|>"]}
+{"n": 3000, "k": 11, "prompt_tokens": 2942, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "103", "6", "27", "<|user|>"]}
+{"n": 9000, "k": 11, "prompt_tokens": 9205, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "99", "6", "7", "25", "<|user|>"]}
+{"n": 20000, "k": 11, "prompt_tokens": 20760, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "9", "39", "102", "<|user|>"]}
+{"n": 3000, "k": 12, "prompt_tokens": 2940, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "114", "2", "21", "<|user|>"]}
+{"n": 9000, "k": 12, "prompt_tokens": 9215, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "6", "55", "7", "45", "<|user|>"]}
+{"n": 20000, "k": 12, "prompt_tokens": 20715, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "49", "2", "55", "4", "<|user|>"]}
+{"n": 3000, "k": 13, "prompt_tokens": 2937, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "79", "3", "08", "3", "<|user|>"]}
+{"n": 9000, "k": 13, "prompt_tokens": 9196, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "211", "9", "32", "<|user|>"]}
+{"n": 20000, "k": 13, "prompt_tokens": 20726, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "70", "7", "06", "4", "<|user|>"]}
+{"n": 3000, "k": 14, "prompt_tokens": 2956, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "69", "2", "50", "9", "<|user|>"]}
+{"n": 9000, "k": 14, "prompt_tokens": 9197, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "320", "3", "35", "<|user|>"]}
+{"n": 20000, "k": 14, "prompt_tokens": 20714, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "88", "2", "7", "30", "<|user|>"]}
+{"n": 3000, "k": 15, "prompt_tokens": 2945, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "37", "1", "5", "44", "<|user|>"]}
+{"n": 9000, "k": 15, "prompt_tokens": 9209, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "6", "12", "8", "43", "<|user|>"]}
+{"n": 20000, "k": 15, "prompt_tokens": 20739, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "48", "6", "146", "<|user|>"]}
+{"n": 3000, "k": 16, "prompt_tokens": 2940, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "60", "4", "8", "42", "<|user|>"]}
+{"n": 9000, "k": 16, "prompt_tokens": 9221, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "8", "76", "37", "1", "<|user|>"]}
+{"n": 20000, "k": 16, "prompt_tokens": 20720, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "6", "32", "8", "40", "<|user|>"]}
+{"n": 3000, "k": 17, "prompt_tokens": 2957, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "99", "7", "50", "1", "<|user|>"]}
+{"n": 9000, "k": 17, "prompt_tokens": 9195, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "78", "5", "34", "7", "<|user|>"]}
+{"n": 20000, "k": 17, "prompt_tokens": 20697, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "80", "9", "38", "6", "<|user|>"]}
+{"n": 3000, "k": 18, "prompt_tokens": 2957, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "3", "99", "232", "<|user|>"]}
+{"n": 9000, "k": 18, "prompt_tokens": 9228, "cached": 0, "finish": "stop", "ntok": 56, "correct": true, "tokens": ["The", " user", " is", " asking", " for", " the", " code", " of", " Record", " ", "5", "49", ".", " Let", " me", " look", " through", " the", " list", " to", " find", " Record", " ", "5"]}
+{"n": 20000, "k": 18, "prompt_tokens": 20712, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "23", "3", "40", "7", "<|user|>"]}
+{"n": 3000, "k": 19, "prompt_tokens": 2961, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "70", "7", "66", "8", "<|user|>"]}
+{"n": 9000, "k": 19, "prompt_tokens": 9204, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "68", "4", "76", "7", "<|user|>"]}
+{"n": 20000, "k": 19, "prompt_tokens": 20747, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "23", "1", "65", "9", "<|user|>"]}
+{"n": 3000, "k": 20, "prompt_tokens": 2955, "cached": 0, "finish": "stop", "ntok": 6, "correct": false, "tokens": ["</think>", "38", "7", "03", "4", "<|user|>"]}
+{"n": 9000, "k": 20, "prompt_tokens": 9208, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "6", "70", "195", "<|user|>"]}
+{"n": 20000, "k": 20, "prompt_tokens": 20734, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "5", "66", "7", "13", "<|user|>"]}
+{"n": 3000, "k": 21, "prompt_tokens": 2962, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "137", "3", "90", "<|user|>"]}
+{"n": 9000, "k": 21, "prompt_tokens": 9201, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "9", "90", "4", "28", "<|user|>"]}
+{"n": 20000, "k": 21, "prompt_tokens": 20707, "cached": 0, "finish": "length", "ntok": 64, "correct": false, "tokens": ["The", " user", " is", " asking", " for", " the", " code", " of", " Record", " ", "95", "6", ".", " Let", " me", " look", " through", " the", " list", " to", " find", " Record", " ", "95"]}
+{"n": 3000, "k": 22, "prompt_tokens": 2965, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "161", "0", "29", "<|user|>"]}
+{"n": 9000, "k": 22, "prompt_tokens": 9217, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "3", "75", "6", "49", "<|user|>"]}
+{"n": 20000, "k": 22, "prompt_tokens": 20715, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "8", "45", "40", "7", "<|user|>"]}
+{"n": 3000, "k": 23, "prompt_tokens": 2942, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "5", "70", "22", "7", "<|user|>"]}
+{"n": 9000, "k": 23, "prompt_tokens": 9204, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "3", "16", "8", "33", "<|user|>"]}
+{"n": 20000, "k": 23, "prompt_tokens": 20754, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "49", "1", "159", "<|user|>"]}
+{"n": 3000, "k": 24, "prompt_tokens": 2953, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "56", "7", "8", "90", "<|user|>"]}
+{"n": 9000, "k": 24, "prompt_tokens": 9198, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "49", "6", "201", "<|user|>"]}
+{"n": 20000, "k": 24, "prompt_tokens": 20768, "cached": 0, "finish": "stop", "ntok": 48, "correct": true, "tokens": ["The", " user", " is", " asking", " for", " the", " code", " of", " Record", " ", "24", "9", ".", " Let", " me", " look", " through", " the", " records", " provided", ".\n\n", "Record", " ", "24"]}
+{"n": 3000, "k": 25, "prompt_tokens": 2954, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "5", "13", "0", "25", "<|user|>"]}
+{"n": 9000, "k": 25, "prompt_tokens": 9227, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "22", "4", "5", "76", "<|user|>"]}
+{"n": 20000, "k": 25, "prompt_tokens": 20723, "cached": 0, "finish": "length", "ntok": 64, "correct": false, "tokens": ["The", " user", " is", " asking", " for", " the", " code", " of", " Record", " ", "138", "1", ".", " Let", " me", " look", " through", " the", " list", " to", " find", " Record", " ", "138"]}
+{"n": 3000, "k": 26, "prompt_tokens": 2948, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "5", "37", "5", "75", "<|user|>"]}
+{"n": 9000, "k": 26, "prompt_tokens": 9225, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "132", "8", "46", "<|user|>"]}
+{"n": 20000, "k": 26, "prompt_tokens": 20698, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "67", "1", "199", "<|user|>"]}
+{"n": 3000, "k": 27, "prompt_tokens": 2961, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "9", "47", "48", "6", "<|user|>"]}
+{"n": 9000, "k": 27, "prompt_tokens": 9213, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "88", "5", "4", "46", "<|user|>"]}
+{"n": 20000, "k": 27, "prompt_tokens": 20726, "cached": 0, "finish": "length", "ntok": 64, "correct": false, "tokens": ["The", " user", " is", " asking", " for", " the", " code", " of", " Record", " ", "23", "9", ".", " Let", " me", " look", " through", " the", " list", " to", " find", " Record", " ", "23"]}
+{"n": 3000, "k": 28, "prompt_tokens": 2960, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "512", "4", "47", "<|user|>"]}
+{"n": 9000, "k": 28, "prompt_tokens": 9203, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "256", "0", "18", "<|user|>"]}
+{"n": 20000, "k": 28, "prompt_tokens": 20736, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "76", "9", "48", "4", "<|user|>"]}
+{"n": 3000, "k": 29, "prompt_tokens": 2954, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "50", "7", "200", "<|user|>"]}
+{"n": 9000, "k": 29, "prompt_tokens": 9200, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "5", "30", "5", "75", "<|user|>"]}
+{"n": 20000, "k": 29, "prompt_tokens": 20746, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "9", "32", "5", "90", "<|user|>"]}
+{"n": 3000, "k": 30, "prompt_tokens": 2960, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "7", "43", "6", "28", "<|user|>"]}
+{"n": 9000, "k": 30, "prompt_tokens": 9213, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "6", "99", "77", "6", "<|user|>"]}
+{"n": 20000, "k": 30, "prompt_tokens": 20724, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "89", "2", "22", "3", "<|user|>"]}
+{"n": 3000, "k": 31, "prompt_tokens": 2956, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "78", "5", "85", "4", "<|user|>"]}
+{"n": 9000, "k": 31, "prompt_tokens": 9230, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "69", "7", "7", "23", "<|user|>"]}
+{"n": 20000, "k": 31, "prompt_tokens": 20729, "cached": 0, "finish": "length", "ntok": 64, "correct": false, "tokens": ["The", " user", " is", " asking", " for", " the", " code", " of", " Record", " ", "45", "5", ".", " Let", " me", " look", " through", " the", " list", " to", " find", " Record", " ", "45"]}
+{"n": 3000, "k": 32, "prompt_tokens": 2957, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "8", "35", "8", "70", "<|user|>"]}
+{"n": 9000, "k": 32, "prompt_tokens": 9196, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "7", "44", "99", "8", "<|user|>"]}
+{"n": 20000, "k": 32, "prompt_tokens": 20727, "cached": 0, "finish": "length", "ntok": 64, "correct": false, "tokens": ["The", " user", " is", " asking", " for", " the", " code", " of", " Record", " ", "30", "2", ".", " Let", " me", " look", " through", " the", " list", " to", " find", " Record", " ", "30"]}
+{"n": 3000, "k": 33, "prompt_tokens": 2953, "cached": 0, "finish": "stop", "ntok": 4, "correct": true, "tokens": ["</think>", "232", "165", "<|user|>"]}
+{"n": 9000, "k": 33, "prompt_tokens": 9227, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "137", "28", "6", "<|user|>"]}
+{"n": 20000, "k": 33, "prompt_tokens": 20710, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "47", "1", "03", "6", "<|user|>"]}
+{"n": 3000, "k": 34, "prompt_tokens": 2949, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "86", "9", "5", "19", "<|user|>"]}
+{"n": 9000, "k": 34, "prompt_tokens": 9221, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "185", "27", "9", "<|user|>"]}
+{"n": 20000, "k": 34, "prompt_tokens": 20743, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "85", "4", "35", "3", "<|user|>"]}
+{"n": 3000, "k": 35, "prompt_tokens": 2951, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "149", "48", "5", "<|user|>"]}
+{"n": 9000, "k": 35, "prompt_tokens": 9211, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "57", "3", "6", "20", "<|user|>"]}
+{"n": 20000, "k": 35, "prompt_tokens": 20727, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "4", "36", "166", "<|user|>"]}
+{"n": 3000, "k": 36, "prompt_tokens": 2951, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "33", "9", "07", "9", "<|user|>"]}
+{"n": 9000, "k": 36, "prompt_tokens": 9193, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "29", "3", "37", "1", "<|user|>"]}
+{"n": 20000, "k": 36, "prompt_tokens": 20748, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "37", "2", "4", "70", "<|user|>"]}
+{"n": 3000, "k": 37, "prompt_tokens": 2941, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "9", "80", "49", "4", "<|user|>"]}
+{"n": 9000, "k": 37, "prompt_tokens": 9198, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "96", "7", "44", "4", "<|user|>"]}
+{"n": 20000, "k": 37, "prompt_tokens": 20719, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "4", "35", "9", "58", "<|user|>"]}
+{"n": 3000, "k": 38, "prompt_tokens": 2949, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "8", "71", "217", "<|user|>"]}
+{"n": 9000, "k": 38, "prompt_tokens": 9198, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "5", "22", "06", "6", "<|user|>"]}
+{"n": 20000, "k": 38, "prompt_tokens": 20769, "cached": 0, "finish": "length", "ntok": 64, "correct": false, "tokens": ["The", " user", " is", " asking", " for", " the", " code", " of", " Record", " ", "70", "2", ".", " Let", " me", " find", " it", " in", " the", " list", ".\n\n", "Looking", " through", " the"]}
+{"n": 3000, "k": 39, "prompt_tokens": 2952, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "90", "9", "35", "5", "<|user|>"]}
+{"n": 9000, "k": 39, "prompt_tokens": 9198, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "8", "37", "98", "3", "<|user|>"]}
+{"n": 20000, "k": 39, "prompt_tokens": 20724, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "450", "8", "32", "<|user|>"]}
+{"n": 3000, "k": 40, "prompt_tokens": 2953, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "45", "8", "70", "2", "<|user|>"]}
+{"n": 9000, "k": 40, "prompt_tokens": 9183, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "8", "24", "164", "<|user|>"]}
+{"n": 20000, "k": 40, "prompt_tokens": 20756, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "56", "2", "132", "<|user|>"]}
+{"n": 3000, "k": 41, "prompt_tokens": 2945, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "6", "14", "245", "<|user|>"]}
+{"n": 9000, "k": 41, "prompt_tokens": 9192, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "22", "9", "6", "42", "<|user|>"]}
+{"n": 20000, "k": 41, "prompt_tokens": 20731, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "9", "47", "7", "21", "<|user|>"]}
+{"n": 3000, "k": 42, "prompt_tokens": 2952, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "6", "46", "23", "4", "<|user|>"]}
+{"n": 9000, "k": 42, "prompt_tokens": 9201, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "23", "1", "55", "9", "<|user|>"]}
+{"n": 20000, "k": 42, "prompt_tokens": 20745, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "76", "3", "27", "4", "<|user|>"]}
+{"n": 3000, "k": 43, "prompt_tokens": 2959, "cached": 0, "finish": "stop", "ntok": 50, "correct": true, "tokens": ["The", " user", " is", " asking", " for", " the", " code", " of", " Record", " ", "136", ".", " Let", " me", " look", " through", " the", " list", " to", " find", " Record", " ", "136", ".\n\n"]}
+{"n": 9000, "k": 43, "prompt_tokens": 9195, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "5", "38", "06", "7", "<|user|>"]}
+{"n": 20000, "k": 43, "prompt_tokens": 20736, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "154", "9", "88", "<|user|>"]}
+{"n": 3000, "k": 44, "prompt_tokens": 2943, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "5", "80", "6", "70", "<|user|>"]}
+{"n": 9000, "k": 44, "prompt_tokens": 9228, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "7", "21", "213", "<|user|>"]}
+{"n": 20000, "k": 44, "prompt_tokens": 20740, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "46", "3", "7", "05", "<|user|>"]}
+{"n": 3000, "k": 45, "prompt_tokens": 2946, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "264", "7", "90", "<|user|>"]}
+{"n": 9000, "k": 45, "prompt_tokens": 9187, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "50", "6", "4", "13", "<|user|>"]}
+{"n": 20000, "k": 45, "prompt_tokens": 20759, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "6", "13", "22", "3", "<|user|>"]}
+{"n": 3000, "k": 46, "prompt_tokens": 2963, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "8", "40", "228", "<|user|>"]}
+{"n": 9000, "k": 46, "prompt_tokens": 9221, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "85", "7", "290", "<|user|>"]}
+{"n": 20000, "k": 46, "prompt_tokens": 20757, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "46", "4", "09", "3", "<|user|>"]}
+{"n": 3000, "k": 47, "prompt_tokens": 2933, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "128", "29", "9", "<|user|>"]}
+{"n": 9000, "k": 47, "prompt_tokens": 9202, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "116", "58", "6", "<|user|>"]}
+{"n": 20000, "k": 47, "prompt_tokens": 20756, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "170", "48", "9", "<|user|>"]}
+{"n": 3000, "k": 48, "prompt_tokens": 2949, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "143", "78", "3", "<|user|>"]}
+{"n": 9000, "k": 48, "prompt_tokens": 9192, "cached": 0, "finish": "stop", "ntok": 4, "correct": true, "tokens": ["</think>", "235", "315", "<|user|>"]}
+{"n": 20000, "k": 48, "prompt_tokens": 20673, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "256", "39", "8", "<|user|>"]}
+{"n": 3000, "k": 49, "prompt_tokens": 2945, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "8", "21", "26", "6", "<|user|>"]}
+{"n": 9000, "k": 49, "prompt_tokens": 9199, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "6", "28", "25", "4", "<|user|>"]}
+{"n": 20000, "k": 49, "prompt_tokens": 20719, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "39", "3", "7", "70", "<|user|>"]}
+{"n": 3000, "k": 50, "prompt_tokens": 2956, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "280", "5", "60", "<|user|>"]}
+{"n": 9000, "k": 50, "prompt_tokens": 9200, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "35", "4", "7", "42", "<|user|>"]}
+{"n": 20000, "k": 50, "prompt_tokens": 20706, "cached": 0, "finish": "length", "ntok": 64, "correct": false, "tokens": ["The", " user", " is", " asking", " for", " the", " code", " of", " Record", " ", "35", "9", ".", " Let", " me", " look", " through", " the", " list", " to", " find", " Record", " ", "35"]}
+{"n": 3000, "k": 51, "prompt_tokens": 2956, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "35", "9", "88", "3", "<|user|>"]}
+{"n": 9000, "k": 51, "prompt_tokens": 9244, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "5", "17", "7", "35", "<|user|>"]}
+{"n": 20000, "k": 51, "prompt_tokens": 20741, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "9", "38", "25", "3", "<|user|>"]}
+{"n": 3000, "k": 52, "prompt_tokens": 2945, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "85", "7", "33", "2", "<|user|>"]}
+{"n": 9000, "k": 52, "prompt_tokens": 9203, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "9", "10", "8", "65", "<|user|>"]}
+{"n": 20000, "k": 52, "prompt_tokens": 20736, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "9", "37", "9", "77", "<|user|>"]}
+{"n": 3000, "k": 53, "prompt_tokens": 2962, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "182", "7", "90", "<|user|>"]}
+{"n": 9000, "k": 53, "prompt_tokens": 9241, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "9", "41", "55", "8", "<|user|>"]}
+{"n": 20000, "k": 53, "prompt_tokens": 20791, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "69", "4", "350", "<|user|>"]}
+{"n": 3000, "k": 54, "prompt_tokens": 2942, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "95", "4", "99", "3", "<|user|>"]}
+{"n": 9000, "k": 54, "prompt_tokens": 9215, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "8", "19", "4", "13", "<|user|>"]}
+{"n": 20000, "k": 54, "prompt_tokens": 20716, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "4", "15", "36", "9", "<|user|>"]}
+{"n": 3000, "k": 55, "prompt_tokens": 2955, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "6", "76", "24", "1", "<|user|>"]}
+{"n": 9000, "k": 55, "prompt_tokens": 9218, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "155", "5", "34", "<|user|>"]}
+{"n": 20000, "k": 55, "prompt_tokens": 20737, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "305", "6", "44", "<|user|>"]}
+{"n": 3000, "k": 56, "prompt_tokens": 2951, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "8", "77", "49", "7", "<|user|>"]}
+{"n": 9000, "k": 56, "prompt_tokens": 9205, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "3", "12", "5", "16", "<|user|>"]}
+{"n": 20000, "k": 56, "prompt_tokens": 20737, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "8", "25", "9", "14", "<|user|>"]}
+{"n": 3000, "k": 57, "prompt_tokens": 2975, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "4", "65", "365", "<|user|>"]}
+{"n": 9000, "k": 57, "prompt_tokens": 9201, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "235", "98", "1", "<|user|>"]}
+{"n": 20000, "k": 57, "prompt_tokens": 20751, "cached": 0, "finish": "stop", "ntok": 4, "correct": true, "tokens": ["</think>", "133", "130", "<|user|>"]}
+{"n": 3000, "k": 58, "prompt_tokens": 2954, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "88", "4", "24", "4", "<|user|>"]}
+{"n": 9000, "k": 58, "prompt_tokens": 9208, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "80", "4", "0", "25", "<|user|>"]}
+{"n": 20000, "k": 58, "prompt_tokens": 20758, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "49", "3", "8", "31", "<|user|>"]}
+{"n": 3000, "k": 59, "prompt_tokens": 2956, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "188", "6", "36", "<|user|>"]}
+{"n": 9000, "k": 59, "prompt_tokens": 9199, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "50", "5", "3", "75", "<|user|>"]}
+{"n": 20000, "k": 59, "prompt_tokens": 20751, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "3", "75", "30", "9", "<|user|>"]}
+{"n": 3000, "k": 60, "prompt_tokens": 2950, "cached": 0, "finish": "stop", "ntok": 53, "correct": true, "tokens": ["The", " user", " is", " asking", " for", " the", " code", " of", " Record", " ", "89", ".", " Let", " me", " look", " through", " the", " list", " to", " find", " Record", " ", "89", ".\n\n"]}
+{"n": 9000, "k": 60, "prompt_tokens": 9243, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "5", "21", "27", "4", "<|user|>"]}
+{"n": 20000, "k": 60, "prompt_tokens": 20739, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "141", "0", "35", "<|user|>"]}
+{"n": 3000, "k": 61, "prompt_tokens": 2932, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "34", "2", "25", "3", "<|user|>"]}
+{"n": 9000, "k": 61, "prompt_tokens": 9211, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "65", "7", "9", "58", "<|user|>"]}
+{"n": 20000, "k": 61, "prompt_tokens": 20707, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "47", "7", "46", "9", "<|user|>"]}
+{"n": 3000, "k": 62, "prompt_tokens": 2944, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "6", "46", "6", "17", "<|user|>"]}
+{"n": 9000, "k": 62, "prompt_tokens": 9192, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "550", "7", "33", "<|user|>"]}
+{"n": 20000, "k": 62, "prompt_tokens": 20706, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "4", "99", "40", "3", "<|user|>"]}
+{"n": 3000, "k": 63, "prompt_tokens": 2958, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "22", "7", "26", "5", "<|user|>"]}
+{"n": 9000, "k": 63, "prompt_tokens": 9208, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "8", "18", "2", "21", "<|user|>"]}
+{"n": 20000, "k": 63, "prompt_tokens": 20746, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "60", "3", "33", "9", "<|user|>"]}
+{"n": 3000, "k": 64, "prompt_tokens": 2949, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "9", "26", "255", "<|user|>"]}
+{"n": 9000, "k": 64, "prompt_tokens": 9154, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "6", "90", "7", "38", "<|user|>"]}
+{"n": 20000, "k": 64, "prompt_tokens": 20700, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "58", "9", "6", "26", "<|user|>"]}
+{"n": 3000, "k": 65, "prompt_tokens": 2955, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "550", "40", "5", "<|user|>"]}
+{"n": 9000, "k": 65, "prompt_tokens": 9183, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "183", "9", "48", "<|user|>"]}
+{"n": 20000, "k": 65, "prompt_tokens": 20738, "cached": 0, "finish": "length", "ntok": 64, "correct": false, "tokens": ["The", " user", " is", " asking", " for", " the", " code", " of", " Record", " ", "112", "6", ".", " Let", " me", " look", " through", " the", " list", " to", " find", " Record", " ", "112"]}
+{"n": 3000, "k": 66, "prompt_tokens": 2939, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "49", "8", "3", "35", "<|user|>"]}
+{"n": 9000, "k": 66, "prompt_tokens": 9210, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "27", "1", "260", "<|user|>"]}
+{"n": 20000, "k": 66, "prompt_tokens": 20729, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "4", "46", "150", "<|user|>"]}
+{"n": 3000, "k": 67, "prompt_tokens": 2965, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "6", "41", "49", "2", "<|user|>"]}
+{"n": 9000, "k": 67, "prompt_tokens": 9223, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "7", "16", "5", "17", "<|user|>"]}
+{"n": 20000, "k": 67, "prompt_tokens": 20713, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "7", "95", "03", "8", "<|user|>"]}
+{"n": 3000, "k": 68, "prompt_tokens": 2945, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "50", "6", "99", "6", "<|user|>"]}
+{"n": 9000, "k": 68, "prompt_tokens": 9214, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "99", "7", "430", "<|user|>"]}
+{"n": 20000, "k": 68, "prompt_tokens": 20727, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "3", "75", "9", "22", "<|user|>"]}
+{"n": 3000, "k": 69, "prompt_tokens": 2958, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "39", "3", "3", "90", "<|user|>"]}
+{"n": 9000, "k": 69, "prompt_tokens": 9213, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "98", "6", "50", "1", "<|user|>"]}
+{"n": 20000, "k": 69, "prompt_tokens": 20715, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "126", "5", "88", "<|user|>"]}
+{"n": 3000, "k": 70, "prompt_tokens": 2937, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "9", "28", "08", "1", "<|user|>"]}
+{"n": 9000, "k": 70, "prompt_tokens": 9192, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "8", "44", "79", "7", "<|user|>"]}
+{"n": 20000, "k": 70, "prompt_tokens": 20722, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "65", "8", "86", "2", "<|user|>"]}
+{"n": 3000, "k": 71, "prompt_tokens": 2969, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "35", "9", "9", "31", "<|user|>"]}
+{"n": 9000, "k": 71, "prompt_tokens": 9189, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "6", "31", "202", "<|user|>"]}
+{"n": 20000, "k": 71, "prompt_tokens": 20733, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "22", "7", "46", "7", "<|user|>"]}
+{"n": 3000, "k": 72, "prompt_tokens": 2956, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "66", "2", "09", "2", "<|user|>"]}
+{"n": 9000, "k": 72, "prompt_tokens": 9214, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "750", "35", "4", "<|user|>"]}
+{"n": 20000, "k": 72, "prompt_tokens": 20730, "cached": 0, "finish": "stop", "ntok": 4, "correct": true, "tokens": ["</think>", "199", "200", "<|user|>"]}
+{"n": 3000, "k": 73, "prompt_tokens": 2954, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "147", "66", "1", "<|user|>"]}
+{"n": 9000, "k": 73, "prompt_tokens": 9195, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "215", "36", "2", "<|user|>"]}
+{"n": 20000, "k": 73, "prompt_tokens": 20742, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "79", "1", "04", "6", "<|user|>"]}
+{"n": 3000, "k": 74, "prompt_tokens": 2964, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "176", "7", "15", "<|user|>"]}
+{"n": 9000, "k": 74, "prompt_tokens": 9214, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "29", "4", "720", "<|user|>"]}
+{"n": 20000, "k": 74, "prompt_tokens": 20731, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "46", "3", "4", "15", "<|user|>"]}
+{"n": 3000, "k": 75, "prompt_tokens": 2956, "cached": 0, "finish": "stop", "ntok": 48, "correct": true, "tokens": ["The", " user", " is", " asking", " for", " the", " code", " of", " Record", " ", "89", ".", " Let", " me", " look", " through", " the", " list", ".\n\n", "Record", " ", "89", ":", " the"]}
+{"n": 9000, "k": 75, "prompt_tokens": 9209, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "315", "4", "10", "<|user|>"]}
+{"n": 20000, "k": 75, "prompt_tokens": 20702, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "78", "5", "85", "9", "<|user|>"]}
+{"n": 3000, "k": 76, "prompt_tokens": 2957, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "5", "60", "8", "99", "<|user|>"]}
+{"n": 9000, "k": 76, "prompt_tokens": 9236, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "75", "7", "350", "<|user|>"]}
+{"n": 20000, "k": 76, "prompt_tokens": 20726, "cached": 0, "finish": "stop", "ntok": 51, "correct": true, "tokens": ["The", " user", " is", " asking", " for", " the", " code", " of", " Record", " ", "9", "80", ".", " Let", " me", " look", " through", " the", " records", " provided", ".\n\n", "Record", " ", "9"]}
+{"n": 3000, "k": 77, "prompt_tokens": 2956, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "7", "46", "129", "<|user|>"]}
+{"n": 9000, "k": 77, "prompt_tokens": 9230, "cached": 0, "finish": "stop", "ntok": 4, "correct": true, "tokens": ["</think>", "184", "125", "<|user|>"]}
+{"n": 20000, "k": 77, "prompt_tokens": 20731, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "27", "1", "350", "<|user|>"]}
+{"n": 3000, "k": 78, "prompt_tokens": 2947, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "182", "47", "6", "<|user|>"]}
+{"n": 9000, "k": 78, "prompt_tokens": 9193, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "66", "2", "4", "27", "<|user|>"]}
+{"n": 20000, "k": 78, "prompt_tokens": 20746, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "7", "26", "8", "42", "<|user|>"]}
+{"n": 3000, "k": 79, "prompt_tokens": 2963, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "6", "23", "0", "30", "<|user|>"]}
+{"n": 9000, "k": 79, "prompt_tokens": 9220, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "55", "4", "3", "31", "<|user|>"]}
+{"n": 20000, "k": 79, "prompt_tokens": 20757, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "8", "27", "29", "1", "<|user|>"]}
+{"n": 3000, "k": 80, "prompt_tokens": 2942, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "137", "09", "1", "<|user|>"]}
+{"n": 9000, "k": 80, "prompt_tokens": 9198, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "6", "80", "6", "31", "<|user|>"]}
+{"n": 20000, "k": 80, "prompt_tokens": 20742, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "44", "1", "0", "13", "<|user|>"]}
+{"n": 3000, "k": 81, "prompt_tokens": 2945, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "216", "90", "4", "<|user|>"]}
+{"n": 9000, "k": 81, "prompt_tokens": 9213, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "96", "3", "4", "46", "<|user|>"]}
+{"n": 20000, "k": 81, "prompt_tokens": 20706, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "46", "1", "05", "4", "<|user|>"]}
+{"n": 3000, "k": 82, "prompt_tokens": 2940, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "9", "48", "187", "<|user|>"]}
+{"n": 9000, "k": 82, "prompt_tokens": 9210, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "36", "6", "9", "49", "<|user|>"]}
+{"n": 20000, "k": 82, "prompt_tokens": 20775, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "256", "48", "3", "<|user|>"]}
+{"n": 3000, "k": 83, "prompt_tokens": 2953, "cached": 0, "finish": "length", "ntok": 64, "correct": false, "tokens": ["The", " user", " is", " asking", " for", " the", " code", " of", " Record", " ", "91", ".", " Let", " me", " look", " through", " the", " list", " to", " find", " Record", " ", "91", ".\n\n"]}
+{"n": 9000, "k": 83, "prompt_tokens": 9213, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "888", "8", "74", "<|user|>"]}
+{"n": 20000, "k": 83, "prompt_tokens": 20747, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "210", "96", "2", "<|user|>"]}
+{"n": 3000, "k": 84, "prompt_tokens": 2965, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "216", "9", "35", "<|user|>"]}
+{"n": 9000, "k": 84, "prompt_tokens": 9192, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "6", "78", "010", "<|user|>"]}
+{"n": 20000, "k": 84, "prompt_tokens": 20702, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "155", "08", "7", "<|user|>"]}
+{"n": 3000, "k": 85, "prompt_tokens": 2943, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "7", "25", "55", "3", "<|user|>"]}
+{"n": 9000, "k": 85, "prompt_tokens": 9233, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "3", "21", "9", "35", "<|user|>"]}
+{"n": 20000, "k": 85, "prompt_tokens": 20747, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "66", "3", "5", "29", "<|user|>"]}
+{"n": 3000, "k": 86, "prompt_tokens": 2945, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "95", "3", "60", "4", "<|user|>"]}
+{"n": 9000, "k": 86, "prompt_tokens": 9236, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "39", "3", "6", "49", "<|user|>"]}
+{"n": 20000, "k": 86, "prompt_tokens": 20717, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "700", "35", "4", "<|user|>"]}
+{"n": 3000, "k": 87, "prompt_tokens": 2970, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "95", "3", "113", "<|user|>"]}
+{"n": 9000, "k": 87, "prompt_tokens": 9212, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "27", "8", "151", "<|user|>"]}
+{"n": 20000, "k": 87, "prompt_tokens": 20754, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "35", "8", "57", "3", "<|user|>"]}
+{"n": 3000, "k": 88, "prompt_tokens": 2969, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "76", "4", "7", "90", "<|user|>"]}
+{"n": 9000, "k": 88, "prompt_tokens": 9194, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "5", "41", "133", "<|user|>"]}
+{"n": 20000, "k": 88, "prompt_tokens": 20752, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "23", "8", "9", "10", "<|user|>"]}
+{"n": 3000, "k": 89, "prompt_tokens": 2944, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "7", "96", "000", "<|user|>"]}
+{"n": 9000, "k": 89, "prompt_tokens": 9209, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "68", "7", "90", "7", "<|user|>"]}
+{"n": 20000, "k": 89, "prompt_tokens": 20740, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "350", "6", "99", "<|user|>"]}
+{"n": 3000, "k": 90, "prompt_tokens": 2947, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "189", "8", "45", "<|user|>"]}
+{"n": 9000, "k": 90, "prompt_tokens": 9207, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "8", "42", "99", "7", "<|user|>"]}
+{"n": 20000, "k": 90, "prompt_tokens": 20715, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "23", "1", "34", "2", "<|user|>"]}
+{"n": 3000, "k": 91, "prompt_tokens": 2950, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "76", "7", "7", "17", "<|user|>"]}
+{"n": 9000, "k": 91, "prompt_tokens": 9195, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "133", "69", "2", "<|user|>"]}
+{"n": 20000, "k": 91, "prompt_tokens": 20700, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "147", "0", "19", "<|user|>"]}
+{"n": 3000, "k": 92, "prompt_tokens": 2950, "cached": 0, "finish": "stop", "ntok": 53, "correct": true, "tokens": ["The", " user", " is", " asking", " for", " the", " code", " of", " Record", " ", "94", ".", " Let", " me", " look", " through", " the", " list", " to", " find", " Record", " ", "94", ".\n\n"]}
+{"n": 9000, "k": 92, "prompt_tokens": 9193, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "76", "9", "50", "1", "<|user|>"]}
+{"n": 20000, "k": 92, "prompt_tokens": 20706, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "22", "6", "7", "48", "<|user|>"]}
+{"n": 3000, "k": 93, "prompt_tokens": 2960, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "95", "2", "165", "<|user|>"]}
+{"n": 9000, "k": 93, "prompt_tokens": 9204, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "40", "6", "66", "3", "<|user|>"]}
+{"n": 20000, "k": 93, "prompt_tokens": 20753, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "30", "7", "88", "5", "<|user|>"]}
+{"n": 3000, "k": 94, "prompt_tokens": 2959, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "36", "7", "04", "8", "<|user|>"]}
+{"n": 9000, "k": 94, "prompt_tokens": 9236, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "56", "7", "7", "48", "<|user|>"]}
+{"n": 20000, "k": 94, "prompt_tokens": 20743, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "124", "48", "6", "<|user|>"]}
+{"n": 3000, "k": 95, "prompt_tokens": 2951, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "77", "4", "47", "9", "<|user|>"]}
+{"n": 9000, "k": 95, "prompt_tokens": 9192, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "8", "12", "010", "<|user|>"]}
+{"n": 20000, "k": 95, "prompt_tokens": 20744, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "97", "1", "4", "17", "<|user|>"]}
+{"n": 3000, "k": 96, "prompt_tokens": 2948, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "3", "16", "58", "1", "<|user|>"]}
+{"n": 9000, "k": 96, "prompt_tokens": 9220, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "112", "9", "75", "<|user|>"]}
+{"n": 20000, "k": 96, "prompt_tokens": 20685, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "68", "7", "66", "1", "<|user|>"]}
+{"n": 3000, "k": 97, "prompt_tokens": 2956, "cached": 0, "finish": "stop", "ntok": 6, "correct": true, "tokens": ["</think>", "65", "7", "77", "1", "<|user|>"]}
+{"n": 9000, "k": 97, "prompt_tokens": 9198, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "182", "6", "65", "<|user|>"]}
+{"n": 20000, "k": 97, "prompt_tokens": 20732, "cached": 0, "finish": "stop", "ntok": 51, "correct": true, "tokens": ["The", " user", " is", " asking", " for", " the", " code", " of", " Record", " ", "22", "4", ".", " Let", " me", " look", " through", " the", " records", " provided", ".\n\n", "Record", " ", "22"]}
+{"n": 3000, "k": 98, "prompt_tokens": 2937, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "218", "46", "7", "<|user|>"]}
+{"n": 9000, "k": 98, "prompt_tokens": 9197, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "37", "1", "520", "<|user|>"]}
+{"n": 20000, "k": 98, "prompt_tokens": 20749, "cached": 0, "finish": "stop", "ntok": 56, "correct": true, "tokens": ["The", " user", " is", " asking", " for", " the", " code", " of", " Record", " ", "89", "1", ".", " Let", " me", " look", " through", " the", " list", " to", " find", " Record", " ", "89"]}
+{"n": 3000, "k": 99, "prompt_tokens": 2946, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "8", "34", "165", "<|user|>"]}
+{"n": 9000, "k": 99, "prompt_tokens": 9199, "cached": 0, "finish": "stop", "ntok": 5, "correct": true, "tokens": ["</think>", "135", "8", "41", "<|user|>"]}
+{"n": 20000, "k": 99, "prompt_tokens": 20683, "cached": 0, "finish": "stop", "ntok": 49, "correct": true, "tokens": ["The", " user", " is", " asking", " for", " the", " code", " of", " Record", " ", "90", ".", " Let", " me", " find", " it", " in", " the", " list", ".\n\n", "Record", " ", "90", ":"]}

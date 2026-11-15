@@ -1,0 +1,137 @@
+[
+ {
+  "file": "2026-11-13-1141-xinyuan-8f5dff0f45-topk-by-reference-merged.md",
+  "source": "generated for this round",
+  "sha256": "2c3d0959dd3e5c9eff0cce55e96a8016b2f167b2bd722c225e6d62aaaf74111f"
+ },
+ {
+  "file": "chain.out",
+  "source": "/scratch/kimi-pr43-final/chain.out",
+  "sha256": "f40b9929e3c2dc82fce44ec4c94fcfe258acb30ff5ffb6b0ca743592e180f78d"
+ },
+ {
+  "file": "chain.sh",
+  "source": "/scratch/kimi-pr43-final/chain.sh",
+  "sha256": "37343de6de45625b7b259c43f7d3def43c969031659a83c72f1f14acb77a0aac"
+ },
+ {
+  "file": "chain.status",
+  "source": "/scratch/kimi-pr43-final/chain.status",
+  "sha256": "ee4f4798c470ae0294d328a1703826342481c4c13ac7c411ea6d92504172a146"
+ },
+ {
+  "file": "eval-base1.log.gz",
+  "source": "/scratch/kimi-pr43-final/eval-base1.log",
+  "sha256": "aae83e1b385c668c2692ae85cb6325fc5d566e2fc460eebc646699173ae5d629"
+ },
+ {
+  "file": "eval-base1/sgl_eval_gsm8k_20261113-110930/metrics.json",
+  "source": "/scratch/kimi-pr43-final/eval-base1/sgl_eval_gsm8k_20261113-110930/metrics.json",
+  "sha256": "d98948611021986ca00edb2ad72a04268d7504522fa98717348033cc048b250c"
+ },
+ {
+  "file": "eval-base1/sgl_eval_gsm8k_20261113-110930/output-rs0.jsonl.gz",
+  "source": "/scratch/kimi-pr43-final/eval-base1/sgl_eval_gsm8k_20261113-110930/output-rs0.jsonl",
+  "sha256": "e30b587898a4cf4f78cc9ebe820862d7391055aff7699bbb6c93d045a959677c"
+ },
+ {
+  "file": "eval-base2.log.gz",
+  "source": "/scratch/kimi-pr43-final/eval-base2.log",
+  "sha256": "950be798500346d0f671769d7681d445280aaa4f3fb9e76d5c0b8568b73a076e"
+ },
+ {
+  "file": "eval-base2/sgl_eval_gsm8k_20261113-112323/metrics.json",
+  "source": "/scratch/kimi-pr43-final/eval-base2/sgl_eval_gsm8k_20261113-112323/metrics.json",
+  "sha256": "f9b3465490b66daf76e34f7daf9f80c3a4f83ae59b61c95937700fa83b525ffb"
+ },
+ {
+  "file": "eval-base2/sgl_eval_gsm8k_20261113-112323/output-rs0.jsonl.gz",
+  "source": "/scratch/kimi-pr43-final/eval-base2/sgl_eval_gsm8k_20261113-112323/output-rs0.jsonl",
+  "sha256": "8398387ce241e2f106e8821d643a7e0b81057635a0cdb1490824e31d73ede89b"
+ },
+ {
+  "file": "eval-cand2.log.gz",
+  "source": "/scratch/kimi-pr43-final/eval-cand2.log",
+  "sha256": "644b37342bb372d526b84c52fb3564deb165d1d8b9d587bd0e24710583b160e7"
+ },
+ {
+  "file": "eval-cand2/sgl_eval_gsm8k_20261113-104942/metrics.json",
+  "source": "/scratch/kimi-pr43-final/eval-cand2/sgl_eval_gsm8k_20261113-104942/metrics.json",
+  "sha256": "d4b2645f89f823b06528b67f18f3dcd92a96eeedf720d7c3aed127152bbe4155"
+ },
+ {
+  "file": "eval-cand2/sgl_eval_gsm8k_20261113-104942/output-rs0.jsonl.gz",
+  "source": "/scratch/kimi-pr43-final/eval-cand2/sgl_eval_gsm8k_20261113-104942/output-rs0.jsonl",
+  "sha256": "18c6886badc0cac405e9e50c2d22f546ba517fea1a3785f31dbe01ff3eb87d41"
+ },
+ {
+  "file": "eval/sgl_eval_gsm8k_20261113-103227/metrics.json",
+  "source": "/scratch/kimi-pr43-final/eval/sgl_eval_gsm8k_20261113-103227/metrics.json",
+  "sha256": "b743096b316bae2d57444c4c06d6ecd393d475e5232afd41227fe36b4ed43a41"
+ },
+ {
+  "file": "eval/sgl_eval_gsm8k_20261113-103227/output-rs0.jsonl.gz",
+  "source": "/scratch/kimi-pr43-final/eval/sgl_eval_gsm8k_20261113-103227/output-rs0.jsonl",
+  "sha256": "03531222995d084c621ac1f7ff7a82b9468f5193188c0137a313016001f23893"
+ },
+ {
+  "file": "gate.out",
+  "source": "/scratch/kimi-pr43-final/gate.out",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+ },
+ {
+  "file": "gate.sh",
+  "source": "/scratch/kimi-pr43-final/gate.sh",
+  "sha256": "79a257526cde718aab1536f97d6f2d7269befa257d766eb25e3113127379da9c"
+ },
+ {
+  "file": "gate.status",
+  "source": "/scratch/kimi-pr43-final/gate.status",
+  "sha256": "345418cfa61a332ff1f134bca297618f6879f8d07486c1ecdece531b4214d2a8"
+ },
+ {
+  "file": "gsm8k.log.gz",
+  "source": "/scratch/kimi-pr43-final/gsm8k.log",
+  "sha256": "d12048bba25a2513290b88dff670d45301b82624e8fcb2411980cbe7034c44d1"
+ },
+ {
+  "file": "launch-base.sh",
+  "source": "/scratch/kimi-pr43-final/launch-base.sh",
+  "sha256": "529ca1a8ab77d32829ae70fea2ff91d19d5dcd606ece95f82d13456f64a5a861"
+ },
+ {
+  "file": "launch.sh",
+  "source": "/scratch/kimi-pr43-final/launch.sh",
+  "sha256": "8db424b4c2a6da5409e3fd6aa66065207cdd5b2693f268ebdacc40bad2c7787c"
+ },
+ {
+  "file": "repro.md",
+  "source": "generated for this round",
+  "sha256": "0405986022ff9cddd0b596be56d9f9464de6f3152ec839139a7ae8a410f1cd8e"
+ },
+ {
+  "file": "serve-base.log.gz",
+  "source": "/scratch/kimi-pr43-final/serve-base.log",
+  "sha256": "c69af4d060d1406609fb212148f48785dda6c42dc6ee18a246a90c84b6fd867d"
+ },
+ {
+  "file": "serve.log.gz",
+  "source": "/scratch/kimi-pr43-final/serve.log",
+  "sha256": "5df66c77ccabf8a2b1829c447c30d76e87e923a3401c0c11779ea2e8f2c00f10"
+ },
+ {
+  "file": "suite.json",
+  "source": "/scratch/kimi-pr43-final/suite.json",
+  "sha256": "71a1bdb03173f57fa63dd9078f5d86bdd600a3502ee274ddf1953e5933bc715d"
+ },
+ {
+  "file": "suite.log",
+  "source": "/scratch/kimi-pr43-final/suite.log",
+  "sha256": "a85e36f5f83094fd0998038e9e490b7912538aa2c80324c92bad44c006a4abd3"
+ },
+ {
+  "file": "summary.json",
+  "source": "generated for this round",
+  "sha256": "e33f83235df6f1a2ee389e4dd2836ba26520773bd68e431d35aa3a977f50657b"
+ }
+]

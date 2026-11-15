@@ -1,0 +1,87 @@
+[
+ {
+  "file": "2026-11-15-0617-xinyuan-5337c504eb-window-prefill-cp-merged.md",
+  "source": "generated for this round",
+  "sha256": "da428808c73c951647c9ce0bebbd8c10200703fb83645e49aa0f01023cb8a80c"
+ },
+ {
+  "file": "cp.sh",
+  "source": "/scratch/cc-regate2/cp.sh",
+  "sha256": "df1f208e241fb341ecb64d979e044df2e2776d2ebe3459da6c1a240a03c77242"
+ },
+ {
+  "file": "gb300-cp4/eval/sgl_eval_gsm8k_20261115-054817/metrics.json",
+  "source": "/scratch/cc-regate2/logs/cp-swa/eval/sgl_eval_gsm8k_20261115-054817/metrics.json",
+  "sha256": "d02fe816340f64b11a320a4412c763cddb04d8f3135c3ebe776e119850f88517"
+ },
+ {
+  "file": "gb300-cp4/eval/sgl_eval_gsm8k_20261115-054817/output-rs0.jsonl.gz",
+  "source": "/scratch/cc-regate2/logs/cp-swa/eval/sgl_eval_gsm8k_20261115-054817/output-rs0.jsonl",
+  "sha256": "0ae2dbd9c7192623b134fb79f69c26e99e6a5a423d12b17327a12e2a3788b394"
+ },
+ {
+  "file": "gb300-cp4/gsm8k.log.gz",
+  "source": "/scratch/cc-regate2/logs/cp-swa/gsm8k.log",
+  "sha256": "16f9a910e0a491142ad7915e8ed2cd07c4e58bcca369c153ff5c8463b61ff77c"
+ },
+ {
+  "file": "gb300-cp4/launch.sh",
+  "source": "/scratch/cc-regate2/logs/cp-swa/launch.sh",
+  "sha256": "1b45c643f75bda2caf9bd8d0f9f38efd90d3adb10c64934344911725f0fbda2b"
+ },
+ {
+  "file": "gb300-cp4/midfork.json",
+  "source": "/scratch/cc-regate2/logs/cp-swa/midfork.json",
+  "sha256": "fc98f9ec31b5927ba86b773d561cc29b4143862f355b74bb56beb38e0f2a1add"
+ },
+ {
+  "file": "gb300-cp4/midfork.log",
+  "source": "/scratch/cc-regate2/logs/cp-swa/midfork.log",
+  "sha256": "9a34b13982fc3471f8db974a6ca1b8a88432b693d091a75b48ea094ebc5aae09"
+ },
+ {
+  "file": "gb300-cp4/probe.json",
+  "source": "/scratch/cc-regate2/logs/cp-swa/probe.json",
+  "sha256": "30bd95c89dfd89ce9312b34051c3d302379fb0c2030e29a581ebbe619d4607c5"
+ },
+ {
+  "file": "gb300-cp4/probe.log",
+  "source": "/scratch/cc-regate2/logs/cp-swa/probe.log",
+  "sha256": "3872482c10eb75c2af8c099f3021edb7e19fb60789b4d4e7d9c7ad57f29fbaf7"
+ },
+ {
+  "file": "gb300-cp4/serve.log.gz",
+  "source": "/scratch/cc-regate2/logs/cp-swa/serve.log",
+  "sha256": "b45834e696e0a19eec2c2dfbb3233e6284f083cab0c1d4b4ac01b22be31a5e7b"
+ },
+ {
+  "file": "gb300-cp4/status",
+  "source": "/scratch/cc-regate2/logs/cp-swa/status",
+  "sha256": "89016bda61ad327b1e9459bb401c64106774f5f9b1c24078bf88882d7c43fc3d"
+ },
+ {
+  "file": "lib.sh",
+  "source": "/scratch/cc-regate2/lib.sh",
+  "sha256": "e5a84e5b6997447c8999665d62e176740393510ad0c0de7ae4808b4fb42bd2a6"
+ },
+ {
+  "file": "midfork.py",
+  "source": "/scratch/cc-swa/bin/midfork.py",
+  "sha256": "57a55e5696f9ab61f23023443c9964b707362b9e1566a6400affd27712e4ba35"
+ },
+ {
+  "file": "probe.py",
+  "source": "/scratch/cc-swa/bin/probe.py",
+  "sha256": "c9574ace555b108fa74ab4b5e4703d4f495a0e85784fa760b63a1f30103a5ba9"
+ },
+ {
+  "file": "repro.md",
+  "source": "generated for this round",
+  "sha256": "9513f9ecbf5bc787f9c8c32ba4a768359e3c7c9786d960d2faaaf4bc8dedd93e"
+ },
+ {
+  "file": "summary.json",
+  "source": "generated for this round",
+  "sha256": "8ae5bfa038267df2ca95d1c95454636690aad543926d94a184599bdba6ddf30f"
+ }
+]

@@ -1,0 +1,110 @@
+[
+ {
+  "target": 8192,
+  "rep": 0,
+  "prompt_tokens": 8161,
+  "latency_s": 0.5575
+ },
+ {
+  "target": 8192,
+  "rep": 1,
+  "prompt_tokens": 8098,
+  "latency_s": 0.9547
+ },
+ {
+  "target": 8192,
+  "rep": 2,
+  "prompt_tokens": 8107,
+  "latency_s": 0.5644
+ },
+ {
+  "target": 8192,
+  "rep": 3,
+  "prompt_tokens": 8169,
+  "latency_s": 0.5693
+ },
+ {
+  "target": 8192,
+  "rep": 4,
+  "prompt_tokens": 8133,
+  "latency_s": 0.5686
+ },
+ {
+  "target": 8192,
+  "rep": 5,
+  "prompt_tokens": 8138,
+  "latency_s": 0.5708
+ },
+ {
+  "target": 32000,
+  "rep": 0,
+  "prompt_tokens": 31812,
+  "latency_s": 2.1811
+ },
+ {
+  "target": 32000,
+  "rep": 1,
+  "prompt_tokens": 31816,
+  "latency_s": 2.1682
+ },
+ {
+  "target": 32000,
+  "rep": 2,
+  "prompt_tokens": 31796,
+  "latency_s": 2.1516
+ },
+ {
+  "target": 32000,
+  "rep": 3,
+  "prompt_tokens": 31818,
+  "latency_s": 2.1795
+ },
+ {
+  "target": 32000,
+  "rep": 4,
+  "prompt_tokens": 31735,
+  "latency_s": 2.1569
+ },
+ {
+  "target": 32000,
+  "rep": 5,
+  "prompt_tokens": 31820,
+  "latency_s": 2.1529
+ },
+ {
+  "target": 120000,
+  "rep": 0,
+  "prompt_tokens": 119078,
+  "latency_s": 8.6906
+ },
+ {
+  "target": 120000,
+  "rep": 1,
+  "prompt_tokens": 119106,
+  "latency_s": 8.852
+ },
+ {
+  "target": 120000,
+  "rep": 2,
+  "prompt_tokens": 119135,
+  "latency_s": 8.6526
+ },
+ {
+  "target": 120000,
+  "rep": 3,
+  "prompt_tokens": 119148,
+  "latency_s": 8.6834
+ },
+ {
+  "target": 120000,
+  "rep": 4,
+  "prompt_tokens": 119222,
+  "latency_s": 8.6215
+ },
+ {
+  "target": 120000,
+  "rep": 5,
+  "prompt_tokens": 118972,
+  "latency_s": 8.6433
+ }
+]

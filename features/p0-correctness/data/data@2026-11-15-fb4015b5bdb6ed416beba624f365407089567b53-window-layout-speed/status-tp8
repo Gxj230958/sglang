@@ -1,0 +1,13 @@
+READY tp8-window-r2 23:37:34
+tp8-window-r2 short-c1 seed=1 rc=0 23:38:21
+tp8-window-r2 short-c32 seed=1 rc=0 23:39:28
+tp8-window-r2 long-c4 seed=1 rc=0 23:40:17
+tp8-window-r2 mt th=1 seed=1 rc=0 23:41:12
+tp8-window-r2 mt th=4 seed=1 rc=0 23:41:45
+tp8-window-r2 short-c1 seed=2 rc=0 23:42:28
+tp8-window-r2 short-c32 seed=2 rc=0 23:43:28
+tp8-window-r2 long-c4 seed=2 rc=0 23:44:17
+tp8-window-r2 mt th=1 seed=2 rc=0 23:45:09
+tp8-window-r2 mt th=4 seed=2 rc=0 23:45:44
+ALIVE tp8-window-r2
+DONE

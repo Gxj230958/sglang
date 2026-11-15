@@ -1,0 +1,122 @@
+[
+ {
+  "file": "eval.sh",
+  "source": "/scratch/cc-swa/bin/eval.sh",
+  "sha256": "eeef3b0f5c186f6b03c474325cb24442bcd7122eb5c402e4ffef0f7bea0d66e3"
+ },
+ {
+  "file": "full-length/eval.status",
+  "source": "/scratch/cc-swa/logs/cp-full/eval.status",
+  "sha256": "c90f99905d03d01981e12c71b5a913f9198f3d7841e9c1173eb5081af1ed2d7c"
+ },
+ {
+  "file": "full-length/eval/sgl_eval_gsm8k_20261112-192815/metrics.json",
+  "source": "/scratch/cc-swa/logs/cp-full/eval/sgl_eval_gsm8k_20261112-192815/metrics.json",
+  "sha256": "27ac2269d99589a1e9b0f4ff6fc04e5bd95319cb8a392bc6adc0ac6f4bd036f6"
+ },
+ {
+  "file": "full-length/eval/sgl_eval_gsm8k_20261112-192815/output-rs0.jsonl.gz",
+  "source": "/scratch/cc-swa/logs/cp-full/eval/sgl_eval_gsm8k_20261112-192815/output-rs0.jsonl",
+  "sha256": "566b0207ebd0f602613d5aeb3598b85df2fe67d47c3baeba2ba514bf45b53778"
+ },
+ {
+  "file": "full-length/gsm8k.log.gz",
+  "source": "/scratch/cc-swa/logs/cp-full/gsm8k.log",
+  "sha256": "ce3c24d65dfbdca86447467a8cfc3f481a8b240208ec99ac1372accff0b87d09"
+ },
+ {
+  "file": "full-length/launch.sh",
+  "source": "/scratch/cc-swa/logs/cp-full/launch.sh",
+  "sha256": "1d074cc0de8d1eb7e6de6628e454e56a0581e30c5a201ab4c1fef75f195ef57c"
+ },
+ {
+  "file": "full-length/probe.json",
+  "source": "/scratch/cc-swa/logs/cp-full/probe.json",
+  "sha256": "e69d89c1dfdbc73252432deef03eded5eb7d7712dc9f00eb195fa30e6168f6a9"
+ },
+ {
+  "file": "full-length/probe.log",
+  "source": "/scratch/cc-swa/logs/cp-full/probe.log",
+  "sha256": "90f2d10da3018119e2dbdc05117b92964069cff5950b637bbbc7c32708965038"
+ },
+ {
+  "file": "full-length/serve.log.gz",
+  "source": "/scratch/cc-swa/logs/cp-full/serve.log",
+  "sha256": "ec1e8cef2e7107ee7c4b61e534bb76b327994c9119528535ba3d25abef46658e"
+ },
+ {
+  "file": "full-length/wait.log",
+  "source": "/scratch/cc-swa/logs/cp-full/wait.log",
+  "sha256": "3dfa3fb239f56c778a1e9b33eb31328349edd155a95806dac4378904e88527e5"
+ },
+ {
+  "file": "probe.py",
+  "source": "/scratch/cc-swa/bin/probe.py",
+  "sha256": "c9574ace555b108fa74ab4b5e4703d4f495a0e85784fa760b63a1f30103a5ba9"
+ },
+ {
+  "file": "repro.md",
+  "source": "generated for this round",
+  "sha256": "da0c84e7ee3ae175e370c736ac3baa4c613b1b238659ee7dafaffeb3486f78db"
+ },
+ {
+  "file": "serve.sh",
+  "source": "/scratch/cc-swa/bin/serve.sh",
+  "sha256": "a993b9cb4622ffafe9794ff819039a95cc30d11933269bfa6c32128579f53be8"
+ },
+ {
+  "file": "summary.json",
+  "source": "generated for this round",
+  "sha256": "0424b3a2ed187c2010da4943babcba8c9fc03d5486e5b78edfce280cb1bf6781"
+ },
+ {
+  "file": "wait.sh",
+  "source": "/scratch/cc-swa/bin/wait.sh",
+  "sha256": "c9799b19dcbcccf516de3d466f87dd084f51deccbca571521ec29b80e3c39c00"
+ },
+ {
+  "file": "window/eval.status",
+  "source": "/scratch/cc-swa/logs/cp-swa/eval.status",
+  "sha256": "c90f99905d03d01981e12c71b5a913f9198f3d7841e9c1173eb5081af1ed2d7c"
+ },
+ {
+  "file": "window/eval/sgl_eval_gsm8k_20261112-192432/metrics.json",
+  "source": "/scratch/cc-swa/logs/cp-swa/eval/sgl_eval_gsm8k_20261112-192432/metrics.json",
+  "sha256": "8429ddee73ca91b0f39a79d8650abc3b48f07e6c3c47d0e166b3310cedd32232"
+ },
+ {
+  "file": "window/eval/sgl_eval_gsm8k_20261112-192432/output-rs0.jsonl.gz",
+  "source": "/scratch/cc-swa/logs/cp-swa/eval/sgl_eval_gsm8k_20261112-192432/output-rs0.jsonl",
+  "sha256": "336029bc802197e7ca33f65833a3fdda2d14131953a4df26197c8b58f80d86e9"
+ },
+ {
+  "file": "window/gsm8k.log.gz",
+  "source": "/scratch/cc-swa/logs/cp-swa/gsm8k.log",
+  "sha256": "c4dc30e4f35e9d26e9d13ebf1ca8bb45554c1942d49473bbddb9af71fffc74c9"
+ },
+ {
+  "file": "window/launch.sh",
+  "source": "/scratch/cc-swa/logs/cp-swa/launch.sh",
+  "sha256": "95210537f77274d987859de9778d146e2fbc51ba74c217f372b3f8a6ddb5560e"
+ },
+ {
+  "file": "window/probe.json",
+  "source": "/scratch/cc-swa/logs/cp-swa/probe.json",
+  "sha256": "41f10b4e7e51c7af005d431fecfe644948bcadfc88d8e19490ebf9bbe7565821"
+ },
+ {
+  "file": "window/probe.log",
+  "source": "/scratch/cc-swa/logs/cp-swa/probe.log",
+  "sha256": "24dabec955cef218e4ff98ecc503b8c17a4f604ce414d34b6af379af9dcab255"
+ },
+ {
+  "file": "window/serve.log.gz",
+  "source": "/scratch/cc-swa/logs/cp-swa/serve.log",
+  "sha256": "dd5c2a6c2317ac7bfe85f8855395d4f92915b4e09cdbc9eb080cecfc2f82d43d"
+ },
+ {
+  "file": "window/wait.log",
+  "source": "/scratch/cc-swa/logs/cp-swa/wait.log",
+  "sha256": "3dfa3fb239f56c778a1e9b33eb31328349edd155a95806dac4378904e88527e5"
+ }
+]

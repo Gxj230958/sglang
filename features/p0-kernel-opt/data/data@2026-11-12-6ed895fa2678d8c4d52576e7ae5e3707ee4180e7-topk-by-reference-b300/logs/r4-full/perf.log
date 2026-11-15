@@ -1,0 +1,18 @@
+perf serve rc=0
+Successful requests:                     96        
+Output token throughput (tok/s):         616.75    
+Mean E2E Latency (ms):                   6468.73   
+Mean TTFT (ms):                          636.95    
+Median TTFT (ms):                        397.27    
+Mean TPOT (ms):                          22.87     
+Mean ITL (ms):                           23.07     
+Median ITL (ms):                         10.14     
+perf decode rc=0
+Successful requests:                     48        
+Output token throughput (tok/s):         586.78    
+Mean E2E Latency (ms):                   6806.64   
+Mean TTFT (ms):                          424.62    
+Median TTFT (ms):                        327.80    
+Mean TPOT (ms):                          12.49     
+Mean ITL (ms):                           12.51     
+Median ITL (ms):                         7.70      

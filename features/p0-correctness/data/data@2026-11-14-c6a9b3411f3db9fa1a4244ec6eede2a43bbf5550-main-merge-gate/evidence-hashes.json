@@ -1,0 +1,117 @@
+[
+ {
+  "file": "dep8/eval/sgl_eval_gsm8k_20261114-232030/metrics.json",
+  "source": "/scratch/cc-merge/logs-dep8-c6a9/eval/sgl_eval_gsm8k_20261114-232030/metrics.json",
+  "sha256": "f24f6067ce1475125e06974a2e6234a387dbc52e30f2f613554dcaab0fc82eb7"
+ },
+ {
+  "file": "dep8/eval/sgl_eval_gsm8k_20261114-232030/output-rs0.jsonl.gz",
+  "source": "/scratch/cc-merge/logs-dep8-c6a9/eval/sgl_eval_gsm8k_20261114-232030/output-rs0.jsonl",
+  "sha256": "b630604d3a72d50ebb2972096f68a7f1a6dea17187b690ecbd7bef6f0a399713"
+ },
+ {
+  "file": "dep8/gsm8k.log.gz",
+  "source": "/scratch/cc-merge/logs-dep8-c6a9/gsm8k.log",
+  "sha256": "905faa4cc67cc3ec1595d2931e51ddaf7fc5847b1cf149961b1161b0e01c4951"
+ },
+ {
+  "file": "dep8/launch.sh",
+  "source": "/scratch/cc-merge/logs-dep8-c6a9/launch.sh",
+  "sha256": "24e88fa54ea77f1a90cf20cfed568ec15e3dddb9e36c16b10726c2094e8a9b92"
+ },
+ {
+  "file": "dep8/serve.log.gz",
+  "source": "/scratch/cc-merge/logs-dep8-c6a9/serve.log",
+  "sha256": "fa8d9f8d12f1ba4af7fb2912361fe8ee318ebc00072bccdfaeac60c271a55ea4"
+ },
+ {
+  "file": "dep8/suite.json",
+  "source": "/scratch/cc-merge/logs-dep8-c6a9/suite.json",
+  "sha256": "e2e3678823863f924f89a5c730e55a7134d6560ded0158f30d88336d55259620"
+ },
+ {
+  "file": "dep8/suite.log",
+  "source": "/scratch/cc-merge/logs-dep8-c6a9/suite.log",
+  "sha256": "6c9f838f89f0686343dc39515b7c5e0e495a41758860892751795599ee900998"
+ },
+ {
+  "file": "gate-dep8.out",
+  "source": "/scratch/cc-merge/gate-dep8.out",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+ },
+ {
+  "file": "gate-dep8.sh",
+  "source": "/scratch/cc-merge/gate-dep8.sh",
+  "sha256": "0e2f1d66e862f7bf9e218022d8ab828a921008bd3db545d566f46d2e7199ead0"
+ },
+ {
+  "file": "gate.out",
+  "source": "/scratch/cc-merge/gate.out",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+ },
+ {
+  "file": "gate.sh",
+  "source": "/scratch/cc-merge/gate.sh",
+  "sha256": "f01c2b85433326bffc45b8252097ee34d502748a0d80f77e23405927e8be6c86"
+ },
+ {
+  "file": "repro.md",
+  "source": "generated for this round",
+  "sha256": "cc035004734069172dd289f776861377c584aefd62209c9d46c0985bed017696"
+ },
+ {
+  "file": "status-dep8-c6a9",
+  "source": "/scratch/cc-merge/status-dep8-c6a9",
+  "sha256": "f739ce4e028bc0d45d8129f7a57579b383921c0e66d2a0e486602e1bd215751a"
+ },
+ {
+  "file": "status-tp8",
+  "source": "/scratch/cc-merge/status-tp8",
+  "sha256": "b023c54037c3e5faa1a744cd553dd0fa40aa0cdf3ffe6b4662f901aaf80ed9af"
+ },
+ {
+  "file": "suite.py",
+  "source": "/scratch/cc-merge/suite.py",
+  "sha256": "ede865a6f6f919e89a11efbed4ba12c91b1181446836ec3945e68b5967d411cf"
+ },
+ {
+  "file": "summary.json",
+  "source": "generated for this round",
+  "sha256": "10bd5851a9cec13ec14789570c76bd0540277c3b7fb2127ef34422f368cd3d0f"
+ },
+ {
+  "file": "tp8/eval/sgl_eval_gsm8k_20261114-230219/metrics.json",
+  "source": "/scratch/cc-merge/logs-tp8/eval/sgl_eval_gsm8k_20261114-230219/metrics.json",
+  "sha256": "6c677110218c2f4326b8a8ff2b486fd6f000adfabf375b23796a1d6276975872"
+ },
+ {
+  "file": "tp8/eval/sgl_eval_gsm8k_20261114-230219/output-rs0.jsonl.gz",
+  "source": "/scratch/cc-merge/logs-tp8/eval/sgl_eval_gsm8k_20261114-230219/output-rs0.jsonl",
+  "sha256": "46e77991453383546119b8f92e92607be225a33bfaaef471cac83e3310e3e0b1"
+ },
+ {
+  "file": "tp8/gsm8k.log.gz",
+  "source": "/scratch/cc-merge/logs-tp8/gsm8k.log",
+  "sha256": "9cecc96b4987e9a30fb0be694c10db26750fb624b5d42cedce4629bb4897da39"
+ },
+ {
+  "file": "tp8/launch.sh",
+  "source": "/scratch/cc-merge/logs-tp8/launch.sh",
+  "sha256": "7dead3e5d577029b3f368e9d6e1c14daf862d245f83900e7ef346f29b0c0607d"
+ },
+ {
+  "file": "tp8/serve.log.gz",
+  "source": "/scratch/cc-merge/logs-tp8/serve.log",
+  "sha256": "ed8cd3f63e71aa8633e93c2d7313de26ae2df99fc8c2049435e0a229b13ce8db"
+ },
+ {
+  "file": "tp8/suite.json",
+  "source": "/scratch/cc-merge/logs-tp8/suite.json",
+  "sha256": "5dbc4339276e88784e6166e73742e07dd3ea12434d0619f8f38291c4ed6bff31"
+ },
+ {
+  "file": "tp8/suite.log",
+  "source": "/scratch/cc-merge/logs-tp8/suite.log",
+  "sha256": "2c1ff81857da3be54e647f3f170bef8d69e66ab27cf86f7726a0119e2d3df183"
+ }
+]

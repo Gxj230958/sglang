@@ -1,0 +1,3517 @@
+[
+ {
+  "file": "harness/chain2.sh",
+  "source": "/scratch/cc-pr43/box/chain2.sh",
+  "sha256": "e8fd898b5d81605150c985334d14f57594b7d46d8b0d0843376c983e1b9ad4fc"
+ },
+ {
+  "file": "harness/cross_cmp.py",
+  "source": "/scratch/cc-pr43/box/cross_cmp.py",
+  "sha256": "5e992695024e446c0913d7ea4ec2f2612d5995238ffa6dd04c574f76e2e3bdde"
+ },
+ {
+  "file": "harness/driver.sh",
+  "source": "/scratch/cc-pr43/box/driver.sh",
+  "sha256": "8938761eaebe0bd61d269277f3127c87edae0680867da103537d4de7dd18c801"
+ },
+ {
+  "file": "harness/job.sh",
+  "source": "/scratch/cc-pr43/box/job.sh",
+  "sha256": "b1aa3657ebbaf8080f34cf47ad4e1e3d2379a87791a87246e0feb6d4a65f2695"
+ },
+ {
+  "file": "harness/jobs1.txt",
+  "source": "/scratch/cc-pr43/box/jobs1.txt",
+  "sha256": "ab7332ce8616bbc4963dd77b216ea9e40e30fb8f866dd872dc963e0b3abe60e0"
+ },
+ {
+  "file": "harness/jobs2.txt",
+  "source": "/scratch/cc-pr43/box/jobs2.txt",
+  "sha256": "bc2e368262ad6758f62c03042abdda178a4666893a2efacb5ab4257354724913"
+ },
+ {
+  "file": "harness/jobs3.txt",
+  "source": "/scratch/cc-pr43/box/jobs3.txt",
+  "sha256": "fbc99f645258b82584a1fb494e6beb8a400abcc09fbc7b7ccbc0e77aa916e282"
+ },
+ {
+  "file": "harness/longprefill.py",
+  "source": "/scratch/cc-pr43/box/longprefill.py",
+  "sha256": "4e6c7c7ad1c37bf04ac0987f1f1895151d9718d50491d09a77c141cc4d55be46"
+ },
+ {
+  "file": "harness/micro.py",
+  "source": "/scratch/cc-pr43/box/micro.py",
+  "sha256": "8537923e714714759ac98ea3f5222dbd3670d23ec9faacd701e442d6be392209"
+ },
+ {
+  "file": "harness/perf.sh",
+  "source": "/scratch/cc-pr43/box/perf.sh",
+  "sha256": "e1dfb96dfc5a8054e8c7eb37b709b9431d98b9109fece34f02bf5b1984ad3550"
+ },
+ {
+  "file": "harness/pre.sh",
+  "source": "/scratch/cc-pr43/box/pre.sh",
+  "sha256": "e67c0103b03c88e921340fce0848c5fb91071492330377e60a906ffcfcc45e4a"
+ },
+ {
+  "file": "harness/serve.sh",
+  "source": "/scratch/cc-pr43/box/serve.sh",
+  "sha256": "b495b1e3b66467868cb8d0a83a90af77a209774af3bbde543031fcce59cfedc1"
+ },
+ {
+  "file": "harness/setup.sh",
+  "source": "/scratch/cc-pr43/box/setup.sh",
+  "sha256": "875e9a96d85bc4a52f16150e778f8632f0589da50ab034cc923a519ba6ec1b65"
+ },
+ {
+  "file": "harness/sitecustomize.py",
+  "source": "/scratch/cc-pr43/box/sitecustomize.py",
+  "sha256": "3294c5559257f4cd473be82a8b29d96592e2735799dc9b9aa2ca2b0c0c51bc05"
+ },
+ {
+  "file": "harness/stop.sh",
+  "source": "/scratch/cc-pr43/box/stop.sh",
+  "sha256": "66f2eb5cf2875c4d472fd7e2417cc96181e8abd70d82653d925227bcc2acde6d"
+ },
+ {
+  "file": "harness/suite.py",
+  "source": "/scratch/cc-pr43/box/suite.py",
+  "sha256": "13ae5de8a93d3d6084129473e63e6330ca0ecd5b4e103e3bef51afbd0161012e"
+ },
+ {
+  "file": "harness/sum2.py",
+  "source": "/scratch/cc-pr43/box/sum2.py",
+  "sha256": "8bee54aeff6dab901b2714e5abe0b837d832799a32cb2d0b601b2d55e3677d5f"
+ },
+ {
+  "file": "harness/summ.sh",
+  "source": "/scratch/cc-pr43/box/summ.sh",
+  "sha256": "1a609f7dc9bd5683403017de54c7d2f2fc3f1cc030d60644442d6650b5c070a4"
+ },
+ {
+  "file": "harness/topk_ownership.py",
+  "source": "/scratch/cc-pr43/box/topk_ownership.py",
+  "sha256": "c61cdbcde3294b529593ae474d39ebc8e6dffdad475a9cb60f675c4eac863402"
+ },
+ {
+  "file": "harness/trunc.py",
+  "source": "/scratch/cc-pr43/box/trunc.py",
+  "sha256": "abb7ebf7187457ff838082d299e5bc693565304c7385fb3800f20a19109f42f3"
+ },
+ {
+  "file": "harness/xcmp.py",
+  "source": "/scratch/cc-pr43/box/xcmp.py",
+  "sha256": "4b2c7ec41be512ec074ca08f02e626330bca6d6381a9e73ab894788feb3f37a5"
+ },
+ {
+  "file": "logs/chain2.out",
+  "source": "/scratch/cc-pr43/logs/chain2.out",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+ },
+ {
+  "file": "logs/d1-base/eval/sgl_eval_gsm8k_20261112-223918/metrics.json",
+  "source": "/scratch/cc-pr43/logs/d1-base/eval/sgl_eval_gsm8k_20261112-223918/metrics.json",
+  "sha256": "a24856c43847a61c6c5781f7cd4cce10cbe3b6b21acbf16776b98e427971014c"
+ },
+ {
+  "file": "logs/d1-base/eval/sgl_eval_gsm8k_20261112-223918/output-rs0.jsonl.gz",
+  "source": "/scratch/cc-pr43/logs/d1-base/eval/sgl_eval_gsm8k_20261112-223918/output-rs0.jsonl",
+  "sha256": "a3a4f388004d1976069083d772816bf487fa5bfead50dc11f1c3bf61e050e415"
+ },
+ {
+  "file": "logs/d1-base/gpu-after-ready.txt",
+  "source": "/scratch/cc-pr43/logs/d1-base/gpu-after-ready.txt",
+  "sha256": "5f3715872b9b5f536b17bc1955c75fe7a338c872165b78363dc72bd5cf5a1b84"
+ },
+ {
+  "file": "logs/d1-base/gpu-at-end.txt",
+  "source": "/scratch/cc-pr43/logs/d1-base/gpu-at-end.txt",
+  "sha256": "9a787c289c1415323385e7baccbdfec727392cb2ea9e22d18f2aec0bdc4be1dc"
+ },
+ {
+  "file": "logs/d1-base/gsm8k.log.gz",
+  "source": "/scratch/cc-pr43/logs/d1-base/gsm8k.log",
+  "sha256": "e116c16066fe499930b1a6b5b4017813bb2457bd602209423580e04225cba86e"
+ },
+ {
+  "file": "logs/d1-base/job.status",
+  "source": "/scratch/cc-pr43/logs/d1-base/job.status",
+  "sha256": "91d6be8067c64631f314f22adfb02e72d672596836c246e7f9cf135a51ef42fe"
+ },
+ {
+  "file": "logs/d1-base/launch.sh",
+  "source": "/scratch/cc-pr43/logs/d1-base/launch.sh",
+  "sha256": "96422895ece82c9461aafc28eab27ab14eeecc5d47e99269614caca58ca56fad"
+ },
+ {
+  "file": "logs/d1-base/longprefill.json",
+  "source": "/scratch/cc-pr43/logs/d1-base/longprefill.json",
+  "sha256": "1120e1e97809998f27273b96386bd936c9b8b434095769a96891c58d2b8d9df3"
+ },
+ {
+  "file": "logs/d1-base/longprefill.log",
+  "source": "/scratch/cc-pr43/logs/d1-base/longprefill.log",
+  "sha256": "9857596fef65c03df0cb3f3c0250c7294d945c5a6d6523e5526f50a494f169ba"
+ },
+ {
+  "file": "logs/d1-base/mem/epoch",
+  "source": "/scratch/cc-pr43/logs/d1-base/mem/epoch",
+  "sha256": "c89659c44bb95ddbbeb0fb5368a80663f1cc2ec4138413563791f66b72a872c5"
+ },
+ {
+  "file": "logs/d1-base/mem/mem-1675894.log",
+  "source": "/scratch/cc-pr43/logs/d1-base/mem/mem-1675894.log",
+  "sha256": "5dfe2b89ab9b311be7d9301769fdfe5d3d27340059ddb9c668687c75020368ed"
+ },
+ {
+  "file": "logs/d1-base/mem/mem-1676064.log",
+  "source": "/scratch/cc-pr43/logs/d1-base/mem/mem-1676064.log",
+  "sha256": "c1628dc713ab3aab47322606cf168211e2cef96e0979af9b565205f7ff803a33"
+ },
+ {
+  "file": "logs/d1-base/mem/mem-1676132.log",
+  "source": "/scratch/cc-pr43/logs/d1-base/mem/mem-1676132.log",
+  "sha256": "25472b3e40036094939ef0cfec3b49a06ba3e63448ceccc2ffbb4ba9e067a4f7"
+ },
+ {
+  "file": "logs/d1-base/mem/mem-1676200.log",
+  "source": "/scratch/cc-pr43/logs/d1-base/mem/mem-1676200.log",
+  "sha256": "520cd4c0bb0291162ac248ef0acb71b8649026b1fef67f654faec6d1921d8c7f"
+ },
+ {
+  "file": "logs/d1-base/mem/mem-1676268.log",
+  "source": "/scratch/cc-pr43/logs/d1-base/mem/mem-1676268.log",
+  "sha256": "df0d5446ddf20df97515b892a8e4dc289dc53f2b59e1a1506c86da4422ff8c6a"
+ },
+ {
+  "file": "logs/d1-base/mem/mem-1676336.log",
+  "source": "/scratch/cc-pr43/logs/d1-base/mem/mem-1676336.log",
+  "sha256": "596ddb5466e45c703b1304eb59bf739d4e3fbc5cca4b74cc5a297fe8f1f4fe9b"
+ },
+ {
+  "file": "logs/d1-base/mem/mem-1676407.log",
+  "source": "/scratch/cc-pr43/logs/d1-base/mem/mem-1676407.log",
+  "sha256": "7e3164d76e1ae7646f9f0336d249d9568bbb087ab6129a078e941fcc94ff77c2"
+ },
+ {
+  "file": "logs/d1-base/mem/mem-1676559.log",
+  "source": "/scratch/cc-pr43/logs/d1-base/mem/mem-1676559.log",
+  "sha256": "b0663896a8f0d85e7e267e2c0590dd7dea1ccebf0e416ff5650d3f124ade7ed3"
+ },
+ {
+  "file": "logs/d1-base/mem/mem-1676758.log",
+  "source": "/scratch/cc-pr43/logs/d1-base/mem/mem-1676758.log",
+  "sha256": "421eaa5d50cb21c1b87ae378cf674c91b9b58df467d292745154f8c24ca50bf1"
+ },
+ {
+  "file": "logs/d1-base/mem/mem-1676759.log",
+  "source": "/scratch/cc-pr43/logs/d1-base/mem/mem-1676759.log",
+  "sha256": "63a5fa92b671e142b667e93ff9d227771a4f0490344ff5381062e4f226b7fb55"
+ },
+ {
+  "file": "logs/d1-base/mem/mem-1677357.log",
+  "source": "/scratch/cc-pr43/logs/d1-base/mem/mem-1677357.log",
+  "sha256": "b1f7843c6798465c6b7925740b0c2c475cb764691e01358e57d24cec1fc34b2d"
+ },
+ {
+  "file": "logs/d1-base/mem/mem-1679514.log",
+  "source": "/scratch/cc-pr43/logs/d1-base/mem/mem-1679514.log",
+  "sha256": "60a6264e282dbdf8124c4cd9268505d73e0dd4cb85df906b277253331296baab"
+ },
+ {
+  "file": "logs/d1-base/mem/mem-1680704.log",
+  "source": "/scratch/cc-pr43/logs/d1-base/mem/mem-1680704.log",
+  "sha256": "902f5e4508034c2672cc4e7d26de9e78ced42ca6f315116304b2e4050f594158"
+ },
+ {
+  "file": "logs/d1-base/perf-decode.jsonl",
+  "source": "/scratch/cc-pr43/logs/d1-base/perf-decode.jsonl",
+  "sha256": "527836dc9cad1d1c190f4cfb506eba64771e81f8aa5ef6fb5e2236de082aaf00"
+ },
+ {
+  "file": "logs/d1-base/perf-decode.log",
+  "source": "/scratch/cc-pr43/logs/d1-base/perf-decode.log",
+  "sha256": "c1412b0e6c887623a4ca06cab25d069040b688ccbc9f9c992f27ef6fa2f3c265"
+ },
+ {
+  "file": "logs/d1-base/perf-serve.jsonl",
+  "source": "/scratch/cc-pr43/logs/d1-base/perf-serve.jsonl",
+  "sha256": "3afd2479d7c25cb30babde832225d43039df915d9620423c10a163f9a8f4bef4"
+ },
+ {
+  "file": "logs/d1-base/perf-serve.log",
+  "source": "/scratch/cc-pr43/logs/d1-base/perf-serve.log",
+  "sha256": "03724198997a1c30354821af06f716d4985f1f1304cdb2440093ed94ca4df8f3"
+ },
+ {
+  "file": "logs/d1-base/perf.log",
+  "source": "/scratch/cc-pr43/logs/d1-base/perf.log",
+  "sha256": "813021196fb089be06adf9fb40ed1336e728b94dd70e62808aaeb754386817a1"
+ },
+ {
+  "file": "logs/d1-base/serve-start.log.gz",
+  "source": "/scratch/cc-pr43/logs/d1-base/serve-start.log",
+  "sha256": "56bdd930780895c8e727bebdeda5434fdf365a8327e361097c3cc6b17b0d8a66"
+ },
+ {
+  "file": "logs/d1-base/serve.log.gz",
+  "source": "/scratch/cc-pr43/logs/d1-base/serve.log",
+  "sha256": "ec091a82ff9fdd375fb223af6deb453c1f854666058127b61488328f4852f37b"
+ },
+ {
+  "file": "logs/d1-base/suite.json.gz",
+  "source": "/scratch/cc-pr43/logs/d1-base/suite.json",
+  "sha256": "f4016f9dd6216f3d7c183d12816783d438fb664bfdf52a8fc6c9f0214e8ae865"
+ },
+ {
+  "file": "logs/d1-base/suite.log",
+  "source": "/scratch/cc-pr43/logs/d1-base/suite.log",
+  "sha256": "2955a7c93c9f3f22909cc8bd0afaca5b8aa4588d1dc9a07d5bdecd5b093fe8c3"
+ },
+ {
+  "file": "logs/d1-clean/eval/sgl_eval_gsm8k_20261112-231038/metrics.json",
+  "source": "/scratch/cc-pr43/logs/d1-clean/eval/sgl_eval_gsm8k_20261112-231038/metrics.json",
+  "sha256": "c78de6c5858099a29407ec0e56248c3db6b47b4cf074627bc921bfb9ae293f50"
+ },
+ {
+  "file": "logs/d1-clean/eval/sgl_eval_gsm8k_20261112-231038/output-rs0.jsonl.gz",
+  "source": "/scratch/cc-pr43/logs/d1-clean/eval/sgl_eval_gsm8k_20261112-231038/output-rs0.jsonl",
+  "sha256": "0effd63b24cea30ea8f40cc354ac93a03a33e33a663eeeaea97f9259cce49b92"
+ },
+ {
+  "file": "logs/d1-clean/gpu-after-ready.txt",
+  "source": "/scratch/cc-pr43/logs/d1-clean/gpu-after-ready.txt",
+  "sha256": "39ff1ef08e3bab77cb5a288be7e916516eed213b22cf4d1a408c75b8cc0bbc85"
+ },
+ {
+  "file": "logs/d1-clean/gpu-at-end.txt",
+  "source": "/scratch/cc-pr43/logs/d1-clean/gpu-at-end.txt",
+  "sha256": "fc6afdbc8478fd344e280fd3e27d99e77a8e64e8072e7ea8c7b05a32f7ad8bbd"
+ },
+ {
+  "file": "logs/d1-clean/gsm8k.log.gz",
+  "source": "/scratch/cc-pr43/logs/d1-clean/gsm8k.log",
+  "sha256": "1b008cb3738d4a7ddc6994fc078ee7943e02f9cb6b890f6e9f26d10f46cc1eea"
+ },
+ {
+  "file": "logs/d1-clean/job.status",
+  "source": "/scratch/cc-pr43/logs/d1-clean/job.status",
+  "sha256": "972fdac18acb6954e9fbf5096ce9141e8b3ece4c9b5b7120eacfd427a2531f84"
+ },
+ {
+  "file": "logs/d1-clean/launch.sh",
+  "source": "/scratch/cc-pr43/logs/d1-clean/launch.sh",
+  "sha256": "4b7ad2c7b1b798e5b0ba5adc33bfb659f18403844089fe1d7be49b8a161c3449"
+ },
+ {
+  "file": "logs/d1-clean/longprefill.json",
+  "source": "/scratch/cc-pr43/logs/d1-clean/longprefill.json",
+  "sha256": "539cf40beb91bb0f6b0e3366097121894f8ed0a43675ee7356690b63b61cb71a"
+ },
+ {
+  "file": "logs/d1-clean/longprefill.log",
+  "source": "/scratch/cc-pr43/logs/d1-clean/longprefill.log",
+  "sha256": "d1fd6b5b215eee1006cae17fa4381a135ac82c25057f6e3df0326e2450692e1e"
+ },
+ {
+  "file": "logs/d1-clean/mem/epoch",
+  "source": "/scratch/cc-pr43/logs/d1-clean/mem/epoch",
+  "sha256": "c89659c44bb95ddbbeb0fb5368a80663f1cc2ec4138413563791f66b72a872c5"
+ },
+ {
+  "file": "logs/d1-clean/mem/mem-1681621.log",
+  "source": "/scratch/cc-pr43/logs/d1-clean/mem/mem-1681621.log",
+  "sha256": "4576d598bc8e6be8d6b771bcc9abf646ecd04b9c7aae4dfe36d2fd9013ab5a42"
+ },
+ {
+  "file": "logs/d1-clean/mem/mem-1681780.log",
+  "source": "/scratch/cc-pr43/logs/d1-clean/mem/mem-1681780.log",
+  "sha256": "f5791563318b0ee9df0485a662dfed0bbed139c203e0ef850a0846066e6d500f"
+ },
+ {
+  "file": "logs/d1-clean/mem/mem-1681848.log",
+  "source": "/scratch/cc-pr43/logs/d1-clean/mem/mem-1681848.log",
+  "sha256": "9f42cbbeada32f79517494fd39b74212f6249fc5988ad6ec8632300b306540c1"
+ },
+ {
+  "file": "logs/d1-clean/mem/mem-1681916.log",
+  "source": "/scratch/cc-pr43/logs/d1-clean/mem/mem-1681916.log",
+  "sha256": "7927e4a2598ee9d90828a4c6c358fe1e5a3c9b014d51b11d96bcff7d6f1d1f12"
+ },
+ {
+  "file": "logs/d1-clean/mem/mem-1681984.log",
+  "source": "/scratch/cc-pr43/logs/d1-clean/mem/mem-1681984.log",
+  "sha256": "06a2fe81c10899ec4ede3061938880dfe4233cddebdbcfd4949c3961318770ed"
+ },
+ {
+  "file": "logs/d1-clean/mem/mem-1682052.log",
+  "source": "/scratch/cc-pr43/logs/d1-clean/mem/mem-1682052.log",
+  "sha256": "e802eebdce135bcd209a4f14a13126240f420c8127ec122cbadc4f716e122951"
+ },
+ {
+  "file": "logs/d1-clean/mem/mem-1682122.log",
+  "source": "/scratch/cc-pr43/logs/d1-clean/mem/mem-1682122.log",
+  "sha256": "02921f641cf1a7272881e54b1ff5877419fdbcd37deb4b05a2500ad6e163e839"
+ },
+ {
+  "file": "logs/d1-clean/mem/mem-1682194.log",
+  "source": "/scratch/cc-pr43/logs/d1-clean/mem/mem-1682194.log",
+  "sha256": "1e208816287f2a2e8315e3a93becc43f73a2958ff43172de5cddace1c4328285"
+ },
+ {
+  "file": "logs/d1-clean/mem/mem-1682392.log",
+  "source": "/scratch/cc-pr43/logs/d1-clean/mem/mem-1682392.log",
+  "sha256": "6a4b33fc0cbcda196659761d31d14cfb0e10547f1cefc990ccb2c2822b3ee642"
+ },
+ {
+  "file": "logs/d1-clean/mem/mem-1682393.log",
+  "source": "/scratch/cc-pr43/logs/d1-clean/mem/mem-1682393.log",
+  "sha256": "ee2dab222fe34eda78cae670b2732c269d6afc37ca520f06480fa0e7c92c169f"
+ },
+ {
+  "file": "logs/d1-clean/mem/mem-1682809.log",
+  "source": "/scratch/cc-pr43/logs/d1-clean/mem/mem-1682809.log",
+  "sha256": "0c849f908196d338f1ee568cebe1a577048623584453d9a35a7bf320f26c03c2"
+ },
+ {
+  "file": "logs/d1-clean/mem/mem-1684903.log",
+  "source": "/scratch/cc-pr43/logs/d1-clean/mem/mem-1684903.log",
+  "sha256": "0032b6dcfcfaa47ec2b4936761b088dfc6505059b4c1689014deead0b174e386"
+ },
+ {
+  "file": "logs/d1-clean/mem/mem-1686215.log",
+  "source": "/scratch/cc-pr43/logs/d1-clean/mem/mem-1686215.log",
+  "sha256": "1a03cd34a78e5e4c59c861923d344f10b56aa010223d5e59dcbf73760b50e1b7"
+ },
+ {
+  "file": "logs/d1-clean/perf-decode.jsonl",
+  "source": "/scratch/cc-pr43/logs/d1-clean/perf-decode.jsonl",
+  "sha256": "5462311898a909dd9c344b153ef3d19bf8fd5baca2098c5adce11ab544ff7395"
+ },
+ {
+  "file": "logs/d1-clean/perf-decode.log",
+  "source": "/scratch/cc-pr43/logs/d1-clean/perf-decode.log",
+  "sha256": "e2becf5f87f901095c395021a46a1b1b103cd8f747f27652124352fb86515cb5"
+ },
+ {
+  "file": "logs/d1-clean/perf-serve.jsonl",
+  "source": "/scratch/cc-pr43/logs/d1-clean/perf-serve.jsonl",
+  "sha256": "1cff83c786a437f16e3c76f56b5be68596fa9d00af922c4f15e9deafa6e1e0a5"
+ },
+ {
+  "file": "logs/d1-clean/perf-serve.log",
+  "source": "/scratch/cc-pr43/logs/d1-clean/perf-serve.log",
+  "sha256": "dfc6e39608f727202cd06e4d3233c8d3e8d0a1dd3d40b5c93307cf387e2a10d0"
+ },
+ {
+  "file": "logs/d1-clean/perf.log",
+  "source": "/scratch/cc-pr43/logs/d1-clean/perf.log",
+  "sha256": "deb521ae849ef12f95b8ff6b82d1b77c2586681eb2c185cbbc6c1bf3de805a5a"
+ },
+ {
+  "file": "logs/d1-clean/serve-start.log.gz",
+  "source": "/scratch/cc-pr43/logs/d1-clean/serve-start.log",
+  "sha256": "79415e4b12f89759bdced0440965963f9830496508b58a5ddd287a882bc8e374"
+ },
+ {
+  "file": "logs/d1-clean/serve.log.gz",
+  "source": "/scratch/cc-pr43/logs/d1-clean/serve.log",
+  "sha256": "aafde7a2a2039ea5887a26556c8959726517838c15a66a768f9ae2d32f994c5c"
+ },
+ {
+  "file": "logs/d1-clean/suite.json.gz",
+  "source": "/scratch/cc-pr43/logs/d1-clean/suite.json",
+  "sha256": "21a37f03f485cb28184e5ddf448ebc6e93b31c64a1b7f8df750c0af9a165657c"
+ },
+ {
+  "file": "logs/d1-clean/suite.log",
+  "source": "/scratch/cc-pr43/logs/d1-clean/suite.log",
+  "sha256": "308942ed50effe759921a39026e68fd6977214b8940996055f46daf9a04f4741"
+ },
+ {
+  "file": "logs/d1-full/gpu-after-ready.txt",
+  "source": "/scratch/cc-pr43/logs/d1-full/gpu-after-ready.txt",
+  "sha256": "39ff1ef08e3bab77cb5a288be7e916516eed213b22cf4d1a408c75b8cc0bbc85"
+ },
+ {
+  "file": "logs/d1-full/gpu-at-end.txt",
+  "source": "/scratch/cc-pr43/logs/d1-full/gpu-at-end.txt",
+  "sha256": "b42969f658ec0195f1a979f43a2323d5d1eb53cec481ec58c10081432f49d435"
+ },
+ {
+  "file": "logs/d1-full/job.status",
+  "source": "/scratch/cc-pr43/logs/d1-full/job.status",
+  "sha256": "99d07157e14a98c846719c828dcc7c1d159ba49cbf6276a5288f89b616903b66"
+ },
+ {
+  "file": "logs/d1-full/launch.sh",
+  "source": "/scratch/cc-pr43/logs/d1-full/launch.sh",
+  "sha256": "a5f03e7d11924afb4947180c84c3886d614f3f7e5de555a7c09dc98b48178d5e"
+ },
+ {
+  "file": "logs/d1-full/longprefill.json",
+  "source": "/scratch/cc-pr43/logs/d1-full/longprefill.json",
+  "sha256": "0e70c8cba96cb197e5107e1c9a0f1294b279de7e7f8459f76e34b9a5f70783d9"
+ },
+ {
+  "file": "logs/d1-full/longprefill.log",
+  "source": "/scratch/cc-pr43/logs/d1-full/longprefill.log",
+  "sha256": "430915702db25c9668aa8b5da708da6202ff1f7dd52043a35de67b36c2eb9e11"
+ },
+ {
+  "file": "logs/d1-full/mem/epoch",
+  "source": "/scratch/cc-pr43/logs/d1-full/mem/epoch",
+  "sha256": "ffcede71cab4f4cba8e01102805286b53e7deaf00194acce148960f1d27c073c"
+ },
+ {
+  "file": "logs/d1-full/mem/mem-1712841.log",
+  "source": "/scratch/cc-pr43/logs/d1-full/mem/mem-1712841.log",
+  "sha256": "e966708f253a2a1fd3a251c3a04b3bdc09ef18f03a5b0c7c4721d023c11fb0b3"
+ },
+ {
+  "file": "logs/d1-full/mem/mem-1712991.log",
+  "source": "/scratch/cc-pr43/logs/d1-full/mem/mem-1712991.log",
+  "sha256": "75ebcbf548f99040be76e42c98accc1a78335a9ce2ec752f814aa652d006d5a9"
+ },
+ {
+  "file": "logs/d1-full/mem/mem-1713059.log",
+  "source": "/scratch/cc-pr43/logs/d1-full/mem/mem-1713059.log",
+  "sha256": "9ddca42c234b066cddfb7641288ff2273e00297eceff1c725f4f760abcf2184e"
+ },
+ {
+  "file": "logs/d1-full/mem/mem-1713127.log",
+  "source": "/scratch/cc-pr43/logs/d1-full/mem/mem-1713127.log",
+  "sha256": "ed511106e1e18bd8d9bc516196579d4070e684d851cecb3d348a55fb5889227c"
+ },
+ {
+  "file": "logs/d1-full/mem/mem-1713195.log",
+  "source": "/scratch/cc-pr43/logs/d1-full/mem/mem-1713195.log",
+  "sha256": "b72968f9f521122d7dad216c4431a3f803f9a890e8a9c7a4fd818336ea1a2f52"
+ },
+ {
+  "file": "logs/d1-full/mem/mem-1713263.log",
+  "source": "/scratch/cc-pr43/logs/d1-full/mem/mem-1713263.log",
+  "sha256": "c9a4ce0c3da84e2ac35587d73984f3af9197f0d3c1636e49604f83e1e72e6e0a"
+ },
+ {
+  "file": "logs/d1-full/mem/mem-1713334.log",
+  "source": "/scratch/cc-pr43/logs/d1-full/mem/mem-1713334.log",
+  "sha256": "4e175cbec372723fe0b8066c82ef4f82d5f4c96705d6829823c2535fa8e7956c"
+ },
+ {
+  "file": "logs/d1-full/mem/mem-1713469.log",
+  "source": "/scratch/cc-pr43/logs/d1-full/mem/mem-1713469.log",
+  "sha256": "ef66031de4afe03ce2f1e185f197cf1a534072fb8d739b3d7085cdf902a689e0"
+ },
+ {
+  "file": "logs/d1-full/mem/mem-1713603.log",
+  "source": "/scratch/cc-pr43/logs/d1-full/mem/mem-1713603.log",
+  "sha256": "9788712eeb6f1587435a5c9e5c8801daa21af6db9a010cb0bd00de01f0fafac2"
+ },
+ {
+  "file": "logs/d1-full/mem/mem-1713604.log",
+  "source": "/scratch/cc-pr43/logs/d1-full/mem/mem-1713604.log",
+  "sha256": "a3252a04f7744d5270a13db779027ee6b5c7b47eb35d2d5b790ad40c51599454"
+ },
+ {
+  "file": "logs/d1-full/mem/mem-1714020.log",
+  "source": "/scratch/cc-pr43/logs/d1-full/mem/mem-1714020.log",
+  "sha256": "a50e3df5b8971750bda5841423d1c412b8030b62249fdbcd82db4a18bfa1c63d"
+ },
+ {
+  "file": "logs/d1-full/mem/mem-1716186.log",
+  "source": "/scratch/cc-pr43/logs/d1-full/mem/mem-1716186.log",
+  "sha256": "ed6dae4fc6ac00da735545e1107477a590958b9ba8b216bb156e9667077389bd"
+ },
+ {
+  "file": "logs/d1-full/perf-decode.jsonl",
+  "source": "/scratch/cc-pr43/logs/d1-full/perf-decode.jsonl",
+  "sha256": "34ef7d59c2640c46d32cc2258fed8437520007c0db13cfffe1284eeb0690b720"
+ },
+ {
+  "file": "logs/d1-full/perf-decode.log",
+  "source": "/scratch/cc-pr43/logs/d1-full/perf-decode.log",
+  "sha256": "1e982774faf12f913dcdf040f2b10cafdeace4221a8fe25a8e0a53e6dfeeac91"
+ },
+ {
+  "file": "logs/d1-full/perf-serve.jsonl",
+  "source": "/scratch/cc-pr43/logs/d1-full/perf-serve.jsonl",
+  "sha256": "66184c8c75bfb5ee958bb49d85393ee5f16c98949a4e55e0ad994cdf2c82de51"
+ },
+ {
+  "file": "logs/d1-full/perf-serve.log",
+  "source": "/scratch/cc-pr43/logs/d1-full/perf-serve.log",
+  "sha256": "5f12558a90614f4a5a5625baa7dd78da715cf61230eb5d8dcdd8c5a2033a3309"
+ },
+ {
+  "file": "logs/d1-full/perf.log",
+  "source": "/scratch/cc-pr43/logs/d1-full/perf.log",
+  "sha256": "f231af224744619c8007daeb9dce78ddf31f4dea35854dee8c4e507f9e027c55"
+ },
+ {
+  "file": "logs/d1-full/serve-start.log.gz",
+  "source": "/scratch/cc-pr43/logs/d1-full/serve-start.log",
+  "sha256": "a50b4514aea2077ae445832590e263e13fb41e8a9419e22b984ed46f69eccf4b"
+ },
+ {
+  "file": "logs/d1-full/serve.log.gz",
+  "source": "/scratch/cc-pr43/logs/d1-full/serve.log",
+  "sha256": "efa2af81f00f23ee8daba3dae416aa26274a3f3166a09b30477fee8bf6dc1af3"
+ },
+ {
+  "file": "logs/d2-base/gpu-after-ready.txt",
+  "source": "/scratch/cc-pr43/logs/d2-base/gpu-after-ready.txt",
+  "sha256": "048a12d8fd30fe18075652b79183ec8c7c311689b595706fa876b53f4e89a9e8"
+ },
+ {
+  "file": "logs/d2-base/gpu-at-end.txt",
+  "source": "/scratch/cc-pr43/logs/d2-base/gpu-at-end.txt",
+  "sha256": "e4aa1fe6b4e6d18af0a340a6676b059e629bd2175b93a20405f469d5954f1f6c"
+ },
+ {
+  "file": "logs/d2-base/job.status",
+  "source": "/scratch/cc-pr43/logs/d2-base/job.status",
+  "sha256": "1c219232fb263c3105f066d062675ed724a54d6e4169dcc342c17cbe4dceefb3"
+ },
+ {
+  "file": "logs/d2-base/launch.sh",
+  "source": "/scratch/cc-pr43/logs/d2-base/launch.sh",
+  "sha256": "192b138361d166014ec8a6d193478c779ec63783894b1155301c7d31e8c1f8b1"
+ },
+ {
+  "file": "logs/d2-base/longprefill.json",
+  "source": "/scratch/cc-pr43/logs/d2-base/longprefill.json",
+  "sha256": "9ead19cedb4d45adae4f34b0a3923ed59669e0d552bd587bef13a7dfab329122"
+ },
+ {
+  "file": "logs/d2-base/longprefill.log",
+  "source": "/scratch/cc-pr43/logs/d2-base/longprefill.log",
+  "sha256": "e4cfcf0d1814aeb1c9246ce8e694823c2a4183fe3e23b624f0efaf938d41ae29"
+ },
+ {
+  "file": "logs/d2-base/mem/epoch",
+  "source": "/scratch/cc-pr43/logs/d2-base/mem/epoch",
+  "sha256": "ffcede71cab4f4cba8e01102805286b53e7deaf00194acce148960f1d27c073c"
+ },
+ {
+  "file": "logs/d2-base/mem/mem-1691856.log",
+  "source": "/scratch/cc-pr43/logs/d2-base/mem/mem-1691856.log",
+  "sha256": "69ae0db264ad82eafc9d6fdc1ddb3279bde4c1a16379a091e51aa4118b539651"
+ },
+ {
+  "file": "logs/d2-base/mem/mem-1692015.log",
+  "source": "/scratch/cc-pr43/logs/d2-base/mem/mem-1692015.log",
+  "sha256": "e1dd69bab8ff5a134baf43331643ca7d4da6959d9fbbd432fc1e0e8d104f1eed"
+ },
+ {
+  "file": "logs/d2-base/mem/mem-1692083.log",
+  "source": "/scratch/cc-pr43/logs/d2-base/mem/mem-1692083.log",
+  "sha256": "35bbc1a9a70580d9eb9f5a5fc6068e130f339d451a561f8cfe780caa77ff755e"
+ },
+ {
+  "file": "logs/d2-base/mem/mem-1692151.log",
+  "source": "/scratch/cc-pr43/logs/d2-base/mem/mem-1692151.log",
+  "sha256": "6da567e4eca86ebd06a7211aa9ac2fc8c89f4eaf811b412e8d7505b99ea57360"
+ },
+ {
+  "file": "logs/d2-base/mem/mem-1692219.log",
+  "source": "/scratch/cc-pr43/logs/d2-base/mem/mem-1692219.log",
+  "sha256": "3a16068e5c3a2904fc5f90d3a0fcb27a2c3e3834cb38e9470e1414e84889c9d1"
+ },
+ {
+  "file": "logs/d2-base/mem/mem-1692288.log",
+  "source": "/scratch/cc-pr43/logs/d2-base/mem/mem-1692288.log",
+  "sha256": "b65abaec452bb891effc572c54d93b0c63240b72e2c83a7be56facd3b7f63f50"
+ },
+ {
+  "file": "logs/d2-base/mem/mem-1692359.log",
+  "source": "/scratch/cc-pr43/logs/d2-base/mem/mem-1692359.log",
+  "sha256": "e4ebdc3742f1746c1a30806a3c69e3cb8a10435bf6406c30df9c473ea95dc0c2"
+ },
+ {
+  "file": "logs/d2-base/mem/mem-1692493.log",
+  "source": "/scratch/cc-pr43/logs/d2-base/mem/mem-1692493.log",
+  "sha256": "284166611b3d2e041154f9d6cf90afb78d705d1b080f4bf1d0ab298c4b344fdd"
+ },
+ {
+  "file": "logs/d2-base/mem/mem-1692627.log",
+  "source": "/scratch/cc-pr43/logs/d2-base/mem/mem-1692627.log",
+  "sha256": "132e55d4d37c889046daa96ff2665140b59822ec5041c04c3bae697a40c3a68b"
+ },
+ {
+  "file": "logs/d2-base/mem/mem-1692628.log",
+  "source": "/scratch/cc-pr43/logs/d2-base/mem/mem-1692628.log",
+  "sha256": "1b280f0a51b49ab3ad0d5728b917acadf34abddf61274c7e809cf4ca9d50b80f"
+ },
+ {
+  "file": "logs/d2-base/mem/mem-1693042.log",
+  "source": "/scratch/cc-pr43/logs/d2-base/mem/mem-1693042.log",
+  "sha256": "ec3c9dec5c9bc567e05d94839220a054fdd66c3b12e5b10675d591ce39c64934"
+ },
+ {
+  "file": "logs/d2-base/mem/mem-1695247.log",
+  "source": "/scratch/cc-pr43/logs/d2-base/mem/mem-1695247.log",
+  "sha256": "dd3fc9d896211ad7dd1ba13e69de20b6baec07f03d9cf7d693af1b6e758477f4"
+ },
+ {
+  "file": "logs/d2-base/perf-decode.jsonl",
+  "source": "/scratch/cc-pr43/logs/d2-base/perf-decode.jsonl",
+  "sha256": "3ca1c8c2a6d4e58c15600ea06f8129e6dfb19a464b8c23a9bc16f216036371dc"
+ },
+ {
+  "file": "logs/d2-base/perf-decode.log",
+  "source": "/scratch/cc-pr43/logs/d2-base/perf-decode.log",
+  "sha256": "8fccf16fd27abb21f810c7273f4b1ae9f4c06db31edcdedc476b9969f58a84b9"
+ },
+ {
+  "file": "logs/d2-base/perf-serve.jsonl",
+  "source": "/scratch/cc-pr43/logs/d2-base/perf-serve.jsonl",
+  "sha256": "fa21c433443d51689624deefd6bda2ebef93c00b780df8100b1dd53ba17272fe"
+ },
+ {
+  "file": "logs/d2-base/perf-serve.log",
+  "source": "/scratch/cc-pr43/logs/d2-base/perf-serve.log",
+  "sha256": "d468bcee6fd3bf2dc664481d940d40fad5894bbdc8db5741bf8aa856a6ff79de"
+ },
+ {
+  "file": "logs/d2-base/perf.log",
+  "source": "/scratch/cc-pr43/logs/d2-base/perf.log",
+  "sha256": "0e575c73514868d36bb987f3950722550e6b96a4a3738adb72edd259d2ce970d"
+ },
+ {
+  "file": "logs/d2-base/serve-start.log.gz",
+  "source": "/scratch/cc-pr43/logs/d2-base/serve-start.log",
+  "sha256": "7b6be9f9d0637bbce569c320e0422c51a8df74ffecde79d8ce2193ed58333e25"
+ },
+ {
+  "file": "logs/d2-base/serve.log.gz",
+  "source": "/scratch/cc-pr43/logs/d2-base/serve.log",
+  "sha256": "a9316a1f6d071508b0f9daac8995536d4188e6c7c7f03b904e64d048a37c63f1"
+ },
+ {
+  "file": "logs/d2-clean/gpu-after-ready.txt",
+  "source": "/scratch/cc-pr43/logs/d2-clean/gpu-after-ready.txt",
+  "sha256": "39ff1ef08e3bab77cb5a288be7e916516eed213b22cf4d1a408c75b8cc0bbc85"
+ },
+ {
+  "file": "logs/d2-clean/gpu-at-end.txt",
+  "source": "/scratch/cc-pr43/logs/d2-clean/gpu-at-end.txt",
+  "sha256": "48a2d238032ec490b83820a4e4ac336bf8bf7b7754fb6426d9b2903125b0df24"
+ },
+ {
+  "file": "logs/d2-clean/job.status",
+  "source": "/scratch/cc-pr43/logs/d2-clean/job.status",
+  "sha256": "ba2a4548ff738663db18c75f0dfa134d0011cf18e8ca019fceccdd0962558b0a"
+ },
+ {
+  "file": "logs/d2-clean/launch.sh",
+  "source": "/scratch/cc-pr43/logs/d2-clean/launch.sh",
+  "sha256": "27c033edfd532162a7cc952fdf50b41c3877565c4e722136573fdad4a90b0d1a"
+ },
+ {
+  "file": "logs/d2-clean/longprefill.json",
+  "source": "/scratch/cc-pr43/logs/d2-clean/longprefill.json",
+  "sha256": "4411aa18c5c38a6e86f3d574d738880fc1614aadd37f672a423cd83ef52ec9ee"
+ },
+ {
+  "file": "logs/d2-clean/longprefill.log",
+  "source": "/scratch/cc-pr43/logs/d2-clean/longprefill.log",
+  "sha256": "95beb34a7b2114d3ae7a75344311b5885481a229d835a5673f002e6bb549edeb"
+ },
+ {
+  "file": "logs/d2-clean/mem/epoch",
+  "source": "/scratch/cc-pr43/logs/d2-clean/mem/epoch",
+  "sha256": "ffcede71cab4f4cba8e01102805286b53e7deaf00194acce148960f1d27c073c"
+ },
+ {
+  "file": "logs/d2-clean/mem/mem-1687309.log",
+  "source": "/scratch/cc-pr43/logs/d2-clean/mem/mem-1687309.log",
+  "sha256": "dfc8ac5074e3de4af8ea0f3b7c1ad4db44aec50d01ee6c8a2eac55d4c8e6bad5"
+ },
+ {
+  "file": "logs/d2-clean/mem/mem-1687476.log",
+  "source": "/scratch/cc-pr43/logs/d2-clean/mem/mem-1687476.log",
+  "sha256": "01cec0ccdcc10ea2e4e95d2746c4ca63577f62ef5cb31697800ae840be38565e"
+ },
+ {
+  "file": "logs/d2-clean/mem/mem-1687544.log",
+  "source": "/scratch/cc-pr43/logs/d2-clean/mem/mem-1687544.log",
+  "sha256": "9b179150fac0766ddf6ead06b820d253f7ea5177fbe98e05a7750a80a965c96c"
+ },
+ {
+  "file": "logs/d2-clean/mem/mem-1687612.log",
+  "source": "/scratch/cc-pr43/logs/d2-clean/mem/mem-1687612.log",
+  "sha256": "df18538537ff0b124cbd70c94c08a61e680469381df8fb7a8bb05383a4d4e829"
+ },
+ {
+  "file": "logs/d2-clean/mem/mem-1687680.log",
+  "source": "/scratch/cc-pr43/logs/d2-clean/mem/mem-1687680.log",
+  "sha256": "3fd5602440d157d5fb0ee7a2a6ea22e2b05e8984df1b56218034903740ecd777"
+ },
+ {
+  "file": "logs/d2-clean/mem/mem-1687749.log",
+  "source": "/scratch/cc-pr43/logs/d2-clean/mem/mem-1687749.log",
+  "sha256": "f5748d4e669b853ce88cca0d57502438107a9c50728d1ee55d5567a1b0bed8ea"
+ },
+ {
+  "file": "logs/d2-clean/mem/mem-1687820.log",
+  "source": "/scratch/cc-pr43/logs/d2-clean/mem/mem-1687820.log",
+  "sha256": "c3586b0db22577309556fbf434f5e91a4832e524455c00b58404de63f37cb2be"
+ },
+ {
+  "file": "logs/d2-clean/mem/mem-1687954.log",
+  "source": "/scratch/cc-pr43/logs/d2-clean/mem/mem-1687954.log",
+  "sha256": "31718ecc44308d46195fcc973703c8e0b96d207ea5ff488ffeaac8316a6760cc"
+ },
+ {
+  "file": "logs/d2-clean/mem/mem-1688154.log",
+  "source": "/scratch/cc-pr43/logs/d2-clean/mem/mem-1688154.log",
+  "sha256": "52df66f4ec492a18316a9ac82fefdb82d9c30e82db424f4075fef7a7b0de3321"
+ },
+ {
+  "file": "logs/d2-clean/mem/mem-1688155.log",
+  "source": "/scratch/cc-pr43/logs/d2-clean/mem/mem-1688155.log",
+  "sha256": "8bb381af9a0443c5e5bf3439870b1ee96111e3b60d81807411ced7fde03ab869"
+ },
+ {
+  "file": "logs/d2-clean/mem/mem-1688515.log",
+  "source": "/scratch/cc-pr43/logs/d2-clean/mem/mem-1688515.log",
+  "sha256": "618f458074bb59577faa2e6ea998783db930b37e25526e9fcd5f407bcf0c0e0a"
+ },
+ {
+  "file": "logs/d2-clean/mem/mem-1690633.log",
+  "source": "/scratch/cc-pr43/logs/d2-clean/mem/mem-1690633.log",
+  "sha256": "e572c300102befa3d25a2c3251e05615b5ae687f9afcd328fc9b9f8a8af50b8a"
+ },
+ {
+  "file": "logs/d2-clean/perf-decode.jsonl",
+  "source": "/scratch/cc-pr43/logs/d2-clean/perf-decode.jsonl",
+  "sha256": "9eed7462ec1b142918c5e4886891240090a393140d741ba7c81ca3705eec35f8"
+ },
+ {
+  "file": "logs/d2-clean/perf-decode.log",
+  "source": "/scratch/cc-pr43/logs/d2-clean/perf-decode.log",
+  "sha256": "aaef971aee0782644782448b50d6564e6e66e66e033f2ee0b20ff1a80b16e579"
+ },
+ {
+  "file": "logs/d2-clean/perf-serve.jsonl",
+  "source": "/scratch/cc-pr43/logs/d2-clean/perf-serve.jsonl",
+  "sha256": "59e5fbb62cfcb626c6896e9f22e55aeb16419341d2b51d7d45651e2d092dded1"
+ },
+ {
+  "file": "logs/d2-clean/perf-serve.log",
+  "source": "/scratch/cc-pr43/logs/d2-clean/perf-serve.log",
+  "sha256": "bd959006ea2dd6655095559a380602b9d4751c01d1ca031825bddb36c7b0cb5d"
+ },
+ {
+  "file": "logs/d2-clean/perf.log",
+  "source": "/scratch/cc-pr43/logs/d2-clean/perf.log",
+  "sha256": "a20e37f3e3d43b37a13bff6aaca6869ad7f441ca330053e932b580a1f74bd163"
+ },
+ {
+  "file": "logs/d2-clean/serve-start.log.gz",
+  "source": "/scratch/cc-pr43/logs/d2-clean/serve-start.log",
+  "sha256": "07fb19b793cdff7f20c82c592929548ec0d2e879a178726b9f7920a4b515c1d9"
+ },
+ {
+  "file": "logs/d2-clean/serve.log.gz",
+  "source": "/scratch/cc-pr43/logs/d2-clean/serve.log",
+  "sha256": "66475a7d629dac8c8b6e616e93ff5fa81a7e8897f86074966ffd8d3b2987cf8f"
+ },
+ {
+  "file": "logs/d2-full/gpu-after-ready.txt",
+  "source": "/scratch/cc-pr43/logs/d2-full/gpu-after-ready.txt",
+  "sha256": "39ff1ef08e3bab77cb5a288be7e916516eed213b22cf4d1a408c75b8cc0bbc85"
+ },
+ {
+  "file": "logs/d2-full/gpu-at-end.txt",
+  "source": "/scratch/cc-pr43/logs/d2-full/gpu-at-end.txt",
+  "sha256": "3da48f210df97c6bde4156e83a45ecee0a32cd753fd4833c71dcd41da005d11d"
+ },
+ {
+  "file": "logs/d2-full/job.status",
+  "source": "/scratch/cc-pr43/logs/d2-full/job.status",
+  "sha256": "38a53856cd76477b2f366b127e0ec35638ef79ba26598d0f44975f763f284059"
+ },
+ {
+  "file": "logs/d2-full/launch.sh",
+  "source": "/scratch/cc-pr43/logs/d2-full/launch.sh",
+  "sha256": "4a3c9d7626e275a93ea8712ce4720c116b9277842360743b52591fd5da7a3cb1"
+ },
+ {
+  "file": "logs/d2-full/longprefill.json",
+  "source": "/scratch/cc-pr43/logs/d2-full/longprefill.json",
+  "sha256": "dc42afb063c15ee72bf98b8e7642441d1e57efbff600ecf6ef441f2ddff26a62"
+ },
+ {
+  "file": "logs/d2-full/longprefill.log",
+  "source": "/scratch/cc-pr43/logs/d2-full/longprefill.log",
+  "sha256": "1409c4ece232e1b628b165c9dce6e44874d74828bf0e3536ead8f70d5d65135b"
+ },
+ {
+  "file": "logs/d2-full/mem/epoch",
+  "source": "/scratch/cc-pr43/logs/d2-full/mem/epoch",
+  "sha256": "ffcede71cab4f4cba8e01102805286b53e7deaf00194acce148960f1d27c073c"
+ },
+ {
+  "file": "logs/d2-full/mem/mem-1717394.log",
+  "source": "/scratch/cc-pr43/logs/d2-full/mem/mem-1717394.log",
+  "sha256": "041dad27cfc6fdc8a1ed551b28d63eb326adc6f09814ee38442dd7ac8bd74025"
+ },
+ {
+  "file": "logs/d2-full/mem/mem-1717553.log",
+  "source": "/scratch/cc-pr43/logs/d2-full/mem/mem-1717553.log",
+  "sha256": "8250432746050d422bfec0489155f4c94a43937bf13021227bb40f2c66d9379f"
+ },
+ {
+  "file": "logs/d2-full/mem/mem-1717621.log",
+  "source": "/scratch/cc-pr43/logs/d2-full/mem/mem-1717621.log",
+  "sha256": "9c04c2db1f2a3544207569f26fb236d17cfd1c358d256821b54e6f53351226ea"
+ },
+ {
+  "file": "logs/d2-full/mem/mem-1717689.log",
+  "source": "/scratch/cc-pr43/logs/d2-full/mem/mem-1717689.log",
+  "sha256": "7df7a5d826d5c25e8f1084be995a74771c945bd9b818a33ce5a6e912af578a09"
+ },
+ {
+  "file": "logs/d2-full/mem/mem-1717757.log",
+  "source": "/scratch/cc-pr43/logs/d2-full/mem/mem-1717757.log",
+  "sha256": "d8eafbe87a00fdf10dd336f62461aaecd7cc264974142000d2aa6b514cd46359"
+ },
+ {
+  "file": "logs/d2-full/mem/mem-1717825.log",
+  "source": "/scratch/cc-pr43/logs/d2-full/mem/mem-1717825.log",
+  "sha256": "151498f41609e7247b4ac615c44b37ac702a46c00936b712728e0966dd3751e4"
+ },
+ {
+  "file": "logs/d2-full/mem/mem-1717896.log",
+  "source": "/scratch/cc-pr43/logs/d2-full/mem/mem-1717896.log",
+  "sha256": "4f39c80fe590626c26a4a6e86973c967ac09d455e9a95851bd8ceb9b99194213"
+ },
+ {
+  "file": "logs/d2-full/mem/mem-1718031.log",
+  "source": "/scratch/cc-pr43/logs/d2-full/mem/mem-1718031.log",
+  "sha256": "e7404a985354b97901161c1a96bd6dfa3187fbaf5b8b57679c68a40261fcc2f1"
+ },
+ {
+  "file": "logs/d2-full/mem/mem-1718166.log",
+  "source": "/scratch/cc-pr43/logs/d2-full/mem/mem-1718166.log",
+  "sha256": "44bcfc30ff94fc2ef5dcaca6ac3a69ebe8b7905fb30eb3a6fdf9128ab625c038"
+ },
+ {
+  "file": "logs/d2-full/mem/mem-1718167.log",
+  "source": "/scratch/cc-pr43/logs/d2-full/mem/mem-1718167.log",
+  "sha256": "dcc7321b0b52dbe1b3510d1a67f5b964c42635a85a7a79b3d365aeeaa9c58979"
+ },
+ {
+  "file": "logs/d2-full/mem/mem-1718580.log",
+  "source": "/scratch/cc-pr43/logs/d2-full/mem/mem-1718580.log",
+  "sha256": "2a6cbf8084c4eeefd58c09cef20f3849bd6b74d03bff1f7dff8c4219c6d1773d"
+ },
+ {
+  "file": "logs/d2-full/mem/mem-1720676.log",
+  "source": "/scratch/cc-pr43/logs/d2-full/mem/mem-1720676.log",
+  "sha256": "687ed437b84650a0e391c96dd08e0f1831273745ba7c17c40a69c4ee99999e4b"
+ },
+ {
+  "file": "logs/d2-full/perf-decode.jsonl",
+  "source": "/scratch/cc-pr43/logs/d2-full/perf-decode.jsonl",
+  "sha256": "fe2f04a1d26c64c4bea79ef002b5c653ec8c6613f96691e0229fabc335ee0c6d"
+ },
+ {
+  "file": "logs/d2-full/perf-decode.log",
+  "source": "/scratch/cc-pr43/logs/d2-full/perf-decode.log",
+  "sha256": "e8eb26b69c9c82ad35601adc0681adfa448b4c98909202c58c2f9edaa16dbd0c"
+ },
+ {
+  "file": "logs/d2-full/perf-serve.jsonl",
+  "source": "/scratch/cc-pr43/logs/d2-full/perf-serve.jsonl",
+  "sha256": "7a943d2ed11d749ba821775b3bde1dc00b44538cc0765f2d6bfce59ced642b2b"
+ },
+ {
+  "file": "logs/d2-full/perf-serve.log",
+  "source": "/scratch/cc-pr43/logs/d2-full/perf-serve.log",
+  "sha256": "e64a192d88b5dfa7564ccfa947f09f1620400d06b9e9bc270e7de5055a34748a"
+ },
+ {
+  "file": "logs/d2-full/perf.log",
+  "source": "/scratch/cc-pr43/logs/d2-full/perf.log",
+  "sha256": "e0fd9ea9cc305184a1f89ff2bd1119455b3cd03c473b854980fcd6b5292be508"
+ },
+ {
+  "file": "logs/d2-full/serve-start.log.gz",
+  "source": "/scratch/cc-pr43/logs/d2-full/serve-start.log",
+  "sha256": "5362a78402f39e24c2c8b3e281ae2920a906cfb6087d642a391299ceabfdb4fa"
+ },
+ {
+  "file": "logs/d2-full/serve.log.gz",
+  "source": "/scratch/cc-pr43/logs/d2-full/serve.log",
+  "sha256": "1e2d9d342e45343cfc18d1b7694819dd23aca6fd20a05c83900faf0d243659a8"
+ },
+ {
+  "file": "logs/d3-base/eval/sgl_eval_gsm8k_20261113-012223/metrics.json",
+  "source": "/scratch/cc-pr43/logs/d3-base/eval/sgl_eval_gsm8k_20261113-012223/metrics.json",
+  "sha256": "c8a2abb0adc9d7dfcf18c1fa8c05d20961e3d0e8fecf490d93c873cb3aecb4b7"
+ },
+ {
+  "file": "logs/d3-base/eval/sgl_eval_gsm8k_20261113-012223/output-rs0.jsonl.gz",
+  "source": "/scratch/cc-pr43/logs/d3-base/eval/sgl_eval_gsm8k_20261113-012223/output-rs0.jsonl",
+  "sha256": "982f806a0b884892d1ec3dfacac6d67e89346c2d90ba22c9824c68c17b4c27de"
+ },
+ {
+  "file": "logs/d3-base/gpu-after-ready.txt",
+  "source": "/scratch/cc-pr43/logs/d3-base/gpu-after-ready.txt",
+  "sha256": "39ff1ef08e3bab77cb5a288be7e916516eed213b22cf4d1a408c75b8cc0bbc85"
+ },
+ {
+  "file": "logs/d3-base/gpu-at-end.txt",
+  "source": "/scratch/cc-pr43/logs/d3-base/gpu-at-end.txt",
+  "sha256": "98e30c1b35f94d9f248cead9d5efa38fdffc8b25b95ca41116fb13af88c31ed1"
+ },
+ {
+  "file": "logs/d3-base/gsm8k.log.gz",
+  "source": "/scratch/cc-pr43/logs/d3-base/gsm8k.log",
+  "sha256": "b0b489a486d896a23a2402b094792d1458f038d9734231aac89f96b3592625e2"
+ },
+ {
+  "file": "logs/d3-base/job.status",
+  "source": "/scratch/cc-pr43/logs/d3-base/job.status",
+  "sha256": "a73e2d5d768edab58ed7c5a71c4fd8b35624d9c0cee5b7cc00d0600bb1619b83"
+ },
+ {
+  "file": "logs/d3-base/launch.sh",
+  "source": "/scratch/cc-pr43/logs/d3-base/launch.sh",
+  "sha256": "dd0c6e4443a8bed1836b1834d521758319610ff3b1d3a1c24a50f751e700033b"
+ },
+ {
+  "file": "logs/d3-base/mem/epoch",
+  "source": "/scratch/cc-pr43/logs/d3-base/mem/epoch",
+  "sha256": "c89659c44bb95ddbbeb0fb5368a80663f1cc2ec4138413563791f66b72a872c5"
+ },
+ {
+  "file": "logs/d3-base/mem/mem-1726305.log",
+  "source": "/scratch/cc-pr43/logs/d3-base/mem/mem-1726305.log",
+  "sha256": "84ec1a09c056a56109b185cc3cd4e7434bdfca79910f6725ff2cf529c9d2aa7b"
+ },
+ {
+  "file": "logs/d3-base/mem/mem-1726455.log",
+  "source": "/scratch/cc-pr43/logs/d3-base/mem/mem-1726455.log",
+  "sha256": "a693e6c12d66aeb88fa279785cc32989e74678f410dd1f19e066ee2bb41069d6"
+ },
+ {
+  "file": "logs/d3-base/mem/mem-1726523.log",
+  "source": "/scratch/cc-pr43/logs/d3-base/mem/mem-1726523.log",
+  "sha256": "fe480e9848b64c3eb955c84ab6040f48777c0e54ea549eb26eec63afdf099d94"
+ },
+ {
+  "file": "logs/d3-base/mem/mem-1726590.log",
+  "source": "/scratch/cc-pr43/logs/d3-base/mem/mem-1726590.log",
+  "sha256": "af083f4297ebd63e0d1d191a9b47863a852a44af02fe79c6e3777dc67a190d4d"
+ },
+ {
+  "file": "logs/d3-base/mem/mem-1726658.log",
+  "source": "/scratch/cc-pr43/logs/d3-base/mem/mem-1726658.log",
+  "sha256": "cb8ac041b7effb28ecc2662e823fb22eba51e49d513f6d7968bb065fa2feb9d7"
+ },
+ {
+  "file": "logs/d3-base/mem/mem-1726727.log",
+  "source": "/scratch/cc-pr43/logs/d3-base/mem/mem-1726727.log",
+  "sha256": "0ac5eb20e9e920c930e90154450f4b2becd43d8502f2ffff239dd76aae9687cf"
+ },
+ {
+  "file": "logs/d3-base/mem/mem-1726796.log",
+  "source": "/scratch/cc-pr43/logs/d3-base/mem/mem-1726796.log",
+  "sha256": "7fd44e4ecff604454c4bf8abdc7da526df4b5cd4a467a1b26e335330d7e699c7"
+ },
+ {
+  "file": "logs/d3-base/mem/mem-1726869.log",
+  "source": "/scratch/cc-pr43/logs/d3-base/mem/mem-1726869.log",
+  "sha256": "eac0e9d9d445015c2a9c993e0daaa430e766bc7e17f097016f567b24bffd76ea"
+ },
+ {
+  "file": "logs/d3-base/mem/mem-1727069.log",
+  "source": "/scratch/cc-pr43/logs/d3-base/mem/mem-1727069.log",
+  "sha256": "5bbb8145bd90f133f6698c93603a04af45df7eedae324e317f524e58a29d3492"
+ },
+ {
+  "file": "logs/d3-base/mem/mem-1727070.log",
+  "source": "/scratch/cc-pr43/logs/d3-base/mem/mem-1727070.log",
+  "sha256": "371344df6f6d4e8859ba15da70061852530771532b40453e1b192ae2a747acd9"
+ },
+ {
+  "file": "logs/d3-base/mem/mem-1727484.log",
+  "source": "/scratch/cc-pr43/logs/d3-base/mem/mem-1727484.log",
+  "sha256": "00be091a052a5eaca1600454312b6d8f6cc53e312724bd7c067a7cd5dab4b8e2"
+ },
+ {
+  "file": "logs/d3-base/mem/mem-1729588.log",
+  "source": "/scratch/cc-pr43/logs/d3-base/mem/mem-1729588.log",
+  "sha256": "63f83777fa8d101236a48ab0994d70e83e2ae3e144ac28d99b54d8a1cf175d50"
+ },
+ {
+  "file": "logs/d3-base/serve-start.log.gz",
+  "source": "/scratch/cc-pr43/logs/d3-base/serve-start.log",
+  "sha256": "9150b03b42a0ae9e9301b1f41067651755404dc6fb86cdbba6b3aad7c1d94657"
+ },
+ {
+  "file": "logs/d3-base/serve.log.gz",
+  "source": "/scratch/cc-pr43/logs/d3-base/serve.log",
+  "sha256": "191fb4dfe72f2948c634f4f77c9df3a6dbedb7300fd07aaa9da58af542ed6cc2"
+ },
+ {
+  "file": "logs/d3-clean/eval/sgl_eval_gsm8k_20261113-004903/metrics.json",
+  "source": "/scratch/cc-pr43/logs/d3-clean/eval/sgl_eval_gsm8k_20261113-004903/metrics.json",
+  "sha256": "5e52eb9b8c31dcb7b0fb1ca95c2a366b531ec0eecf1b2d78dd2a6fee6455ab73"
+ },
+ {
+  "file": "logs/d3-clean/eval/sgl_eval_gsm8k_20261113-004903/output-rs0.jsonl.gz",
+  "source": "/scratch/cc-pr43/logs/d3-clean/eval/sgl_eval_gsm8k_20261113-004903/output-rs0.jsonl",
+  "sha256": "722114d0d123dea934a4e65129fc9f2db56cce493403d15e0e429f1b5f93ae35"
+ },
+ {
+  "file": "logs/d3-clean/gpu-after-ready.txt",
+  "source": "/scratch/cc-pr43/logs/d3-clean/gpu-after-ready.txt",
+  "sha256": "aa291bde3ee37970d75b53a3bec766ba35d529dd29397d5c172eddf50e4ec1dd"
+ },
+ {
+  "file": "logs/d3-clean/gpu-at-end.txt",
+  "source": "/scratch/cc-pr43/logs/d3-clean/gpu-at-end.txt",
+  "sha256": "fe036b617376dacca5db3b13344446a573d4a5263f723d2e6914a32182bf89f2"
+ },
+ {
+  "file": "logs/d3-clean/gsm8k.log.gz",
+  "source": "/scratch/cc-pr43/logs/d3-clean/gsm8k.log",
+  "sha256": "1ed076b9eac00be36895aea74a4998325112aea210b43d07bf9ba00e852ddc44"
+ },
+ {
+  "file": "logs/d3-clean/job.status",
+  "source": "/scratch/cc-pr43/logs/d3-clean/job.status",
+  "sha256": "b660449b050b157f668a57d4506fff20ea999d733920ae65758d2c9f83fb5720"
+ },
+ {
+  "file": "logs/d3-clean/launch.sh",
+  "source": "/scratch/cc-pr43/logs/d3-clean/launch.sh",
+  "sha256": "4d9425ee5dd190279b575861bfd7b2f2bc1627db549f321cccc5683c98763f1d"
+ },
+ {
+  "file": "logs/d3-clean/mem/epoch",
+  "source": "/scratch/cc-pr43/logs/d3-clean/mem/epoch",
+  "sha256": "c89659c44bb95ddbbeb0fb5368a80663f1cc2ec4138413563791f66b72a872c5"
+ },
+ {
+  "file": "logs/d3-clean/mem/mem-1721911.log",
+  "source": "/scratch/cc-pr43/logs/d3-clean/mem/mem-1721911.log",
+  "sha256": "e775deb894d5005566ac07f11ccf2daa9454117c4f7e3f844b310e299a001fd4"
+ },
+ {
+  "file": "logs/d3-clean/mem/mem-1722061.log",
+  "source": "/scratch/cc-pr43/logs/d3-clean/mem/mem-1722061.log",
+  "sha256": "41347f637d9e56b3b4e918ebe10ce0cb81d07f665c43247d17cd838eeb56b50f"
+ },
+ {
+  "file": "logs/d3-clean/mem/mem-1722129.log",
+  "source": "/scratch/cc-pr43/logs/d3-clean/mem/mem-1722129.log",
+  "sha256": "1c92ee8503338d34a73fb749bf7b4afe857e4c5cca32a91e491f9c57c015d102"
+ },
+ {
+  "file": "logs/d3-clean/mem/mem-1722197.log",
+  "source": "/scratch/cc-pr43/logs/d3-clean/mem/mem-1722197.log",
+  "sha256": "fba5601785a6b0fe422bb9207835af9c5e82b9448bace73c825b66a451a3c95b"
+ },
+ {
+  "file": "logs/d3-clean/mem/mem-1722265.log",
+  "source": "/scratch/cc-pr43/logs/d3-clean/mem/mem-1722265.log",
+  "sha256": "cee769a68d888241802cae59323974f5d49cc474af061afeb9608266fd22162f"
+ },
+ {
+  "file": "logs/d3-clean/mem/mem-1722334.log",
+  "source": "/scratch/cc-pr43/logs/d3-clean/mem/mem-1722334.log",
+  "sha256": "1132e106a14d930c9935dac9ca3f786fbd1aa5f3290c778158f0b3202884ee90"
+ },
+ {
+  "file": "logs/d3-clean/mem/mem-1722405.log",
+  "source": "/scratch/cc-pr43/logs/d3-clean/mem/mem-1722405.log",
+  "sha256": "a71edaf52019acca6816750ed9a5b3170eacc1197c1eb96a715d97d95dd34e4f"
+ },
+ {
+  "file": "logs/d3-clean/mem/mem-1722539.log",
+  "source": "/scratch/cc-pr43/logs/d3-clean/mem/mem-1722539.log",
+  "sha256": "0b88f81088b7bdc85f1c59f0943627d23c24ef9e573fb5fdce7f44b56541ca67"
+ },
+ {
+  "file": "logs/d3-clean/mem/mem-1722673.log",
+  "source": "/scratch/cc-pr43/logs/d3-clean/mem/mem-1722673.log",
+  "sha256": "953d9d25ad23ab5565b9864b805973d33de8d1666470cba4463d7feee891869c"
+ },
+ {
+  "file": "logs/d3-clean/mem/mem-1722674.log",
+  "source": "/scratch/cc-pr43/logs/d3-clean/mem/mem-1722674.log",
+  "sha256": "3a099ba3c35d4a972b8387bd727dbaad6cdc488f4b9ea599da155dd0fdb646b6"
+ },
+ {
+  "file": "logs/d3-clean/mem/mem-1723088.log",
+  "source": "/scratch/cc-pr43/logs/d3-clean/mem/mem-1723088.log",
+  "sha256": "8bd78ef864c6c71547f141b66c064ffbaac3f4737ccc809363ae63431a28d955"
+ },
+ {
+  "file": "logs/d3-clean/mem/mem-1725277.log",
+  "source": "/scratch/cc-pr43/logs/d3-clean/mem/mem-1725277.log",
+  "sha256": "71aeb62aa537162f9050974d65951d072496e65781fcc6bcff31458c22ea5e07"
+ },
+ {
+  "file": "logs/d3-clean/serve-start.log.gz",
+  "source": "/scratch/cc-pr43/logs/d3-clean/serve-start.log",
+  "sha256": "063bfc5a45a296c9ee751081e01985b562582a6dca5474a8b53961746fdb8b82"
+ },
+ {
+  "file": "logs/d3-clean/serve.log.gz",
+  "source": "/scratch/cc-pr43/logs/d3-clean/serve.log",
+  "sha256": "5c2319adb532f750140298a9b74e10d6ba77e8d0bbb2d2ebd2c533304a0bccc6"
+ },
+ {
+  "file": "logs/driver.log",
+  "source": "/scratch/cc-pr43/logs/driver.log",
+  "sha256": "091f826f1fbbe0a68b1086f3bff64d3e489a0ef4738275b5874e680a42ed2c08"
+ },
+ {
+  "file": "logs/driver1.out",
+  "source": "/scratch/cc-pr43/logs/driver1.out",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+ },
+ {
+  "file": "logs/pre/cmd.log",
+  "source": "/scratch/cc-pr43/logs/pre/cmd.log",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+ },
+ {
+  "file": "logs/pre/job.status",
+  "source": "/scratch/cc-pr43/logs/pre/job.status",
+  "sha256": "87bc5b871730f6759f31661db41d6db7eb21fcf38dc081ad52f72d11eecc26c5"
+ },
+ {
+  "file": "logs/pre/kernel-clean.log",
+  "source": "/scratch/cc-pr43/logs/pre/kernel-clean.log",
+  "sha256": "a84ceec701b4322fe6097d30ec8646898ee76c169a85859621a1c1dbd463809e"
+ },
+ {
+  "file": "logs/pre/micro.json",
+  "source": "/scratch/cc-pr43/logs/pre/micro.json",
+  "sha256": "c3d29a52f1135d735856a304cb2ea89debc8dbd5f49e628f07ee374cc4f53625"
+ },
+ {
+  "file": "logs/pre/micro.log",
+  "source": "/scratch/cc-pr43/logs/pre/micro.log",
+  "sha256": "5cadebc6830fa4d0011dcc5b26e7a491e2f24998283d5f182f8fe892a916e182"
+ },
+ {
+  "file": "logs/pre/status",
+  "source": "/scratch/cc-pr43/logs/pre/status",
+  "sha256": "d3b700c4323bb0dd00f80341fda368aa339a8db156fd299f1ffbb0c9cad7b334"
+ },
+ {
+  "file": "logs/pre/topk_ownership.json",
+  "source": "/scratch/cc-pr43/logs/pre/topk_ownership.json",
+  "sha256": "bb2e7ab5b75e67447b5fe9397c03d186c353a7a4d1ba11dac52df842ad76aa7b"
+ },
+ {
+  "file": "logs/pre/topk_ownership.log",
+  "source": "/scratch/cc-pr43/logs/pre/topk_ownership.log",
+  "sha256": "8fa99f4116749cb83f7f74964d2fc708d041f76081b33ba71ddbf215f602b906"
+ },
+ {
+  "file": "logs/pre/unit-base.log",
+  "source": "/scratch/cc-pr43/logs/pre/unit-base.log",
+  "sha256": "201741fa93000a88f10a66234a4af16a61145055773ba5898d9bf0b538434854"
+ },
+ {
+  "file": "logs/pre/unit-clean.log",
+  "source": "/scratch/cc-pr43/logs/pre/unit-clean.log",
+  "sha256": "8cedc13f9fa96ddb7b0e30c14d577e31e0a99c50b45c46bc5cfa06b03b7b4ed3"
+ },
+ {
+  "file": "logs/r1-base/eval/sgl_eval_gsm8k_20261112-204035/metrics.json",
+  "source": "/scratch/cc-pr43/logs/r1-base/eval/sgl_eval_gsm8k_20261112-204035/metrics.json",
+  "sha256": "8ecdcfebbb6ec7db55ac85bdce5a804467a04650916061a982d6464b0e3da2c4"
+ },
+ {
+  "file": "logs/r1-base/eval/sgl_eval_gsm8k_20261112-204035/output-rs0.jsonl.gz",
+  "source": "/scratch/cc-pr43/logs/r1-base/eval/sgl_eval_gsm8k_20261112-204035/output-rs0.jsonl",
+  "sha256": "ab88ac1c3ce11e73c43398a928a779f997870c84052dcbbd144544766da70485"
+ },
+ {
+  "file": "logs/r1-base/gpu-after-ready.txt",
+  "source": "/scratch/cc-pr43/logs/r1-base/gpu-after-ready.txt",
+  "sha256": "5b0cde266415b750c772b2a35e73a918bcb7515b9764a792923afe6c749fcac7"
+ },
+ {
+  "file": "logs/r1-base/gpu-at-end.txt",
+  "source": "/scratch/cc-pr43/logs/r1-base/gpu-at-end.txt",
+  "sha256": "142fae2afb4d1f0b55e36f14cc87635f998d7389cd364bbc224ff004c1fac50c"
+ },
+ {
+  "file": "logs/r1-base/gsm8k.log.gz",
+  "source": "/scratch/cc-pr43/logs/r1-base/gsm8k.log",
+  "sha256": "8078f7c18f7de7bc73c671fe1dee5e64f51452454eed64fe4ae740016cdd22ca"
+ },
+ {
+  "file": "logs/r1-base/job.status",
+  "source": "/scratch/cc-pr43/logs/r1-base/job.status",
+  "sha256": "4db9f2678b7ba59febffa5c6ad8541ba705f3f800bd0e31c3942ccd6bfe2791c"
+ },
+ {
+  "file": "logs/r1-base/launch.sh",
+  "source": "/scratch/cc-pr43/logs/r1-base/launch.sh",
+  "sha256": "948cccf3cd02ac85798bdd6fd9a87b0ae86bf468a2c76e44af40ba5cd81f90d3"
+ },
+ {
+  "file": "logs/r1-base/longprefill.json",
+  "source": "/scratch/cc-pr43/logs/r1-base/longprefill.json",
+  "sha256": "6985d5260abc4ef9e2eb022a7033636c962fbafd43adc47bdf7c2ae8b3af1f48"
+ },
+ {
+  "file": "logs/r1-base/longprefill.log",
+  "source": "/scratch/cc-pr43/logs/r1-base/longprefill.log",
+  "sha256": "b5760e9473f639821560b68278405fb33411aded1a7c46f30dd73b36639122fd"
+ },
+ {
+  "file": "logs/r1-base/mem/epoch",
+  "source": "/scratch/cc-pr43/logs/r1-base/mem/epoch",
+  "sha256": "c89659c44bb95ddbbeb0fb5368a80663f1cc2ec4138413563791f66b72a872c5"
+ },
+ {
+  "file": "logs/r1-base/mem/mem-1625919.log",
+  "source": "/scratch/cc-pr43/logs/r1-base/mem/mem-1625919.log",
+  "sha256": "230409ce4765555798a2d89d73b091e5b01fbec68223988332d939530becbceb"
+ },
+ {
+  "file": "logs/r1-base/mem/mem-1626078.log",
+  "source": "/scratch/cc-pr43/logs/r1-base/mem/mem-1626078.log",
+  "sha256": "ad62edbb7b7872b09914be1332a7d5d63dcd5f91136ed15459cfe4b85b7681fe"
+ },
+ {
+  "file": "logs/r1-base/mem/mem-1626151.log",
+  "source": "/scratch/cc-pr43/logs/r1-base/mem/mem-1626151.log",
+  "sha256": "08b7f7d2788c4655f2681c5ce37cda03bfdc44f2d6654dff90b92212d9d9ff9b"
+ },
+ {
+  "file": "logs/r1-base/mem/mem-1626291.log",
+  "source": "/scratch/cc-pr43/logs/r1-base/mem/mem-1626291.log",
+  "sha256": "8e8e4c38bb7c141c2322d5e9ea33b899688353c1bf58119a96c0a0cdbb126206"
+ },
+ {
+  "file": "logs/r1-base/mem/mem-1626429.log",
+  "source": "/scratch/cc-pr43/logs/r1-base/mem/mem-1626429.log",
+  "sha256": "a64dae98577c92448a7d7a712402ba7cd05fd64d0c82d4740d7a5a4aec62271e"
+ },
+ {
+  "file": "logs/r1-base/mem/mem-1626578.log",
+  "source": "/scratch/cc-pr43/logs/r1-base/mem/mem-1626578.log",
+  "sha256": "614ed75043b315e6d79f1f4fc15fa8b8873b895208fd6ffc651817b6616a0e27"
+ },
+ {
+  "file": "logs/r1-base/mem/mem-1626724.log",
+  "source": "/scratch/cc-pr43/logs/r1-base/mem/mem-1626724.log",
+  "sha256": "e4ec0e7aee64301c381540bc5676b5182b26f79ec4ae9ccb2ef5da9fbd6c8569"
+ },
+ {
+  "file": "logs/r1-base/mem/mem-1626867.log",
+  "source": "/scratch/cc-pr43/logs/r1-base/mem/mem-1626867.log",
+  "sha256": "136d2449f5cf2b23c00fbcea976a755b1fd1db69789e2ebe67a6379175201fb9"
+ },
+ {
+  "file": "logs/r1-base/mem/mem-1627022.log",
+  "source": "/scratch/cc-pr43/logs/r1-base/mem/mem-1627022.log",
+  "sha256": "3a3fcaafbf3490350b56bc6e1c9c9a56116a5823cd4e18ed5ad5231a51fd7232"
+ },
+ {
+  "file": "logs/r1-base/mem/mem-1627160.log",
+  "source": "/scratch/cc-pr43/logs/r1-base/mem/mem-1627160.log",
+  "sha256": "3a2a54332016dea7c4e190cf02c02e8f4a09ef6ea34da8475d993a8883d4d227"
+ },
+ {
+  "file": "logs/r1-base/mem/mem-1629179.log",
+  "source": "/scratch/cc-pr43/logs/r1-base/mem/mem-1629179.log",
+  "sha256": "573c4c0fe768a06f3e065708c724455003409c175b87221597e8d21efc8100ba"
+ },
+ {
+  "file": "logs/r1-base/mem/mem-1629180.log",
+  "source": "/scratch/cc-pr43/logs/r1-base/mem/mem-1629180.log",
+  "sha256": "32b7cb2c6be112d8934ed4028d1134f140e2fead846d0db356b06d1ff11f01da"
+ },
+ {
+  "file": "logs/r1-base/mem/mem-1629181.log",
+  "source": "/scratch/cc-pr43/logs/r1-base/mem/mem-1629181.log",
+  "sha256": "637805d40614ac681866f46a267d6fdaf3ce032056b45439aeeb48ebe1a0657b"
+ },
+ {
+  "file": "logs/r1-base/mem/mem-1629182.log",
+  "source": "/scratch/cc-pr43/logs/r1-base/mem/mem-1629182.log",
+  "sha256": "bd21c860138ff0660c2189a88139a9c4eff5bdf1761576ef9b3d2fe3c76cabf0"
+ },
+ {
+  "file": "logs/r1-base/mem/mem-1629199.log",
+  "source": "/scratch/cc-pr43/logs/r1-base/mem/mem-1629199.log",
+  "sha256": "035bb52c6ae63fd24195b1b36b1f964fbd7a455f9fced4185a92e5c91950581e"
+ },
+ {
+  "file": "logs/r1-base/mem/mem-1629200.log",
+  "source": "/scratch/cc-pr43/logs/r1-base/mem/mem-1629200.log",
+  "sha256": "693753608e2f68337bc287f5fec95588178920716cbeec26a73a875a2a876bb5"
+ },
+ {
+  "file": "logs/r1-base/mem/mem-1629201.log",
+  "source": "/scratch/cc-pr43/logs/r1-base/mem/mem-1629201.log",
+  "sha256": "693753608e2f68337bc287f5fec95588178920716cbeec26a73a875a2a876bb5"
+ },
+ {
+  "file": "logs/r1-base/mem/mem-1629202.log",
+  "source": "/scratch/cc-pr43/logs/r1-base/mem/mem-1629202.log",
+  "sha256": "517ea1d5fe446bd8136d84802cdb0e3929b066d735048a6f37c72652a9b2ad06"
+ },
+ {
+  "file": "logs/r1-base/perf-decode.log",
+  "source": "/scratch/cc-pr43/logs/r1-base/perf-decode.log",
+  "sha256": "52c5e1da2d4f91627927585e621ebaa4825512f20991005cdc1b49b5c10082da"
+ },
+ {
+  "file": "logs/r1-base/perf-serve.log",
+  "source": "/scratch/cc-pr43/logs/r1-base/perf-serve.log",
+  "sha256": "4d790bbb022800a40c5e4f0751e02a37becedbec42800ddaf5da198f7b51de81"
+ },
+ {
+  "file": "logs/r1-base/perf.log",
+  "source": "/scratch/cc-pr43/logs/r1-base/perf.log",
+  "sha256": "d5a344307d5e035621678bf465b6681b07e3f8a650b68d438f0e3c22ffd20561"
+ },
+ {
+  "file": "logs/r1-base/serve-start.log.gz",
+  "source": "/scratch/cc-pr43/logs/r1-base/serve-start.log",
+  "sha256": "e24af14c4fd11e467f5a3613b12274bfa7fbe2762a388d9f86609a9e9ecef8de"
+ },
+ {
+  "file": "logs/r1-base/serve.log.gz",
+  "source": "/scratch/cc-pr43/logs/r1-base/serve.log",
+  "sha256": "e6dbb3f0b85d49a52ef77bbbb0dc65b175d135beb2b117343c7a4f1b0fb68cf0"
+ },
+ {
+  "file": "logs/r1-base/suite.json",
+  "source": "/scratch/cc-pr43/logs/r1-base/suite.json",
+  "sha256": "638569979dc0be5b43d7a4b812bf7e2a5fc9d2cc109e68c435f21c643edf9689"
+ },
+ {
+  "file": "logs/r1-base/suite.log",
+  "source": "/scratch/cc-pr43/logs/r1-base/suite.log",
+  "sha256": "592b1bd0751d521524f2713f35438a3af975dfdf47435088cf0bfceeee3b8cb9"
+ },
+ {
+  "file": "logs/r1-clean/eval/sgl_eval_gsm8k_20261112-211342/metrics.json",
+  "source": "/scratch/cc-pr43/logs/r1-clean/eval/sgl_eval_gsm8k_20261112-211342/metrics.json",
+  "sha256": "ad5205f93f7825570434860c8d7c392161021bc61618fd82791b1cf27495af3b"
+ },
+ {
+  "file": "logs/r1-clean/eval/sgl_eval_gsm8k_20261112-211342/output-rs0.jsonl.gz",
+  "source": "/scratch/cc-pr43/logs/r1-clean/eval/sgl_eval_gsm8k_20261112-211342/output-rs0.jsonl",
+  "sha256": "ca5c1876160f99fba12786936ba3df92a3a326d676ebb49e2d049f0d59679ff1"
+ },
+ {
+  "file": "logs/r1-clean/gpu-after-ready.txt",
+  "source": "/scratch/cc-pr43/logs/r1-clean/gpu-after-ready.txt",
+  "sha256": "aaae43db18f74c42b26e889ea1aea8d53673c2d69cfc9fce9d39ffb4db9b6ff3"
+ },
+ {
+  "file": "logs/r1-clean/gpu-at-end.txt",
+  "source": "/scratch/cc-pr43/logs/r1-clean/gpu-at-end.txt",
+  "sha256": "585d8d182e9893ffd4f8178fa9c411e532b9d1630e8c027d828af2e17c85be85"
+ },
+ {
+  "file": "logs/r1-clean/gsm8k.log.gz",
+  "source": "/scratch/cc-pr43/logs/r1-clean/gsm8k.log",
+  "sha256": "896012fdee43e729a92cb74c55a3044bcf9debbeb2a85b34cb0d0ce3d20b3e81"
+ },
+ {
+  "file": "logs/r1-clean/job.status",
+  "source": "/scratch/cc-pr43/logs/r1-clean/job.status",
+  "sha256": "eb91863db96a152062b94323574f38cc832830312996a8bad7992728e8b5f259"
+ },
+ {
+  "file": "logs/r1-clean/launch.sh",
+  "source": "/scratch/cc-pr43/logs/r1-clean/launch.sh",
+  "sha256": "5fbfbae9e811d05b1bad9a42f038f8d40204a81fc583e7325011b3b1db4dcd44"
+ },
+ {
+  "file": "logs/r1-clean/longprefill.json",
+  "source": "/scratch/cc-pr43/logs/r1-clean/longprefill.json",
+  "sha256": "8ec3e2cdbe0761afd12d8f395abf6fcdad3841318bb13f239bcf58d345183da0"
+ },
+ {
+  "file": "logs/r1-clean/longprefill.log",
+  "source": "/scratch/cc-pr43/logs/r1-clean/longprefill.log",
+  "sha256": "e90ed896a8cb207ca91ee81f6c42497b3d89d0f8833e2a4e977436fc82c9fd6f"
+ },
+ {
+  "file": "logs/r1-clean/mem/epoch",
+  "source": "/scratch/cc-pr43/logs/r1-clean/mem/epoch",
+  "sha256": "c89659c44bb95ddbbeb0fb5368a80663f1cc2ec4138413563791f66b72a872c5"
+ },
+ {
+  "file": "logs/r1-clean/mem/mem-1636759.log",
+  "source": "/scratch/cc-pr43/logs/r1-clean/mem/mem-1636759.log",
+  "sha256": "579eec9da4fae4b44147b77aadbdf288feed7a61401a201532935fc1dc38347d"
+ },
+ {
+  "file": "logs/r1-clean/mem/mem-1636918.log",
+  "source": "/scratch/cc-pr43/logs/r1-clean/mem/mem-1636918.log",
+  "sha256": "942c77e4e498f070c528bf183f9a0a94dbaafed91964cd6f2190cfac2aaaf413"
+ },
+ {
+  "file": "logs/r1-clean/mem/mem-1636991.log",
+  "source": "/scratch/cc-pr43/logs/r1-clean/mem/mem-1636991.log",
+  "sha256": "bdc9a59607e8b665f8fff9571f5704f7216751c9c9a7af109c4824df2b09e2dd"
+ },
+ {
+  "file": "logs/r1-clean/mem/mem-1637129.log",
+  "source": "/scratch/cc-pr43/logs/r1-clean/mem/mem-1637129.log",
+  "sha256": "dbf476d9d56e88ca330655a571c62bf2331d750e584ec0c767436234b37cf52f"
+ },
+ {
+  "file": "logs/r1-clean/mem/mem-1637268.log",
+  "source": "/scratch/cc-pr43/logs/r1-clean/mem/mem-1637268.log",
+  "sha256": "f90bf2d4b43f5cf365fa755226215c4f3ef02f9cb03d78a0a9802f0172657bb0"
+ },
+ {
+  "file": "logs/r1-clean/mem/mem-1637412.log",
+  "source": "/scratch/cc-pr43/logs/r1-clean/mem/mem-1637412.log",
+  "sha256": "007918794694c132090abf5dfae6d839ccc9ea976087608fe7cfe5fbb81c7f6f"
+ },
+ {
+  "file": "logs/r1-clean/mem/mem-1637559.log",
+  "source": "/scratch/cc-pr43/logs/r1-clean/mem/mem-1637559.log",
+  "sha256": "2dca1bc7d277da60cd4576100b489949d556343820bae4c85f03c719f8ce8368"
+ },
+ {
+  "file": "logs/r1-clean/mem/mem-1637708.log",
+  "source": "/scratch/cc-pr43/logs/r1-clean/mem/mem-1637708.log",
+  "sha256": "9d85b7fcc77af0f1ee0ea613c849d83bdf36ded0b012df05995b70012eff84b0"
+ },
+ {
+  "file": "logs/r1-clean/mem/mem-1637850.log",
+  "source": "/scratch/cc-pr43/logs/r1-clean/mem/mem-1637850.log",
+  "sha256": "c16115cbe884ced6ba55427cd1040ccc67d81a4e46ea5ee58dd328b8e5524202"
+ },
+ {
+  "file": "logs/r1-clean/mem/mem-1637992.log",
+  "source": "/scratch/cc-pr43/logs/r1-clean/mem/mem-1637992.log",
+  "sha256": "63404cd6531b4aa375873d359510964d0a00c3c15a50187448cbcfe02a15b74b"
+ },
+ {
+  "file": "logs/r1-clean/mem/mem-1640142.log",
+  "source": "/scratch/cc-pr43/logs/r1-clean/mem/mem-1640142.log",
+  "sha256": "cbe1d4964dc25ee4965e8e37bae6e2659d770bc736a67b07829ee92f65ffa0b7"
+ },
+ {
+  "file": "logs/r1-clean/mem/mem-1640143.log",
+  "source": "/scratch/cc-pr43/logs/r1-clean/mem/mem-1640143.log",
+  "sha256": "34b2e9ba16a4b811cdc89d9493d17dda64da59aa4ee3176c2d14e079bcbe35a4"
+ },
+ {
+  "file": "logs/r1-clean/mem/mem-1640144.log",
+  "source": "/scratch/cc-pr43/logs/r1-clean/mem/mem-1640144.log",
+  "sha256": "79d1da5d3ec8b6584c8fb10ef8543a073db69a0cec3018e51bf134a2551389f5"
+ },
+ {
+  "file": "logs/r1-clean/mem/mem-1640145.log",
+  "source": "/scratch/cc-pr43/logs/r1-clean/mem/mem-1640145.log",
+  "sha256": "6c4e98c03b5450e1a44d835194bb45e73b958c7f654e4e0a01506b89ceca7854"
+ },
+ {
+  "file": "logs/r1-clean/mem/mem-1640154.log",
+  "source": "/scratch/cc-pr43/logs/r1-clean/mem/mem-1640154.log",
+  "sha256": "3ceda3eb6db9b5353c76573fe93ff554dc274972dd8eb99c4bdcc137bd1c0ed4"
+ },
+ {
+  "file": "logs/r1-clean/mem/mem-1640155.log",
+  "source": "/scratch/cc-pr43/logs/r1-clean/mem/mem-1640155.log",
+  "sha256": "263748c22ab10142916189f94ad100c075873d073c862ef46941f121bea46a53"
+ },
+ {
+  "file": "logs/r1-clean/mem/mem-1640160.log",
+  "source": "/scratch/cc-pr43/logs/r1-clean/mem/mem-1640160.log",
+  "sha256": "b4d9606513a39d761014d63d68417d8aaab2a8d300c6e3fa814e09a976c12c65"
+ },
+ {
+  "file": "logs/r1-clean/mem/mem-1640171.log",
+  "source": "/scratch/cc-pr43/logs/r1-clean/mem/mem-1640171.log",
+  "sha256": "3e30b09bc95feb67aaa4a43b6066386fd2a1d9f31a280c1f6e6f89504ef1455d"
+ },
+ {
+  "file": "logs/r1-clean/perf-decode.log",
+  "source": "/scratch/cc-pr43/logs/r1-clean/perf-decode.log",
+  "sha256": "4bb4a003602f421ce4303888601ba73c3686237791c4925d23830959b09fd6be"
+ },
+ {
+  "file": "logs/r1-clean/perf-serve.log",
+  "source": "/scratch/cc-pr43/logs/r1-clean/perf-serve.log",
+  "sha256": "4b9c6c6a20dce9a0f24db16f3d576738f0b1088de72f48e830ae1ceecd291d9f"
+ },
+ {
+  "file": "logs/r1-clean/perf.log",
+  "source": "/scratch/cc-pr43/logs/r1-clean/perf.log",
+  "sha256": "d5a344307d5e035621678bf465b6681b07e3f8a650b68d438f0e3c22ffd20561"
+ },
+ {
+  "file": "logs/r1-clean/serve-start.log.gz",
+  "source": "/scratch/cc-pr43/logs/r1-clean/serve-start.log",
+  "sha256": "fe72ecc965cbb0debc7b92e7fc54aab1222c162619e4f644d0bd2c50b93d34b1"
+ },
+ {
+  "file": "logs/r1-clean/serve.log.gz",
+  "source": "/scratch/cc-pr43/logs/r1-clean/serve.log",
+  "sha256": "ab58acd1dcc12e28afcd8d13d307d344fe272e47770d3e3a7a71493dfc6d4df0"
+ },
+ {
+  "file": "logs/r1-clean/suite.json",
+  "source": "/scratch/cc-pr43/logs/r1-clean/suite.json",
+  "sha256": "8ada8fe328c2d18d7f40f96ff049408df8b15adfb7038bf929ff475f99f2c354"
+ },
+ {
+  "file": "logs/r1-clean/suite.log",
+  "source": "/scratch/cc-pr43/logs/r1-clean/suite.log",
+  "sha256": "7a9b4e77103b3987b55404b93a922d1382e71dfa687f44f2b317b09796976c80"
+ },
+ {
+  "file": "logs/r1-full/gpu-after-ready.txt",
+  "source": "/scratch/cc-pr43/logs/r1-full/gpu-after-ready.txt",
+  "sha256": "6d536a7365049da3be8c85692ea6a827a1fdd558b1021f8e14b83513526bd158"
+ },
+ {
+  "file": "logs/r1-full/gpu-at-end.txt",
+  "source": "/scratch/cc-pr43/logs/r1-full/gpu-at-end.txt",
+  "sha256": "60f3aa94c081d9c13bde4fdc87c938600846cbbf0c1f388847a04b5723d5b2f1"
+ },
+ {
+  "file": "logs/r1-full/job.status",
+  "source": "/scratch/cc-pr43/logs/r1-full/job.status",
+  "sha256": "ced3c2bd033e7f614d1459a3f37e58b758978ef6743a4307492f96159a84cfbe"
+ },
+ {
+  "file": "logs/r1-full/launch.sh",
+  "source": "/scratch/cc-pr43/logs/r1-full/launch.sh",
+  "sha256": "3f6279a3ce11ee5fa8fee5ae35b696f34229b51c4b3a79f1fb89f709fc35d911"
+ },
+ {
+  "file": "logs/r1-full/longprefill.json",
+  "source": "/scratch/cc-pr43/logs/r1-full/longprefill.json",
+  "sha256": "642adaf320fc4c3a9c40eb3b3c25d0ec71f775e385e307dcbce9fe58e8635ce1"
+ },
+ {
+  "file": "logs/r1-full/longprefill.log",
+  "source": "/scratch/cc-pr43/logs/r1-full/longprefill.log",
+  "sha256": "b6240d9ce9a49f727d14baf86e203b127092042a56419761bcec6ec2b20cb8f3"
+ },
+ {
+  "file": "logs/r1-full/mem/epoch",
+  "source": "/scratch/cc-pr43/logs/r1-full/mem/epoch",
+  "sha256": "ffcede71cab4f4cba8e01102805286b53e7deaf00194acce148960f1d27c073c"
+ },
+ {
+  "file": "logs/r1-full/mem/mem-1631900.log",
+  "source": "/scratch/cc-pr43/logs/r1-full/mem/mem-1631900.log",
+  "sha256": "716d2a8582880f0052e01112bad43dd4b3035266c4921267e961e64748ba9c93"
+ },
+ {
+  "file": "logs/r1-full/mem/mem-1632059.log",
+  "source": "/scratch/cc-pr43/logs/r1-full/mem/mem-1632059.log",
+  "sha256": "f0b4012979fed1b84c47fae4f11fff322b5ddae4025bc880f36e24240eefeb11"
+ },
+ {
+  "file": "logs/r1-full/mem/mem-1632132.log",
+  "source": "/scratch/cc-pr43/logs/r1-full/mem/mem-1632132.log",
+  "sha256": "4554630d57f3133aecfca2b2851aa13290cf6e3bd471ca2e4b7bcd6391d8c3b4"
+ },
+ {
+  "file": "logs/r1-full/mem/mem-1632270.log",
+  "source": "/scratch/cc-pr43/logs/r1-full/mem/mem-1632270.log",
+  "sha256": "7681765cd8519bd73f7d3b2fef8f3019d089d2f7b468753f8c0f1f7df2ece1ad"
+ },
+ {
+  "file": "logs/r1-full/mem/mem-1632410.log",
+  "source": "/scratch/cc-pr43/logs/r1-full/mem/mem-1632410.log",
+  "sha256": "82553b4af4494e26681fae5142ab8c14a9627587084777752f4ef9ce904d590e"
+ },
+ {
+  "file": "logs/r1-full/mem/mem-1632553.log",
+  "source": "/scratch/cc-pr43/logs/r1-full/mem/mem-1632553.log",
+  "sha256": "50d3c273649e35d954dcc7bdb8e3d44d7e8c02f20da2b609bd43455d1c6b8aa1"
+ },
+ {
+  "file": "logs/r1-full/mem/mem-1632699.log",
+  "source": "/scratch/cc-pr43/logs/r1-full/mem/mem-1632699.log",
+  "sha256": "634c33171c409d9b08a2fd7d045bcd2eedfa6dcf04ff79e36515aab9e07e73fa"
+ },
+ {
+  "file": "logs/r1-full/mem/mem-1632840.log",
+  "source": "/scratch/cc-pr43/logs/r1-full/mem/mem-1632840.log",
+  "sha256": "d50f9bbf0f24cb2d4e457c3495241c4cf6a9f7fe7b296883bc972adda2c0fa78"
+ },
+ {
+  "file": "logs/r1-full/mem/mem-1632988.log",
+  "source": "/scratch/cc-pr43/logs/r1-full/mem/mem-1632988.log",
+  "sha256": "8af98b673d4e7ef2bbf156f07cb83f2436e6fa4980ddf2ee98ed30159974d343"
+ },
+ {
+  "file": "logs/r1-full/mem/mem-1633124.log",
+  "source": "/scratch/cc-pr43/logs/r1-full/mem/mem-1633124.log",
+  "sha256": "9c9c3ed2957078083e46cef4f5181d6e6b579ffcf0bd831f1ea17d396f57bd0e"
+ },
+ {
+  "file": "logs/r1-full/mem/mem-1635123.log",
+  "source": "/scratch/cc-pr43/logs/r1-full/mem/mem-1635123.log",
+  "sha256": "4caf7b404e3abff4616eb214d927538464d0d32e5b4ef91c25ad2597d4a30b52"
+ },
+ {
+  "file": "logs/r1-full/mem/mem-1635124.log",
+  "source": "/scratch/cc-pr43/logs/r1-full/mem/mem-1635124.log",
+  "sha256": "0b05827d63397219736d90c5a71c6f90622ec425193128e55889810425814e59"
+ },
+ {
+  "file": "logs/r1-full/mem/mem-1635125.log",
+  "source": "/scratch/cc-pr43/logs/r1-full/mem/mem-1635125.log",
+  "sha256": "19e179991ef972c8b3fc03cd15eb36622f88bb15c2204cf3c8e375c6e212b10c"
+ },
+ {
+  "file": "logs/r1-full/mem/mem-1635126.log",
+  "source": "/scratch/cc-pr43/logs/r1-full/mem/mem-1635126.log",
+  "sha256": "32efc6d1eab0080c7542443aa5d2660d6e7f1d24ee4fbc03237e1b6ede01f111"
+ },
+ {
+  "file": "logs/r1-full/mem/mem-1635128.log",
+  "source": "/scratch/cc-pr43/logs/r1-full/mem/mem-1635128.log",
+  "sha256": "900a8144c448aeef32c9b6c8291bb5bf446862231f1d42477feb9f0219ac5954"
+ },
+ {
+  "file": "logs/r1-full/mem/mem-1635130.log",
+  "source": "/scratch/cc-pr43/logs/r1-full/mem/mem-1635130.log",
+  "sha256": "ed759ce2633fa19e353dee6695b3639d1f49f25d5b5c271d2d0b1765df4cf226"
+ },
+ {
+  "file": "logs/r1-full/mem/mem-1635138.log",
+  "source": "/scratch/cc-pr43/logs/r1-full/mem/mem-1635138.log",
+  "sha256": "0b05827d63397219736d90c5a71c6f90622ec425193128e55889810425814e59"
+ },
+ {
+  "file": "logs/r1-full/mem/mem-1635144.log",
+  "source": "/scratch/cc-pr43/logs/r1-full/mem/mem-1635144.log",
+  "sha256": "83b486e93bf01ce16bf06b148f3e5367dc7b0f64308d123ae8759ba02e23551d"
+ },
+ {
+  "file": "logs/r1-full/perf-decode.log",
+  "source": "/scratch/cc-pr43/logs/r1-full/perf-decode.log",
+  "sha256": "cf30814c8e6c36f5b578cfbb896033ba862250686f63c89b0b961d7465ccce7c"
+ },
+ {
+  "file": "logs/r1-full/perf-serve.log",
+  "source": "/scratch/cc-pr43/logs/r1-full/perf-serve.log",
+  "sha256": "27ba58b76ef02b678801840e15b497208458275b93df8f1eeb1aa3ab1859a43c"
+ },
+ {
+  "file": "logs/r1-full/perf.log",
+  "source": "/scratch/cc-pr43/logs/r1-full/perf.log",
+  "sha256": "d5a344307d5e035621678bf465b6681b07e3f8a650b68d438f0e3c22ffd20561"
+ },
+ {
+  "file": "logs/r1-full/serve-start.log.gz",
+  "source": "/scratch/cc-pr43/logs/r1-full/serve-start.log",
+  "sha256": "1ee2f12a67ae0fa66bede50f9c63acd70bdf48f5de50132b74be3c29b8e37423"
+ },
+ {
+  "file": "logs/r1-full/serve.log.gz",
+  "source": "/scratch/cc-pr43/logs/r1-full/serve.log",
+  "sha256": "a858687b09c74224529ecf586102a2e747386a26b71777d5d7322e38e46023af"
+ },
+ {
+  "file": "logs/r2-base/gpu-after-ready.txt",
+  "source": "/scratch/cc-pr43/logs/r2-base/gpu-after-ready.txt",
+  "sha256": "d3dce9a1fd48aaa6e8d8268907fa7612f99a63b1536cdc263862b76c23d4ef26"
+ },
+ {
+  "file": "logs/r2-base/gpu-at-end.txt",
+  "source": "/scratch/cc-pr43/logs/r2-base/gpu-at-end.txt",
+  "sha256": "6bb30dc9c4586dcf69475ad703960b52434b9cf232c46b1ed4a5e49515221ddb"
+ },
+ {
+  "file": "logs/r2-base/job.status",
+  "source": "/scratch/cc-pr43/logs/r2-base/job.status",
+  "sha256": "548497ae07fe6a88e8c7400433c7f6ec91bdb8abfe88176b2c28afdf5e3605eb"
+ },
+ {
+  "file": "logs/r2-base/launch.sh",
+  "source": "/scratch/cc-pr43/logs/r2-base/launch.sh",
+  "sha256": "71a59c68b99c9e7a1b987935d52e26c5f0b3249db87d79ede1a89c80dc06018b"
+ },
+ {
+  "file": "logs/r2-base/longprefill.json",
+  "source": "/scratch/cc-pr43/logs/r2-base/longprefill.json",
+  "sha256": "a0d4af76958241a29b0e8c3f9cb37a107a8387fff7b9e8d76f220ad6e7c5e3d8"
+ },
+ {
+  "file": "logs/r2-base/longprefill.log",
+  "source": "/scratch/cc-pr43/logs/r2-base/longprefill.log",
+  "sha256": "4fba37d16a6f820f399d3effe20e1d9b6cb2145800f51a58ea2108bd032a7cd7"
+ },
+ {
+  "file": "logs/r2-base/mem/epoch",
+  "source": "/scratch/cc-pr43/logs/r2-base/mem/epoch",
+  "sha256": "ffcede71cab4f4cba8e01102805286b53e7deaf00194acce148960f1d27c073c"
+ },
+ {
+  "file": "logs/r2-base/mem/mem-1648514.log",
+  "source": "/scratch/cc-pr43/logs/r2-base/mem/mem-1648514.log",
+  "sha256": "29c3746d72eca6f30f1ecd541c164c3dc9820c8e5e15a094c9a872ac4c221921"
+ },
+ {
+  "file": "logs/r2-base/mem/mem-1648681.log",
+  "source": "/scratch/cc-pr43/logs/r2-base/mem/mem-1648681.log",
+  "sha256": "dc0cbe71cbfa94a95bc5542af8a6a65efaaf159bac40350ad77dad3bc2b74849"
+ },
+ {
+  "file": "logs/r2-base/mem/mem-1648762.log",
+  "source": "/scratch/cc-pr43/logs/r2-base/mem/mem-1648762.log",
+  "sha256": "38d025c850fd788efae45d2aecbad42c78c59ef614fb37b20b61c05967ec69d4"
+ },
+ {
+  "file": "logs/r2-base/mem/mem-1648897.log",
+  "source": "/scratch/cc-pr43/logs/r2-base/mem/mem-1648897.log",
+  "sha256": "e6f76c007c804d496ce31faf714678ccca720e744ed56f6ae0900ca6d0aeb032"
+ },
+ {
+  "file": "logs/r2-base/mem/mem-1649040.log",
+  "source": "/scratch/cc-pr43/logs/r2-base/mem/mem-1649040.log",
+  "sha256": "557bb96a24a9693b81ae95544cb5c2ab2f8ded1bdaa6fe62b26451399af18721"
+ },
+ {
+  "file": "logs/r2-base/mem/mem-1649183.log",
+  "source": "/scratch/cc-pr43/logs/r2-base/mem/mem-1649183.log",
+  "sha256": "37395bd9154a023909e541a1c42dfe07887aa3241ce2e789ba01f0ce47c1bcd7"
+ },
+ {
+  "file": "logs/r2-base/mem/mem-1649327.log",
+  "source": "/scratch/cc-pr43/logs/r2-base/mem/mem-1649327.log",
+  "sha256": "f70a42609ed2baf2e1444ce91a7ef03d97bb6b725fe75b69a98986b3741acd4e"
+ },
+ {
+  "file": "logs/r2-base/mem/mem-1649470.log",
+  "source": "/scratch/cc-pr43/logs/r2-base/mem/mem-1649470.log",
+  "sha256": "2d3595f2c32cf97b5cca9d17ba7a71fe597b5c34841eb4b99931859dbbd120ae"
+ },
+ {
+  "file": "logs/r2-base/mem/mem-1649613.log",
+  "source": "/scratch/cc-pr43/logs/r2-base/mem/mem-1649613.log",
+  "sha256": "ae228f51a40afb1bc0f0a0faca9d888150e341ad686dbf48391e179c13c5c352"
+ },
+ {
+  "file": "logs/r2-base/mem/mem-1649754.log",
+  "source": "/scratch/cc-pr43/logs/r2-base/mem/mem-1649754.log",
+  "sha256": "7e5216d23944e0f05c8db9169eb95970968b9f3e8ab7b748c34726f4fd0f0228"
+ },
+ {
+  "file": "logs/r2-base/mem/mem-1651753.log",
+  "source": "/scratch/cc-pr43/logs/r2-base/mem/mem-1651753.log",
+  "sha256": "759be41dda5d284af704691519329d4bece99bc50cf706b06958c898f67cba64"
+ },
+ {
+  "file": "logs/r2-base/mem/mem-1651754.log",
+  "source": "/scratch/cc-pr43/logs/r2-base/mem/mem-1651754.log",
+  "sha256": "6d4996268915df3e58b71c5e687ca2ff22a9f3e8857632893c3d29af1a567197"
+ },
+ {
+  "file": "logs/r2-base/mem/mem-1651755.log",
+  "source": "/scratch/cc-pr43/logs/r2-base/mem/mem-1651755.log",
+  "sha256": "d10a6cdd22cbd835412a3b59624fb84bda6d00d57b30b75250c73f89759fcb4a"
+ },
+ {
+  "file": "logs/r2-base/mem/mem-1651756.log",
+  "source": "/scratch/cc-pr43/logs/r2-base/mem/mem-1651756.log",
+  "sha256": "ca8d9ac3f22e98dcdf8148742adeb189e67d4c57ffec08c1acc0d4685ebc15f6"
+ },
+ {
+  "file": "logs/r2-base/mem/mem-1651765.log",
+  "source": "/scratch/cc-pr43/logs/r2-base/mem/mem-1651765.log",
+  "sha256": "6d4996268915df3e58b71c5e687ca2ff22a9f3e8857632893c3d29af1a567197"
+ },
+ {
+  "file": "logs/r2-base/mem/mem-1651768.log",
+  "source": "/scratch/cc-pr43/logs/r2-base/mem/mem-1651768.log",
+  "sha256": "826ae82e38b2ad6b5cd9a8f72e220af5dff6b52a8f9e9a35c4b2a7f75c60ce22"
+ },
+ {
+  "file": "logs/r2-base/mem/mem-1651779.log",
+  "source": "/scratch/cc-pr43/logs/r2-base/mem/mem-1651779.log",
+  "sha256": "1499d5f169918edcacaa927f4c0ff45d64eed41059c799b7a6eb274a2cbe70b3"
+ },
+ {
+  "file": "logs/r2-base/mem/mem-1651780.log",
+  "source": "/scratch/cc-pr43/logs/r2-base/mem/mem-1651780.log",
+  "sha256": "6e8cb2223cedd2eb3f14dd60d7003a2355b586eb5c654415a6398d3a1aea4a71"
+ },
+ {
+  "file": "logs/r2-base/perf-decode.jsonl",
+  "source": "/scratch/cc-pr43/logs/r2-base/perf-decode.jsonl",
+  "sha256": "8048eeb52a2fb4506049f0a25661167daaab48f34e09b9df74563cf55d1dff3a"
+ },
+ {
+  "file": "logs/r2-base/perf-decode.log",
+  "source": "/scratch/cc-pr43/logs/r2-base/perf-decode.log",
+  "sha256": "d59a93a708421afdf4769016394466d7e75428e821addfc7464f8a3be5e3173f"
+ },
+ {
+  "file": "logs/r2-base/perf-serve.jsonl",
+  "source": "/scratch/cc-pr43/logs/r2-base/perf-serve.jsonl",
+  "sha256": "4084c15d7017809cf8b34dcf7fdffa1785b7c1b1481510cb55849e9f5dde3285"
+ },
+ {
+  "file": "logs/r2-base/perf-serve.log",
+  "source": "/scratch/cc-pr43/logs/r2-base/perf-serve.log",
+  "sha256": "9e8bdc13a24d744871eb5f9139a8985577cadac23e666b29a5a06880c058ec38"
+ },
+ {
+  "file": "logs/r2-base/perf.log",
+  "source": "/scratch/cc-pr43/logs/r2-base/perf.log",
+  "sha256": "5e549dc4d21e17906613b65f88a03e27395d48f27583719db19f1d82eb14e633"
+ },
+ {
+  "file": "logs/r2-base/serve-start.log.gz",
+  "source": "/scratch/cc-pr43/logs/r2-base/serve-start.log",
+  "sha256": "3358696aca8b0193b1bd466da301d022e1f16ee604dc1e3dc179a1cc4ef691a5"
+ },
+ {
+  "file": "logs/r2-base/serve.log.gz",
+  "source": "/scratch/cc-pr43/logs/r2-base/serve.log",
+  "sha256": "5b38c2b828119f37037153d1e533b4490a511f0ba66580f7a788690b03eace04"
+ },
+ {
+  "file": "logs/r2-clean/gpu-after-ready.txt",
+  "source": "/scratch/cc-pr43/logs/r2-clean/gpu-after-ready.txt",
+  "sha256": "0d832fa2ae30d872594c45ef2be01d0de260b938b622970226873a90feacdb34"
+ },
+ {
+  "file": "logs/r2-clean/gpu-at-end.txt",
+  "source": "/scratch/cc-pr43/logs/r2-clean/gpu-at-end.txt",
+  "sha256": "ad9d308d2437e2e2c6ff2575d3816cac73b7f4508469a0130011c6976aeb65b9"
+ },
+ {
+  "file": "logs/r2-clean/job.status",
+  "source": "/scratch/cc-pr43/logs/r2-clean/job.status",
+  "sha256": "4699274cd50be7ba4d0a0244ee8cfa0d8dfe4ae69534380a82d05ab9d2225042"
+ },
+ {
+  "file": "logs/r2-clean/launch.sh",
+  "source": "/scratch/cc-pr43/logs/r2-clean/launch.sh",
+  "sha256": "28d44dae3c4985d68e4c2f723d53327ca82aca35b7c8c4fa7936a3aeb2f9880f"
+ },
+ {
+  "file": "logs/r2-clean/longprefill.json",
+  "source": "/scratch/cc-pr43/logs/r2-clean/longprefill.json",
+  "sha256": "bb591cb14475d3e67dbdceb217d4b8a60fbef4853890d975594b7a0b9533bb1a"
+ },
+ {
+  "file": "logs/r2-clean/longprefill.log",
+  "source": "/scratch/cc-pr43/logs/r2-clean/longprefill.log",
+  "sha256": "ccf8ee1273e4fc2cbd781bbc5ed7665bd430639927456368331fbeed6fdf4cf2"
+ },
+ {
+  "file": "logs/r2-clean/mem/epoch",
+  "source": "/scratch/cc-pr43/logs/r2-clean/mem/epoch",
+  "sha256": "ffcede71cab4f4cba8e01102805286b53e7deaf00194acce148960f1d27c073c"
+ },
+ {
+  "file": "logs/r2-clean/mem/mem-1642883.log",
+  "source": "/scratch/cc-pr43/logs/r2-clean/mem/mem-1642883.log",
+  "sha256": "94187486bbfd3a6d29dc464e5d612c56c4bbcd9a37084e797d27934ac7dbe63d"
+ },
+ {
+  "file": "logs/r2-clean/mem/mem-1643033.log",
+  "source": "/scratch/cc-pr43/logs/r2-clean/mem/mem-1643033.log",
+  "sha256": "ae56347c8c46c34ffd953ccc3576034563a0d606fd1dae1db057f5647f775389"
+ },
+ {
+  "file": "logs/r2-clean/mem/mem-1643106.log",
+  "source": "/scratch/cc-pr43/logs/r2-clean/mem/mem-1643106.log",
+  "sha256": "b8c822183e60579a98784f839aa88331e26fb9974d8fe9ae12f9ae30da3e40a9"
+ },
+ {
+  "file": "logs/r2-clean/mem/mem-1643244.log",
+  "source": "/scratch/cc-pr43/logs/r2-clean/mem/mem-1643244.log",
+  "sha256": "4695cc54977ea03d029807138363bec02cbe089e0dd4e110a02cab015a4c9046"
+ },
+ {
+  "file": "logs/r2-clean/mem/mem-1643384.log",
+  "source": "/scratch/cc-pr43/logs/r2-clean/mem/mem-1643384.log",
+  "sha256": "c8e5183d91b7184c179abdf195ee4acac6626bedee7aca60f48871df6daa0d34"
+ },
+ {
+  "file": "logs/r2-clean/mem/mem-1643535.log",
+  "source": "/scratch/cc-pr43/logs/r2-clean/mem/mem-1643535.log",
+  "sha256": "12beaa2c04f9837509063aa5024ebc0f112365e53136ad50767320d984013eaa"
+ },
+ {
+  "file": "logs/r2-clean/mem/mem-1643682.log",
+  "source": "/scratch/cc-pr43/logs/r2-clean/mem/mem-1643682.log",
+  "sha256": "11de45b06d32ba40e9ec70dc85965422be6c68fc4cb9fec3dd7c8a92ab4f48b8"
+ },
+ {
+  "file": "logs/r2-clean/mem/mem-1643839.log",
+  "source": "/scratch/cc-pr43/logs/r2-clean/mem/mem-1643839.log",
+  "sha256": "73389343bca07a9b5cbc08ae8a3bc5a4497b490123d806e6cab8e36db3930aa5"
+ },
+ {
+  "file": "logs/r2-clean/mem/mem-1643987.log",
+  "source": "/scratch/cc-pr43/logs/r2-clean/mem/mem-1643987.log",
+  "sha256": "a010c3937125ee04e3489c35c8310c2af1065d4147d75b3f9064c13fcbbb0c12"
+ },
+ {
+  "file": "logs/r2-clean/mem/mem-1644130.log",
+  "source": "/scratch/cc-pr43/logs/r2-clean/mem/mem-1644130.log",
+  "sha256": "95740a0bf93ab967a6e86462da5d0f897dcab131d718d6e00af7b207dc506cb5"
+ },
+ {
+  "file": "logs/r2-clean/mem/mem-1646249.log",
+  "source": "/scratch/cc-pr43/logs/r2-clean/mem/mem-1646249.log",
+  "sha256": "7c1f6ffc86bbc53a918aae0a17a31374cdf02e8631188433d804c85849aefe99"
+ },
+ {
+  "file": "logs/r2-clean/mem/mem-1646250.log",
+  "source": "/scratch/cc-pr43/logs/r2-clean/mem/mem-1646250.log",
+  "sha256": "b44764bacdab4c6db17976cb61cf99d81e5964e23043549474d544dedcc0d1d1"
+ },
+ {
+  "file": "logs/r2-clean/mem/mem-1646251.log",
+  "source": "/scratch/cc-pr43/logs/r2-clean/mem/mem-1646251.log",
+  "sha256": "3f60e397465f9851012f02e4438664c6d9985a00424353762c57713f08aeb94f"
+ },
+ {
+  "file": "logs/r2-clean/mem/mem-1646252.log",
+  "source": "/scratch/cc-pr43/logs/r2-clean/mem/mem-1646252.log",
+  "sha256": "47619dca5fa0da0becc3f9719e784ab737b44f98f50f368c2d5a9aeac777f6aa"
+ },
+ {
+  "file": "logs/r2-clean/mem/mem-1646261.log",
+  "source": "/scratch/cc-pr43/logs/r2-clean/mem/mem-1646261.log",
+  "sha256": "4bd0fbd8ca88e61c2b846a71a67fb42d9d651c7a48f9c6bca2cb1382ca680a5a"
+ },
+ {
+  "file": "logs/r2-clean/mem/mem-1646268.log",
+  "source": "/scratch/cc-pr43/logs/r2-clean/mem/mem-1646268.log",
+  "sha256": "749edbf57e51616c5b8d4a59f856362bbf438ad22d855c65db20a08c12352888"
+ },
+ {
+  "file": "logs/r2-clean/mem/mem-1646275.log",
+  "source": "/scratch/cc-pr43/logs/r2-clean/mem/mem-1646275.log",
+  "sha256": "9f2f5b2ddf71f5a3d1fe1f70f2b7cd1fc45e17f68375fcfd1321ba5c1dc5162f"
+ },
+ {
+  "file": "logs/r2-clean/mem/mem-1646276.log",
+  "source": "/scratch/cc-pr43/logs/r2-clean/mem/mem-1646276.log",
+  "sha256": "40ce0c4fe50f4fd1cce5e44688156a314a00dc9ffed5c8afd776aa18d0041d51"
+ },
+ {
+  "file": "logs/r2-clean/perf-decode.jsonl",
+  "source": "/scratch/cc-pr43/logs/r2-clean/perf-decode.jsonl",
+  "sha256": "c664803f407c257a45725b314abefb7fdb304c89a3c4ebd24a02ec4472e03faa"
+ },
+ {
+  "file": "logs/r2-clean/perf-decode.log",
+  "source": "/scratch/cc-pr43/logs/r2-clean/perf-decode.log",
+  "sha256": "2957d35a367774fc89cc76b0a9278706db4706eed953c1bd190a69a4d25614b5"
+ },
+ {
+  "file": "logs/r2-clean/perf-serve.jsonl",
+  "source": "/scratch/cc-pr43/logs/r2-clean/perf-serve.jsonl",
+  "sha256": "ee4c29506728dda860c49d2489d6134bda76b16ccb39042ab1120ed012782689"
+ },
+ {
+  "file": "logs/r2-clean/perf-serve.log",
+  "source": "/scratch/cc-pr43/logs/r2-clean/perf-serve.log",
+  "sha256": "721da46add2a26833cd03c62f1da633d78ea11206465ff445b4f8e3cb509c5b5"
+ },
+ {
+  "file": "logs/r2-clean/perf.log",
+  "source": "/scratch/cc-pr43/logs/r2-clean/perf.log",
+  "sha256": "a93b7a74922ad8721dd290051499b4b520aa74fcf5d9e77665c379317c71c4fc"
+ },
+ {
+  "file": "logs/r2-clean/serve-start.log.gz",
+  "source": "/scratch/cc-pr43/logs/r2-clean/serve-start.log",
+  "sha256": "494268b6b33573199b943b40979dfe122c29207753f792538634296e895cbc72"
+ },
+ {
+  "file": "logs/r2-clean/serve.log.gz",
+  "source": "/scratch/cc-pr43/logs/r2-clean/serve.log",
+  "sha256": "d1b4253165d62e0b70ae3731b87260e6ef702222c19f450aa4b7244a3874441f"
+ },
+ {
+  "file": "logs/r2-full/gpu-after-ready.txt",
+  "source": "/scratch/cc-pr43/logs/r2-full/gpu-after-ready.txt",
+  "sha256": "aaae43db18f74c42b26e889ea1aea8d53673c2d69cfc9fce9d39ffb4db9b6ff3"
+ },
+ {
+  "file": "logs/r2-full/gpu-at-end.txt",
+  "source": "/scratch/cc-pr43/logs/r2-full/gpu-at-end.txt",
+  "sha256": "b6a3a0fd5cce8f806a1836561c0cceed56f3e5b453b33033a48bdf51e4d70b72"
+ },
+ {
+  "file": "logs/r2-full/job.status",
+  "source": "/scratch/cc-pr43/logs/r2-full/job.status",
+  "sha256": "3c53407940835d4119bcadd6dce7a1f49db9e7306b5162c13da609bbfe4d1197"
+ },
+ {
+  "file": "logs/r2-full/launch.sh",
+  "source": "/scratch/cc-pr43/logs/r2-full/launch.sh",
+  "sha256": "5f0bb5d020198372be143b3426214ba285fad6bd4a2ff59135b7ea3ce03ec96e"
+ },
+ {
+  "file": "logs/r2-full/longprefill.json",
+  "source": "/scratch/cc-pr43/logs/r2-full/longprefill.json",
+  "sha256": "6a42416b9627ce22065fabb5450e1ef331810175c209d96bf6d245ad52655806"
+ },
+ {
+  "file": "logs/r2-full/longprefill.log",
+  "source": "/scratch/cc-pr43/logs/r2-full/longprefill.log",
+  "sha256": "40639b2cdf9bebfad70a35b3ea638d3045e47d3318a270c46e15b2b93aa31f28"
+ },
+ {
+  "file": "logs/r2-full/mem/epoch",
+  "source": "/scratch/cc-pr43/logs/r2-full/mem/epoch",
+  "sha256": "ffcede71cab4f4cba8e01102805286b53e7deaf00194acce148960f1d27c073c"
+ },
+ {
+  "file": "logs/r2-full/mem/mem-1654014.log",
+  "source": "/scratch/cc-pr43/logs/r2-full/mem/mem-1654014.log",
+  "sha256": "ced97e3a29089319e9cb099f23577c6a1c2b0c1ec48e93f615bdb51637d96332"
+ },
+ {
+  "file": "logs/r2-full/mem/mem-1654176.log",
+  "source": "/scratch/cc-pr43/logs/r2-full/mem/mem-1654176.log",
+  "sha256": "4a404acb878f40b590aaf0b5325a60f3d62f0836938958ead11be6261c84d215"
+ },
+ {
+  "file": "logs/r2-full/mem/mem-1654249.log",
+  "source": "/scratch/cc-pr43/logs/r2-full/mem/mem-1654249.log",
+  "sha256": "61566f431ccdcc09463566e7c438cd557465483886b1a588c4e436833a781b39"
+ },
+ {
+  "file": "logs/r2-full/mem/mem-1654387.log",
+  "source": "/scratch/cc-pr43/logs/r2-full/mem/mem-1654387.log",
+  "sha256": "16bf273d68dcd194588276b1cb853a9d83cb233ce5cfcc688bbf3984c5bbb414"
+ },
+ {
+  "file": "logs/r2-full/mem/mem-1654525.log",
+  "source": "/scratch/cc-pr43/logs/r2-full/mem/mem-1654525.log",
+  "sha256": "f0c186aea71714c10768410f7124a387269d2e92e4b0bede7c4ab1aff41156a7"
+ },
+ {
+  "file": "logs/r2-full/mem/mem-1654670.log",
+  "source": "/scratch/cc-pr43/logs/r2-full/mem/mem-1654670.log",
+  "sha256": "97adf117cf3e44bdd6f36badf4d1d7e8614a862808c232318b06ce0028a765f3"
+ },
+ {
+  "file": "logs/r2-full/mem/mem-1654816.log",
+  "source": "/scratch/cc-pr43/logs/r2-full/mem/mem-1654816.log",
+  "sha256": "8573e59a34b8e5377754cab1978c8d21328b51cb293480671fd1bff5e00ab1d5"
+ },
+ {
+  "file": "logs/r2-full/mem/mem-1654960.log",
+  "source": "/scratch/cc-pr43/logs/r2-full/mem/mem-1654960.log",
+  "sha256": "c4a03f8173a896a81f162c979b8bb4a37e68cae0c45c80f738c7665a5f54069c"
+ },
+ {
+  "file": "logs/r2-full/mem/mem-1655104.log",
+  "source": "/scratch/cc-pr43/logs/r2-full/mem/mem-1655104.log",
+  "sha256": "df256ebee6cb628fab06278aa3c760a30d149ee98d43380643adbcd256c7b598"
+ },
+ {
+  "file": "logs/r2-full/mem/mem-1655244.log",
+  "source": "/scratch/cc-pr43/logs/r2-full/mem/mem-1655244.log",
+  "sha256": "7ba3777b427febad456d790bd8e93c76f6762a45022868145975ead31be8fc4a"
+ },
+ {
+  "file": "logs/r2-full/mem/mem-1657248.log",
+  "source": "/scratch/cc-pr43/logs/r2-full/mem/mem-1657248.log",
+  "sha256": "0e9ae76916b77befaaeb190025d7831431a756b37ad1501ec30c7ed1368d1f03"
+ },
+ {
+  "file": "logs/r2-full/mem/mem-1657249.log",
+  "source": "/scratch/cc-pr43/logs/r2-full/mem/mem-1657249.log",
+  "sha256": "51b2022f39ee36ce4220e2677acad290412b54b5402fb9daf9879030bfbf58b7"
+ },
+ {
+  "file": "logs/r2-full/mem/mem-1657250.log",
+  "source": "/scratch/cc-pr43/logs/r2-full/mem/mem-1657250.log",
+  "sha256": "722d59be6ff649f8b75a540ed4296a6ed533516d815e296783c5891ca94f6acb"
+ },
+ {
+  "file": "logs/r2-full/mem/mem-1657251.log",
+  "source": "/scratch/cc-pr43/logs/r2-full/mem/mem-1657251.log",
+  "sha256": "59fd9e2b04dffa545adb661aca6302894fb95aa4fca1b796e293f44f3e949a61"
+ },
+ {
+  "file": "logs/r2-full/mem/mem-1657260.log",
+  "source": "/scratch/cc-pr43/logs/r2-full/mem/mem-1657260.log",
+  "sha256": "db36f83aae79c24a2abd2638e07727cdf03034c9289cd01e24fe57b4fc3a6ef1"
+ },
+ {
+  "file": "logs/r2-full/mem/mem-1657261.log",
+  "source": "/scratch/cc-pr43/logs/r2-full/mem/mem-1657261.log",
+  "sha256": "7ffcd2ffbb4eb9f95d6940413a7feecbea91b6ab7efcd75ef4eed9ef9d0724d9"
+ },
+ {
+  "file": "logs/r2-full/mem/mem-1657262.log",
+  "source": "/scratch/cc-pr43/logs/r2-full/mem/mem-1657262.log",
+  "sha256": "59fd9e2b04dffa545adb661aca6302894fb95aa4fca1b796e293f44f3e949a61"
+ },
+ {
+  "file": "logs/r2-full/mem/mem-1657269.log",
+  "source": "/scratch/cc-pr43/logs/r2-full/mem/mem-1657269.log",
+  "sha256": "20aea1e0af3e1f02b7c43574363ed6b65f906487d2b59c689513f58fe742c5d0"
+ },
+ {
+  "file": "logs/r2-full/perf-decode.jsonl",
+  "source": "/scratch/cc-pr43/logs/r2-full/perf-decode.jsonl",
+  "sha256": "27e155f473fbd7fdda1bba33df64f207dd1451bf7b3b230cbf4069602ec36c4a"
+ },
+ {
+  "file": "logs/r2-full/perf-decode.log",
+  "source": "/scratch/cc-pr43/logs/r2-full/perf-decode.log",
+  "sha256": "72f84f454e047c1c0ee1f6dacfc06b51a17d5caf072389ddf1d921b3679520a6"
+ },
+ {
+  "file": "logs/r2-full/perf-serve.jsonl",
+  "source": "/scratch/cc-pr43/logs/r2-full/perf-serve.jsonl",
+  "sha256": "5745d54161e6ccb76c5e986fddea122686b3fd8f92b6bc6485d1a34b52e56f87"
+ },
+ {
+  "file": "logs/r2-full/perf-serve.log",
+  "source": "/scratch/cc-pr43/logs/r2-full/perf-serve.log",
+  "sha256": "1bd70da288bc948ac8ca70a658940151fa2d1429f54ec086f30c28328ba34511"
+ },
+ {
+  "file": "logs/r2-full/perf.log",
+  "source": "/scratch/cc-pr43/logs/r2-full/perf.log",
+  "sha256": "433f346fcc72422620808284956d81e406fc6f1dbf605cf201e9785c6090f3e2"
+ },
+ {
+  "file": "logs/r2-full/serve-start.log.gz",
+  "source": "/scratch/cc-pr43/logs/r2-full/serve-start.log",
+  "sha256": "0aefefc63112d4b7f1cefc373a94cb69427b1936f7bb3f4abf287e8cb1b3a8b3"
+ },
+ {
+  "file": "logs/r2-full/serve.log.gz",
+  "source": "/scratch/cc-pr43/logs/r2-full/serve.log",
+  "sha256": "e75c4209df181a42443528fb6b3b99f0cab6d7d2b175b577415aef4d38eda267"
+ },
+ {
+  "file": "logs/r3-base/gpu-after-ready.txt",
+  "source": "/scratch/cc-pr43/logs/r3-base/gpu-after-ready.txt",
+  "sha256": "1744e1e87831c752b5a63695d6ab3d95702dc50c54d5860554334cae583a29a1"
+ },
+ {
+  "file": "logs/r3-base/gpu-at-end.txt",
+  "source": "/scratch/cc-pr43/logs/r3-base/gpu-at-end.txt",
+  "sha256": "567d1b19007dff1fa30d105ccc45fb42f04b5f9e0747aa575623687760eed42b"
+ },
+ {
+  "file": "logs/r3-base/job.status",
+  "source": "/scratch/cc-pr43/logs/r3-base/job.status",
+  "sha256": "7cc47eecbd7031ca8e73f65daf4888ebb4a2a407b0d1d3a00d484b2faa855812"
+ },
+ {
+  "file": "logs/r3-base/launch.sh",
+  "source": "/scratch/cc-pr43/logs/r3-base/launch.sh",
+  "sha256": "3286ddf792417ee5307bf1dab90c0e34ddb24949e8a338a46cd6094edaec5187"
+ },
+ {
+  "file": "logs/r3-base/longprefill.json",
+  "source": "/scratch/cc-pr43/logs/r3-base/longprefill.json",
+  "sha256": "cf115e8b2d1c43e17c29d9c60a677d22fce66622710dc10006d71524bb049ec6"
+ },
+ {
+  "file": "logs/r3-base/longprefill.log",
+  "source": "/scratch/cc-pr43/logs/r3-base/longprefill.log",
+  "sha256": "c37181882666c260ad8e9aacd1e6374f88cfe22b93badf84eafc5b466506aa0c"
+ },
+ {
+  "file": "logs/r3-base/mem/epoch",
+  "source": "/scratch/cc-pr43/logs/r3-base/mem/epoch",
+  "sha256": "ffcede71cab4f4cba8e01102805286b53e7deaf00194acce148960f1d27c073c"
+ },
+ {
+  "file": "logs/r3-base/mem/mem-1670359.log",
+  "source": "/scratch/cc-pr43/logs/r3-base/mem/mem-1670359.log",
+  "sha256": "dbc9ea0314820fb7593428a39b15c800b3ae56debddb84044ff28a5c3129253b"
+ },
+ {
+  "file": "logs/r3-base/mem/mem-1670518.log",
+  "source": "/scratch/cc-pr43/logs/r3-base/mem/mem-1670518.log",
+  "sha256": "2700912040a1f51482f36aabb7c14dcd54ff81ab1ec37965145b11b0adff5481"
+ },
+ {
+  "file": "logs/r3-base/mem/mem-1670591.log",
+  "source": "/scratch/cc-pr43/logs/r3-base/mem/mem-1670591.log",
+  "sha256": "17aa6d505e475963787f4890a29aa8978f4deb9ccfc010fb811d7c8762629f3c"
+ },
+ {
+  "file": "logs/r3-base/mem/mem-1670729.log",
+  "source": "/scratch/cc-pr43/logs/r3-base/mem/mem-1670729.log",
+  "sha256": "b064b733655ac1546755a63eae4eae23f40df54719ce54965bbc9ce1fb35e18d"
+ },
+ {
+  "file": "logs/r3-base/mem/mem-1670869.log",
+  "source": "/scratch/cc-pr43/logs/r3-base/mem/mem-1670869.log",
+  "sha256": "32a4a1e630545f05a701ce7972a7ec8ff54afaf8b11a14fc410a7a461207d867"
+ },
+ {
+  "file": "logs/r3-base/mem/mem-1671010.log",
+  "source": "/scratch/cc-pr43/logs/r3-base/mem/mem-1671010.log",
+  "sha256": "dc9d093c02e2570eceb5c49a5d854882e00c0845ad9a546c1f47d131ee634741"
+ },
+ {
+  "file": "logs/r3-base/mem/mem-1671156.log",
+  "source": "/scratch/cc-pr43/logs/r3-base/mem/mem-1671156.log",
+  "sha256": "dc47251665ab41ecbfa5f11cdafbae635342215220e0dd2ce614d2d41266e6db"
+ },
+ {
+  "file": "logs/r3-base/mem/mem-1671299.log",
+  "source": "/scratch/cc-pr43/logs/r3-base/mem/mem-1671299.log",
+  "sha256": "37d5bd77706eb37e193ca85b4b8c63753ee11cdf5b2c54e659814f51c6af2b84"
+ },
+ {
+  "file": "logs/r3-base/mem/mem-1671450.log",
+  "source": "/scratch/cc-pr43/logs/r3-base/mem/mem-1671450.log",
+  "sha256": "545498b50351b68cd4453d0949dfa19967b8d699ec6db5c62371fae42c04a09e"
+ },
+ {
+  "file": "logs/r3-base/mem/mem-1671593.log",
+  "source": "/scratch/cc-pr43/logs/r3-base/mem/mem-1671593.log",
+  "sha256": "556cc7b4552d04860f44f4f3f16873a3b4775696972af5c9e1a0b3e5b7f4e7a3"
+ },
+ {
+  "file": "logs/r3-base/mem/mem-1673581.log",
+  "source": "/scratch/cc-pr43/logs/r3-base/mem/mem-1673581.log",
+  "sha256": "ac934da0ec5aa6ee3936da6bf804aac776fc5759c81b84eecd40926c6b9d5a12"
+ },
+ {
+  "file": "logs/r3-base/mem/mem-1673582.log",
+  "source": "/scratch/cc-pr43/logs/r3-base/mem/mem-1673582.log",
+  "sha256": "ea8bf20ffb1c081a28271c99df1fc7776382b45c86e322069b993fc4611d25a7"
+ },
+ {
+  "file": "logs/r3-base/mem/mem-1673583.log",
+  "source": "/scratch/cc-pr43/logs/r3-base/mem/mem-1673583.log",
+  "sha256": "d58365b9c1af1468dbe07d64ab894753386e3118482a212dccfca879e074e3e1"
+ },
+ {
+  "file": "logs/r3-base/mem/mem-1673584.log",
+  "source": "/scratch/cc-pr43/logs/r3-base/mem/mem-1673584.log",
+  "sha256": "5aaca9dd84f23a59aecd7b9b6394c5272e57f8095f569c9be04994881707999b"
+ },
+ {
+  "file": "logs/r3-base/mem/mem-1673601.log",
+  "source": "/scratch/cc-pr43/logs/r3-base/mem/mem-1673601.log",
+  "sha256": "2a342557db40070ae354ba3688d1f1fbef57c3d7a37a27e6dde0d4e9bee76e7d"
+ },
+ {
+  "file": "logs/r3-base/mem/mem-1673602.log",
+  "source": "/scratch/cc-pr43/logs/r3-base/mem/mem-1673602.log",
+  "sha256": "4c12444dba7cb64d36bb85aae6a331c89f6d7da53655dedff160d775a812c726"
+ },
+ {
+  "file": "logs/r3-base/mem/mem-1673603.log",
+  "source": "/scratch/cc-pr43/logs/r3-base/mem/mem-1673603.log",
+  "sha256": "4c12444dba7cb64d36bb85aae6a331c89f6d7da53655dedff160d775a812c726"
+ },
+ {
+  "file": "logs/r3-base/mem/mem-1673610.log",
+  "source": "/scratch/cc-pr43/logs/r3-base/mem/mem-1673610.log",
+  "sha256": "7a495861e303bd88e2fb3702ff1c37745c8e7a83dda53019138b9ddb8980f635"
+ },
+ {
+  "file": "logs/r3-base/perf-decode.jsonl",
+  "source": "/scratch/cc-pr43/logs/r3-base/perf-decode.jsonl",
+  "sha256": "1b8a21b53d2c8b7aef8031c2442e182a911f4d80d6c6af3a076d015ffce36138"
+ },
+ {
+  "file": "logs/r3-base/perf-decode.log",
+  "source": "/scratch/cc-pr43/logs/r3-base/perf-decode.log",
+  "sha256": "bd5905fa4524f3cd9e3cee6243fb92a08f8c83bdf63b8ecfcd10fe279de4d0af"
+ },
+ {
+  "file": "logs/r3-base/perf-serve.jsonl",
+  "source": "/scratch/cc-pr43/logs/r3-base/perf-serve.jsonl",
+  "sha256": "b5f1f38f5cb2d0a3af7829886b7a270d0f9f8a23805032bdfd10a061c26ee95c"
+ },
+ {
+  "file": "logs/r3-base/perf-serve.log",
+  "source": "/scratch/cc-pr43/logs/r3-base/perf-serve.log",
+  "sha256": "c3ca9e774befb095b92dd2fbaf3f9990219ffa97958f6235b56b6ae8e526e7b9"
+ },
+ {
+  "file": "logs/r3-base/perf.log",
+  "source": "/scratch/cc-pr43/logs/r3-base/perf.log",
+  "sha256": "bb9923328dae051ea5270f2d8a65753c4cda7332df1ce05a816874b8437d915e"
+ },
+ {
+  "file": "logs/r3-base/serve-start.log.gz",
+  "source": "/scratch/cc-pr43/logs/r3-base/serve-start.log",
+  "sha256": "5ca63fb7de05779ca9db24e694fe5777f04d3192504b121357185c1bc19c7322"
+ },
+ {
+  "file": "logs/r3-base/serve.log.gz",
+  "source": "/scratch/cc-pr43/logs/r3-base/serve.log",
+  "sha256": "7cb58239e9b9cb0d517febbf996a92695acf58e46794983e330273625f94c549"
+ },
+ {
+  "file": "logs/r3-clean/gpu-after-ready.txt",
+  "source": "/scratch/cc-pr43/logs/r3-clean/gpu-after-ready.txt",
+  "sha256": "a832bfbf41a3afb78088eb95d3168a2e605de3758dfa9c8b93d2f187d84bf892"
+ },
+ {
+  "file": "logs/r3-clean/gpu-at-end.txt",
+  "source": "/scratch/cc-pr43/logs/r3-clean/gpu-at-end.txt",
+  "sha256": "54349b823c24412c643a8106e5bc939abd76ca463e9cd3399b2a58839286fb63"
+ },
+ {
+  "file": "logs/r3-clean/job.status",
+  "source": "/scratch/cc-pr43/logs/r3-clean/job.status",
+  "sha256": "46467de9dfc176eca19ae54b2413945e66919a5a66ce0ecc9f1701000350a0d9"
+ },
+ {
+  "file": "logs/r3-clean/launch.sh",
+  "source": "/scratch/cc-pr43/logs/r3-clean/launch.sh",
+  "sha256": "0fa2a47d340a74108f66590ba73f2f05e952a915b25d2816924d5f568960d9bf"
+ },
+ {
+  "file": "logs/r3-clean/longprefill.json",
+  "source": "/scratch/cc-pr43/logs/r3-clean/longprefill.json",
+  "sha256": "720986273f6b0974d397d649ee8548206769410d337e7a4e83451a903cdcdb26"
+ },
+ {
+  "file": "logs/r3-clean/longprefill.log",
+  "source": "/scratch/cc-pr43/logs/r3-clean/longprefill.log",
+  "sha256": "a0ab74baffb7c2599acc8ec3cc717b02a16aa9ed512a80ea333b7a667867db13"
+ },
+ {
+  "file": "logs/r3-clean/mem/epoch",
+  "source": "/scratch/cc-pr43/logs/r3-clean/mem/epoch",
+  "sha256": "ffcede71cab4f4cba8e01102805286b53e7deaf00194acce148960f1d27c073c"
+ },
+ {
+  "file": "logs/r3-clean/mem/mem-1664962.log",
+  "source": "/scratch/cc-pr43/logs/r3-clean/mem/mem-1664962.log",
+  "sha256": "2afc107fd6d11b9c4e42327a06f9829c967f8a0a3828b0dac922b6c4d64c58a5"
+ },
+ {
+  "file": "logs/r3-clean/mem/mem-1665122.log",
+  "source": "/scratch/cc-pr43/logs/r3-clean/mem/mem-1665122.log",
+  "sha256": "5999b81a573abff0bd46eacf936473603711646d8c81199e4bf1710331264ef2"
+ },
+ {
+  "file": "logs/r3-clean/mem/mem-1665195.log",
+  "source": "/scratch/cc-pr43/logs/r3-clean/mem/mem-1665195.log",
+  "sha256": "a665ea56777d79746d5e2c6b01d78aa40a25ff26c684add2549d8e7044757cfa"
+ },
+ {
+  "file": "logs/r3-clean/mem/mem-1665333.log",
+  "source": "/scratch/cc-pr43/logs/r3-clean/mem/mem-1665333.log",
+  "sha256": "3a325bf696c650faabd1182c1d04d10bb965e587203ed2ccf21e0da098eac1da"
+ },
+ {
+  "file": "logs/r3-clean/mem/mem-1665475.log",
+  "source": "/scratch/cc-pr43/logs/r3-clean/mem/mem-1665475.log",
+  "sha256": "8c5726e785d121c96c310091f09560e1102c6c75c5a8490993996cc7c381a925"
+ },
+ {
+  "file": "logs/r3-clean/mem/mem-1665618.log",
+  "source": "/scratch/cc-pr43/logs/r3-clean/mem/mem-1665618.log",
+  "sha256": "520a6c0b5c43dd5ca55ab293b131c716396cf1ce07b4f84ccc2e40035952566b"
+ },
+ {
+  "file": "logs/r3-clean/mem/mem-1665762.log",
+  "source": "/scratch/cc-pr43/logs/r3-clean/mem/mem-1665762.log",
+  "sha256": "5061c6039207cac42ecc08d25b861764295b1b430b06c64bb1fe6ce88b4eaa41"
+ },
+ {
+  "file": "logs/r3-clean/mem/mem-1665905.log",
+  "source": "/scratch/cc-pr43/logs/r3-clean/mem/mem-1665905.log",
+  "sha256": "c47ae7e49bf54438d5f6dc7379ff2cb5b8ee6241100579c4bdd1cc26f3101cbe"
+ },
+ {
+  "file": "logs/r3-clean/mem/mem-1666057.log",
+  "source": "/scratch/cc-pr43/logs/r3-clean/mem/mem-1666057.log",
+  "sha256": "797ec305845006aab0112842c6d4d6fe16cca588358a8a3d9705b70a99b67449"
+ },
+ {
+  "file": "logs/r3-clean/mem/mem-1666198.log",
+  "source": "/scratch/cc-pr43/logs/r3-clean/mem/mem-1666198.log",
+  "sha256": "ca8bc7ce5deab93862c09dc331cabb1dc8bb270e13c58991070485a75c55cf87"
+ },
+ {
+  "file": "logs/r3-clean/mem/mem-1668187.log",
+  "source": "/scratch/cc-pr43/logs/r3-clean/mem/mem-1668187.log",
+  "sha256": "86e8e30181659b00ad0c6f21af068ca9942b3e458bd9d2b21248666f5dc94b86"
+ },
+ {
+  "file": "logs/r3-clean/mem/mem-1668188.log",
+  "source": "/scratch/cc-pr43/logs/r3-clean/mem/mem-1668188.log",
+  "sha256": "cfa7fccd2fbd7f9a47a06e122c3049d956823aa2e36edffe6177663f6c8160eb"
+ },
+ {
+  "file": "logs/r3-clean/mem/mem-1668189.log",
+  "source": "/scratch/cc-pr43/logs/r3-clean/mem/mem-1668189.log",
+  "sha256": "7e8aef21ba4163b49ae5d35d6fede2713581bc4b8f9be9e9db7299d7f6b95ff2"
+ },
+ {
+  "file": "logs/r3-clean/mem/mem-1668190.log",
+  "source": "/scratch/cc-pr43/logs/r3-clean/mem/mem-1668190.log",
+  "sha256": "7e89be30e90ea4c8e67dbce36cf2662584b1338ba48148c485a6ce3882eddacd"
+ },
+ {
+  "file": "logs/r3-clean/mem/mem-1668199.log",
+  "source": "/scratch/cc-pr43/logs/r3-clean/mem/mem-1668199.log",
+  "sha256": "36d48beccc99bca828c9235c9853303e9a48e9784fc135d97e4618e376649de1"
+ },
+ {
+  "file": "logs/r3-clean/mem/mem-1668202.log",
+  "source": "/scratch/cc-pr43/logs/r3-clean/mem/mem-1668202.log",
+  "sha256": "24f60c864ce11ed9a9bba8c7e851b95f087e4c9b026b74f72bec8e08ec064a04"
+ },
+ {
+  "file": "logs/r3-clean/mem/mem-1668203.log",
+  "source": "/scratch/cc-pr43/logs/r3-clean/mem/mem-1668203.log",
+  "sha256": "7f164cdffd9b08ffb34fd663d56ca2d9cc6a42bb396bd2def15cc50773a5fa53"
+ },
+ {
+  "file": "logs/r3-clean/mem/mem-1668218.log",
+  "source": "/scratch/cc-pr43/logs/r3-clean/mem/mem-1668218.log",
+  "sha256": "14e56cd9a7e028c491c4d7ebe87e048e3bfc3db081dd9cc6ad0e800cc0b5a874"
+ },
+ {
+  "file": "logs/r3-clean/perf-decode.jsonl",
+  "source": "/scratch/cc-pr43/logs/r3-clean/perf-decode.jsonl",
+  "sha256": "be4a201dd02ce68a1087d43e5e846d53d5e33444326daab65b6c96bb68ea20c1"
+ },
+ {
+  "file": "logs/r3-clean/perf-decode.log",
+  "source": "/scratch/cc-pr43/logs/r3-clean/perf-decode.log",
+  "sha256": "c8ecf93c914191f35077615c4ae2ccb4b1545740b063827e85d0f874a3c38d0a"
+ },
+ {
+  "file": "logs/r3-clean/perf-serve.jsonl",
+  "source": "/scratch/cc-pr43/logs/r3-clean/perf-serve.jsonl",
+  "sha256": "de7bd28cbfc05073ba70a5718abc3b396f57efcac741c2ab5ed2c7e181d28ee6"
+ },
+ {
+  "file": "logs/r3-clean/perf-serve.log",
+  "source": "/scratch/cc-pr43/logs/r3-clean/perf-serve.log",
+  "sha256": "98160d407b8dcee65568428d24cd67298e53d06b9cf6769d3e1ef66427be6fad"
+ },
+ {
+  "file": "logs/r3-clean/perf.log",
+  "source": "/scratch/cc-pr43/logs/r3-clean/perf.log",
+  "sha256": "74b61a5a10ef74cfdb15dbbd55fe830478a73441ff4feea49b70aeb1c48b6c9e"
+ },
+ {
+  "file": "logs/r3-clean/serve-start.log.gz",
+  "source": "/scratch/cc-pr43/logs/r3-clean/serve-start.log",
+  "sha256": "62310a30b2c073dc5d0c86bb0c16060f856a84ff8250ac3ce9f45eb265e1590f"
+ },
+ {
+  "file": "logs/r3-clean/serve.log.gz",
+  "source": "/scratch/cc-pr43/logs/r3-clean/serve.log",
+  "sha256": "ce598c2b1cd3cc86b76c3837780b83622d92ef2ed644ef4e848da8c647c52308"
+ },
+ {
+  "file": "logs/r3-full/gpu-after-ready.txt",
+  "source": "/scratch/cc-pr43/logs/r3-full/gpu-after-ready.txt",
+  "sha256": "653a498c153f4eb9995634f6090fccda1a13ef4558885517e3edf1201e6d062d"
+ },
+ {
+  "file": "logs/r3-full/gpu-at-end.txt",
+  "source": "/scratch/cc-pr43/logs/r3-full/gpu-at-end.txt",
+  "sha256": "c81e16c1f7e69bcc92a86390f0530ddad47ea60df7288bf8920bb0d85cda1312"
+ },
+ {
+  "file": "logs/r3-full/job.status",
+  "source": "/scratch/cc-pr43/logs/r3-full/job.status",
+  "sha256": "8945130aaa4bd368c813bf7eb186708daf78530906094d1de0f35ce95c123acf"
+ },
+ {
+  "file": "logs/r3-full/launch.sh",
+  "source": "/scratch/cc-pr43/logs/r3-full/launch.sh",
+  "sha256": "58131181166bb6daaf3c8730bf948e7d79a3418cc3ef85bff8a44d673888f37a"
+ },
+ {
+  "file": "logs/r3-full/longprefill.json",
+  "source": "/scratch/cc-pr43/logs/r3-full/longprefill.json",
+  "sha256": "84a2d69aac4beab446e25f5046bf204b788c28bc0f119b9f3fdcab4fad0c6045"
+ },
+ {
+  "file": "logs/r3-full/longprefill.log",
+  "source": "/scratch/cc-pr43/logs/r3-full/longprefill.log",
+  "sha256": "01f14c0f3df8ff00cb39bf6eed0cd4b3991362520ec7b827e2c0929ad4bef7fc"
+ },
+ {
+  "file": "logs/r3-full/mem/epoch",
+  "source": "/scratch/cc-pr43/logs/r3-full/mem/epoch",
+  "sha256": "ffcede71cab4f4cba8e01102805286b53e7deaf00194acce148960f1d27c073c"
+ },
+ {
+  "file": "logs/r3-full/mem/mem-1659427.log",
+  "source": "/scratch/cc-pr43/logs/r3-full/mem/mem-1659427.log",
+  "sha256": "a012f46779651e6c965c008f9664d93c8e6e969f862261a7ad31cdc3feafc9e3"
+ },
+ {
+  "file": "logs/r3-full/mem/mem-1659585.log",
+  "source": "/scratch/cc-pr43/logs/r3-full/mem/mem-1659585.log",
+  "sha256": "6649c5f76a02930ac77bac4e5f5b9da1a5e114ad4811020d6dbfcd6c5154e840"
+ },
+ {
+  "file": "logs/r3-full/mem/mem-1659658.log",
+  "source": "/scratch/cc-pr43/logs/r3-full/mem/mem-1659658.log",
+  "sha256": "b6aaa914a097404118da5e1d37884e14aab5d3bf00f34026056846e5cba7eedb"
+ },
+ {
+  "file": "logs/r3-full/mem/mem-1659796.log",
+  "source": "/scratch/cc-pr43/logs/r3-full/mem/mem-1659796.log",
+  "sha256": "1997ba37181b1396862d13e1a489f0445d57c8522bae771bd81aaa3e21265932"
+ },
+ {
+  "file": "logs/r3-full/mem/mem-1659936.log",
+  "source": "/scratch/cc-pr43/logs/r3-full/mem/mem-1659936.log",
+  "sha256": "db0bc162e31b0b7fadce28dce2f64794d57d202dec90a648720f5f81a5d93d59"
+ },
+ {
+  "file": "logs/r3-full/mem/mem-1660079.log",
+  "source": "/scratch/cc-pr43/logs/r3-full/mem/mem-1660079.log",
+  "sha256": "e95bf86ae292c9e2175788d70d90fc00b25340c33cfcdaaa55165e2b4471d0b9"
+ },
+ {
+  "file": "logs/r3-full/mem/mem-1660223.log",
+  "source": "/scratch/cc-pr43/logs/r3-full/mem/mem-1660223.log",
+  "sha256": "9cd465113effe63678cea00bb390627348d6e652875728841764aa49c414bef0"
+ },
+ {
+  "file": "logs/r3-full/mem/mem-1660366.log",
+  "source": "/scratch/cc-pr43/logs/r3-full/mem/mem-1660366.log",
+  "sha256": "9118a03ec371e08a5313293eea2e83effff4108288d520b89002097f460c7bef"
+ },
+ {
+  "file": "logs/r3-full/mem/mem-1660509.log",
+  "source": "/scratch/cc-pr43/logs/r3-full/mem/mem-1660509.log",
+  "sha256": "6c2cf9f0033511782e1c6ecc70ee32711853ddb05439b74d5008532382d696fa"
+ },
+ {
+  "file": "logs/r3-full/mem/mem-1660650.log",
+  "source": "/scratch/cc-pr43/logs/r3-full/mem/mem-1660650.log",
+  "sha256": "ac7b3a2dea7fc78ff9d45c8cdbb0b4ffbb16d216faa196fde88100dc21dab0da"
+ },
+ {
+  "file": "logs/r3-full/mem/mem-1662648.log",
+  "source": "/scratch/cc-pr43/logs/r3-full/mem/mem-1662648.log",
+  "sha256": "7ebf0528cbc7ce080ebf834eb90681ffbb64b32b7a4f6f69e355fe6d472b1a36"
+ },
+ {
+  "file": "logs/r3-full/mem/mem-1662649.log",
+  "source": "/scratch/cc-pr43/logs/r3-full/mem/mem-1662649.log",
+  "sha256": "b4f0731d81733435209e35b6fe6aacb13db8ec9182ddf21d7758c5be17abb8f2"
+ },
+ {
+  "file": "logs/r3-full/mem/mem-1662650.log",
+  "source": "/scratch/cc-pr43/logs/r3-full/mem/mem-1662650.log",
+  "sha256": "020155f5f820ecf23210eb354dcb36346eb6aac6ce8b411d541b6281d78bfc75"
+ },
+ {
+  "file": "logs/r3-full/mem/mem-1662651.log",
+  "source": "/scratch/cc-pr43/logs/r3-full/mem/mem-1662651.log",
+  "sha256": "67d0cd8b86c5a39f82d1224a72c01d6b8e03ef2fbe5519f21b9483cefc75cb0d"
+ },
+ {
+  "file": "logs/r3-full/mem/mem-1662660.log",
+  "source": "/scratch/cc-pr43/logs/r3-full/mem/mem-1662660.log",
+  "sha256": "0504de8503ee01f523e0edcb0a8494fcfdc37f473a513eba4cfb52e9f611b6c3"
+ },
+ {
+  "file": "logs/r3-full/mem/mem-1662661.log",
+  "source": "/scratch/cc-pr43/logs/r3-full/mem/mem-1662661.log",
+  "sha256": "3bea5c3666d6e0306bcdbf0bf1fe3095663da64d2163901e06d877ac0ca87605"
+ },
+ {
+  "file": "logs/r3-full/mem/mem-1662674.log",
+  "source": "/scratch/cc-pr43/logs/r3-full/mem/mem-1662674.log",
+  "sha256": "594416ed95fdf1551b26c8a3bf27c7c3eb942cc848fd6a8a162719d5f4e86942"
+ },
+ {
+  "file": "logs/r3-full/mem/mem-1662675.log",
+  "source": "/scratch/cc-pr43/logs/r3-full/mem/mem-1662675.log",
+  "sha256": "7ebf0528cbc7ce080ebf834eb90681ffbb64b32b7a4f6f69e355fe6d472b1a36"
+ },
+ {
+  "file": "logs/r3-full/perf-decode.jsonl",
+  "source": "/scratch/cc-pr43/logs/r3-full/perf-decode.jsonl",
+  "sha256": "1b17e5fd205437ff2786a93a536ab6a7d2132af2c8d2c6888533db5214139c10"
+ },
+ {
+  "file": "logs/r3-full/perf-decode.log",
+  "source": "/scratch/cc-pr43/logs/r3-full/perf-decode.log",
+  "sha256": "0457d1370453a295d880e30e114e461bd4fc7448ca74debe043c026f0be0e4b7"
+ },
+ {
+  "file": "logs/r3-full/perf-serve.jsonl",
+  "source": "/scratch/cc-pr43/logs/r3-full/perf-serve.jsonl",
+  "sha256": "8ec8e5498b3f70352e389bc1ca301bfaffd139d82497b778a46d3e764b4e4f84"
+ },
+ {
+  "file": "logs/r3-full/perf-serve.log",
+  "source": "/scratch/cc-pr43/logs/r3-full/perf-serve.log",
+  "sha256": "d6749b91552616eeba96996ccb0aacc5f230a3c4341328331cdc4548990298cb"
+ },
+ {
+  "file": "logs/r3-full/perf.log",
+  "source": "/scratch/cc-pr43/logs/r3-full/perf.log",
+  "sha256": "48cd7de3e5da8c588dce9574c18eed4c1858ab4d9b21ed3deee2dac2f5db7078"
+ },
+ {
+  "file": "logs/r3-full/serve-start.log.gz",
+  "source": "/scratch/cc-pr43/logs/r3-full/serve-start.log",
+  "sha256": "be0040f6fc0d0392856fb64dd8ae36416b958de3f373e69bc9ca24e8dbc411d5"
+ },
+ {
+  "file": "logs/r3-full/serve.log.gz",
+  "source": "/scratch/cc-pr43/logs/r3-full/serve.log",
+  "sha256": "72ce12e2d4090968cc8792ba8a8ec92b9629f2ae42e53d76789d4c7b8d2ce37f"
+ },
+ {
+  "file": "logs/r4-base/gpu-after-ready.txt",
+  "source": "/scratch/cc-pr43/logs/r4-base/gpu-after-ready.txt",
+  "sha256": "0fc333134c366dc425b31af5f103b92a86dfbbddc80d82427a9b9ccf5bc30993"
+ },
+ {
+  "file": "logs/r4-base/gpu-at-end.txt",
+  "source": "/scratch/cc-pr43/logs/r4-base/gpu-at-end.txt",
+  "sha256": "e6237b10fa1673dbf4ae5a7dc1485e89c32b4d63ee1d8262ed4c4628e0628e44"
+ },
+ {
+  "file": "logs/r4-base/job.status",
+  "source": "/scratch/cc-pr43/logs/r4-base/job.status",
+  "sha256": "c486b7f661cb5612f77fa298cc99d57e0ddc03cb9ac37ccc22c4e55f5c1b0575"
+ },
+ {
+  "file": "logs/r4-base/launch.sh",
+  "source": "/scratch/cc-pr43/logs/r4-base/launch.sh",
+  "sha256": "a03aa026dcd4d9db0a27ee917d9e3a72d10c172c11e2e0966c24a345bc60a70c"
+ },
+ {
+  "file": "logs/r4-base/longprefill.json",
+  "source": "/scratch/cc-pr43/logs/r4-base/longprefill.json",
+  "sha256": "49f0e74e4d28f76e54921dfcaba6ac03a5b0ec9d0161da4102f5f528ef43c6fe"
+ },
+ {
+  "file": "logs/r4-base/longprefill.log",
+  "source": "/scratch/cc-pr43/logs/r4-base/longprefill.log",
+  "sha256": "6ff41e3b4118136178eb5e882d408b94375bd587dc22505d8b41b39c985692c9"
+ },
+ {
+  "file": "logs/r4-base/mem/epoch",
+  "source": "/scratch/cc-pr43/logs/r4-base/mem/epoch",
+  "sha256": "ffcede71cab4f4cba8e01102805286b53e7deaf00194acce148960f1d27c073c"
+ },
+ {
+  "file": "logs/r4-base/mem/mem-1696502.log",
+  "source": "/scratch/cc-pr43/logs/r4-base/mem/mem-1696502.log",
+  "sha256": "5dfff56a505ca85556c829600061736b5c2e46ea4d32eac60b7451ff849f1319"
+ },
+ {
+  "file": "logs/r4-base/mem/mem-1696652.log",
+  "source": "/scratch/cc-pr43/logs/r4-base/mem/mem-1696652.log",
+  "sha256": "cc292d7945f3718a2bbe42d02510d40870c151d654588ec4f41d491417e3da98"
+ },
+ {
+  "file": "logs/r4-base/mem/mem-1696725.log",
+  "source": "/scratch/cc-pr43/logs/r4-base/mem/mem-1696725.log",
+  "sha256": "c6a20805bf9225262ef99fdfc8dcefcf878a004e96678a24057a3110e5d43b6c"
+ },
+ {
+  "file": "logs/r4-base/mem/mem-1696864.log",
+  "source": "/scratch/cc-pr43/logs/r4-base/mem/mem-1696864.log",
+  "sha256": "a240b630af46b1b244ef2ec84b0162d26ca46d6fca629ebf9ffe2ab457a897bf"
+ },
+ {
+  "file": "logs/r4-base/mem/mem-1697003.log",
+  "source": "/scratch/cc-pr43/logs/r4-base/mem/mem-1697003.log",
+  "sha256": "9f3d969848337169e856a6e470c3301c853d5be26cf93b2aee8c698141cd60cb"
+ },
+ {
+  "file": "logs/r4-base/mem/mem-1697146.log",
+  "source": "/scratch/cc-pr43/logs/r4-base/mem/mem-1697146.log",
+  "sha256": "9604d82cafe8a5c610053536d5a40d608042e1aa841f823d3ce1a35b18a02720"
+ },
+ {
+  "file": "logs/r4-base/mem/mem-1697301.log",
+  "source": "/scratch/cc-pr43/logs/r4-base/mem/mem-1697301.log",
+  "sha256": "01ceb3498f02a9c0bdead490c3a02e2b6ede5b67fbcc0846025043c5fa20f308"
+ },
+ {
+  "file": "logs/r4-base/mem/mem-1697442.log",
+  "source": "/scratch/cc-pr43/logs/r4-base/mem/mem-1697442.log",
+  "sha256": "7222fb083f39b9a2cc82e75dd35cf17c4800551e191a227ea0daa117b9481649"
+ },
+ {
+  "file": "logs/r4-base/mem/mem-1697585.log",
+  "source": "/scratch/cc-pr43/logs/r4-base/mem/mem-1697585.log",
+  "sha256": "7d581f819185dd2cbac6bf1ea1145bf96a238236485b6b377bab17dab2143827"
+ },
+ {
+  "file": "logs/r4-base/mem/mem-1697726.log",
+  "source": "/scratch/cc-pr43/logs/r4-base/mem/mem-1697726.log",
+  "sha256": "19bc2847735cd27563a8489e3531238f37668b3a5e9acb0be8e2f0803e7d4c68"
+ },
+ {
+  "file": "logs/r4-base/mem/mem-1699722.log",
+  "source": "/scratch/cc-pr43/logs/r4-base/mem/mem-1699722.log",
+  "sha256": "a3acb6220a0505c2360661f636f3ece8be71833eee3ffa71c50d204299619be3"
+ },
+ {
+  "file": "logs/r4-base/mem/mem-1699723.log",
+  "source": "/scratch/cc-pr43/logs/r4-base/mem/mem-1699723.log",
+  "sha256": "f51519a9d8d27cf1e3581ef75489168011b387d54199c4f0dcbe8733aefc7e04"
+ },
+ {
+  "file": "logs/r4-base/mem/mem-1699724.log",
+  "source": "/scratch/cc-pr43/logs/r4-base/mem/mem-1699724.log",
+  "sha256": "7ee12ef38586922685989766fdec99fb1eca89fa875a43e2e84f765d605bc522"
+ },
+ {
+  "file": "logs/r4-base/mem/mem-1699725.log",
+  "source": "/scratch/cc-pr43/logs/r4-base/mem/mem-1699725.log",
+  "sha256": "6078f9bcf11b34d9bdc67f79f2470e88e39b314dc8d1316548a9b563e07657fc"
+ },
+ {
+  "file": "logs/r4-base/mem/mem-1699738.log",
+  "source": "/scratch/cc-pr43/logs/r4-base/mem/mem-1699738.log",
+  "sha256": "6078f9bcf11b34d9bdc67f79f2470e88e39b314dc8d1316548a9b563e07657fc"
+ },
+ {
+  "file": "logs/r4-base/mem/mem-1699739.log",
+  "source": "/scratch/cc-pr43/logs/r4-base/mem/mem-1699739.log",
+  "sha256": "df0feab9b67b32a7be97701b35539e5cb9b2682ffdc8c926780b8e15570ef760"
+ },
+ {
+  "file": "logs/r4-base/mem/mem-1699740.log",
+  "source": "/scratch/cc-pr43/logs/r4-base/mem/mem-1699740.log",
+  "sha256": "86cf30e0513247932869a1cd094833cf732bccaeb145f7223668b76cde3b15cc"
+ },
+ {
+  "file": "logs/r4-base/mem/mem-1699741.log",
+  "source": "/scratch/cc-pr43/logs/r4-base/mem/mem-1699741.log",
+  "sha256": "908fdc9578f4f3cf478eac22c98bbf2221418c1c44f3733bba2fac0f52c223ba"
+ },
+ {
+  "file": "logs/r4-base/perf-decode.jsonl",
+  "source": "/scratch/cc-pr43/logs/r4-base/perf-decode.jsonl",
+  "sha256": "17a54c4c77b383179583d8ab22fc6381d2e9a792cfc428700122bca3694ed7c7"
+ },
+ {
+  "file": "logs/r4-base/perf-decode.log",
+  "source": "/scratch/cc-pr43/logs/r4-base/perf-decode.log",
+  "sha256": "2cb6bfd8f7e0f93b653ab8742e55adef127dcc2f8c335d0c174bb9ffddfc02fc"
+ },
+ {
+  "file": "logs/r4-base/perf-serve.jsonl",
+  "source": "/scratch/cc-pr43/logs/r4-base/perf-serve.jsonl",
+  "sha256": "f275f32268f206f73f05ed1333eea71b62c39e167311f48f3dc4f64dcc1e0215"
+ },
+ {
+  "file": "logs/r4-base/perf-serve.log",
+  "source": "/scratch/cc-pr43/logs/r4-base/perf-serve.log",
+  "sha256": "bba89b1d50ebca9a10fa106c5553ef9488c150ebc16775baea75d20bc7fb3d89"
+ },
+ {
+  "file": "logs/r4-base/perf.log",
+  "source": "/scratch/cc-pr43/logs/r4-base/perf.log",
+  "sha256": "49849b8efa1585a633d76d3f4347baa5dd3df114e7c223d9fec5d031ef5833d3"
+ },
+ {
+  "file": "logs/r4-base/serve-start.log.gz",
+  "source": "/scratch/cc-pr43/logs/r4-base/serve-start.log",
+  "sha256": "708dcadf5e3a31c4af94be48fd056d522bca0f878b770cba0da126be0b5082b4"
+ },
+ {
+  "file": "logs/r4-base/serve.log.gz",
+  "source": "/scratch/cc-pr43/logs/r4-base/serve.log",
+  "sha256": "53719b06f448a7fff1266094926a95925321b1eb7caf79654d02779f1d24fd9e"
+ },
+ {
+  "file": "logs/r4-clean/gpu-after-ready.txt",
+  "source": "/scratch/cc-pr43/logs/r4-clean/gpu-after-ready.txt",
+  "sha256": "ed6c4dc3d7dcccf84db5bdfc728a3b2ccd03be89bb68fa003fa5220239802861"
+ },
+ {
+  "file": "logs/r4-clean/gpu-at-end.txt",
+  "source": "/scratch/cc-pr43/logs/r4-clean/gpu-at-end.txt",
+  "sha256": "567d1b19007dff1fa30d105ccc45fb42f04b5f9e0747aa575623687760eed42b"
+ },
+ {
+  "file": "logs/r4-clean/job.status",
+  "source": "/scratch/cc-pr43/logs/r4-clean/job.status",
+  "sha256": "b8ce92b446cb403fe763152edda4a1012559fa952ef6dd09af6514bebb9e6253"
+ },
+ {
+  "file": "logs/r4-clean/launch.sh",
+  "source": "/scratch/cc-pr43/logs/r4-clean/launch.sh",
+  "sha256": "d9ccf44016e096e60ce0141fde8bb7d91f805fbed0454087980254ca727538e3"
+ },
+ {
+  "file": "logs/r4-clean/longprefill.json",
+  "source": "/scratch/cc-pr43/logs/r4-clean/longprefill.json",
+  "sha256": "4e2355f11a9511b93a3a8ef13ecab3e282e485d02117e5af8cac4beb536207b3"
+ },
+ {
+  "file": "logs/r4-clean/longprefill.log",
+  "source": "/scratch/cc-pr43/logs/r4-clean/longprefill.log",
+  "sha256": "abbaef336f0b7a11e5714f050baf7ec10f95b947f4e60dfcd697a4196f9a6c3d"
+ },
+ {
+  "file": "logs/r4-clean/mem/epoch",
+  "source": "/scratch/cc-pr43/logs/r4-clean/mem/epoch",
+  "sha256": "ffcede71cab4f4cba8e01102805286b53e7deaf00194acce148960f1d27c073c"
+ },
+ {
+  "file": "logs/r4-clean/mem/mem-1707448.log",
+  "source": "/scratch/cc-pr43/logs/r4-clean/mem/mem-1707448.log",
+  "sha256": "ee8ccf7e54e41383947cbdc6a5029eaa75e06e22371289af320a06405e8ea517"
+ },
+ {
+  "file": "logs/r4-clean/mem/mem-1707598.log",
+  "source": "/scratch/cc-pr43/logs/r4-clean/mem/mem-1707598.log",
+  "sha256": "26a4785502e1791ffbcdb2717f91a7f27770362d184230e6dc1d1bd9bbd76abf"
+ },
+ {
+  "file": "logs/r4-clean/mem/mem-1707671.log",
+  "source": "/scratch/cc-pr43/logs/r4-clean/mem/mem-1707671.log",
+  "sha256": "0fe0b0671b658a0322a23c3e461e7932fa8cf9a4a56a8f7852d431b839630e53"
+ },
+ {
+  "file": "logs/r4-clean/mem/mem-1707810.log",
+  "source": "/scratch/cc-pr43/logs/r4-clean/mem/mem-1707810.log",
+  "sha256": "74c175cdc4e6e0b3bff12b0bda1ddc22a2504bef74dc4e694d1fd54a4f2b7ead"
+ },
+ {
+  "file": "logs/r4-clean/mem/mem-1707947.log",
+  "source": "/scratch/cc-pr43/logs/r4-clean/mem/mem-1707947.log",
+  "sha256": "093f34f85ac97c07ddf722a9fa3c204b998c312f78fb76a4c9c6412eff0238c5"
+ },
+ {
+  "file": "logs/r4-clean/mem/mem-1708099.log",
+  "source": "/scratch/cc-pr43/logs/r4-clean/mem/mem-1708099.log",
+  "sha256": "1f3ebea9640dccd667c7006f0e16facd007496be92d2029d205b498b777c2e2e"
+ },
+ {
+  "file": "logs/r4-clean/mem/mem-1708245.log",
+  "source": "/scratch/cc-pr43/logs/r4-clean/mem/mem-1708245.log",
+  "sha256": "d3acba5f2613c1116e34542c08c382bbfd9a60955c169e8fe52f2a8c7f82c23d"
+ },
+ {
+  "file": "logs/r4-clean/mem/mem-1708388.log",
+  "source": "/scratch/cc-pr43/logs/r4-clean/mem/mem-1708388.log",
+  "sha256": "d3f9eb61413edfaea189efb350b4016b02014e37928689c400628a500c8b66b0"
+ },
+ {
+  "file": "logs/r4-clean/mem/mem-1708533.log",
+  "source": "/scratch/cc-pr43/logs/r4-clean/mem/mem-1708533.log",
+  "sha256": "0bcd5f66c998d74b67086d7f640b995658b644e57ec5b30b7aa00bd5fb5ec417"
+ },
+ {
+  "file": "logs/r4-clean/mem/mem-1708672.log",
+  "source": "/scratch/cc-pr43/logs/r4-clean/mem/mem-1708672.log",
+  "sha256": "271048aefaa33052b1f6cc6db848eab2ad9599ebfa5ef345b6d211f59e664091"
+ },
+ {
+  "file": "logs/r4-clean/mem/mem-1710670.log",
+  "source": "/scratch/cc-pr43/logs/r4-clean/mem/mem-1710670.log",
+  "sha256": "2a9c1984bc8aae727c189b42a0cc7b86261b6699140a82c6ada62bd7a01fe5a5"
+ },
+ {
+  "file": "logs/r4-clean/mem/mem-1710671.log",
+  "source": "/scratch/cc-pr43/logs/r4-clean/mem/mem-1710671.log",
+  "sha256": "408caae14ae795fded02fce7a09e0857b9b2aeaf37e978f96093679fe8345e9d"
+ },
+ {
+  "file": "logs/r4-clean/mem/mem-1710672.log",
+  "source": "/scratch/cc-pr43/logs/r4-clean/mem/mem-1710672.log",
+  "sha256": "408caae14ae795fded02fce7a09e0857b9b2aeaf37e978f96093679fe8345e9d"
+ },
+ {
+  "file": "logs/r4-clean/mem/mem-1710673.log",
+  "source": "/scratch/cc-pr43/logs/r4-clean/mem/mem-1710673.log",
+  "sha256": "c97b7492ec202776ef6d9b11cfc8b4aba2552d79a66a7fb951741882d02021a8"
+ },
+ {
+  "file": "logs/r4-clean/mem/mem-1710680.log",
+  "source": "/scratch/cc-pr43/logs/r4-clean/mem/mem-1710680.log",
+  "sha256": "ea6334f95c399397053fa25203902492c48215cdcf6cc55cfc6d0a8696cfe1b8"
+ },
+ {
+  "file": "logs/r4-clean/mem/mem-1710683.log",
+  "source": "/scratch/cc-pr43/logs/r4-clean/mem/mem-1710683.log",
+  "sha256": "495026241e1a2a1340c07438bd25e7b9225372ca673843d67c35b305e996c47f"
+ },
+ {
+  "file": "logs/r4-clean/mem/mem-1710700.log",
+  "source": "/scratch/cc-pr43/logs/r4-clean/mem/mem-1710700.log",
+  "sha256": "da306a4a603028dfd30b89110fc2fe44dcb56ead0f515220f0c8179c916ff822"
+ },
+ {
+  "file": "logs/r4-clean/mem/mem-1710701.log",
+  "source": "/scratch/cc-pr43/logs/r4-clean/mem/mem-1710701.log",
+  "sha256": "8d2e1074fcb26e35c33853dfc51841345ce4a4f6b9b9ba50ca6e7151af5da7e9"
+ },
+ {
+  "file": "logs/r4-clean/perf-decode.jsonl",
+  "source": "/scratch/cc-pr43/logs/r4-clean/perf-decode.jsonl",
+  "sha256": "10b24e06080aaa89085e8fb9fbef985efbed61483a3db8b48e7b06b6c7e04275"
+ },
+ {
+  "file": "logs/r4-clean/perf-decode.log",
+  "source": "/scratch/cc-pr43/logs/r4-clean/perf-decode.log",
+  "sha256": "f21d43400ab3a94a91648a84ded691957b7785c47f882b7e2327ec8ab3b9bc08"
+ },
+ {
+  "file": "logs/r4-clean/perf-serve.jsonl",
+  "source": "/scratch/cc-pr43/logs/r4-clean/perf-serve.jsonl",
+  "sha256": "d2ccef23324589e9768e3afd007310a6d8f9e4e4bab8488c52549d4d270f6b4f"
+ },
+ {
+  "file": "logs/r4-clean/perf-serve.log",
+  "source": "/scratch/cc-pr43/logs/r4-clean/perf-serve.log",
+  "sha256": "c7cc5684f6bbd92bed653d837799f2c856bd7dbd2071eccdd8dde32df5f25c66"
+ },
+ {
+  "file": "logs/r4-clean/perf.log",
+  "source": "/scratch/cc-pr43/logs/r4-clean/perf.log",
+  "sha256": "b5f0c9e95f01d25104ec959421cccc6a1f78090d1a5a05c6d0255dae9772d820"
+ },
+ {
+  "file": "logs/r4-clean/serve-start.log.gz",
+  "source": "/scratch/cc-pr43/logs/r4-clean/serve-start.log",
+  "sha256": "09a2c1a3dcd3f3a83697b1f5f99fc9e254218b8ab3b5e25bee076d0aa43cf07b"
+ },
+ {
+  "file": "logs/r4-clean/serve.log.gz",
+  "source": "/scratch/cc-pr43/logs/r4-clean/serve.log",
+  "sha256": "52cabd1ff833d11f68d9dc11311673ea45ea808b5e811b8dfe16ac33682899a8"
+ },
+ {
+  "file": "logs/r4-full/gpu-after-ready.txt",
+  "source": "/scratch/cc-pr43/logs/r4-full/gpu-after-ready.txt",
+  "sha256": "a573dc4bd0a6f8575bc6e54fffcc49816d5bc7d36d5ba79d88c3247b4db0ec58"
+ },
+ {
+  "file": "logs/r4-full/gpu-at-end.txt",
+  "source": "/scratch/cc-pr43/logs/r4-full/gpu-at-end.txt",
+  "sha256": "e11abe18e8d761f9c5e9036a4281a569484597a22925167c2ded33cee9c4d5eb"
+ },
+ {
+  "file": "logs/r4-full/job.status",
+  "source": "/scratch/cc-pr43/logs/r4-full/job.status",
+  "sha256": "adf89cb221f5def4cfd9c969c70e13b25bb857b8436cb1bff42b02827cc77175"
+ },
+ {
+  "file": "logs/r4-full/launch.sh",
+  "source": "/scratch/cc-pr43/logs/r4-full/launch.sh",
+  "sha256": "2867a76fa4709aa9311937ef0fead7fe167fd034a577602425bf40b8fe1e3b9b"
+ },
+ {
+  "file": "logs/r4-full/longprefill.json",
+  "source": "/scratch/cc-pr43/logs/r4-full/longprefill.json",
+  "sha256": "18e3fe5594322f4c6654128bafe79db8e58f3ad9768f9e5f7fcdbcc3778d6e71"
+ },
+ {
+  "file": "logs/r4-full/longprefill.log",
+  "source": "/scratch/cc-pr43/logs/r4-full/longprefill.log",
+  "sha256": "3e621e1f6c22e077cb1c138f4a36ecc00e2497d61f63a262a349ac52bafabc6d"
+ },
+ {
+  "file": "logs/r4-full/mem/epoch",
+  "source": "/scratch/cc-pr43/logs/r4-full/mem/epoch",
+  "sha256": "ffcede71cab4f4cba8e01102805286b53e7deaf00194acce148960f1d27c073c"
+ },
+ {
+  "file": "logs/r4-full/mem/mem-1701888.log",
+  "source": "/scratch/cc-pr43/logs/r4-full/mem/mem-1701888.log",
+  "sha256": "5ccdc23841b39379459ec2a0f7838274043f91ff878fcee01cd1f893b0a19ff3"
+ },
+ {
+  "file": "logs/r4-full/mem/mem-1702038.log",
+  "source": "/scratch/cc-pr43/logs/r4-full/mem/mem-1702038.log",
+  "sha256": "0fb221f48aa571af515396632c6ca6a226f917a7c064b45f6d5b41374ef76cf2"
+ },
+ {
+  "file": "logs/r4-full/mem/mem-1702111.log",
+  "source": "/scratch/cc-pr43/logs/r4-full/mem/mem-1702111.log",
+  "sha256": "722f6d5221d53aa0856363e4eb952284d57891790f33dd2392f00c204dba14d6"
+ },
+ {
+  "file": "logs/r4-full/mem/mem-1702249.log",
+  "source": "/scratch/cc-pr43/logs/r4-full/mem/mem-1702249.log",
+  "sha256": "caf49a5635d99f56480b36af11284ab8b2f87e470eea908c6ee2cff3ec44f208"
+ },
+ {
+  "file": "logs/r4-full/mem/mem-1702389.log",
+  "source": "/scratch/cc-pr43/logs/r4-full/mem/mem-1702389.log",
+  "sha256": "e0d7e676ef085d3fd630177e35cd253344eb0aee90b28ff3096af8153d0b8ff3"
+ },
+ {
+  "file": "logs/r4-full/mem/mem-1702539.log",
+  "source": "/scratch/cc-pr43/logs/r4-full/mem/mem-1702539.log",
+  "sha256": "6b9830b7056aecb47e18b98bacdde95324c0f914b2746cb00baff01dc0eb9ced"
+ },
+ {
+  "file": "logs/r4-full/mem/mem-1702687.log",
+  "source": "/scratch/cc-pr43/logs/r4-full/mem/mem-1702687.log",
+  "sha256": "78797a56fc39469dbf1bd0218a557b299a1bccb1988e1e4894b9cd53be8640d5"
+ },
+ {
+  "file": "logs/r4-full/mem/mem-1702828.log",
+  "source": "/scratch/cc-pr43/logs/r4-full/mem/mem-1702828.log",
+  "sha256": "1b8c8396cf9ffb4a86fcaac0c06ff66b25e64f20ac7d262577c0c7d4dbd993b2"
+ },
+ {
+  "file": "logs/r4-full/mem/mem-1702971.log",
+  "source": "/scratch/cc-pr43/logs/r4-full/mem/mem-1702971.log",
+  "sha256": "222d277fec5c0c16df24818041e9264179f984bf518861ebb6cd4f2ad80bbf22"
+ },
+ {
+  "file": "logs/r4-full/mem/mem-1703112.log",
+  "source": "/scratch/cc-pr43/logs/r4-full/mem/mem-1703112.log",
+  "sha256": "9ad77d101e7fe16596c63740d983bdc5ba687ff342edbcdc963382d0b281c670"
+ },
+ {
+  "file": "logs/r4-full/mem/mem-1705273.log",
+  "source": "/scratch/cc-pr43/logs/r4-full/mem/mem-1705273.log",
+  "sha256": "968ac156f3383c52fca71c15e16f981614c8b1f1f9295b55adb8bcd680e3c7bf"
+ },
+ {
+  "file": "logs/r4-full/mem/mem-1705274.log",
+  "source": "/scratch/cc-pr43/logs/r4-full/mem/mem-1705274.log",
+  "sha256": "4f309b6cf5d3e9bbbfa89c96965f7f0ba862311629fffd2d75359848b3144195"
+ },
+ {
+  "file": "logs/r4-full/mem/mem-1705275.log",
+  "source": "/scratch/cc-pr43/logs/r4-full/mem/mem-1705275.log",
+  "sha256": "968ac156f3383c52fca71c15e16f981614c8b1f1f9295b55adb8bcd680e3c7bf"
+ },
+ {
+  "file": "logs/r4-full/mem/mem-1705276.log",
+  "source": "/scratch/cc-pr43/logs/r4-full/mem/mem-1705276.log",
+  "sha256": "968ac156f3383c52fca71c15e16f981614c8b1f1f9295b55adb8bcd680e3c7bf"
+ },
+ {
+  "file": "logs/r4-full/mem/mem-1705285.log",
+  "source": "/scratch/cc-pr43/logs/r4-full/mem/mem-1705285.log",
+  "sha256": "968ac156f3383c52fca71c15e16f981614c8b1f1f9295b55adb8bcd680e3c7bf"
+ },
+ {
+  "file": "logs/r4-full/mem/mem-1705288.log",
+  "source": "/scratch/cc-pr43/logs/r4-full/mem/mem-1705288.log",
+  "sha256": "968ac156f3383c52fca71c15e16f981614c8b1f1f9295b55adb8bcd680e3c7bf"
+ },
+ {
+  "file": "logs/r4-full/mem/mem-1705289.log",
+  "source": "/scratch/cc-pr43/logs/r4-full/mem/mem-1705289.log",
+  "sha256": "92e0f326a015f3e40f674e20ce9268e57b687467b984af2aed0736651f8de956"
+ },
+ {
+  "file": "logs/r4-full/mem/mem-1705298.log",
+  "source": "/scratch/cc-pr43/logs/r4-full/mem/mem-1705298.log",
+  "sha256": "968ac156f3383c52fca71c15e16f981614c8b1f1f9295b55adb8bcd680e3c7bf"
+ },
+ {
+  "file": "logs/r4-full/perf-decode.jsonl",
+  "source": "/scratch/cc-pr43/logs/r4-full/perf-decode.jsonl",
+  "sha256": "cd9a804e167fb44da2f674e4003f02d16b96604834cbe6e4b6d44955fccf5475"
+ },
+ {
+  "file": "logs/r4-full/perf-decode.log",
+  "source": "/scratch/cc-pr43/logs/r4-full/perf-decode.log",
+  "sha256": "08e984a9b91e76a09bfa0ab81bc92b32ef670c56f69d93a57b0903be8eeb2bab"
+ },
+ {
+  "file": "logs/r4-full/perf-serve.jsonl",
+  "source": "/scratch/cc-pr43/logs/r4-full/perf-serve.jsonl",
+  "sha256": "a6106aabe0c74e62398c310dd956ca135a9e5ca6139ec269fe89513cecb0dc3d"
+ },
+ {
+  "file": "logs/r4-full/perf-serve.log",
+  "source": "/scratch/cc-pr43/logs/r4-full/perf-serve.log",
+  "sha256": "00a010e93f1db7f69889f458e7987f3d10fb4e47f320c4377e392b5e8c9cf7e8"
+ },
+ {
+  "file": "logs/r4-full/perf.log",
+  "source": "/scratch/cc-pr43/logs/r4-full/perf.log",
+  "sha256": "50a7d0d6943542af4ed78a8ad0369af7cd1e0085f09d52473eda358f63f2168d"
+ },
+ {
+  "file": "logs/r4-full/serve-start.log.gz",
+  "source": "/scratch/cc-pr43/logs/r4-full/serve-start.log",
+  "sha256": "aa9bb48cf4230baf09a0a23e8d58fa69b61f9e33b5908afef3fc39e07276e9dd"
+ },
+ {
+  "file": "logs/r4-full/serve.log.gz",
+  "source": "/scratch/cc-pr43/logs/r4-full/serve.log",
+  "sha256": "89f8d2913175b07aee01f2e0649e3bea8f12baf370fa8dd11473ba5ff46a3149"
+ },
+ {
+  "file": "logs/setup.log",
+  "source": "/scratch/cc-pr43/logs/setup.log",
+  "sha256": "00ba1041ce28873cbbb3bd790467902cfd7ef6bf07c000a5e484c35a413b1c43"
+ },
+ {
+  "file": "logs/v-dep8/eval/sgl_eval_gsm8k_20261112-201444/metrics.json",
+  "source": "/scratch/cc-pr43/logs/v-dep8/eval/sgl_eval_gsm8k_20261112-201444/metrics.json",
+  "sha256": "373d674a62340907447ac6eaa9820f3ac2ee150313c347496a33578e0f58e54f"
+ },
+ {
+  "file": "logs/v-dep8/eval/sgl_eval_gsm8k_20261112-201444/output-rs0.jsonl.gz",
+  "source": "/scratch/cc-pr43/logs/v-dep8/eval/sgl_eval_gsm8k_20261112-201444/output-rs0.jsonl",
+  "sha256": "0e7ba98275d2a5d972c84e95e43191aaca82f7df6939a5c9b38a3eef83034f5c"
+ },
+ {
+  "file": "logs/v-dep8/gpu-after-ready.txt",
+  "source": "/scratch/cc-pr43/logs/v-dep8/gpu-after-ready.txt",
+  "sha256": "aba9966b65cb00fb4b8a163388f9035bc48d72db84adfcfbfb808d3ee9615fdf"
+ },
+ {
+  "file": "logs/v-dep8/gpu-at-end.txt",
+  "source": "/scratch/cc-pr43/logs/v-dep8/gpu-at-end.txt",
+  "sha256": "7390ea92100f160feaea37098cc86646fbb8b0875e1371019ee726c49aa0049a"
+ },
+ {
+  "file": "logs/v-dep8/gsm8k.log",
+  "source": "/scratch/cc-pr43/logs/v-dep8/gsm8k.log",
+  "sha256": "a562eadb2c5615bac4fc81b5eb978fdd55037db6d13d729e2333f33cb13430b8"
+ },
+ {
+  "file": "logs/v-dep8/job.status",
+  "source": "/scratch/cc-pr43/logs/v-dep8/job.status",
+  "sha256": "e8dcef5a2e0a70177f8cec5e7712668075d1522a5c62253e360f0de03703a40d"
+ },
+ {
+  "file": "logs/v-dep8/launch.sh",
+  "source": "/scratch/cc-pr43/logs/v-dep8/launch.sh",
+  "sha256": "ab342b9db4f66b840cd5e8c0cfb6b25101ad7d55c2d7849873d75d8e21a3cb14"
+ },
+ {
+  "file": "logs/v-dep8/longprefill.json",
+  "source": "/scratch/cc-pr43/logs/v-dep8/longprefill.json",
+  "sha256": "b8f7c24953ca5424403b49577eb70b5f13889b8a8a0030ad02af40a7f0a96e38"
+ },
+ {
+  "file": "logs/v-dep8/longprefill.log",
+  "source": "/scratch/cc-pr43/logs/v-dep8/longprefill.log",
+  "sha256": "795fc7033860002ca141bd80ae0b4ddd356ff2adc284ffe2976ec25d76df04ae"
+ },
+ {
+  "file": "logs/v-dep8/mem/epoch",
+  "source": "/scratch/cc-pr43/logs/v-dep8/mem/epoch",
+  "sha256": "ffcede71cab4f4cba8e01102805286b53e7deaf00194acce148960f1d27c073c"
+ },
+ {
+  "file": "logs/v-dep8/mem/mem-1619858.log",
+  "source": "/scratch/cc-pr43/logs/v-dep8/mem/mem-1619858.log",
+  "sha256": "00f203c1a4b7770877746990863df453205eb02f4140a3858956b4a9b911a103"
+ },
+ {
+  "file": "logs/v-dep8/mem/mem-1620074.log",
+  "source": "/scratch/cc-pr43/logs/v-dep8/mem/mem-1620074.log",
+  "sha256": "5b461f2e1f85638b6a90a583d07fd01d24989e395e75dc79febce43e68a5f2c1"
+ },
+ {
+  "file": "logs/v-dep8/mem/mem-1620142.log",
+  "source": "/scratch/cc-pr43/logs/v-dep8/mem/mem-1620142.log",
+  "sha256": "66a7ce0b2e0734376179fba5732312407c366db3baa103f99057b7dd77bd6df1"
+ },
+ {
+  "file": "logs/v-dep8/mem/mem-1620210.log",
+  "source": "/scratch/cc-pr43/logs/v-dep8/mem/mem-1620210.log",
+  "sha256": "948949dbe5b081fa3ac83b71b7bf77990d3ae39f8b6dbda8a5dc169d61a90426"
+ },
+ {
+  "file": "logs/v-dep8/mem/mem-1620278.log",
+  "source": "/scratch/cc-pr43/logs/v-dep8/mem/mem-1620278.log",
+  "sha256": "9646e768bdb372002526e6db20ea7e50ad1a35955e69d56ef6e7d67c2f97fed0"
+ },
+ {
+  "file": "logs/v-dep8/mem/mem-1620346.log",
+  "source": "/scratch/cc-pr43/logs/v-dep8/mem/mem-1620346.log",
+  "sha256": "128f926cf6ebccdd361576a0a09b39855a33078e135e60aafc1b48c9116d0dd3"
+ },
+ {
+  "file": "logs/v-dep8/mem/mem-1620416.log",
+  "source": "/scratch/cc-pr43/logs/v-dep8/mem/mem-1620416.log",
+  "sha256": "6bc828c9b5753481edeb9b969743e5d302d6b2c6e2b0d90355db3611ad1a489f"
+ },
+ {
+  "file": "logs/v-dep8/mem/mem-1620487.log",
+  "source": "/scratch/cc-pr43/logs/v-dep8/mem/mem-1620487.log",
+  "sha256": "7ac0aef9fa22c0875cf17e6ed71bdc244aa2ee75ca873e579eeb3267c393c959"
+ },
+ {
+  "file": "logs/v-dep8/mem/mem-1620687.log",
+  "source": "/scratch/cc-pr43/logs/v-dep8/mem/mem-1620687.log",
+  "sha256": "ee6c3448af3e67c521c4efb4c915a91bdeb50f5d36caaa6ba78d97cd175a2452"
+ },
+ {
+  "file": "logs/v-dep8/mem/mem-1620688.log",
+  "source": "/scratch/cc-pr43/logs/v-dep8/mem/mem-1620688.log",
+  "sha256": "b2ec909935b436e1fd1fdbcf8a9013a4c5237a6998d686d1877703040a873118"
+ },
+ {
+  "file": "logs/v-dep8/mem/mem-1621174.log",
+  "source": "/scratch/cc-pr43/logs/v-dep8/mem/mem-1621174.log",
+  "sha256": "4774922394aec3f33cbc621cdee8d7d2c8ff3138549db3cb466f5aadd4be168e"
+ },
+ {
+  "file": "logs/v-dep8/mem/mem-1624164.log",
+  "source": "/scratch/cc-pr43/logs/v-dep8/mem/mem-1624164.log",
+  "sha256": "67d36e9297398047ee83e868669dd416588763ea126fa32f024d6c9f063135c8"
+ },
+ {
+  "file": "logs/v-dep8/mem/mem-1624463.log",
+  "source": "/scratch/cc-pr43/logs/v-dep8/mem/mem-1624463.log",
+  "sha256": "109a451e8f4f0b0bd1634735d623eeb29f407302f8e370985170db384bf411e8"
+ },
+ {
+  "file": "logs/v-dep8/mem/mem-1625432.log",
+  "source": "/scratch/cc-pr43/logs/v-dep8/mem/mem-1625432.log",
+  "sha256": "6ce65ee14c8ec0d41822baf8fa432e9673e3c5e2506c5a6d26e8a53a4114fc92"
+ },
+ {
+  "file": "logs/v-dep8/mem/mem-1625579.log",
+  "source": "/scratch/cc-pr43/logs/v-dep8/mem/mem-1625579.log",
+  "sha256": "14d81976a0a8bbaeb570a8270fc2f7b34bb616fa5320e9f81affa5c52e77787e"
+ },
+ {
+  "file": "logs/v-dep8/mem/mem-1625726.log",
+  "source": "/scratch/cc-pr43/logs/v-dep8/mem/mem-1625726.log",
+  "sha256": "57ce2e7ce0ebe38f53806fcf58d69a226309dc9ce88ad17933e4c2498bb9e190"
+ },
+ {
+  "file": "logs/v-dep8/serve-start.log.gz",
+  "source": "/scratch/cc-pr43/logs/v-dep8/serve-start.log",
+  "sha256": "1caea636832c818316b185467671744866f44e960ccbd4ad83d46c2f4b510fba"
+ },
+ {
+  "file": "logs/v-dep8/serve.log.gz",
+  "source": "/scratch/cc-pr43/logs/v-dep8/serve.log",
+  "sha256": "5719e6d5a3e13ed7a358e4dd8f7fec5a0ba53c9e14fa14ee5607bd00e1fccdf4"
+ },
+ {
+  "file": "logs/v-dep8/suite.json.gz",
+  "source": "/scratch/cc-pr43/logs/v-dep8/suite.json",
+  "sha256": "cbe0c17886a0cc26fb7c0097fac681ec851ffb3e0b5f98735a02e03ca9e4718c"
+ },
+ {
+  "file": "logs/v-dep8/suite.log",
+  "source": "/scratch/cc-pr43/logs/v-dep8/suite.log",
+  "sha256": "98f4d3b970a8cb166b1eac0c327fd374139851f90d37031ee12d3ae43c44288d"
+ },
+ {
+  "file": "logs/v-dep8/valdump.json",
+  "source": "/scratch/cc-pr43/logs/v-dep8/valdump.json",
+  "sha256": "9dc2d122e6fddf27081b0ba392dd5bdfc716f244ed81b03b362c8359595cf736"
+ },
+ {
+  "file": "logs/v-tp8/eval/sgl_eval_gsm8k_20261112-194155/metrics.json",
+  "source": "/scratch/cc-pr43/logs/v-tp8/eval/sgl_eval_gsm8k_20261112-194155/metrics.json",
+  "sha256": "b8ca68eed555f61669c4013cc3e36d24c1d24f4d920291843c247b72fd60038a"
+ },
+ {
+  "file": "logs/v-tp8/eval/sgl_eval_gsm8k_20261112-194155/output-rs0.jsonl.gz",
+  "source": "/scratch/cc-pr43/logs/v-tp8/eval/sgl_eval_gsm8k_20261112-194155/output-rs0.jsonl",
+  "sha256": "03ecf992cab4abef821573ef2cabf5105e0abc6d2103b78a29d65c9dbfafa573"
+ },
+ {
+  "file": "logs/v-tp8/gpu-after-ready.txt",
+  "source": "/scratch/cc-pr43/logs/v-tp8/gpu-after-ready.txt",
+  "sha256": "c38d06936b348fa7bc8fd39e0c6402d53f8e27ea066aeaaa04bbe67908a72071"
+ },
+ {
+  "file": "logs/v-tp8/gpu-at-end.txt",
+  "source": "/scratch/cc-pr43/logs/v-tp8/gpu-at-end.txt",
+  "sha256": "e567f8f40d0902e88cf8ca67b4ae293677989bbda201086780ef14dbd3d155f3"
+ },
+ {
+  "file": "logs/v-tp8/gsm8k.log",
+  "source": "/scratch/cc-pr43/logs/v-tp8/gsm8k.log",
+  "sha256": "abda7f513ba1fde1dbd1b09465df531ffef2f646a9010e697b5989693f3c2def"
+ },
+ {
+  "file": "logs/v-tp8/job.status",
+  "source": "/scratch/cc-pr43/logs/v-tp8/job.status",
+  "sha256": "648e5b0bf351805e25cd9affcbc1866de0892aad32c0f304301e5a6f59c88dce"
+ },
+ {
+  "file": "logs/v-tp8/launch.sh",
+  "source": "/scratch/cc-pr43/logs/v-tp8/launch.sh",
+  "sha256": "97fbdf999ad5e9c70314656ab6a563a47f8c4dbc2d51fa90c753b8120e393ac6"
+ },
+ {
+  "file": "logs/v-tp8/longprefill.json",
+  "source": "/scratch/cc-pr43/logs/v-tp8/longprefill.json",
+  "sha256": "b0505bdcf9c58c1cc145a4816a1c9d6e0fa17f7e353c2201f63b806c04fb8caa"
+ },
+ {
+  "file": "logs/v-tp8/longprefill.log",
+  "source": "/scratch/cc-pr43/logs/v-tp8/longprefill.log",
+  "sha256": "f9ae2bb8cd93d231f0dce4f9bd71b560228b4f3d768face9896a88662e82b5b9"
+ },
+ {
+  "file": "logs/v-tp8/mem/epoch",
+  "source": "/scratch/cc-pr43/logs/v-tp8/mem/epoch",
+  "sha256": "ffcede71cab4f4cba8e01102805286b53e7deaf00194acce148960f1d27c073c"
+ },
+ {
+  "file": "logs/v-tp8/mem/mem-1614319.log",
+  "source": "/scratch/cc-pr43/logs/v-tp8/mem/mem-1614319.log",
+  "sha256": "02cf6fc70117c2f9d2c5895babfec2992ab01da099f39e1855b151a1efecc2f1"
+ },
+ {
+  "file": "logs/v-tp8/mem/mem-1614484.log",
+  "source": "/scratch/cc-pr43/logs/v-tp8/mem/mem-1614484.log",
+  "sha256": "42224b4b73ba9c1128457fc42521f86a7a15b0d7f705fbc2ff09cad15911f485"
+ },
+ {
+  "file": "logs/v-tp8/mem/mem-1614570.log",
+  "source": "/scratch/cc-pr43/logs/v-tp8/mem/mem-1614570.log",
+  "sha256": "c63e5078ef79dbd99a6f107ce55942c710eca0b9cfe4747d7c20c086dc860ef0"
+ },
+ {
+  "file": "logs/v-tp8/mem/mem-1614708.log",
+  "source": "/scratch/cc-pr43/logs/v-tp8/mem/mem-1614708.log",
+  "sha256": "81b5f3270385cdbaa5d28aaaea6060319e4cbc9bca4d4174d5f0dde8c676b07b"
+ },
+ {
+  "file": "logs/v-tp8/mem/mem-1614891.log",
+  "source": "/scratch/cc-pr43/logs/v-tp8/mem/mem-1614891.log",
+  "sha256": "d657cf8aa3b79707ae420dbf948fc108a4b54ea93fbadb87a1736d36f0320b56"
+ },
+ {
+  "file": "logs/v-tp8/mem/mem-1615034.log",
+  "source": "/scratch/cc-pr43/logs/v-tp8/mem/mem-1615034.log",
+  "sha256": "681944867bf0116fe5e950b174b4e0b3934dd044efe3690036bdb1cac6c7dfcf"
+ },
+ {
+  "file": "logs/v-tp8/mem/mem-1615191.log",
+  "source": "/scratch/cc-pr43/logs/v-tp8/mem/mem-1615191.log",
+  "sha256": "b537d25e05ad4e2a4c9c6ba8cbcd4cdf34682fcc72637bda4560b140de61e24f"
+ },
+ {
+  "file": "logs/v-tp8/mem/mem-1615334.log",
+  "source": "/scratch/cc-pr43/logs/v-tp8/mem/mem-1615334.log",
+  "sha256": "4b1ab3fc6e3c81f69d3dd37e3dde74ecbf49c8336ab68b849f11ed1aacee5be1"
+ },
+ {
+  "file": "logs/v-tp8/mem/mem-1615477.log",
+  "source": "/scratch/cc-pr43/logs/v-tp8/mem/mem-1615477.log",
+  "sha256": "5ae8ca2b57f0a22209a044ec1cb62245e18f19845ecb69d502781d0b842b991d"
+ },
+ {
+  "file": "logs/v-tp8/mem/mem-1615618.log",
+  "source": "/scratch/cc-pr43/logs/v-tp8/mem/mem-1615618.log",
+  "sha256": "643b93fcf2dcaac2b6a3beb247c94b3c0d953e50a77c5b96507a443a6ad18053"
+ },
+ {
+  "file": "logs/v-tp8/mem/mem-1617743.log",
+  "source": "/scratch/cc-pr43/logs/v-tp8/mem/mem-1617743.log",
+  "sha256": "8334727a34e0d939793fa9d2672e1054754a705d0a5a8552110c8bef5f760107"
+ },
+ {
+  "file": "logs/v-tp8/mem/mem-1617744.log",
+  "source": "/scratch/cc-pr43/logs/v-tp8/mem/mem-1617744.log",
+  "sha256": "0d301a6528027cb29b259a26f668dde72e0c06f0d8bab2168e7f052b11d2fe62"
+ },
+ {
+  "file": "logs/v-tp8/mem/mem-1617745.log",
+  "source": "/scratch/cc-pr43/logs/v-tp8/mem/mem-1617745.log",
+  "sha256": "f363d27dd30f69363597dc6bab8df3973bd8fa4b6dd4d3cc1432d7fdd0179293"
+ },
+ {
+  "file": "logs/v-tp8/mem/mem-1617746.log",
+  "source": "/scratch/cc-pr43/logs/v-tp8/mem/mem-1617746.log",
+  "sha256": "f363d27dd30f69363597dc6bab8df3973bd8fa4b6dd4d3cc1432d7fdd0179293"
+ },
+ {
+  "file": "logs/v-tp8/mem/mem-1617755.log",
+  "source": "/scratch/cc-pr43/logs/v-tp8/mem/mem-1617755.log",
+  "sha256": "d6d3efafd778a42cef614c245e99546e7925c688ceb77f4fe9346617521d646b"
+ },
+ {
+  "file": "logs/v-tp8/mem/mem-1617756.log",
+  "source": "/scratch/cc-pr43/logs/v-tp8/mem/mem-1617756.log",
+  "sha256": "e8d17da03394182bf563b504162caee9efe8bf84bc47ed7e148e993334f1ad30"
+ },
+ {
+  "file": "logs/v-tp8/mem/mem-1617761.log",
+  "source": "/scratch/cc-pr43/logs/v-tp8/mem/mem-1617761.log",
+  "sha256": "1915f086d0ffc8a304ef48190559519a98dc945457225fb1fbe007b1308154ff"
+ },
+ {
+  "file": "logs/v-tp8/mem/mem-1617768.log",
+  "source": "/scratch/cc-pr43/logs/v-tp8/mem/mem-1617768.log",
+  "sha256": "3e257764753e26ec0a211e67779d5133819a004d6606738f64087c871d7b4ca2"
+ },
+ {
+  "file": "logs/v-tp8/serve-start.log.gz",
+  "source": "/scratch/cc-pr43/logs/v-tp8/serve-start.log",
+  "sha256": "544bd3013b3146f851e079d6299bf124084f7dedfd3a5ae2e4108b354757c8af"
+ },
+ {
+  "file": "logs/v-tp8/serve.log.gz",
+  "source": "/scratch/cc-pr43/logs/v-tp8/serve.log",
+  "sha256": "46d9e943488e6cdf1d0160de07adaea6a5d9b8128e7ef3651eedfb8a80bf0623"
+ },
+ {
+  "file": "logs/v-tp8/suite.json",
+  "source": "/scratch/cc-pr43/logs/v-tp8/suite.json",
+  "sha256": "41201a9cab26d89639ed2d2188d43a6be9f9a51c28936cf53fc135d6751563c4"
+ },
+ {
+  "file": "logs/v-tp8/suite.log",
+  "source": "/scratch/cc-pr43/logs/v-tp8/suite.log",
+  "sha256": "9992f20f2bb1b4a53b19a2a4957e91d08e65376900c5b26b14f7a2bbfb9b6df9"
+ },
+ {
+  "file": "logs/v-tp8/valdump.json",
+  "source": "/scratch/cc-pr43/logs/v-tp8/valdump.json",
+  "sha256": "a0cf2f05123cf0a6083064e977ab6c53076fe1da487fe84fc3bd36c3048d77f5"
+ },
+ {
+  "file": "perf-summary.json",
+  "source": "generated for this round",
+  "sha256": "fabcf0232812dbb15a93810798c41eef1a6d9158fb9fe51f33115c971cdeac66"
+ },
+ {
+  "file": "perf_summary.py",
+  "source": "generated for this round",
+  "sha256": "fa966a97971c0f5f2882a5761681b2f9d5fa069277c0dfc9899151f3f74dc7b1"
+ },
+ {
+  "file": "repro.md",
+  "source": "generated for this round",
+  "sha256": "257336b2868ccbad1255c3c133b43094d45998af07901f969c3ed85eeb91d7e9"
+ },
+ {
+  "file": "summary.json",
+  "source": "generated for this round",
+  "sha256": "c7171bfdb10d0d53708d1fb93c997d785e0e373741f0c84e3e8357c391b35c4b"
+ }
+]

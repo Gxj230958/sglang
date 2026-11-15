@@ -1,0 +1,7 @@
+ROUTER_READY 11:14:09
+probe rc=0 11:14:27
+stress rc=0 11:15:16
+gsm8k rc=0 11:25:34
+P_ALIVE_AT_END
+D_ALIVE_AT_END
+DONE

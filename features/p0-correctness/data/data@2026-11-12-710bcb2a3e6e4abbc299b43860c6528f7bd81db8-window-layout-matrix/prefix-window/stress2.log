@@ -1,0 +1,5 @@
+{"600": {"total": 100, "stop": 100, "correct": 100, "error": 0}, "3000": {"total": 100, "stop": 100, "correct": 100, "error": 0}, "9000": {"total": 100, "stop": 99, "correct": 99, "error": 0}, "20000": {"total": 100, "stop": 99, "correct": 98, "error": 0}}
+BAD {"n": 9000, "k": 4, "prompt_tokens": 9208, "cached": 0, "finish": "length", "ntok": 64, "correct": false, "tokens": ["The", " user", " is", " asking", " for", " the", " code", " of", " Record", " ", "39", ".", " Let", " me", " look", " through", " the", " list", " to", " find", " Record", " ", "39", ".\n\n"]}
+BAD {"n": 20000, "k": 31, "prompt_tokens": 20733, "cached": 0, "finish": "stop", "ntok": 6, "correct": false, "tokens": ["</think>", "5", "27", "49", "8", "<|user|>"]}
+BAD {"n": 20000, "k": 57, "prompt_tokens": 20687, "cached": 0, "finish": "length", "ntok": 64, "correct": false, "tokens": ["The", " user", " is", " asking", " for", " the", " code", " of", " Record", " ", "111", "5", ".", " Let", " me", " look", " through", " the", " list", " to", " find", " Record", " ", "111"]}
+STRESS_DONE

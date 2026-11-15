@@ -1,0 +1,7 @@
+server READY 21:08:56 startup_s=292
+perf:1 rc=1 21:09:18
+lp:8192+32000 rc=0 21:12:11
+suite rc=0 21:13:40
+gsm8k rc=0 21:29:36
+server ALIVE_AT_END
+DONE

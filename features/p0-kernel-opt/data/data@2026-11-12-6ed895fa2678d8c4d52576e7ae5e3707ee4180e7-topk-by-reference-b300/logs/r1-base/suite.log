@@ -1,0 +1,74 @@
+
+  smoke
+    text: fr=stop pt=26 cached=0 ct=4 ok=None t=0.518 content='391'
+    text_thinking: fr=stop pt=31 cached=0 ct=250 ok=None t=1.228 content="The train's speed is **80 km/h**.\n\nHere's the calculation:\n- Distance "
+    long_4k: fr=stop pt=3371 cached=0 ct=14 ok=True t=0.466 content='ZEBRA-7419, 88213'
+    long_12k: fr=stop pt=9991 cached=0 ct=14 ok=True t=0.649 content='ZEBRA-7419, 88213'
+    long_24k: fr=stop pt=19917 cached=0 ct=14 ok=True t=1.212 content='ZEBRA-7419, 88213'
+    image: fr=stop pt=54 cached=0 ct=3 ok=None t=1.065 content='Red'
+  det
+    runs[0][0]: fr=stop pt=22 cached=0 ct=30 ok=None t=0.404 content='2, 3, 5, 7, 11, 13, 17, 19, 23, 29'
+    runs[0][1]: fr=stop pt=23 cached=0 ct=49 ok=None t=0.519 content="The sky appears blue because air molecules in Earth's atmosphere scatt"
+    runs[0][2]: fr=length pt=23 cached=0 ct=128 ok=None t=0.834 content=''
+    runs[0][3]: fr=stop pt=26 cached=0 ct=20 ok=None t=0.365 content='Le rapide renard brun saute par-dessus le chien paresseux.'
+    runs[0][4]: fr=length pt=25 cached=0 ct=128 ok=None t=0.873 content='Romeo and Juliet tells the story of two young lovers from Verona whose'
+    runs[0][5]: fr=length pt=22 cached=0 ct=128 ok=None t=0.833 content=''
+    runs[0][6]: fr=length pt=31 cached=0 ct=128 ok=None t=0.86 content=''
+    runs[0][7]: fr=stop pt=22 cached=0 ct=114 ok=None t=0.771 content='Here are five countries in South America and their capitals:\n\n| Countr'
+    runs[0][8]: fr=length pt=6651 cached=0 ct=64 ok=None t=0.718 content=''
+    runs[1][0]: fr=stop pt=22 cached=0 ct=30 ok=None t=0.396 content='2, 3, 5, 7, 11, 13, 17, 19, 23, 29'
+    runs[1][1]: fr=stop pt=23 cached=0 ct=49 ok=None t=0.515 content="The sky appears blue because air molecules in Earth's atmosphere scatt"
+    runs[1][2]: fr=length pt=23 cached=0 ct=128 ok=None t=0.834 content=''
+    runs[1][3]: fr=stop pt=26 cached=0 ct=20 ok=None t=0.362 content='Le rapide renard brun saute par-dessus le chien paresseux.'
+    runs[1][4]: fr=length pt=25 cached=0 ct=128 ok=None t=0.868 content='Romeo and Juliet tells the story of two young lovers from Verona whose'
+    runs[1][5]: fr=length pt=22 cached=0 ct=128 ok=None t=0.825 content=''
+    runs[1][6]: fr=length pt=31 cached=0 ct=128 ok=None t=0.85 content=''
+    runs[1][7]: fr=stop pt=22 cached=0 ct=114 ok=None t=0.767 content='Here are five countries in South America and their capitals:\n\n| Countr'
+    runs[1][8]: fr=length pt=6651 cached=0 ct=64 ok=None t=0.728 content=''
+    self_cmp[0]: {'same_tokens': True, 'first_diff': None, 'n': 30, 'max_abs_logprob_diff_before_diff': 0.0, 'same_text': True}
+    self_cmp[1]: {'same_tokens': True, 'first_diff': None, 'n': 49, 'max_abs_logprob_diff_before_diff': 0.0, 'same_text': True}
+    self_cmp[2]: {'same_tokens': True, 'first_diff': None, 'n': 128, 'max_abs_logprob_diff_before_diff': 0.0, 'same_text': True}
+    self_cmp[3]: {'same_tokens': True, 'first_diff': None, 'n': 20, 'max_abs_logprob_diff_before_diff': 0.0, 'same_text': True}
+    self_cmp[4]: {'same_tokens': True, 'first_diff': None, 'n': 128, 'max_abs_logprob_diff_before_diff': 0.0, 'same_text': True}
+    self_cmp[5]: {'same_tokens': True, 'first_diff': None, 'n': 128, 'max_abs_logprob_diff_before_diff': 0.0, 'same_text': True}
+    self_cmp[6]: {'same_tokens': True, 'first_diff': None, 'n': 128, 'max_abs_logprob_diff_before_diff': 0.0, 'same_text': True}
+    self_cmp[7]: {'same_tokens': True, 'first_diff': None, 'n': 114, 'max_abs_logprob_diff_before_diff': 0.0, 'same_text': True}
+    self_cmp[8]: {'same_tokens': False, 'first_diff': 29, 'n': 64, 'max_abs_logprob_diff_before_diff': 0.5725674033164978, 'same_text': True}
+  cache
+    identical
+      first: fr=stop pt=6617 cached=0 ct=649 ok=True t=3.769 content='falcon75'
+      second: fr=length pt=6617 cached=6592 ct=1024 ok=False t=5.477 content=''
+      cmp: {'same_tokens': False, 'first_diff': 4, 'n': 649, 'max_abs_logprob_diff_before_diff': 0.18430274724960327, 'same_text': False}
+    shared_prefix
+      warm: fr=stop pt=6617 cached=6592 ct=4 ok=True t=0.339 content='anchor84'
+      cold: fr=stop pt=6617 cached=0 ct=4 ok=True t=0.464 content='anchor84'
+      cmp: {'same_tokens': True, 'first_diff': None, 'n': 4, 'max_abs_logprob_diff_before_diff': 0.11608812212944031, 'same_text': True}
+    tail_continuation
+      turn2_warm: fr=stop pt=5513 cached=5440 ct=119 ok=True t=0.81 content='The first three words of the document are: **meadow37**, **violet83**,'
+      turn2_cold: fr=stop pt=5513 cached=0 ct=115 ok=True t=0.895 content='The first three words of the document are: **meadow37**, **violet83**,'
+      cmp2: {'same_tokens': False, 'first_diff': 21, 'n': 115, 'max_abs_logprob_diff_before_diff': 0.26435577869415283, 'same_text': True}
+      turn3_warm: fr=stop pt=5547 cached=5504 ct=25 ok=False t=0.409 content='The last three words of the document are: **compass41**, **harbor73**,'
+      turn3_cold: fr=stop pt=5547 cached=0 ct=59 ok=True t=0.627 content='The last three words of the document are: **meadow11**, **willow13**..'
+      cmp3: {'same_tokens': False, 'first_diff': 11, 'n': 25, 'max_abs_logprob_diff_before_diff': 0.015689149498939514, 'same_text': False}
+    mid_fork
+      fork_at_1000_of_3000_words
+        seed: fr=stop pt=6611 cached=0 ct=3 ok=None t=0.456 content='DONE'
+        warm: fr=stop pt=2263 cached=2176 ct=17 ok=True t=0.364 content='ZEBRA-7419, 5731, stone30'
+        cold: fr=stop pt=2263 cached=0 ct=17 ok=False t=0.508 content='ZEBRA-7419, 5731, marble85'
+        cmp: {'same_tokens': False, 'first_diff': 14, 'n': 17, 'max_abs_logprob_diff_before_diff': 0.16321828961372375, 'same_text': False}
+      fork_at_2000
+        seed: fr=stop pt=6611 cached=0 ct=3 ok=None t=0.451 content='DONE'
+        warm: fr=stop pt=4445 cached=4352 ct=17 ok=True t=0.367 content='ZEBRA-7419, 5731, thunder52'
+        cold: fr=stop pt=4445 cached=0 ct=17 ok=True t=0.419 content='ZEBRA-7419, 5731, thunder52'
+        cmp: {'same_tokens': True, 'first_diff': None, 'n': 17, 'max_abs_logprob_diff_before_diff': 0.2621854543685913, 'same_text': True}
+      fork_at_2990
+        seed: fr=stop pt=6611 cached=0 ct=3 ok=None t=0.467 content='DONE'
+        warm: fr=stop pt=6627 cached=6528 ct=18 ok=True t=0.37 content='ZEBRA-7419, 5731, falcon57'
+        cold: fr=stop pt=6627 cached=0 ct=18 ok=True t=0.514 content='ZEBRA-7419, 5731, falcon57'
+        cmp: {'same_tokens': True, 'first_diff': None, 'n': 18, 'max_abs_logprob_diff_before_diff': 0.08001109957695007, 'same_text': True}
+      fork_at_2999
+        seed: fr=stop pt=6611 cached=0 ct=3 ok=None t=0.449 content='DONE'
+        warm: fr=stop pt=6647 cached=6592 ct=17 ok=True t=0.36 content='ZEBRA-7419, 5731, stone99'
+        cold: fr=stop pt=6647 cached=0 ct=17 ok=True t=0.511 content='ZEBRA-7419, 5731, stone99'
+        cmp: {'same_tokens': True, 'first_diff': None, 'n': 17, 'max_abs_logprob_diff_before_diff': 0.02719813585281372, 'same_text': True}
+    cold_vs_cold: {'same_tokens': True, 'first_diff': None, 'n': 4, 'max_abs_logprob_diff_before_diff': 0.5815690904855728, 'same_text': True}

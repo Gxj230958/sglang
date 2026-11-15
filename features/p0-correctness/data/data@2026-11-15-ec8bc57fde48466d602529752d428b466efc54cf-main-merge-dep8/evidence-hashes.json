@@ -1,0 +1,72 @@
+[
+ {
+  "file": "2026-11-15-0503-xinyuan-ec8bc57fde-upstream-main-merged.md",
+  "source": "generated for this round",
+  "sha256": "89638c6d5d8a57d5128671c21aaf1868083605633fdd668b1408b2687ccc1475"
+ },
+ {
+  "file": "dep8/eval/sgl_eval_gsm8k_20261115-043338/metrics.json",
+  "source": "/scratch/cc-merge/logs-dep8-ec8b/eval/sgl_eval_gsm8k_20261115-043338/metrics.json",
+  "sha256": "fa9e8c3f5db021154aaa7434f9ab9f4e53bc8a036cbfea8798e45be10e74e9ad"
+ },
+ {
+  "file": "dep8/eval/sgl_eval_gsm8k_20261115-043338/output-rs0.jsonl.gz",
+  "source": "/scratch/cc-merge/logs-dep8-ec8b/eval/sgl_eval_gsm8k_20261115-043338/output-rs0.jsonl",
+  "sha256": "39dcb09b2e1fb57d245b4a267fd301d3ee1e8400a14dc392b015c2976c02c450"
+ },
+ {
+  "file": "dep8/gsm8k.log.gz",
+  "source": "/scratch/cc-merge/logs-dep8-ec8b/gsm8k.log",
+  "sha256": "facef5bb8a09528cd9c33591ee469dde0b98279a75c28bf01409a562b7834454"
+ },
+ {
+  "file": "dep8/launch.sh",
+  "source": "/scratch/cc-merge/logs-dep8-ec8b/launch.sh",
+  "sha256": "24e88fa54ea77f1a90cf20cfed568ec15e3dddb9e36c16b10726c2094e8a9b92"
+ },
+ {
+  "file": "dep8/serve.log.gz",
+  "source": "/scratch/cc-merge/logs-dep8-ec8b/serve.log",
+  "sha256": "d0b483003ae40a937c2db96be4bb4725e0f88d3512adda52e913e336d4f1057c"
+ },
+ {
+  "file": "dep8/suite.json",
+  "source": "/scratch/cc-merge/logs-dep8-ec8b/suite.json",
+  "sha256": "6db387932cac2176159eaa865aa1bfd82cecff85bdd1de1b8d38dd4428ed3264"
+ },
+ {
+  "file": "dep8/suite.log",
+  "source": "/scratch/cc-merge/logs-dep8-ec8b/suite.log",
+  "sha256": "4dff7f662956df9756f36a6700bd0160cfb279d5f8b7f4b36644fb72d02393e8"
+ },
+ {
+  "file": "gate-dep8.sh",
+  "source": "/scratch/cc-merge/gate-dep8.sh",
+  "sha256": "0e2f1d66e862f7bf9e218022d8ab828a921008bd3db545d566f46d2e7199ead0"
+ },
+ {
+  "file": "gate-dep8b.out",
+  "source": "/scratch/cc-merge/gate-dep8b.out",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+ },
+ {
+  "file": "repro.md",
+  "source": "generated for this round",
+  "sha256": "197df6564c8c897d68e2becbc70de4de3dbd7999b7875bed234b2685de7560d6"
+ },
+ {
+  "file": "status-dep8-ec8b",
+  "source": "/scratch/cc-merge/status-dep8-ec8b",
+  "sha256": "53ff349cd63514694909187f908114ba03095b17f615234e8de0df81d9883578"
+ },
+ {
+  "file": "suite.py",
+  "source": "/scratch/cc-merge/suite.py",
+  "sha256": "ede865a6f6f919e89a11efbed4ba12c91b1181446836ec3945e68b5967d411cf"
+ },
+ {
+  "file": "summary.json",
+  "source": "generated for this round",
+  "sha256": "f711541667c833b7157d8d3c996758efffb6fd3ccf6551c154e20eb6a2734d60"
+ }
+]

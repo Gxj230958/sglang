@@ -1,0 +1,307 @@
+[
+ {
+  "file": "2026-11-15-0737-xinyuan-c7c93b3fd0-window-pd-regated-open.md",
+  "source": "generated for this round",
+  "sha256": "853b5112d657740a90ce42952d0b52939c823370383e68ce1e55cb0e60e7e103"
+ },
+ {
+  "file": "2026-11-15-0909-xinyuan-59860082a6-window-pd-merged.md",
+  "source": "generated for this round",
+  "sha256": "b369a1fd746b8c605b8c9056fa76bbbac27ce5d8831cd60176cd6af704de94cd"
+ },
+ {
+  "file": "hicache.py",
+  "source": "/scratch/cc-swa/bin/hicache.py",
+  "sha256": "f0ea440ab6cb78bfc242f930910b4edcbe94784a949ab82eca4d66514c1a76b7"
+ },
+ {
+  "file": "lib.sh",
+  "source": "/scratch/cc-regate2/lib.sh",
+  "sha256": "e5a84e5b6997447c8999665d62e176740393510ad0c0de7ae4808b4fb42bd2a6"
+ },
+ {
+  "file": "midfork.py",
+  "source": "/scratch/cc-swa/bin/midfork.py",
+  "sha256": "57a55e5696f9ab61f23023443c9964b707362b9e1566a6400affd27712e4ba35"
+ },
+ {
+  "file": "omitted-files.json",
+  "source": "generated for this round",
+  "sha256": "bf786d03cb61a65f84b53dcc982af8118f1eb219edbf88b9721a366df9be14d9"
+ },
+ {
+  "file": "pdfull-client.out",
+  "source": "/scratch/cc-regate2/logs/pdfull-client.out",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+ },
+ {
+  "file": "pdfull-client/eval/sgl_eval_gsm8k_20261115-065855/metrics.json",
+  "source": "/scratch/cc-regate2/logs/pdfull-client/eval/sgl_eval_gsm8k_20261115-065855/metrics.json",
+  "sha256": "6efbdc15ad9af376669fcc0d1a76e63ca01375b47f72b2e9fad978bb3497d2a5"
+ },
+ {
+  "file": "pdfull-client/eval/sgl_eval_gsm8k_20261115-065855/output-rs0.jsonl.gz",
+  "source": "/scratch/cc-regate2/logs/pdfull-client/eval/sgl_eval_gsm8k_20261115-065855/output-rs0.jsonl",
+  "sha256": "30a03de0de8781ced20cba95a043d069b4f9c2e8c056bc8370a6e276d288080c"
+ },
+ {
+  "file": "pdfull-client/gsm8k.log.gz",
+  "source": "/scratch/cc-regate2/logs/pdfull-client/gsm8k.log",
+  "sha256": "0daac920cee6c4dea9f11af9ff785df7d82c64d3141eebecee03aba9cb214aa5"
+ },
+ {
+  "file": "pdfull-client/probe.json",
+  "source": "/scratch/cc-regate2/logs/pdfull-client/probe.json",
+  "sha256": "5ad0f4cd322faa81e2f6c1df9ff45d8be4d53843ed64e76f91981c6a2b552994"
+ },
+ {
+  "file": "pdfull-client/probe.log",
+  "source": "/scratch/cc-regate2/logs/pdfull-client/probe.log",
+  "sha256": "b1cdb496cffde432be2c50b915dd226e00696c08ed4cb30ef6462467b942bc6c"
+ },
+ {
+  "file": "pdfull-client/status",
+  "source": "/scratch/cc-regate2/logs/pdfull-client/status",
+  "sha256": "ca51920c179efcefea4e16b8e7165b37cfc004c507194ecbf239a3b4e6a9957f"
+ },
+ {
+  "file": "pdfull-client/stress.jsonl",
+  "source": "/scratch/cc-regate2/logs/pdfull-client/stress.jsonl",
+  "sha256": "625acc95ba485887f3fda81a261cd3b9c73d388b061cf9cc66fdc7602ae18c4f"
+ },
+ {
+  "file": "pdfull-client/stress.log",
+  "source": "/scratch/cc-regate2/logs/pdfull-client/stress.log",
+  "sha256": "0f746d6dab13837e670fb31a48f25786ad95fb03b00bac698d282d286580d7c0"
+ },
+ {
+  "file": "pdfull-decode.ready",
+  "source": "/scratch/cc-regate2/logs/pdfull-decode.ready",
+  "sha256": "3dfa3fb239f56c778a1e9b33eb31328349edd155a95806dac4378904e88527e5"
+ },
+ {
+  "file": "pdfull-decode/launch.sh",
+  "source": "/scratch/cc-regate2/logs/pdfull-decode/launch.sh",
+  "sha256": "ff83fe4a374108e963c145cf409b70b5f07b671c8433c04504edf69ad1daaf59"
+ },
+ {
+  "file": "pdfull-prefill.ready",
+  "source": "/scratch/cc-regate2/logs/pdfull-prefill.ready",
+  "sha256": "3dfa3fb239f56c778a1e9b33eb31328349edd155a95806dac4378904e88527e5"
+ },
+ {
+  "file": "pdfull-prefill/launch.sh",
+  "source": "/scratch/cc-regate2/logs/pdfull-prefill/launch.sh",
+  "sha256": "6491c8e949b0c025689ebdd1476ee02b337d9aae5e84952f7e37b2a16de2d253"
+ },
+ {
+  "file": "pdhc-client.out",
+  "source": "/scratch/cc-regate2/logs/pdhc-client.out",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+ },
+ {
+  "file": "pdhc-client/eval/sgl_eval_gsm8k_20261115-071537/metrics.json",
+  "source": "/scratch/cc-regate2/logs/pdhc-client/eval/sgl_eval_gsm8k_20261115-071537/metrics.json",
+  "sha256": "12f5e8b44b1210796c3f7ec6f634f74dfe9836039fa5aadf01b968a281a736ee"
+ },
+ {
+  "file": "pdhc-client/eval/sgl_eval_gsm8k_20261115-071537/output-rs0.jsonl.gz",
+  "source": "/scratch/cc-regate2/logs/pdhc-client/eval/sgl_eval_gsm8k_20261115-071537/output-rs0.jsonl",
+  "sha256": "f8399d106184b9bef00d4fae713a414a666373fd4dfa7df0f15e89b4607fd415"
+ },
+ {
+  "file": "pdhc-client/fill.log",
+  "source": "/scratch/cc-regate2/logs/pdhc-client/fill.log",
+  "sha256": "942fb603cb23cab018241b8b685bd2419b668cfb358743654ade2c02a0e645c3"
+ },
+ {
+  "file": "pdhc-client/gsm8k.log.gz",
+  "source": "/scratch/cc-regate2/logs/pdhc-client/gsm8k.log",
+  "sha256": "20fb9c89063dafb303a62720ad54fba118449841f961fd4393870e96e466bb76"
+ },
+ {
+  "file": "pdhc-client/midfork-a.json",
+  "source": "/scratch/cc-regate2/logs/pdhc-client/midfork-a.json",
+  "sha256": "c5f903ae808a5bae105079d20f07d9418cfc9742b66e83debea75c6a7c9e1d7a"
+ },
+ {
+  "file": "pdhc-client/midfork-a.log",
+  "source": "/scratch/cc-regate2/logs/pdhc-client/midfork-a.log",
+  "sha256": "23b0e221894be641a846fd52456d8b4d740a75cce8795197365ee848619b45c6"
+ },
+ {
+  "file": "pdhc-client/midfork-b.json",
+  "source": "/scratch/cc-regate2/logs/pdhc-client/midfork-b.json",
+  "sha256": "28b6b23cf819c95ef1aca6f7515d150d2e1be94e4077e4e60d255628bc2adcec"
+ },
+ {
+  "file": "pdhc-client/midfork-b.log",
+  "source": "/scratch/cc-regate2/logs/pdhc-client/midfork-b.log",
+  "sha256": "0a0d5295a2646778c8235d256f0bd9df0fb8927477fa38f69448db943a915dc0"
+ },
+ {
+  "file": "pdhc-client/prefetch-after-b.txt",
+  "source": "/scratch/cc-regate2/logs/pdhc-client/prefetch-after-b.txt",
+  "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+ },
+ {
+  "file": "pdhc-client/prefetch-after-fill.txt",
+  "source": "/scratch/cc-regate2/logs/pdhc-client/prefetch-after-fill.txt",
+  "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+ },
+ {
+  "file": "pdhc-client/status",
+  "source": "/scratch/cc-regate2/logs/pdhc-client/status",
+  "sha256": "87612a88aca5da84c278db6e03ffe3de31e9c7ec1244dff8f158d529cf008b92"
+ },
+ {
+  "file": "pdhc-decode.ready",
+  "source": "/scratch/cc-regate2/logs/pdhc-decode.ready",
+  "sha256": "3dfa3fb239f56c778a1e9b33eb31328349edd155a95806dac4378904e88527e5"
+ },
+ {
+  "file": "pdhc-decode/launch.sh",
+  "source": "/scratch/cc-regate2/logs/pdhc-decode/launch.sh",
+  "sha256": "dd4af4fbdda9063d9f1046c140a8115b1b54eca093a3644167d3fcc01e8a155a"
+ },
+ {
+  "file": "pdhc-prefill.ready",
+  "source": "/scratch/cc-regate2/logs/pdhc-prefill.ready",
+  "sha256": "3dfa3fb239f56c778a1e9b33eb31328349edd155a95806dac4378904e88527e5"
+ },
+ {
+  "file": "pdhc-prefill/launch.sh",
+  "source": "/scratch/cc-regate2/logs/pdhc-prefill/launch.sh",
+  "sha256": "3cc9ae527e3e95927be20a4acb535c563c36c14b81a43883b638ff6033a26117"
+ },
+ {
+  "file": "pdhc3-client.out",
+  "source": "/scratch/cc-regate2/logs/pdhc3-client.out",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+ },
+ {
+  "file": "pdhc3-client/midfork-c.json",
+  "source": "/scratch/cc-regate2/logs/pdhc3-client/midfork-c.json",
+  "sha256": "28b6b23cf819c95ef1aca6f7515d150d2e1be94e4077e4e60d255628bc2adcec"
+ },
+ {
+  "file": "pdhc3-client/midfork-c.log",
+  "source": "/scratch/cc-regate2/logs/pdhc3-client/midfork-c.log",
+  "sha256": "0a0d5295a2646778c8235d256f0bd9df0fb8927477fa38f69448db943a915dc0"
+ },
+ {
+  "file": "pdhc3-client/prefetch-after-c.txt",
+  "source": "/scratch/cc-regate2/logs/pdhc3-client/prefetch-after-c.txt",
+  "sha256": "aa67a169b0bba217aa0aa88a65346920c84c42447c36ba5f7ea65f422c1fe5d8"
+ },
+ {
+  "file": "pdhc3-client/status",
+  "source": "/scratch/cc-regate2/logs/pdhc3-client/status",
+  "sha256": "50207fff64c4dd49819039b59617ef61221e5126d0b42da1192893612cc98b1a"
+ },
+ {
+  "file": "pdhc3-decode.ready",
+  "source": "/scratch/cc-regate2/logs/pdhc3-decode.ready",
+  "sha256": "3dfa3fb239f56c778a1e9b33eb31328349edd155a95806dac4378904e88527e5"
+ },
+ {
+  "file": "pdhc3-decode/launch.sh",
+  "source": "/scratch/cc-regate2/logs/pdhc3-decode/launch.sh",
+  "sha256": "dd4af4fbdda9063d9f1046c140a8115b1b54eca093a3644167d3fcc01e8a155a"
+ },
+ {
+  "file": "pdhc3-prefill.ready",
+  "source": "/scratch/cc-regate2/logs/pdhc3-prefill.ready",
+  "sha256": "3dfa3fb239f56c778a1e9b33eb31328349edd155a95806dac4378904e88527e5"
+ },
+ {
+  "file": "pdhc3-prefill/launch.sh",
+  "source": "/scratch/cc-regate2/logs/pdhc3-prefill/launch.sh",
+  "sha256": "3cc9ae527e3e95927be20a4acb535c563c36c14b81a43883b638ff6033a26117"
+ },
+ {
+  "file": "pdswa-client.out",
+  "source": "/scratch/cc-regate2/logs/pdswa-client.out",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+ },
+ {
+  "file": "pdswa-client/eval/sgl_eval_gsm8k_20261115-064113/metrics.json",
+  "source": "/scratch/cc-regate2/logs/pdswa-client/eval/sgl_eval_gsm8k_20261115-064113/metrics.json",
+  "sha256": "5b740de8f5d1c9ee81e6752afae90c72f15bbc82a86d951154f66a6223314ca8"
+ },
+ {
+  "file": "pdswa-client/eval/sgl_eval_gsm8k_20261115-064113/output-rs0.jsonl.gz",
+  "source": "/scratch/cc-regate2/logs/pdswa-client/eval/sgl_eval_gsm8k_20261115-064113/output-rs0.jsonl",
+  "sha256": "747af4810bd1c28c39a5d1af740dfa1eaee49d2ff70e26b95c4dc190ffc22062"
+ },
+ {
+  "file": "pdswa-client/gsm8k.log.gz",
+  "source": "/scratch/cc-regate2/logs/pdswa-client/gsm8k.log",
+  "sha256": "97acbfb918c40ca830d9dc7bc05e2809e7d57603962967b4ec0720d68aeab325"
+ },
+ {
+  "file": "pdswa-client/probe.json",
+  "source": "/scratch/cc-regate2/logs/pdswa-client/probe.json",
+  "sha256": "871a48271312b6f34ff85e400355d8487efcb93b405c6a6aa30e717f8c42bf32"
+ },
+ {
+  "file": "pdswa-client/probe.log",
+  "source": "/scratch/cc-regate2/logs/pdswa-client/probe.log",
+  "sha256": "57121cb03b7b2fa64e7b49a46f69abf487136ce5d535884d39e3bb42f34f0434"
+ },
+ {
+  "file": "pdswa-client/status",
+  "source": "/scratch/cc-regate2/logs/pdswa-client/status",
+  "sha256": "8cd321d20c18607898a1838c49cddf270fb350457c591628d3440f6bfb7c41f5"
+ },
+ {
+  "file": "pdswa-client/stress.jsonl",
+  "source": "/scratch/cc-regate2/logs/pdswa-client/stress.jsonl",
+  "sha256": "150b573dc2cf83be62cac0c4f126921c0f8b46547384e33d536442ec2e4103e0"
+ },
+ {
+  "file": "pdswa-client/stress.log",
+  "source": "/scratch/cc-regate2/logs/pdswa-client/stress.log",
+  "sha256": "0f746d6dab13837e670fb31a48f25786ad95fb03b00bac698d282d286580d7c0"
+ },
+ {
+  "file": "pdswa-decode.ready",
+  "source": "/scratch/cc-regate2/logs/pdswa-decode.ready",
+  "sha256": "3dfa3fb239f56c778a1e9b33eb31328349edd155a95806dac4378904e88527e5"
+ },
+ {
+  "file": "pdswa-decode/launch.sh",
+  "source": "/scratch/cc-regate2/logs/pdswa-decode/launch.sh",
+  "sha256": "dd4af4fbdda9063d9f1046c140a8115b1b54eca093a3644167d3fcc01e8a155a"
+ },
+ {
+  "file": "pdswa-prefill.ready",
+  "source": "/scratch/cc-regate2/logs/pdswa-prefill.ready",
+  "sha256": "3dfa3fb239f56c778a1e9b33eb31328349edd155a95806dac4378904e88527e5"
+ },
+ {
+  "file": "pdswa-prefill/launch.sh",
+  "source": "/scratch/cc-regate2/logs/pdswa-prefill/launch.sh",
+  "sha256": "85fd0d20ef1e91c72147e8d8f7569b17ee43e3dfeae4817e65f4b7d7766ae055"
+ },
+ {
+  "file": "probe.py",
+  "source": "/scratch/cc-swa/bin/probe.py",
+  "sha256": "c9574ace555b108fa74ab4b5e4703d4f495a0e85784fa760b63a1f30103a5ba9"
+ },
+ {
+  "file": "repro.md",
+  "source": "generated for this round",
+  "sha256": "ab570905795a8b00c2ca08cf1916f0ab26eff27486d5f6a44e9e7e4a2899fcfe"
+ },
+ {
+  "file": "stress.py",
+  "source": "/scratch/cc-swa/bin/stress.py",
+  "sha256": "10c5bcab28f4e4cd514384d84b1c94d889bb5981515bbf0f0cec90cc3ed31db4"
+ },
+ {
+  "file": "summary.json",
+  "source": "generated for this round",
+  "sha256": "df184b946666a78cba702fc99dd300a474a7ec9c9aa10c72526a2b5160ce6fcf"
+ }
+]

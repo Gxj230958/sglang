@@ -43,6 +43,7 @@ This is the prerequisite for every implementation subproject in [Parallelism](..
 - Constraint: `--enable-two-batch-overlap` and `--enable-eplb` are also rejected at launch.
 - Source: launch checks in `python/sglang/srt/arg_groups/glm_loop_hook.py` and the GLM LoopLM guide at `a15aa7c3`; the rejections themselves were not exercised in E01.
 - Not yet validated on H200: expert parallelism, attention data parallelism, and DeepEP; DeepEP was not installed in the E01 environment.
+- Update 2026-11-15: at `710bcb2a` prefill CP runs on the full-length KV layout, and `radixark/sglang-zai` pull request 57 (merged as `5337c504`) enables it for the hybrid window sub-pool; expert parallelism with attention DP is validated on GB300 (DEP4, DeepEP) and B300 (DEP8). Evidence: [Prefill CP](../prefill-cp/README.md) E01–E03 and [DP Attention](../dp-attention/README.md) E01–E02. The pipeline-parallel and decode-CP rejections above were not revisited.
 - [ ] Record the target workloads, dependencies, configuration boundaries, and acceptance thresholds.
 - [ ] Compare candidate layouts and document the selected topology and interfaces.
 - Next action: define the target workload and topology, then compare TP8 with expert parallelism and attention data parallelism within these constraints.

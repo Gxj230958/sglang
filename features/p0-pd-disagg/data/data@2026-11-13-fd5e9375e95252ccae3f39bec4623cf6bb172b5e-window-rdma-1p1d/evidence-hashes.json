@@ -1,0 +1,102 @@
+[
+ {
+  "file": "2026-11-13-1131-xinyuan-fd5e9375e9-roce-planes-explain-rdma-failures.md",
+  "source": "generated for this round",
+  "sha256": "683b21a6165f6f00a3185b5ef5fa984c9fd5ef4f2f358edfb83d7dd8aa99ca80"
+ },
+ {
+  "file": "decode/launch.sh",
+  "source": "/scratch/cc-regate/logs/pd-d/launch.sh",
+  "sha256": "1524b7c77bd19f1baa9fce4b244e2f9f5bf6315be912bde2f58a8b416eab92f0"
+ },
+ {
+  "file": "decode/status",
+  "source": "/scratch/cc-regate/logs/pd-d/status",
+  "sha256": "d4b77c720054803205dda62c66b535efcdbf5769d3345d72a11dc1d035024e34"
+ },
+ {
+  "file": "lib.sh",
+  "source": "/scratch/cc-regate/lib.sh",
+  "sha256": "8bb874d512be1a6684414fe5a99d13f3a5272348dbc9402ce7f69da498e66f29"
+ },
+ {
+  "file": "omitted-files.json",
+  "source": "generated for this round",
+  "sha256": "8b4e2d79378c33cbda005c7dbf37c23750807da921b893d500958610bf39aee3"
+ },
+ {
+  "file": "pd-d.sh",
+  "source": "/scratch/cc-regate/pd-d.sh",
+  "sha256": "49a49cbc9b56111a6cf86a2857716c194958098986f6959bc0f1485da5cc548b"
+ },
+ {
+  "file": "prefill-and-client/eval/sgl_eval_gsm8k_20261113-111517/metrics.json",
+  "source": "/scratch/cc-regate/logs/pd-p/eval/sgl_eval_gsm8k_20261113-111517/metrics.json",
+  "sha256": "7023dc5c7ca95893dd8c9f03ee893eca007302e6e4b56e26fb6f96a4625d4c8a"
+ },
+ {
+  "file": "prefill-and-client/eval/sgl_eval_gsm8k_20261113-111517/output-rs0.jsonl.gz",
+  "source": "/scratch/cc-regate/logs/pd-p/eval/sgl_eval_gsm8k_20261113-111517/output-rs0.jsonl",
+  "sha256": "1de21e7299226f4d4d8e4c233f6f45b4253b95807adebbcb40210526c264e8ff"
+ },
+ {
+  "file": "prefill-and-client/gsm8k.log.gz",
+  "source": "/scratch/cc-regate/logs/pd-p/gsm8k.log",
+  "sha256": "0da4eb00322c943603b25ec7f946ed3f957676f6b6eaaaaffe248d852f08e8fa"
+ },
+ {
+  "file": "prefill-and-client/launch.sh",
+  "source": "/scratch/cc-regate/logs/pd-p/launch.sh",
+  "sha256": "cc748aa17335f7027c6146e86f0fc5bb3462d2d1238f2f18d7142ad1914dc21e"
+ },
+ {
+  "file": "prefill-and-client/probe.json",
+  "source": "/scratch/cc-regate/logs/pd-p/probe.json",
+  "sha256": "871a48271312b6f34ff85e400355d8487efcb93b405c6a6aa30e717f8c42bf32"
+ },
+ {
+  "file": "prefill-and-client/probe.log",
+  "source": "/scratch/cc-regate/logs/pd-p/probe.log",
+  "sha256": "57121cb03b7b2fa64e7b49a46f69abf487136ce5d535884d39e3bb42f34f0434"
+ },
+ {
+  "file": "prefill-and-client/status",
+  "source": "/scratch/cc-regate/logs/pd-p/status",
+  "sha256": "f5c0596b7103694e8abe340718fbbbae509ac5213f49a38fd2f2902fd41ad701"
+ },
+ {
+  "file": "prefill-and-client/status2",
+  "source": "/scratch/cc-regate/logs/pd-p/status2",
+  "sha256": "104999acc6314e46f4f7fd47c88f737ff4f3dfd97426eec3ce5706591365542c"
+ },
+ {
+  "file": "prefill-and-client/stress.jsonl",
+  "source": "/scratch/cc-regate/logs/pd-p/stress.jsonl",
+  "sha256": "3214998f0e0e98732977c77b1d24eba2770ad5d2bf819e6e455aca5c22b4691f"
+ },
+ {
+  "file": "prefill-and-client/stress.log",
+  "source": "/scratch/cc-regate/logs/pd-p/stress.log",
+  "sha256": "610ec3da6bb0fe0d1c4ab284e6e5fa2dd01075e6d9be4d22f736433eef585b97"
+ },
+ {
+  "file": "probe.py",
+  "source": "/scratch/cc-swa/bin/probe.py",
+  "sha256": "c9574ace555b108fa74ab4b5e4703d4f495a0e85784fa760b63a1f30103a5ba9"
+ },
+ {
+  "file": "repro.md",
+  "source": "generated for this round",
+  "sha256": "f64371dae452f806d747fae87f07a825da2f1ce66c80f0f7e73c23d95bf5bda9"
+ },
+ {
+  "file": "stress.py",
+  "source": "/scratch/cc-swa/bin/stress.py",
+  "sha256": "10c5bcab28f4e4cd514384d84b1c94d889bb5981515bbf0f0cec90cc3ed31db4"
+ },
+ {
+  "file": "summary.json",
+  "source": "generated for this round",
+  "sha256": "51334501aa1ef724e6e70180c85a9554bf96847affac5c73b9ee1738b9071b9a"
+ }
+]

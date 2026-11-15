@@ -1,0 +1,6 @@
+{"text": "833929", "finish": "stop", "prompt_tokens": 6672, "cached": 0, "case": "first", "expected": "833929", "correct": true}
+{"text": "833929", "finish": "stop", "prompt_tokens": 6672, "cached": 0, "case": "identical", "expected": "833929", "correct": true}
+{"text": "706263", "finish": "stop", "prompt_tokens": 6673, "cached": 0, "case": "fork_at_end", "expected": "706263", "correct": true}
+{"text": "202888", "finish": "stop", "prompt_tokens": 6682, "cached": 0, "case": "mid_fork_late_record", "expected": "202888", "correct": true}
+{"text": "142588", "finish": "stop", "prompt_tokens": 6682, "cached": 0, "case": "mid_fork_early_record", "expected": "142588", "correct": true}
+{"text": "724655", "finish": "stop", "prompt_tokens": 6691, "cached": 0, "case": "follow_up_turn", "expected": "724655", "correct": true}

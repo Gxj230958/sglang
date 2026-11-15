@@ -1,0 +1,13 @@
+00:47:06 epoch=boot dev=0 alloc_mib=0 max_alloc_mib=0 max_reserved_mib=0 free_mib=272862
+00:47:21 epoch=boot dev=0 alloc_mib=0 max_alloc_mib=0 max_reserved_mib=2 free_mib=267029
+00:47:25 epoch=boot dev=0 alloc_mib=8 max_alloc_mib=8 max_reserved_mib=24 free_mib=265753
+00:47:34 epoch=boot dev=0 alloc_mib=103024 max_alloc_mib=103024 max_reserved_mib=103032 free_mib=162745
+00:48:04 epoch=boot dev=0 alloc_mib=106989 max_alloc_mib=108105 max_reserved_mib=109360 free_mib=156417
+00:48:07 epoch=boot dev=0 alloc_mib=108049 max_alloc_mib=109270 max_reserved_mib=110928 free_mib=156145
+00:48:14 epoch=boot dev=0 alloc_mib=111563 max_alloc_mib=111563 max_reserved_mib=112444 free_mib=153333
+00:48:17 epoch=boot dev=0 alloc_mib=111630 max_alloc_mib=112867 max_reserved_mib=114814 free_mib=153205
+00:48:20 epoch=boot dev=0 alloc_mib=231670 max_alloc_mib=232863 max_reserved_mib=233802 free_mib=33365
+00:49:05 epoch=gsm8k dev=0 alloc_mib=231653 max_alloc_mib=231653 max_reserved_mib=233072 free_mib=31676
+00:49:08 epoch=gsm8k dev=0 alloc_mib=231613 max_alloc_mib=232516 max_reserved_mib=234464 free_mib=29324
+00:49:23 epoch=gsm8k dev=0 alloc_mib=231616 max_alloc_mib=232516 max_reserved_mib=234466 free_mib=29322
+00:49:26 epoch=gsm8k dev=0 alloc_mib=231613 max_alloc_mib=232516 max_reserved_mib=234472 free_mib=29316

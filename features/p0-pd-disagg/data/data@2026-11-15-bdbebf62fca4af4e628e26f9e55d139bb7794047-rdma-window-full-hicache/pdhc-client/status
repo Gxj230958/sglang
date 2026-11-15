@@ -1,0 +1,7 @@
+mfa rc=0 07:15:02
+fill rc=1 07:15:32
+mfb rc=1 07:15:35
+gsm8k rc=0 07:28:30
+P_ALIVE
+D_ALIVE
+CLIENT_DONE

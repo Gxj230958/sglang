@@ -1,0 +1,31 @@
+READY window1 22:32:06
+window1 short-c1 seed=1 rc=0 22:33:19
+window1 short-c32 seed=1 rc=0 22:34:31
+window1 long-c4 seed=1 rc=0 22:35:20
+window1 mt seed=1 rc=0 22:36:10
+window1 short-c1 seed=2 rc=0 22:37:18
+window1 short-c32 seed=2 rc=0 22:38:25
+window1 long-c4 seed=2 rc=0 22:39:14
+window1 mt seed=2 rc=0 22:40:08
+ALIVE window1
+READY full 22:43:00
+full short-c1 seed=1 rc=0 22:44:18
+full short-c32 seed=1 rc=0 22:45:27
+full long-c4 seed=1 rc=0 22:46:19
+full mt seed=1 rc=0 22:47:04
+full short-c1 seed=2 rc=0 22:48:12
+full short-c32 seed=2 rc=0 22:49:19
+full long-c4 seed=2 rc=0 22:50:07
+full mt seed=2 rc=0 22:50:51
+ALIVE full
+READY window2 22:53:43
+window2 short-c1 seed=1 rc=0 22:54:56
+window2 short-c32 seed=1 rc=0 22:56:06
+window2 long-c4 seed=1 rc=0 22:56:53
+window2 mt seed=1 rc=0 22:57:41
+window2 short-c1 seed=2 rc=0 22:58:47
+window2 short-c32 seed=2 rc=0 22:59:55
+window2 long-c4 seed=2 rc=0 23:00:44
+window2 mt seed=2 rc=0 23:01:36
+ALIVE window2
+DONE

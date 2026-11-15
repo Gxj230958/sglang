@@ -1,0 +1,95 @@
+{
+ "dep8": {
+  "server_logs": {
+   "serve.log.gz": {
+    "decode_batch_lines_with_accept_len": 2814,
+    "decode_batches_cuda_graph_true": 2814,
+    "hicache_prefetch_success": 0,
+    "mean_accept_len": 2.6569,
+    "mismatch": 0,
+    "process_failed_for_slice": 0,
+    "rail_paused": 0,
+    "traceback": 0,
+    "transfer_failed": 0,
+    "transport_retry_counter_exceeded": 0
+   }
+  }
+ },
+ "dep8/eval/sgl_eval_gsm8k_20261114-232030": {
+  "gsm8k": {
+   "accept_len_during_run": {
+    "dep8/serve.log.gz": {
+     "decode_batch_lines": 2809,
+     "mean_accept_len": 2.6566
+    }
+   },
+   "aggregate": {
+    "error_rate": 0.0,
+    "score": 0.9507202426080363,
+    "stop_rate": 1.0,
+    "truncated_rate": 0.0
+   },
+   "finish_reason": {
+    "stop": 1319
+   },
+   "latency_seconds": 1139.0739044002257,
+   "max_generated_tokens": 75454,
+   "num_examples": 1319,
+   "num_threads": 64,
+   "output_throughput_tps": 586.4378047987416,
+   "rows": 1319,
+   "sgl_eval_version": "0.1.3",
+   "symbolic_correct": 1254,
+   "temperature": 1.0,
+   "timestamp": "20261114-232030",
+   "top_p": 0.95
+  }
+ },
+ "tp8": {
+  "server_logs": {
+   "serve.log.gz": {
+    "decode_batch_lines_with_accept_len": 757,
+    "decode_batches_cuda_graph_true": 757,
+    "hicache_prefetch_success": 0,
+    "mean_accept_len": 2.6407,
+    "mismatch": 0,
+    "process_failed_for_slice": 0,
+    "rail_paused": 0,
+    "traceback": 0,
+    "transfer_failed": 0,
+    "transport_retry_counter_exceeded": 0
+   }
+  }
+ },
+ "tp8/eval/sgl_eval_gsm8k_20261114-230219": {
+  "gsm8k": {
+   "accept_len_during_run": {
+    "tp8/serve.log.gz": {
+     "decode_batch_lines": 751,
+     "mean_accept_len": 2.6389
+    }
+   },
+   "aggregate": {
+    "error_rate": 0.0,
+    "score": 0.9469294920394238,
+    "stop_rate": 0.9992418498862775,
+    "truncated_rate": 0.000758150113722517
+   },
+   "finish_reason": {
+    "length": 1,
+    "stop": 1318
+   },
+   "latency_seconds": 906.9191418783739,
+   "max_generated_tokens": 65462,
+   "num_examples": 1319,
+   "num_threads": 64,
+   "output_throughput_tps": 788.7373493059771,
+   "rows": 1319,
+   "sgl_eval_version": "0.1.3",
+   "symbolic_correct": 1249,
+   "temperature": 1.0,
+   "timestamp": "20261114-230219",
+   "top_p": 0.95
+  }
+ }
+}
