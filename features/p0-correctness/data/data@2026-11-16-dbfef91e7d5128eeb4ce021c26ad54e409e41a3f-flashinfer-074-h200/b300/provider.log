@@ -1,0 +1,6 @@
+Looking in indexes: https://flashinfer.ai/whl/cu130
+Collecting flashinfer-jit-cache-sm103a==0.7.4
+  Downloading flashinfer_jit_cache_sm103a-0.7.4%2Bcu130-cp39-abi3-manylinux_2_28_x86_64.whl (344.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 344.3/344.3 MB 64.2 MB/s  0:00:05
+Installing collected packages: flashinfer-jit-cache-sm103a
+Successfully installed flashinfer-jit-cache-sm103a-0.7.4+cu130

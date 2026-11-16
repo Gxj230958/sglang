@@ -1,0 +1,9 @@
+READY fi073 01:06:56
+fi073 gsm8k t1 rc=0 01:19:52
+fi073 gsm8k t0 rc=0 01:38:34
+ALIVE fi073
+READY fi074 01:44:21
+fi074 gsm8k t1 rc=0 02:01:14
+fi074 gsm8k t0 rc=0 02:19:00
+ALIVE fi074
+DONE

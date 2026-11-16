@@ -1,0 +1,46 @@
+Collecting sglang-kernel==0.4.11
+  Using cached sglang_kernel-0.4.11-cp311-abi3-manylinux2014_x86_64.whl.metadata (19 kB)
+Collecting sgl-deep-gemm==0.2.8
+  Using cached sgl_deep_gemm-0.2.8-py3-none-manylinux2014_x86_64.whl.metadata (4.7 kB)
+Collecting sgl-flash-mla==1.0.5
+  Using cached sgl_flash_mla-1.0.5-cp310-abi3-manylinux2014_x86_64.whl.metadata (4.7 kB)
+Collecting kernels==0.14.1
+  Downloading kernels-0.14.1-py3-none-any.whl.metadata (2.4 kB)
+Collecting flashinfer-python==0.7.4
+  Using cached flashinfer_python-0.7.4-py3-none-any.whl.metadata (12 kB)
+Using cached sglang_kernel-0.4.11-cp311-abi3-manylinux2014_x86_64.whl (25.4 MB)
+Using cached sgl_deep_gemm-0.2.8-py3-none-manylinux2014_x86_64.whl (5.2 MB)
+Using cached sgl_flash_mla-1.0.5-cp310-abi3-manylinux2014_x86_64.whl (10.1 MB)
+Downloading kernels-0.14.1-py3-none-any.whl (57 kB)
+Using cached flashinfer_python-0.7.4-py3-none-any.whl (101.3 MB)
+Installing collected packages: sglang-kernel, sgl-flash-mla, sgl-deep-gemm, kernels, flashinfer-python
+
+Successfully installed flashinfer-python-0.7.4 kernels-0.14.1 sgl-deep-gemm-0.2.8 sgl-flash-mla-1.0.5 sglang-kernel-0.4.11
+
+[notice] A new release of pip is available: 26.2.1 -> 26.3
+[notice] To update, run: pip install --upgrade pip
+Looking in indexes: https://flashinfer.ai/whl
+Collecting flashinfer-cubin==0.7.4
+  Downloading flashinfer_cubin-0.7.4-py3-none-any.whl (1764.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 GB 17.7 MB/s  0:00:51
+Installing collected packages: flashinfer-cubin
+Successfully installed flashinfer-cubin-0.7.4
+
+[notice] A new release of pip is available: 26.2.1 -> 26.3
+[notice] To update, run: pip install --upgrade pip
+Looking in indexes: https://flashinfer.ai/whl/cu130
+Collecting flashinfer-jit-cache==0.7.4
+  Downloading flashinfer_jit_cache-0.7.4%2Bcu130-cp39-abi3-manylinux_2_28_x86_64.whl (4.4 kB)
+Installing collected packages: flashinfer-jit-cache
+Successfully installed flashinfer-jit-cache-0.7.4+cu130
+
+[notice] A new release of pip is available: 26.2.1 -> 26.3
+[notice] To update, run: pip install --upgrade pip
+Ignoring invalid flashinfer jit-cache provider sm89: No module named 'flashinfer_jit_cache.providers'
+Ignoring invalid flashinfer jit-cache provider sm90a: No module named 'flashinfer_jit_cache.providers'
+Ignoring invalid flashinfer jit-cache provider sm80: No module named 'flashinfer_jit_cache.providers'
+Ignoring invalid flashinfer jit-cache provider sm103a: No module named 'flashinfer_jit_cache.providers'
+Ignoring invalid flashinfer jit-cache provider sm120f: No module named 'flashinfer_jit_cache.providers'
+Ignoring invalid flashinfer jit-cache provider sm100a: No module named 'flashinfer_jit_cache.providers'
+JIT_REQUIRES ['flashinfer-jit-cache-sm100a==0.7.4+cu130', 'flashinfer-jit-cache-sm103a==0.7.4+cu130', 'flashinfer-jit-cache-sm120f==0.7.4+cu130', 'flashinfer-jit-cache-sm80==0.7.4+cu130', 'flashinfer-jit-cache-sm89==0.7.4+cu130', 'flashinfer-jit-cache-sm90a==0.7.4+cu130']
+IMPORT 0.7.4 /scratch/codex-fi074/overlay/flashinfer/__init__.py 2.14.1+cu130 13.0

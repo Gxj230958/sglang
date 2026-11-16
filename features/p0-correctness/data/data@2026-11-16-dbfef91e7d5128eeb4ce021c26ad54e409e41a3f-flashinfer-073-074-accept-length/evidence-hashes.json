@@ -1,0 +1,157 @@
+[
+ {
+  "file": "2026-11-16-0447-xinyuan-dbfef91e7d-flashinfer-accept-length-control.md",
+  "source": "generated for this round",
+  "sha256": "5d94678d2398178c52659102d70ef9b9916932e9331d91da2cbab40919cdfa2d"
+ },
+ {
+  "file": "ab.sh",
+  "source": "8x B300 node: /scratch/cc-fiab/ab.sh",
+  "sha256": "b7cb872b69eb096754c6ff8491811ee390cee1a4f5a1724b7f7084d67b7811ce"
+ },
+ {
+  "file": "fi073/after-t0.metrics",
+  "source": "8x B300 node: /scratch/cc-fiab/fi073/after-t0.metrics",
+  "sha256": "76932b3b257c7970569571b1d28ce61b868357d3f8d25cfff4144978a279783d"
+ },
+ {
+  "file": "fi073/after-t1.metrics",
+  "source": "8x B300 node: /scratch/cc-fiab/fi073/after-t1.metrics",
+  "sha256": "f849db7a60c1443bed62889d3c33a0b9953768518228769370fb7502599527a5"
+ },
+ {
+  "file": "fi073/before-t0.metrics",
+  "source": "8x B300 node: /scratch/cc-fiab/fi073/before-t0.metrics",
+  "sha256": "f849db7a60c1443bed62889d3c33a0b9953768518228769370fb7502599527a5"
+ },
+ {
+  "file": "fi073/before-t1.metrics",
+  "source": "8x B300 node: /scratch/cc-fiab/fi073/before-t1.metrics",
+  "sha256": "43eabaf9c801361219a222df49e38ff0b964757e37905d7d03f033ddb9366c74"
+ },
+ {
+  "file": "fi073/eval-t0/sgl_eval_gsm8k_20261116-011953/metrics.json",
+  "source": "8x B300 node: /scratch/cc-fiab/fi073/eval-t0/sgl_eval_gsm8k_20261116-011953/metrics.json",
+  "sha256": "9cf9c026cfd42c629885cbb7f6214f1e35b51ad11d41ca4e4da60eef418d0b87"
+ },
+ {
+  "file": "fi073/eval-t0/sgl_eval_gsm8k_20261116-011953/output-rs0.jsonl.gz",
+  "source": "8x B300 node: /scratch/cc-fiab/fi073/eval-t0/sgl_eval_gsm8k_20261116-011953/output-rs0.jsonl",
+  "sha256": "e09c24016ec3bbc3acb3b7acb793628fe388d81b73435aa331a8317ccf5541ad"
+ },
+ {
+  "file": "fi073/eval-t1/sgl_eval_gsm8k_20261116-010657/metrics.json",
+  "source": "8x B300 node: /scratch/cc-fiab/fi073/eval-t1/sgl_eval_gsm8k_20261116-010657/metrics.json",
+  "sha256": "740fef1b3682ea44a0e101525cd42f3713ade1fcaab2419c13ae8d22a887397f"
+ },
+ {
+  "file": "fi073/eval-t1/sgl_eval_gsm8k_20261116-010657/output-rs0.jsonl.gz",
+  "source": "8x B300 node: /scratch/cc-fiab/fi073/eval-t1/sgl_eval_gsm8k_20261116-010657/output-rs0.jsonl",
+  "sha256": "94a0c0d00bc92acf826175e212c9f65dd96ba8081998103139a1d25a3b6bd481"
+ },
+ {
+  "file": "fi073/gsm8k-t0.log.gz",
+  "source": "8x B300 node: /scratch/cc-fiab/fi073/gsm8k-t0.log",
+  "sha256": "7aee1f06d17e2cb5baa2b6b87574c152f7a67598276306cbdc068f545a1163a4"
+ },
+ {
+  "file": "fi073/gsm8k-t1.log.gz",
+  "source": "8x B300 node: /scratch/cc-fiab/fi073/gsm8k-t1.log",
+  "sha256": "a711b4fae1179030d55737816a03fc0d5cfa8d36ab582c40eaec6548146d127d"
+ },
+ {
+  "file": "fi073/imports.txt",
+  "source": "8x B300 node: /scratch/cc-fiab/fi073/imports.txt",
+  "sha256": "877b5b2d7cecf9bcec9a7189a073b0f0b3cd4b0782e266d788b06ce8c6141fda"
+ },
+ {
+  "file": "fi073/launch.sh",
+  "source": "8x B300 node: /scratch/cc-fiab/fi073/launch.sh",
+  "sha256": "d31f9950820b417c18f4f84c27f97564f684523b01608f1f5d6976530e90aac5"
+ },
+ {
+  "file": "fi073/serve.log.gz",
+  "source": "8x B300 node: /scratch/cc-fiab/fi073/serve.log",
+  "sha256": "ea3c51dfa33376f2a0885334846ea05250d9d5321191aa1631867cd053e18ae4"
+ },
+ {
+  "file": "fi074/after-t0.metrics",
+  "source": "8x B300 node: /scratch/cc-fiab/fi074/after-t0.metrics",
+  "sha256": "b1e97e537a6c69e24454caa9dd3bab096f39c7f37842834183ec0de54a0cc7cb"
+ },
+ {
+  "file": "fi074/after-t1.metrics",
+  "source": "8x B300 node: /scratch/cc-fiab/fi074/after-t1.metrics",
+  "sha256": "c1d84d2f75fd984e788bb9ff1107889eab76e048c3a6783553b5745c7e949b81"
+ },
+ {
+  "file": "fi074/before-t0.metrics",
+  "source": "8x B300 node: /scratch/cc-fiab/fi074/before-t0.metrics",
+  "sha256": "c1d84d2f75fd984e788bb9ff1107889eab76e048c3a6783553b5745c7e949b81"
+ },
+ {
+  "file": "fi074/before-t1.metrics",
+  "source": "8x B300 node: /scratch/cc-fiab/fi074/before-t1.metrics",
+  "sha256": "43eabaf9c801361219a222df49e38ff0b964757e37905d7d03f033ddb9366c74"
+ },
+ {
+  "file": "fi074/eval-t0/sgl_eval_gsm8k_20261116-020115/metrics.json",
+  "source": "8x B300 node: /scratch/cc-fiab/fi074/eval-t0/sgl_eval_gsm8k_20261116-020115/metrics.json",
+  "sha256": "4315acd2a0dce99ab52aa09f5c8f8cd954f7d4e586c60803e85d16a9a0fd2c71"
+ },
+ {
+  "file": "fi074/eval-t0/sgl_eval_gsm8k_20261116-020115/output-rs0.jsonl.gz",
+  "source": "8x B300 node: /scratch/cc-fiab/fi074/eval-t0/sgl_eval_gsm8k_20261116-020115/output-rs0.jsonl",
+  "sha256": "af30468eb2de1bd26958b4fa9e81dc45d93ac7e7f5f829f00ececa2618b4ec58"
+ },
+ {
+  "file": "fi074/eval-t1/sgl_eval_gsm8k_20261116-014422/metrics.json",
+  "source": "8x B300 node: /scratch/cc-fiab/fi074/eval-t1/sgl_eval_gsm8k_20261116-014422/metrics.json",
+  "sha256": "141cf1a73e04056d37e336110d4a1b5b54f0e2a29c820b377d970698124d1121"
+ },
+ {
+  "file": "fi074/eval-t1/sgl_eval_gsm8k_20261116-014422/output-rs0.jsonl.gz",
+  "source": "8x B300 node: /scratch/cc-fiab/fi074/eval-t1/sgl_eval_gsm8k_20261116-014422/output-rs0.jsonl",
+  "sha256": "16557a8b112964d40a26145c7309d019915c5e669ca5261b315a5c6982bd5df1"
+ },
+ {
+  "file": "fi074/gsm8k-t0.log.gz",
+  "source": "8x B300 node: /scratch/cc-fiab/fi074/gsm8k-t0.log",
+  "sha256": "de150d9b4f38ad4870eff0a864c8d0934ed0d5f0d5c8f953d204e3994541e040"
+ },
+ {
+  "file": "fi074/gsm8k-t1.log.gz",
+  "source": "8x B300 node: /scratch/cc-fiab/fi074/gsm8k-t1.log",
+  "sha256": "c4310d77904c8f27f69f5bc9fc979cd4849fbc89e83f8c23ab845bd8feb051a8"
+ },
+ {
+  "file": "fi074/imports.txt",
+  "source": "8x B300 node: /scratch/cc-fiab/fi074/imports.txt",
+  "sha256": "7289b6958be9c76b30da1238a2b796a6d3f6b7698196175f4767e0abf05c8940"
+ },
+ {
+  "file": "fi074/launch.sh",
+  "source": "8x B300 node: /scratch/cc-fiab/fi074/launch.sh",
+  "sha256": "9d12f852e8dbef6b687eb958bc7ce7e78bb5f0fa4e7c08f1266c0609f8a56cd6"
+ },
+ {
+  "file": "fi074/serve.log.gz",
+  "source": "8x B300 node: /scratch/cc-fiab/fi074/serve.log",
+  "sha256": "66fdb6238d3af37c28e554ce607608ff281721bbe22f4ff357df6f7c2a9772f2"
+ },
+ {
+  "file": "repro.md",
+  "source": "generated for this round",
+  "sha256": "3acafd573e5a06b112478a171cd516913b0d6e2432901ea38a2bfe3edcc3e6d9"
+ },
+ {
+  "file": "status",
+  "source": "8x B300 node: /scratch/cc-fiab/status",
+  "sha256": "3fad917e0177becdfdffec9951fc11f91f6ac543438fdf3e1fd020564dbebb26"
+ },
+ {
+  "file": "summary.json",
+  "source": "generated for this round",
+  "sha256": "df77e91cb5137a97b106e94f5067fe0b45326d725984e6abb41172e2877aadab"
+ }
+]

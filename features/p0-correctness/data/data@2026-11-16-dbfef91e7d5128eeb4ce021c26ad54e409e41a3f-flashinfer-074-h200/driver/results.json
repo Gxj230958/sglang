@@ -1,0 +1,458 @@
+[
+  {
+    "box": "8x-b300-node",
+    "arm": "b300-tp8",
+    "server_imports": {
+      "pid": 2258157,
+      "versions": {
+        "flashinfer-python": "0.7.4",
+        "flashinfer-cubin": "0.7.4",
+        "flashinfer-jit-cache": "0.7.4+cu130",
+        "sglang-kernel": "0.4.11",
+        "sgl-deep-gemm": "0.2.8",
+        "sgl-flash-mla": "1.0.5",
+        "kernels": "0.14.1",
+        "torch": "2.14.1+cu130",
+        "transformers": "5.19.0",
+        "sgl-eval": "0.1.3"
+      },
+      "flashinfer_file": "/scratch/codex-fi074/overlay/flashinfer/__init__.py",
+      "flashinfer_version": "0.7.4",
+      "sglang_file": "/scratch/codex-fi074/src/python/sglang/__init__.py",
+      "jit_providers": [
+        {
+          "id": "sm103a",
+          "version": "0.7.4+cu130",
+          "path": "/scratch/codex-fi074/overlay/flashinfer_jit_cache/providers/sm103a/jit_cache"
+        }
+      ],
+      "torch_cuda": "13.0"
+    },
+    "pool_lines": [
+      "[2026-11-16 00:08:14 TP0 PID2258312] Use sliding window memory pool. full_layer_tokens=1195520, swa_layer_tokens=119552",
+      "[2026-11-16 00:08:14 TP7 PID2258704] Use sliding window memory pool. full_layer_tokens=1195520, swa_layer_tokens=119552",
+      "[2026-11-16 00:08:14 TP6 PID2258639] Use sliding window memory pool. full_layer_tokens=1195520, swa_layer_tokens=119552",
+      "[2026-11-16 00:08:14 TP5 PID2258574] Use sliding window memory pool. full_layer_tokens=1195520, swa_layer_tokens=119552",
+      "[2026-11-16 00:08:14 TP4 PID2258509] Use sliding window memory pool. full_layer_tokens=1195520, swa_layer_tokens=119552",
+      "[2026-11-16 00:08:14 TP3 PID2258444] Use sliding window memory pool. full_layer_tokens=1195520, swa_layer_tokens=119552",
+      "[2026-11-16 00:08:14 TP2 PID2258379] Use sliding window memory pool. full_layer_tokens=1195520, swa_layer_tokens=119552",
+      "[2026-11-16 00:08:14 TP1 PID2258314] Use sliding window memory pool. full_layer_tokens=1195520, swa_layer_tokens=119552"
+    ],
+    "tracebacks": 0,
+    "status": "2026-11-16T00:06:11.686235+00:00 STARTED\n2026-11-16T00:11:47.717428+00:00 READY\n2026-11-16T00:11:57.719494+00:00 suite.log rc=0\n2026-11-16T00:11:57.757345+00:00 EVAL_START\n2026-11-16T00:26:17.781713+00:00 gsm8k.log rc=0\n2026-11-16T00:26:17.781791+00:00 EVAL_END\n2026-11-16T00:26:18.825833+00:00 ALIVE_AT_END\n2026-11-16T00:26:26.991003+00:00 DONE\n",
+    "smoke": {
+      "text": {
+        "finish_reason": "stop",
+        "content": "391",
+        "ok": null,
+        "error": null
+      },
+      "text_thinking": {
+        "finish_reason": "stop",
+        "content": "The train's speed is **80 km/h**.\n\nHere's the calculation:\n- Distance = 60 km\n- Time = 45 minutes = 45/60 hours = 0.75 hours (or \u00be of an hour)\n- Speed = Distance \u00f7 Time = 60 km \u00f7 0.75 h = **80 km/h**\n\nTo check: 80 km/h \u00d7 0.75 h = 60 km \u2713",
+        "ok": null,
+        "error": null
+      },
+      "long_4k": {
+        "finish_reason": "stop",
+        "content": "ZEBRA-7419, 88213",
+        "ok": true,
+        "error": null
+      },
+      "long_12k": {
+        "finish_reason": "stop",
+        "content": "ZEBRA-7419, 88213",
+        "ok": true,
+        "error": null
+      },
+      "long_24k": {
+        "finish_reason": "stop",
+        "content": "ZEBRA-7419, 88213",
+        "ok": true,
+        "error": null
+      },
+      "image": {
+        "finish_reason": "stop",
+        "content": "Red",
+        "ok": null,
+        "error": null
+      }
+    },
+    "eval_metrics_file": "/tmp/codex-glm5lp-fi074-h200-evidence/8x-b300-node/b300-tp8/eval/sgl_eval_gsm8k_20261116-001158/metrics.json",
+    "metrics": {
+      "aggregate": {
+        "error_rate": 0.0,
+        "score": 0.9605761940864291,
+        "stop_rate": 1.0,
+        "truncated_rate": 0.0
+      },
+      "base_url": "http://127.0.0.1:31874/v1",
+      "gen": {
+        "chat_template_kwargs": null,
+        "extra_body": null,
+        "max_tokens": null,
+        "min_p": 0.0,
+        "reasoning_effort": null,
+        "repetition_penalty": 1.0,
+        "seed": null,
+        "system_message": null,
+        "temperature": 1.0,
+        "top_p": 0.95
+      },
+      "latency_seconds": 851.7183345123194,
+      "model": "/scratch/models/GLM-5-1028-Provider",
+      "n_repeats": 1,
+      "name": "gsm8k",
+      "ns_commit_sha": "645cf567ff08c0ae9cc3fc8e1edbb975b3067816",
+      "num_examples": 1319,
+      "num_threads": 64,
+      "output_throughput_tps": 792.9898566604484,
+      "sgl_eval_version": "0.1.3",
+      "timestamp": "20261116-001158",
+      "token_usage": {
+        "completion_tokens": {
+          "count": 1319,
+          "mean": 512.057619408643
+        },
+        "prompt_tokens": {
+          "count": 1319,
+          "mean": 93.98256254738438
+        },
+        "reasoning_tokens": {
+          "count": 1319,
+          "mean": 430.17664897649735
+        }
+      },
+      "total_completion_tokens": 675404,
+      "total_prompt_tokens": 123963
+    },
+    "finish_reasons": {
+      "stop": 1319
+    },
+    "correct": 1267,
+    "mtp_counters": {
+      "generation_tokens_total": 675404.0,
+      "spec_verify_calls_total": 254135.0
+    },
+    "mtp_accept_length": 2.65765833120192
+  },
+  {
+    "box": "8x-b300-node",
+    "arm": "b300-dep8",
+    "server_imports": {
+      "pid": 2263586,
+      "versions": {
+        "flashinfer-python": "0.7.4",
+        "flashinfer-cubin": "0.7.4",
+        "flashinfer-jit-cache": "0.7.4+cu130",
+        "sglang-kernel": "0.4.11",
+        "sgl-deep-gemm": "0.2.8",
+        "sgl-flash-mla": "1.0.5",
+        "kernels": "0.14.1",
+        "torch": "2.14.1+cu130",
+        "transformers": "5.19.0",
+        "sgl-eval": "0.1.3"
+      },
+      "flashinfer_file": "/scratch/codex-fi074/overlay/flashinfer/__init__.py",
+      "flashinfer_version": "0.7.4",
+      "sglang_file": "/scratch/codex-fi074/src/python/sglang/__init__.py",
+      "jit_providers": [
+        {
+          "id": "sm103a",
+          "version": "0.7.4+cu130",
+          "path": "/scratch/codex-fi074/overlay/flashinfer_jit_cache/providers/sm103a/jit_cache"
+        }
+      ],
+      "torch_cuda": "13.0"
+    },
+    "pool_lines": [
+      "[2026-11-16 00:28:03 DP0 TP0 EP0 PID2263724] Use sliding window memory pool. full_layer_tokens=2656064, swa_layer_tokens=265600",
+      "[2026-11-16 00:28:03 DP7 TP7 EP7 PID2263738] Use sliding window memory pool. full_layer_tokens=2656064, swa_layer_tokens=265600",
+      "[2026-11-16 00:28:03 DP6 TP6 EP6 PID2263736] Use sliding window memory pool. full_layer_tokens=2656064, swa_layer_tokens=265600",
+      "[2026-11-16 00:28:03 DP5 TP5 EP5 PID2263734] Use sliding window memory pool. full_layer_tokens=2656064, swa_layer_tokens=265600",
+      "[2026-11-16 00:28:03 DP4 TP4 EP4 PID2263732] Use sliding window memory pool. full_layer_tokens=2656064, swa_layer_tokens=265600",
+      "[2026-11-16 00:28:03 DP3 TP3 EP3 PID2263730] Use sliding window memory pool. full_layer_tokens=2656064, swa_layer_tokens=265600",
+      "[2026-11-16 00:28:03 DP2 TP2 EP2 PID2263728] Use sliding window memory pool. full_layer_tokens=2656064, swa_layer_tokens=265600",
+      "[2026-11-16 00:28:03 DP1 TP1 EP1 PID2263726] Use sliding window memory pool. full_layer_tokens=2656064, swa_layer_tokens=265600"
+    ],
+    "tracebacks": 0,
+    "status": "2026-11-16T00:26:33.132186+00:00 STARTED\n2026-11-16T00:30:04.157659+00:00 READY\n2026-11-16T00:30:24.160132+00:00 suite.log rc=0\n2026-11-16T00:30:24.224490+00:00 EVAL_START\n2026-11-16T00:52:34.269708+00:00 gsm8k.log rc=0\n2026-11-16T00:52:34.269807+00:00 EVAL_END\n2026-11-16T00:52:35.335836+00:00 ALIVE_AT_END\n2026-11-16T00:52:43.513047+00:00 DONE\n",
+    "smoke": {
+      "text": {
+        "finish_reason": "stop",
+        "content": "391",
+        "ok": null,
+        "error": null
+      },
+      "text_thinking": {
+        "finish_reason": "stop",
+        "content": "The train's speed is **80 km/h**.\n\nHere's how to calculate it:\n\n1. **Convert the time to hours:** 45 minutes = 45/60 = 0.75 hours (or \u00be of an hour)\n2. **Use the speed formula:** Speed = Distance \u00f7 Time\n3. **Calculate:** 60 km \u00f7 0.75 h = 80 km/h\n\nTo check: 80 km/h \u00d7 0.75 h = 60 km \u2713",
+        "ok": null,
+        "error": null
+      },
+      "long_4k": {
+        "finish_reason": "stop",
+        "content": "ZEBRA-7419, 88213",
+        "ok": true,
+        "error": null
+      },
+      "long_12k": {
+        "finish_reason": "stop",
+        "content": "ZEBRA-7419, 88213",
+        "ok": true,
+        "error": null
+      },
+      "long_24k": {
+        "finish_reason": "stop",
+        "content": "ZEBRA-7419, 88213",
+        "ok": true,
+        "error": null
+      },
+      "image": {
+        "finish_reason": "stop",
+        "content": "Red",
+        "ok": null,
+        "error": null
+      }
+    },
+    "eval_metrics_file": "/tmp/codex-glm5lp-fi074-h200-evidence/8x-b300-node/b300-dep8/eval/sgl_eval_gsm8k_20261116-003025/metrics.json",
+    "metrics": {
+      "aggregate": {
+        "error_rate": 0.0,
+        "score": 0.9507202426080363,
+        "stop_rate": 1.0,
+        "truncated_rate": 0.0
+      },
+      "base_url": "http://127.0.0.1:31874/v1",
+      "gen": {
+        "chat_template_kwargs": null,
+        "extra_body": null,
+        "max_tokens": null,
+        "min_p": 0.0,
+        "reasoning_effort": null,
+        "repetition_penalty": 1.0,
+        "seed": null,
+        "system_message": null,
+        "temperature": 1.0,
+        "top_p": 0.95
+      },
+      "latency_seconds": 1326.8489954229444,
+      "model": "/scratch/models/GLM-5-1028-Provider",
+      "n_repeats": 1,
+      "name": "gsm8k",
+      "ns_commit_sha": "645cf567ff08c0ae9cc3fc8e1edbb975b3067816",
+      "num_examples": 1319,
+      "num_threads": 64,
+      "output_throughput_tps": 593.0953731092465,
+      "sgl_eval_version": "0.1.3",
+      "timestamp": "20261116-003025",
+      "token_usage": {
+        "completion_tokens": {
+          "count": 1319,
+          "mean": 596.6247156937073
+        },
+        "prompt_tokens": {
+          "count": 1319,
+          "mean": 93.98256254738438
+        },
+        "reasoning_tokens": {
+          "count": 1319,
+          "mean": 470.02501895375286
+        }
+      },
+      "total_completion_tokens": 786948,
+      "total_prompt_tokens": 123963
+    },
+    "finish_reasons": {
+      "stop": 1319
+    },
+    "correct": 1254,
+    "mtp_counters": {
+      "generation_tokens_total": 786948.0,
+      "spec_verify_calls_total": 302053.0
+    },
+    "mtp_accept_length": 2.6053308525325027
+  },
+  {
+    "box": "8x-h200-node",
+    "arm": "h200-tp8",
+    "server_imports": {
+      "pid": 2693859,
+      "versions": {
+        "flashinfer-python": "0.7.4",
+        "flashinfer-cubin": "0.7.4",
+        "flashinfer-jit-cache": "0.7.4+cu130",
+        "sglang-kernel": "0.4.11",
+        "sgl-deep-gemm": "0.2.8",
+        "sgl-flash-mla": "1.0.5",
+        "kernels": "0.14.1",
+        "torch": "2.14.1",
+        "transformers": "5.19.0",
+        "sgl-eval": "0.1.2"
+      },
+      "flashinfer_file": "/scratch/codex-fi074/overlay/flashinfer/__init__.py",
+      "flashinfer_version": "0.7.4",
+      "sglang_file": "/scratch/codex-fi074/src/python/sglang/__init__.py",
+      "jit_providers": [
+        {
+          "id": "sm90a",
+          "version": "0.7.4+cu130",
+          "path": "/scratch/codex-fi074/overlay/flashinfer_jit_cache/providers/sm90a/jit_cache"
+        }
+      ],
+      "torch_cuda": "13.0"
+    },
+    "pool_lines": [
+      "[2026-11-16 00:16:51 TP0 PID2693997] Use sliding window memory pool. full_layer_tokens=139136, swa_layer_tokens=13888",
+      "[2026-11-16 00:16:51 TP7 PID2694389] Use sliding window memory pool. full_layer_tokens=139136, swa_layer_tokens=13888",
+      "[2026-11-16 00:16:51 TP6 PID2694324] Use sliding window memory pool. full_layer_tokens=139136, swa_layer_tokens=13888",
+      "[2026-11-16 00:16:51 TP5 PID2694259] Use sliding window memory pool. full_layer_tokens=139136, swa_layer_tokens=13888",
+      "[2026-11-16 00:16:51 TP4 PID2694194] Use sliding window memory pool. full_layer_tokens=139136, swa_layer_tokens=13888",
+      "[2026-11-16 00:16:51 TP3 PID2694129] Use sliding window memory pool. full_layer_tokens=139136, swa_layer_tokens=13888",
+      "[2026-11-16 00:16:51 TP1 PID2693999] Use sliding window memory pool. full_layer_tokens=139136, swa_layer_tokens=13888",
+      "[2026-11-16 00:16:51 TP2 PID2694064] Use sliding window memory pool. full_layer_tokens=139136, swa_layer_tokens=13888"
+    ],
+    "tracebacks": 8,
+    "status": "2026-11-16T00:07:33.618566+00:00 STARTED\n2026-11-16T00:24:03.697993+00:00 FAIL RuntimeError('SERVER_EXIT -9')\n2026-11-16T00:24:03.844422+00:00 DONE\n"
+  },
+  {
+    "box": "8x-h200-node",
+    "arm": "h200-tp8-fa3",
+    "server_imports": {
+      "pid": 2699556,
+      "versions": {
+        "flashinfer-python": "0.7.4",
+        "flashinfer-cubin": "0.7.4",
+        "flashinfer-jit-cache": "0.7.4+cu130",
+        "sglang-kernel": "0.4.11",
+        "sgl-deep-gemm": "0.2.8",
+        "sgl-flash-mla": "1.0.5",
+        "kernels": "0.14.1",
+        "torch": "2.14.1",
+        "transformers": "5.19.0",
+        "sgl-eval": "0.1.2",
+        "sgl-fa3": "0.1.0"
+      },
+      "flashinfer_file": "/scratch/codex-fi074/overlay/flashinfer/__init__.py",
+      "flashinfer_version": "0.7.4",
+      "sglang_file": "/scratch/codex-fi074/src/python/sglang/__init__.py",
+      "jit_providers": [
+        {
+          "id": "sm90a",
+          "version": "0.7.4+cu130",
+          "path": "/scratch/codex-fi074/overlay/flashinfer_jit_cache/providers/sm90a/jit_cache"
+        }
+      ],
+      "sgl_fa3_file": "/scratch/codex-fi074/overlay/sgl_fa3/__init__.py",
+      "torch_cuda": "13.0"
+    },
+    "pool_lines": [
+      "[2026-11-16 00:26:02 TP0 PID2699700] Use sliding window memory pool. full_layer_tokens=139136, swa_layer_tokens=13888",
+      "[2026-11-16 00:26:02 TP7 PID2700092] Use sliding window memory pool. full_layer_tokens=139136, swa_layer_tokens=13888",
+      "[2026-11-16 00:26:02 TP6 PID2700027] Use sliding window memory pool. full_layer_tokens=139136, swa_layer_tokens=13888",
+      "[2026-11-16 00:26:02 TP5 PID2699962] Use sliding window memory pool. full_layer_tokens=139136, swa_layer_tokens=13888",
+      "[2026-11-16 00:26:02 TP4 PID2699897] Use sliding window memory pool. full_layer_tokens=139136, swa_layer_tokens=13888",
+      "[2026-11-16 00:26:02 TP2 PID2699767] Use sliding window memory pool. full_layer_tokens=139136, swa_layer_tokens=13888",
+      "[2026-11-16 00:26:02 TP3 PID2699832] Use sliding window memory pool. full_layer_tokens=139136, swa_layer_tokens=13888",
+      "[2026-11-16 00:26:02 TP1 PID2699702] Use sliding window memory pool. full_layer_tokens=139136, swa_layer_tokens=13888"
+    ],
+    "tracebacks": 0,
+    "status": "2026-11-16T00:24:11.677375+00:00 STARTED\n2026-11-16T00:31:12.722671+00:00 READY\n2026-11-16T00:31:32.723829+00:00 suite.log rc=0\n2026-11-16T00:31:32.773733+00:00 EVAL_START\n2026-11-16T00:54:32.801812+00:00 gsm8k.log rc=0\n2026-11-16T00:54:32.801867+00:00 EVAL_END\n2026-11-16T00:54:33.858911+00:00 ALIVE_AT_END\n2026-11-16T00:54:42.002755+00:00 DONE\n",
+    "smoke": {
+      "text": {
+        "finish_reason": "stop",
+        "content": "391",
+        "ok": null,
+        "error": null
+      },
+      "text_thinking": {
+        "finish_reason": "stop",
+        "content": "The train's speed is **80 km/h**.\n\nHere's the calculation:\n- Distance = 60 km\n- Time = 45 minutes = 45/60 hours = 0.75 hours (or \u00be of an hour)\n- Speed = Distance \u00f7 Time = 60 km \u00f7 0.75 h = **80 km/h**\n\nTo verify: 80 km/h \u00d7 0.75 h = 60 km \u2713",
+        "ok": null,
+        "error": null
+      },
+      "long_4k": {
+        "finish_reason": "stop",
+        "content": "ZEBRA-7419, 88213",
+        "ok": true,
+        "error": null
+      },
+      "long_12k": {
+        "finish_reason": "stop",
+        "content": "ZEBRA-7419, 88213",
+        "ok": true,
+        "error": null
+      },
+      "long_24k": {
+        "finish_reason": "stop",
+        "content": "ZEBRA-7419, 88213",
+        "ok": true,
+        "error": null
+      },
+      "image": {
+        "finish_reason": "stop",
+        "content": "Red",
+        "ok": null,
+        "error": null
+      }
+    },
+    "eval_metrics_file": "/tmp/codex-glm5lp-fi074-h200-evidence/8x-h200-node/h200-tp8-fa3/eval/sgl_eval_gsm8k_20261116-003133/metrics.json",
+    "metrics": {
+      "aggregate": {
+        "error_rate": 0.0,
+        "score": 0.9476876421531463,
+        "stop_rate": 0.9984836997725549,
+        "truncated_rate": 0.001516300227445034
+      },
+      "base_url": "http://127.0.0.1:31874/v1",
+      "gen": {
+        "chat_template_kwargs": null,
+        "extra_body": null,
+        "max_tokens": null,
+        "min_p": 0.0,
+        "reasoning_effort": null,
+        "repetition_penalty": 1.0,
+        "seed": null,
+        "system_message": null,
+        "temperature": 1.0,
+        "top_p": 0.95
+      },
+      "latency_seconds": 1370.0728258099407,
+      "model": "/scratch/models/GLM-5-1028-Provider",
+      "n_repeats": 1,
+      "name": "gsm8k",
+      "ns_commit_sha": "645cf567ff08c0ae9cc3fc8e1edbb975b3067816",
+      "num_examples": 1319,
+      "num_threads": 64,
+      "output_throughput_tps": 606.2217893483116,
+      "sgl_eval_version": "0.1.2",
+      "timestamp": "20261116-003133",
+      "token_usage": {
+        "completion_tokens": {
+          "count": 1319,
+          "mean": 629.6952236542835
+        },
+        "prompt_tokens": {
+          "count": 1319,
+          "mean": 93.98256254738438
+        },
+        "reasoning_tokens": {
+          "count": 1319,
+          "mean": 542.8377558756633
+        }
+      },
+      "total_completion_tokens": 830568,
+      "total_prompt_tokens": 123963
+    },
+    "finish_reasons": {
+      "stop": 1317,
+      "length": 2
+    },
+    "correct": 1250,
+    "mtp_counters": {
+      "generation_tokens_total": 830568.0,
+      "spec_verify_calls_total": 317522.0
+    },
+    "mtp_accept_length": 2.615780953760684
+  }
+]

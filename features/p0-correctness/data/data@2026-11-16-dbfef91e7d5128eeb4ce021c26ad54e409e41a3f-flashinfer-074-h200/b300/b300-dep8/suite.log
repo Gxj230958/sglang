@@ -1,0 +1,8 @@
+
+  smoke
+    text: fr=stop pt=26 cached=0 ct=4 ok=None t=0.726 content='391'
+    text_thinking: fr=stop pt=31 cached=0 ct=330 ok=None t=2.782 content="The train's speed is **80 km/h**.\n\nHere's how to calculate it:\n\n1. **C"
+    long_4k: fr=stop pt=3371 cached=0 ct=14 ok=True t=2.146 content='ZEBRA-7419, 88213'
+    long_12k: fr=stop pt=9991 cached=0 ct=14 ok=True t=1.507 content='ZEBRA-7419, 88213'
+    long_24k: fr=stop pt=19917 cached=0 ct=14 ok=True t=1.717 content='ZEBRA-7419, 88213'
+    image: fr=stop pt=54 cached=0 ct=3 ok=None t=1.812 content='Red'

@@ -1,0 +1,7 @@
+Ignoring invalid flashinfer jit-cache provider sm80: No module named 'flashinfer_jit_cache.providers'
+Ignoring invalid flashinfer jit-cache provider sm90a: No module named 'flashinfer_jit_cache.providers'
+Ignoring invalid flashinfer jit-cache provider sm100a: No module named 'flashinfer_jit_cache.providers'
+Ignoring invalid flashinfer jit-cache provider sm89: No module named 'flashinfer_jit_cache.providers'
+Ignoring invalid flashinfer jit-cache provider sm120f: No module named 'flashinfer_jit_cache.providers'
+Ignoring invalid flashinfer jit-cache provider sm103a: No module named 'flashinfer_jit_cache.providers'
+/scratch/cc-pr43/overlay/flashinfer/__init__.py 0.7.3 /scratch/codex-fi074/src/python/sglang/__init__.py [('flashinfer-python', '0.7.3'), ('flashinfer-cubin', '0.7.3'), ('flashinfer-jit-cache', '0.7.3+cu130'), ('sglang-kernel', '0.4.11'), ('sgl-deep-gemm', '0.2.8'), ('sgl-flash-mla', '1.0.5'), ('kernels', '0.14.1')]

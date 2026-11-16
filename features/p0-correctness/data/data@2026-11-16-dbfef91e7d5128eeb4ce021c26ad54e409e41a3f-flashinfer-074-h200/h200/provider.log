@@ -1,0 +1,9 @@
+Looking in indexes: https://flashinfer.ai/whl/cu130
+Collecting flashinfer-jit-cache-sm90a==0.7.4
+  Downloading flashinfer_jit_cache_sm90a-0.7.4%2Bcu130-cp39-abi3-manylinux_2_28_x86_64.whl (344.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 344.6/344.6 MB 45.9 MB/s  0:00:07
+Installing collected packages: flashinfer-jit-cache-sm90a
+Successfully installed flashinfer-jit-cache-sm90a-0.7.4+cu130
+
+[notice] A new release of pip is available: 26.2.1 -> 26.3
+[notice] To update, run: pip install --upgrade pip

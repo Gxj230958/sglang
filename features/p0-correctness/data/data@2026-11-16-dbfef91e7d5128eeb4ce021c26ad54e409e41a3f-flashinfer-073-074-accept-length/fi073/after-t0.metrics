@@ -1,0 +1,2 @@
+sglang:generation_tokens_total{engine_type="unified",is_streaming="false",model_name="/scratch/models/GLM-5-1028-Provider"} 2.012489e+06
+sglang:spec_verify_calls_total{engine_type="unified",model_name="/scratch/models/GLM-5-1028-Provider"} 729683.0

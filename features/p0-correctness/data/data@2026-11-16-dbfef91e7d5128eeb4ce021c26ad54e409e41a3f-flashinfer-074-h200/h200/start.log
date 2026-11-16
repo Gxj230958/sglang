@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/scratch/codex-fi074/gate.py", line 73, in <module>
+    raise RuntimeError("SERVER_EXIT " + str(server.returncode))
+RuntimeError: SERVER_EXIT -9

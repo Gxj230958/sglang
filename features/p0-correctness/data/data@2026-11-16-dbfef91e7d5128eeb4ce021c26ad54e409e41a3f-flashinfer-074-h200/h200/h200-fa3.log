@@ -1,0 +1,9 @@
+Collecting sgl-fa3==0.1.0
+  Using cached sgl_fa3-0.1.0-cp310-abi3-manylinux2014_x86_64.whl.metadata (3.3 kB)
+Using cached sgl_fa3-0.1.0-cp310-abi3-manylinux2014_x86_64.whl (57.4 MB)
+Installing collected packages: sgl-fa3
+Successfully installed sgl-fa3-0.1.0
+
+[notice] A new release of pip is available: 26.2.1 -> 26.3
+[notice] To update, run: pip install --upgrade pip
+0.1.0 /scratch/codex-fi074/overlay/sgl_fa3/__init__.py

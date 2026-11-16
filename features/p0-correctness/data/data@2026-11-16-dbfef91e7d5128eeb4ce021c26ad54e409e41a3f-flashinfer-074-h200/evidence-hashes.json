@@ -1,0 +1,552 @@
+[
+ {
+  "file": "2026-11-16-0056-xinyuan-dbfef91e7d-flashinfer-074-h200-validated.md",
+  "source": "generated for this round",
+  "sha256": "6432315abfca9c1c84b6cffbea82446ec5a41a5c2b4ad0bec43600ec7031e433"
+ },
+ {
+  "file": "b300/b300-dep8/after-eval-get_server_info.txt",
+  "source": "8x B300 node: /scratch/codex-fi074/b300-dep8/after-eval-get_server_info.txt",
+  "sha256": "9fc8a750efba66e5fcbdd8f202aa55e831de39fd26936d56722d0e68ee36c321"
+ },
+ {
+  "file": "b300/b300-dep8/after-eval-metrics.txt.gz",
+  "source": "8x B300 node: /scratch/codex-fi074/b300-dep8/after-eval-metrics.txt",
+  "sha256": "2149b0099d0a2f81f23ff5d410c4239273708cec61f28a735a0e25e88dce3d0f"
+ },
+ {
+  "file": "b300/b300-dep8/before-eval-get_server_info.txt",
+  "source": "8x B300 node: /scratch/codex-fi074/b300-dep8/before-eval-get_server_info.txt",
+  "sha256": "339b7c70febb5eb8663fc6b13209cf7b422594e33f870a5d60fb78a14e4aa265"
+ },
+ {
+  "file": "b300/b300-dep8/before-eval-metrics.txt.gz",
+  "source": "8x B300 node: /scratch/codex-fi074/b300-dep8/before-eval-metrics.txt",
+  "sha256": "b8d6df5792672d5e287130f4c4819568a94880e6442f564c06524ed6c84963cd"
+ },
+ {
+  "file": "b300/b300-dep8/eval/sgl_eval_gsm8k_20261116-003025/metrics.json",
+  "source": "8x B300 node: /scratch/codex-fi074/b300-dep8/eval/sgl_eval_gsm8k_20261116-003025/metrics.json",
+  "sha256": "01305ed512eaca1d652330c1b4fff983dccb66e9ef9204b07692b17873f3b4c6"
+ },
+ {
+  "file": "b300/b300-dep8/eval/sgl_eval_gsm8k_20261116-003025/output-rs0.jsonl.gz",
+  "source": "8x B300 node: /scratch/codex-fi074/b300-dep8/eval/sgl_eval_gsm8k_20261116-003025/output-rs0.jsonl",
+  "sha256": "73024f110b98602ecfbcf4e3e797982e97324989936dca4d475142e79e1214ea"
+ },
+ {
+  "file": "b300/b300-dep8/gpu-after.csv",
+  "source": "8x B300 node: /scratch/codex-fi074/b300-dep8/gpu-after.csv",
+  "sha256": "4fc5af190bc52d4ec6979829543a9f8e6711f82aed9378b2ff1509563d60c7ae"
+ },
+ {
+  "file": "b300/b300-dep8/gpu-before.csv",
+  "source": "8x B300 node: /scratch/codex-fi074/b300-dep8/gpu-before.csv",
+  "sha256": "7c83edffe7ad66bb78ceaf6d0a073f421787d072a84d7893fc21ecd0397a9267"
+ },
+ {
+  "file": "b300/b300-dep8/gsm8k.log.gz",
+  "source": "8x B300 node: /scratch/codex-fi074/b300-dep8/gsm8k.log",
+  "sha256": "5277dd762523e55423afa770598354ab3aad03aa0a3c5f83298750ff3c1c08cc"
+ },
+ {
+  "file": "b300/b300-dep8/launch.json",
+  "source": "8x B300 node: /scratch/codex-fi074/b300-dep8/launch.json",
+  "sha256": "5252f10eee60641ab9661a2af9bba35e5e7d575c6a13c36510752371a98626e0"
+ },
+ {
+  "file": "b300/b300-dep8/serve.log.gz",
+  "source": "8x B300 node: /scratch/codex-fi074/b300-dep8/serve.log",
+  "sha256": "9ed951c1cabf2f8e2b42bfda0147869662521a079e6d5e1b64d3ed2678dcd6b5"
+ },
+ {
+  "file": "b300/b300-dep8/server.pid",
+  "source": "8x B300 node: /scratch/codex-fi074/b300-dep8/server.pid",
+  "sha256": "e158594744ce6e8fadcc95c94592fe7b82d76d0cce99fbfb2657bce2a8bfc826"
+ },
+ {
+  "file": "b300/b300-dep8/status",
+  "source": "8x B300 node: /scratch/codex-fi074/b300-dep8/status",
+  "sha256": "f3ca916455495680dc0fed1b4daa29cafe87926a62897e8a2e20da57b05c9efd"
+ },
+ {
+  "file": "b300/b300-dep8/suite.json",
+  "source": "8x B300 node: /scratch/codex-fi074/b300-dep8/suite.json",
+  "sha256": "4c42b5b6dbd170e27b4a97891f42c8e193d870624162299476d2f3fc02448c06"
+ },
+ {
+  "file": "b300/b300-dep8/suite.log",
+  "source": "8x B300 node: /scratch/codex-fi074/b300-dep8/suite.log",
+  "sha256": "27bf1b62cf409a464d337a44c77ad01d7c8c3dc8cd749c828d1f76334a1d782f"
+ },
+ {
+  "file": "b300/b300-dep8/suite.py",
+  "source": "8x B300 node: /scratch/codex-fi074/b300-dep8/suite.py",
+  "sha256": "736c49429822d8e7c55d80aaef17a1cf0777165148d67a4612cf928f9a120437"
+ },
+ {
+  "file": "b300/b300-tp8/after-eval-get_server_info.txt",
+  "source": "8x B300 node: /scratch/codex-fi074/b300-tp8/after-eval-get_server_info.txt",
+  "sha256": "68a5b24456296e2b694b435354b0f734701cf49acb09ff92eb437afbf8bedf07"
+ },
+ {
+  "file": "b300/b300-tp8/after-eval-metrics.txt.gz",
+  "source": "8x B300 node: /scratch/codex-fi074/b300-tp8/after-eval-metrics.txt",
+  "sha256": "a47a119ca7213b8ca475953880ce798911ae68b1ec11b3dc16d113125e2b6bd1"
+ },
+ {
+  "file": "b300/b300-tp8/before-eval-get_server_info.txt",
+  "source": "8x B300 node: /scratch/codex-fi074/b300-tp8/before-eval-get_server_info.txt",
+  "sha256": "1c6132bb6fcbfda1d9453a0f7a12fc0877271f557ed6332207a90ef3f7886f93"
+ },
+ {
+  "file": "b300/b300-tp8/before-eval-metrics.txt.gz",
+  "source": "8x B300 node: /scratch/codex-fi074/b300-tp8/before-eval-metrics.txt",
+  "sha256": "73bae2558ba25d08c9b88064d1e9add6abb08c39dc534a85c930068ccf9f0223"
+ },
+ {
+  "file": "b300/b300-tp8/eval/sgl_eval_gsm8k_20261116-001158/metrics.json",
+  "source": "8x B300 node: /scratch/codex-fi074/b300-tp8/eval/sgl_eval_gsm8k_20261116-001158/metrics.json",
+  "sha256": "87de1e0ff3277386c1eb5d6d0fb64912362489a9d199ebecf20e98cfa00adb9d"
+ },
+ {
+  "file": "b300/b300-tp8/eval/sgl_eval_gsm8k_20261116-001158/output-rs0.jsonl.gz",
+  "source": "8x B300 node: /scratch/codex-fi074/b300-tp8/eval/sgl_eval_gsm8k_20261116-001158/output-rs0.jsonl",
+  "sha256": "1f33527de8b612caacf41c7367f21edc4379792655420d7f8181a489c9e62b8b"
+ },
+ {
+  "file": "b300/b300-tp8/gpu-after.csv",
+  "source": "8x B300 node: /scratch/codex-fi074/b300-tp8/gpu-after.csv",
+  "sha256": "4fc5af190bc52d4ec6979829543a9f8e6711f82aed9378b2ff1509563d60c7ae"
+ },
+ {
+  "file": "b300/b300-tp8/gpu-before.csv",
+  "source": "8x B300 node: /scratch/codex-fi074/b300-tp8/gpu-before.csv",
+  "sha256": "7c83edffe7ad66bb78ceaf6d0a073f421787d072a84d7893fc21ecd0397a9267"
+ },
+ {
+  "file": "b300/b300-tp8/gsm8k.log.gz",
+  "source": "8x B300 node: /scratch/codex-fi074/b300-tp8/gsm8k.log",
+  "sha256": "a77320a4f4d970ca5656af6be834fbaa5f0f1e30c7110042d27b50b82cce7688"
+ },
+ {
+  "file": "b300/b300-tp8/launch.json",
+  "source": "8x B300 node: /scratch/codex-fi074/b300-tp8/launch.json",
+  "sha256": "65632ba33506d1cff20cd508eee94536bc2d7fc26418fd7fba81435b08f89710"
+ },
+ {
+  "file": "b300/b300-tp8/serve.log.gz",
+  "source": "8x B300 node: /scratch/codex-fi074/b300-tp8/serve.log",
+  "sha256": "ccd3b823dab53928d42e6f91abc6cce4d8c6997a8ab6cd33e0912462e0c6f78f"
+ },
+ {
+  "file": "b300/b300-tp8/server.pid",
+  "source": "8x B300 node: /scratch/codex-fi074/b300-tp8/server.pid",
+  "sha256": "9d9cc68cd955cd9a72e2705077f1acb6f0bd166de8c48d454fac42fcbbfa3ef5"
+ },
+ {
+  "file": "b300/b300-tp8/status",
+  "source": "8x B300 node: /scratch/codex-fi074/b300-tp8/status",
+  "sha256": "d833bc9eb3f4fceaeaa4cb3410e8a775d3f60162fb709d6594a90196f864b4b8"
+ },
+ {
+  "file": "b300/b300-tp8/suite.json",
+  "source": "8x B300 node: /scratch/codex-fi074/b300-tp8/suite.json",
+  "sha256": "8cec4ba43c902b03d2e7b8f77ce2701b50ad79119b8017940d613fce71d3b59f"
+ },
+ {
+  "file": "b300/b300-tp8/suite.log",
+  "source": "8x B300 node: /scratch/codex-fi074/b300-tp8/suite.log",
+  "sha256": "dd9d7e34d39f73f0bd6a264249c0c15970f0ec3e8717746deaaa011db6881977"
+ },
+ {
+  "file": "b300/b300-tp8/suite.py",
+  "source": "8x B300 node: /scratch/codex-fi074/b300-tp8/suite.py",
+  "sha256": "736c49429822d8e7c55d80aaef17a1cf0777165148d67a4612cf928f9a120437"
+ },
+ {
+  "file": "b300/checkpoint.sha256",
+  "source": "8x B300 node: /scratch/codex-fi074/checkpoint.sha256",
+  "sha256": "2fe4765e3d883082e82f8b858df949235921b80b5f6fc15c0b2357a5fe208ea0"
+ },
+ {
+  "file": "b300/dep8.exit",
+  "source": "8x B300 node: /scratch/codex-fi074/dep8.exit",
+  "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+ },
+ {
+  "file": "b300/dep8.log",
+  "source": "8x B300 node: /scratch/codex-fi074/dep8.log",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+ },
+ {
+  "file": "b300/dep8.sh",
+  "source": "8x B300 node: /scratch/codex-fi074/dep8.sh",
+  "sha256": "7b3d1ba0c5e6072869b2072b5d6a255962ebbb244b5cdaca977086d878fb27f0"
+ },
+ {
+  "file": "b300/evidence-sha256.json",
+  "source": "8x B300 node: /scratch/codex-fi074/evidence-sha256.json",
+  "sha256": "95c1ede4d045c5385ae3db2fc908b202d17151205e57782e2fe47a17014c8863"
+ },
+ {
+  "file": "b300/gate.py",
+  "source": "8x B300 node: /scratch/codex-fi074/gate.py",
+  "sha256": "1b5efc47d5d2ea16f39807ba5569b9d07affea18806a1bb80f499d5d3ea1fe49"
+ },
+ {
+  "file": "b300/provider.exit",
+  "source": "8x B300 node: /scratch/codex-fi074/provider.exit",
+  "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+ },
+ {
+  "file": "b300/provider.log",
+  "source": "8x B300 node: /scratch/codex-fi074/provider.log",
+  "sha256": "0ed301796a86167d2cd6ac921f819c931fa22f80adf249a0a2225a4a68411de4"
+ },
+ {
+  "file": "b300/provider.sh",
+  "source": "8x B300 node: /scratch/codex-fi074/provider.sh",
+  "sha256": "e72cdc45b8a3c1261be3858308e257722a2e2939cc3b64da950d0f9add46516e"
+ },
+ {
+  "file": "b300/server.py",
+  "source": "8x B300 node: /scratch/codex-fi074/server.py",
+  "sha256": "df583fa27b55a8727f8239b086f84c1d837fe7c79fe399e7efc5a6b589bcbd66"
+ },
+ {
+  "file": "b300/setup.exit",
+  "source": "8x B300 node: /scratch/codex-fi074/setup.exit",
+  "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+ },
+ {
+  "file": "b300/setup.log",
+  "source": "8x B300 node: /scratch/codex-fi074/setup.log",
+  "sha256": "661b9d5dddedf9c166ac63d950f8ccf01f674a7325b919cf700bdfbb4c830613"
+ },
+ {
+  "file": "b300/setup.sh",
+  "source": "8x B300 node: /scratch/codex-fi074/setup.sh",
+  "sha256": "b48b8a23ca71acd30141b1fc8f1efd4943ed436d3960cad691878e4ba260649f"
+ },
+ {
+  "file": "b300/source-verify.json",
+  "source": "8x B300 node: /scratch/codex-fi074/source-verify.json",
+  "sha256": "b3982d87a29892d4631ea26c568ae351cfc4935bdb98be2b9a407fea663ddb1f"
+ },
+ {
+  "file": "b300/source.sha256",
+  "source": "8x B300 node: /scratch/codex-fi074/source.sha256",
+  "sha256": "cdc22c20d6a6fea7f058fbb58c9dcbce9b13d981ba8ac3cf022fec6da3f29e99"
+ },
+ {
+  "file": "b300/start.exit",
+  "source": "8x B300 node: /scratch/codex-fi074/start.exit",
+  "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+ },
+ {
+  "file": "b300/start.log",
+  "source": "8x B300 node: /scratch/codex-fi074/start.log",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+ },
+ {
+  "file": "b300/start.sh",
+  "source": "8x B300 node: /scratch/codex-fi074/start.sh",
+  "sha256": "9e43640e2f4a16c8408127cde205d43c4dc7e97ef3dbe486d0593d8b4408848a"
+ },
+ {
+  "file": "b300/suite.py",
+  "source": "8x B300 node: /scratch/codex-fi074/suite.py",
+  "sha256": "13ae5de8a93d3d6084129473e63e6330ca0ecd5b4e103e3bef51afbd0161012e"
+ },
+ {
+  "file": "driver/gate-h200-retry.py",
+  "source": "coordinator host: /tmp/codex-glm5lp-fi074-h200-evidence/gate-h200-retry.py",
+  "sha256": "de92f6256beec505ead59afb2fe9dd382d0100ed36f2faaaec2ad3569f00c386"
+ },
+ {
+  "file": "driver/gate.py",
+  "source": "coordinator host: /tmp/codex-glm5lp-fi074-h200-evidence/gate.py",
+  "sha256": "1b5efc47d5d2ea16f39807ba5569b9d07affea18806a1bb80f499d5d3ea1fe49"
+ },
+ {
+  "file": "driver/h200-fa3.sh",
+  "source": "coordinator host: /tmp/codex-glm5lp-fi074-h200-evidence/h200-fa3.sh",
+  "sha256": "5d2aed624422892eb7538f15d4d64b2ed5c4289a5adceec21f91f2ddfdb06dc8"
+ },
+ {
+  "file": "driver/provider-sm103a.sh",
+  "source": "coordinator host: /tmp/codex-glm5lp-fi074-h200-evidence/provider-sm103a.sh",
+  "sha256": "e72cdc45b8a3c1261be3858308e257722a2e2939cc3b64da950d0f9add46516e"
+ },
+ {
+  "file": "driver/provider-sm90a.sh",
+  "source": "coordinator host: /tmp/codex-glm5lp-fi074-h200-evidence/provider-sm90a.sh",
+  "sha256": "d38af253057a3a6aa1638307fc8eacecbc8eccb029643c390013b711c273ecc9"
+ },
+ {
+  "file": "driver/results.json",
+  "source": "coordinator host: /tmp/codex-glm5lp-fi074-h200-evidence/results.json; node names replaced by platform labels",
+  "sha256": "db1a0cc2b50a9e5fc2d94df0431473af5b7565c0e0ca5aa3b79733ae92fb7ddb"
+ },
+ {
+  "file": "driver/server-h200.py",
+  "source": "coordinator host: /tmp/codex-glm5lp-fi074-h200-evidence/server-h200.py",
+  "sha256": "8a2a3c558309988a78a0eb1eebd668c386e5b34dd6108b0a766ac481b94e6d58"
+ },
+ {
+  "file": "driver/server.py",
+  "source": "coordinator host: /tmp/codex-glm5lp-fi074-h200-evidence/server.py",
+  "sha256": "df583fa27b55a8727f8239b086f84c1d837fe7c79fe399e7efc5a6b589bcbd66"
+ },
+ {
+  "file": "driver/setup.sh",
+  "source": "coordinator host: /tmp/codex-glm5lp-fi074-h200-evidence/setup.sh",
+  "sha256": "b48b8a23ca71acd30141b1fc8f1efd4943ed436d3960cad691878e4ba260649f"
+ },
+ {
+  "file": "driver/sitecustomize.py",
+  "source": "coordinator host: /tmp/codex-glm5lp-fi074-h200-evidence/sitecustomize.py",
+  "sha256": "3294c5559257f4cd473be82a8b29d96592e2735799dc9b9aa2ca2b0c0c51bc05"
+ },
+ {
+  "file": "driver/start-b300-dep8.sh",
+  "source": "coordinator host: /tmp/codex-glm5lp-fi074-h200-evidence/start-b300-dep8.sh",
+  "sha256": "7b3d1ba0c5e6072869b2072b5d6a255962ebbb244b5cdaca977086d878fb27f0"
+ },
+ {
+  "file": "driver/start-b300-tp8.sh",
+  "source": "coordinator host: /tmp/codex-glm5lp-fi074-h200-evidence/start-b300-tp8.sh",
+  "sha256": "9e43640e2f4a16c8408127cde205d43c4dc7e97ef3dbe486d0593d8b4408848a"
+ },
+ {
+  "file": "driver/start-h200-tp8.sh",
+  "source": "coordinator host: /tmp/codex-glm5lp-fi074-h200-evidence/start-h200-tp8.sh",
+  "sha256": "984592d66b715923f9bbb1b487d440ee01de7b81db1c02df9e3ecb08246aebfe"
+ },
+ {
+  "file": "driver/suite.py",
+  "source": "coordinator host: /tmp/codex-glm5lp-fi074-h200-evidence/suite.py",
+  "sha256": "13ae5de8a93d3d6084129473e63e6330ca0ecd5b4e103e3bef51afbd0161012e"
+ },
+ {
+  "file": "h200/checkpoint.sha256",
+  "source": "8x H200 node: /scratch/codex-fi074/checkpoint.sha256",
+  "sha256": "2fe4765e3d883082e82f8b858df949235921b80b5f6fc15c0b2357a5fe208ea0"
+ },
+ {
+  "file": "h200/evidence-sha256.json",
+  "source": "8x H200 node: /scratch/codex-fi074/evidence-sha256.json",
+  "sha256": "9a72f3584d791c17843018bbfe7e02f02ba0534746dcc257665af3e2deded516"
+ },
+ {
+  "file": "h200/gate-h200-retry.py",
+  "source": "8x H200 node: /scratch/codex-fi074/gate-h200-retry.py",
+  "sha256": "de92f6256beec505ead59afb2fe9dd382d0100ed36f2faaaec2ad3569f00c386"
+ },
+ {
+  "file": "h200/gate.py",
+  "source": "8x H200 node: /scratch/codex-fi074/gate.py",
+  "sha256": "1b5efc47d5d2ea16f39807ba5569b9d07affea18806a1bb80f499d5d3ea1fe49"
+ },
+ {
+  "file": "h200/h200-fa3.exit",
+  "source": "8x H200 node: /scratch/codex-fi074/h200-fa3.exit",
+  "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+ },
+ {
+  "file": "h200/h200-fa3.log",
+  "source": "8x H200 node: /scratch/codex-fi074/h200-fa3.log",
+  "sha256": "188b7be313f9cc150658577a8f5bd3e9fa7a79bfdc79aeee8a6b89a5c0bf1ad4"
+ },
+ {
+  "file": "h200/h200-fa3.sh",
+  "source": "8x H200 node: /scratch/codex-fi074/h200-fa3.sh",
+  "sha256": "5d2aed624422892eb7538f15d4d64b2ed5c4289a5adceec21f91f2ddfdb06dc8"
+ },
+ {
+  "file": "h200/h200-tp8-fa3/after-eval-get_server_info.txt",
+  "source": "8x H200 node: /scratch/codex-fi074/h200-tp8-fa3/after-eval-get_server_info.txt",
+  "sha256": "70396b22294e0009267cd1d058079c614f7a5319706c4da2a294cee339153159"
+ },
+ {
+  "file": "h200/h200-tp8-fa3/after-eval-metrics.txt.gz",
+  "source": "8x H200 node: /scratch/codex-fi074/h200-tp8-fa3/after-eval-metrics.txt",
+  "sha256": "d20f6347e1ddd2f763f8ac89c0e841af2811d5248303bbc456221036a7e52b02"
+ },
+ {
+  "file": "h200/h200-tp8-fa3/before-eval-get_server_info.txt",
+  "source": "8x H200 node: /scratch/codex-fi074/h200-tp8-fa3/before-eval-get_server_info.txt",
+  "sha256": "8bf9d7960a8a6eb4e0ea7a982bcf34aa6590f180e6f5303d1557f97ef0e6a242"
+ },
+ {
+  "file": "h200/h200-tp8-fa3/before-eval-metrics.txt.gz",
+  "source": "8x H200 node: /scratch/codex-fi074/h200-tp8-fa3/before-eval-metrics.txt",
+  "sha256": "0eb7e836fbd9aa7c1c5f77a5f8b576198f68eb637d7b332e9467989b303b66e6"
+ },
+ {
+  "file": "h200/h200-tp8-fa3/eval/sgl_eval_gsm8k_20261116-003133/metrics.json",
+  "source": "8x H200 node: /scratch/codex-fi074/h200-tp8-fa3/eval/sgl_eval_gsm8k_20261116-003133/metrics.json",
+  "sha256": "5ba4956a27cd4825083bded89df2f93eb9f4322a57acddb94977dbb95cd3a778"
+ },
+ {
+  "file": "h200/h200-tp8-fa3/eval/sgl_eval_gsm8k_20261116-003133/output-rs0.jsonl.gz",
+  "source": "8x H200 node: /scratch/codex-fi074/h200-tp8-fa3/eval/sgl_eval_gsm8k_20261116-003133/output-rs0.jsonl",
+  "sha256": "930c3698e8f64e2a21104b5825f3fbc97d933c3b9e59eb2331701a0de22d1cdb"
+ },
+ {
+  "file": "h200/h200-tp8-fa3/gpu-after.csv",
+  "source": "8x H200 node: /scratch/codex-fi074/h200-tp8-fa3/gpu-after.csv",
+  "sha256": "4fc5af190bc52d4ec6979829543a9f8e6711f82aed9378b2ff1509563d60c7ae"
+ },
+ {
+  "file": "h200/h200-tp8-fa3/gpu-before.csv",
+  "source": "8x H200 node: /scratch/codex-fi074/h200-tp8-fa3/gpu-before.csv",
+  "sha256": "5872c81e0a64a598b2f17fb3e9ae6aaca247e5a2c6c2ffd82bc0f65a57523304"
+ },
+ {
+  "file": "h200/h200-tp8-fa3/gsm8k.log.gz",
+  "source": "8x H200 node: /scratch/codex-fi074/h200-tp8-fa3/gsm8k.log",
+  "sha256": "5fce38211e0442d12ecf12a92d460fc47138f09ed130786feca8d88ef234d71e"
+ },
+ {
+  "file": "h200/h200-tp8-fa3/launch.json",
+  "source": "8x H200 node: /scratch/codex-fi074/h200-tp8-fa3/launch.json",
+  "sha256": "b9dce025b3af328debec16a454453d67b1df6056d61d2fe57a91f9ddc97e1d23"
+ },
+ {
+  "file": "h200/h200-tp8-fa3/serve.log.gz",
+  "source": "8x H200 node: /scratch/codex-fi074/h200-tp8-fa3/serve.log",
+  "sha256": "0ecfd1730b21fb1e862e13bd813aedbda97f3f930156b3787ff27c9a5f387c5f"
+ },
+ {
+  "file": "h200/h200-tp8-fa3/server.pid",
+  "source": "8x H200 node: /scratch/codex-fi074/h200-tp8-fa3/server.pid",
+  "sha256": "fa6fe655dd2c931a5ee0b4fb3fc60e55cbf80a113a5e96ccf9d856aa140b9188"
+ },
+ {
+  "file": "h200/h200-tp8-fa3/status",
+  "source": "8x H200 node: /scratch/codex-fi074/h200-tp8-fa3/status",
+  "sha256": "7ebaa391a7c76a597e36e0e72aec6396067ce052486e544c72c493c1eb09c3fc"
+ },
+ {
+  "file": "h200/h200-tp8-fa3/suite.json",
+  "source": "8x H200 node: /scratch/codex-fi074/h200-tp8-fa3/suite.json",
+  "sha256": "29a089e100c012987535fa77b9d89b1516db1155faff8e122a4b28bc50762359"
+ },
+ {
+  "file": "h200/h200-tp8-fa3/suite.log",
+  "source": "8x H200 node: /scratch/codex-fi074/h200-tp8-fa3/suite.log",
+  "sha256": "9e80991363b6f659b04506d4a6bea64a8d20a2b7e081a9a7b6377117ddd1467e"
+ },
+ {
+  "file": "h200/h200-tp8-fa3/suite.py",
+  "source": "8x H200 node: /scratch/codex-fi074/h200-tp8-fa3/suite.py",
+  "sha256": "736c49429822d8e7c55d80aaef17a1cf0777165148d67a4612cf928f9a120437"
+ },
+ {
+  "file": "h200/h200-tp8/gpu-after.csv",
+  "source": "8x H200 node: /scratch/codex-fi074/h200-tp8/gpu-after.csv",
+  "sha256": "4fc5af190bc52d4ec6979829543a9f8e6711f82aed9378b2ff1509563d60c7ae"
+ },
+ {
+  "file": "h200/h200-tp8/gpu-before.csv",
+  "source": "8x H200 node: /scratch/codex-fi074/h200-tp8/gpu-before.csv",
+  "sha256": "5872c81e0a64a598b2f17fb3e9ae6aaca247e5a2c6c2ffd82bc0f65a57523304"
+ },
+ {
+  "file": "h200/h200-tp8/launch.json",
+  "source": "8x H200 node: /scratch/codex-fi074/h200-tp8/launch.json",
+  "sha256": "b9dce025b3af328debec16a454453d67b1df6056d61d2fe57a91f9ddc97e1d23"
+ },
+ {
+  "file": "h200/h200-tp8/serve.log.gz",
+  "source": "8x H200 node: /scratch/codex-fi074/h200-tp8/serve.log",
+  "sha256": "66ec636f1bb41b5c8622c4c885cfc98b875c4d6bbe20e8eeb89804717c698b2f"
+ },
+ {
+  "file": "h200/h200-tp8/server.pid",
+  "source": "8x H200 node: /scratch/codex-fi074/h200-tp8/server.pid",
+  "sha256": "2497bb0070c0709882f6a795a97cf2a18617f3126fa820750d1030da90c36d9d"
+ },
+ {
+  "file": "h200/h200-tp8/status",
+  "source": "8x H200 node: /scratch/codex-fi074/h200-tp8/status",
+  "sha256": "029013d4f26460365fdd4e00243b4f7d2e6886ee56aa9092ee8e35dd9c7ec6ec"
+ },
+ {
+  "file": "h200/provider.exit",
+  "source": "8x H200 node: /scratch/codex-fi074/provider.exit",
+  "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+ },
+ {
+  "file": "h200/provider.log",
+  "source": "8x H200 node: /scratch/codex-fi074/provider.log",
+  "sha256": "2a9095c0ee130af5a64b793c5781aaa3fa18a6a0194b6d8109967f3bf4331d59"
+ },
+ {
+  "file": "h200/provider.sh",
+  "source": "8x H200 node: /scratch/codex-fi074/provider.sh",
+  "sha256": "d38af253057a3a6aa1638307fc8eacecbc8eccb029643c390013b711c273ecc9"
+ },
+ {
+  "file": "h200/server.py",
+  "source": "8x H200 node: /scratch/codex-fi074/server.py",
+  "sha256": "8a2a3c558309988a78a0eb1eebd668c386e5b34dd6108b0a766ac481b94e6d58"
+ },
+ {
+  "file": "h200/setup.exit",
+  "source": "8x H200 node: /scratch/codex-fi074/setup.exit",
+  "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+ },
+ {
+  "file": "h200/setup.log",
+  "source": "8x H200 node: /scratch/codex-fi074/setup.log",
+  "sha256": "4b530fb66bb1a394158d03d636f1161c840c0346e425dd85e1d4f5e14562ac8f"
+ },
+ {
+  "file": "h200/setup.sh",
+  "source": "8x H200 node: /scratch/codex-fi074/setup.sh",
+  "sha256": "b48b8a23ca71acd30141b1fc8f1efd4943ed436d3960cad691878e4ba260649f"
+ },
+ {
+  "file": "h200/source-verify.json",
+  "source": "8x H200 node: /scratch/codex-fi074/source-verify.json",
+  "sha256": "b3982d87a29892d4631ea26c568ae351cfc4935bdb98be2b9a407fea663ddb1f"
+ },
+ {
+  "file": "h200/source.sha256",
+  "source": "8x H200 node: /scratch/codex-fi074/source.sha256",
+  "sha256": "cdc22c20d6a6fea7f058fbb58c9dcbce9b13d981ba8ac3cf022fec6da3f29e99"
+ },
+ {
+  "file": "h200/start.exit",
+  "source": "8x H200 node: /scratch/codex-fi074/start.exit",
+  "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+ },
+ {
+  "file": "h200/start.log",
+  "source": "8x H200 node: /scratch/codex-fi074/start.log",
+  "sha256": "acdda0e099cdb2523ad36dfbe349a7ee89fc3c6a6059ff2b812aab7ee8f81fde"
+ },
+ {
+  "file": "h200/start.sh",
+  "source": "8x H200 node: /scratch/codex-fi074/start.sh",
+  "sha256": "984592d66b715923f9bbb1b487d440ee01de7b81db1c02df9e3ecb08246aebfe"
+ },
+ {
+  "file": "h200/suite.py",
+  "source": "8x H200 node: /scratch/codex-fi074/suite.py",
+  "sha256": "13ae5de8a93d3d6084129473e63e6330ca0ecd5b4e103e3bef51afbd0161012e"
+ },
+ {
+  "file": "repro.md",
+  "source": "generated for this round",
+  "sha256": "b9c6d059a4a02ab52dc27ddc586aa3bbaf1db483d0eefed7a86e6142cd1a2dbb"
+ },
+ {
+  "file": "summary.json",
+  "source": "generated for this round",
+  "sha256": "44027b06fba5b801b4c6989a6b983908c970ca7787f46f38a5155a488d88ccb7"
+ }
+]
