@@ -1,0 +1,134 @@
+[
+  {
+    "prompt": "What is 2 plus 3? Give only the number.",
+    "response": {
+      "id": "96c5ec485d7c4276a176f194cb327f56",
+      "object": "chat.completion",
+      "created": 1794790977,
+      "model": "/scratch/models/GLM-5-1028-Provider",
+      "choices": [
+        {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "5",
+            "reasoning_content": null
+          },
+          "logprobs": null,
+          "finish_reason": "stop",
+          "matched_stop": 154827
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 25,
+        "total_tokens": 28,
+        "completion_tokens": 3,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "reasoning_tokens": 1,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1
+        }
+      },
+      "metadata": {
+        "weight_version": "default",
+        "weight_versions": [
+          {
+            "version": "default",
+            "start": 0,
+            "end": 3
+          }
+        ]
+      }
+    }
+  },
+  {
+    "prompt": "Name the capital of France in one short sentence.",
+    "response": {
+      "id": "5455569af5a14690a7d29a845bc3dedf",
+      "object": "chat.completion",
+      "created": 1794790980,
+      "model": "/scratch/models/GLM-5-1028-Provider",
+      "choices": [
+        {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "The capital of France is Paris.",
+            "reasoning_content": "The user asks me to name the capital of France in one short sentence. This is a simple factual question. The capital of France is Paris. I should respond with a short sentence, like \"The capital of France is Paris.\" That's it. I don't need to reference any prior conversation \u2014 this is a standalone question, and the user wants a concise answer.\n\nThe system prompt says to be helpful and direct, to match the response length to the complexity of the query, and not to add unnecessary preamble. A single sentence is appropriate here.\n\nRegarding the \"valid channels\" note \u2014 that appears to be a system-level instruction about output channels (analysis, final, summary). My final response goes in the \"final\" channel, which is correct.\n\nSo my answer: \"The capital of France is Paris.\""
+          },
+          "logprobs": null,
+          "finish_reason": "stop",
+          "matched_stop": 154827
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 22,
+        "total_tokens": 194,
+        "completion_tokens": 172,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "reasoning_tokens": 164,
+        "completion_tokens_details": {
+          "reasoning_tokens": 164
+        }
+      },
+      "metadata": {
+        "weight_version": "default",
+        "weight_versions": [
+          {
+            "version": "default",
+            "start": 0,
+            "end": 172
+          }
+        ]
+      }
+    }
+  },
+  {
+    "prompt": "A service returns HTTP 503 while restarting. Give one sensible first diagnostic check in one sentence.",
+    "response": {
+      "id": "3324182dc1574a65bdba4a7370206a67",
+      "object": "chat.completion",
+      "created": 1794790980,
+      "model": "/scratch/models/GLM-5-1028-Provider",
+      "choices": [
+        {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "Check the service's logs and startup status to see if it has finished restarting and is listening on the correct port.",
+            "reasoning_content": null
+          },
+          "logprobs": null,
+          "finish_reason": "stop",
+          "matched_stop": 154827
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 32,
+        "total_tokens": 57,
+        "completion_tokens": 25,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "reasoning_tokens": 1,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1
+        }
+      },
+      "metadata": {
+        "weight_version": "default",
+        "weight_versions": [
+          {
+            "version": "default",
+            "start": 0,
+            "end": 25
+          }
+        ]
+      }
+    }
+  }
+]

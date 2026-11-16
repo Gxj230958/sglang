@@ -1,0 +1,192 @@
+{
+  "candidates": [
+    {
+      "name": "tp4-default-mtp",
+      "serve_args": [
+        "--tp-size",
+        "4",
+        "--moe-runner-backend",
+        "deep_gemm",
+        "--speculative-algorithm",
+        "EAGLE",
+        "--speculative-num-steps",
+        "3",
+        "--speculative-eagle-topk",
+        "1",
+        "--speculative-num-draft-tokens",
+        "4",
+        "--speculative-draft-model-path",
+        "/scratch/models/GLM-5-1028-Provider"
+      ]
+    },
+    {
+      "name": "tp4-default",
+      "serve_args": [
+        "--tp-size",
+        "4",
+        "--moe-runner-backend",
+        "deep_gemm"
+      ]
+    },
+    {
+      "name": "tp4-trt-bf16-mtp",
+      "serve_args": [
+        "--tp-size",
+        "4",
+        "--moe-runner-backend",
+        "deep_gemm",
+        "--dsa-prefill-backend",
+        "trtllm",
+        "--dsa-decode-backend",
+        "trtllm",
+        "--speculative-algorithm",
+        "EAGLE",
+        "--speculative-num-steps",
+        "3",
+        "--speculative-eagle-topk",
+        "1",
+        "--speculative-num-draft-tokens",
+        "4",
+        "--speculative-draft-model-path",
+        "/scratch/models/GLM-5-1028-Provider"
+      ]
+    },
+    {
+      "name": "tp4-trt-fp8-mtp",
+      "serve_args": [
+        "--tp-size",
+        "4",
+        "--moe-runner-backend",
+        "deep_gemm",
+        "--dsa-prefill-backend",
+        "trtllm",
+        "--dsa-decode-backend",
+        "trtllm",
+        "--kv-cache-dtype",
+        "fp8_e4m3",
+        "--speculative-algorithm",
+        "EAGLE",
+        "--speculative-num-steps",
+        "3",
+        "--speculative-eagle-topk",
+        "1",
+        "--speculative-num-draft-tokens",
+        "4",
+        "--speculative-draft-model-path",
+        "/scratch/models/GLM-5-1028-Provider"
+      ]
+    },
+    {
+      "name": "dep4-trt-fp8-mtp",
+      "serve_args": [
+        "--tp-size",
+        "4",
+        "--ep-size",
+        "4",
+        "--attn-dp-size",
+        "4",
+        "--moe-runner-backend",
+        "flashinfer_trtllm",
+        "--moe-a2a-backend",
+        "none",
+        "--dsa-prefill-backend",
+        "trtllm",
+        "--dsa-decode-backend",
+        "trtllm",
+        "--kv-cache-dtype",
+        "fp8_e4m3",
+        "--speculative-algorithm",
+        "EAGLE",
+        "--speculative-num-steps",
+        "3",
+        "--speculative-eagle-topk",
+        "1",
+        "--speculative-num-draft-tokens",
+        "4",
+        "--speculative-draft-model-path",
+        "/scratch/models/GLM-5-1028-Provider"
+      ]
+    },
+    {
+      "name": "dep4-trt-fp8",
+      "serve_args": [
+        "--tp-size",
+        "4",
+        "--ep-size",
+        "4",
+        "--attn-dp-size",
+        "4",
+        "--moe-runner-backend",
+        "flashinfer_trtllm",
+        "--moe-a2a-backend",
+        "none",
+        "--dsa-prefill-backend",
+        "trtllm",
+        "--dsa-decode-backend",
+        "trtllm",
+        "--kv-cache-dtype",
+        "fp8_e4m3"
+      ]
+    },
+    {
+      "name": "dep4-trt-fp8-mtp-full",
+      "serve_args": [
+        "--tp-size",
+        "4",
+        "--ep-size",
+        "4",
+        "--attn-dp-size",
+        "4",
+        "--moe-runner-backend",
+        "flashinfer_trtllm",
+        "--moe-a2a-backend",
+        "none",
+        "--dsa-prefill-backend",
+        "trtllm",
+        "--dsa-decode-backend",
+        "trtllm",
+        "--kv-cache-dtype",
+        "fp8_e4m3",
+        "--speculative-algorithm",
+        "EAGLE",
+        "--speculative-num-steps",
+        "3",
+        "--speculative-eagle-topk",
+        "1",
+        "--speculative-num-draft-tokens",
+        "4",
+        "--speculative-draft-model-path",
+        "/scratch/models/GLM-5-1028-Provider",
+        "--disable-hybrid-swa-memory"
+      ]
+    },
+    {
+      "name": "tp4-default-mtp-full",
+      "serve_args": [
+        "--tp-size",
+        "4",
+        "--moe-runner-backend",
+        "deep_gemm",
+        "--speculative-algorithm",
+        "EAGLE",
+        "--speculative-num-steps",
+        "3",
+        "--speculative-eagle-topk",
+        "1",
+        "--speculative-num-draft-tokens",
+        "4",
+        "--speculative-draft-model-path",
+        "/scratch/models/GLM-5-1028-Provider",
+        "--disable-hybrid-swa-memory"
+      ]
+    }
+  ],
+  "levels": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "mode": "closed_loop",
+  "repeat": 2
+}

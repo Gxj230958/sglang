@@ -1,0 +1,134 @@
+[
+  {
+    "prompt": "What is 2 plus 3? Give only the number.",
+    "response": {
+      "id": "011b19c0695245fa9e269de92a7124c1",
+      "object": "chat.completion",
+      "created": 1794792682,
+      "model": "/scratch/models/GLM-5-1028-Provider",
+      "choices": [
+        {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "5",
+            "reasoning_content": null
+          },
+          "logprobs": null,
+          "finish_reason": "stop",
+          "matched_stop": 154827
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 25,
+        "total_tokens": 28,
+        "completion_tokens": 3,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "reasoning_tokens": 1,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1
+        }
+      },
+      "metadata": {
+        "weight_version": "default",
+        "weight_versions": [
+          {
+            "version": "default",
+            "start": 0,
+            "end": 3
+          }
+        ]
+      }
+    }
+  },
+  {
+    "prompt": "Name the capital of France in one short sentence.",
+    "response": {
+      "id": "c6c724b63cfb45a5b3a843fcd50a53e6",
+      "object": "chat.completion",
+      "created": 1794792682,
+      "model": "/scratch/models/GLM-5-1028-Provider",
+      "choices": [
+        {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "The capital of France is Paris.",
+            "reasoning_content": null
+          },
+          "logprobs": null,
+          "finish_reason": "stop",
+          "matched_stop": 154827
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 22,
+        "total_tokens": 31,
+        "completion_tokens": 9,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "reasoning_tokens": 1,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1
+        }
+      },
+      "metadata": {
+        "weight_version": "default",
+        "weight_versions": [
+          {
+            "version": "default",
+            "start": 0,
+            "end": 9
+          }
+        ]
+      }
+    }
+  },
+  {
+    "prompt": "A service returns HTTP 503 while restarting. Give one sensible first diagnostic check in one sentence.",
+    "response": {
+      "id": "be267d895eec4ffea6f6219c227e0748",
+      "object": "chat.completion",
+      "created": 1794792687,
+      "model": "/scratch/models/GLM-5-1028-Provider",
+      "choices": [
+        {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "Hit the service's health/readiness endpoint (e.g., `GET /health` or `/ready`) to confirm whether the instance has actually finished starting and is passing readiness checks, which tells you if the 503 is just transient restart downtime or a failed/crash-looping start.",
+            "reasoning_content": "The user asks: \"A service returns HTTP 503 while restarting. Give one sensible first diagnostic check in one sentence.\"\n\nThey want a single sensible first diagnostic check, in one sentence. This is a straightforward question. Let me think about what the most sensible first diagnostic check would be for a service returning 503 during restart.\n\nHTTP 503 Service Unavailable typically means the server is temporarily unable to handle the request \u2014 often during maintenance, overload, or restart. When a service is restarting, a 503 is actually somewhat expected behavior if there's a load balancer/reverse proxy in front that detects the backend is down.\n\nA sensible first diagnostic check would be:\n- Check whether the service's health/readiness endpoint responds (e.g., GET /health or /ready) to confirm the restart completed and the instance is actually up and passing readiness checks.\n- Or check the service logs for startup errors/crash loops.\n- Or check if the process actually restarted and is listening on the expected port.\n\nWhich one is \"most sensible\" as a first check? I think checking the readiness/health endpoint is a good first step because it directly tells you whether the service is back up and whether the 503 is transient (expected during restart) or persistent (indicating a failed restart). Alternatively, checking the logs for startup failures is also very sensible.\n\nThe question is fairly simple and asks for one sentence. I should give one clear, concise sentence with one diagnostic check. I'll pick the health/readiness check, possibly mentioning logs as an alternative\u2014but they asked for one check, so I'll keep it to one main check. Actually, I could phrase it as one sentence that gives the health check as the primary. Let me keep it tight.\n\nOne sentence: \"Hit the service's health/readiness endpoint (e.g., GET /health or /ready) to confirm whether the instance has finished starting and is passing readiness checks, which tells you whether the 503 is just transient restart downtime or a failed start.\"\n\nThat's one sentence. Maybe slightly trim. Also could mention: if it fails, check logs. But keep to one check. I'll give the health endpoint check as the single check, with the reasoning embedded briefly.\n\nLet me also consider: a 503 while restarting is often expected behavior from a reverse proxy/load balancer (e.g., nginx, HAProxy, Kubernetes ingress) when the backend is unavailable. So confirming that the backend comes back is key. The health endpoint check is the right first move.\n\nFinal answer in one sentence."
+          },
+          "logprobs": null,
+          "finish_reason": "stop",
+          "matched_stop": 154827
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 32,
+        "total_tokens": 614,
+        "completion_tokens": 582,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "reasoning_tokens": 522,
+        "completion_tokens_details": {
+          "reasoning_tokens": 522
+        }
+      },
+      "metadata": {
+        "weight_version": "default",
+        "weight_versions": [
+          {
+            "version": "default",
+            "start": 0,
+            "end": 582
+          }
+        ]
+      }
+    }
+  }
+]

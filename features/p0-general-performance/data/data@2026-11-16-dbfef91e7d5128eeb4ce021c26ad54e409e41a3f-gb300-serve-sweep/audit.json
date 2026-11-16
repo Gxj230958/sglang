@@ -1,0 +1,178 @@
+[
+  {
+    "candidate": "tp4-default-mtp",
+    "pool_lines": [
+      "[2026-11-16 00:49:32 TP0 PID97483] Use sliding window memory pool. full_layer_tokens=422400, swa_layer_tokens=42240",
+      "[2026-11-16 00:49:32 TP2 PID97614] Use sliding window memory pool. full_layer_tokens=422400, swa_layer_tokens=42240",
+      "[2026-11-16 00:49:32 TP1 PID97548] Use sliding window memory pool. full_layer_tokens=422400, swa_layer_tokens=42240",
+      "[2026-11-16 00:49:32 TP3 PID97686] Use sliding window memory pool. full_layer_tokens=422400, swa_layer_tokens=42240",
+      "[2026-11-16 00:50:46 TP0 PID97483] max_total_num_tokens=422400, chunked_prefill_size=8192, max_prefill_tokens=16384, max_running_requests=64, context_len=32768, available_gpu_mem=48.43 GB"
+    ],
+    "exceptions": [],
+    "sanity": {
+      "stop_rate": 1.0,
+      "empty_rate": 0.0,
+      "error_rate": 0.0
+    },
+    "start_line": "/scratch/codex-serve-sweep/src/python/sglang/launch_server.py:71: UserWarning: 'python -m sglang.launch_server' is still supported, but 'sglang serve' is the recommended entrypoint.",
+    "last_lines": [
+      "[2026-11-16 00:59:49] SIGQUIT received. signum=None, frame=None. It usually means one child failed.",
+      "[2026-11-16 00:59:49] Sleeping 5 seconds before crash diagnostics to let GPU activity settle.",
+      "[2026-11-16 00:59:54] No live scheduler processes found; skipping py-spy and CUDA coredump.",
+      "[2026-11-16 00:59:54] kill_process_tree called: parent_pid=97327, include_parent=True, pid=97327"
+    ]
+  },
+  {
+    "candidate": "tp4-default",
+    "pool_lines": [
+      "[2026-11-16 01:01:57 TP0 PID102490] Use sliding window memory pool. full_layer_tokens=460480, swa_layer_tokens=46016",
+      "[2026-11-16 01:01:57 TP1 PID102555] Use sliding window memory pool. full_layer_tokens=460480, swa_layer_tokens=46016",
+      "[2026-11-16 01:01:57 TP2 PID102621] Use sliding window memory pool. full_layer_tokens=460480, swa_layer_tokens=46016",
+      "[2026-11-16 01:01:57 TP3 PID102687] Use sliding window memory pool. full_layer_tokens=460480, swa_layer_tokens=46016",
+      "[2026-11-16 01:02:45 TP0 PID102490] max_total_num_tokens=460480, chunked_prefill_size=8192, max_prefill_tokens=16384, max_running_requests=64, context_len=32768, available_gpu_mem=51.54 GB"
+    ],
+    "exceptions": [],
+    "sanity": {
+      "stop_rate": 1.0,
+      "empty_rate": 0.0,
+      "error_rate": 0.0
+    },
+    "start_line": "/scratch/codex-serve-sweep/src/python/sglang/launch_server.py:71: UserWarning: 'python -m sglang.launch_server' is still supported, but 'sglang serve' is the recommended entrypoint.",
+    "last_lines": [
+      "[2026-11-16 01:14:57] SIGQUIT received. signum=None, frame=None. It usually means one child failed.",
+      "[2026-11-16 01:14:57] Sleeping 5 seconds before crash diagnostics to let GPU activity settle.",
+      "[2026-11-16 01:15:02] No live scheduler processes found; skipping py-spy and CUDA coredump.",
+      "[2026-11-16 01:15:02] kill_process_tree called: parent_pid=102352, include_parent=True, pid=102352"
+    ]
+  },
+  {
+    "candidate": "tp4-trt-bf16-mtp",
+    "pool_lines": [
+      "[2026-11-16 01:17:10 TP2 PID107305] Use sliding window memory pool. full_layer_tokens=422400, swa_layer_tokens=42240",
+      "[2026-11-16 01:17:10 TP1 PID107239] Use sliding window memory pool. full_layer_tokens=422400, swa_layer_tokens=42240",
+      "[2026-11-16 01:17:10 TP0 PID107174] Use sliding window memory pool. full_layer_tokens=422400, swa_layer_tokens=42240",
+      "[2026-11-16 01:17:10 TP3 PID107371] Use sliding window memory pool. full_layer_tokens=422400, swa_layer_tokens=42240",
+      "[2026-11-16 01:18:26 TP0 PID107174] max_total_num_tokens=422400, chunked_prefill_size=8192, max_prefill_tokens=16384, max_running_requests=64, context_len=32768, available_gpu_mem=48.46 GB"
+    ],
+    "exceptions": [],
+    "sanity": {
+      "stop_rate": 1.0,
+      "empty_rate": 0.0,
+      "error_rate": 0.0
+    },
+    "start_line": "/scratch/codex-serve-sweep/src/python/sglang/launch_server.py:71: UserWarning: 'python -m sglang.launch_server' is still supported, but 'sglang serve' is the recommended entrypoint.",
+    "last_lines": [
+      "[2026-11-16 01:27:30] SIGQUIT received. signum=None, frame=None. It usually means one child failed.",
+      "[2026-11-16 01:27:30] Sleeping 5 seconds before crash diagnostics to let GPU activity settle.",
+      "[2026-11-16 01:27:35] No live scheduler processes found; skipping py-spy and CUDA coredump.",
+      "[2026-11-16 01:27:35] kill_process_tree called: parent_pid=107036, include_parent=True, pid=107036"
+    ]
+  },
+  {
+    "candidate": "tp4-trt-fp8-mtp",
+    "pool_lines": [
+      "[2026-11-16 01:29:48 TP1 PID111863] Use sliding window memory pool. full_layer_tokens=820352, swa_layer_tokens=81984",
+      "[2026-11-16 01:29:48 TP0 PID111798] Use sliding window memory pool. full_layer_tokens=820352, swa_layer_tokens=81984",
+      "[2026-11-16 01:29:48 TP2 PID111929] Use sliding window memory pool. full_layer_tokens=820352, swa_layer_tokens=81984",
+      "[2026-11-16 01:29:48 TP3 PID111995] Use sliding window memory pool. full_layer_tokens=820352, swa_layer_tokens=81984",
+      "[2026-11-16 01:31:14 TP0 PID111798] max_total_num_tokens=820352, chunked_prefill_size=8192, max_prefill_tokens=16384, max_running_requests=64, context_len=32768, available_gpu_mem=48.48 GB"
+    ],
+    "exceptions": [],
+    "sanity": {
+      "stop_rate": 1.0,
+      "empty_rate": 0.0,
+      "error_rate": 0.0
+    },
+    "start_line": "/scratch/codex-serve-sweep/src/python/sglang/launch_server.py:71: UserWarning: 'python -m sglang.launch_server' is still supported, but 'sglang serve' is the recommended entrypoint.",
+    "last_lines": [
+      "[2026-11-16 01:40:43] SIGQUIT received. signum=None, frame=None. It usually means one child failed.",
+      "[2026-11-16 01:40:43] Sleeping 5 seconds before crash diagnostics to let GPU activity settle.",
+      "[2026-11-16 01:40:48] No live scheduler processes found; skipping py-spy and CUDA coredump.",
+      "[2026-11-16 01:40:48] kill_process_tree called: parent_pid=111660, include_parent=True, pid=111660"
+    ]
+  },
+  {
+    "candidate": "dep4-trt-fp8-mtp",
+    "pool_lines": [
+      "[2026-11-16 01:42:41 DP1 TP1 EP1 PID116529] Use sliding window memory pool. full_layer_tokens=443264, swa_layer_tokens=44288",
+      "[2026-11-16 01:42:41 DP0 TP0 EP0 PID116464] Use sliding window memory pool. full_layer_tokens=443264, swa_layer_tokens=44288",
+      "[2026-11-16 01:42:41 DP3 TP3 EP3 PID116661] Use sliding window memory pool. full_layer_tokens=443264, swa_layer_tokens=44288",
+      "[2026-11-16 01:42:41 DP2 TP2 EP2 PID116595] Use sliding window memory pool. full_layer_tokens=443264, swa_layer_tokens=44288",
+      "[2026-11-16 01:49:43 DP0 TP0 EP0 PID116464] max_total_num_tokens=443264, chunked_prefill_size=2048, max_prefill_tokens=16384, max_running_requests=16, context_len=32768, available_gpu_mem=53.90 GB"
+    ],
+    "exceptions": [],
+    "sanity": {
+      "stop_rate": 1.0,
+      "empty_rate": 0.0,
+      "error_rate": 0.0
+    },
+    "start_line": "/scratch/codex-serve-sweep/src/python/sglang/launch_server.py:71: UserWarning: 'python -m sglang.launch_server' is still supported, but 'sglang serve' is the recommended entrypoint.",
+    "last_lines": [
+      "[2026-11-16 02:01:36] SIGQUIT received. signum=None, frame=None. It usually means one child failed.",
+      "[2026-11-16 02:01:36] Sleeping 5 seconds before crash diagnostics to let GPU activity settle.",
+      "[2026-11-16 02:01:41] No live scheduler processes found; skipping py-spy and CUDA coredump.",
+      "[2026-11-16 02:01:41] kill_process_tree called: parent_pid=116326, include_parent=True, pid=116326"
+    ]
+  },
+  {
+    "candidate": "dep4-trt-fp8",
+    "pool_lines": [
+      "[2026-11-16 02:03:28 DP1 TP1 EP1 PID121022] Use sliding window memory pool. full_layer_tokens=537216, swa_layer_tokens=53696",
+      "[2026-11-16 02:03:28 DP0 TP0 EP0 PID120957] Use sliding window memory pool. full_layer_tokens=537216, swa_layer_tokens=53696",
+      "[2026-11-16 02:03:28 DP2 TP2 EP2 PID121088] Use sliding window memory pool. full_layer_tokens=537216, swa_layer_tokens=53696",
+      "[2026-11-16 02:03:28 DP3 TP3 EP3 PID121154] Use sliding window memory pool. full_layer_tokens=537216, swa_layer_tokens=53696",
+      "[2026-11-16 02:04:13 DP0 TP0 EP0 PID120957] max_total_num_tokens=537216, chunked_prefill_size=2048, max_prefill_tokens=16384, max_running_requests=16, context_len=32768, available_gpu_mem=53.85 GB"
+    ],
+    "exceptions": [],
+    "sanity": {
+      "stop_rate": 1.0,
+      "empty_rate": 0.0,
+      "error_rate": 0.0
+    },
+    "start_line": "/scratch/codex-serve-sweep/src/python/sglang/launch_server.py:71: UserWarning: 'python -m sglang.launch_server' is still supported, but 'sglang serve' is the recommended entrypoint.",
+    "last_lines": [
+      "[2026-11-16 02:19:35] SIGQUIT received. signum=None, frame=None. It usually means one child failed.",
+      "[2026-11-16 02:19:35] Sleeping 5 seconds before crash diagnostics to let GPU activity settle.",
+      "[2026-11-16 02:19:40] No live scheduler processes found; skipping py-spy and CUDA coredump.",
+      "[2026-11-16 02:19:40] kill_process_tree called: parent_pid=120819, include_parent=True, pid=120819"
+    ]
+  },
+  {
+    "candidate": "dep4-trt-fp8-mtp-full",
+    "pool_lines": [
+      "[2026-11-16 02:22:29 DP0 TP0 EP0 PID125315] max_total_num_tokens=343552, chunked_prefill_size=2048, max_prefill_tokens=16384, max_running_requests=16, context_len=32768, available_gpu_mem=54.03 GB"
+    ],
+    "exceptions": [],
+    "sanity": {
+      "stop_rate": 1.0,
+      "empty_rate": 0.0,
+      "error_rate": 0.0
+    },
+    "start_line": "/scratch/codex-serve-sweep/src/python/sglang/launch_server.py:71: UserWarning: 'python -m sglang.launch_server' is still supported, but 'sglang serve' is the recommended entrypoint.",
+    "last_lines": [
+      "[2026-11-16 02:34:09] SIGQUIT received. signum=None, frame=None. It usually means one child failed.",
+      "[2026-11-16 02:34:09] Sleeping 5 seconds before crash diagnostics to let GPU activity settle.",
+      "[2026-11-16 02:34:14] No live scheduler processes found; skipping py-spy and CUDA coredump.",
+      "[2026-11-16 02:34:14] kill_process_tree called: parent_pid=125177, include_parent=True, pid=125177"
+    ]
+  },
+  {
+    "candidate": "tp4-default-mtp-full",
+    "pool_lines": [
+      "[2026-11-16 02:37:42 TP0 PID129689] max_total_num_tokens=325184, chunked_prefill_size=8192, max_prefill_tokens=16384, max_running_requests=64, context_len=32768, available_gpu_mem=48.54 GB"
+    ],
+    "exceptions": [],
+    "sanity": {
+      "stop_rate": 1.0,
+      "empty_rate": 0.0,
+      "error_rate": 0.0
+    },
+    "start_line": "/scratch/codex-serve-sweep/src/python/sglang/launch_server.py:71: UserWarning: 'python -m sglang.launch_server' is still supported, but 'sglang serve' is the recommended entrypoint.",
+    "last_lines": [
+      "[2026-11-16 02:46:42] SIGQUIT received. signum=None, frame=None. It usually means one child failed.",
+      "[2026-11-16 02:46:42] Sleeping 5 seconds before crash diagnostics to let GPU activity settle.",
+      "[2026-11-16 02:46:47] No live scheduler processes found; skipping py-spy and CUDA coredump.",
+      "[2026-11-16 02:46:47] kill_process_tree called: parent_pid=129551, include_parent=True, pid=129551"
+    ]
+  }
+]

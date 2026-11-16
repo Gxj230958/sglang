@@ -1,0 +1,18 @@
+READY tp8-fp8 06:54:55
+tp8-fp8 short-c1 seed=1 rc=0 06:55:42
+tp8-fp8 short-c32 seed=1 rc=0 06:56:44
+tp8-fp8 long-c4 seed=1 rc=0 06:57:28
+tp8-fp8 short-c1 seed=2 rc=0 06:58:13
+tp8-fp8 short-c32 seed=2 rc=0 06:59:15
+tp8-fp8 long-c4 seed=2 rc=0 06:59:59
+tp8-fp8 gsm8k t1 rc=0 07:18:01
+ALIVE tp8-fp8
+READY tp8-bf16 07:23:29
+tp8-bf16 short-c1 seed=1 rc=0 07:24:13
+tp8-bf16 short-c32 seed=1 rc=0 07:25:19
+tp8-bf16 long-c4 seed=1 rc=0 07:26:08
+tp8-bf16 short-c1 seed=2 rc=0 07:26:51
+tp8-bf16 short-c32 seed=2 rc=0 07:27:53
+tp8-bf16 long-c4 seed=2 rc=0 07:28:43
+ALIVE tp8-bf16
+DONE

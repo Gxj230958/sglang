@@ -1,0 +1,149 @@
+{
+  "candidate": {
+    "name": "dep4-trt-fp8",
+    "serve_args": [
+      "--tp-size",
+      "4",
+      "--ep-size",
+      "4",
+      "--attn-dp-size",
+      "4",
+      "--moe-runner-backend",
+      "flashinfer_trtllm",
+      "--moe-a2a-backend",
+      "none",
+      "--dsa-prefill-backend",
+      "trtllm",
+      "--dsa-decode-backend",
+      "trtllm",
+      "--kv-cache-dtype",
+      "fp8_e4m3"
+    ]
+  },
+  "points": [
+    {
+      "candidate": "dep4-trt-fp8",
+      "failures": [],
+      "level": 1,
+      "metrics": {
+        "cache_hit": 0.42114999999999997,
+        "cached": 193536,
+        "duration_s": 199.5628256589407,
+        "empty_rate": 0.0,
+        "empty_responses": 0,
+        "error_rate": 0.0,
+        "errors": 0,
+        "input": 459545,
+        "interactivity_p90": 49.94400985026935,
+        "level": 1.0,
+        "ok": 128,
+        "ok_ratio": 1.0,
+        "output": 16384,
+        "output_tps": 41.05125998362824,
+        "sent": 128,
+        "total_tps": 1192.4732882985425,
+        "total_tps_per_gpu": 298.1183220746356,
+        "ttft_p50": 0.7775041802669875,
+        "ttft_p90": 0.8056496897130273
+      },
+      "pass": true,
+      "repeats": [
+        "/scratch/codex-serve-sweep/focused/candidates/dep4-trt-fp8/level-1/repeat-1/result.json",
+        "/scratch/codex-serve-sweep/focused/candidates/dep4-trt-fp8/level-1/repeat-2/result.json"
+      ]
+    },
+    {
+      "candidate": "dep4-trt-fp8",
+      "failures": [],
+      "level": 2,
+      "metrics": {
+        "cache_hit": 0.5739000000000001,
+        "cached": 263744,
+        "duration_s": 108.19655784452334,
+        "empty_rate": 0.0,
+        "empty_responses": 0,
+        "error_rate": 0.0,
+        "errors": 0,
+        "input": 459551,
+        "interactivity_p90": 49.21139957812075,
+        "level": 2.0,
+        "ok": 128,
+        "ok_ratio": 1.0,
+        "output": 16384,
+        "output_tps": 75.71414767491254,
+        "sent": 128,
+        "total_tps": 2199.402687529432,
+        "total_tps_per_gpu": 549.850671882358,
+        "ttft_p50": 0.7958457852655556,
+        "ttft_p90": 0.8926455641863869
+      },
+      "pass": true,
+      "repeats": [
+        "/scratch/codex-serve-sweep/focused/candidates/dep4-trt-fp8/level-2/repeat-1/result.json",
+        "/scratch/codex-serve-sweep/focused/candidates/dep4-trt-fp8/level-2/repeat-2/result.json"
+      ]
+    },
+    {
+      "candidate": "dep4-trt-fp8",
+      "failures": [],
+      "level": 4,
+      "metrics": {
+        "cache_hit": 0.64705,
+        "cached": 297344,
+        "duration_s": 60.347071285534184,
+        "empty_rate": 0.0,
+        "empty_responses": 0,
+        "error_rate": 0.0,
+        "errors": 0,
+        "input": 459554,
+        "interactivity_p90": 49.0385680405947,
+        "level": 4.0,
+        "ok": 128,
+        "ok_ratio": 1.0,
+        "output": 16384,
+        "output_tps": 135.75811273256554,
+        "sent": 128,
+        "total_tps": 3943.630655377916,
+        "total_tps_per_gpu": 985.907663844479,
+        "ttft_p50": 0.9359364505216945,
+        "ttft_p90": 1.2679708843003028
+      },
+      "pass": true,
+      "repeats": [
+        "/scratch/codex-serve-sweep/focused/candidates/dep4-trt-fp8/level-4/repeat-1/result.json",
+        "/scratch/codex-serve-sweep/focused/candidates/dep4-trt-fp8/level-4/repeat-2/result.json"
+      ]
+    },
+    {
+      "candidate": "dep4-trt-fp8",
+      "failures": [],
+      "level": 8,
+      "metrics": {
+        "cache_hit": 0.5423,
+        "cached": 249216,
+        "duration_s": 34.279566393466666,
+        "empty_rate": 0.0,
+        "empty_responses": 0,
+        "error_rate": 0.0,
+        "errors": 0,
+        "input": 459537,
+        "interactivity_p90": 40.74873971002772,
+        "level": 8.0,
+        "ok": 128,
+        "ok_ratio": 1.0,
+        "output": 16384,
+        "output_tps": 238.97715480492582,
+        "sent": 128,
+        "total_tps": 6941.787828827063,
+        "total_tps_per_gpu": 1735.4469572067658,
+        "ttft_p50": 1.22503018725547,
+        "ttft_p90": 1.6150129590765574
+      },
+      "pass": true,
+      "repeats": [
+        "/scratch/codex-serve-sweep/focused/candidates/dep4-trt-fp8/level-8/repeat-1/result.json",
+        "/scratch/codex-serve-sweep/focused/candidates/dep4-trt-fp8/level-8/repeat-2/result.json"
+      ]
+    }
+  ]
+}

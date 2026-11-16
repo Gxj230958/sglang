@@ -1,0 +1,165 @@
+{
+  "candidate": {
+    "name": "dep4-trt-fp8-mtp",
+    "serve_args": [
+      "--tp-size",
+      "4",
+      "--ep-size",
+      "4",
+      "--attn-dp-size",
+      "4",
+      "--moe-runner-backend",
+      "flashinfer_trtllm",
+      "--moe-a2a-backend",
+      "none",
+      "--dsa-prefill-backend",
+      "trtllm",
+      "--dsa-decode-backend",
+      "trtllm",
+      "--kv-cache-dtype",
+      "fp8_e4m3",
+      "--speculative-algorithm",
+      "EAGLE",
+      "--speculative-num-steps",
+      "3",
+      "--speculative-eagle-topk",
+      "1",
+      "--speculative-num-draft-tokens",
+      "4",
+      "--speculative-draft-model-path",
+      "/scratch/models/GLM-5-1028-Provider"
+    ]
+  },
+  "points": [
+    {
+      "candidate": "dep4-trt-fp8-mtp",
+      "failures": [],
+      "level": 1,
+      "metrics": {
+        "accept_length": 2.4315773809523806,
+        "cache_hit": 0.42114999999999997,
+        "cached": 193536,
+        "duration_s": 120.97048900747905,
+        "empty_rate": 0.0,
+        "empty_responses": 0,
+        "error_rate": 0.0,
+        "errors": 0,
+        "input": 459530,
+        "interactivity_p90": 83.5970321594823,
+        "level": 1.0,
+        "ok": 128,
+        "ok_ratio": 1.0,
+        "output": 16384,
+        "output_tps": 67.72290015314879,
+        "sent": 128,
+        "total_tps": 1967.179510756448,
+        "total_tps_per_gpu": 491.794877689112,
+        "ttft_p50": 0.8419112755218521,
+        "ttft_p90": 0.8909838391584344
+      },
+      "pass": true,
+      "repeats": [
+        "/scratch/codex-serve-sweep/focused/candidates/dep4-trt-fp8-mtp/level-1/repeat-1/result.json",
+        "/scratch/codex-serve-sweep/focused/candidates/dep4-trt-fp8-mtp/level-1/repeat-2/result.json"
+      ]
+    },
+    {
+      "candidate": "dep4-trt-fp8-mtp",
+      "failures": [],
+      "level": 2,
+      "metrics": {
+        "accept_length": 2.371699134199134,
+        "cache_hit": 0.5318499999999999,
+        "cached": 244416,
+        "duration_s": 78.59993153245887,
+        "empty_rate": 0.0,
+        "empty_responses": 0,
+        "error_rate": 0.0,
+        "errors": 0,
+        "input": 459548,
+        "interactivity_p90": 38.204001301275184,
+        "level": 2.0,
+        "ok": 128,
+        "ok_ratio": 1.0,
+        "output": 16384,
+        "output_tps": 104.2446933824969,
+        "sent": 128,
+        "total_tps": 3028.160730646882,
+        "total_tps_per_gpu": 757.0401826617205,
+        "ttft_p50": 0.5359797655255534,
+        "ttft_p90": 0.9136662741191686
+      },
+      "pass": true,
+      "repeats": [
+        "/scratch/codex-serve-sweep/focused/candidates/dep4-trt-fp8-mtp/level-2/repeat-1/result.json",
+        "/scratch/codex-serve-sweep/focused/candidates/dep4-trt-fp8-mtp/level-2/repeat-2/result.json"
+      ]
+    },
+    {
+      "candidate": "dep4-trt-fp8-mtp",
+      "failures": [],
+      "level": 4,
+      "metrics": {
+        "accept_length": 2.5623007296602482,
+        "cache_hit": 0.6145499999999999,
+        "cached": 282432,
+        "duration_s": 56.72247126494767,
+        "empty_rate": 0.0,
+        "empty_responses": 0,
+        "error_rate": 0.0,
+        "errors": 0,
+        "input": 459550,
+        "interactivity_p90": 32.087232784261815,
+        "level": 4.0,
+        "ok": 128,
+        "ok_ratio": 1.0,
+        "output": 16384,
+        "output_tps": 144.59921084087028,
+        "sent": 128,
+        "total_tps": 4200.4298448978225,
+        "total_tps_per_gpu": 1050.1074612244556,
+        "ttft_p50": 0.533414864243241,
+        "ttft_p90": 1.2171610104851425
+      },
+      "pass": true,
+      "repeats": [
+        "/scratch/codex-serve-sweep/focused/candidates/dep4-trt-fp8-mtp/level-4/repeat-1/result.json",
+        "/scratch/codex-serve-sweep/focused/candidates/dep4-trt-fp8-mtp/level-4/repeat-2/result.json"
+      ]
+    },
+    {
+      "candidate": "dep4-trt-fp8-mtp",
+      "failures": [
+        "interactivity_p90=10.756383073011353<30"
+      ],
+      "level": 8,
+      "metrics": {
+        "accept_length": 2.5836978027699677,
+        "cache_hit": 0.54925,
+        "cached": 252416,
+        "duration_s": 45.0416125440388,
+        "empty_rate": 0.0,
+        "empty_responses": 0,
+        "error_rate": 0.0,
+        "errors": 0,
+        "input": 459551,
+        "interactivity_p90": 10.756383073011353,
+        "level": 8.0,
+        "ok": 128,
+        "ok_ratio": 1.0,
+        "output": 16384,
+        "output_tps": 181.93233948775628,
+        "sent": 128,
+        "total_tps": 5284.911910507704,
+        "total_tps_per_gpu": 1321.227977626926,
+        "ttft_p50": 0.8470020839886274,
+        "ttft_p90": 1.27399230588926
+      },
+      "pass": false,
+      "repeats": [
+        "/scratch/codex-serve-sweep/focused/candidates/dep4-trt-fp8-mtp/level-8/repeat-1/result.json",
+        "/scratch/codex-serve-sweep/focused/candidates/dep4-trt-fp8-mtp/level-8/repeat-2/result.json"
+      ]
+    }
+  ]
+}

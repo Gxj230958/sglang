@@ -1,0 +1,134 @@
+[
+  {
+    "prompt": "What is 2 plus 3? Give only the number.",
+    "response": {
+      "id": "312f15b9cc5d424ab2f335078f79f3c9",
+      "object": "chat.completion",
+      "created": 1794796668,
+      "model": "/scratch/models/GLM-5-1028-Provider",
+      "choices": [
+        {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "5",
+            "reasoning_content": null
+          },
+          "logprobs": null,
+          "finish_reason": "stop",
+          "matched_stop": 154827
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 25,
+        "total_tokens": 28,
+        "completion_tokens": 3,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "reasoning_tokens": 1,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1
+        }
+      },
+      "metadata": {
+        "weight_version": "default",
+        "weight_versions": [
+          {
+            "version": "default",
+            "start": 0,
+            "end": 3
+          }
+        ]
+      }
+    }
+  },
+  {
+    "prompt": "Name the capital of France in one short sentence.",
+    "response": {
+      "id": "114ff4dbb55d4a65a74f5e5abe402bd8",
+      "object": "chat.completion",
+      "created": 1794796669,
+      "model": "/scratch/models/GLM-5-1028-Provider",
+      "choices": [
+        {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "Paris is the capital of France.",
+            "reasoning_content": null
+          },
+          "logprobs": null,
+          "finish_reason": "stop",
+          "matched_stop": 154827
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 22,
+        "total_tokens": 31,
+        "completion_tokens": 9,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "reasoning_tokens": 1,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1
+        }
+      },
+      "metadata": {
+        "weight_version": "default",
+        "weight_versions": [
+          {
+            "version": "default",
+            "start": 0,
+            "end": 9
+          }
+        ]
+      }
+    }
+  },
+  {
+    "prompt": "A service returns HTTP 503 while restarting. Give one sensible first diagnostic check in one sentence.",
+    "response": {
+      "id": "979fea96299e4556b670780cd082c7b7",
+      "object": "chat.completion",
+      "created": 1794796669,
+      "model": "/scratch/models/GLM-5-1028-Provider",
+      "choices": [
+        {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "Check the service's logs and its readiness probe (health endpoint) to confirm the restart completed successfully and the service is actually healthy and listening before investigating upstream.",
+            "reasoning_content": null
+          },
+          "logprobs": null,
+          "finish_reason": "stop",
+          "matched_stop": 154827
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 32,
+        "total_tokens": 65,
+        "completion_tokens": 33,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "reasoning_tokens": 1,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1
+        }
+      },
+      "metadata": {
+        "weight_version": "default",
+        "weight_versions": [
+          {
+            "version": "default",
+            "start": 0,
+            "end": 33
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,340 @@
+{
+  "values": {
+    "model_path": "/scratch/models/GLM-5-1028-Provider",
+    "code_commit": "dbfef91e7d5128eeb4ce021c26ad54e409e41a3f"
+  },
+  "env": {
+    "PYTHONPATH": "/scratch/cc-regate2/overlay:/scratch/cc-swa/fi073:/scratch/kimi-glm42-repro/packages:/scratch/codex-serve-sweep/src/python",
+    "SGLANG_UNIFIED_RADIX_TREE_CORE_BACKEND": "python"
+  },
+  "record_env_keys": [
+    "PYTHONPATH",
+    "CUDA_VISIBLE_DEVICES",
+    "SGLANG_UNIFIED_RADIX_TREE_CORE_BACKEND"
+  ],
+  "preflight": {
+    "check_gpus": true,
+    "gpus": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "max_memory_mib": 1000
+  },
+  "candidates": [
+    {
+      "name": "tp4-default-mtp",
+      "serve_args": [
+        "--tp-size",
+        "4",
+        "--moe-runner-backend",
+        "deep_gemm",
+        "--speculative-algorithm",
+        "EAGLE",
+        "--speculative-num-steps",
+        "3",
+        "--speculative-eagle-topk",
+        "1",
+        "--speculative-num-draft-tokens",
+        "4",
+        "--speculative-draft-model-path",
+        "/scratch/models/GLM-5-1028-Provider"
+      ]
+    },
+    {
+      "name": "tp4-default",
+      "serve_args": [
+        "--tp-size",
+        "4",
+        "--moe-runner-backend",
+        "deep_gemm"
+      ]
+    },
+    {
+      "name": "tp4-trt-bf16-mtp",
+      "serve_args": [
+        "--tp-size",
+        "4",
+        "--moe-runner-backend",
+        "deep_gemm",
+        "--dsa-prefill-backend",
+        "trtllm",
+        "--dsa-decode-backend",
+        "trtllm",
+        "--speculative-algorithm",
+        "EAGLE",
+        "--speculative-num-steps",
+        "3",
+        "--speculative-eagle-topk",
+        "1",
+        "--speculative-num-draft-tokens",
+        "4",
+        "--speculative-draft-model-path",
+        "/scratch/models/GLM-5-1028-Provider"
+      ]
+    },
+    {
+      "name": "tp4-trt-fp8-mtp",
+      "serve_args": [
+        "--tp-size",
+        "4",
+        "--moe-runner-backend",
+        "deep_gemm",
+        "--dsa-prefill-backend",
+        "trtllm",
+        "--dsa-decode-backend",
+        "trtllm",
+        "--kv-cache-dtype",
+        "fp8_e4m3",
+        "--speculative-algorithm",
+        "EAGLE",
+        "--speculative-num-steps",
+        "3",
+        "--speculative-eagle-topk",
+        "1",
+        "--speculative-num-draft-tokens",
+        "4",
+        "--speculative-draft-model-path",
+        "/scratch/models/GLM-5-1028-Provider"
+      ]
+    },
+    {
+      "name": "dep4-trt-fp8-mtp",
+      "serve_args": [
+        "--tp-size",
+        "4",
+        "--ep-size",
+        "4",
+        "--attn-dp-size",
+        "4",
+        "--moe-runner-backend",
+        "flashinfer_trtllm",
+        "--moe-a2a-backend",
+        "none",
+        "--dsa-prefill-backend",
+        "trtllm",
+        "--dsa-decode-backend",
+        "trtllm",
+        "--kv-cache-dtype",
+        "fp8_e4m3",
+        "--speculative-algorithm",
+        "EAGLE",
+        "--speculative-num-steps",
+        "3",
+        "--speculative-eagle-topk",
+        "1",
+        "--speculative-num-draft-tokens",
+        "4",
+        "--speculative-draft-model-path",
+        "/scratch/models/GLM-5-1028-Provider"
+      ]
+    },
+    {
+      "name": "dep4-trt-fp8",
+      "serve_args": [
+        "--tp-size",
+        "4",
+        "--ep-size",
+        "4",
+        "--attn-dp-size",
+        "4",
+        "--moe-runner-backend",
+        "flashinfer_trtllm",
+        "--moe-a2a-backend",
+        "none",
+        "--dsa-prefill-backend",
+        "trtllm",
+        "--dsa-decode-backend",
+        "trtllm",
+        "--kv-cache-dtype",
+        "fp8_e4m3"
+      ]
+    },
+    {
+      "name": "dep4-trt-fp8-mtp-full",
+      "serve_args": [
+        "--tp-size",
+        "4",
+        "--ep-size",
+        "4",
+        "--attn-dp-size",
+        "4",
+        "--moe-runner-backend",
+        "flashinfer_trtllm",
+        "--moe-a2a-backend",
+        "none",
+        "--dsa-prefill-backend",
+        "trtllm",
+        "--dsa-decode-backend",
+        "trtllm",
+        "--kv-cache-dtype",
+        "fp8_e4m3",
+        "--speculative-algorithm",
+        "EAGLE",
+        "--speculative-num-steps",
+        "3",
+        "--speculative-eagle-topk",
+        "1",
+        "--speculative-num-draft-tokens",
+        "4",
+        "--speculative-draft-model-path",
+        "/scratch/models/GLM-5-1028-Provider",
+        "--disable-hybrid-swa-memory"
+      ]
+    },
+    {
+      "name": "tp4-default-mtp-full",
+      "serve_args": [
+        "--tp-size",
+        "4",
+        "--moe-runner-backend",
+        "deep_gemm",
+        "--speculative-algorithm",
+        "EAGLE",
+        "--speculative-num-steps",
+        "3",
+        "--speculative-eagle-topk",
+        "1",
+        "--speculative-num-draft-tokens",
+        "4",
+        "--speculative-draft-model-path",
+        "/scratch/models/GLM-5-1028-Provider",
+        "--disable-hybrid-swa-memory"
+      ]
+    }
+  ],
+  "server": {
+    "command": [
+      "python3",
+      "-m",
+      "sglang.launch_server"
+    ],
+    "args": [
+      "--model-path",
+      "/scratch/models/GLM-5-1028-Provider",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "{port}",
+      "--dist-init-addr",
+      "127.0.0.1:31120",
+      "--mem-fraction-static",
+      "0.80",
+      "--context-length",
+      "32768",
+      "--max-running-requests",
+      "64",
+      "--cuda-graph-max-bs-decode",
+      "64",
+      "--disable-prefill-cuda-graph",
+      "--chunked-prefill-size",
+      "8192",
+      "--enable-fp32-lm-head",
+      "--reasoning-parser",
+      "glm45",
+      "--tool-call-parser",
+      "glm47",
+      "--enable-cache-report",
+      "--enable-metrics"
+    ],
+    "replicas": [
+      {
+        "values": {
+          "host": "127.0.0.1",
+          "port": 31080,
+          "gpus": "0,1,2,3"
+        }
+      }
+    ],
+    "env": {
+      "CUDA_VISIBLE_DEVICES": "{gpus}"
+    },
+    "health": {
+      "required_log_regex": [
+        "The server is fired up",
+        "max_total_num_tokens="
+      ],
+      "forbidden_log_regex": [
+        "Scheduler hit an exception",
+        "Traceback"
+      ]
+    },
+    "startup_timeout_s": 1500,
+    "cwd": "/scratch/codex-serve-sweep/src"
+  },
+  "correctness": {
+    "command": [
+      "python3",
+      "/scratch/codex-serve-sweep/sanity.py",
+      "{endpoint}",
+      "/scratch/models/GLM-5-1028-Provider",
+      "{candidate_dir}/correctness.json"
+    ],
+    "metrics_path": "{candidate_dir}/correctness.json",
+    "gates": {
+      "stop_rate": {
+        "min": 1
+      },
+      "empty_rate": {
+        "max": 0
+      },
+      "error_rate": {
+        "max": 0
+      }
+    },
+    "timeout_s": 600
+  },
+  "load": {
+    "mode": "closed_loop",
+    "command": [
+      "python3",
+      "/scratch/codex-serve-sweep/load_adapter.py",
+      "{endpoint}",
+      "/scratch/models/GLM-5-1028-Provider",
+      "{level}",
+      "{repeat}",
+      "{summary_path}"
+    ],
+    "levels": [
+      1,
+      8,
+      32,
+      64
+    ],
+    "repeat": 2,
+    "timeout_s": 1200,
+    "sum_metrics": [
+      "sent",
+      "ok",
+      "errors",
+      "empty_responses",
+      "input",
+      "output",
+      "cached"
+    ],
+    "gates": {
+      "ttft_p90": {
+        "max": 3
+      },
+      "interactivity_p90": {
+        "min": 30
+      },
+      "ok_ratio": {
+        "min": 1
+      },
+      "empty_rate": {
+        "max": 0
+      }
+    },
+    "selection": {
+      "throughput_metric": "total_tps_per_gpu",
+      "latency_metric": "ttft_p50",
+      "per_user_metric": "interactivity_p90",
+      "interactivity_metric": "interactivity_p90",
+      "interactivity_min": 30,
+      "near_tie_pct": 2
+    }
+  },
+  "teardown_timeout_s": 30
+}

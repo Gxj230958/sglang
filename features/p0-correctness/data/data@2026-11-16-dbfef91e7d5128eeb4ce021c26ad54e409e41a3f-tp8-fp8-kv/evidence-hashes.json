@@ -1,0 +1,197 @@
+[
+ {
+  "file": ".gitattributes",
+  "source": "generated for this round",
+  "sha256": "e4585a41e40012f2c1e5d28ce98a731055fa62ac5557f529b277a3e2a8a4e8d0"
+ },
+ {
+  "file": "2026-11-16-0735-xinyuan-dbfef91e7d-tp8-fp8-kv-gate.md",
+  "source": "generated for this round",
+  "sha256": "22b9912eac21efbc8dd797cefa5cde36cdf7c4d2f09dbb410243bdc49563273f"
+ },
+ {
+  "file": "repro.md",
+  "source": "generated for this round",
+  "sha256": "8578a1e31846d026e1ee86ec7bfbd622bdf0b52aa1acc740eee78d2496a45285"
+ },
+ {
+  "file": "run.sh",
+  "source": "8x B300 node: /scratch/cc-tp8fp8/run.sh",
+  "sha256": "433c1d38f25a664368c806b428191b92e6f4fa32cb0feeb43841d0296cb8311e"
+ },
+ {
+  "file": "status",
+  "source": "8x B300 node: /scratch/cc-tp8fp8/status",
+  "sha256": "103bfe2a2f2bd1d9bac58711860bc2d22e2676199fe368cac144ccd34681777e"
+ },
+ {
+  "file": "summary.json",
+  "source": "generated for this round",
+  "sha256": "dfd839b8bf37766611fb43b96056ac1e4080106844a76643639683e6a6e3acc5"
+ },
+ {
+  "file": "tp8-bf16/launch.sh",
+  "source": "8x B300 node: /scratch/cc-tp8fp8/tp8-bf16/launch.sh",
+  "sha256": "24172f5db642168c55de0ae3efcb4fce1c42d7d744db65b8c056d1dd62145e18"
+ },
+ {
+  "file": "tp8-bf16/long-c4-s1.jsonl",
+  "source": "8x B300 node: /scratch/cc-tp8fp8/tp8-bf16/long-c4-s1.jsonl",
+  "sha256": "442f43bd0e91e94e67b925238dfa3f7b03d6e2edc1425297d25c08d40673849e"
+ },
+ {
+  "file": "tp8-bf16/long-c4-s1.log",
+  "source": "8x B300 node: /scratch/cc-tp8fp8/tp8-bf16/long-c4-s1.log",
+  "sha256": "cdad5c31b3eaa5ff0d25c64d793ce84ee0ee954dc7e5e8e159a492ba7ee17138"
+ },
+ {
+  "file": "tp8-bf16/long-c4-s2.jsonl",
+  "source": "8x B300 node: /scratch/cc-tp8fp8/tp8-bf16/long-c4-s2.jsonl",
+  "sha256": "f99a7439db7668f63d70214bfbba7028412e25f5a64d499f3fb9259e80ee36d8"
+ },
+ {
+  "file": "tp8-bf16/long-c4-s2.log",
+  "source": "8x B300 node: /scratch/cc-tp8fp8/tp8-bf16/long-c4-s2.log",
+  "sha256": "44640ed4e5228b130e9e80782f35fe8e232ee0a2e6cf22e2483dfc1200372929"
+ },
+ {
+  "file": "tp8-bf16/serve.log.gz",
+  "source": "8x B300 node: /scratch/cc-tp8fp8/tp8-bf16/serve.log",
+  "sha256": "5ef028c6422e0cb43135635c83f1df71741499ca8386b5fcd34171ce480fcd5e"
+ },
+ {
+  "file": "tp8-bf16/short-c1-s1.jsonl",
+  "source": "8x B300 node: /scratch/cc-tp8fp8/tp8-bf16/short-c1-s1.jsonl",
+  "sha256": "62827285080029d41764fc67bf56987d6848517d3d14a5e6c1b7e11be0f3385f"
+ },
+ {
+  "file": "tp8-bf16/short-c1-s1.log",
+  "source": "8x B300 node: /scratch/cc-tp8fp8/tp8-bf16/short-c1-s1.log",
+  "sha256": "fc92657f065e84cada54f5eb94b4c88960385cd1984e51bff099d9ccc37c9e56"
+ },
+ {
+  "file": "tp8-bf16/short-c1-s2.jsonl",
+  "source": "8x B300 node: /scratch/cc-tp8fp8/tp8-bf16/short-c1-s2.jsonl",
+  "sha256": "4038e0b5edf04777b2fdbbee6ab5756a3093739d9150c09830d3a682e194fb23"
+ },
+ {
+  "file": "tp8-bf16/short-c1-s2.log",
+  "source": "8x B300 node: /scratch/cc-tp8fp8/tp8-bf16/short-c1-s2.log",
+  "sha256": "d054d045eb9bbac943800a030738311a68e6ecf3155b194d644e27f8221b444f"
+ },
+ {
+  "file": "tp8-bf16/short-c32-s1.jsonl",
+  "source": "8x B300 node: /scratch/cc-tp8fp8/tp8-bf16/short-c32-s1.jsonl",
+  "sha256": "3a17d659af79b3c99a097b17b6abfec52c5411e4456fecb0267737d4458cab23"
+ },
+ {
+  "file": "tp8-bf16/short-c32-s1.log",
+  "source": "8x B300 node: /scratch/cc-tp8fp8/tp8-bf16/short-c32-s1.log",
+  "sha256": "fd7b549504ad4cb6549871c5776a077df4f9af1b5b041dc3343785ed962cfba2"
+ },
+ {
+  "file": "tp8-bf16/short-c32-s2.jsonl",
+  "source": "8x B300 node: /scratch/cc-tp8fp8/tp8-bf16/short-c32-s2.jsonl",
+  "sha256": "c34d71bdafa7d637045095b6d80e58d1002a6e77c185bf2baebc03694b5ce613"
+ },
+ {
+  "file": "tp8-bf16/short-c32-s2.log",
+  "source": "8x B300 node: /scratch/cc-tp8fp8/tp8-bf16/short-c32-s2.log",
+  "sha256": "cdbd415a95f0da6057beb80214eb178053e1678c12836f158094c77872c539ac"
+ },
+ {
+  "file": "tp8-fp8/after-t1.metrics",
+  "source": "8x B300 node: /scratch/cc-tp8fp8/tp8-fp8/after-t1.metrics",
+  "sha256": "94903b171f3993a9d09017ecdd1fa0332d8e17edf37b04e82b193c875db3cc51"
+ },
+ {
+  "file": "tp8-fp8/before-t1.metrics",
+  "source": "8x B300 node: /scratch/cc-tp8fp8/tp8-fp8/before-t1.metrics",
+  "sha256": "c1d360acb5f29c8e9b11fe726ca43edf499661438b0310bab6ac635f370c0608"
+ },
+ {
+  "file": "tp8-fp8/eval-t1/sgl_eval_gsm8k_20261116-070000/metrics.json",
+  "source": "8x B300 node: /scratch/cc-tp8fp8/tp8-fp8/eval-t1/sgl_eval_gsm8k_20261116-070000/metrics.json",
+  "sha256": "31e64d837b17caa15ef648f5445a2d673490bf20ba40073bee17aa67286d9080"
+ },
+ {
+  "file": "tp8-fp8/eval-t1/sgl_eval_gsm8k_20261116-070000/output-rs0.jsonl.gz",
+  "source": "8x B300 node: /scratch/cc-tp8fp8/tp8-fp8/eval-t1/sgl_eval_gsm8k_20261116-070000/output-rs0.jsonl",
+  "sha256": "3f62152f8c5acdec3a55ebf3a63c4e05af8648600491c856354154868f9d0cf9"
+ },
+ {
+  "file": "tp8-fp8/gsm8k-t1.log.gz",
+  "source": "8x B300 node: /scratch/cc-tp8fp8/tp8-fp8/gsm8k-t1.log",
+  "sha256": "133da37d1ee71cff19706898bafb6c00b1aecd96aa0cd4a6427c037d9765a0a4"
+ },
+ {
+  "file": "tp8-fp8/launch.sh",
+  "source": "8x B300 node: /scratch/cc-tp8fp8/tp8-fp8/launch.sh",
+  "sha256": "cdc6bc0b209f552ffa2b2a6fe049bb04b8c484025a1f9bb46b642d074f1bdc6a"
+ },
+ {
+  "file": "tp8-fp8/long-c4-s1.jsonl",
+  "source": "8x B300 node: /scratch/cc-tp8fp8/tp8-fp8/long-c4-s1.jsonl",
+  "sha256": "5d0299891db1edac1ae953f9458b0b7ca94fed39371e5f71b3fb838e32bbe83d"
+ },
+ {
+  "file": "tp8-fp8/long-c4-s1.log",
+  "source": "8x B300 node: /scratch/cc-tp8fp8/tp8-fp8/long-c4-s1.log",
+  "sha256": "e88c456ff49ce15b6eee3aa74600a59fbb459e4a20541867af49bf23c8b8d044"
+ },
+ {
+  "file": "tp8-fp8/long-c4-s2.jsonl",
+  "source": "8x B300 node: /scratch/cc-tp8fp8/tp8-fp8/long-c4-s2.jsonl",
+  "sha256": "c02e9fb249c29d71cf7317f02314b940331bb8faa4811ec0c5aeba6ee66e0e42"
+ },
+ {
+  "file": "tp8-fp8/long-c4-s2.log",
+  "source": "8x B300 node: /scratch/cc-tp8fp8/tp8-fp8/long-c4-s2.log",
+  "sha256": "912f53288fb2e9097a390ff668a8baa27f18b49e355adc93dbbdd2333fa75789"
+ },
+ {
+  "file": "tp8-fp8/serve.log.gz",
+  "source": "8x B300 node: /scratch/cc-tp8fp8/tp8-fp8/serve.log",
+  "sha256": "f53ba675e61f54af9038242e4f223ed049d53df496e15fd7dfd66e0a9368fc21"
+ },
+ {
+  "file": "tp8-fp8/short-c1-s1.jsonl",
+  "source": "8x B300 node: /scratch/cc-tp8fp8/tp8-fp8/short-c1-s1.jsonl",
+  "sha256": "556ecdca91bb59e0b098097842c70807c5092201520de33d81afd3f4eb98c905"
+ },
+ {
+  "file": "tp8-fp8/short-c1-s1.log",
+  "source": "8x B300 node: /scratch/cc-tp8fp8/tp8-fp8/short-c1-s1.log",
+  "sha256": "e8569c99b786245f4743b18889d42d6066e1d1e5c8b5cca8b991c567c541deb2"
+ },
+ {
+  "file": "tp8-fp8/short-c1-s2.jsonl",
+  "source": "8x B300 node: /scratch/cc-tp8fp8/tp8-fp8/short-c1-s2.jsonl",
+  "sha256": "ed26a727000f58170916109eb59e40788b6ccd8ed07780c586b99717f70d97c4"
+ },
+ {
+  "file": "tp8-fp8/short-c1-s2.log",
+  "source": "8x B300 node: /scratch/cc-tp8fp8/tp8-fp8/short-c1-s2.log",
+  "sha256": "e8d371465feb5b5f2e504204fc8008988d998ce755f419ae730c2c77c5d38c68"
+ },
+ {
+  "file": "tp8-fp8/short-c32-s1.jsonl",
+  "source": "8x B300 node: /scratch/cc-tp8fp8/tp8-fp8/short-c32-s1.jsonl",
+  "sha256": "a517970a6d5259c5e2033b01943cac3897a12d8453c34a0ef74790e48a29e4f0"
+ },
+ {
+  "file": "tp8-fp8/short-c32-s1.log",
+  "source": "8x B300 node: /scratch/cc-tp8fp8/tp8-fp8/short-c32-s1.log",
+  "sha256": "beda40e3d4b1cc72c4f8842ce1e189f78fea86949fed386e2829e1a2e25303ca"
+ },
+ {
+  "file": "tp8-fp8/short-c32-s2.jsonl",
+  "source": "8x B300 node: /scratch/cc-tp8fp8/tp8-fp8/short-c32-s2.jsonl",
+  "sha256": "78f763e59439217593378963c0e13c96854a7a29adf813193eb7a935ae442cf1"
+ },
+ {
+  "file": "tp8-fp8/short-c32-s2.log",
+  "source": "8x B300 node: /scratch/cc-tp8fp8/tp8-fp8/short-c32-s2.log",
+  "sha256": "8b521949affbdfc5660d6ba06d7a696c79c3f9b18786ce0bd95e5bdb1b7bc452"
+ }
+]

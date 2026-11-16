@@ -1,0 +1,137 @@
+{
+  "candidate": {
+    "name": "tp4-default",
+    "serve_args": [
+      "--tp-size",
+      "4",
+      "--moe-runner-backend",
+      "deep_gemm"
+    ]
+  },
+  "points": [
+    {
+      "candidate": "tp4-default",
+      "failures": [],
+      "level": 1,
+      "metrics": {
+        "cache_hit": 0.77465,
+        "cached": 355968,
+        "duration_s": 146.5092513615382,
+        "empty_rate": 0.0,
+        "empty_responses": 0,
+        "error_rate": 0.0,
+        "errors": 0,
+        "input": 459542,
+        "interactivity_p90": 64.06083111569893,
+        "level": 1.0,
+        "ok": 128,
+        "ok_ratio": 1.0,
+        "output": 16384,
+        "output_tps": 55.91456873664153,
+        "sent": 128,
+        "total_tps": 1624.2186026112254,
+        "total_tps_per_gpu": 406.05465065280634,
+        "ttft_p50": 0.32264411699725315,
+        "ttft_p90": 0.33117793620913294
+      },
+      "pass": true,
+      "repeats": [
+        "/scratch/codex-serve-sweep/focused/candidates/tp4-default/level-1/repeat-1/result.json",
+        "/scratch/codex-serve-sweep/focused/candidates/tp4-default/level-1/repeat-2/result.json"
+      ]
+    },
+    {
+      "candidate": "tp4-default",
+      "failures": [],
+      "level": 2,
+      "metrics": {
+        "cache_hit": 0.7646,
+        "cached": 351360,
+        "duration_s": 86.27065793401562,
+        "empty_rate": 0.0,
+        "empty_responses": 0,
+        "error_rate": 0.0,
+        "errors": 0,
+        "input": 459556,
+        "interactivity_p90": 59.54213951327765,
+        "level": 2.0,
+        "ok": 128,
+        "ok_ratio": 1.0,
+        "output": 16384,
+        "output_tps": 94.96459060245671,
+        "sent": 128,
+        "total_tps": 2758.632424151119,
+        "total_tps_per_gpu": 689.6581060377797,
+        "ttft_p50": 0.6139015442749951,
+        "ttft_p90": 0.6303127465595025
+      },
+      "pass": true,
+      "repeats": [
+        "/scratch/codex-serve-sweep/focused/candidates/tp4-default/level-2/repeat-1/result.json",
+        "/scratch/codex-serve-sweep/focused/candidates/tp4-default/level-2/repeat-2/result.json"
+      ]
+    },
+    {
+      "candidate": "tp4-default",
+      "failures": [],
+      "level": 4,
+      "metrics": {
+        "cache_hit": 0.7343,
+        "cached": 337408,
+        "duration_s": 49.11720250704093,
+        "empty_rate": 0.0,
+        "empty_responses": 0,
+        "error_rate": 0.0,
+        "errors": 0,
+        "input": 459524,
+        "interactivity_p90": 51.54902616663402,
+        "level": 4.0,
+        "ok": 128,
+        "ok_ratio": 1.0,
+        "output": 16384,
+        "output_tps": 166.7850578759571,
+        "sent": 128,
+        "total_tps": 4844.6255309135995,
+        "total_tps_per_gpu": 1211.1563827283999,
+        "ttft_p50": 0.6302996440208517,
+        "ttft_p90": 0.6843729463929776
+      },
+      "pass": true,
+      "repeats": [
+        "/scratch/codex-serve-sweep/focused/candidates/tp4-default/level-4/repeat-1/result.json",
+        "/scratch/codex-serve-sweep/focused/candidates/tp4-default/level-4/repeat-2/result.json"
+      ]
+    },
+    {
+      "candidate": "tp4-default",
+      "failures": [],
+      "level": 8,
+      "metrics": {
+        "cache_hit": 0.7416,
+        "cached": 340800,
+        "duration_s": 28.878291439032182,
+        "empty_rate": 0.0,
+        "empty_responses": 0,
+        "error_rate": 0.0,
+        "errors": 0,
+        "input": 459547,
+        "interactivity_p90": 43.10825323197431,
+        "level": 8.0,
+        "ok": 128,
+        "ok_ratio": 1.0,
+        "output": 16384,
+        "output_tps": 283.6733000152151,
+        "sent": 128,
+        "total_tps": 8240.290385938326,
+        "total_tps_per_gpu": 2060.0725964845815,
+        "ttft_p50": 0.678115902497666,
+        "ttft_p90": 0.9130865794839337
+      },
+      "pass": true,
+      "repeats": [
+        "/scratch/codex-serve-sweep/focused/candidates/tp4-default/level-8/repeat-1/result.json",
+        "/scratch/codex-serve-sweep/focused/candidates/tp4-default/level-8/repeat-2/result.json"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "candidate": {
+    "name": "tp4-trt-bf16-mtp",
+    "serve_args": [
+      "--tp-size",
+      "4",
+      "--moe-runner-backend",
+      "deep_gemm",
+      "--dsa-prefill-backend",
+      "trtllm",
+      "--dsa-decode-backend",
+      "trtllm",
+      "--speculative-algorithm",
+      "EAGLE",
+      "--speculative-num-steps",
+      "3",
+      "--speculative-eagle-topk",
+      "1",
+      "--speculative-num-draft-tokens",
+      "4",
+      "--speculative-draft-model-path",
+      "/scratch/models/GLM-5-1028-Provider"
+    ]
+  },
+  "points": [
+    {
+      "candidate": "tp4-trt-bf16-mtp",
+      "failures": [],
+      "level": 1,
+      "metrics": {
+        "accept_length": 2.5113350647395363,
+        "cache_hit": 0.7808999999999999,
+        "cached": 358848,
+        "duration_s": 87.5665324444999,
+        "empty_rate": 0.0,
+        "empty_responses": 0,
+        "error_rate": 0.0,
+        "errors": 0,
+        "input": 459539,
+        "interactivity_p90": 98.13345103112215,
+        "level": 1.0,
+        "ok": 128,
+        "ok_ratio": 1.0,
+        "output": 16384,
+        "output_tps": 93.55420104028205,
+        "sent": 128,
+        "total_tps": 2717.5654694442046,
+        "total_tps_per_gpu": 679.3913673610512,
+        "ttft_p50": 0.3557807067409158,
+        "ttft_p90": 0.3662256430718116
+      },
+      "pass": true,
+      "repeats": [
+        "/scratch/codex-serve-sweep/focused/candidates/tp4-trt-bf16-mtp/level-1/repeat-1/result.json",
+        "/scratch/codex-serve-sweep/focused/candidates/tp4-trt-bf16-mtp/level-1/repeat-2/result.json"
+      ]
+    },
+    {
+      "candidate": "tp4-trt-bf16-mtp",
+      "failures": [],
+      "level": 2,
+      "metrics": {
+        "accept_length": 2.557012561078554,
+        "cache_hit": 0.7683500000000001,
+        "cached": 353088,
+        "duration_s": 58.192983429529704,
+        "empty_rate": 0.0,
+        "empty_responses": 0,
+        "error_rate": 0.0,
+        "errors": 0,
+        "input": 459550,
+        "interactivity_p90": 81.01441498649602,
+        "level": 2.0,
+        "ok": 128,
+        "ok_ratio": 1.0,
+        "output": 16384,
+        "output_tps": 140.77330452457824,
+        "sent": 128,
+        "total_tps": 4089.2824469930165,
+        "total_tps_per_gpu": 1022.3206117482541,
+        "ttft_p50": 0.3669708937522955,
+        "ttft_p90": 0.4371920027653689
+      },
+      "pass": true,
+      "repeats": [
+        "/scratch/codex-serve-sweep/focused/candidates/tp4-trt-bf16-mtp/level-2/repeat-1/result.json",
+        "/scratch/codex-serve-sweep/focused/candidates/tp4-trt-bf16-mtp/level-2/repeat-2/result.json"
+      ]
+    },
+    {
+      "candidate": "tp4-trt-bf16-mtp",
+      "failures": [],
+      "level": 4,
+      "metrics": {
+        "accept_length": 2.4478326462355686,
+        "cache_hit": 0.7583,
+        "cached": 348480,
+        "duration_s": 44.33787684398703,
+        "empty_rate": 0.0,
+        "empty_responses": 0,
+        "error_rate": 0.0,
+        "errors": 0,
+        "input": 459549,
+        "interactivity_p90": 34.706560983422065,
+        "level": 4.0,
+        "ok": 128,
+        "ok_ratio": 1.0,
+        "output": 16384,
+        "output_tps": 184.7654172645827,
+        "sent": 128,
+        "total_tps": 5367.185708642626,
+        "total_tps_per_gpu": 1341.7964271606565,
+        "ttft_p50": 0.38304710597731173,
+        "ttft_p90": 0.688837763183983
+      },
+      "pass": true,
+      "repeats": [
+        "/scratch/codex-serve-sweep/focused/candidates/tp4-trt-bf16-mtp/level-4/repeat-1/result.json",
+        "/scratch/codex-serve-sweep/focused/candidates/tp4-trt-bf16-mtp/level-4/repeat-2/result.json"
+      ]
+    },
+    {
+      "candidate": "tp4-trt-bf16-mtp",
+      "failures": [
+        "interactivity_p90=18.739869566366448<30"
+      ],
+      "level": 8,
+      "metrics": {
+        "accept_length": 2.4662715902257633,
+        "cache_hit": 0.7385999999999999,
+        "cached": 339392,
+        "duration_s": 33.731776372529566,
+        "empty_rate": 0.0,
+        "empty_responses": 0,
+        "error_rate": 0.0,
+        "errors": 0,
+        "input": 459522,
+        "interactivity_p90": 18.739869566366448,
+        "level": 8.0,
+        "ok": 128,
+        "ok_ratio": 1.0,
+        "output": 16384,
+        "output_tps": 242.85717965793054,
+        "sent": 128,
+        "total_tps": 7054.271744212225,
+        "total_tps_per_gpu": 1763.5679360530562,
+        "ttft_p50": 0.4111290172440931,
+        "ttft_p90": 1.1408518116979403
+      },
+      "pass": false,
+      "repeats": [
+        "/scratch/codex-serve-sweep/focused/candidates/tp4-trt-bf16-mtp/level-8/repeat-1/result.json",
+        "/scratch/codex-serve-sweep/focused/candidates/tp4-trt-bf16-mtp/level-8/repeat-2/result.json"
+      ]
+    }
+  ]
+}

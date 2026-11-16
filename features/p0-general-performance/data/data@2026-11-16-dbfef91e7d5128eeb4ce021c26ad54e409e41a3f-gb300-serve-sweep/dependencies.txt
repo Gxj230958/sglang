@@ -1,0 +1,10 @@
+torch 2.14.1+cu130
+transformers 5.19.0
+flashinfer-python 0.7.3
+flashinfer-cubin 0.7.3
+flashinfer-jit-cache 0.7.3+cu130
+sglang-kernel 0.4.11
+sgl-deep-gemm 0.2.8
+sgl-flash-mla 1.0.5
+kernels 0.14.1
+serve_help 208074 bench_help 22087

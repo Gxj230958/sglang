@@ -1,0 +1,153 @@
+{
+  "candidate": {
+    "name": "tp4-default-mtp",
+    "serve_args": [
+      "--tp-size",
+      "4",
+      "--moe-runner-backend",
+      "deep_gemm",
+      "--speculative-algorithm",
+      "EAGLE",
+      "--speculative-num-steps",
+      "3",
+      "--speculative-eagle-topk",
+      "1",
+      "--speculative-num-draft-tokens",
+      "4",
+      "--speculative-draft-model-path",
+      "/scratch/models/GLM-5-1028-Provider"
+    ]
+  },
+  "points": [
+    {
+      "candidate": "tp4-default-mtp",
+      "failures": [],
+      "level": 1,
+      "metrics": {
+        "accept_length": 2.4746551974448314,
+        "cache_hit": 0.7803,
+        "cached": 358592,
+        "duration_s": 87.31737604504451,
+        "empty_rate": 0.0,
+        "empty_responses": 0,
+        "error_rate": 0.0,
+        "errors": 0,
+        "input": 459557,
+        "interactivity_p90": 98.85789417973466,
+        "level": 1.0,
+        "ok": 128,
+        "ok_ratio": 1.0,
+        "output": 16384,
+        "output_tps": 93.82281933146211,
+        "sent": 128,
+        "total_tps": 2725.4718520235106,
+        "total_tps_per_gpu": 681.3679630058776,
+        "ttft_p50": 0.34185145518858917,
+        "ttft_p90": 0.3537837303301785
+      },
+      "pass": true,
+      "repeats": [
+        "/scratch/codex-serve-sweep/focused/candidates/tp4-default-mtp/level-1/repeat-1/result.json",
+        "/scratch/codex-serve-sweep/focused/candidates/tp4-default-mtp/level-1/repeat-2/result.json"
+      ]
+    },
+    {
+      "candidate": "tp4-default-mtp",
+      "failures": [],
+      "level": 2,
+      "metrics": {
+        "accept_length": 2.4946703627819504,
+        "cache_hit": 0.7721,
+        "cached": 354816,
+        "duration_s": 58.94859790347982,
+        "empty_rate": 0.0,
+        "empty_responses": 0,
+        "error_rate": 0.0,
+        "errors": 0,
+        "input": 459545,
+        "interactivity_p90": 71.75829951533703,
+        "level": 2.0,
+        "ok": 128,
+        "ok_ratio": 1.0,
+        "output": 16384,
+        "output_tps": 138.98226589654553,
+        "sent": 128,
+        "total_tps": 4037.2123218285988,
+        "total_tps_per_gpu": 1009.3030804571497,
+        "ttft_p50": 0.3550826744758524,
+        "ttft_p90": 0.3659011822775938
+      },
+      "pass": true,
+      "repeats": [
+        "/scratch/codex-serve-sweep/focused/candidates/tp4-default-mtp/level-2/repeat-1/result.json",
+        "/scratch/codex-serve-sweep/focused/candidates/tp4-default-mtp/level-2/repeat-2/result.json"
+      ]
+    },
+    {
+      "candidate": "tp4-default-mtp",
+      "failures": [],
+      "level": 4,
+      "metrics": {
+        "accept_length": 2.4942467161520057,
+        "cache_hit": 0.7501,
+        "cached": 344704,
+        "duration_s": 43.02832465147367,
+        "empty_rate": 0.0,
+        "empty_responses": 0,
+        "error_rate": 0.0,
+        "errors": 0,
+        "input": 459535,
+        "interactivity_p90": 34.96229896771278,
+        "level": 4.0,
+        "ok": 128,
+        "ok_ratio": 1.0,
+        "output": 16384,
+        "output_tps": 190.4060650188898,
+        "sent": 128,
+        "total_tps": 5530.8767969534665,
+        "total_tps_per_gpu": 1382.7191992383666,
+        "ttft_p50": 0.36903017631266266,
+        "ttft_p90": 0.64177659273264
+      },
+      "pass": true,
+      "repeats": [
+        "/scratch/codex-serve-sweep/focused/candidates/tp4-default-mtp/level-4/repeat-1/result.json",
+        "/scratch/codex-serve-sweep/focused/candidates/tp4-default-mtp/level-4/repeat-2/result.json"
+      ]
+    },
+    {
+      "candidate": "tp4-default-mtp",
+      "failures": [
+        "interactivity_p90=14.479060645102392<30"
+      ],
+      "level": 8,
+      "metrics": {
+        "accept_length": 2.41933726966502,
+        "cache_hit": 0.74515,
+        "cached": 342400,
+        "duration_s": 33.01895872299792,
+        "empty_rate": 0.0,
+        "empty_responses": 0,
+        "error_rate": 0.0,
+        "errors": 0,
+        "input": 459510,
+        "interactivity_p90": 14.479060645102392,
+        "level": 8.0,
+        "ok": 128,
+        "ok_ratio": 1.0,
+        "output": 16384,
+        "output_tps": 248.11996764363113,
+        "sent": 128,
+        "total_tps": 7206.9615142843,
+        "total_tps_per_gpu": 1801.740378571075,
+        "ttft_p50": 0.5119098052382469,
+        "ttft_p90": 1.152929575619055
+      },
+      "pass": false,
+      "repeats": [
+        "/scratch/codex-serve-sweep/focused/candidates/tp4-default-mtp/level-8/repeat-1/result.json",
+        "/scratch/codex-serve-sweep/focused/candidates/tp4-default-mtp/level-8/repeat-2/result.json"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,552 @@
+[
+ {
+  "file": "2026-11-16-0735-xinyuan-dbfef91e7d-gb300-serve-sweep.md",
+  "source": "generated for this round",
+  "sha256": "f143b885495600bfe2126149366ef58ff5e3e022479a0a1c0ddc7c4dd99381c2"
+ },
+ {
+  "file": "accounting-check.txt",
+  "source": "sweep evidence directory collected from the 4x GB300 node: accounting-check.txt",
+  "sha256": "ff6ca9e63ecfcb571f85c5011b1bc1fb0f5d17dbe6e7f25ac025e01bc5b83d68"
+ },
+ {
+  "file": "audit.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: audit.json",
+  "sha256": "0cf331a01329593afd6718dc4aad2cd58e4ce5b4164aaf4755be50612503e4ae"
+ },
+ {
+  "file": "audit.txt",
+  "source": "sweep evidence directory collected from the 4x GB300 node: audit.txt",
+  "sha256": "23dba8e22af933df1ee6846f8fbd5eb42b6233e770d0d9d03ce4410672a4852c"
+ },
+ {
+  "file": "coarse-run1.tar.gz",
+  "source": "sweep evidence directory collected from the 4x GB300 node: run1/, tar created for this round; hash of the uncompressed tar stream",
+  "sha256": "629cc16ad2b6fc0865b14dcc4e55c043ad7c6b587293c58ecebdc5176d27b6b9"
+ },
+ {
+  "file": "contract.md",
+  "source": "sweep evidence directory collected from the 4x GB300 node: contract.md with the node name and the name of the other workload replaced by descriptive labels; hashed as committed",
+  "sha256": "7d84a985351ac9fbda2b9ad9b58565ebb74d6547ecc65d80eb0e48d2fd8bc4e5"
+ },
+ {
+  "file": "dependencies.txt",
+  "source": "sweep evidence directory collected from the 4x GB300 node: dependencies.txt",
+  "sha256": "93fce0dad2dd1bd7e5eac068beb68c149e5eed3c243ddd6df1edca87c66dcfbd"
+ },
+ {
+  "file": "focused-plan.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused-plan.json",
+  "sha256": "6c290253c006796748a2cd03b01d2bdb089734481b5e142da096d32c312bd0f1"
+ },
+ {
+  "file": "focused.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused.json",
+  "sha256": "0b40505d42513289a56fd597471f59b83be5722960d3523409694250d9942816"
+ },
+ {
+  "file": "focused/candidates/dep4-trt-fp8-mtp-full/correctness.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/dep4-trt-fp8-mtp-full/correctness.json",
+  "sha256": "5f5fb8f56ff8d267eb613172d699a783e99c4be51b2efeb76181f190e5e8e1e0"
+ },
+ {
+  "file": "focused/candidates/dep4-trt-fp8-mtp-full/correctness.log",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/dep4-trt-fp8-mtp-full/correctness.log",
+  "sha256": "92f6d215f833953e31d047f3cf2db0efadc0b9d9c5b52e7de9ff12f10ef39ac1"
+ },
+ {
+  "file": "focused/candidates/dep4-trt-fp8-mtp-full/correctness.process.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/dep4-trt-fp8-mtp-full/correctness.process.json",
+  "sha256": "d5a33eda5a1b01449564775defdcf4035cd7cb953325df5f74ffb4dcaeea34bc"
+ },
+ {
+  "file": "focused/candidates/dep4-trt-fp8-mtp-full/get_server_info.txt",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/dep4-trt-fp8-mtp-full/get_server_info.txt",
+  "sha256": "0ae4c51034e8f1676d8b9fa59e5622d71db64d913b19b29d8e513835e155cd94"
+ },
+ {
+  "file": "focused/candidates/dep4-trt-fp8-mtp-full/levels.tar.gz",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/dep4-trt-fp8-mtp-full/level-*/, tar created for this round; hash of the uncompressed tar stream",
+  "sha256": "78d709ed4f05b73c0f8c421922317f4d9f82f99839788bb341b600f1ff38a5a8"
+ },
+ {
+  "file": "focused/candidates/dep4-trt-fp8-mtp-full/metrics.txt.gz",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/dep4-trt-fp8-mtp-full/metrics.txt",
+  "sha256": "9edb62629613d825ad6944fae486b8696adb1f4001c005f1b15d2a102ba28987"
+ },
+ {
+  "file": "focused/candidates/dep4-trt-fp8-mtp-full/replica-0.log.gz",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/dep4-trt-fp8-mtp-full/replica-0.log",
+  "sha256": "bc544f1db235254351dcd41a1cab4b16027d38b029cc22fab4a468bcaa9e727b"
+ },
+ {
+  "file": "focused/candidates/dep4-trt-fp8-mtp-full/replica-0.process.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/dep4-trt-fp8-mtp-full/replica-0.process.json",
+  "sha256": "4d86cfc18c0d85b8770c4962b585eb43896b4bf060722f747521bb47664a3b02"
+ },
+ {
+  "file": "focused/candidates/dep4-trt-fp8-mtp-full/result.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/dep4-trt-fp8-mtp-full/result.json",
+  "sha256": "bb18236781088490fd36b222404b03df6fa369db05f8072d8c6ebd67b02044bf"
+ },
+ {
+  "file": "focused/candidates/dep4-trt-fp8-mtp-full/sanity-requests.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/dep4-trt-fp8-mtp-full/sanity-requests.json",
+  "sha256": "acecd4fdcd9fea609ee810e029450a911b2bb57305f7db3fb0ca62207d5d0083"
+ },
+ {
+  "file": "focused/candidates/dep4-trt-fp8-mtp/correctness.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/dep4-trt-fp8-mtp/correctness.json",
+  "sha256": "5f5fb8f56ff8d267eb613172d699a783e99c4be51b2efeb76181f190e5e8e1e0"
+ },
+ {
+  "file": "focused/candidates/dep4-trt-fp8-mtp/correctness.log",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/dep4-trt-fp8-mtp/correctness.log",
+  "sha256": "92f6d215f833953e31d047f3cf2db0efadc0b9d9c5b52e7de9ff12f10ef39ac1"
+ },
+ {
+  "file": "focused/candidates/dep4-trt-fp8-mtp/correctness.process.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/dep4-trt-fp8-mtp/correctness.process.json",
+  "sha256": "7041b5b1bb5f6c3dd6baf66be33c4f5f6452cd2aa676513750e5a3762c17c1fd"
+ },
+ {
+  "file": "focused/candidates/dep4-trt-fp8-mtp/get_server_info.txt",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/dep4-trt-fp8-mtp/get_server_info.txt",
+  "sha256": "b71c7eb5581e80611e8cf4c17c25fa9a6797ed05a0f4dbd3eaa988826f52f2ac"
+ },
+ {
+  "file": "focused/candidates/dep4-trt-fp8-mtp/levels.tar.gz",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/dep4-trt-fp8-mtp/level-*/, tar created for this round; hash of the uncompressed tar stream",
+  "sha256": "4197a1612fc8405ba5f7ae83ab4babec616a5b55bfa82076617684140290a9a8"
+ },
+ {
+  "file": "focused/candidates/dep4-trt-fp8-mtp/metrics.txt.gz",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/dep4-trt-fp8-mtp/metrics.txt",
+  "sha256": "bc57294d6e41b4b448e368661de0a4c0ba31d440b18b585bd04d22f93c734ad8"
+ },
+ {
+  "file": "focused/candidates/dep4-trt-fp8-mtp/replica-0.log.gz",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/dep4-trt-fp8-mtp/replica-0.log",
+  "sha256": "d6bbf6165c691b55fd0547d074587ac342b8ba58522ccb29bc56ba1f3e5107ab"
+ },
+ {
+  "file": "focused/candidates/dep4-trt-fp8-mtp/replica-0.process.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/dep4-trt-fp8-mtp/replica-0.process.json",
+  "sha256": "bb0bc9f9c5281af4f6b31f7d0dbfdf3b3758cdabb2fffe9619fc796a168daaea"
+ },
+ {
+  "file": "focused/candidates/dep4-trt-fp8-mtp/result.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/dep4-trt-fp8-mtp/result.json",
+  "sha256": "da3644fa0cf26e705e8846978118369f58867098021a8bc6b427889f10404f97"
+ },
+ {
+  "file": "focused/candidates/dep4-trt-fp8-mtp/sanity-requests.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/dep4-trt-fp8-mtp/sanity-requests.json",
+  "sha256": "0dc3273706d982734fa0363371917de2af88e59a256acee7bdcb552353f8832c"
+ },
+ {
+  "file": "focused/candidates/dep4-trt-fp8/correctness.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/dep4-trt-fp8/correctness.json",
+  "sha256": "5f5fb8f56ff8d267eb613172d699a783e99c4be51b2efeb76181f190e5e8e1e0"
+ },
+ {
+  "file": "focused/candidates/dep4-trt-fp8/correctness.log",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/dep4-trt-fp8/correctness.log",
+  "sha256": "92f6d215f833953e31d047f3cf2db0efadc0b9d9c5b52e7de9ff12f10ef39ac1"
+ },
+ {
+  "file": "focused/candidates/dep4-trt-fp8/correctness.process.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/dep4-trt-fp8/correctness.process.json",
+  "sha256": "25dc03bca4eb6f1ebdd374dbb9330b55f7efd8c70ec51a04341da5a42b8d95d1"
+ },
+ {
+  "file": "focused/candidates/dep4-trt-fp8/get_server_info.txt",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/dep4-trt-fp8/get_server_info.txt",
+  "sha256": "82a6a1906db221a05fe1e6c85159925d72e9f4a60ceabddf43bfb256024c0b39"
+ },
+ {
+  "file": "focused/candidates/dep4-trt-fp8/levels.tar.gz",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/dep4-trt-fp8/level-*/, tar created for this round; hash of the uncompressed tar stream",
+  "sha256": "44ae3252b3f1940ae5535712225a5737c07db19a3e205cdee2e42978e2f57f69"
+ },
+ {
+  "file": "focused/candidates/dep4-trt-fp8/metrics.txt.gz",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/dep4-trt-fp8/metrics.txt",
+  "sha256": "14c7a8122a6edbf5903ac907cd969ae7fa11e5bad3ab49e0c66db1cbf9497788"
+ },
+ {
+  "file": "focused/candidates/dep4-trt-fp8/replica-0.log.gz",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/dep4-trt-fp8/replica-0.log",
+  "sha256": "46c6a1c3a3717cd5f3686b8f2194400f0536cb92ea95dc703d2ab67e3277666b"
+ },
+ {
+  "file": "focused/candidates/dep4-trt-fp8/replica-0.process.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/dep4-trt-fp8/replica-0.process.json",
+  "sha256": "442d30d6a25bfa5a1a1813829980c9dbe53d3988477e788e56ff97e2bdb80f73"
+ },
+ {
+  "file": "focused/candidates/dep4-trt-fp8/result.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/dep4-trt-fp8/result.json",
+  "sha256": "e5bdfba83f35ef74bb78e27f503cc811f6a4169c8f3eddcb8a4942858c818a5b"
+ },
+ {
+  "file": "focused/candidates/dep4-trt-fp8/sanity-requests.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/dep4-trt-fp8/sanity-requests.json",
+  "sha256": "e2f1dfda5d7744dd87767183c4913953c3a0f46d4ec7a04a6af003d8d18d3b17"
+ },
+ {
+  "file": "focused/candidates/tp4-default-mtp-full/correctness.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-default-mtp-full/correctness.json",
+  "sha256": "5f5fb8f56ff8d267eb613172d699a783e99c4be51b2efeb76181f190e5e8e1e0"
+ },
+ {
+  "file": "focused/candidates/tp4-default-mtp-full/correctness.log",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-default-mtp-full/correctness.log",
+  "sha256": "92f6d215f833953e31d047f3cf2db0efadc0b9d9c5b52e7de9ff12f10ef39ac1"
+ },
+ {
+  "file": "focused/candidates/tp4-default-mtp-full/correctness.process.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-default-mtp-full/correctness.process.json",
+  "sha256": "9da1431ffec5d0751318212d2f0356869a6629d6c7820da5c9d0b4005712f6f8"
+ },
+ {
+  "file": "focused/candidates/tp4-default-mtp-full/get_server_info.txt",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-default-mtp-full/get_server_info.txt",
+  "sha256": "ce0fc495be42c51b7f8541ce57546abb2b5101bf00f54dd10e3ebc6f01690296"
+ },
+ {
+  "file": "focused/candidates/tp4-default-mtp-full/levels.tar.gz",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-default-mtp-full/level-*/, tar created for this round; hash of the uncompressed tar stream",
+  "sha256": "6872508424a877031320a6fd5ba382cd6a56b5064c39dd89c4a2206f94d07752"
+ },
+ {
+  "file": "focused/candidates/tp4-default-mtp-full/metrics.txt.gz",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-default-mtp-full/metrics.txt",
+  "sha256": "0dac2c83d3c8ef1b9c0ce3198a76a2b916585325b6ab62a5c88eea953e5fc717"
+ },
+ {
+  "file": "focused/candidates/tp4-default-mtp-full/replica-0.log.gz",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-default-mtp-full/replica-0.log",
+  "sha256": "38dfb3f0972b6cff774337ad6d375c08fc5d9811de6590958d434072428579ef"
+ },
+ {
+  "file": "focused/candidates/tp4-default-mtp-full/replica-0.process.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-default-mtp-full/replica-0.process.json",
+  "sha256": "7e541ec9f20cdcbdcdde504cdb379bcf8b41ff7b0080f5afe475c591a6ad45d3"
+ },
+ {
+  "file": "focused/candidates/tp4-default-mtp-full/result.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-default-mtp-full/result.json",
+  "sha256": "eee3e2ff6377e7564ecc6485cffdbce5d66daa27904b28b0a59f2bfc2dbb9377"
+ },
+ {
+  "file": "focused/candidates/tp4-default-mtp-full/sanity-requests.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-default-mtp-full/sanity-requests.json",
+  "sha256": "1fe37f0e8074fe792e5d434d980c123da7eb509c7ea81038ef0a8ba0e5a517b8"
+ },
+ {
+  "file": "focused/candidates/tp4-default-mtp/correctness.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-default-mtp/correctness.json",
+  "sha256": "5f5fb8f56ff8d267eb613172d699a783e99c4be51b2efeb76181f190e5e8e1e0"
+ },
+ {
+  "file": "focused/candidates/tp4-default-mtp/correctness.log",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-default-mtp/correctness.log",
+  "sha256": "92f6d215f833953e31d047f3cf2db0efadc0b9d9c5b52e7de9ff12f10ef39ac1"
+ },
+ {
+  "file": "focused/candidates/tp4-default-mtp/correctness.process.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-default-mtp/correctness.process.json",
+  "sha256": "e90a9e6fe235aa6efe0cc15dd4491d355487632a6b6e6aadca3cf58a1dcf3871"
+ },
+ {
+  "file": "focused/candidates/tp4-default-mtp/get_server_info.txt",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-default-mtp/get_server_info.txt",
+  "sha256": "d00bc6197c72a51c3c576b59e9d57afc5e66a68897935d149390c6e5af2b2ad9"
+ },
+ {
+  "file": "focused/candidates/tp4-default-mtp/levels.tar.gz",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-default-mtp/level-*/, tar created for this round; hash of the uncompressed tar stream",
+  "sha256": "e4f92f6ab9035b4af31954d3ef928fc3d21e7c3e9391d345497c569b60878f7d"
+ },
+ {
+  "file": "focused/candidates/tp4-default-mtp/metrics.txt.gz",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-default-mtp/metrics.txt",
+  "sha256": "117715bf8b95ac047e7ccf3972499b721f2ea73fc3ec808799d4043c67534a22"
+ },
+ {
+  "file": "focused/candidates/tp4-default-mtp/replica-0.log.gz",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-default-mtp/replica-0.log",
+  "sha256": "2ea4425a362314fd42eb18667d1bd05588dea6939ed558618d6554ba86409647"
+ },
+ {
+  "file": "focused/candidates/tp4-default-mtp/replica-0.process.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-default-mtp/replica-0.process.json",
+  "sha256": "3e80ea601077d183ea18b5add9ec1804faaf5d75096cd39762c87bc80970543d"
+ },
+ {
+  "file": "focused/candidates/tp4-default-mtp/result.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-default-mtp/result.json",
+  "sha256": "d36e277bb4cf4f44add8909740b6fb87a37e144ac49f30ce5a71656b3b91d944"
+ },
+ {
+  "file": "focused/candidates/tp4-default-mtp/sanity-requests.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-default-mtp/sanity-requests.json",
+  "sha256": "91ae91e5e74259397fc0683ca2efbefcadb41ddb8cab15fcbd040d326bd066a5"
+ },
+ {
+  "file": "focused/candidates/tp4-default/correctness.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-default/correctness.json",
+  "sha256": "5f5fb8f56ff8d267eb613172d699a783e99c4be51b2efeb76181f190e5e8e1e0"
+ },
+ {
+  "file": "focused/candidates/tp4-default/correctness.log",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-default/correctness.log",
+  "sha256": "92f6d215f833953e31d047f3cf2db0efadc0b9d9c5b52e7de9ff12f10ef39ac1"
+ },
+ {
+  "file": "focused/candidates/tp4-default/correctness.process.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-default/correctness.process.json",
+  "sha256": "7d19488b9367f29b0de9e15f5c9b59f59f01b6b79fe1cfc1c0a4610a0940eee6"
+ },
+ {
+  "file": "focused/candidates/tp4-default/get_server_info.txt",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-default/get_server_info.txt",
+  "sha256": "60b5cf132c703a909341d18e06f8d4747e30f01e5cdb06fd7e6d1f6db94d7377"
+ },
+ {
+  "file": "focused/candidates/tp4-default/levels.tar.gz",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-default/level-*/, tar created for this round; hash of the uncompressed tar stream",
+  "sha256": "a1fdd479d7c01d1777c17e66315c6b7315c96cdc44868eaa1be0fd343c404b59"
+ },
+ {
+  "file": "focused/candidates/tp4-default/metrics.txt.gz",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-default/metrics.txt",
+  "sha256": "f6373f681e3d0497ef6f5332c7c68a12f1c071810219f6c8bed773536ac8f475"
+ },
+ {
+  "file": "focused/candidates/tp4-default/replica-0.log.gz",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-default/replica-0.log",
+  "sha256": "87165b30aa1233ade30c1ae111a72192f93fd7266b6effea5a58d3455655261f"
+ },
+ {
+  "file": "focused/candidates/tp4-default/replica-0.process.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-default/replica-0.process.json",
+  "sha256": "ebbb1afe6b02ef6f61a7200e078d208bad6dd76fa10c3263b548a10f32184b4b"
+ },
+ {
+  "file": "focused/candidates/tp4-default/result.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-default/result.json",
+  "sha256": "2e98241f6e28678262ebf79542e72c41eca3dad00abd8edf7467c39e0a9afc7f"
+ },
+ {
+  "file": "focused/candidates/tp4-default/sanity-requests.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-default/sanity-requests.json",
+  "sha256": "d1ed265e0b4e8486ff84e0f4c84ba43a92566189773abcc49ea291c2fc8c32a2"
+ },
+ {
+  "file": "focused/candidates/tp4-trt-bf16-mtp/correctness.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-trt-bf16-mtp/correctness.json",
+  "sha256": "5f5fb8f56ff8d267eb613172d699a783e99c4be51b2efeb76181f190e5e8e1e0"
+ },
+ {
+  "file": "focused/candidates/tp4-trt-bf16-mtp/correctness.log",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-trt-bf16-mtp/correctness.log",
+  "sha256": "92f6d215f833953e31d047f3cf2db0efadc0b9d9c5b52e7de9ff12f10ef39ac1"
+ },
+ {
+  "file": "focused/candidates/tp4-trt-bf16-mtp/correctness.process.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-trt-bf16-mtp/correctness.process.json",
+  "sha256": "9de4f0015cf7f205b5625faa046b5c9fe61582ceaf50383f5bafb13d6137b337"
+ },
+ {
+  "file": "focused/candidates/tp4-trt-bf16-mtp/get_server_info.txt",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-trt-bf16-mtp/get_server_info.txt",
+  "sha256": "7e6956fa67002ead4f2807380ae0cba60530da4e4692211aed9b6f2f8c07a402"
+ },
+ {
+  "file": "focused/candidates/tp4-trt-bf16-mtp/levels.tar.gz",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-trt-bf16-mtp/level-*/, tar created for this round; hash of the uncompressed tar stream",
+  "sha256": "c03b125f619f4e1462b5118122f5385be3311f8d91aad7e3371da6e4bc5495d8"
+ },
+ {
+  "file": "focused/candidates/tp4-trt-bf16-mtp/metrics.txt.gz",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-trt-bf16-mtp/metrics.txt",
+  "sha256": "7fb1cd2a5988a6f60d3e6a0bb24a39a86720b87e6246c9c6ebd03df059d3bdb2"
+ },
+ {
+  "file": "focused/candidates/tp4-trt-bf16-mtp/replica-0.log.gz",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-trt-bf16-mtp/replica-0.log",
+  "sha256": "7c504de2ff35546237f24f840b200785c42e6947580bbc781c89ebb20e4047ed"
+ },
+ {
+  "file": "focused/candidates/tp4-trt-bf16-mtp/replica-0.process.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-trt-bf16-mtp/replica-0.process.json",
+  "sha256": "0fdbf58d5e308b184bd7347f6eeb818d8e98974b043da93f76d3dd6f38cf2267"
+ },
+ {
+  "file": "focused/candidates/tp4-trt-bf16-mtp/result.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-trt-bf16-mtp/result.json",
+  "sha256": "b65e01386cd9ed5c966ecb7d88b9e9e32ebb4d265d4fad698589260d288984a5"
+ },
+ {
+  "file": "focused/candidates/tp4-trt-bf16-mtp/sanity-requests.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-trt-bf16-mtp/sanity-requests.json",
+  "sha256": "9de98969cf626fd78d8dd4d91a2abe4376bf22c19d10200c0387d9543adf5122"
+ },
+ {
+  "file": "focused/candidates/tp4-trt-fp8-mtp/correctness.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-trt-fp8-mtp/correctness.json",
+  "sha256": "5f5fb8f56ff8d267eb613172d699a783e99c4be51b2efeb76181f190e5e8e1e0"
+ },
+ {
+  "file": "focused/candidates/tp4-trt-fp8-mtp/correctness.log",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-trt-fp8-mtp/correctness.log",
+  "sha256": "92f6d215f833953e31d047f3cf2db0efadc0b9d9c5b52e7de9ff12f10ef39ac1"
+ },
+ {
+  "file": "focused/candidates/tp4-trt-fp8-mtp/correctness.process.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-trt-fp8-mtp/correctness.process.json",
+  "sha256": "2c1eb3f72377b907008b13455160392295ebadac39322bed9b5e6dc3c622b553"
+ },
+ {
+  "file": "focused/candidates/tp4-trt-fp8-mtp/get_server_info.txt",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-trt-fp8-mtp/get_server_info.txt",
+  "sha256": "6746531527567e790dcb3389ca00153ec254dddf267ce02c2a57ef6e179d4a8d"
+ },
+ {
+  "file": "focused/candidates/tp4-trt-fp8-mtp/levels.tar.gz",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-trt-fp8-mtp/level-*/, tar created for this round; hash of the uncompressed tar stream",
+  "sha256": "1e28c5fa49af26451f881358bbadbace03706f81a8cf4a78b7b9143e3fa53e8f"
+ },
+ {
+  "file": "focused/candidates/tp4-trt-fp8-mtp/metrics.txt.gz",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-trt-fp8-mtp/metrics.txt",
+  "sha256": "72754b1e1544412a09cce0a62e4ab90fae5083434e494a270928f66ed316582b"
+ },
+ {
+  "file": "focused/candidates/tp4-trt-fp8-mtp/replica-0.log.gz",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-trt-fp8-mtp/replica-0.log",
+  "sha256": "3d5d644a0063ce216c81368b527a5a47726365d6145ce810ea6c64b2f926c017"
+ },
+ {
+  "file": "focused/candidates/tp4-trt-fp8-mtp/replica-0.process.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-trt-fp8-mtp/replica-0.process.json",
+  "sha256": "b8ca7f92c6056af2adbe6dc0b264021e4295f333ae589a3fe4a38db8c5e6bca8"
+ },
+ {
+  "file": "focused/candidates/tp4-trt-fp8-mtp/result.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-trt-fp8-mtp/result.json",
+  "sha256": "176358835479b6b73d3c0b42bc40d843e85cc8e51d83f6b2c17ab829fdff74d4"
+ },
+ {
+  "file": "focused/candidates/tp4-trt-fp8-mtp/sanity-requests.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/candidates/tp4-trt-fp8-mtp/sanity-requests.json",
+  "sha256": "985927a52b6e7786b659577385ae5364d5a4c57711794ed7ad676e222e2a51a5"
+ },
+ {
+  "file": "focused/config.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/config.json",
+  "sha256": "083e45a63459b539baf7f3c2aec4a763c1a8cd83c1f72591976da1485fc210ac"
+ },
+ {
+  "file": "focused/report.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/report.json",
+  "sha256": "a9f97e651f9c90d8fcccdc4cfb6a9b9d628d23751f730392849a7e23d9de9078"
+ },
+ {
+  "file": "focused/report.md",
+  "source": "sweep evidence directory collected from the 4x GB300 node: focused/report.md",
+  "sha256": "00103459928a0dc91bc97853b7c3b85bb88c95835637a156013609c7e54e3468"
+ },
+ {
+  "file": "load_adapter.py",
+  "source": "sweep evidence directory collected from the 4x GB300 node: load_adapter.py",
+  "sha256": "d82efc255d4108b9037992a43c320e803a9120d82910cbc517c5a74f269d9e72"
+ },
+ {
+  "file": "make_config.py",
+  "source": "sweep evidence directory collected from the 4x GB300 node: make_config.py",
+  "sha256": "4af4e03242bacb3a5822e603b291459f4757a941e4d57cebc344e83cf07f9473"
+ },
+ {
+  "file": "make_workload.py",
+  "source": "sweep evidence directory collected from the 4x GB300 node: make_workload.py",
+  "sha256": "25e650f7a4eae1ac7088f297d5374a2c37da564cbacc52367e2a82cd650e6c38"
+ },
+ {
+  "file": "plan.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: plan.json",
+  "sha256": "7b03c5a3cce0c877bfaae40447d45c7ed663f0e1689b0a5e1e963151e8f6434c"
+ },
+ {
+  "file": "preflight.txt",
+  "source": "sweep evidence directory collected from the 4x GB300 node: preflight.txt",
+  "sha256": "398dc02551ed7c824682f426e299df2118829e872c6cef483d0deda123b0c9ff"
+ },
+ {
+  "file": "recommended-serve.sh",
+  "source": "sweep evidence directory collected from the 4x GB300 node: recommended-serve.sh",
+  "sha256": "06491a325f154268e0dee86da8701e671b9b29498fe6b1acb9d072ee3f972872"
+ },
+ {
+  "file": "repro.md",
+  "source": "generated for this round",
+  "sha256": "01e681808c075e0447d8c72faa242b36e43cfc142ce135df4e5a0310a5c00eaa"
+ },
+ {
+  "file": "sanity.py",
+  "source": "sweep evidence directory collected from the 4x GB300 node: sanity.py",
+  "sha256": "64ad04127c2936a6de7cdf4762465088edb6373db42879fd93a989d38ca21cf0"
+ },
+ {
+  "file": "serve_sweep.py",
+  "source": "sweep evidence directory collected from the 4x GB300 node: serve_sweep.py",
+  "sha256": "3a8aacff49a47a142cc5760f8437302d836881c0df9c3bba9abc83a499ba0eee"
+ },
+ {
+  "file": "smoke.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: smoke.json",
+  "sha256": "7cb3f514fd5bd72c2624f517c3d793688f22bd3c22aeb12e6d8fe3cb62f73761"
+ },
+ {
+  "file": "smoke.tar.gz",
+  "source": "sweep evidence directory collected from the 4x GB300 node: smoke/, tar created for this round; hash of the uncompressed tar stream",
+  "sha256": "f56f4a1e6575ac20269189178aa5c52eed67232da9a79bd349713368ea069574"
+ },
+ {
+  "file": "source-hashes.txt",
+  "source": "sweep evidence directory collected from the 4x GB300 node: source-hashes.txt",
+  "sha256": "029331c9720e8d120fc275211ebd789d461fda81e686ca3bb629ce0e7c5034e7"
+ },
+ {
+  "file": "summarize_sweep.py",
+  "source": "generated for this round",
+  "sha256": "329a40198cfe4b7b8cc2a8d9c0aacc38aa37b0bbdd388bcb5d3693249be52207"
+ },
+ {
+  "file": "summary.json",
+  "source": "generated for this round",
+  "sha256": "5efb418382a4dc30142b99ab987cb4f6163f91d55dfea700c8681d561196232b"
+ },
+ {
+  "file": "sweep.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: sweep.json",
+  "sha256": "26050a366fa0d73ecfec8f952bd1eefb639cca42056351d620d883c116fbeb9e"
+ },
+ {
+  "file": "workload-generation.txt",
+  "source": "sweep evidence directory collected from the 4x GB300 node: workload-generation.txt",
+  "sha256": "240e152ace9ac1ece7aa35fbfaf6644863eb2e5ae38576c1ebb06715a7ef54ac"
+ },
+ {
+  "file": "workload-lengths.json",
+  "source": "sweep evidence directory collected from the 4x GB300 node: workload-lengths.json",
+  "sha256": "29536ab76ef4b9a1a35a5321ba093e82fd8ef4102cd19a22028b82575818a5a2"
+ },
+ {
+  "file": "workload.json.gz",
+  "source": "sweep evidence directory collected from the 4x GB300 node: workload.json",
+  "sha256": "235ea06164ba2a9f4700d5bee5ca12206a6ea21ed246ed64c8022b3bbb0d8688"
+ }
+]

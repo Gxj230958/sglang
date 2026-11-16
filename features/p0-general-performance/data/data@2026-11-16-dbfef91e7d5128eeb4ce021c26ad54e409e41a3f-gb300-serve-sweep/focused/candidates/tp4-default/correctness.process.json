@@ -1,0 +1,16 @@
+{
+  "command": [
+    "python3",
+    "/scratch/codex-serve-sweep/sanity.py",
+    "http://127.0.0.1:31080",
+    "/scratch/models/GLM-5-1028-Provider",
+    "/scratch/codex-serve-sweep/focused/candidates/tp4-default/correctness.json"
+  ],
+  "env": {
+    "PYTHONPATH": "/scratch/cc-regate2/overlay:/scratch/cc-swa/fi073:/scratch/kimi-glm42-repro/packages:/scratch/codex-serve-sweep/src/python",
+    "SGLANG_UNIFIED_RADIX_TREE_CORE_BACKEND": "python"
+  },
+  "log": "/scratch/codex-serve-sweep/focused/candidates/tp4-default/correctness.log",
+  "pgid": 104743,
+  "pid": 104743
+}

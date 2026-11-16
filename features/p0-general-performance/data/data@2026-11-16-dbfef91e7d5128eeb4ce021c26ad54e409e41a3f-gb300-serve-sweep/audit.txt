@@ -1,0 +1,72 @@
+
+CANDIDATE tp4-default-mtp ISSUES [] POOL ['[2026-11-16 00:50:46 TP0 PID97483] max_total_num_tokens=422400, chunked_prefill_size=8192, max_prefill_tokens=16384, max_running_requests=64, context_len=32768, available_gpu_mem=48.43 GB']
+SANITY stop '5'
+SANITY stop 'Paris is the capital of France.'
+SANITY stop "Check the service's startup logs for errors and verify it has fully finished initializing before retrying the request."
+POINT 1 True {'total_tps_per_gpu': 681.368, 'output_tps': 93.823, 'ttft_p90': 0.354, 'interactivity_p90': 98.858, 'cache_hit': 0.78} rep_scores [676.826, 685.91] rep_pass [True, True] fail []
+POINT 2 True {'total_tps_per_gpu': 1009.303, 'output_tps': 138.982, 'ttft_p90': 0.366, 'interactivity_p90': 71.758, 'cache_hit': 0.772} rep_scores [999.276, 1019.331] rep_pass [True, True] fail []
+POINT 4 True {'total_tps_per_gpu': 1382.719, 'output_tps': 190.406, 'ttft_p90': 0.642, 'interactivity_p90': 34.962, 'cache_hit': 0.75} rep_scores [1396.868, 1368.57] rep_pass [True, True] fail []
+POINT 8 False {'total_tps_per_gpu': 1801.74, 'output_tps': 248.12, 'ttft_p90': 1.153, 'interactivity_p90': 14.479, 'cache_hit': 0.745} rep_scores [1785.442, 1818.039] rep_pass [False, False] fail ['interactivity_p90=14.479060645102392<30']
+
+CANDIDATE tp4-default ISSUES [] POOL ['[2026-11-16 01:02:45 TP0 PID102490] max_total_num_tokens=460480, chunked_prefill_size=8192, max_prefill_tokens=16384, max_running_requests=64, context_len=32768, available_gpu_mem=51.54 GB']
+SANITY stop '5'
+SANITY stop 'The capital of France is Paris.'
+SANITY stop "Check the service's logs and startup status to see if it has finished restarting and is listening on the correct port."
+POINT 1 True {'total_tps_per_gpu': 406.055, 'output_tps': 55.915, 'ttft_p90': 0.331, 'interactivity_p90': 64.061, 'cache_hit': 0.775} rep_scores [405.856, 406.253] rep_pass [True, True] fail []
+POINT 2 True {'total_tps_per_gpu': 689.658, 'output_tps': 94.965, 'ttft_p90': 0.63, 'interactivity_p90': 59.542, 'cache_hit': 0.765} rep_scores [683.502, 695.814] rep_pass [True, True] fail []
+POINT 4 True {'total_tps_per_gpu': 1211.156, 'output_tps': 166.785, 'ttft_p90': 0.684, 'interactivity_p90': 51.549, 'cache_hit': 0.734} rep_scores [1209.477, 1212.836] rep_pass [True, True] fail []
+POINT 8 True {'total_tps_per_gpu': 2060.073, 'output_tps': 283.673, 'ttft_p90': 0.913, 'interactivity_p90': 43.108, 'cache_hit': 0.742} rep_scores [2060.449, 2059.696] rep_pass [True, True] fail []
+
+CANDIDATE tp4-trt-bf16-mtp ISSUES [] POOL ['[2026-11-16 01:18:26 TP0 PID107174] max_total_num_tokens=422400, chunked_prefill_size=8192, max_prefill_tokens=16384, max_running_requests=64, context_len=32768, available_gpu_mem=48.46 GB']
+SANITY stop '5'
+SANITY stop 'The capital of France is Paris.'
+SANITY stop 'Check whether the service is actually still restarting or if the restart failed and the process is down by reviewing its status and recent logs.'
+POINT 1 True {'total_tps_per_gpu': 679.391, 'output_tps': 93.554, 'ttft_p90': 0.366, 'interactivity_p90': 98.133, 'cache_hit': 0.781} rep_scores [682.878, 675.905] rep_pass [True, True] fail []
+POINT 2 True {'total_tps_per_gpu': 1022.321, 'output_tps': 140.773, 'ttft_p90': 0.437, 'interactivity_p90': 81.014, 'cache_hit': 0.768} rep_scores [1020.764, 1023.877] rep_pass [True, True] fail []
+POINT 4 True {'total_tps_per_gpu': 1341.796, 'output_tps': 184.765, 'ttft_p90': 0.689, 'interactivity_p90': 34.707, 'cache_hit': 0.758} rep_scores [1346.678, 1336.915] rep_pass [True, True] fail []
+POINT 8 False {'total_tps_per_gpu': 1763.568, 'output_tps': 242.857, 'ttft_p90': 1.141, 'interactivity_p90': 18.74, 'cache_hit': 0.739} rep_scores [1762.339, 1764.797] rep_pass [False, False] fail ['interactivity_p90=18.739869566366448<30']
+
+CANDIDATE tp4-trt-fp8-mtp ISSUES [] POOL ['[2026-11-16 01:31:14 TP0 PID111798] max_total_num_tokens=820352, chunked_prefill_size=8192, max_prefill_tokens=16384, max_running_requests=64, context_len=32768, available_gpu_mem=48.48 GB']
+SANITY stop '5'
+SANITY stop 'The capital of France is Paris.'
+SANITY stop "Hit the service's health/readiness endpoint (e.g., `GET /health` or `/ready`) to confirm whether the instance has actually finished starting and is passing readiness checks, which tells you if the 503 is just transient restart downtime or a failed/crash-looping start."
+POINT 1 True {'total_tps_per_gpu': 646.225, 'output_tps': 88.989, 'ttft_p90': 0.372, 'interactivity_p90': 95.328, 'cache_hit': 0.781} rep_scores [646.85, 645.6] rep_pass [True, True] fail []
+POINT 2 True {'total_tps_per_gpu': 946.592, 'output_tps': 130.346, 'ttft_p90': 0.521, 'interactivity_p90': 48.397, 'cache_hit': 0.772} rep_scores [936.829, 956.355] rep_pass [True, True] fail []
+POINT 4 True {'total_tps_per_gpu': 1345.055, 'output_tps': 185.206, 'ttft_p90': 0.682, 'interactivity_p90': 34.437, 'cache_hit': 0.755} rep_scores [1316.454, 1373.657] rep_pass [True, True] fail []
+POINT 8 False {'total_tps_per_gpu': 1797.42, 'output_tps': 247.517, 'ttft_p90': 1.052, 'interactivity_p90': 17.797, 'cache_hit': 0.743} rep_scores [1781.243, 1813.597] rep_pass [False, False] fail ['interactivity_p90=17.79668134610522<30']
+
+CANDIDATE dep4-trt-fp8-mtp ISSUES [] POOL ['[2026-11-16 01:49:43 DP0 TP0 EP0 PID116464] max_total_num_tokens=443264, chunked_prefill_size=2048, max_prefill_tokens=16384, max_running_requests=16, context_len=32768, available_gpu_mem=53.90 GB']
+SANITY stop '5'
+SANITY stop 'Paris is the capital of France.'
+SANITY stop "Check the service's health/readiness endpoint to verify it has fully started and is ready to accept traffic."
+POINT 1 True {'total_tps_per_gpu': 491.795, 'output_tps': 67.723, 'ttft_p90': 0.891, 'interactivity_p90': 83.597, 'cache_hit': 0.421} rep_scores [495.515, 488.075] rep_pass [True, True] fail []
+POINT 2 True {'total_tps_per_gpu': 757.04, 'output_tps': 104.245, 'ttft_p90': 0.914, 'interactivity_p90': 38.204, 'cache_hit': 0.532} rep_scores [767.704, 746.376] rep_pass [True, True] fail []
+POINT 4 True {'total_tps_per_gpu': 1050.107, 'output_tps': 144.599, 'ttft_p90': 1.217, 'interactivity_p90': 32.087, 'cache_hit': 0.615} rep_scores [1086.89, 1013.325] rep_pass [True, True] fail []
+POINT 8 False {'total_tps_per_gpu': 1321.228, 'output_tps': 181.932, 'ttft_p90': 1.274, 'interactivity_p90': 10.756, 'cache_hit': 0.549} rep_scores [1298.006, 1344.45] rep_pass [False, False] fail ['interactivity_p90=10.756383073011353<30']
+
+CANDIDATE dep4-trt-fp8 ISSUES [] POOL ['[2026-11-16 02:04:13 DP0 TP0 EP0 PID120957] max_total_num_tokens=537216, chunked_prefill_size=2048, max_prefill_tokens=16384, max_running_requests=16, context_len=32768, available_gpu_mem=53.85 GB']
+SANITY stop '5'
+SANITY stop 'The capital of France is Paris.'
+SANITY stop "Check whether the service's startup process has completed without errors by reviewing its logs and startup status before it accepts traffic."
+POINT 1 True {'total_tps_per_gpu': 298.118, 'output_tps': 41.051, 'ttft_p90': 0.806, 'interactivity_p90': 49.944, 'cache_hit': 0.421} rep_scores [296.305, 299.932] rep_pass [True, True] fail []
+POINT 2 True {'total_tps_per_gpu': 549.851, 'output_tps': 75.714, 'ttft_p90': 0.893, 'interactivity_p90': 49.211, 'cache_hit': 0.574} rep_scores [549.228, 550.473] rep_pass [True, True] fail []
+POINT 4 True {'total_tps_per_gpu': 985.908, 'output_tps': 135.758, 'ttft_p90': 1.268, 'interactivity_p90': 49.039, 'cache_hit': 0.647} rep_scores [977.439, 994.377] rep_pass [True, True] fail []
+POINT 8 True {'total_tps_per_gpu': 1735.447, 'output_tps': 238.977, 'ttft_p90': 1.615, 'interactivity_p90': 40.749, 'cache_hit': 0.542} rep_scores [1731.911, 1738.983] rep_pass [True, True] fail []
+
+CANDIDATE dep4-trt-fp8-mtp-full ISSUES [] POOL ['[2026-11-16 02:22:29 DP0 TP0 EP0 PID125315] max_total_num_tokens=343552, chunked_prefill_size=2048, max_prefill_tokens=16384, max_running_requests=16, context_len=32768, available_gpu_mem=54.03 GB']
+SANITY stop '5'
+SANITY stop 'The capital of France is Paris.'
+SANITY stop 'Check the service logs for startup errors or failed dependency connections (like database or cache) that prevent it from becoming ready.'
+POINT 1 True {'total_tps_per_gpu': 497.414, 'output_tps': 68.492, 'ttft_p90': 0.85, 'interactivity_p90': 83.86, 'cache_hit': 0.451} rep_scores [496.207, 498.621] rep_pass [True, True] fail []
+POINT 2 True {'total_tps_per_gpu': 791.714, 'output_tps': 109.018, 'ttft_p90': 0.831, 'interactivity_p90': 38.637, 'cache_hit': 0.575} rep_scores [791.037, 792.392] rep_pass [True, True] fail []
+POINT 4 True {'total_tps_per_gpu': 1072.301, 'output_tps': 147.66, 'ttft_p90': 0.983, 'interactivity_p90': 32.513, 'cache_hit': 0.654} rep_scores [1040.85, 1103.753] rep_pass [True, True] fail []
+POINT 8 False {'total_tps_per_gpu': 1344.898, 'output_tps': 185.179, 'ttft_p90': 1.188, 'interactivity_p90': 11.207, 'cache_hit': 0.58} rep_scores [1334.723, 1355.073] rep_pass [False, False] fail ['interactivity_p90=11.207269606722083<30']
+
+CANDIDATE tp4-default-mtp-full ISSUES [] POOL ['[2026-11-16 02:37:42 TP0 PID129689] max_total_num_tokens=325184, chunked_prefill_size=8192, max_prefill_tokens=16384, max_running_requests=64, context_len=32768, available_gpu_mem=48.54 GB']
+SANITY stop '5'
+SANITY stop 'Paris is the capital of France.'
+SANITY stop "Check the service's logs and its readiness probe (health endpoint) to confirm the restart completed successfully and the service is actually healthy and listening before investigating upstream."
+POINT 1 True {'total_tps_per_gpu': 671.985, 'output_tps': 92.535, 'ttft_p90': 0.355, 'interactivity_p90': 96.935, 'cache_hit': 0.789} rep_scores [655.281, 688.688] rep_pass [True, True] fail []
+POINT 2 True {'total_tps_per_gpu': 1012.779, 'output_tps': 139.463, 'ttft_p90': 0.497, 'interactivity_p90': 79.492, 'cache_hit': 0.781} rep_scores [1009.625, 1015.932] rep_pass [True, True] fail []
+POINT 4 True {'total_tps_per_gpu': 1390.284, 'output_tps': 191.447, 'ttft_p90': 0.644, 'interactivity_p90': 35.239, 'cache_hit': 0.766} rep_scores [1395.309, 1385.26] rep_pass [True, True] fail []
+POINT 8 False {'total_tps_per_gpu': 1842.188, 'output_tps': 253.673, 'ttft_p90': 1.049, 'interactivity_p90': 19.703, 'cache_hit': 0.761} rep_scores [1810.188, 1874.187] rep_pass [False, False] fail ['interactivity_p90=19.702587364941405<30']
