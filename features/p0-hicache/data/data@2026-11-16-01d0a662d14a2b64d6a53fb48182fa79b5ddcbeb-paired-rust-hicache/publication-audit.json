@@ -1,0 +1,9 @@
+{
+  "runtime": "01d0a662d14a2b64d6a53fb48182fa79b5ddcbeb",
+  "archives_verified": 9,
+  "raw_files_verified": 752,
+  "credential_pattern_findings": 0,
+  "private_address_findings": 0,
+  "local_links_verified": true,
+  "scope": "Tracking evidence only; runtime quality and release gates remain separate."
+}

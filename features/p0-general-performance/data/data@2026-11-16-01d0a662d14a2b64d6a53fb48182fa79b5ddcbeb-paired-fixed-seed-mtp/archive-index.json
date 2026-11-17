@@ -1,0 +1,55 @@
+[
+  {
+    "archive": "fp8-bf16-snapshot.tar.gz",
+    "sha256": "49f600397ea26be89be8609a35d7e3bbdf08770fd2b77c0d228059231e48ea81",
+    "files": 167
+  },
+  {
+    "archive": "nvfp4-bf16-snapshot.tar.gz",
+    "sha256": "5a0213edfe2ed4176842cdfe568f2c34fa3622a0d17220f98a4b9ebb92167d27",
+    "files": 167
+  },
+  {
+    "archive": "fp8-fp8kv-snapshot.tar.gz",
+    "sha256": "6847748001c4c1bdace446fde96d409d0d0be498f965c933e268a0fa2f20a60c",
+    "files": 167
+  },
+  {
+    "archive": "nvfp4-fp8kv-snapshot.tar.gz",
+    "sha256": "07c03a4e3f59541e18598814c68a15732dad77b7b3700c7248d25daa2a69dcd5",
+    "files": 167
+  },
+  {
+    "archive": "controlled35-fp8-bf16-snapshot.tar.gz",
+    "sha256": "f37409fc4a1f4057a4f6c7c6d56d345f6994f9024336f16f0a7e7a6262f893f7",
+    "files": 160
+  },
+  {
+    "archive": "controlled35-nvfp4-bf16-snapshot.tar.gz",
+    "sha256": "7c03dfa3d8ac67013d862b072c273dcd153fb47f60e582df229662ebafb6bae4",
+    "files": 160
+  },
+  {
+    "archive": "controlled35-fp8-fp8kv-snapshot.tar.gz",
+    "sha256": "c1bcb3175fd3616cf7380df42537aa7ace7a95e5d920a3169c5ca2192a092e85",
+    "files": 160
+  },
+  {
+    "archive": "controlled35-nvfp4-fp8kv-snapshot.tar.gz",
+    "sha256": "dfa80a7c71985643fafa4a74aceb34733a07807e1008eec964bcaac3340fbfa8",
+    "files": 160
+  },
+  {
+    "archive": "gate-evidence.tar.gz",
+    "sha256": "7b1f909651a91c210ca4b9a8ba589b33c8a911d19018d8395e060df6a2f18067",
+    "files": 123
+  },
+  {
+    "archive": "terminal-evidence.tar.gz",
+    "sha256": "a7da2621aa518b177d12ab529738147927d1ce164e5312b6f8b06caa4c0d85ad",
+    "files": 40,
+    "source_archive_sha256": "419d4ea978c2525a1164b619aa81a0b4ec4819d0238c92ad5eb406be1954e5aa",
+    "omitted_member": "workload.json",
+    "omitted_sha256": "235ea06164ba2a9f4700d5bee5ca12206a6ea21ed246ed64c8022b3bbb0d8688"
+  }
+]

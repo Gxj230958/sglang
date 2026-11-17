@@ -1,0 +1,26 @@
+{
+  "repo": "RadixArk/GLM-5-1028-Provider",
+  "revision": "9c24449260e89d2d2bb6ed8f92d5f386c04ad7ff",
+  "files": {
+    "config.json": {
+      "expected": "99d7088de1960a51c0f1ae58553815c4c6c223fdbde44d13dc3ebca479e0c80f",
+      "actual": "788e46fcfedfdbd77adc2caf5337610c382faad85fa143bd72aa83acc4d3e2f8",
+      "matches": false
+    },
+    "model.safetensors.index.json": {
+      "expected": "55979a9446143325fac64918861333910a3f776d5719d2021d2b75a5c16112c1",
+      "actual": "55979a9446143325fac64918861333910a3f776d5719d2021d2b75a5c16112c1",
+      "matches": true
+    },
+    "tokenizer.json": {
+      "expected": "19e773648cb4e65de8660ea6365e10acca112d42a854923df93db4a6f333a82d",
+      "actual": "19e773648cb4e65de8660ea6365e10acca112d42a854923df93db4a6f333a82d",
+      "matches": true
+    },
+    "tokenizer_config.json": {
+      "expected": "98b1271574f41abf89427ae2dda030d94dc9478f0edc5a8bd240db213c6fd5fc",
+      "actual": "98b1271574f41abf89427ae2dda030d94dc9478f0edc5a8bd240db213c6fd5fc",
+      "matches": true
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "runtime_commit": "3b6b0064d2e7743378191b5b906e8e1cea37319f",
+  "hashed_files": 467,
+  "points": 24,
+  "results": [
+    {
+      "mode": "mtp",
+      "input": 2000,
+      "output": 500,
+      "concurrency": 1,
+      "fp8": 206.9713330060996,
+      "nvfp4": 225.4572718669889,
+      "nvfp4_over_fp8": 1.0893164217111386
+    },
+    {
+      "mode": "mtp",
+      "input": 2000,
+      "output": 500,
+      "concurrency": 8,
+      "fp8": 803.1834938907455,
+      "nvfp4": 962.5525142645292,
+      "nvfp4_over_fp8": 1.1984216826989005
+    },
+    {
+      "mode": "mtp",
+      "input": 2000,
+      "output": 500,
+      "concurrency": 32,
+      "fp8": 1585.2758908771416,
+      "nvfp4": 1946.491211645285,
+      "nvfp4_over_fp8": 1.2278564399085645
+    },
+    {
+      "mode": "mtp",
+      "input": 30000,
+      "output": 300,
+      "concurrency": 4,
+      "fp8": 121.4085321035201,
+      "nvfp4": 143.1083838735875,
+      "nvfp4_over_fp8": 1.1787341580867219
+    },
+    {
+      "mode": "off",
+      "input": 2000,
+      "output": 500,
+      "concurrency": 1,
+      "fp8": 92.90775146994683,
+      "nvfp4": 97.20225342760392,
+      "nvfp4_over_fp8": 1.046223290196042
+    },
+    {
+      "mode": "off",
+      "input": 2000,
+      "output": 500,
+      "concurrency": 32,
+      "fp8": 876.3557416279048,
+      "nvfp4": 1089.1226527744816,
+      "nvfp4_over_fp8": 1.2427860069146628
+    }
+  ]
+}

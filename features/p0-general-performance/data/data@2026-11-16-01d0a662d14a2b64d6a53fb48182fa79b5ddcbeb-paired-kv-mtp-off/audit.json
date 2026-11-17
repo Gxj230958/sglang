@@ -1,0 +1,768 @@
+{
+  "runtime_commit": "01d0a662d14a2b64d6a53fb48182fa79b5ddcbeb",
+  "candidates": {
+    "fp8-kv-bf16-mtp-off": {
+      "requests": 1280,
+      "natural_stop_sanity": 3,
+      "points": [
+        {
+          "total_tps_per_gpu": 561.8365701491996,
+          "output_tps": 77.36915321667274,
+          "ttft_p90": 0.3677776510012336,
+          "interactivity_p90": 97.49371943843954,
+          "level": 1,
+          "repeats": [
+            {
+              "total_tps_per_gpu": 560.8313491018802,
+              "output_tps": 77.23056408957366,
+              "ttft_p90": 0.3681940206792206,
+              "interactivity_p90": 97.47453905936649,
+              "pass": true
+            },
+            {
+              "total_tps_per_gpu": 562.8417911965189,
+              "output_tps": 77.50774234377181,
+              "ttft_p90": 0.36736128132324664,
+              "interactivity_p90": 97.51289981751258,
+              "pass": true
+            }
+          ],
+          "pass": true
+        },
+        {
+          "total_tps_per_gpu": 865.4581263179148,
+          "output_tps": 119.177655430583,
+          "ttft_p90": 0.7114086975692772,
+          "interactivity_p90": 84.93035136783794,
+          "level": 2,
+          "repeats": [
+            {
+              "total_tps_per_gpu": 869.5329536367333,
+              "output_tps": 119.7425344914225,
+              "ttft_p90": 0.7109174763085321,
+              "interactivity_p90": 84.95531397557204,
+              "pass": true
+            },
+            {
+              "total_tps_per_gpu": 861.3832989990962,
+              "output_tps": 118.61277636974351,
+              "ttft_p90": 0.7118999188300222,
+              "interactivity_p90": 84.90538876010386,
+              "pass": true
+            }
+          ],
+          "pass": true
+        },
+        {
+          "total_tps_per_gpu": 1477.0657293940926,
+          "output_tps": 203.40313045013968,
+          "ttft_p90": 0.750745627610013,
+          "interactivity_p90": 69.5167821215239,
+          "level": 4,
+          "repeats": [
+            {
+              "total_tps_per_gpu": 1478.218948448729,
+              "output_tps": 203.54355920902594,
+              "ttft_p90": 0.7417935999808833,
+              "interactivity_p90": 69.52495481847153,
+              "pass": true
+            },
+            {
+              "total_tps_per_gpu": 1475.9125103394565,
+              "output_tps": 203.26270169125343,
+              "ttft_p90": 0.7596976552391426,
+              "interactivity_p90": 69.50860942457629,
+              "pass": true
+            }
+          ],
+          "pass": true
+        },
+        {
+          "total_tps_per_gpu": 2465.9016747894866,
+          "output_tps": 339.55337400766985,
+          "ttft_p90": 1.0791090550133968,
+          "interactivity_p90": 55.629979673772574,
+          "level": 8,
+          "repeats": [
+            {
+              "total_tps_per_gpu": 2468.8733406222473,
+              "output_tps": 339.967564948941,
+              "ttft_p90": 1.1061570691177633,
+              "interactivity_p90": 55.66872019489255,
+              "pass": true
+            },
+            {
+              "total_tps_per_gpu": 2462.9300089567255,
+              "output_tps": 339.13918306639874,
+              "ttft_p90": 1.0520610409090305,
+              "interactivity_p90": 55.5912391526526,
+              "pass": true
+            }
+          ],
+          "pass": true
+        },
+        {
+          "total_tps_per_gpu": 3535.5292863643244,
+          "output_tps": 486.8660682154582,
+          "ttft_p90": 1.7090866931481288,
+          "interactivity_p90": 42.39953960841422,
+          "level": 16,
+          "repeats": [
+            {
+              "total_tps_per_gpu": 3547.793798293549,
+              "output_tps": 488.54474358078255,
+              "ttft_p90": 1.6825106029165908,
+              "interactivity_p90": 42.70136452528546,
+              "pass": true
+            },
+            {
+              "total_tps_per_gpu": 3523.2647744350998,
+              "output_tps": 485.18739285013385,
+              "ttft_p90": 1.7356627833796665,
+              "interactivity_p90": 42.09771469154298,
+              "pass": true
+            }
+          ],
+          "pass": true
+        },
+        {
+          "total_tps_per_gpu": 5109.241265283603,
+          "output_tps": 703.5657140081071,
+          "ttft_p90": 2.3126136317150667,
+          "interactivity_p90": 32.10745346619544,
+          "level": 32,
+          "repeats": [
+            {
+              "total_tps_per_gpu": 5108.773184534622,
+              "output_tps": 703.4983004933838,
+              "ttft_p90": 2.2620833343826234,
+              "interactivity_p90": 32.17752768635124,
+              "pass": true
+            },
+            {
+              "total_tps_per_gpu": 5109.709346032585,
+              "output_tps": 703.6331275228303,
+              "ttft_p90": 2.36314392904751,
+              "interactivity_p90": 32.03737924603963,
+              "pass": true
+            }
+          ],
+          "pass": true
+        }
+      ],
+      "best": {
+        "total_tps_per_gpu": 5109.241265283603,
+        "output_tps": 703.5657140081071,
+        "ttft_p90": 2.3126136317150667,
+        "interactivity_p90": 32.10745346619544,
+        "level": 32,
+        "repeats": [
+          {
+            "total_tps_per_gpu": 5108.773184534622,
+            "output_tps": 703.4983004933838,
+            "ttft_p90": 2.2620833343826234,
+            "interactivity_p90": 32.17752768635124,
+            "pass": true
+          },
+          {
+            "total_tps_per_gpu": 5109.709346032585,
+            "output_tps": 703.6331275228303,
+            "ttft_p90": 2.36314392904751,
+            "interactivity_p90": 32.03737924603963,
+            "pass": true
+          }
+        ],
+        "pass": true
+      }
+    },
+    "fp8-kv-fp8_e4m3-mtp-off": {
+      "requests": 1280,
+      "natural_stop_sanity": 3,
+      "points": [
+        {
+          "total_tps_per_gpu": 528.0916160936799,
+          "output_tps": 72.72313446569731,
+          "ttft_p90": 0.3897497173631564,
+          "interactivity_p90": 91.45973035598755,
+          "level": 1,
+          "repeats": [
+            {
+              "total_tps_per_gpu": 527.4582309430505,
+              "output_tps": 72.63545299699888,
+              "ttft_p90": 0.3914043586002663,
+              "interactivity_p90": 91.43961086036975,
+              "pass": true
+            },
+            {
+              "total_tps_per_gpu": 528.7250012443095,
+              "output_tps": 72.81081593439575,
+              "ttft_p90": 0.3880950761260465,
+              "interactivity_p90": 91.47984985160535,
+              "pass": true
+            }
+          ],
+          "pass": true
+        },
+        {
+          "total_tps_per_gpu": 825.9191320149412,
+          "output_tps": 113.72932778071872,
+          "ttft_p90": 0.7552167355665006,
+          "interactivity_p90": 80.4755126067879,
+          "level": 2,
+          "repeats": [
+            {
+              "total_tps_per_gpu": 837.7987934394126,
+              "output_tps": 115.36372747468229,
+              "ttft_p90": 0.7525535132503137,
+              "interactivity_p90": 80.50001932202603,
+              "pass": true
+            },
+            {
+              "total_tps_per_gpu": 814.0394705904698,
+              "output_tps": 112.09492808675515,
+              "ttft_p90": 0.7578799578826875,
+              "interactivity_p90": 80.45100589154976,
+              "pass": true
+            }
+          ],
+          "pass": true
+        },
+        {
+          "total_tps_per_gpu": 1412.3630305833133,
+          "output_tps": 194.48409870676102,
+          "ttft_p90": 0.7833850771305151,
+          "interactivity_p90": 66.6777498242599,
+          "level": 4,
+          "repeats": [
+            {
+              "total_tps_per_gpu": 1413.16347369846,
+              "output_tps": 194.59064292471345,
+              "ttft_p90": 0.7930655867094174,
+              "interactivity_p90": 66.69738283377986,
+              "pass": true
+            },
+            {
+              "total_tps_per_gpu": 1411.5625874681666,
+              "output_tps": 194.37755448880856,
+              "ttft_p90": 0.7737045675516129,
+              "interactivity_p90": 66.65811681473997,
+              "pass": true
+            }
+          ],
+          "pass": true
+        },
+        {
+          "total_tps_per_gpu": 2390.7032643497087,
+          "output_tps": 329.198579524876,
+          "ttft_p90": 1.074918325059117,
+          "interactivity_p90": 53.79503249159003,
+          "level": 8,
+          "repeats": [
+            {
+              "total_tps_per_gpu": 2386.050315881782,
+              "output_tps": 328.5613294006019,
+              "ttft_p90": 1.0485898489598195,
+              "interactivity_p90": 53.61296725180184,
+              "pass": true
+            },
+            {
+              "total_tps_per_gpu": 2395.356212817635,
+              "output_tps": 329.8358296491501,
+              "ttft_p90": 1.1012468011584144,
+              "interactivity_p90": 53.977097731378215,
+              "pass": true
+            }
+          ],
+          "pass": true
+        },
+        {
+          "total_tps_per_gpu": 3469.4247348122913,
+          "output_tps": 477.75994662207734,
+          "ttft_p90": 1.4827117598499167,
+          "interactivity_p90": 40.37268417602902,
+          "level": 16,
+          "repeats": [
+            {
+              "total_tps_per_gpu": 3493.7131156935116,
+              "output_tps": 481.08954032981876,
+              "ttft_p90": 1.3531709242146452,
+              "interactivity_p90": 40.46258250528241,
+              "pass": true
+            },
+            {
+              "total_tps_per_gpu": 3445.136353931071,
+              "output_tps": 474.43035291433597,
+              "ttft_p90": 1.612252595485188,
+              "interactivity_p90": 40.282785846775624,
+              "pass": true
+            }
+          ],
+          "pass": true
+        },
+        {
+          "total_tps_per_gpu": 5276.688213481604,
+          "output_tps": 726.6093883606854,
+          "ttft_p90": 2.1374835704336874,
+          "interactivity_p90": 32.60242454145764,
+          "level": 32,
+          "repeats": [
+            {
+              "total_tps_per_gpu": 5263.762555317794,
+              "output_tps": 724.8401891605878,
+              "ttft_p90": 2.156926165916957,
+              "interactivity_p90": 32.61509068467584,
+              "pass": true
+            },
+            {
+              "total_tps_per_gpu": 5289.613871645413,
+              "output_tps": 728.3785875607832,
+              "ttft_p90": 2.118040974950418,
+              "interactivity_p90": 32.58975839823944,
+              "pass": true
+            }
+          ],
+          "pass": true
+        }
+      ],
+      "best": {
+        "total_tps_per_gpu": 5276.688213481604,
+        "output_tps": 726.6093883606854,
+        "ttft_p90": 2.1374835704336874,
+        "interactivity_p90": 32.60242454145764,
+        "level": 32,
+        "repeats": [
+          {
+            "total_tps_per_gpu": 5263.762555317794,
+            "output_tps": 724.8401891605878,
+            "ttft_p90": 2.156926165916957,
+            "interactivity_p90": 32.61509068467584,
+            "pass": true
+          },
+          {
+            "total_tps_per_gpu": 5289.613871645413,
+            "output_tps": 728.3785875607832,
+            "ttft_p90": 2.118040974950418,
+            "interactivity_p90": 32.58975839823944,
+            "pass": true
+          }
+        ],
+        "pass": true
+      }
+    },
+    "nvfp4-kv-bf16-mtp-off": {
+      "requests": 1280,
+      "natural_stop_sanity": 3,
+      "points": [
+        {
+          "total_tps_per_gpu": 579.7563479803939,
+          "output_tps": 79.83097065488045,
+          "ttft_p90": 0.38241251568542795,
+          "interactivity_p90": 102.60811421376985,
+          "level": 1,
+          "repeats": [
+            {
+              "total_tps_per_gpu": 579.0791788845021,
+              "output_tps": 79.73806166192111,
+              "ttft_p90": 0.38267051805742086,
+              "interactivity_p90": 102.58721053541174,
+              "pass": true
+            },
+            {
+              "total_tps_per_gpu": 580.4335170762859,
+              "output_tps": 79.9238796478398,
+              "ttft_p90": 0.38215451331343503,
+              "interactivity_p90": 102.62901789212796,
+              "pass": true
+            }
+          ],
+          "pass": true,
+          "gain_over_matched_fp8_percent": 3.189500075873597
+        },
+        {
+          "total_tps_per_gpu": 892.1639083191342,
+          "output_tps": 122.85749947515177,
+          "ttft_p90": 0.7376856302260422,
+          "interactivity_p90": 90.56916187722354,
+          "level": 2,
+          "repeats": [
+            {
+              "total_tps_per_gpu": 882.7680349754118,
+              "output_tps": 121.56103770008403,
+              "ttft_p90": 0.7379228654783219,
+              "interactivity_p90": 90.54845683277638,
+              "pass": true
+            },
+            {
+              "total_tps_per_gpu": 901.5597816628566,
+              "output_tps": 124.15396125021952,
+              "ttft_p90": 0.7374483949737624,
+              "interactivity_p90": 90.58986692167068,
+              "pass": true
+            }
+          ],
+          "pass": true,
+          "gain_over_matched_fp8_percent": 3.08573935458194
+        },
+        {
+          "total_tps_per_gpu": 1576.0431541591233,
+          "output_tps": 217.02439576612613,
+          "ttft_p90": 0.7517848197370767,
+          "interactivity_p90": 77.32544185229506,
+          "level": 4,
+          "repeats": [
+            {
+              "total_tps_per_gpu": 1578.7751688970907,
+              "output_tps": 217.38600773353897,
+              "ttft_p90": 0.7546006115619093,
+              "interactivity_p90": 77.42149160325174,
+              "pass": true
+            },
+            {
+              "total_tps_per_gpu": 1573.3111394211558,
+              "output_tps": 216.6627837987133,
+              "ttft_p90": 0.7489690279122442,
+              "interactivity_p90": 77.22939210133839,
+              "pass": true
+            }
+          ],
+          "pass": true,
+          "gain_over_matched_fp8_percent": 6.7009492397898995
+        },
+        {
+          "total_tps_per_gpu": 2784.6500898208687,
+          "output_tps": 383.4472944868538,
+          "ttft_p90": 1.0174003287334936,
+          "interactivity_p90": 66.19324192500466,
+          "level": 8,
+          "repeats": [
+            {
+              "total_tps_per_gpu": 2787.143960874087,
+              "output_tps": 383.81164898077384,
+              "ttft_p90": 1.0201760376803586,
+              "interactivity_p90": 66.2263456869949,
+              "pass": true
+            },
+            {
+              "total_tps_per_gpu": 2782.1562187676504,
+              "output_tps": 383.08293999293375,
+              "ttft_p90": 1.0146246197866284,
+              "interactivity_p90": 66.1601381630144,
+              "pass": true
+            }
+          ],
+          "pass": true,
+          "gain_over_matched_fp8_percent": 12.926241881018786
+        },
+        {
+          "total_tps_per_gpu": 4194.088082078579,
+          "output_tps": 577.5413303445256,
+          "ttft_p90": 1.5497515581198968,
+          "interactivity_p90": 53.60309458100801,
+          "level": 16,
+          "repeats": [
+            {
+              "total_tps_per_gpu": 4204.537571627745,
+              "output_tps": 578.9820837037308,
+              "ttft_p90": 1.5348265146603808,
+              "interactivity_p90": 53.53336232084146,
+              "pass": true
+            },
+            {
+              "total_tps_per_gpu": 4183.6385925294135,
+              "output_tps": 576.1005769853203,
+              "ttft_p90": 1.564676601579413,
+              "interactivity_p90": 53.672826841174555,
+              "pass": true
+            }
+          ],
+          "pass": true,
+          "gain_over_matched_fp8_percent": 18.626879948474915
+        },
+        {
+          "total_tps_per_gpu": 6200.219456320834,
+          "output_tps": 853.7970183874854,
+          "ttft_p90": 2.039402784546837,
+          "interactivity_p90": 41.60555639313863,
+          "level": 32,
+          "repeats": [
+            {
+              "total_tps_per_gpu": 6199.190159956891,
+              "output_tps": 853.648552331968,
+              "ttft_p90": 2.0417029240634292,
+              "interactivity_p90": 41.57718146984793,
+              "pass": true
+            },
+            {
+              "total_tps_per_gpu": 6201.248752684776,
+              "output_tps": 853.9454844430029,
+              "ttft_p90": 2.037102645030245,
+              "interactivity_p90": 41.63393131642933,
+              "pass": true
+            }
+          ],
+          "pass": true,
+          "gain_over_matched_fp8_percent": 21.353037259176546
+        }
+      ],
+      "best": {
+        "total_tps_per_gpu": 6200.219456320834,
+        "output_tps": 853.7970183874854,
+        "ttft_p90": 2.039402784546837,
+        "interactivity_p90": 41.60555639313863,
+        "level": 32,
+        "repeats": [
+          {
+            "total_tps_per_gpu": 6199.190159956891,
+            "output_tps": 853.648552331968,
+            "ttft_p90": 2.0417029240634292,
+            "interactivity_p90": 41.57718146984793,
+            "pass": true
+          },
+          {
+            "total_tps_per_gpu": 6201.248752684776,
+            "output_tps": 853.9454844430029,
+            "ttft_p90": 2.037102645030245,
+            "interactivity_p90": 41.63393131642933,
+            "pass": true
+          }
+        ],
+        "pass": true,
+        "gain_over_matched_fp8_percent": 21.353037259176546
+      }
+    },
+    "nvfp4-kv-fp8_e4m3-mtp-off": {
+      "requests": 1280,
+      "natural_stop_sanity": 3,
+      "points": [
+        {
+          "total_tps_per_gpu": 546.8063544993566,
+          "output_tps": 75.29858737123705,
+          "ttft_p90": 0.3995412090560422,
+          "interactivity_p90": 96.1670487478122,
+          "level": 1,
+          "repeats": [
+            {
+              "total_tps_per_gpu": 546.5742753156616,
+              "output_tps": 75.26631220574977,
+              "ttft_p90": 0.4001315443078056,
+              "interactivity_p90": 96.27488789247519,
+              "pass": true
+            },
+            {
+              "total_tps_per_gpu": 547.0384336830517,
+              "output_tps": 75.33086253672433,
+              "ttft_p90": 0.3989508738042787,
+              "interactivity_p90": 96.05920960314921,
+              "pass": true
+            }
+          ],
+          "pass": true,
+          "gain_over_matched_fp8_percent": 3.543843120273449
+        },
+        {
+          "total_tps_per_gpu": 848.563463077606,
+          "output_tps": 116.8479696181046,
+          "ttft_p90": 0.7760921069188044,
+          "interactivity_p90": 85.39938474633269,
+          "level": 2,
+          "repeats": [
+            {
+              "total_tps_per_gpu": 847.9756773583662,
+              "output_tps": 116.7699771627841,
+              "ttft_p90": 0.7802402279805393,
+              "interactivity_p90": 85.39605742388773,
+              "pass": true
+            },
+            {
+              "total_tps_per_gpu": 849.151248796846,
+              "output_tps": 116.92596207342511,
+              "ttft_p90": 0.7719439858570695,
+              "interactivity_p90": 85.40271206877765,
+              "pass": true
+            }
+          ],
+          "pass": true,
+          "gain_over_matched_fp8_percent": 2.741712860848855
+        },
+        {
+          "total_tps_per_gpu": 1503.3352863791747,
+          "output_tps": 207.00761183471775,
+          "ttft_p90": 0.7807299565989524,
+          "interactivity_p90": 73.66644991737928,
+          "level": 4,
+          "repeats": [
+            {
+              "total_tps_per_gpu": 1502.3144117197098,
+              "output_tps": 206.86573367748647,
+              "ttft_p90": 0.7827239586273208,
+              "interactivity_p90": 73.66918542243093,
+              "pass": true
+            },
+            {
+              "total_tps_per_gpu": 1504.3561610386396,
+              "output_tps": 207.14948999194905,
+              "ttft_p90": 0.778735954570584,
+              "interactivity_p90": 73.66371441232765,
+              "pass": true
+            }
+          ],
+          "pass": true,
+          "gain_over_matched_fp8_percent": 6.441138278611658
+        },
+        {
+          "total_tps_per_gpu": 2678.151384010798,
+          "output_tps": 368.7777029895837,
+          "ttft_p90": 0.9311591097037313,
+          "interactivity_p90": 64.02740361732208,
+          "level": 8,
+          "repeats": [
+            {
+              "total_tps_per_gpu": 2681.7041456237407,
+              "output_tps": 369.2560655015579,
+              "ttft_p90": 0.8160293398657814,
+              "interactivity_p90": 64.13539477659448,
+              "pass": true
+            },
+            {
+              "total_tps_per_gpu": 2674.5986223978553,
+              "output_tps": 368.2993404776095,
+              "ttft_p90": 1.0462888795416811,
+              "interactivity_p90": 63.91941245804966,
+              "pass": true
+            }
+          ],
+          "pass": true,
+          "gain_over_matched_fp8_percent": 12.023580004575685
+        },
+        {
+          "total_tps_per_gpu": 3947.4859504062824,
+          "output_tps": 543.5656050533435,
+          "ttft_p90": 1.5883237074478531,
+          "interactivity_p90": 50.64931762502026,
+          "level": 16,
+          "repeats": [
+            {
+              "total_tps_per_gpu": 3945.4660636927474,
+              "output_tps": 543.2851840999624,
+              "ttft_p90": 1.5946401253109799,
+              "interactivity_p90": 50.642348023614794,
+              "pass": true
+            },
+            {
+              "total_tps_per_gpu": 3949.505837119818,
+              "output_tps": 543.8460260067244,
+              "ttft_p90": 1.5820072895847261,
+              "interactivity_p90": 50.65628722642573,
+              "pass": true
+            }
+          ],
+          "pass": true,
+          "gain_over_matched_fp8_percent": 13.77926463707697
+        },
+        {
+          "total_tps_per_gpu": 6292.029413729567,
+          "output_tps": 866.4223501918508,
+          "ttft_p90": 2.0186601453460753,
+          "interactivity_p90": 42.60780957910363,
+          "level": 32,
+          "repeats": [
+            {
+              "total_tps_per_gpu": 6291.968093627115,
+              "output_tps": 866.4252843881745,
+              "ttft_p90": 2.0182364865904674,
+              "interactivity_p90": 42.522022179418045,
+              "pass": true
+            },
+            {
+              "total_tps_per_gpu": 6292.0907338320185,
+              "output_tps": 866.4194159955271,
+              "ttft_p90": 2.019083804101683,
+              "interactivity_p90": 42.69359697878921,
+              "pass": true
+            }
+          ],
+          "pass": true,
+          "gain_over_matched_fp8_percent": 19.242016188370382
+        }
+      ],
+      "best": {
+        "total_tps_per_gpu": 6292.029413729567,
+        "output_tps": 866.4223501918508,
+        "ttft_p90": 2.0186601453460753,
+        "interactivity_p90": 42.60780957910363,
+        "level": 32,
+        "repeats": [
+          {
+            "total_tps_per_gpu": 6291.968093627115,
+            "output_tps": 866.4252843881745,
+            "ttft_p90": 2.0182364865904674,
+            "interactivity_p90": 42.522022179418045,
+            "pass": true
+          },
+          {
+            "total_tps_per_gpu": 6292.0907338320185,
+            "output_tps": 866.4194159955271,
+            "ttft_p90": 2.019083804101683,
+            "interactivity_p90": 42.69359697878921,
+            "pass": true
+          }
+        ],
+        "pass": true,
+        "gain_over_matched_fp8_percent": 19.242016188370382
+      }
+    }
+  },
+  "loads": 48,
+  "requests": 5120,
+  "natural_stop_sanity": 12,
+  "raw_sha256": {
+    "run1/candidates/fp8-kv-bf16-mtp-off/level-1/repeat-1/bench.jsonl": "fdff3903c4114e1f8c2535e9abfaeda1c6c808e31ffc3560cf9307bcdf15347c",
+    "run1/candidates/fp8-kv-bf16-mtp-off/level-1/repeat-2/bench.jsonl": "76988ae04049e643c7dc1e5ca385915c6f8ffe6cd80c634bb9fc770366bca618",
+    "run1/candidates/fp8-kv-bf16-mtp-off/level-2/repeat-1/bench.jsonl": "dbe2150fa35589faeba77af2ebd37d6d2d3a3fb8ce639386ce6682fa7ede343b",
+    "run1/candidates/fp8-kv-bf16-mtp-off/level-2/repeat-2/bench.jsonl": "d09c27a8a921b7dda33ee4a9f62bce0c4d4519208b74355711c69b9db8bf96aa",
+    "run1/candidates/fp8-kv-bf16-mtp-off/level-4/repeat-1/bench.jsonl": "534867d1872a72d57b9c074941ba1f189d52fba11eb8afecfcace69e15f84900",
+    "run1/candidates/fp8-kv-bf16-mtp-off/level-4/repeat-2/bench.jsonl": "a7fe116ab92424898d4e1b064ce11a4bed7acc37922765cf94d0513dc075a8c7",
+    "run1/candidates/fp8-kv-bf16-mtp-off/level-8/repeat-1/bench.jsonl": "118979df9f8c98b8f84d2c3b8d786affe0a08b26cdcf0d42adc390ec1ae1846c",
+    "run1/candidates/fp8-kv-bf16-mtp-off/level-8/repeat-2/bench.jsonl": "ec95660de1e6de3753b227b96b7f5c91a2e0399d6e21c4f965ff38207bb0984c",
+    "run1/candidates/fp8-kv-bf16-mtp-off/level-16/repeat-1/bench.jsonl": "0d41b25e0f0f6322d972e5320db0ad22ca53ebd11b28010b2e003adbdec008dc",
+    "run1/candidates/fp8-kv-bf16-mtp-off/level-16/repeat-2/bench.jsonl": "e9dea1e2d43c32c23ac68f5c8747c12220245b4c8083ef7e5f9659436a511e59",
+    "run1/candidates/fp8-kv-bf16-mtp-off/level-32/repeat-1/bench.jsonl": "33e5fefeac88b8f3ecec53ff696e802e99b9952d1e050b9ffb57425933faeb4b",
+    "run1/candidates/fp8-kv-bf16-mtp-off/level-32/repeat-2/bench.jsonl": "6797b16e17c92c0ba4a32b0a162be7e2a8c9b297347e0a04269f9b4641c622cc",
+    "run1/candidates/fp8-kv-fp8_e4m3-mtp-off/level-1/repeat-1/bench.jsonl": "4e07543ee4eaa68b9a622c7fffc85f76dc4c47c36847ebb67754e7f506d9f687",
+    "run1/candidates/fp8-kv-fp8_e4m3-mtp-off/level-1/repeat-2/bench.jsonl": "dc8b4d64b8f908bc0ea97d01f071631339949ce3e723bb621a7a3712402c7043",
+    "run1/candidates/fp8-kv-fp8_e4m3-mtp-off/level-2/repeat-1/bench.jsonl": "fd3a6551cc2b7d56c68d609524ce9202d1656da3d64b97a9c208f3313832cd68",
+    "run1/candidates/fp8-kv-fp8_e4m3-mtp-off/level-2/repeat-2/bench.jsonl": "1c32e0b0afe0543b126b6b8f244d77f82b2b1836f8a1565809d91bcae211bd4f",
+    "run1/candidates/fp8-kv-fp8_e4m3-mtp-off/level-4/repeat-1/bench.jsonl": "e3852f341e6c231f413eaf05f7c0d5e5d18cd23bfc761e49c663c51f1197aa80",
+    "run1/candidates/fp8-kv-fp8_e4m3-mtp-off/level-4/repeat-2/bench.jsonl": "e69089dd1544e4bc2887c9693934d788cca02d3350cd923666f409bfaceed272",
+    "run1/candidates/fp8-kv-fp8_e4m3-mtp-off/level-8/repeat-1/bench.jsonl": "9560fbbf20da62109a7deec4bb49bc7871a197c3d9b1736cda88fb19b2e861c5",
+    "run1/candidates/fp8-kv-fp8_e4m3-mtp-off/level-8/repeat-2/bench.jsonl": "c19edaae8b891b3afeda3ef9f728c2c9a44e4f71a3954444a3aa5d584db97aa7",
+    "run1/candidates/fp8-kv-fp8_e4m3-mtp-off/level-16/repeat-1/bench.jsonl": "435dc5a5cecc2e028ddfd84d016724892b7b71ca5cf51133b6da6c8514da14a8",
+    "run1/candidates/fp8-kv-fp8_e4m3-mtp-off/level-16/repeat-2/bench.jsonl": "b2e0f5819d4595a518576ed9a254277ad88b8b306a3d145832d68c6e5cf3948f",
+    "run1/candidates/fp8-kv-fp8_e4m3-mtp-off/level-32/repeat-1/bench.jsonl": "1d10c908a45b747ab6fd834cf2e586d2d914334352e322b2f892a283119480b1",
+    "run1/candidates/fp8-kv-fp8_e4m3-mtp-off/level-32/repeat-2/bench.jsonl": "58abfd5c50911a0567d13d29e6c6e40ee712f44e662a9aeff84b73939090d6c3",
+    "run1/candidates/nvfp4-kv-bf16-mtp-off/level-1/repeat-1/bench.jsonl": "95c83b06a950cbf57e4ddd2590d21b8498b9cd6b695f300b1dfc06733129766b",
+    "run1/candidates/nvfp4-kv-bf16-mtp-off/level-1/repeat-2/bench.jsonl": "650f83f97fffd92f4a1f20bfc1fed17f2ebc65fbae67fcde062ed2b15e771d69",
+    "run1/candidates/nvfp4-kv-bf16-mtp-off/level-2/repeat-1/bench.jsonl": "b8631c9c2019bb10257b68125e833268351a7cd2461d1de686979ebbeea1b792",
+    "run1/candidates/nvfp4-kv-bf16-mtp-off/level-2/repeat-2/bench.jsonl": "8e74ac869ea016f38a632ad4a9e640bebc356102f4c88d2ab6ef00d29052d560",
+    "run1/candidates/nvfp4-kv-bf16-mtp-off/level-4/repeat-1/bench.jsonl": "4d907ffc24bb67e63fbb4aa8071b048cb1b4808957195a166e7d8946195a33c6",
+    "run1/candidates/nvfp4-kv-bf16-mtp-off/level-4/repeat-2/bench.jsonl": "3c4fb48c3e36f4d72ec1dbf3863066f1c15cddc4606a6cb4ed746f105616d807",
+    "run1/candidates/nvfp4-kv-bf16-mtp-off/level-8/repeat-1/bench.jsonl": "a19d2eccb09e8912a390548f9fcd6ea0a04110ef3ce4966e6ce5c3ddb45d594c",
+    "run1/candidates/nvfp4-kv-bf16-mtp-off/level-8/repeat-2/bench.jsonl": "2b4121f8ffaa79526e33d3b8bc30ba2864eb1ede4ac056ebb9c5a9632eede6d7",
+    "run1/candidates/nvfp4-kv-bf16-mtp-off/level-16/repeat-1/bench.jsonl": "b4f090ae951fad08d7a5457f040f29c7a334bb84ff84f74821ac771d6e5a60bf",
+    "run1/candidates/nvfp4-kv-bf16-mtp-off/level-16/repeat-2/bench.jsonl": "92a8199a661d9ff15188eb16c9b5202131ecf31f5e76be97ecd79a787a9e64ff",
+    "run1/candidates/nvfp4-kv-bf16-mtp-off/level-32/repeat-1/bench.jsonl": "ef11d92b0d76ba1a78d9686f381dd6c3bda629825d0cc2201a35807838aa4cf9",
+    "run1/candidates/nvfp4-kv-bf16-mtp-off/level-32/repeat-2/bench.jsonl": "9dcab7ba75b9a5891dfedf59645cb844e1efb97da21654fb047da31052e83336",
+    "run1/candidates/nvfp4-kv-fp8_e4m3-mtp-off/level-1/repeat-1/bench.jsonl": "fa49200cf94c450e8624f7c1972ea25c2324ac0dcbee63436aae9d2e386b337b",
+    "run1/candidates/nvfp4-kv-fp8_e4m3-mtp-off/level-1/repeat-2/bench.jsonl": "283ba9f9b80b3876b4ec6b8e85e87c6a735e0063267f0a377205ca59538ead0d",
+    "run1/candidates/nvfp4-kv-fp8_e4m3-mtp-off/level-2/repeat-1/bench.jsonl": "675b0d4ec56a4cf468cecfb8312ad3468d1acff5294136d7ee40947193877789",
+    "run1/candidates/nvfp4-kv-fp8_e4m3-mtp-off/level-2/repeat-2/bench.jsonl": "ffda639d408e77a9ee8a904a83fab69ae19dc0bfc08d5b4c85802725ba9f7ae2",
+    "run1/candidates/nvfp4-kv-fp8_e4m3-mtp-off/level-4/repeat-1/bench.jsonl": "6f5f9d943b362d9d4663152291cf2f69af54b1c903fe74948a147bf033ea4267",
+    "run1/candidates/nvfp4-kv-fp8_e4m3-mtp-off/level-4/repeat-2/bench.jsonl": "67aec65cb67b27c27a749e44b48a9c085872d5cfb85e35b62924ba8ed34e0763",
+    "run1/candidates/nvfp4-kv-fp8_e4m3-mtp-off/level-8/repeat-1/bench.jsonl": "823966a91ddd9393a89e85e08de21be3fc712e5c5fcbc8ee1b5324412ff40414",
+    "run1/candidates/nvfp4-kv-fp8_e4m3-mtp-off/level-8/repeat-2/bench.jsonl": "c68d1b5fdbd0777dad15e37bdd078c65617627419323373791a7717a2af3116f",
+    "run1/candidates/nvfp4-kv-fp8_e4m3-mtp-off/level-16/repeat-1/bench.jsonl": "1ea0de6ba871cfc0c02a20345a49e3e9d44680a52f87fdfd9451dd5bfac4db1c",
+    "run1/candidates/nvfp4-kv-fp8_e4m3-mtp-off/level-16/repeat-2/bench.jsonl": "44c81f2ecf05dd1f24c139e281bf2fb18b7326b84d3e7e290d5f9226038c0f16",
+    "run1/candidates/nvfp4-kv-fp8_e4m3-mtp-off/level-32/repeat-1/bench.jsonl": "cc925cf91d0e390070ef691f1949444af48ea9663e5ac3bf64bfb6f4b26e7f66",
+    "run1/candidates/nvfp4-kv-fp8_e4m3-mtp-off/level-32/repeat-2/bench.jsonl": "8769fe1835bd1904470ec38a0f6ff978cd4d0e4306056ffb6a0fd8acb402006d"
+  }
+}

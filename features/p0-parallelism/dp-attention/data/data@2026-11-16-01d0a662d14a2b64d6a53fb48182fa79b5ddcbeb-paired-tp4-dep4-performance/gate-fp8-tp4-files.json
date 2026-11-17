@@ -1,0 +1,122 @@
+{
+  "correctness.json": {
+    "bytes": 64,
+    "sha256": "5f5fb8f56ff8d267eb613172d699a783e99c4be51b2efeb76181f190e5e8e1e0"
+  },
+  "correctness.log": {
+    "bytes": 57,
+    "sha256": "92f6d215f833953e31d047f3cf2db0efadc0b9d9c5b52e7de9ff12f10ef39ac1"
+  },
+  "correctness.process.json": {
+    "bytes": 1664,
+    "sha256": "24ce8b9be57622492f69df5dc8b787024a801e2358eee32f042ca9bb8184b237"
+  },
+  "get_server_info.txt": {
+    "bytes": 39714,
+    "sha256": "4895c90053ed66d8944cfc9aa42f338bfda9c5fa9d7585d0f696a87ad6b26851"
+  },
+  "gpu-before.json": {
+    "bytes": 483,
+    "sha256": "d8f99bd4fe06c8ae20f59c28e7d127c471cbc9598dc4f90c4eecd1f66c7e171b"
+  },
+  "gpu-samples.jsonl": {
+    "bytes": 114478,
+    "sha256": "87380f5ba056785771ccec85ee09ccc4e5749dce418a20b2e5f4cb1fe9ae4e08"
+  },
+  "level-1/repeat-1/bench.jsonl": {
+    "bytes": 151734,
+    "sha256": "7bdf70f720dca7e1fdb02c50038600f9c29a86f75387967b2211c286225b4072"
+  },
+  "level-1/repeat-1/client-command.json": {
+    "bytes": 1090,
+    "sha256": "17dd9f7916f595b0e1340fd53228918532df55a536658febbaa83aa63323e811"
+  },
+  "level-1/repeat-1/get_server_info.txt": {
+    "bytes": 39715,
+    "sha256": "c054f462818aaae3933dc9b82b7bc5984de82e7c8ba6c8ad094f7f3f06092c12"
+  },
+  "level-1/repeat-1/load.log": {
+    "bytes": 8977,
+    "sha256": "54622a168c50e701099f9811f4268830ae7cecaa988df4e2bb04838e94148e8a"
+  },
+  "level-1/repeat-1/load.process.json": {
+    "bytes": 1074,
+    "sha256": "b1a69abf859a3d4b8dfcc76fe28251595b941f20b3f1768deb867e8ee6012149"
+  },
+  "level-1/repeat-1/metrics-before.txt": {
+    "bytes": 188312,
+    "sha256": "9674939d9c5034493e5031ed3329f815d94cb6bf171823be73fa1dbaf79dfd64"
+  },
+  "level-1/repeat-1/metrics.txt": {
+    "bytes": 201322,
+    "sha256": "c5c95c898aebf00039d7a27332c4453f2aad35c96dcdb02257247765511ea433"
+  },
+  "level-1/repeat-1/requests.jsonl": {
+    "bytes": 112322,
+    "sha256": "0e9623ced12cd9dd6a9a625bed4238380f44d8d93f46b417ffeeeea4a903ae8d"
+  },
+  "level-1/repeat-1/result.json": {
+    "bytes": 1013,
+    "sha256": "e8b382b96895b6d654ded31fe6415b2956f13378a2cd3b0f5c4c564c0a09e95e"
+  },
+  "level-1/repeat-1/stream-audit.json": {
+    "bytes": 177,
+    "sha256": "50f7ccd4181d8b4334e959c07123503810052156c7897b4ec62f1b994ac6a43d"
+  },
+  "level-1/repeat-1/stream-chunks.json": {
+    "bytes": 132575,
+    "sha256": "fd4c2a8f63445b6a37a9df6f333c92f95bdd1c9efba4a2db1e2789efa7ce681e"
+  },
+  "level-1/repeat-1/summary.json": {
+    "bytes": 458,
+    "sha256": "e51b615013da68e9bd8f14d64250c2ad7451e06df43bad42a713bfd0225a73d7"
+  },
+  "level-1/result.json": {
+    "bytes": 814,
+    "sha256": "529e303246114e105d509367420ab0b456f444ea0bca08bed3ae24676486f3d6"
+  },
+  "metrics.txt": {
+    "bytes": 188229,
+    "sha256": "f234956f2e6c85732887b894e2021c059b5a9fce17acdeaf026f68531507a685"
+  },
+  "replica-0.log": {
+    "bytes": 156049,
+    "sha256": "6d27d22aaf82cb2a86d9884b1facb8156b6e98176aefa20baaa42c1098ccb166"
+  },
+  "replica-0.process.json": {
+    "bytes": 2140,
+    "sha256": "d9ee9bce70645616d67139f851e0ba596b05e519797c1dd56c123179e2a52590"
+  },
+  "resolved-before-load.json": {
+    "bytes": 49547,
+    "sha256": "faa2bba7229ccd625530eb0a59c4517768ef1477d50d0c9feccdd2c44917319a"
+  },
+  "result.json": {
+    "bytes": 2398,
+    "sha256": "5a4dec1a2317662f3aeed1810987da2559cd9c64ec565d2d03637f4499e983ff"
+  },
+  "runtime-evidence.json": {
+    "bytes": 2988,
+    "sha256": "dfefd2da0418a4ebbcbf99d325c1e2d163edf78542c78f7411660bbe80f14d39"
+  },
+  "sanity-requests.json": {
+    "bytes": 7307,
+    "sha256": "c31a96547fe63431ca7f21f00c40fb34758a986d01e2265a8a8d9a827c8cc6cf"
+  },
+  "server-imports.json": {
+    "bytes": 943,
+    "sha256": "5600059c547069594d80ee94bc14442e7204ec59b6e6831790f521d35d52ce1e"
+  },
+  "tree-core.json": {
+    "bytes": 2302,
+    "sha256": "28978c2dde50753783f184a7a513657f9ae2488ee591f270cc9847e2ef515628"
+  },
+  "warmup.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "warmup.process.json": {
+    "bytes": 1669,
+    "sha256": "57b3616747cb14ec6438d1cffb89ed2f32a6556452d2016039dbd79f81f83d0b"
+  }
+}

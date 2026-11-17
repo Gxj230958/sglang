@@ -1,0 +1,23 @@
+{
+  "observed_at": "2026-11-16T17:07:16.250624+00:00",
+  "topology": {
+    "command": [
+      "nvidia-smi",
+      "topo",
+      "-m"
+    ],
+    "returncode": 0,
+    "stdout": "\t\u001b[4mGPU0\tGPU1\tGPU2\tGPU3\tGPU4\tGPU5\tGPU6\tGPU7\tNIC0\tNIC1\tNIC2\tNIC3\tNIC4\tNIC5\tNIC6\tNIC7\tCPU Affinity\tNUMA Affinity\tGPU NUMA ID\u001b[0m\nGPU0\t X \tNV18\tNV18\tNV18\tNV18\tNV18\tNV18\tNV18\tPIX\tNODE\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\t2-47,96-143\t0\t\tN/A\nGPU1\tNV18\t X \tNV18\tNV18\tNV18\tNV18\tNV18\tNV18\tNODE\tPIX\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\t2-47,96-143\t0\t\tN/A\nGPU2\tNV18\tNV18\t X \tNV18\tNV18\tNV18\tNV18\tNV18\tNODE\tNODE\tPIX\tNODE\tSYS\tSYS\tSYS\tSYS\t2-47,96-143\t0\t\tN/A\nGPU3\tNV18\tNV18\tNV18\t X \tNV18\tNV18\tNV18\tNV18\tNODE\tNODE\tNODE\tPIX\tSYS\tSYS\tSYS\tSYS\t2-47,96-143\t0\t\tN/A\nGPU4\tNV18\tNV18\tNV18\tNV18\t X \tNV18\tNV18\tNV18\tSYS\tSYS\tSYS\tSYS\tPIX\tNODE\tNODE\tNODE\t50-95,144-191\t1\t\tN/A\nGPU5\tNV18\tNV18\tNV18\tNV18\tNV18\t X \tNV18\tNV18\tSYS\tSYS\tSYS\tSYS\tNODE\tPIX\tNODE\tNODE\t50-95,144-191\t1\t\tN/A\nGPU6\tNV18\tNV18\tNV18\tNV18\tNV18\tNV18\t X \tNV18\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tPIX\tNODE\t50-95,144-191\t1\t\tN/A\nGPU7\tNV18\tNV18\tNV18\tNV18\tNV18\tNV18\tNV18\t X \tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tNODE\tPIX\t50-95,144-191\t1\t\tN/A\nNIC0\tPIX\tNODE\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\t X \tNODE\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\t\t\t\t\nNIC1\tNODE\tPIX\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\tNODE\t X \tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\t\t\t\t\nNIC2\tNODE\tNODE\tPIX\tNODE\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\t X \tNODE\tSYS\tSYS\tSYS\tSYS\t\t\t\t\nNIC3\tNODE\tNODE\tNODE\tPIX\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tNODE\t X \tSYS\tSYS\tSYS\tSYS\t\t\t\t\nNIC4\tSYS\tSYS\tSYS\tSYS\tPIX\tNODE\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\t X \tNODE\tNODE\tNODE\t\t\t\t\nNIC5\tSYS\tSYS\tSYS\tSYS\tNODE\tPIX\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\tNODE\t X \tNODE\tNODE\t\t\t\t\nNIC6\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tPIX\tNODE\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\t X \tNODE\t\t\t\t\nNIC7\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tNODE\tPIX\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tNODE\t X \t\t\t\t\n\nLegend:\n\n  X    = Self\n  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)\n  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node\n  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)\n  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)\n  PIX  = Connection traversing at most a single PCIe bridge\n  NV#  = Connection traversing a bonded set of # NVLinks\n\nNIC Legend:\n\n  NIC0: mlx5_0\n  NIC1: mlx5_1\n  NIC2: mlx5_2\n  NIC3: mlx5_3\n  NIC4: mlx5_4\n  NIC5: mlx5_5\n  NIC6: mlx5_6\n  NIC7: mlx5_7\n\n",
+    "stderr": ""
+  },
+  "hardware": {
+    "command": [
+      "nvidia-smi",
+      "--query-gpu=index,name,uuid,driver_version,memory.total,power.limit,power.default_limit,persistence_mode",
+      "--format=csv"
+    ],
+    "returncode": 0,
+    "stdout": "index, name, uuid, driver_version, memory.total [MiB], power.limit [W], power.default_limit [W], persistence_mode\n0, NVIDIA H200, GPU-9053b711-a9c5-9d26-5563-505cc5350a51, 595.71.05, 143771 MiB, 700.00 W, 700.00 W, Enabled\n1, NVIDIA H200, GPU-d2fee217-bcca-74c9-884f-2de1704b61e4, 595.71.05, 143771 MiB, 700.00 W, 700.00 W, Enabled\n2, NVIDIA H200, GPU-6aee7cb7-247e-22b6-7e25-ffcd42c1cd41, 595.71.05, 143771 MiB, 700.00 W, 700.00 W, Enabled\n3, NVIDIA H200, GPU-5aac429e-c231-5eb4-4b8e-f2cbe9c63c7b, 595.71.05, 143771 MiB, 700.00 W, 700.00 W, Enabled\n4, NVIDIA H200, GPU-4730eab5-e2fb-0f0a-0561-cf8d7a59c579, 595.71.05, 143771 MiB, 700.00 W, 700.00 W, Enabled\n5, NVIDIA H200, GPU-aed8b8b4-b667-6d34-fb2a-e9c37ff3d2c1, 595.71.05, 143771 MiB, 700.00 W, 700.00 W, Enabled\n6, NVIDIA H200, GPU-c7e7fe9a-259e-b110-4095-bb123c838878, 595.71.05, 143771 MiB, 700.00 W, 700.00 W, Enabled\n7, NVIDIA H200, GPU-dfec7a06-1b9d-a02d-cda4-6c2cb93074b0, 595.71.05, 143771 MiB, 700.00 W, 700.00 W, Enabled\n",
+    "stderr": ""
+  }
+}

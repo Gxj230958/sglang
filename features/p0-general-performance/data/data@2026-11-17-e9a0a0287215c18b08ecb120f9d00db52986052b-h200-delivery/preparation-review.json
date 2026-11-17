@@ -1,0 +1,28 @@
+{
+  "inputs": 24,
+  "manifest_sha256": "caca89650472493cdf3414d27e4efa3bcf949be6a7b9a8bace6c9e8fefe1ccff",
+  "archive_sha256": "d3104a527ab0b57120df1f670b70d15c9fce8ff7c99d53cb50e780abb6161a7c",
+  "runner_sha256": "3a8aacff49a47a142cc5760f8437302d836881c0df9c3bba9abc83a499ba0eee",
+  "workload_sha256": "235ea06164ba2a9f4700d5bee5ca12206a6ea21ed246ed64c8022b3bbb0d8688",
+  "configs": [
+    {
+      "file": "natural.json",
+      "sha256": "d4796492bd8e7d2f2a3cf0fc47e808507b0abe687a3cae6c68c0e4a8d5913e57",
+      "candidates": [
+        "fp8-tp8-r32-chunk32768-mtp-natural",
+        "fp8-tp8-r64-chunk8192-mtp-natural"
+      ]
+    },
+    {
+      "file": "mtp-off.json",
+      "sha256": "4c35d8a8cab6a510f85b1c7689398e10a2e1e7ade90aaf2f7894adbf187384ce",
+      "candidates": [
+        "fp8-tp8-r32-chunk32768-mtp-off",
+        "fp8-tp8-r64-chunk8192-mtp-off"
+      ]
+    }
+  ],
+  "source_reused_read_only": "/scratch/glm5lp-repaired-h200-e9a0a02872/src",
+  "physical_gpus": 8,
+  "loads": 48
+}

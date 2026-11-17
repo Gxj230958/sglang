@@ -1,0 +1,57 @@
+{
+  "runtime": "01d0a662d14a2b64d6a53fb48182fa79b5ddcbeb",
+  "candidate": {
+    "candidate": "gate-nvfp4-tp4-snapshot",
+    "seed": 1,
+    "natural_stops": 3,
+    "requests": 64,
+    "score": 803.1724678070258,
+    "ttft_p90": 0.440662258816883,
+    "interactivity_p90": 137.7571482391744,
+    "simulation": {},
+    "gpu_samples": 179,
+    "versions": {
+      "flashinfer-python": "0.7.4",
+      "flashinfer-cubin": "0.7.4",
+      "flashinfer-jit-cache": "0.7.4+cu130",
+      "flashinfer-jit-cache-sm103a": "0.7.4+cu130",
+      "sglang-kernel": "0.4.11",
+      "sgl-deep-gemm": "0.2.8",
+      "sgl-flash-mla": "1.0.5",
+      "kernels": "0.14.1",
+      "torch": "2.14.1+cu130",
+      "transformers": "5.19.0"
+    },
+    "resolved_checked": {
+      "tp_size": 4,
+      "ep_size": 1,
+      "attn_dp_size": 1,
+      "moe_runner_backend": "flashinfer_trtllm",
+      "dsa_prefill_backend": "trtllm",
+      "dsa_decode_backend": "trtllm",
+      "kv_cache_dtype": "fp8_e4m3",
+      "speculative_algorithm": "EAGLE",
+      "disable_hybrid_swa_memory": false,
+      "speculative_num_steps": 3,
+      "speculative_eagle_topk": 1,
+      "speculative_num_draft_tokens": 4,
+      "speculative_draft_model_quantization": "fp8",
+      "speculative_draft_model_path": "/scratch/models/GLM-5-1028-Provider",
+      "random_seed": 1,
+      "context_length": 32768,
+      "disable_prefill_cuda_graph": true,
+      "enable_dp_attention": false
+    },
+    "counter_delta_including_warmup": {
+      "generation_tokens_total": 8320.0,
+      "spec_verify_calls_total": 3316.0
+    },
+    "sampling_errors_after_shutdown": [],
+    "rust_extension_sha256": [
+      "d2547a9f9a3edc3f79318922dfd2aceb162c0339c9c00d69514e00aafb979cc3"
+    ]
+  },
+  "files_verified": 30,
+  "archive_sha256": "5af84420451ba68940d85149f53305c07bd9ccb51667f5a51c8a5fcc3945a85c",
+  "scope": "Startup and one C1 load sanity only; full GSM8K stopping qualification is separate."
+}

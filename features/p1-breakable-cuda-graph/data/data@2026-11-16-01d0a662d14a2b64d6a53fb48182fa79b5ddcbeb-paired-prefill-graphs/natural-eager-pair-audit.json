@@ -1,0 +1,262 @@
+{
+  "runtime": "01d0a662d14a2b64d6a53fb48182fa79b5ddcbeb",
+  "phase": "natural",
+  "graph": "eager",
+  "loads": 24,
+  "requests": 2560,
+  "startup_stops": 6,
+  "raw_files": 382,
+  "archives": {
+    "natural-fp8-eager": "1481730c6724ec65c039281520f8a1a489e189cb1926b8c4f79af6b10994a477",
+    "natural-nvfp4-eager": "14e93d12406d09d016069864bf81f2b567fa0e3ee76cf93a5e987495dbd3c064"
+  },
+  "actual_server_commands_equal_except_target": true,
+  "same_original_fp8_draft": true,
+  "actual_client_commands_equal_except_target_and_output": true,
+  "imports_equal_except_pid": true,
+  "first_turn_input_lengths_equal": true,
+  "all_output_lengths_equal": true,
+  "history_length_deltas": [
+    {
+      "level": 1,
+      "repeat": 1,
+      "changed_history_input_lengths": 32,
+      "max_abs_input_length_delta": 3,
+      "prompt_token_delta_percent": 0.005657930242072369
+    },
+    {
+      "level": 1,
+      "repeat": 2,
+      "changed_history_input_lengths": 31,
+      "max_abs_input_length_delta": 3,
+      "prompt_token_delta_percent": -0.0004352178265221744
+    },
+    {
+      "level": 2,
+      "repeat": 1,
+      "changed_history_input_lengths": 33,
+      "max_abs_input_length_delta": 3,
+      "prompt_token_delta_percent": 0.011316353000574523
+    },
+    {
+      "level": 2,
+      "repeat": 2,
+      "changed_history_input_lengths": 35,
+      "max_abs_input_length_delta": 4,
+      "prompt_token_delta_percent": -0.00043520646194554697
+    },
+    {
+      "level": 4,
+      "repeat": 1,
+      "changed_history_input_lengths": 31,
+      "max_abs_input_length_delta": 4,
+      "prompt_token_delta_percent": 0.008704432296925595
+    },
+    {
+      "level": 4,
+      "repeat": 2,
+      "changed_history_input_lengths": 33,
+      "max_abs_input_length_delta": 6,
+      "prompt_token_delta_percent": 0.007834261838440111
+    },
+    {
+      "level": 8,
+      "repeat": 1,
+      "changed_history_input_lengths": 25,
+      "max_abs_input_length_delta": 5,
+      "prompt_token_delta_percent": -0.010009225895172943
+    },
+    {
+      "level": 8,
+      "repeat": 2,
+      "changed_history_input_lengths": 29,
+      "max_abs_input_length_delta": 3,
+      "prompt_token_delta_percent": 0.008269462615500454
+    },
+    {
+      "level": 16,
+      "repeat": 1,
+      "changed_history_input_lengths": 60,
+      "max_abs_input_length_delta": 3,
+      "prompt_token_delta_percent": -0.004352159323848527
+    },
+    {
+      "level": 16,
+      "repeat": 2,
+      "changed_history_input_lengths": 67,
+      "max_abs_input_length_delta": 4,
+      "prompt_token_delta_percent": 0.000870454594912193
+    },
+    {
+      "level": 32,
+      "repeat": 1,
+      "changed_history_input_lengths": 140,
+      "max_abs_input_length_delta": 5,
+      "prompt_token_delta_percent": 0.005984512082729895
+    },
+    {
+      "level": 32,
+      "repeat": 2,
+      "changed_history_input_lengths": 143,
+      "max_abs_input_length_delta": 4,
+      "prompt_token_delta_percent": 0.004134591845061611
+    }
+  ],
+  "comparisons": [
+    {
+      "level": 1,
+      "fp8_score": 820.6423659702658,
+      "nvfp4_score": 851.0507449555637,
+      "nvfp4_gain_percent": 3.705436161505671,
+      "fp8_ttft": 0.3822544589522295,
+      "nvfp4_ttft": 0.39527611878002067,
+      "fp8_interactivity": 131.62600992343656,
+      "nvfp4_interactivity": 144.7113158463527,
+      "fp8_pass": true,
+      "nvfp4_pass": true,
+      "fp8_accept_length": 2.5083363970588235,
+      "nvfp4_accept_length": 2.459166068866571
+    },
+    {
+      "level": 2,
+      "fp8_score": 1134.3902960944765,
+      "nvfp4_score": 1218.6755001272688,
+      "nvfp4_gain_percent": 7.430000443672058,
+      "fp8_ttft": 0.40406262973556295,
+      "nvfp4_ttft": 0.40951188394101334,
+      "fp8_interactivity": 89.56019134835104,
+      "nvfp4_interactivity": 97.28770666798056,
+      "fp8_pass": true,
+      "nvfp4_pass": true,
+      "fp8_accept_length": 2.4786525099233554,
+      "nvfp4_accept_length": 2.5136410202997688
+    },
+    {
+      "level": 4,
+      "fp8_score": 1463.7191782173873,
+      "nvfp4_score": 1596.7257043472773,
+      "nvfp4_gain_percent": 9.0868882576147,
+      "fp8_ttft": 0.7378808376844972,
+      "nvfp4_ttft": 0.7482141656568274,
+      "fp8_interactivity": 43.700481106221446,
+      "nvfp4_interactivity": 52.85975123277359,
+      "fp8_pass": true,
+      "nvfp4_pass": true,
+      "fp8_accept_length": 2.464744204236805,
+      "nvfp4_accept_length": 2.4638741555458434
+    },
+    {
+      "level": 8,
+      "fp8_score": 1867.5078937423073,
+      "nvfp4_score": 1949.659787961807,
+      "nvfp4_gain_percent": 4.399011886095705,
+      "fp8_ttft": 1.0953429060173225,
+      "nvfp4_ttft": 0.974982119142078,
+      "fp8_interactivity": 28.518163293622898,
+      "nvfp4_interactivity": 11.954475633401234,
+      "fp8_pass": false,
+      "nvfp4_pass": false,
+      "fp8_accept_length": 2.438647166146721,
+      "nvfp4_accept_length": 2.4721419906865925
+    },
+    {
+      "level": 16,
+      "fp8_score": 2293.2354666313254,
+      "nvfp4_score": 2397.549968223457,
+      "nvfp4_gain_percent": 4.548791570250987,
+      "fp8_ttft": 1.9339303015964102,
+      "nvfp4_ttft": 1.652400751702953,
+      "fp8_interactivity": 8.493291197413056,
+      "nvfp4_interactivity": 8.42338384035752,
+      "fp8_pass": false,
+      "nvfp4_pass": false,
+      "fp8_accept_length": 2.4348274125331817,
+      "nvfp4_accept_length": 2.466232805194032
+    },
+    {
+      "level": 32,
+      "fp8_score": 3091.689747014947,
+      "nvfp4_score": 3172.0732809802703,
+      "nvfp4_gain_percent": 2.5999870796522995,
+      "fp8_ttft": 2.2684519457397982,
+      "nvfp4_ttft": 1.931095558742527,
+      "fp8_interactivity": 5.771921154560957,
+      "nvfp4_interactivity": 5.7039609765408485,
+      "fp8_pass": false,
+      "nvfp4_pass": false,
+      "fp8_accept_length": 2.4619733685872367,
+      "nvfp4_accept_length": 2.472744677447264
+    }
+  ],
+  "best_passing": {
+    "fp8": {
+      "score": 1463.7191782173873,
+      "ttft": 0.7378808376844972,
+      "interactivity": 43.700481106221446,
+      "accept_length": 2.464744204236805,
+      "level": 4,
+      "repeats": [
+        {
+          "counter_delta_including_warmup": {
+            "generation_tokens_total": 8320.0,
+            "spec_verify_calls_total": 3397.0
+          },
+          "completion_per_verify_including_warmup": 2.4492198999116868,
+          "score": 1455.5399755089159,
+          "ttft": 0.7626858087722213,
+          "interactivity": 43.32621983681516,
+          "accept_length": 2.4416469194312795,
+          "intervals": 8036
+        },
+        {
+          "counter_delta_including_warmup": {
+            "generation_tokens_total": 8320.0,
+            "spec_verify_calls_total": 3347.0
+          },
+          "completion_per_verify_including_warmup": 2.485808186435614,
+          "score": 1471.8983809258586,
+          "ttft": 0.7130758665967732,
+          "interactivity": 44.074742375627736,
+          "accept_length": 2.4878414890423297,
+          "intervals": 8013
+        }
+      ],
+      "pass": true
+    },
+    "nvfp4": {
+      "score": 1596.7257043472773,
+      "ttft": 0.7482141656568274,
+      "interactivity": 52.85975123277359,
+      "accept_length": 2.4638741555458434,
+      "level": 4,
+      "repeats": [
+        {
+          "counter_delta_including_warmup": {
+            "generation_tokens_total": 8320.0,
+            "spec_verify_calls_total": 3332.0
+          },
+          "completion_per_verify_including_warmup": 2.4969987995198077,
+          "score": 1595.15504968578,
+          "ttft": 0.7450653159292415,
+          "interactivity": 52.989820670471055,
+          "accept_length": 2.489734299516908,
+          "intervals": 8051
+        },
+        {
+          "counter_delta_including_warmup": {
+            "generation_tokens_total": 8320.0,
+            "spec_verify_calls_total": 3405.0
+          },
+          "completion_per_verify_including_warmup": 2.4434654919236416,
+          "score": 1598.2963590087743,
+          "ttft": 0.7513630153844133,
+          "interactivity": 52.72968179507612,
+          "accept_length": 2.4380140115747793,
+          "intervals": 8045
+        }
+      ],
+      "pass": true
+    }
+  },
+  "scope": "One startup per format and two client repetitions per level. Same user fixture and protocol; generated histories and model-dependent KV capacity differ. Natural acceptance, startup probes, and full quality qualification are separate."
+}

@@ -1,0 +1,71 @@
+{
+  "runtime": "52ef77912fd004f34cfe340b392018632ce69c2c",
+  "rows": 1319,
+  "correct": 1258,
+  "score": 0.9537528430629265,
+  "finish_reasons": {
+    "stop": 1318,
+    "length": 1
+  },
+  "stop_rate": 0.9992418498862775,
+  "length_rows": [
+    {
+      "id": "gsm8k-1074",
+      "tokens": 32768,
+      "correct": false
+    }
+  ],
+  "sampling": {
+    "chat_template_kwargs": null,
+    "extra_body": null,
+    "max_tokens": 32768,
+    "min_p": 0.0,
+    "reasoning_effort": null,
+    "repetition_penalty": 1.0,
+    "seed": 1,
+    "system_message": null,
+    "temperature": 1.0,
+    "top_p": 0.95
+  },
+  "resolved": {
+    "tp_size": 4,
+    "ep_size": 1,
+    "attn_dp_size": 1,
+    "kv_cache_dtype": "bfloat16",
+    "dsa_prefill_backend": "flashmla_sparse",
+    "dsa_decode_backend": "flashmla_sparse",
+    "moe_runner_backend": "flashinfer_trtllm",
+    "context_length": 65536,
+    "mem_fraction_static": 0.8,
+    "chunked_prefill_size": 8192,
+    "max_running_requests": 64,
+    "random_seed": 1,
+    "speculative_algorithm": "EAGLE",
+    "speculative_num_steps": 3,
+    "speculative_eagle_topk": 1,
+    "speculative_num_draft_tokens": 4,
+    "speculative_draft_model_quantization": "fp8",
+    "disable_prefill_cuda_graph": true
+  },
+  "live_rust_workers_verified": 4,
+  "precision": "fp8",
+  "arm": "tp4",
+  "gpu_samples": 469,
+  "gpu_process_records": 2260,
+  "sampling_errors": [],
+  "measurement_sampling_errors": [],
+  "counters": {
+    "generation_tokens_total": 621714.0,
+    "spec_verify_calls_total": 230784.0
+  },
+  "counter_derived_natural_acceptance": 2.693921589018303,
+  "prediction_completion_tokens": 621714,
+  "archive_sha256": "4744cb3b9f6b0b73b0b7f20d49249570eeb9f885c78455367ef05237cff2fd2e",
+  "raw_files": 52,
+  "chat_http_statuses": {
+    "200": 1320
+  },
+  "failed_http_attempts": 0,
+  "all_requests_stopped": false,
+  "scope": "One candidate correctness run with explicit seed and output bound; single-run variation remains. Image-level qualification and bounded performance selection require separate evidence."
+}

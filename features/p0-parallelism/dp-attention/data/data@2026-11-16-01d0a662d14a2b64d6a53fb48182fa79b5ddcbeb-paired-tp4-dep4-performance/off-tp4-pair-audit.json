@@ -1,0 +1,326 @@
+{
+  "runtime": "01d0a662d14a2b64d6a53fb48182fa79b5ddcbeb",
+  "phase": "off",
+  "layout": "tp4",
+  "loads": 24,
+  "requests": 2560,
+  "startup_stops": 6,
+  "raw_files": 334,
+  "archives": {
+    "off-fp8-tp4": "1d8c63ad497e6c36e926fd01935a65c7dd88a33ad497e867b5dbeaccc9477f61",
+    "off-nvfp4-tp4": "c2df4e241cfd7dccdcdc2a58530f63a0aac574121dd2d02651648e10113b0252"
+  },
+  "actual_server_commands_equal_except_target": true,
+  "mtp_disabled": true,
+  "actual_client_commands_equal_except_target_and_output": true,
+  "imports_equal_except_pid": true,
+  "first_turn_input_lengths_equal": true,
+  "all_output_lengths_equal": true,
+  "history_length_deltas": [
+    {
+      "level": 1,
+      "repeat": 1,
+      "changed_history_input_lengths": 30,
+      "max_abs_input_length_delta": 3,
+      "prompt_token_delta_percent": -0.0008704129238910939
+    },
+    {
+      "level": 1,
+      "repeat": 2,
+      "changed_history_input_lengths": 32,
+      "max_abs_input_length_delta": 5,
+      "prompt_token_delta_percent": 0.00478737525623338
+    },
+    {
+      "level": 2,
+      "repeat": 1,
+      "changed_history_input_lengths": 37,
+      "max_abs_input_length_delta": 2,
+      "prompt_token_delta_percent": 0.00043521593238485273
+    },
+    {
+      "level": 2,
+      "repeat": 2,
+      "changed_history_input_lengths": 35,
+      "max_abs_input_length_delta": 5,
+      "prompt_token_delta_percent": -0.005222409358557571
+    },
+    {
+      "level": 4,
+      "repeat": 1,
+      "changed_history_input_lengths": 32,
+      "max_abs_input_length_delta": 6,
+      "prompt_token_delta_percent": 0.007399250499449409
+    },
+    {
+      "level": 4,
+      "repeat": 2,
+      "changed_history_input_lengths": 24,
+      "max_abs_input_length_delta": 2,
+      "prompt_token_delta_percent": 0.003916943391463675
+    },
+    {
+      "level": 8,
+      "repeat": 1,
+      "changed_history_input_lengths": 31,
+      "max_abs_input_length_delta": 3,
+      "prompt_token_delta_percent": 0.0030465645632314475
+    },
+    {
+      "level": 8,
+      "repeat": 2,
+      "changed_history_input_lengths": 25,
+      "max_abs_input_length_delta": 4,
+      "prompt_token_delta_percent": 0.002175994429454261
+    },
+    {
+      "level": 16,
+      "repeat": 1,
+      "changed_history_input_lengths": 54,
+      "max_abs_input_length_delta": 4,
+      "prompt_token_delta_percent": -0.00805114435049025
+    },
+    {
+      "level": 16,
+      "repeat": 2,
+      "changed_history_input_lengths": 68,
+      "max_abs_input_length_delta": 5,
+      "prompt_token_delta_percent": 0.0034817501887761428
+    },
+    {
+      "level": 32,
+      "repeat": 1,
+      "changed_history_input_lengths": 132,
+      "max_abs_input_length_delta": 5,
+      "prompt_token_delta_percent": 0.0005440163640122295
+    },
+    {
+      "level": 32,
+      "repeat": 2,
+      "changed_history_input_lengths": 110,
+      "max_abs_input_length_delta": 5,
+      "prompt_token_delta_percent": 0.0022849085057351204
+    }
+  ],
+  "comparisons": [
+    {
+      "level": 1,
+      "fp8_score": 521.3660739009051,
+      "nvfp4_score": 537.4589253720056,
+      "nvfp4_gain_percent": 3.0866702450914163,
+      "fp8_ttft": 0.41297437583561986,
+      "nvfp4_ttft": 0.42833420175593345,
+      "fp8_interactivity": 91.44700076299524,
+      "nvfp4_interactivity": 96.14672668666626,
+      "fp8_pass": true,
+      "nvfp4_pass": true,
+      "fp8_accept_length": 0.0,
+      "nvfp4_accept_length": 0.0
+    },
+    {
+      "level": 2,
+      "fp8_score": 815.4608610543978,
+      "nvfp4_score": 835.0935627637359,
+      "nvfp4_gain_percent": 2.4075590438458194,
+      "fp8_ttft": 0.8009556209901347,
+      "nvfp4_ttft": 0.8371190538862721,
+      "fp8_interactivity": 80.4293285128753,
+      "nvfp4_interactivity": 85.309853401526,
+      "fp8_pass": true,
+      "nvfp4_pass": true,
+      "fp8_accept_length": 0.0,
+      "nvfp4_accept_length": 0.0
+    },
+    {
+      "level": 4,
+      "fp8_score": 1386.5861827998904,
+      "nvfp4_score": 1466.3318888850304,
+      "nvfp4_gain_percent": 5.751226074106119,
+      "fp8_ttft": 0.8129595988895744,
+      "nvfp4_ttft": 0.8525988248642533,
+      "fp8_interactivity": 66.54775291171069,
+      "nvfp4_interactivity": 73.61699894952022,
+      "fp8_pass": true,
+      "nvfp4_pass": true,
+      "fp8_accept_length": 0.0,
+      "nvfp4_accept_length": 0.0
+    },
+    {
+      "level": 8,
+      "fp8_score": 2337.229006015863,
+      "nvfp4_score": 2618.2287305411346,
+      "nvfp4_gain_percent": 12.022772428461149,
+      "fp8_ttft": 1.0192722243489698,
+      "nvfp4_ttft": 0.8577526963548735,
+      "fp8_interactivity": 53.855280391174404,
+      "nvfp4_interactivity": 63.777360645524645,
+      "fp8_pass": true,
+      "nvfp4_pass": true,
+      "fp8_accept_length": 0.0,
+      "nvfp4_accept_length": 0.0
+    },
+    {
+      "level": 16,
+      "fp8_score": 3410.6821704131644,
+      "nvfp4_score": 3888.0891580406187,
+      "nvfp4_gain_percent": 13.997404735300268,
+      "fp8_ttft": 1.5951389310182997,
+      "nvfp4_ttft": 1.7060703285736962,
+      "fp8_interactivity": 40.576596967252456,
+      "nvfp4_interactivity": 50.58193373695532,
+      "fp8_pass": true,
+      "nvfp4_pass": true,
+      "fp8_accept_length": 0.0,
+      "nvfp4_accept_length": 0.0
+    },
+    {
+      "level": 32,
+      "fp8_score": 5203.686588691918,
+      "nvfp4_score": 6070.240525393307,
+      "nvfp4_gain_percent": 16.652692700296146,
+      "fp8_ttft": 2.212019457365386,
+      "nvfp4_ttft": 2.1936976816505194,
+      "fp8_interactivity": 32.75243503259768,
+      "nvfp4_interactivity": 42.34578313390885,
+      "fp8_pass": true,
+      "nvfp4_pass": true,
+      "fp8_accept_length": 0.0,
+      "nvfp4_accept_length": 0.0
+    }
+  ],
+  "best_passing": {
+    "fp8": {
+      "score": 5203.686588691918,
+      "ttft": 2.212019457365386,
+      "interactivity": 32.75243503259768,
+      "accept_length": 0.0,
+      "level": 32,
+      "repeats": [
+        {
+          "score": 5228.377949379767,
+          "ttft": 2.2094616622198373,
+          "interactivity": 32.888277674631254,
+          "accept_length": 0,
+          "intervals": 32360
+        },
+        {
+          "score": 5178.995228004068,
+          "ttft": 2.214577252510935,
+          "interactivity": 32.61659239056411,
+          "accept_length": 0,
+          "intervals": 32350
+        }
+      ],
+      "pass": true
+    },
+    "nvfp4": {
+      "score": 6070.240525393307,
+      "ttft": 2.1936976816505194,
+      "interactivity": 42.34578313390885,
+      "accept_length": 0.0,
+      "level": 32,
+      "repeats": [
+        {
+          "score": 6065.993864590466,
+          "ttft": 2.1868651979602873,
+          "interactivity": 42.287460629779,
+          "accept_length": 0,
+          "intervals": 32360
+        },
+        {
+          "score": 6074.487186196147,
+          "ttft": 2.2005301653407514,
+          "interactivity": 42.404105638038715,
+          "accept_length": 0,
+          "intervals": 32369
+        }
+      ],
+      "pass": true
+    }
+  },
+  "scope": "One startup per format and two client repetitions per level. Same user fixture and protocol; generated histories and model-dependent KV capacity differ. This is MTP-off; startup probes and full quality qualification are separate. Deployment differences between TP4 and DEP4 include attention DP, EP and scheduler subdivision.",
+  "gpu_observation": {
+    "off-fp8-tp4": {
+      "samples": 465,
+      "foreign_process_observations": 0,
+      "sampling_errors_post_measurement": [
+        {
+          "time": 1794848106.3593988,
+          "server_pid": 183246,
+          "gpus": [
+            [
+              "0",
+              " GPU-bcbbbd61-8f26-feb4-df63-b05e7c50b1b7",
+              " 245064",
+              " 0"
+            ],
+            [
+              "1",
+              " GPU-a3c8c81c-9eb4-0156-119a-e80d9acb52bc",
+              " 244338",
+              " 0"
+            ],
+            [
+              "2",
+              " GPU-d6ff10e7-ec77-6ee0-0e10-bdabbb2207b1",
+              " 244338",
+              " 0"
+            ],
+            [
+              "3",
+              " GPU-0e8737d0-5bea-3b9e-3728-9716febe8967",
+              " 244018",
+              " 0"
+            ]
+          ],
+          "gpus_error": "",
+          "processes": [
+            [
+              "GPU-bcbbbd61-8f26-feb4-df63-b05e7c50b1b7",
+              " 183246",
+              " /opt/sglang/bin/python",
+              " 780",
+              true
+            ],
+            [
+              "GPU-bcbbbd61-8f26-feb4-df63-b05e7c50b1b7",
+              " 183419",
+              " [No data]",
+              " 244258",
+              true
+            ],
+            [
+              "GPU-a3c8c81c-9eb4-0156-119a-e80d9acb52bc",
+              " 183421",
+              " [No data]",
+              " 244322",
+              true
+            ],
+            [
+              "GPU-d6ff10e7-ec77-6ee0-0e10-bdabbb2207b1",
+              " 183423",
+              " [No data]",
+              " 244322",
+              true
+            ],
+            [
+              "GPU-0e8737d0-5bea-3b9e-3728-9716febe8967",
+              " 183425",
+              " [No data]",
+              " 244002",
+              true
+            ]
+          ],
+          "active_loads": []
+        }
+      ],
+      "sampling_error_scope": "All errors retained. Error sample timestamps are after completed benchmark writes, have no active load, and are at or after the shutdown log second; within-second ordering relative to SIGTERM is not established."
+    },
+    "off-nvfp4-tp4": {
+      "samples": 488,
+      "foreign_process_observations": 0,
+      "sampling_errors_post_measurement": [],
+      "sampling_error_scope": "All errors retained. Error sample timestamps are after completed benchmark writes, have no active load, and are at or after the shutdown log second; within-second ordering relative to SIGTERM is not established."
+    }
+  }
+}

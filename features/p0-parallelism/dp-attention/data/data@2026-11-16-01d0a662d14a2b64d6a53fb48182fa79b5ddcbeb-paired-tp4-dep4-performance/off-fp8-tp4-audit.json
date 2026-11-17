@@ -1,0 +1,282 @@
+{
+  "candidate": "fp8-tp4-fp8kv-mtp-off",
+  "requests": 1280,
+  "loads": 12,
+  "natural_sanity_stops": 3,
+  "rows": [
+    {
+      "score": 521.3660739009051,
+      "ttft": 0.41297437583561986,
+      "interactivity": 91.44700076299524,
+      "accept_length": 0.0,
+      "level": 1,
+      "repeats": [
+        {
+          "score": 520.652546295,
+          "ttft": 0.41236469210125504,
+          "interactivity": 91.40991358213358,
+          "accept_length": 0,
+          "intervals": 8095
+        },
+        {
+          "score": 522.0796015068104,
+          "ttft": 0.4135840595699847,
+          "interactivity": 91.4840879438569,
+          "accept_length": 0,
+          "intervals": 8093
+        }
+      ],
+      "pass": true
+    },
+    {
+      "score": 815.4608610543978,
+      "ttft": 0.8009556209901347,
+      "interactivity": 80.4293285128753,
+      "accept_length": 0.0,
+      "level": 2,
+      "repeats": [
+        {
+          "score": 810.4889827077652,
+          "ttft": 0.8029235541820526,
+          "interactivity": 80.43805260145572,
+          "accept_length": 0,
+          "intervals": 8087
+        },
+        {
+          "score": 820.4327394010305,
+          "ttft": 0.7989876877982169,
+          "interactivity": 80.42060442429488,
+          "accept_length": 0,
+          "intervals": 8094
+        }
+      ],
+      "pass": true
+    },
+    {
+      "score": 1386.5861827998904,
+      "ttft": 0.8129595988895744,
+      "interactivity": 66.54775291171069,
+      "accept_length": 0.0,
+      "level": 4,
+      "repeats": [
+        {
+          "score": 1384.6213274602312,
+          "ttft": 0.8144793360494077,
+          "interactivity": 66.46769048591969,
+          "accept_length": 0,
+          "intervals": 8079
+        },
+        {
+          "score": 1388.5510381395495,
+          "ttft": 0.8114398617297411,
+          "interactivity": 66.6278153375017,
+          "accept_length": 0,
+          "intervals": 8086
+        }
+      ],
+      "pass": true
+    },
+    {
+      "score": 2337.229006015863,
+      "ttft": 1.0192722243489698,
+      "interactivity": 53.855280391174404,
+      "accept_length": 0.0,
+      "level": 8,
+      "repeats": [
+        {
+          "score": 2311.913236144302,
+          "ttft": 1.2028376728296282,
+          "interactivity": 53.74795269423331,
+          "accept_length": 0,
+          "intervals": 8086
+        },
+        {
+          "score": 2362.5447758874234,
+          "ttft": 0.8357067758683115,
+          "interactivity": 53.962608088115495,
+          "accept_length": 0,
+          "intervals": 8095
+        }
+      ],
+      "pass": true
+    },
+    {
+      "score": 3410.6821704131644,
+      "ttft": 1.5951389310182997,
+      "interactivity": 40.576596967252456,
+      "accept_length": 0.0,
+      "level": 16,
+      "repeats": [
+        {
+          "score": 3385.657732468121,
+          "ttft": 1.7770788203459233,
+          "interactivity": 40.66979948407083,
+          "accept_length": 0,
+          "intervals": 16193
+        },
+        {
+          "score": 3435.7066083582076,
+          "ttft": 1.4131990416906763,
+          "interactivity": 40.48339445043408,
+          "accept_length": 0,
+          "intervals": 16173
+        }
+      ],
+      "pass": true
+    },
+    {
+      "score": 5203.686588691918,
+      "ttft": 2.212019457365386,
+      "interactivity": 32.75243503259768,
+      "accept_length": 0.0,
+      "level": 32,
+      "repeats": [
+        {
+          "score": 5228.377949379767,
+          "ttft": 2.2094616622198373,
+          "interactivity": 32.888277674631254,
+          "accept_length": 0,
+          "intervals": 32360
+        },
+        {
+          "score": 5178.995228004068,
+          "ttft": 2.214577252510935,
+          "interactivity": 32.61659239056411,
+          "accept_length": 0,
+          "intervals": 32350
+        }
+      ],
+      "pass": true
+    }
+  ],
+  "best_passing": {
+    "score": 5203.686588691918,
+    "ttft": 2.212019457365386,
+    "interactivity": 32.75243503259768,
+    "accept_length": 0.0,
+    "level": 32,
+    "repeats": [
+      {
+        "score": 5228.377949379767,
+        "ttft": 2.2094616622198373,
+        "interactivity": 32.888277674631254,
+        "accept_length": 0,
+        "intervals": 32360
+      },
+      {
+        "score": 5178.995228004068,
+        "ttft": 2.214577252510935,
+        "interactivity": 32.61659239056411,
+        "accept_length": 0,
+        "intervals": 32350
+      }
+    ],
+    "pass": true
+  },
+  "archive_sha256": "1d8c63ad497e6c36e926fd01935a65c7dd88a33ad497e867b5dbeaccc9477f61",
+  "token_count_provenance": "MTP-off client uses raw inter-token intervals without the natural-MTP token-count normalization. Captured request ITLs and TTFTs match the raw benchmark arrays.",
+  "sampling_errors_post_measurement": [
+    {
+      "time": 1794848106.3593988,
+      "server_pid": 183246,
+      "gpus": [
+        [
+          "0",
+          " GPU-bcbbbd61-8f26-feb4-df63-b05e7c50b1b7",
+          " 245064",
+          " 0"
+        ],
+        [
+          "1",
+          " GPU-a3c8c81c-9eb4-0156-119a-e80d9acb52bc",
+          " 244338",
+          " 0"
+        ],
+        [
+          "2",
+          " GPU-d6ff10e7-ec77-6ee0-0e10-bdabbb2207b1",
+          " 244338",
+          " 0"
+        ],
+        [
+          "3",
+          " GPU-0e8737d0-5bea-3b9e-3728-9716febe8967",
+          " 244018",
+          " 0"
+        ]
+      ],
+      "gpus_error": "",
+      "processes": [
+        [
+          "GPU-bcbbbd61-8f26-feb4-df63-b05e7c50b1b7",
+          " 183246",
+          " /opt/sglang/bin/python",
+          " 780",
+          true
+        ],
+        [
+          "GPU-bcbbbd61-8f26-feb4-df63-b05e7c50b1b7",
+          " 183419",
+          " [No data]",
+          " 244258",
+          true
+        ],
+        [
+          "GPU-a3c8c81c-9eb4-0156-119a-e80d9acb52bc",
+          " 183421",
+          " [No data]",
+          " 244322",
+          true
+        ],
+        [
+          "GPU-d6ff10e7-ec77-6ee0-0e10-bdabbb2207b1",
+          " 183423",
+          " [No data]",
+          " 244322",
+          true
+        ],
+        [
+          "GPU-0e8737d0-5bea-3b9e-3728-9716febe8967",
+          " 183425",
+          " [No data]",
+          " 244002",
+          true
+        ]
+      ],
+      "active_loads": []
+    }
+  ],
+  "shutdown_log_second_epoch": 1794848106.0,
+  "last_measurement_write_epoch": 1794848105.5096154,
+  "sampling_error_scope": "All errors retained. Error sample timestamps are after completed benchmark writes, have no active load, and are at or after the shutdown log second; within-second ordering relative to SIGTERM is not established.",
+  "resolved_checked": {
+    "tp_size": 4,
+    "ep_size": 1,
+    "attn_dp_size": 1,
+    "moe_runner_backend": "flashinfer_trtllm",
+    "dsa_prefill_backend": "trtllm",
+    "dsa_decode_backend": "trtllm",
+    "kv_cache_dtype": "fp8_e4m3",
+    "speculative_algorithm": null,
+    "disable_hybrid_swa_memory": false,
+    "random_seed": 1,
+    "context_length": 32768,
+    "disable_prefill_cuda_graph": true,
+    "enable_dp_attention": false
+  },
+  "gpu_ownership_samples": 465,
+  "gpu_ownership_failures": 0,
+  "rust_extension_sha256": [
+    "d2547a9f9a3edc3f79318922dfd2aceb162c0339c9c00d69514e00aafb979cc3"
+  ],
+  "server_random_seed": 1,
+  "manifest_files_verified": 167,
+  "scheduler": {
+    "chunked_prefill_size": 8192,
+    "per_dp_running_cap": 64,
+    "lines": [
+      "[2026-11-16 16:41:29 TP0 PID183419] max_total_num_tokens=942976, chunked_prefill_size=8192, max_prefill_tokens=16384, max_running_requests=64, context_len=32768, available_gpu_mem=51.82 GB"
+    ]
+  },
+  "scope": "One startup and two client repetitions per level. Full deployment comparison includes attention DP, EP and scheduler subdivision. Quality qualification is separate."
+}

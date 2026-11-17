@@ -1,0 +1,11 @@
+{
+  "time": "2026-11-16T18:20:14.766695+00:00",
+  "pid": 309122,
+  "cmdline": null,
+  "exit": 0,
+  "current_gpu_processes": {
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+}

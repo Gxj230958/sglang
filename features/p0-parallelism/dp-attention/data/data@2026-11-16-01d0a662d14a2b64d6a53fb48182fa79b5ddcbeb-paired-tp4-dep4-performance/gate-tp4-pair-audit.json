@@ -1,0 +1,20 @@
+{
+  "runtime": "01d0a662d14a2b64d6a53fb48182fa79b5ddcbeb",
+  "layout": "tp4",
+  "archives": {
+    "gate-fp8-tp4": "8d71285683c78562c013d64f17b144b3beeba9165aa6a42a6f67548e54baab8f",
+    "gate-nvfp4-tp4": "5af84420451ba68940d85149f53305c07bd9ccb51667f5a51c8a5fcc3945a85c"
+  },
+  "requests": 128,
+  "startup_stops": 6,
+  "actual_server_commands_equal_except_target": true,
+  "same_original_fp8_draft": true,
+  "actual_client_commands_equal_except_target_and_output": true,
+  "imports_equal_except_pid": true,
+  "first_turn_input_lengths_equal": true,
+  "all_output_lengths_equal": true,
+  "changed_history_input_lengths": 28,
+  "max_abs_input_length_delta": 2,
+  "prompt_token_delta_percent": 0.009139494803544384,
+  "scope": "One C1 load and three stopping probes per format; not a repeated performance comparison or full quality qualification. Later-turn prompts contain model-generated histories."
+}

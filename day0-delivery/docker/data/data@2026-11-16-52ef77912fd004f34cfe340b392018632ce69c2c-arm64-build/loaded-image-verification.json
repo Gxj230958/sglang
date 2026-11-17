@@ -1,0 +1,76 @@
+{
+  "observed_at": 1794864176.9376829,
+  "command": [
+    "docker",
+    "run",
+    "--rm",
+    "--network",
+    "none",
+    "--entrypoint",
+    "python3",
+    "glm5lp-fallback:52ef77912f-arm64-20261116",
+    "/opt/glm5lp/verify_image.py"
+  ],
+  "verification": {
+    "revision": "52ef77912fd004f34cfe340b392018632ce69c2c",
+    "versions": {
+      "torch": "2.14.1+cu130",
+      "transformers": "5.19.0",
+      "flashinfer-python": "0.7.4",
+      "flashinfer-cubin": "0.7.4",
+      "flashinfer-jit-cache": "0.7.4+cu130",
+      "flashinfer-jit-cache-sm103a": "0.7.4+cu130",
+      "sglang-kernel": "0.4.11",
+      "sgl-deep-gemm": "0.2.8",
+      "sgl-flash-mla": "1.0.5",
+      "kernels": "0.14.1",
+      "mooncake-transfer-engine-cuda13": "0.3.13.post1"
+    },
+    "verified_source_files": 5517,
+    "rust_extension": "/sgl-workspace/sglang/python/sglang/srt/mem_cache/rust_tree_core/mem_cache.cpython-312-aarch64-linux-gnu.so",
+    "rust_sha256": "ba2a6eff23503b7bdd6d0e7a196beb79af9019d563e35287ee55e939b9c60c48",
+    "jit_providers": [
+      {
+        "id": "sm100a",
+        "version": "0.7.4+cu130",
+        "path": "/opt/sglang/lib/python3.12/site-packages/flashinfer_jit_cache/providers/sm100a/jit_cache"
+      },
+      {
+        "id": "sm103a",
+        "version": "0.7.4+cu130",
+        "path": "/opt/sglang/lib/python3.12/site-packages/flashinfer_jit_cache/providers/sm103a/jit_cache"
+      },
+      {
+        "id": "sm110a",
+        "version": "0.7.4+cu130",
+        "path": "/opt/sglang/lib/python3.12/site-packages/flashinfer_jit_cache/providers/sm110a/jit_cache"
+      },
+      {
+        "id": "sm120f",
+        "version": "0.7.4+cu130",
+        "path": "/opt/sglang/lib/python3.12/site-packages/flashinfer_jit_cache/providers/sm120f/jit_cache"
+      },
+      {
+        "id": "sm121a",
+        "version": "0.7.4+cu130",
+        "path": "/opt/sglang/lib/python3.12/site-packages/flashinfer_jit_cache/providers/sm121a/jit_cache"
+      },
+      {
+        "id": "sm80",
+        "version": "0.7.4+cu130",
+        "path": "/opt/sglang/lib/python3.12/site-packages/flashinfer_jit_cache/providers/sm80/jit_cache"
+      },
+      {
+        "id": "sm89",
+        "version": "0.7.4+cu130",
+        "path": "/opt/sglang/lib/python3.12/site-packages/flashinfer_jit_cache/providers/sm89/jit_cache"
+      },
+      {
+        "id": "sm90a",
+        "version": "0.7.4+cu130",
+        "path": "/opt/sglang/lib/python3.12/site-packages/flashinfer_jit_cache/providers/sm90a/jit_cache"
+      }
+    ],
+    "scope": "CPU image construction verification; GPU serve/evaluation required separately."
+  }
+}

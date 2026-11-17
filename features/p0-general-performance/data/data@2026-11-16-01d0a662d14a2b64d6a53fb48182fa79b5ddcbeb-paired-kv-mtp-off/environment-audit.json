@@ -1,0 +1,41 @@
+{
+  "same_versions": true,
+  "versions": {
+    "flashinfer-python": "0.7.4",
+    "flashinfer-cubin": "0.7.4",
+    "flashinfer-jit-cache": "0.7.4+cu130",
+    "flashinfer-jit-cache-sm103a": "0.7.4+cu130",
+    "sglang-kernel": "0.4.11",
+    "sgl-deep-gemm": "0.2.8",
+    "sgl-flash-mla": "1.0.5",
+    "kernels": "0.14.1",
+    "torch": "2.14.1+cu130",
+    "transformers": "5.19.0"
+  },
+  "gpu_sampling": {
+    "fp8-kv-bf16-mtp-off": {
+      "samples": 448,
+      "active_samples": 366,
+      "foreign_active_samples": 0,
+      "sampling_errors": 0
+    },
+    "fp8-kv-fp8_e4m3-mtp-off": {
+      "samples": 464,
+      "active_samples": 379,
+      "foreign_active_samples": 0,
+      "sampling_errors": 0
+    },
+    "nvfp4-kv-bf16-mtp-off": {
+      "samples": 467,
+      "active_samples": 348,
+      "foreign_active_samples": 0,
+      "sampling_errors": 0
+    },
+    "nvfp4-kv-fp8_e4m3-mtp-off": {
+      "samples": 487,
+      "active_samples": 362,
+      "foreign_active_samples": 0,
+      "sampling_errors": 0
+    }
+  }
+}

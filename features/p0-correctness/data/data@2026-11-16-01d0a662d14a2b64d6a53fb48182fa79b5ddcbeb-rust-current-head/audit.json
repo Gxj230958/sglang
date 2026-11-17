@@ -1,0 +1,48 @@
+{
+  "runtime_commit": "01d0a662d14a2b64d6a53fb48182fa79b5ddcbeb",
+  "source_entries_verified": 12581,
+  "file_hashes_verified": 45,
+  "runs": {
+    "fp8-gate-current1": {
+      "examples": 1319,
+      "correct": 1256,
+      "finish_reasons": {
+        "stop": 1316,
+        "length": 3,
+        "error": 0
+      },
+      "accuracy": 0.9522365428354814,
+      "stop_rate": 0.9977255496588324,
+      "prediction_sha256": "ef5e0406e507b5fcd130f2738079d744aed17b34f273c6207c4655419e1e6138",
+      "four_rust_ranks": true,
+      "three_nonempty_stopped_chats": true,
+      "metrics_match_independent_accounting": true
+    },
+    "sanity-current1": {
+      "examples": 100,
+      "correct": 95,
+      "finish_reasons": {
+        "stop": 99,
+        "length": 1,
+        "error": 0
+      },
+      "accuracy": 0.95,
+      "stop_rate": 0.99,
+      "prediction_sha256": "34f984f15df5ecf6887f1eb1310ed8a74d9cc5f5cff209b4d8eeb888929935a6",
+      "four_rust_ranks": true,
+      "three_nonempty_stopped_chats": true,
+      "metrics_match_independent_accounting": true
+    }
+  },
+  "mapping": {
+    "status": "passed",
+    "physical_layers": 78,
+    "effective_layers": 106,
+    "checked_sparse_execution_slots": 103,
+    "base_mismatch_examples": [
+      78,
+      105
+    ],
+    "source_config_unchanged": true
+  }
+}

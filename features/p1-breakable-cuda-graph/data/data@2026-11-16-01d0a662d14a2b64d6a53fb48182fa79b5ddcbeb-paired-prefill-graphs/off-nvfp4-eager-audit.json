@@ -1,0 +1,292 @@
+{
+  "candidate": "nvfp4-prefill-eager-mtp-off",
+  "requests": 1280,
+  "loads": 12,
+  "natural_sanity_stops": 3,
+  "rows": [
+    {
+      "score": 579.5583317525886,
+      "ttft": 0.38102606970351194,
+      "interactivity": 102.58734177489794,
+      "accept_length": 0.0,
+      "level": 1,
+      "repeats": [
+        {
+          "score": 578.2559307414522,
+          "ttft": 0.3819902100134641,
+          "interactivity": 102.58008298779963,
+          "accept_length": 0,
+          "intervals": 8086
+        },
+        {
+          "score": 580.8607327637252,
+          "ttft": 0.3800619293935597,
+          "interactivity": 102.59460056199624,
+          "accept_length": 0,
+          "intervals": 8092
+        }
+      ],
+      "pass": true
+    },
+    {
+      "score": 906.6835268148664,
+      "ttft": 0.7380612500826829,
+      "interactivity": 90.55597704012831,
+      "accept_length": 0.0,
+      "level": 2,
+      "repeats": [
+        {
+          "score": 916.0538620091031,
+          "ttft": 0.7393387992866337,
+          "interactivity": 90.61772189363407,
+          "accept_length": 0,
+          "intervals": 8091
+        },
+        {
+          "score": 897.3131916206296,
+          "ttft": 0.7367837008787319,
+          "interactivity": 90.49423218662257,
+          "accept_length": 0,
+          "intervals": 8087
+        }
+      ],
+      "pass": true
+    },
+    {
+      "score": 1578.6590573567692,
+      "ttft": 0.7501544221420773,
+      "interactivity": 77.28098028673892,
+      "accept_length": 0.0,
+      "level": 4,
+      "repeats": [
+        {
+          "score": 1578.244155580766,
+          "ttft": 0.7508407004643232,
+          "interactivity": 77.3297239132289,
+          "accept_length": 0,
+          "intervals": 8086
+        },
+        {
+          "score": 1579.0739591327726,
+          "ttft": 0.7494681438198313,
+          "interactivity": 77.23223666024896,
+          "accept_length": 0,
+          "intervals": 8090
+        }
+      ],
+      "pass": true
+    },
+    {
+      "score": 2782.778207220092,
+      "ttft": 0.8924248100142,
+      "interactivity": 66.10521170993049,
+      "accept_length": 0.0,
+      "level": 8,
+      "repeats": [
+        {
+          "score": 2783.286620474406,
+          "ttft": 1.0297507151728507,
+          "interactivity": 66.12954353032136,
+          "accept_length": 0,
+          "intervals": 8087
+        },
+        {
+          "score": 2782.2697939657783,
+          "ttft": 0.7550989048555493,
+          "interactivity": 66.08087988953962,
+          "accept_length": 0,
+          "intervals": 8079
+        }
+      ],
+      "pass": true
+    },
+    {
+      "score": 4168.061927809906,
+      "ttft": 1.4480902448529371,
+      "interactivity": 53.58446320900552,
+      "accept_length": 0.0,
+      "level": 16,
+      "repeats": [
+        {
+          "score": 4219.777908818294,
+          "ttft": 1.3074153425637622,
+          "interactivity": 53.49211258336392,
+          "accept_length": 0,
+          "intervals": 16167
+        },
+        {
+          "score": 4116.345946801516,
+          "ttft": 1.5887651471421123,
+          "interactivity": 53.67681383464711,
+          "accept_length": 0,
+          "intervals": 16177
+        }
+      ],
+      "pass": true
+    },
+    {
+      "score": 6201.85126277583,
+      "ttft": 2.04731328075286,
+      "interactivity": 41.59715912051442,
+      "accept_length": 0.0,
+      "level": 32,
+      "repeats": [
+        {
+          "score": 6200.086506070958,
+          "ttft": 2.032842632383108,
+          "interactivity": 41.53823047299513,
+          "accept_length": 0,
+          "intervals": 32344
+        },
+        {
+          "score": 6203.616019480702,
+          "ttft": 2.061783929122612,
+          "interactivity": 41.65608776803371,
+          "accept_length": 0,
+          "intervals": 32344
+        }
+      ],
+      "pass": true
+    }
+  ],
+  "best_passing": {
+    "score": 6201.85126277583,
+    "ttft": 2.04731328075286,
+    "interactivity": 41.59715912051442,
+    "accept_length": 0.0,
+    "level": 32,
+    "repeats": [
+      {
+        "score": 6200.086506070958,
+        "ttft": 2.032842632383108,
+        "interactivity": 41.53823047299513,
+        "accept_length": 0,
+        "intervals": 32344
+      },
+      {
+        "score": 6203.616019480702,
+        "ttft": 2.061783929122612,
+        "interactivity": 41.65608776803371,
+        "accept_length": 0,
+        "intervals": 32344
+      }
+    ],
+    "pass": true
+  },
+  "archive_sha256": "7819b351dae5eaa671cf5fdb7fa4083a8f6792bb3cf9c59be980d02254741a64",
+  "token_count_provenance": "MTP-off client uses raw inter-token intervals without the natural-MTP token-count normalization. Captured request ITLs and TTFTs match the raw benchmark arrays.",
+  "sampling_errors_after_shutdown": [],
+  "shutdown_epoch": null,
+  "resolved_checked": {
+    "tp_size": 4,
+    "ep_size": 1,
+    "attn_dp_size": 1,
+    "moe_runner_backend": "flashinfer_trtllm",
+    "dsa_prefill_backend": "flashmla_sparse",
+    "dsa_decode_backend": "flashmla_sparse",
+    "kv_cache_dtype": "bfloat16",
+    "speculative_algorithm": null,
+    "disable_hybrid_swa_memory": false,
+    "random_seed": 1,
+    "disable_prefill_cuda_graph": true,
+    "cuda_graph_backend_prefill": null
+  },
+  "gpu_ownership_samples": 472,
+  "gpu_ownership_failures": 0,
+  "rust_extension_sha256": [
+    "c933d62cbea75638fc7a1c4c1e114cac83fe7e149cfc65591492252ec5536055"
+  ],
+  "server_random_seed": 1,
+  "manifest_files_verified": 191,
+  "prefill_graph_evidence": {
+    "scope": "Whole client execution including warmup; raw server byte windows independently matched.",
+    "loads": [
+      {
+        "level": 1,
+        "repeat": 1,
+        "backend": "disabled",
+        "graph": 0,
+        "eager": 68
+      },
+      {
+        "level": 1,
+        "repeat": 2,
+        "backend": "disabled",
+        "graph": 0,
+        "eager": 68
+      },
+      {
+        "level": 2,
+        "repeat": 1,
+        "backend": "disabled",
+        "graph": 0,
+        "eager": 60
+      },
+      {
+        "level": 2,
+        "repeat": 2,
+        "backend": "disabled",
+        "graph": 0,
+        "eager": 64
+      },
+      {
+        "level": 4,
+        "repeat": 1,
+        "backend": "disabled",
+        "graph": 0,
+        "eager": 36
+      },
+      {
+        "level": 4,
+        "repeat": 2,
+        "backend": "disabled",
+        "graph": 0,
+        "eager": 36
+      },
+      {
+        "level": 8,
+        "repeat": 1,
+        "backend": "disabled",
+        "graph": 0,
+        "eager": 21
+      },
+      {
+        "level": 8,
+        "repeat": 2,
+        "backend": "disabled",
+        "graph": 0,
+        "eager": 21
+      },
+      {
+        "level": 16,
+        "repeat": 1,
+        "backend": "disabled",
+        "graph": 0,
+        "eager": 29
+      },
+      {
+        "level": 16,
+        "repeat": 2,
+        "backend": "disabled",
+        "graph": 0,
+        "eager": 31
+      },
+      {
+        "level": 32,
+        "repeat": 1,
+        "backend": "disabled",
+        "graph": 0,
+        "eager": 41
+      },
+      {
+        "level": 32,
+        "repeat": 2,
+        "backend": "disabled",
+        "graph": 0,
+        "eager": 41
+      }
+    ],
+    "graph_replays": 0,
+    "eager_prefills": 516
+  }
+}

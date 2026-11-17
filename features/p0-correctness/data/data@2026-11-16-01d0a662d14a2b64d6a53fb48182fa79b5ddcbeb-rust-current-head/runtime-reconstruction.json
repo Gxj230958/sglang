@@ -1,0 +1,11 @@
+{
+  "runtime_commit": "01d0a662d14a2b64d6a53fb48182fa79b5ddcbeb",
+  "base_commit": "8a6cdc9d7c71798e307f098f0d3998d4d0de3d00",
+  "patch_sha256": "644d3afda7709206a1c4e5e10caf4f3ce1036a7e1bc0f8d141c2337b45dd2e1a",
+  "patch_hf_repo": "RadixArk/GLM-5-1028-Provider-NVFP4-perf",
+  "patch_hf_revision": "f2c64cebac62b1888c92c9d317adbb0b0aef5955",
+  "patch_path": "conversion/runtime.patch",
+  "expected_tree": "16b1249e58da225cac7e94a2e0fff80bf533e63d",
+  "reconstructed_tree": "16b1249e58da225cac7e94a2e0fff80bf533e63d",
+  "matched": true
+}

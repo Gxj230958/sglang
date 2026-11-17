@@ -1,0 +1,338 @@
+{
+  "runtime": "01d0a662d14a2b64d6a53fb48182fa79b5ddcbeb",
+  "archives": {
+    "off-fp8-eager": "63b38da3bd2d68b1a1c326a59edeaa7f203c42b2585d273f56206b324f961ed1",
+    "off-nvfp4-eager": "7819b351dae5eaa671cf5fdb7fa4083a8f6792bb3cf9c59be980d02254741a64"
+  },
+  "server_command_equal_after_model_path_normalization": true,
+  "server_imports_equal_except_pid": true,
+  "resolved_differences": [
+    [
+      ".internal_states[0].decode_cuda_graph_memory_gb",
+      0.469,
+      0.484
+    ],
+    [
+      ".internal_states[0].memory_usage.graph.decode",
+      0.469,
+      0.484
+    ],
+    [
+      ".internal_states[0].memory_usage.kvcache",
+      43.314,
+      117.18
+    ],
+    [
+      ".internal_states[0].memory_usage.startup_available",
+      51.937,
+      51.775
+    ],
+    [
+      ".internal_states[0].memory_usage.token_capacity",
+      485120,
+      1312576
+    ],
+    [
+      ".internal_states[0].memory_usage.token_capacity_swa",
+      48512,
+      131200
+    ],
+    [
+      ".internal_states[0].memory_usage.token_capacity_window.window_128",
+      48512,
+      131200
+    ],
+    [
+      ".internal_states[0].memory_usage.weight",
+      176.148,
+      102.277
+    ],
+    [
+      ".internal_states[0].model_path",
+      "/scratch/models/GLM-5-1028-Provider",
+      "/scratch/models/GLM-5-1028-Provider-NVFP4-perf"
+    ],
+    [
+      ".internal_states[0].quantization",
+      "fp8",
+      "modelopt_mixed"
+    ],
+    [
+      ".internal_states[0].served_model_name",
+      "/scratch/models/GLM-5-1028-Provider",
+      "/scratch/models/GLM-5-1028-Provider-NVFP4-perf"
+    ],
+    [
+      ".internal_states[0].startup_time.cuda_graph.decode",
+      14.438612143043429,
+      14.47235228982754
+    ],
+    [
+      ".internal_states[0].startup_time.kv_cache_allocation",
+      0.5209101138170809,
+      0.5242294881027192
+    ],
+    [
+      ".internal_states[0].startup_time.load_weight",
+      88.30991723085754,
+      117.56416185502894
+    ],
+    [
+      ".internal_states[0].startup_time.scheduler_e2e",
+      146.56974535179324,
+      221.69573552021757
+    ],
+    [
+      ".internal_states[0].tokenizer_path",
+      "/scratch/models/GLM-5-1028-Provider",
+      "/scratch/models/GLM-5-1028-Provider-NVFP4-perf"
+    ],
+    [
+      ".launch_command",
+      "--model-path /scratch/models/GLM-5-1028-Provider --host 127.0.0.1 --port 31972 --dist-init-addr 127.0.0.1:31973 --mem-fraction-static 0.80 --context-length 32768 --max-running-requests 64 --cuda-graph-max-bs-decode 64 --chunked-prefill-size 8192 --enable-fp32-lm-head --reasoning-parser glm45 --tool-call-parser glm47 --enable-cache-report --enable-metrics --disable-shared-experts-fusion --random-seed 1 --tp-size 4 --moe-runner-backend flashinfer_trtllm --kv-cache-dtype bf16 --dsa-prefill-backend flashmla_sparse --dsa-decode-backend flashmla_sparse --disable-prefill-cuda-graph",
+      "--model-path /scratch/models/GLM-5-1028-Provider-NVFP4-perf --host 127.0.0.1 --port 31972 --dist-init-addr 127.0.0.1:31973 --mem-fraction-static 0.80 --context-length 32768 --max-running-requests 64 --cuda-graph-max-bs-decode 64 --chunked-prefill-size 8192 --enable-fp32-lm-head --reasoning-parser glm45 --tool-call-parser glm47 --enable-cache-report --enable-metrics --disable-shared-experts-fusion --random-seed 1 --tp-size 4 --moe-runner-backend flashinfer_trtllm --kv-cache-dtype bf16 --dsa-prefill-backend flashmla_sparse --dsa-decode-backend flashmla_sparse --disable-prefill-cuda-graph"
+    ],
+    [
+      ".max_total_num_tokens",
+      485120,
+      1312576
+    ],
+    [
+      ".model_path",
+      "/scratch/models/GLM-5-1028-Provider",
+      "/scratch/models/GLM-5-1028-Provider-NVFP4-perf"
+    ],
+    [
+      ".quantization",
+      "fp8",
+      "modelopt_mixed"
+    ],
+    [
+      ".served_model_name",
+      "/scratch/models/GLM-5-1028-Provider",
+      "/scratch/models/GLM-5-1028-Provider-NVFP4-perf"
+    ],
+    [
+      ".startup_time.cuda_graph.decode",
+      14.461541512981057,
+      14.48926475387998
+    ],
+    [
+      ".startup_time.kv_cache_allocation",
+      0.7251215630676597,
+      0.5271884829271585
+    ],
+    [
+      ".startup_time.load_weight",
+      88.45201402180828,
+      117.56416185502894
+    ],
+    [
+      ".startup_time.scheduler_e2e",
+      146.56974535179324,
+      221.69573552021757
+    ],
+    [
+      ".startup_time.tokenizer_e2e",
+      157.3880469009746,
+      232.60057724104263
+    ],
+    [
+      ".tokenizer_path",
+      "/scratch/models/GLM-5-1028-Provider",
+      "/scratch/models/GLM-5-1028-Provider-NVFP4-perf"
+    ]
+  ],
+  "loads": [
+    {
+      "level": 1,
+      "repeat": 1,
+      "requests": 64,
+      "first_turn_input_lengths_equal": true,
+      "output_lengths_equal": true,
+      "changed_history_input_lengths": 37,
+      "max_abs_input_length_delta": 4,
+      "fp8_prompt_tokens": 229751,
+      "nvfp4_prompt_tokens": 229767,
+      "prompt_token_delta_percent": 0.0069640610922259314
+    },
+    {
+      "level": 1,
+      "repeat": 2,
+      "requests": 64,
+      "first_turn_input_lengths_equal": true,
+      "output_lengths_equal": true,
+      "changed_history_input_lengths": 24,
+      "max_abs_input_length_delta": 4,
+      "fp8_prompt_tokens": 229783,
+      "nvfp4_prompt_tokens": 229769,
+      "prompt_token_delta_percent": -0.006092704856320964
+    },
+    {
+      "level": 2,
+      "repeat": 1,
+      "requests": 64,
+      "first_turn_input_lengths_equal": true,
+      "output_lengths_equal": true,
+      "changed_history_input_lengths": 34,
+      "max_abs_input_length_delta": 4,
+      "fp8_prompt_tokens": 229760,
+      "nvfp4_prompt_tokens": 229784,
+      "prompt_token_delta_percent": 0.010445682451253482
+    },
+    {
+      "level": 2,
+      "repeat": 2,
+      "requests": 64,
+      "first_turn_input_lengths_equal": true,
+      "output_lengths_equal": true,
+      "changed_history_input_lengths": 31,
+      "max_abs_input_length_delta": 3,
+      "fp8_prompt_tokens": 229783,
+      "nvfp4_prompt_tokens": 229763,
+      "prompt_token_delta_percent": -0.008703864080458519
+    },
+    {
+      "level": 4,
+      "repeat": 1,
+      "requests": 64,
+      "first_turn_input_lengths_equal": true,
+      "output_lengths_equal": true,
+      "changed_history_input_lengths": 32,
+      "max_abs_input_length_delta": 5,
+      "fp8_prompt_tokens": 229766,
+      "nvfp4_prompt_tokens": 229766,
+      "prompt_token_delta_percent": 0.0
+    },
+    {
+      "level": 4,
+      "repeat": 2,
+      "requests": 64,
+      "first_turn_input_lengths_equal": true,
+      "output_lengths_equal": true,
+      "changed_history_input_lengths": 34,
+      "max_abs_input_length_delta": 3,
+      "fp8_prompt_tokens": 229786,
+      "nvfp4_prompt_tokens": 229765,
+      "prompt_token_delta_percent": -0.009138937968370571
+    },
+    {
+      "level": 8,
+      "repeat": 1,
+      "requests": 64,
+      "first_turn_input_lengths_equal": true,
+      "output_lengths_equal": true,
+      "changed_history_input_lengths": 33,
+      "max_abs_input_length_delta": 4,
+      "fp8_prompt_tokens": 229767,
+      "nvfp4_prompt_tokens": 229769,
+      "prompt_token_delta_percent": 0.0008704470180661278
+    },
+    {
+      "level": 8,
+      "repeat": 2,
+      "requests": 64,
+      "first_turn_input_lengths_equal": true,
+      "output_lengths_equal": true,
+      "changed_history_input_lengths": 34,
+      "max_abs_input_length_delta": 5,
+      "fp8_prompt_tokens": 229757,
+      "nvfp4_prompt_tokens": 229758,
+      "prompt_token_delta_percent": 0.0004352424518077795
+    },
+    {
+      "level": 16,
+      "repeat": 1,
+      "requests": 128,
+      "first_turn_input_lengths_equal": true,
+      "output_lengths_equal": true,
+      "changed_history_input_lengths": 60,
+      "max_abs_input_length_delta": 4,
+      "fp8_prompt_tokens": 459565,
+      "nvfp4_prompt_tokens": 459532,
+      "prompt_token_delta_percent": -0.007180703491345077
+    },
+    {
+      "level": 16,
+      "repeat": 2,
+      "requests": 128,
+      "first_turn_input_lengths_equal": true,
+      "output_lengths_equal": true,
+      "changed_history_input_lengths": 68,
+      "max_abs_input_length_delta": 4,
+      "fp8_prompt_tokens": 459537,
+      "nvfp4_prompt_tokens": 459534,
+      "prompt_token_delta_percent": -0.0006528310016386058
+    },
+    {
+      "level": 32,
+      "repeat": 1,
+      "requests": 256,
+      "first_turn_input_lengths_equal": true,
+      "output_lengths_equal": true,
+      "changed_history_input_lengths": 130,
+      "max_abs_input_length_delta": 4,
+      "fp8_prompt_tokens": 919069,
+      "nvfp4_prompt_tokens": 919058,
+      "prompt_token_delta_percent": -0.0011968633475832608
+    },
+    {
+      "level": 32,
+      "repeat": 2,
+      "requests": 256,
+      "first_turn_input_lengths_equal": true,
+      "output_lengths_equal": true,
+      "changed_history_input_lengths": 118,
+      "max_abs_input_length_delta": 4,
+      "fp8_prompt_tokens": 919110,
+      "nvfp4_prompt_tokens": 919089,
+      "prompt_token_delta_percent": -0.002284819009694161
+    }
+  ],
+  "rows": [
+    {
+      "level": 1,
+      "fp8_total_tps_per_gpu": 561.2085835913769,
+      "nvfp4_total_tps_per_gpu": 579.5583317525886,
+      "nvfp4_gain_percent": 3.2696841598154336,
+      "both_pass": true
+    },
+    {
+      "level": 2,
+      "fp8_total_tps_per_gpu": 873.6207679095301,
+      "nvfp4_total_tps_per_gpu": 906.6835268148664,
+      "nvfp4_gain_percent": 3.784566498396269,
+      "both_pass": true
+    },
+    {
+      "level": 4,
+      "fp8_total_tps_per_gpu": 1476.0995417494735,
+      "nvfp4_total_tps_per_gpu": 1578.6590573567692,
+      "nvfp4_gain_percent": 6.948008092038438,
+      "both_pass": true
+    },
+    {
+      "level": 8,
+      "fp8_total_tps_per_gpu": 2468.417142446897,
+      "nvfp4_total_tps_per_gpu": 2782.778207220092,
+      "nvfp4_gain_percent": 12.735329834145247,
+      "both_pass": true
+    },
+    {
+      "level": 16,
+      "fp8_total_tps_per_gpu": 3552.122271311946,
+      "nvfp4_total_tps_per_gpu": 4168.061927809906,
+      "nvfp4_gain_percent": 17.34004658208086,
+      "both_pass": true
+    },
+    {
+      "level": 32,
+      "fp8_total_tps_per_gpu": 5119.118636171923,
+      "nvfp4_total_tps_per_gpu": 6201.85126277583,
+      "nvfp4_gain_percent": 21.15076253465333,
+      "both_pass": true
+    }
+  ],
+  "workload_sha256": "235ea06164ba2a9f4700d5bee5ca12206a6ea21ed246ed64c8022b3bbb0d8688",
+  "scope": "MTP-off, eager prefill; equal memory fraction, model-dependent KV capacity. Same frozen user-message workload and client commands; first-turn input lengths and every output length match. Later turns include each model's generated assistant history, so prompt tokens can differ. This is a paired conversation deployment comparison, not a byte-identical fixed-prefix kernel measurement. Complete graph comparison and full-model stopping qualification remain separate."
+}

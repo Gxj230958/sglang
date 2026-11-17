@@ -2,7 +2,15 @@
 
 ## Summary
 
-This directory coordinates the release bundle for `zai-org/GLM-5-1028-Provider`. It owns immutable artifact pins, release gates, sign-off, and the three in-repository deliverables: cookbook guidance, Docker material, and the release blog. The delivery is not release-ready. Correctness evidence is pinned to implementation commits `a15aa7c3` and `8451a1bf`; small-head performance used `aabfddd`, and HiCache used `77c2b3bd`, all with model revision `7e66c405`. None is a release cut, and the small-head and HiCache rounds additionally use an unpinned compatibility configuration. The target date, owners, release commit, container image, and release decision are unresolved.
+The [November 18 fallback delivery](2026-11-16-1938-xinyuan-no-code-fallback-delivery.md) targets a GPU-validated feature set, the best usable measured deployment, and a pinned Docker image plus cutoff commit for Z.ai. The accepted candidate freezes after Z.ai benchmarks accuracy.
+
+Delivery status: In progress. `glm-5-lp` is at `4ef2500d29ca90bc415247d5e476fe25ddd47f29` after #85–#87 merged. The cutoff commit, image digest and final default-BCG performance profile remain pending. The [2026-11-17 status refresh](2026-11-17-1646-xinyuan-4ef2500d29-delivery-status-refresh.md) records the exact merges, active test head and remaining gates.
+
+General Performance [E10](../features/p0-general-performance/data/data@2026-11-17-e9a0a0287215c18b08ecb120f9d00db52986052b-h200-delivery/repro.md)–[E13](../features/p0-general-performance/data/data@2026-11-17-e9a0a0287215c18b08ecb120f9d00db52986052b-gb300-fp8kv-breakable/repro.md) now preserve 288 independently audited points and 52,224 successful responses with zero errors or empty outputs across H200, GB300 and B300. E13 shows that FP8 KV works with breakable prefill and that eager prefill caused the earlier natural-MTP deficit. E12's B300 eager results remain historical; final selection uses the active integrated default sweeps.
+
+The #85 H200 minimal-command validation resolves default BCG and self-draft, completes full GSM8K with zero errors and reproduces the same 11/14 image/tool checks as eager. The three solid-colour image failures, stopping qualification, remaining feature coverage and image-level validation remain open. NVFP4 remains performance-only.
+
+Historical candidate `52ef77912fd004f34cfe340b392018632ce69c2c` retains Correctness E22–E28 and the [ARM64 construction evidence](docker/data/data@2026-11-16-52ef77912fd004f34cfe340b392018632ce69c2c-arm64-build/repro.md). Those results are not the release artifact lock. Registry publication and exact-image GPU validation remain pending.
 
 An artifact without an immutable pin and reviewed validation evidence cannot ship.
 
@@ -24,10 +32,10 @@ An artifact without an immutable pin and reviewed validation evidence cannot shi
 | Field | Value |
 |---|---|
 | Model | `zai-org/GLM-5-1028-Provider` |
-| Target date | `<RELEASE_DATE>` |
+| Target date | November 18, 2026 — fallback Docker and cutoff commit to Z.ai |
 | Release owner | `<OWNER>` |
 | Overall status | In progress; not release-ready |
-| Current blocker | Release scope, owners, and gates are undefined. The H200 bring-up ([Correctness E01](../features/p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6/repro.md)) and baseline accuracy plus ordinary decode-graph/MTP smoke ([Correctness E02](../features/p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6-mtp-cuda-graph/repro.md)) have evidence, but release gates are not passed. |
+| Current blocker | Required basic-feature GPU coverage, cutoff quality review, final performance selection and image-level validation remain incomplete. |
 | Release decision | Pending |
 | Decision timestamp | `<YYYY-MM-DD_HHMM_TIMEZONE>` |
 
@@ -77,18 +85,17 @@ An artifact without an immutable pin and reviewed validation evidence cannot shi
 | AgentX performance | `<CODE_SHA>; <MODEL_REVISION>; <IMAGE_DIGEST>` | `<PLATFORM_SET>` | None | `<REVIEWER>` | Not started |
 | Kernel compatibility | `<CODE_SHA>; <IMAGE_DIGEST>` | `<PLATFORM_SET>` | [Kernel Optimization E01](../features/p0-kernel-opt/data/data@2026-11-06-aabfddd8214bee95b6b526af5f77c81398bda133-small-head-prefill/repro.md): exact parity in 36/36 B300 cases; upstream and remaining-platform validation pending | `<REVIEWER>` | In progress |
 | Speculative decoding | `<CODE_SHA>; <MODEL_REVISION>; <DRAFT_MODEL_REVISION>` | `<PLATFORM_SET>` | [Correctness E02](../features/p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6-mtp-cuda-graph/repro.md): built-in NextN/MTP returned `accept len=2.27` with `cuda graph: True`; performance and release handoff remain open | `<REVIEWER>` | In progress |
-| Docker runtime | `<IMAGE_DIGEST>; <MODEL_REVISION>` | `<PLATFORM_SET>` | None; no image has been built | `<REVIEWER>` | Not started |
+| Docker runtime | `<IMAGE_DIGEST>; <MODEL_REVISION>` | `<PLATFORM_SET>` | [ARM64 construction checks](docker/data/data@2026-11-16-52ef77912fd004f34cfe340b392018632ce69c2c-arm64-build/repro.md) passed; published-digest GPU validation pending | `<REVIEWER>` | Not started |
 
 ## Delivery Stages
 
-### Stage 1: Freeze release scope — Not started
+### Stage 1: Freeze release scope — In progress
 
-- [ ] Name all required capabilities and supported platforms.
-- [ ] Assign owners and reviewers.
-- [ ] Define correctness, performance, compatibility, and publication gates.
-- [ ] Record explicit out-of-scope items.
-- Missing release gates: text accuracy and stop rate; reasoning and tool-call API behavior; MTP; CUDA graph replay; required parallel, KV-cache, and disaggregated configurations; general and AgentX performance; Docker runtime.
-- Next action: name the release owner, target date, required platforms, and required capabilities, then define the gates above.
+- [x] Set the November 18 fallback deadline and feature-first execution order ([decision](2026-11-16-1938-xinyuan-no-code-fallback-delivery.md), November 16).
+- [ ] Complete the required capability/platform matrix and record unsupported cells.
+- [ ] Assign remaining owners and reviewers.
+- [ ] Review correctness and finish-reason limits against the intended cutoff.
+- [ ] Confirm the performance profile and image-level gates for the fallback handoff.
 
 ### Stage 2: Lock code and model artifacts — In progress
 
@@ -103,7 +110,7 @@ An artifact without an immutable pin and reviewed validation evidence cannot shi
 - [ ] Pass `features/p0-correctness/` gates on locked artifacts.
 - Bring-up evidence: [Correctness E01](../features/p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6/repro.md); no release gate has passed.
 - [ ] Pass `features/p0-general-performance/` gates on locked artifacts.
-- [ ] Pass `features/p0-agentx-performance/` gates on locked artifacts.
+- AgentX performance remains deferred for this fallback delivery.
 - [ ] Pass `features/p0-kernel-opt/` compatibility gates.
 - [ ] Pass speculative-decoding training and inference handoff gates.
 - [ ] Resolve every missing matrix cell with an explicit release decision.
@@ -116,13 +123,14 @@ An artifact without an immutable pin and reviewed validation evidence cannot shi
 - [ ] Publish immutable image digests and verify registry metadata.
 - [ ] Record rollback images and procedures.
 
-### Stage 5: Finalize cookbook — Not started
+### Stage 5: Finalize cookbook — In progress
 
-- [ ] Document installation and prerequisites.
-- [ ] Publish validated launch profiles by workload and platform.
-- [ ] Include correctness checks, tuning, troubleshooting, and fallbacks.
+- [x] Prepare a local documentation-only branch with deployment and benchmark pages (xinyuan, 2026-11-17).
+- [x] Validate the Mintlify build, links, configuration generator and 69 node tests on the draft (xinyuan, 2026-11-17).
+- [ ] Refresh the launch profiles and performance cells from the integrated default sweeps.
+- [ ] Replace the model-name placeholder only after the public name and repository are confirmed.
 - [ ] Bind every command to locked artifacts.
-- [ ] Complete technical and user review.
+- [ ] Complete technical and user review before publication.
 
 ### Stage 6: Finalize blog — Not started
 

@@ -1,0 +1,112 @@
+{
+  "runtime": "52ef77912fd004f34cfe340b392018632ce69c2c",
+  "precision": "fp8",
+  "requests_per_arm": 22,
+  "service_difference": {
+    "cp_strategy": [
+      "interleave",
+      null
+    ],
+    "enable_prefill_cp": [
+      true,
+      false
+    ],
+    "attn_cp_size": [
+      4,
+      1
+    ]
+  },
+  "same_normalized_service_arguments": true,
+  "same_request_hashes": true,
+  "arms": {
+    "cp4": {
+      "runtime": "52ef77912fd004f34cfe340b392018632ce69c2c",
+      "arm": "cp4",
+      "precision": "fp8",
+      "requests": 22,
+      "exact_stopped": 22,
+      "cache_conditions_passed": 22,
+      "all_passed": true,
+      "failures": [],
+      "raw_files": 100,
+      "archive_sha256": "238a62354cb020999dae3fc43a5c8c50e35bb4389604bfc3d50a9d3b203a273a",
+      "gpu_samples": 267,
+      "gpu_process_records": 1068,
+      "foreign_records": 0,
+      "sampling_tail_gap_seconds": 0,
+      "http_statuses": {
+        "200": 23
+      },
+      "http_by_phase": {
+        "startup": {
+          "200": 1
+        },
+        "diagnostic": {
+          "200": 22
+        },
+        "after": {}
+      }
+    },
+    "tp4": {
+      "runtime": "52ef77912fd004f34cfe340b392018632ce69c2c",
+      "arm": "tp4",
+      "precision": "fp8",
+      "requests": 22,
+      "exact_stopped": 20,
+      "cache_conditions_passed": 22,
+      "all_passed": false,
+      "failures": [
+        {
+          "index": 14,
+          "phase": "original_sequence",
+          "target": 60000,
+          "record": 4612,
+          "expected": "512401",
+          "actual": "",
+          "finish_reason": "length",
+          "prompt_tokens": 64738,
+          "cached_tokens": 64704,
+          "exact_stopped": false,
+          "cache_passed": true,
+          "passed": false,
+          "request_sha256": "61943476434fba1a03599106c06de7a0ebf7ee5d84686e3af338d52996f7e8cd"
+        },
+        {
+          "index": 21,
+          "phase": "long_sequence",
+          "target": 110000,
+          "record": 8458,
+          "expected": "968427",
+          "actual": "",
+          "finish_reason": "length",
+          "prompt_tokens": 120936,
+          "cached_tokens": 120896,
+          "exact_stopped": false,
+          "cache_passed": true,
+          "passed": false,
+          "request_sha256": "15cfcca73ba9b768a040dbd9511e9858b9fd2a414d0a5805d2b4d71a5ceaa32d"
+        }
+      ],
+      "raw_files": 100,
+      "archive_sha256": "61ef7c54569349b7e1259091e4a1a52fc7579343e62ebc537969503ce356c379",
+      "gpu_samples": 255,
+      "gpu_process_records": 1026,
+      "foreign_records": 0,
+      "sampling_tail_gap_seconds": 0,
+      "http_statuses": {
+        "200": 23
+      },
+      "http_by_phase": {
+        "startup": {
+          "200": 1
+        },
+        "diagnostic": {
+          "200": 22
+        },
+        "after": {}
+      }
+    }
+  },
+  "both_all_passed": false,
+  "scope": "Matched fresh-server CP4/TP4 diagnosis. The original post-full-GSM8K wrong answer remains an unreproduced observation; this comparison does not establish a fix or attribute its cause."
+}

@@ -1,0 +1,196 @@
+{
+  "candidate": "nvfp4-kv-bf16-mtp-off",
+  "requests": 1280,
+  "loads": 12,
+  "natural_sanity_stops": 3,
+  "rows": [
+    {
+      "score": 580.6988843124011,
+      "ttft": 0.38066136292181907,
+      "interactivity": 102.5658083014477,
+      "accept_length": 0.0,
+      "level": 1,
+      "repeats": [
+        {
+          "score": 580.6957255664539,
+          "ttft": 0.3813260246068239,
+          "interactivity": 102.59498434216628,
+          "accept_length": 0,
+          "intervals": 8088
+        },
+        {
+          "score": 580.7020430583484,
+          "ttft": 0.3799967012368143,
+          "interactivity": 102.53663226072912,
+          "accept_length": 0,
+          "intervals": 8091
+        }
+      ],
+      "pass": true
+    },
+    {
+      "score": 904.3880253382379,
+      "ttft": 0.7358888372895308,
+      "interactivity": 90.56114029223656,
+      "accept_length": 0.0,
+      "level": 2,
+      "repeats": [
+        {
+          "score": 902.2320559356848,
+          "ttft": 0.7331618700176478,
+          "interactivity": 90.54760734295036,
+          "accept_length": 0,
+          "intervals": 8091
+        },
+        {
+          "score": 906.543994740791,
+          "ttft": 0.7386158045614138,
+          "interactivity": 90.57467324152277,
+          "accept_length": 0,
+          "intervals": 8087
+        }
+      ],
+      "pass": true
+    },
+    {
+      "score": 1579.7951157061507,
+      "ttft": 0.75136323539773,
+      "interactivity": 77.45310938520349,
+      "accept_length": 0.0,
+      "level": 4,
+      "repeats": [
+        {
+          "score": 1580.2826619989926,
+          "ttft": 0.7455614091129974,
+          "interactivity": 77.51518296215795,
+          "accept_length": 0,
+          "intervals": 8090
+        },
+        {
+          "score": 1579.3075694133088,
+          "ttft": 0.7571650616824627,
+          "interactivity": 77.39103580824903,
+          "accept_length": 0,
+          "intervals": 8091
+        }
+      ],
+      "pass": true
+    },
+    {
+      "score": 2783.2453805319337,
+      "ttft": 1.0145774887991148,
+      "interactivity": 66.21357790486752,
+      "accept_length": 0.0,
+      "level": 8,
+      "repeats": [
+        {
+          "score": 2779.89095002428,
+          "ttft": 1.0049415706656883,
+          "interactivity": 66.1596338974329,
+          "accept_length": 0,
+          "intervals": 8090
+        },
+        {
+          "score": 2786.5998110395876,
+          "ttft": 1.0242134069325413,
+          "interactivity": 66.26752191230214,
+          "accept_length": 0,
+          "intervals": 8090
+        }
+      ],
+      "pass": true
+    },
+    {
+      "score": 4177.405788465839,
+      "ttft": 1.43493853242835,
+      "interactivity": 53.24184333204474,
+      "accept_length": 0.0,
+      "level": 16,
+      "repeats": [
+        {
+          "score": 4216.700394835541,
+          "ttft": 1.3111064716009415,
+          "interactivity": 53.361358194889604,
+          "accept_length": 0,
+          "intervals": 16182
+        },
+        {
+          "score": 4138.111182096136,
+          "ttft": 1.5587705932557583,
+          "interactivity": 53.122328469199864,
+          "accept_length": 0,
+          "intervals": 16161
+        }
+      ],
+      "pass": true
+    },
+    {
+      "score": 6172.383870082315,
+      "ttft": 2.04184634500416,
+      "interactivity": 41.54876675742073,
+      "accept_length": 0.0,
+      "level": 32,
+      "repeats": [
+        {
+          "score": 6197.25246295665,
+          "ttft": 2.0374255480710417,
+          "interactivity": 41.55814361174649,
+          "accept_length": 0,
+          "intervals": 32356
+        },
+        {
+          "score": 6147.515277207981,
+          "ttft": 2.046267141937278,
+          "interactivity": 41.53938990309497,
+          "accept_length": 0,
+          "intervals": 32353
+        }
+      ],
+      "pass": true
+    }
+  ],
+  "best_passing": {
+    "score": 6172.383870082315,
+    "ttft": 2.04184634500416,
+    "interactivity": 41.54876675742073,
+    "accept_length": 0.0,
+    "level": 32,
+    "repeats": [
+      {
+        "score": 6197.25246295665,
+        "ttft": 2.0374255480710417,
+        "interactivity": 41.55814361174649,
+        "accept_length": 0,
+        "intervals": 32356
+      },
+      {
+        "score": 6147.515277207981,
+        "ttft": 2.046267141937278,
+        "interactivity": 41.53938990309497,
+        "accept_length": 0,
+        "intervals": 32353
+      }
+    ],
+    "pass": true
+  },
+  "archive_sha256": "5a0213edfe2ed4176842cdfe568f2c34fa3622a0d17220f98a4b9ebb92167d27",
+  "token_count_provenance": "MTP-off client uses raw inter-token intervals without the natural-MTP token-count normalization. Captured request ITLs and TTFTs match the raw benchmark arrays.",
+  "resolved_checked": {
+    "tp_size": 4,
+    "ep_size": 1,
+    "attn_dp_size": 1,
+    "moe_runner_backend": "flashinfer_trtllm",
+    "dsa_prefill_backend": "flashmla_sparse",
+    "dsa_decode_backend": "flashmla_sparse",
+    "kv_cache_dtype": "bfloat16",
+    "speculative_algorithm": null,
+    "disable_hybrid_swa_memory": false,
+    "random_seed": 1
+  },
+  "gpu_ownership_samples": 475,
+  "gpu_ownership_failures": 0,
+  "rust_extension_sha256": [
+    "c933d62cbea75638fc7a1c4c1e114cac83fe7e149cfc65591492252ec5536055"
+  ],
+  "server_random_seed": 1
+}

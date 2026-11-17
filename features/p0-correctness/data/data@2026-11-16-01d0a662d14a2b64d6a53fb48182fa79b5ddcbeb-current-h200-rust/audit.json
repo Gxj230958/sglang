@@ -1,0 +1,70 @@
+{
+  "runtime": "01d0a662d14a2b64d6a53fb48182fa79b5ddcbeb",
+  "rows": 1319,
+  "correct": 1258,
+  "score": 0.9537528430629265,
+  "finish_reasons": {
+    "stop": 1317,
+    "length": 2
+  },
+  "stop_rate": 0.9984836997725549,
+  "length_rows": [
+    {
+      "id": "gsm8k-487",
+      "tokens": 32768,
+      "correct": true
+    },
+    {
+      "id": "gsm8k-505",
+      "tokens": 32768,
+      "correct": false
+    }
+  ],
+  "sampling": {
+    "chat_template_kwargs": null,
+    "extra_body": null,
+    "max_tokens": 32768,
+    "min_p": 0.0,
+    "reasoning_effort": null,
+    "repetition_penalty": 1.0,
+    "seed": 1,
+    "system_message": null,
+    "temperature": 1.0,
+    "top_p": 0.95
+  },
+  "resolved": {
+    "tp_size": 8,
+    "ep_size": 1,
+    "attn_dp_size": 1,
+    "kv_cache_dtype": "bfloat16",
+    "dsa_prefill_backend": "flashmla_sparse",
+    "dsa_decode_backend": "flashmla_sparse",
+    "moe_runner_backend": "auto",
+    "context_length": 65536,
+    "mem_fraction_static": 0.75,
+    "chunked_prefill_size": 32768,
+    "max_running_requests": 32,
+    "random_seed": 1,
+    "speculative_algorithm": "EAGLE",
+    "speculative_num_steps": 3,
+    "speculative_eagle_topk": 1,
+    "speculative_num_draft_tokens": 4,
+    "speculative_draft_model_quantization": "fp8",
+    "disable_prefill_cuda_graph": true
+  },
+  "eight_live_rust_workers_verified": true,
+  "gpu_samples": 596,
+  "gpu_process_records": 5345,
+  "sampling_errors": [],
+  "measurement_sampling_errors": [],
+  "counters": {
+    "generation_tokens_total": 586503.0,
+    "spec_verify_calls_total": 213896.0
+  },
+  "counter_derived_natural_acceptance": 2.7420007854284325,
+  "prediction_completion_tokens": 586503,
+  "archive_sha256": "99b0b13ece35ee265c512f8fc1df6e79cd3b8f2e76b9e7819ad8ed9cb5b24a8a",
+  "raw_files": 50,
+  "all_requests_stopped": false,
+  "scope": "One current-head FP8 correctness run with explicit seed and output bound. Historical H200 E20 uses different source, seed and output bound; it is not a controlled cross-revision comparison. NVFP4 performance qualification is separate."
+}

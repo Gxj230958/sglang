@@ -1,0 +1,26 @@
+{
+  "observed_at": 1794928969.0343874,
+  "root": "/tmp/glm5lp-fp8kv-bcg-perf-e9a0a02872",
+  "runtime": "e9a0a0287215c18b08ecb120f9d00db52986052b",
+  "source": "/scratch/glm5lp-delivery-sweep-e9a0a02872/src",
+  "configs": [
+    {
+      "file": "natural.json",
+      "sha256": "31eff30e973b2c7bc6f18d0e8b293ec9d56cd47236f28dd10ae7caa8fc989e0b",
+      "candidates": [
+        "fp8-fp8_e4m3-breakable-mtp-natural",
+        "nvfp4-fp8_e4m3-breakable-mtp-natural"
+      ]
+    },
+    {
+      "file": "mtp-off.json",
+      "sha256": "a6d61cbfb197da3750f0cd66268ebba795644e900319d7ad517ed672ca85966c",
+      "candidates": [
+        "fp8-fp8_e4m3-breakable-mtp-off",
+        "nvfp4-fp8_e4m3-breakable-mtp-off"
+      ]
+    }
+  ],
+  "starts": 4,
+  "manifest_sha256": "05a187e6aee7b3dbf072a9e483a9b5b7a0de18c77b763d24ebabb573ba1ce764"
+}

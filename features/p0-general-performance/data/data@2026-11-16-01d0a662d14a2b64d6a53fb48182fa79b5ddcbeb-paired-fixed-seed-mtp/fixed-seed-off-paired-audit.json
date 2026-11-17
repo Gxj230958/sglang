@@ -1,0 +1,167 @@
+{
+  "runtime": "01d0a662d14a2b64d6a53fb48182fa79b5ddcbeb",
+  "server_seed": 1,
+  "request_seeds": [
+    1,
+    2
+  ],
+  "workload_sha256": "235ea06164ba2a9f4700d5bee5ca12206a6ea21ed246ed64c8022b3bbb0d8688",
+  "loads": 48,
+  "requests": 5120,
+  "natural_sanity_stops": 12,
+  "pairs": {
+    "bf16": {
+      "rows": [
+        {
+          "concurrency": 1,
+          "fp8_total_tps_per_gpu": 561.9742453425615,
+          "nvfp4_total_tps_per_gpu": 580.6988843124011,
+          "nvfp4_gain_percent": 3.3319389856425907,
+          "fp8_ttft_p90_s": 0.369052052940242,
+          "nvfp4_ttft_p90_s": 0.38066136292181907,
+          "fp8_interactivity_p90": 97.43851592654138,
+          "nvfp4_interactivity_p90": 102.5658083014477,
+          "both_pass": true
+        },
+        {
+          "concurrency": 2,
+          "fp8_total_tps_per_gpu": 863.4839077442675,
+          "nvfp4_total_tps_per_gpu": 904.3880253382379,
+          "nvfp4_gain_percent": 4.737102478357325,
+          "fp8_ttft_p90_s": 0.712615775957238,
+          "nvfp4_ttft_p90_s": 0.7358888372895308,
+          "fp8_interactivity_p90": 84.91148651371043,
+          "nvfp4_interactivity_p90": 90.56114029223656,
+          "both_pass": true
+        },
+        {
+          "concurrency": 4,
+          "fp8_total_tps_per_gpu": 1477.9285010199887,
+          "nvfp4_total_tps_per_gpu": 1579.7951157061507,
+          "nvfp4_gain_percent": 6.892526574584568,
+          "fp8_ttft_p90_s": 0.739641164825298,
+          "nvfp4_ttft_p90_s": 0.75136323539773,
+          "fp8_interactivity_p90": 69.56925450208315,
+          "nvfp4_interactivity_p90": 77.45310938520349,
+          "both_pass": true
+        },
+        {
+          "concurrency": 8,
+          "fp8_total_tps_per_gpu": 2458.4981923801233,
+          "nvfp4_total_tps_per_gpu": 2783.2453805319337,
+          "nvfp4_gain_percent": 13.209169287101075,
+          "fp8_ttft_p90_s": 1.1157563691842376,
+          "nvfp4_ttft_p90_s": 1.0145774887991148,
+          "fp8_interactivity_p90": 55.38067752776898,
+          "nvfp4_interactivity_p90": 66.21357790486752,
+          "both_pass": true
+        },
+        {
+          "concurrency": 16,
+          "fp8_total_tps_per_gpu": 3535.3199168875854,
+          "nvfp4_total_tps_per_gpu": 4177.405788465839,
+          "nvfp4_gain_percent": 18.162030217155877,
+          "fp8_ttft_p90_s": 1.7001028859172949,
+          "nvfp4_ttft_p90_s": 1.43493853242835,
+          "fp8_interactivity_p90": 42.349192819068236,
+          "nvfp4_interactivity_p90": 53.24184333204474,
+          "both_pass": true
+        },
+        {
+          "concurrency": 32,
+          "fp8_total_tps_per_gpu": 5115.697551114266,
+          "nvfp4_total_tps_per_gpu": 6172.383870082315,
+          "nvfp4_gain_percent": 20.65576215970564,
+          "fp8_ttft_p90_s": 2.350613975955639,
+          "nvfp4_ttft_p90_s": 2.04184634500416,
+          "fp8_interactivity_p90": 32.13884544249119,
+          "nvfp4_interactivity_p90": 41.54876675742073,
+          "both_pass": true
+        }
+      ],
+      "archives": {
+        "fp8-bf16": "49f600397ea26be89be8609a35d7e3bbdf08770fd2b77c0d228059231e48ea81",
+        "nvfp4-bf16": "5a0213edfe2ed4176842cdfe568f2c34fa3622a0d17220f98a4b9ebb92167d27"
+      },
+      "server_client_arguments_matched": true,
+      "versions_environment_matched": true
+    },
+    "fp8kv": {
+      "rows": [
+        {
+          "concurrency": 1,
+          "fp8_total_tps_per_gpu": 528.1528193153226,
+          "nvfp4_total_tps_per_gpu": 546.764195856415,
+          "nvfp4_gain_percent": 3.5238620074431237,
+          "fp8_ttft_p90_s": 0.3881166574312374,
+          "nvfp4_ttft_p90_s": 0.3976132093463093,
+          "fp8_interactivity_p90": 91.42662743978066,
+          "nvfp4_interactivity_p90": 96.19036892273746,
+          "both_pass": true
+        },
+        {
+          "concurrency": 2,
+          "fp8_total_tps_per_gpu": 824.8627005585338,
+          "nvfp4_total_tps_per_gpu": 865.4105125451416,
+          "nvfp4_gain_percent": 4.9157043904581865,
+          "fp8_ttft_p90_s": 0.7522345721372403,
+          "nvfp4_ttft_p90_s": 0.768582335487008,
+          "fp8_interactivity_p90": 80.42694941382274,
+          "nvfp4_interactivity_p90": 85.40617514700416,
+          "both_pass": true
+        },
+        {
+          "concurrency": 4,
+          "fp8_total_tps_per_gpu": 1413.9910997351822,
+          "nvfp4_total_tps_per_gpu": 1507.6961307818588,
+          "nvfp4_gain_percent": 6.62698874584331,
+          "fp8_ttft_p90_s": 0.768248392501846,
+          "nvfp4_ttft_p90_s": 0.7781682768953033,
+          "fp8_interactivity_p90": 66.56598529904049,
+          "nvfp4_interactivity_p90": 73.65806150887686,
+          "both_pass": true
+        },
+        {
+          "concurrency": 8,
+          "fp8_total_tps_per_gpu": 2399.254856228398,
+          "nvfp4_total_tps_per_gpu": 2680.7371471127517,
+          "nvfp4_gain_percent": 11.732071320128167,
+          "fp8_ttft_p90_s": 0.9018358316039672,
+          "nvfp4_ttft_p90_s": 0.9102871467941445,
+          "fp8_interactivity_p90": 53.7747380160957,
+          "nvfp4_interactivity_p90": 63.82442800811236,
+          "both_pass": true
+        },
+        {
+          "concurrency": 16,
+          "fp8_total_tps_per_gpu": 3419.8627481488447,
+          "nvfp4_total_tps_per_gpu": 3996.7162946632625,
+          "nvfp4_gain_percent": 16.86773970173703,
+          "fp8_ttft_p90_s": 1.6508795654983262,
+          "nvfp4_ttft_p90_s": 1.5824554468272254,
+          "fp8_interactivity_p90": 40.63076167363664,
+          "nvfp4_interactivity_p90": 50.57874468653162,
+          "both_pass": true
+        },
+        {
+          "concurrency": 32,
+          "fp8_total_tps_per_gpu": 5260.893184437461,
+          "nvfp4_total_tps_per_gpu": 6264.4488579839945,
+          "nvfp4_gain_percent": 19.075766003294014,
+          "fp8_ttft_p90_s": 2.140693007502705,
+          "nvfp4_ttft_p90_s": 2.0289898347691633,
+          "fp8_interactivity_p90": 32.499927196209505,
+          "nvfp4_interactivity_p90": 42.51905290255112,
+          "both_pass": true
+        }
+      ],
+      "archives": {
+        "fp8-fp8kv": "6847748001c4c1bdace446fde96d409d0d0be498f965c933e268a0fa2f20a60c",
+        "nvfp4-fp8kv": "07c03a4e3f59541e18598814c68a15732dad77b7b3700c7248d25daa2a69dcd5"
+      },
+      "server_client_arguments_matched": true,
+      "versions_environment_matched": true
+    }
+  },
+  "scope": "Fixed-seed MTP-off phase only. Controlled acceptance 3.5 is recorded separately in this round. Two-repeat medians; no statistical significance or release-quality claim."
+}

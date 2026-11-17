@@ -1,0 +1,122 @@
+{
+  "correctness.json": {
+    "bytes": 64,
+    "sha256": "5f5fb8f56ff8d267eb613172d699a783e99c4be51b2efeb76181f190e5e8e1e0"
+  },
+  "correctness.log": {
+    "bytes": 57,
+    "sha256": "92f6d215f833953e31d047f3cf2db0efadc0b9d9c5b52e7de9ff12f10ef39ac1"
+  },
+  "correctness.process.json": {
+    "bytes": 1745,
+    "sha256": "34013b87479f21bc528f143a120b5f280278c166a7747892bc94f9dd6a28e7a4"
+  },
+  "get_server_info.txt": {
+    "bytes": 98833,
+    "sha256": "adf8897aafc2ccab7661d3565572e46a0c3d8e593705c9cc35697400c4144592"
+  },
+  "gpu-before.json": {
+    "bytes": 481,
+    "sha256": "47ded46846cb0a50457d749e49878d0943826add54232c97c74af2328ec2a15e"
+  },
+  "gpu-samples.jsonl": {
+    "bytes": 128107,
+    "sha256": "990303f12a3b40e5512643752a88b4f73cb6049f4a74a747716f90edd53b50d8"
+  },
+  "level-1/repeat-1/bench.jsonl": {
+    "bytes": 210195,
+    "sha256": "d2e9fd9d48eac6d88847643d22ff0f8288110f01558cabf05ff9d890afb89717"
+  },
+  "level-1/repeat-1/client-command.json": {
+    "bytes": 1186,
+    "sha256": "4d39029e0b9d527ac42b938c7df2be363b72c4f31cac0218089754ef866e89cd"
+  },
+  "level-1/repeat-1/get_server_info.txt": {
+    "bytes": 99054,
+    "sha256": "e799b76754c2441860aba2e208ac850dc2d1dbeb520643038978cf071b75401b"
+  },
+  "level-1/repeat-1/load.log": {
+    "bytes": 9163,
+    "sha256": "68a61fa818544d90b6ebd1a37c1a84c1b7d4f1028955fc22aa33fcb61cbb2b0e"
+  },
+  "level-1/repeat-1/load.process.json": {
+    "bytes": 1125,
+    "sha256": "197ae549d1566aa0fc1f72024a1995268f7002a01308e6d402194e2c4fcc8e9f"
+  },
+  "level-1/repeat-1/metrics-before.txt": {
+    "bytes": 284017,
+    "sha256": "2cf9edc47a12829ee5265932f25676a5739abcae1491eaea4b6a37bc040f9bbc"
+  },
+  "level-1/repeat-1/metrics.txt": {
+    "bytes": 340639,
+    "sha256": "bdbdfaabd6d84cea184f9bde51ad1822e3cfadd1b2894fa3151f759597d5f0e5"
+  },
+  "level-1/repeat-1/requests.jsonl": {
+    "bytes": 107637,
+    "sha256": "e347d8d811afb940b9fcee4002e8daae0678882aa83b263188054cd341fa4e4d"
+  },
+  "level-1/repeat-1/result.json": {
+    "bytes": 1060,
+    "sha256": "94ab50e0c81a98a816371d1e646a45dff771186326de2092d6818ce2c2e54c8f"
+  },
+  "level-1/repeat-1/stream-audit.json": {
+    "bytes": 179,
+    "sha256": "3d287a1302353aed4c04e95a9b0c59fb2128e6c3237179f5dfbc56aff909fa68"
+  },
+  "level-1/repeat-1/stream-chunks.json": {
+    "bytes": 126783,
+    "sha256": "342f0bef4b1115efdb8f9cf0c8f07b9afef978c6a424d81bc6387b1e528a8fb9"
+  },
+  "level-1/repeat-1/summary.json": {
+    "bytes": 454,
+    "sha256": "e0c8ec65cfa0f858f721b7037c22c3a655c1972ea2e91030225b6c41a2aff624"
+  },
+  "level-1/result.json": {
+    "bytes": 816,
+    "sha256": "87550e7f6392268769972fa2e478f7c4b75640d14fe973d4505f8f37243c416e"
+  },
+  "metrics.txt": {
+    "bytes": 283933,
+    "sha256": "91d264be23fc013c384c388cb23108c835452c7637d9568e71372e4b9140a20d"
+  },
+  "replica-0.log": {
+    "bytes": 163797,
+    "sha256": "17d8f0d3df920a65f696591e9bc9f23f2f2cc3237f31c3a8a1ffd0f1c20966bc"
+  },
+  "replica-0.process.json": {
+    "bytes": 2285,
+    "sha256": "7d21e29be1be906b3d320e3981cfb3ad2580b0f7e7c80263454263c58260bde3"
+  },
+  "resolved-before-load.json": {
+    "bytes": 127756,
+    "sha256": "c081f69850fb1938f0c61f26a902ed8f6664f2ec55bb37efc06016e18e3bd648"
+  },
+  "result.json": {
+    "bytes": 2587,
+    "sha256": "9747be3238e5f52069d5de5898a26e35036b22f14607daa346158e8d7ab90b53"
+  },
+  "runtime-evidence.json": {
+    "bytes": 3050,
+    "sha256": "03feb0b4a6d7806005a66ae6c4b32f6bf1cd13d6475716ce687fab799f0afca3"
+  },
+  "sanity-requests.json": {
+    "bytes": 3582,
+    "sha256": "01c184cfe15fa683f64390bba7ada83fa7e507208039015e44754d5fce04ad20"
+  },
+  "server-imports.json": {
+    "bytes": 943,
+    "sha256": "95d28303ff30b835944642429911b428a3bdfe46ea5196ff40608557b9bf1908"
+  },
+  "tree-core.json": {
+    "bytes": 2334,
+    "sha256": "c3d0bef20202791688347321ef1c58c95c8e71d7cd74633a8b834f5d326c721c"
+  },
+  "warmup.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "warmup.process.json": {
+    "bytes": 1750,
+    "sha256": "f50d907923f5951992dc57235456f64e2712a5db9158baae0b3c348214afeadd"
+  }
+}

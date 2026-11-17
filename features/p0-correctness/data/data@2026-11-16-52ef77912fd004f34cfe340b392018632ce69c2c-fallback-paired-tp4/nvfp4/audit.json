@@ -1,0 +1,101 @@
+{
+  "runtime": "52ef77912fd004f34cfe340b392018632ce69c2c",
+  "rows": 1319,
+  "correct": 1240,
+  "score": 0.9401061410159212,
+  "finish_reasons": {
+    "stop": 1312,
+    "length": 7
+  },
+  "stop_rate": 0.9946929492039424,
+  "length_rows": [
+    {
+      "id": "gsm8k-119",
+      "tokens": 32768,
+      "correct": false
+    },
+    {
+      "id": "gsm8k-505",
+      "tokens": 32768,
+      "correct": false
+    },
+    {
+      "id": "gsm8k-835",
+      "tokens": 32768,
+      "correct": false
+    },
+    {
+      "id": "gsm8k-675",
+      "tokens": 32768,
+      "correct": false
+    },
+    {
+      "id": "gsm8k-926",
+      "tokens": 32768,
+      "correct": false
+    },
+    {
+      "id": "gsm8k-1052",
+      "tokens": 32768,
+      "correct": false
+    },
+    {
+      "id": "gsm8k-1176",
+      "tokens": 32768,
+      "correct": false
+    }
+  ],
+  "sampling": {
+    "chat_template_kwargs": null,
+    "extra_body": null,
+    "max_tokens": 32768,
+    "min_p": 0.0,
+    "reasoning_effort": null,
+    "repetition_penalty": 1.0,
+    "seed": 1,
+    "system_message": null,
+    "temperature": 1.0,
+    "top_p": 0.95
+  },
+  "resolved": {
+    "tp_size": 4,
+    "ep_size": 1,
+    "attn_dp_size": 1,
+    "kv_cache_dtype": "bfloat16",
+    "dsa_prefill_backend": "flashmla_sparse",
+    "dsa_decode_backend": "flashmla_sparse",
+    "moe_runner_backend": "flashinfer_trtllm",
+    "context_length": 65536,
+    "mem_fraction_static": 0.8,
+    "chunked_prefill_size": 8192,
+    "max_running_requests": 64,
+    "random_seed": 1,
+    "speculative_algorithm": "EAGLE",
+    "speculative_num_steps": 3,
+    "speculative_eagle_topk": 1,
+    "speculative_num_draft_tokens": 4,
+    "speculative_draft_model_quantization": "fp8",
+    "disable_prefill_cuda_graph": true
+  },
+  "live_rust_workers_verified": 4,
+  "precision": "nvfp4",
+  "arm": "tp4",
+  "gpu_samples": 613,
+  "gpu_process_records": 2823,
+  "sampling_errors": [],
+  "measurement_sampling_errors": [],
+  "counters": {
+    "generation_tokens_total": 751377.0,
+    "spec_verify_calls_total": 284647.0
+  },
+  "counter_derived_natural_acceptance": 2.639680024732388,
+  "prediction_completion_tokens": 751377,
+  "archive_sha256": "bd70da89f98de923dbf7161788a828cc9157e642b09f529034c2a34747d89c16",
+  "raw_files": 52,
+  "chat_http_statuses": {
+    "200": 1320
+  },
+  "failed_http_attempts": 0,
+  "all_requests_stopped": false,
+  "scope": "One candidate correctness run with explicit seed and output bound; single-run variation remains. Image-level qualification and bounded performance selection require separate evidence."
+}

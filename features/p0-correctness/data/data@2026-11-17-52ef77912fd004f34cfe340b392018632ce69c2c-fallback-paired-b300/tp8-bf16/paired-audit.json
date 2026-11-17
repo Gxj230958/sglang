@@ -1,0 +1,284 @@
+{
+  "runtime": "52ef77912fd004f34cfe340b392018632ce69c2c",
+  "arm": "tp8-bf16",
+  "matched_source_dependencies_draft_service_evaluation": true,
+  "normalized_commands": {
+    "launch": [
+      "/opt/sglang/bin/python",
+      "TASK/server.py",
+      "TASK/results/tp8-bf16",
+      "--model-path",
+      "TARGET_MODEL",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "32190",
+      "--dist-init-addr",
+      "127.0.0.1:32191",
+      "--max-running-requests",
+      "32",
+      "--cuda-graph-max-bs-decode",
+      "32",
+      "--disable-prefill-cuda-graph",
+      "--enable-cache-report",
+      "--reasoning-parser",
+      "glm45",
+      "--tool-call-parser",
+      "glm47",
+      "--enable-metrics",
+      "--speculative-algorithm",
+      "EAGLE",
+      "--speculative-num-steps",
+      "3",
+      "--speculative-eagle-topk",
+      "1",
+      "--speculative-num-draft-tokens",
+      "4",
+      "--speculative-draft-model-path",
+      "/scratch/models/GLM-5-1028-Provider",
+      "--speculative-draft-model-quantization",
+      "fp8",
+      "--random-seed",
+      "1",
+      "--moe-runner-backend",
+      "flashinfer_trtllm",
+      "--disable-shared-experts-fusion",
+      "--dsa-prefill-backend",
+      "flashmla_sparse",
+      "--dsa-decode-backend",
+      "flashmla_sparse",
+      "--kv-cache-dtype",
+      "bf16",
+      "--enable-fp32-lm-head",
+      "--tp-size",
+      "8",
+      "--mem-fraction-static",
+      "0.75",
+      "--context-length",
+      "65536",
+      "--chunked-prefill-size",
+      "32768"
+    ],
+    "eval": [
+      "/opt/sglang/bin/sgl-eval",
+      "run",
+      "gsm8k",
+      "--base-url",
+      "http://127.0.0.1:32190/v1",
+      "--temperature",
+      "1.0",
+      "--top-p",
+      "0.95",
+      "--seed",
+      "1",
+      "--num-threads",
+      "64",
+      "--max-tokens",
+      "32768",
+      "--out-dir",
+      "TASK/results/tp8-bf16/eval-t1"
+    ]
+  },
+  "fp8": {
+    "runtime": "52ef77912fd004f34cfe340b392018632ce69c2c",
+    "rows": 1319,
+    "correct": 1249,
+    "score": 0.9469294920394238,
+    "finish_reasons": {
+      "stop": 1314,
+      "length": 5
+    },
+    "stop_rate": 0.9962092494313874,
+    "length_rows": [
+      {
+        "id": "gsm8k-87",
+        "tokens": 32768,
+        "correct": false
+      },
+      {
+        "id": "gsm8k-37",
+        "tokens": 32768,
+        "correct": false
+      },
+      {
+        "id": "gsm8k-255",
+        "tokens": 32768,
+        "correct": false
+      },
+      {
+        "id": "gsm8k-505",
+        "tokens": 32768,
+        "correct": false
+      },
+      {
+        "id": "gsm8k-494",
+        "tokens": 32768,
+        "correct": false
+      }
+    ],
+    "sampling": {
+      "chat_template_kwargs": null,
+      "extra_body": null,
+      "max_tokens": 32768,
+      "min_p": 0.0,
+      "reasoning_effort": null,
+      "repetition_penalty": 1.0,
+      "seed": 1,
+      "system_message": null,
+      "temperature": 1.0,
+      "top_p": 0.95
+    },
+    "resolved": {
+      "tp_size": 8,
+      "ep_size": 1,
+      "attn_dp_size": 1,
+      "kv_cache_dtype": "bfloat16",
+      "dsa_prefill_backend": "flashmla_sparse",
+      "dsa_decode_backend": "flashmla_sparse",
+      "moe_runner_backend": "flashinfer_trtllm",
+      "context_length": 65536,
+      "mem_fraction_static": 0.75,
+      "chunked_prefill_size": 32768,
+      "max_running_requests": 32,
+      "random_seed": 1,
+      "speculative_algorithm": "EAGLE",
+      "speculative_num_steps": 3,
+      "speculative_eagle_topk": 1,
+      "speculative_num_draft_tokens": 4,
+      "speculative_draft_model_quantization": "fp8",
+      "disable_prefill_cuda_graph": true,
+      "enable_fp32_lm_head": true,
+      "disable_shared_experts_fusion": true,
+      "moe_a2a_backend": "none",
+      "quantization": "fp8"
+    },
+    "live_rust_workers_verified": 8,
+    "precision": "fp8",
+    "arm": "tp8-bf16",
+    "gpu_samples": 561,
+    "gpu_process_records": 5065,
+    "sampling_errors": [],
+    "measurement_sampling_errors": [],
+    "counters": {
+      "generation_tokens_total": 693797.0,
+      "spec_verify_calls_total": 260580.0
+    },
+    "counter_derived_natural_acceptance": 2.6625105533809195,
+    "prediction_completion_tokens": 693797,
+    "archive_sha256": "f56ef1be5638cee1fa3301d7502b6fce9c1dfa96b96ecd51585159291d64d1fd",
+    "raw_files": 50,
+    "chat_http_statuses": {
+      "200": 1320
+    },
+    "failed_http_attempts": 0,
+    "all_requests_stopped": false,
+    "scope": "One candidate correctness run with explicit seed and output bound; single-run variation remains. Image-level qualification and bounded performance selection require separate evidence."
+  },
+  "nvfp4": {
+    "runtime": "52ef77912fd004f34cfe340b392018632ce69c2c",
+    "rows": 1319,
+    "correct": 1259,
+    "score": 0.954510993176649,
+    "finish_reasons": {
+      "stop": 1313,
+      "length": 6
+    },
+    "stop_rate": 0.9954510993176648,
+    "length_rows": [
+      {
+        "id": "gsm8k-255",
+        "tokens": 32768,
+        "correct": false
+      },
+      {
+        "id": "gsm8k-552",
+        "tokens": 32768,
+        "correct": false
+      },
+      {
+        "id": "gsm8k-796",
+        "tokens": 32768,
+        "correct": false
+      },
+      {
+        "id": "gsm8k-1042",
+        "tokens": 32768,
+        "correct": false
+      },
+      {
+        "id": "gsm8k-1176",
+        "tokens": 32768,
+        "correct": false
+      },
+      {
+        "id": "gsm8k-1303",
+        "tokens": 32768,
+        "correct": false
+      }
+    ],
+    "sampling": {
+      "chat_template_kwargs": null,
+      "extra_body": null,
+      "max_tokens": 32768,
+      "min_p": 0.0,
+      "reasoning_effort": null,
+      "repetition_penalty": 1.0,
+      "seed": 1,
+      "system_message": null,
+      "temperature": 1.0,
+      "top_p": 0.95
+    },
+    "resolved": {
+      "tp_size": 8,
+      "ep_size": 1,
+      "attn_dp_size": 1,
+      "kv_cache_dtype": "bfloat16",
+      "dsa_prefill_backend": "flashmla_sparse",
+      "dsa_decode_backend": "flashmla_sparse",
+      "moe_runner_backend": "flashinfer_trtllm",
+      "context_length": 65536,
+      "mem_fraction_static": 0.75,
+      "chunked_prefill_size": 32768,
+      "max_running_requests": 32,
+      "random_seed": 1,
+      "speculative_algorithm": "EAGLE",
+      "speculative_num_steps": 3,
+      "speculative_eagle_topk": 1,
+      "speculative_num_draft_tokens": 4,
+      "speculative_draft_model_quantization": "fp8",
+      "disable_prefill_cuda_graph": true,
+      "enable_fp32_lm_head": true,
+      "disable_shared_experts_fusion": true,
+      "moe_a2a_backend": "none",
+      "quantization": "modelopt_mixed"
+    },
+    "live_rust_workers_verified": 8,
+    "precision": "nvfp4",
+    "arm": "tp8-bf16",
+    "gpu_samples": 647,
+    "gpu_process_records": 5730,
+    "sampling_errors": [],
+    "measurement_sampling_errors": [],
+    "counters": {
+      "generation_tokens_total": 782032.0,
+      "spec_verify_calls_total": 295519.0
+    },
+    "counter_derived_natural_acceptance": 2.6463002378865657,
+    "prediction_completion_tokens": 782032,
+    "archive_sha256": "44113391a117515d027e01ef122f469e5954d48d103bacf2b900d1386e8edfd6",
+    "raw_files": 50,
+    "chat_http_statuses": {
+      "200": 1320
+    },
+    "failed_http_attempts": 0,
+    "all_requests_stopped": false,
+    "scope": "One candidate correctness run with explicit seed and output bound; single-run variation remains. Image-level qualification and bounded performance selection require separate evidence."
+  },
+  "nvfp4_minus_fp8": {
+    "correct": 10,
+    "normal_stop": -1,
+    "accuracy_percentage_points": 0.7581501137225222,
+    "stop_percentage_points": -0.07581501137225999
+  },
+  "scope": "Single paired correctness runs. NVFP4 remains performance-only; this does not establish quality parity or performance superiority."
+}

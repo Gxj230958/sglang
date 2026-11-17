@@ -1,0 +1,89 @@
+{
+  "runtime": "01d0a662d14a2b64d6a53fb48182fa79b5ddcbeb",
+  "phase": "storage",
+  "format": "nvfp4-hicache",
+  "archive_sha256": "57a4f40a727f9fbf759941b25b8af4340e3ffb4e93ca2dfcaafed7453764d742",
+  "files_verified": 25,
+  "rows": 1319,
+  "correct": 1252,
+  "score": 0.9492039423805914,
+  "finish_reasons": {
+    "stop": 1317,
+    "length": 2
+  },
+  "stop_rate": 0.9984836997725549,
+  "error_rate": 0,
+  "length_rows": [
+    {
+      "id": "gsm8k-182",
+      "tokens": 32768,
+      "correct": false
+    },
+    {
+      "id": "gsm8k-1303",
+      "tokens": 32768,
+      "correct": false
+    }
+  ],
+  "sampling": {
+    "chat_template_kwargs": null,
+    "extra_body": null,
+    "max_tokens": 32768,
+    "min_p": 0.0,
+    "reasoning_effort": null,
+    "repetition_penalty": 1.0,
+    "seed": 1,
+    "system_message": null,
+    "temperature": 1.0,
+    "top_p": 0.95
+  },
+  "resolved": {
+    "tp_size": 4,
+    "ep_size": 1,
+    "attn_dp_size": 1,
+    "moe_runner_backend": "flashinfer_trtllm",
+    "dsa_prefill_backend": "flashmla_sparse",
+    "dsa_decode_backend": "flashmla_sparse",
+    "kv_cache_dtype": "bfloat16",
+    "speculative_algorithm": "EAGLE",
+    "disable_hybrid_swa_memory": false,
+    "speculative_num_steps": 3,
+    "speculative_eagle_topk": 1,
+    "speculative_num_draft_tokens": 4,
+    "speculative_draft_model_quantization": "fp8",
+    "speculative_draft_model_path": "/scratch/models/GLM-5-1028-Provider",
+    "context_length": 65536,
+    "max_total_tokens": 262144,
+    "enable_hierarchical_cache": true,
+    "hicache_size": 64,
+    "hicache_storage_backend": "file",
+    "hicache_write_policy": "write_through",
+    "disable_prefill_cuda_graph": true,
+    "random_seed": 1
+  },
+  "rust_extension_sha256": [
+    "d2547a9f9a3edc3f79318922dfd2aceb162c0339c9c00d69514e00aafb979cc3"
+  ],
+  "gpu_samples": 496,
+  "gpu_ownership_failures": 0,
+  "sampling_errors_after_generation": [],
+  "counters": {
+    "generation_tokens_total": 626112.0,
+    "spec_verify_calls_total": 236446.0
+  },
+  "natural_acceptance": 2.648012654052088,
+  "probes": {
+    "storage": {
+      "cached_tokens": 6656,
+      "details": {
+        "device": 0,
+        "host": 0,
+        "storage": 6656,
+        "storage_backend": "HiCacheFile"
+      },
+      "correct": true,
+      "finish_reason": "stop"
+    }
+  },
+  "scope": "Completed single phase; paired-format and storage/negative-control conclusions require their separate raw results. Stopping nonregression is not established."
+}

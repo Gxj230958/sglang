@@ -1,0 +1,374 @@
+{
+  "candidate": "fp8-prefill-breakable-mtp-controlled35",
+  "requests": 1280,
+  "loads": 12,
+  "natural_sanity_stops": 0,
+  "rows": [
+    {
+      "score": 1393.6064375255698,
+      "ttft": 0.1367164083523676,
+      "interactivity": 198.88711473646146,
+      "accept_length": 3.5084745762711864,
+      "level": 1,
+      "repeats": [
+        {
+          "counter_delta_including_warmup": {
+            "generation_tokens_total": 8320.0,
+            "spec_verify_calls_total": 2378.0
+          },
+          "completion_per_verify_including_warmup": 3.4987384356602185,
+          "score": 1401.2702852751536,
+          "ttft": 0.13720569957513362,
+          "interactivity": 198.86970286602826,
+          "accept_length": 3.5097457627118644,
+          "intervals": 7962
+        },
+        {
+          "counter_delta_including_warmup": {
+            "generation_tokens_total": 8320.0,
+            "spec_verify_calls_total": 2376.0
+          },
+          "completion_per_verify_including_warmup": 3.5016835016835017,
+          "score": 1385.942589775986,
+          "ttft": 0.13622711712960153,
+          "interactivity": 198.90452660689468,
+          "accept_length": 3.5072033898305084,
+          "intervals": 7938
+        }
+      ],
+      "pass": true
+    },
+    {
+      "score": 2227.5846282951175,
+      "ttft": 0.22939313440583647,
+      "interactivity": 166.4846723016122,
+      "accept_length": 3.5120689655172415,
+      "level": 2,
+      "repeats": [
+        {
+          "counter_delta_including_warmup": {
+            "generation_tokens_total": 8320.0,
+            "spec_verify_calls_total": 2377.0
+          },
+          "completion_per_verify_including_warmup": 3.500210349179638,
+          "score": 2234.525898658671,
+          "ttft": 0.2254813892999664,
+          "interactivity": 167.2084875607085,
+          "accept_length": 3.5008620689655174,
+          "intervals": 7930
+        },
+        {
+          "counter_delta_including_warmup": {
+            "generation_tokens_total": 8320.0,
+            "spec_verify_calls_total": 2369.0
+          },
+          "completion_per_verify_including_warmup": 3.512030392570705,
+          "score": 2220.643357931564,
+          "ttft": 0.23330487951170653,
+          "interactivity": 165.76085704251588,
+          "accept_length": 3.5232758620689655,
+          "intervals": 7953
+        }
+      ],
+      "pass": true
+    },
+    {
+      "score": 3182.337031072031,
+      "ttft": 0.666327127662953,
+      "interactivity": 132.63661372638987,
+      "accept_length": 3.4802976190476187,
+      "level": 4,
+      "repeats": [
+        {
+          "counter_delta_including_warmup": {
+            "generation_tokens_total": 8320.0,
+            "spec_verify_calls_total": 2401.0
+          },
+          "completion_per_verify_including_warmup": 3.465222823823407,
+          "score": 3159.1043731104446,
+          "ttft": 0.6941920100478456,
+          "interactivity": 132.54016028810017,
+          "accept_length": 3.4839285714285713,
+          "intervals": 7917
+        },
+        {
+          "counter_delta_including_warmup": {
+            "generation_tokens_total": 8320.0,
+            "spec_verify_calls_total": 2392.0
+          },
+          "completion_per_verify_including_warmup": 3.4782608695652173,
+          "score": 3205.569689033617,
+          "ttft": 0.6384622452780604,
+          "interactivity": 132.73306716467957,
+          "accept_length": 3.4766666666666666,
+          "intervals": 7875
+        }
+      ],
+      "pass": true
+    },
+    {
+      "score": 4392.764020067233,
+      "ttft": 1.0896651224931713,
+      "interactivity": 102.48021686092446,
+      "accept_length": 3.4839285714285717,
+      "level": 8,
+      "repeats": [
+        {
+          "counter_delta_including_warmup": {
+            "generation_tokens_total": 8320.0,
+            "spec_verify_calls_total": 2404.0
+          },
+          "completion_per_verify_including_warmup": 3.4608985024958403,
+          "score": 4397.907039238429,
+          "ttft": 1.0456384283723321,
+          "interactivity": 102.72361061770805,
+          "accept_length": 3.4642857142857144,
+          "intervals": 7921
+        },
+        {
+          "counter_delta_including_warmup": {
+            "generation_tokens_total": 8320.0,
+            "spec_verify_calls_total": 2382.0
+          },
+          "completion_per_verify_including_warmup": 3.492863140218304,
+          "score": 4387.621000896037,
+          "ttft": 1.1336918166140104,
+          "interactivity": 102.23682310414085,
+          "accept_length": 3.5035714285714286,
+          "intervals": 8045
+        }
+      ],
+      "pass": true
+    },
+    {
+      "score": 5874.647823212386,
+      "ttft": 1.6457819075905717,
+      "interactivity": 80.43413357400759,
+      "accept_length": 3.5035714285714286,
+      "level": 16,
+      "repeats": [
+        {
+          "counter_delta_including_warmup": {
+            "generation_tokens_total": 16512.0,
+            "spec_verify_calls_total": 4740.0
+          },
+          "completion_per_verify_including_warmup": 3.4835443037974683,
+          "score": 5940.42958577086,
+          "ttft": 1.448577403067611,
+          "interactivity": 81.09175423436547,
+          "accept_length": 3.4857142857142858,
+          "intervals": 15837
+        },
+        {
+          "counter_delta_including_warmup": {
+            "generation_tokens_total": 16512.0,
+            "spec_verify_calls_total": 4723.0
+          },
+          "completion_per_verify_including_warmup": 3.4960829980944315,
+          "score": 5808.866060653913,
+          "ttft": 1.8429864121135324,
+          "interactivity": 79.77651291364971,
+          "accept_length": 3.5214285714285714,
+          "intervals": 15897
+        }
+      ],
+      "pass": true
+    },
+    {
+      "score": 7946.81352358924,
+      "ttft": 2.435632204520516,
+      "interactivity": 65.31305751681,
+      "accept_length": 3.5,
+      "level": 32,
+      "repeats": [
+        {
+          "counter_delta_including_warmup": {
+            "generation_tokens_total": 32896.0,
+            "spec_verify_calls_total": 9252.0
+          },
+          "completion_per_verify_including_warmup": 3.5555555555555554,
+          "score": 7990.853890324576,
+          "ttft": 2.4534931565867737,
+          "interactivity": 65.51501605432651,
+          "accept_length": 3.55,
+          "intervals": 31613
+        },
+        {
+          "counter_delta_including_warmup": {
+            "generation_tokens_total": 32896.0,
+            "spec_verify_calls_total": 9572.0
+          },
+          "completion_per_verify_including_warmup": 3.4366903468449643,
+          "score": 7902.773156853903,
+          "ttft": 2.4177712524542585,
+          "interactivity": 65.11109897929352,
+          "accept_length": 3.45,
+          "intervals": 32070
+        }
+      ],
+      "pass": true
+    }
+  ],
+  "best_passing": {
+    "score": 7946.81352358924,
+    "ttft": 2.435632204520516,
+    "interactivity": 65.31305751681,
+    "accept_length": 3.5,
+    "level": 32,
+    "repeats": [
+      {
+        "counter_delta_including_warmup": {
+          "generation_tokens_total": 32896.0,
+          "spec_verify_calls_total": 9252.0
+        },
+        "completion_per_verify_including_warmup": 3.5555555555555554,
+        "score": 7990.853890324576,
+        "ttft": 2.4534931565867737,
+        "interactivity": 65.51501605432651,
+        "accept_length": 3.55,
+        "intervals": 31613
+      },
+      {
+        "counter_delta_including_warmup": {
+          "generation_tokens_total": 32896.0,
+          "spec_verify_calls_total": 9572.0
+        },
+        "completion_per_verify_including_warmup": 3.4366903468449643,
+        "score": 7902.773156853903,
+        "ttft": 2.4177712524542585,
+        "interactivity": 65.11109897929352,
+        "accept_length": 3.45,
+        "intervals": 32070
+      }
+    ],
+    "pass": true
+  },
+  "archive_sha256": "5358967e2a798059e41627d1548423188b49093c0af844c90a18e8654742bddb",
+  "token_count_provenance": "Chunk token counts captured with the runtime tokenizer; interval distribution independently reconstructed from raw chunks/counts/ITLs.",
+  "simulation": {
+    "SGLANG_SIMULATE_ACC_LEN": "3.5",
+    "SGLANG_SIMULATE_ACC_METHOD": "match-expected",
+    "SGLANG_SIMULATE_ACC_TOKEN_MODE": "real-draft-token"
+  },
+  "sampling_errors_after_shutdown": [],
+  "shutdown_epoch": null,
+  "resolved_checked": {
+    "tp_size": 4,
+    "ep_size": 1,
+    "attn_dp_size": 1,
+    "moe_runner_backend": "flashinfer_trtllm",
+    "dsa_prefill_backend": "flashmla_sparse",
+    "dsa_decode_backend": "flashmla_sparse",
+    "kv_cache_dtype": "bfloat16",
+    "speculative_algorithm": "EAGLE",
+    "disable_hybrid_swa_memory": false,
+    "speculative_num_steps": 3,
+    "speculative_eagle_topk": 1,
+    "speculative_num_draft_tokens": 4,
+    "speculative_draft_model_quantization": "fp8",
+    "speculative_draft_model_path": "/scratch/models/GLM-5-1028-Provider",
+    "random_seed": 1,
+    "disable_prefill_cuda_graph": false,
+    "cuda_graph_backend_prefill": "breakable"
+  },
+  "gpu_ownership_samples": 325,
+  "gpu_ownership_failures": 0,
+  "rust_extension_sha256": [
+    "c933d62cbea75638fc7a1c4c1e114cac83fe7e149cfc65591492252ec5536055"
+  ],
+  "server_random_seed": 1,
+  "manifest_files_verified": 184,
+  "mode": "controlled",
+  "scope": "Forced acceptance performance only; no correctness claim. Reported server average acceptance and completion/verify counter ratio have distinct accounting; both retained. Full-model stopping qualification is separate.",
+  "prefill_graph_evidence": {
+    "scope": "Whole client execution including warmup; raw server byte windows independently matched.",
+    "loads": [
+      {
+        "level": 1,
+        "repeat": 1,
+        "backend": "breakable",
+        "graph": 68,
+        "eager": 0
+      },
+      {
+        "level": 1,
+        "repeat": 2,
+        "backend": "breakable",
+        "graph": 68,
+        "eager": 0
+      },
+      {
+        "level": 2,
+        "repeat": 1,
+        "backend": "breakable",
+        "graph": 42,
+        "eager": 0
+      },
+      {
+        "level": 2,
+        "repeat": 2,
+        "backend": "breakable",
+        "graph": 43,
+        "eager": 0
+      },
+      {
+        "level": 4,
+        "repeat": 1,
+        "backend": "breakable",
+        "graph": 28,
+        "eager": 0
+      },
+      {
+        "level": 4,
+        "repeat": 2,
+        "backend": "breakable",
+        "graph": 27,
+        "eager": 0
+      },
+      {
+        "level": 8,
+        "repeat": 1,
+        "backend": "breakable",
+        "graph": 20,
+        "eager": 0
+      },
+      {
+        "level": 8,
+        "repeat": 2,
+        "backend": "breakable",
+        "graph": 20,
+        "eager": 0
+      },
+      {
+        "level": 16,
+        "repeat": 1,
+        "backend": "breakable",
+        "graph": 30,
+        "eager": 0
+      },
+      {
+        "level": 16,
+        "repeat": 2,
+        "backend": "breakable",
+        "graph": 31,
+        "eager": 0
+      },
+      {
+        "level": 32,
+        "repeat": 1,
+        "backend": "breakable",
+        "graph": 42,
+        "eager": 0
+      },
+      {
+        "level": 32,
+        "repeat": 2,
+        "backend": "breakable",
+        "graph": 42,
+        "eager": 0
+      }
+    ],
+    "graph_replays": 461,
+    "eager_prefills": 0
+  }
+}

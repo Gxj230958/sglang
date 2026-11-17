@@ -1,0 +1,781 @@
+{
+  "runtime": "01d0a662d14a2b64d6a53fb48182fa79b5ddcbeb",
+  "phase": "controlled",
+  "loads": 48,
+  "requests": 5120,
+  "natural_startup_stops": 0,
+  "simulation": {
+    "SGLANG_SIMULATE_ACC_LEN": "3.5",
+    "SGLANG_SIMULATE_ACC_METHOD": "match-expected",
+    "SGLANG_SIMULATE_ACC_TOKEN_MODE": "real-draft-token"
+  },
+  "failed_levels_by_cell": {
+    "controlled-fp8-eager": [],
+    "controlled-nvfp4-eager": [],
+    "controlled-fp8-breakable": [],
+    "controlled-nvfp4-breakable": []
+  },
+  "archives": {
+    "controlled-fp8-eager": "edbeccf7f0739f181df662e2dbca2700ba9c534b42dd6033d6f914e63483b7ca",
+    "controlled-nvfp4-eager": "5744617fc57bcde464789892da943803aa1943c6ccfee0320e57def4e54e3d58",
+    "controlled-fp8-breakable": "5358967e2a798059e41627d1548423188b49093c0af844c90a18e8654742bddb",
+    "controlled-nvfp4-breakable": "c8697059e8154b7b8413c94ca93cbd28fbc8db474c4dd380d81e8212d4679635"
+  },
+  "report_sha256": "53991cc4ac6e29302bcf03b7505dcd78bf3754369413706ffc3744aea599ec67",
+  "workload_sha256": "235ea06164ba2a9f4700d5bee5ca12206a6ea21ed246ed64c8022b3bbb0d8688",
+  "normalized_recorded_launch_commands_equal": true,
+  "launch_environments_equal": true,
+  "same_original_fp8_draft": true,
+  "imports_equal_except_pid": true,
+  "comparisons": [
+    {
+      "base": "controlled-fp8-eager",
+      "candidate": "controlled-nvfp4-eager",
+      "loads": [
+        {
+          "level": 1,
+          "repeat": 1,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 39,
+          "max_abs_input_length_delta": 70,
+          "prompt_token_delta_percent": 0.06791821949775348
+        },
+        {
+          "level": 1,
+          "repeat": 2,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 41,
+          "max_abs_input_length_delta": 38,
+          "prompt_token_delta_percent": -0.08182558093986256
+        },
+        {
+          "level": 2,
+          "repeat": 1,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 32,
+          "max_abs_input_length_delta": 19,
+          "prompt_token_delta_percent": -0.03177933820616519
+        },
+        {
+          "level": 2,
+          "repeat": 2,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 40,
+          "max_abs_input_length_delta": 13,
+          "prompt_token_delta_percent": 0.02873901059424436
+        },
+        {
+          "level": 4,
+          "repeat": 1,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 41,
+          "max_abs_input_length_delta": 16,
+          "prompt_token_delta_percent": -0.01567316232171778
+        },
+        {
+          "level": 4,
+          "repeat": 2,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 42,
+          "max_abs_input_length_delta": 20,
+          "prompt_token_delta_percent": -0.033953049027332205
+        },
+        {
+          "level": 8,
+          "repeat": 1,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 45,
+          "max_abs_input_length_delta": 149,
+          "prompt_token_delta_percent": -0.14482227740642
+        },
+        {
+          "level": 8,
+          "repeat": 2,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 39,
+          "max_abs_input_length_delta": 22,
+          "prompt_token_delta_percent": 0.0008707350309763988
+        },
+        {
+          "level": 16,
+          "repeat": 1,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 76,
+          "max_abs_input_length_delta": 33,
+          "prompt_token_delta_percent": -0.03939484297563832
+        },
+        {
+          "level": 16,
+          "repeat": 2,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 86,
+          "max_abs_input_length_delta": 33,
+          "prompt_token_delta_percent": 0.0019588254882372527
+        },
+        {
+          "level": 32,
+          "repeat": 1,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 160,
+          "max_abs_input_length_delta": 144,
+          "prompt_token_delta_percent": -0.019047204414597778
+        },
+        {
+          "level": 32,
+          "repeat": 2,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 157,
+          "max_abs_input_length_delta": 60,
+          "prompt_token_delta_percent": -0.014476773486388024
+        }
+      ],
+      "metrics": [
+        {
+          "level": 1,
+          "base_total_tps_per_gpu": 1015.362199940177,
+          "candidate_total_tps_per_gpu": 1058.0314118320548,
+          "gain_percent": 4.202363638747997,
+          "ttft_change_percent": 2.723553344786467,
+          "base_pass": true,
+          "candidate_pass": true,
+          "both_pass": true
+        },
+        {
+          "level": 2,
+          "base_total_tps_per_gpu": 1691.0488466146753,
+          "candidate_total_tps_per_gpu": 1767.702923094956,
+          "gain_percent": 4.532930946006397,
+          "ttft_change_percent": 3.0032245722094064,
+          "base_pass": true,
+          "candidate_pass": true,
+          "both_pass": true
+        },
+        {
+          "level": 4,
+          "base_total_tps_per_gpu": 2689.9952917987694,
+          "candidate_total_tps_per_gpu": 2701.0519059383932,
+          "gain_percent": 0.4110272673462756,
+          "ttft_change_percent": -1.355136747782082,
+          "base_pass": true,
+          "candidate_pass": true,
+          "both_pass": true
+        },
+        {
+          "level": 8,
+          "base_total_tps_per_gpu": 3998.854258065367,
+          "candidate_total_tps_per_gpu": 4560.3838871377675,
+          "gain_percent": 14.04226292918378,
+          "ttft_change_percent": -12.819532217788488,
+          "base_pass": true,
+          "candidate_pass": true,
+          "both_pass": true
+        },
+        {
+          "level": 16,
+          "base_total_tps_per_gpu": 5429.023815477838,
+          "candidate_total_tps_per_gpu": 6107.794901381809,
+          "gain_percent": 12.502635998185042,
+          "ttft_change_percent": 1.364378531092858,
+          "base_pass": true,
+          "candidate_pass": true,
+          "both_pass": true
+        },
+        {
+          "level": 32,
+          "base_total_tps_per_gpu": 7681.429211061257,
+          "candidate_total_tps_per_gpu": 9080.522420291878,
+          "gain_percent": 18.21396996298459,
+          "ttft_change_percent": -15.30987416636236,
+          "base_pass": true,
+          "candidate_pass": true,
+          "both_pass": true
+        }
+      ]
+    },
+    {
+      "base": "controlled-fp8-breakable",
+      "candidate": "controlled-nvfp4-breakable",
+      "loads": [
+        {
+          "level": 1,
+          "repeat": 1,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 41,
+          "max_abs_input_length_delta": 16,
+          "prompt_token_delta_percent": -0.0047889592720781905
+        },
+        {
+          "level": 1,
+          "repeat": 2,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 39,
+          "max_abs_input_length_delta": 9,
+          "prompt_token_delta_percent": -0.0017416444606997926
+        },
+        {
+          "level": 2,
+          "repeat": 1,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 47,
+          "max_abs_input_length_delta": 23,
+          "prompt_token_delta_percent": 0.017414776437807478
+        },
+        {
+          "level": 2,
+          "repeat": 2,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 44,
+          "max_abs_input_length_delta": 18,
+          "prompt_token_delta_percent": -0.016542885253323814
+        },
+        {
+          "level": 4,
+          "repeat": 1,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 42,
+          "max_abs_input_length_delta": 18,
+          "prompt_token_delta_percent": 0.008708563565982609
+        },
+        {
+          "level": 4,
+          "repeat": 2,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 38,
+          "max_abs_input_length_delta": 25,
+          "prompt_token_delta_percent": 0.01742038882307853
+        },
+        {
+          "level": 8,
+          "repeat": 1,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 37,
+          "max_abs_input_length_delta": 24,
+          "prompt_token_delta_percent": -0.02438100545524997
+        },
+        {
+          "level": 8,
+          "repeat": 2,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 41,
+          "max_abs_input_length_delta": 15,
+          "prompt_token_delta_percent": -0.0265486340510169
+        },
+        {
+          "level": 16,
+          "repeat": 1,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 73,
+          "max_abs_input_length_delta": 17,
+          "prompt_token_delta_percent": 0.015891675374433995
+        },
+        {
+          "level": 16,
+          "repeat": 2,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 81,
+          "max_abs_input_length_delta": 31,
+          "prompt_token_delta_percent": -0.03352578001863511
+        },
+        {
+          "level": 32,
+          "repeat": 1,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 158,
+          "max_abs_input_length_delta": 36,
+          "prompt_token_delta_percent": 0.002938836286138162
+        },
+        {
+          "level": 32,
+          "repeat": 2,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 163,
+          "max_abs_input_length_delta": 176,
+          "prompt_token_delta_percent": -0.042533286920198414
+        }
+      ],
+      "metrics": [
+        {
+          "level": 1,
+          "base_total_tps_per_gpu": 1393.6064375255698,
+          "candidate_total_tps_per_gpu": 1537.2288546948353,
+          "gain_percent": 10.30580896456501,
+          "ttft_change_percent": -9.778815377575834,
+          "base_pass": true,
+          "candidate_pass": true,
+          "both_pass": true
+        },
+        {
+          "level": 2,
+          "base_total_tps_per_gpu": 2227.5846282951175,
+          "candidate_total_tps_per_gpu": 2544.081382574642,
+          "gain_percent": 14.208068697338572,
+          "ttft_change_percent": -7.418061255715158,
+          "base_pass": true,
+          "candidate_pass": true,
+          "both_pass": true
+        },
+        {
+          "level": 4,
+          "base_total_tps_per_gpu": 3182.337031072031,
+          "candidate_total_tps_per_gpu": 3747.570798548748,
+          "gain_percent": 17.761593506841944,
+          "ttft_change_percent": -15.002757988666248,
+          "base_pass": true,
+          "candidate_pass": true,
+          "both_pass": true
+        },
+        {
+          "level": 8,
+          "base_total_tps_per_gpu": 4392.764020067233,
+          "candidate_total_tps_per_gpu": 5313.312698339538,
+          "gain_percent": 20.956023908113664,
+          "ttft_change_percent": -26.093904231838284,
+          "base_pass": true,
+          "candidate_pass": true,
+          "both_pass": true
+        },
+        {
+          "level": 16,
+          "base_total_tps_per_gpu": 5874.647823212386,
+          "candidate_total_tps_per_gpu": 7083.776363321571,
+          "gain_percent": 20.582145117390315,
+          "ttft_change_percent": -2.397700848275075,
+          "base_pass": true,
+          "candidate_pass": true,
+          "both_pass": true
+        },
+        {
+          "level": 32,
+          "base_total_tps_per_gpu": 7946.81352358924,
+          "candidate_total_tps_per_gpu": 9681.79231460029,
+          "gain_percent": 21.83238333026134,
+          "ttft_change_percent": -14.918952677505215,
+          "base_pass": true,
+          "candidate_pass": true,
+          "both_pass": true
+        }
+      ]
+    },
+    {
+      "base": "controlled-fp8-eager",
+      "candidate": "controlled-fp8-breakable",
+      "loads": [
+        {
+          "level": 1,
+          "repeat": 1,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 41,
+          "max_abs_input_length_delta": 27,
+          "prompt_token_delta_percent": 0.0030476124133607327
+        },
+        {
+          "level": 1,
+          "repeat": 2,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 41,
+          "max_abs_input_length_delta": 12,
+          "prompt_token_delta_percent": -0.038736578210892374
+        },
+        {
+          "level": 2,
+          "repeat": 1,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 36,
+          "max_abs_input_length_delta": 20,
+          "prompt_token_delta_percent": -0.00827133460160464
+        },
+        {
+          "level": 2,
+          "repeat": 2,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 43,
+          "max_abs_input_length_delta": 13,
+          "prompt_token_delta_percent": 0.023078296386287136
+        },
+        {
+          "level": 4,
+          "repeat": 1,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 41,
+          "max_abs_input_length_delta": 19,
+          "prompt_token_delta_percent": -0.014367065461574631
+        },
+        {
+          "level": 4,
+          "repeat": 2,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 38,
+          "max_abs_input_length_delta": 30,
+          "prompt_token_delta_percent": -0.04918839153959665
+        },
+        {
+          "level": 8,
+          "repeat": 1,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 42,
+          "max_abs_input_length_delta": 155,
+          "prompt_token_delta_percent": -0.10872543348830331
+        },
+        {
+          "level": 8,
+          "repeat": 2,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 33,
+          "max_abs_input_length_delta": 20,
+          "prompt_token_delta_percent": 0.03308793117710315
+        },
+        {
+          "level": 16,
+          "repeat": 1,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 72,
+          "max_abs_input_length_delta": 19,
+          "prompt_token_delta_percent": -0.01980624702090103
+        },
+        {
+          "level": 16,
+          "repeat": 2,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 80,
+          "max_abs_input_length_delta": 54,
+          "prompt_token_delta_percent": -0.024158847688259454
+        },
+        {
+          "level": 32,
+          "repeat": 1,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 164,
+          "max_abs_input_length_delta": 140,
+          "prompt_token_delta_percent": -0.004244805555253219
+        },
+        {
+          "level": 32,
+          "repeat": 2,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 163,
+          "max_abs_input_length_delta": 174,
+          "prompt_token_delta_percent": 0.0617167711788121
+        }
+      ],
+      "metrics": [
+        {
+          "level": 1,
+          "base_total_tps_per_gpu": 1015.362199940177,
+          "candidate_total_tps_per_gpu": 1393.6064375255698,
+          "gain_percent": 37.25214880046532,
+          "ttft_change_percent": -64.82806357501487,
+          "base_pass": true,
+          "candidate_pass": true,
+          "both_pass": true
+        },
+        {
+          "level": 2,
+          "base_total_tps_per_gpu": 1691.0488466146753,
+          "candidate_total_tps_per_gpu": 2227.5846282951175,
+          "gain_percent": 31.72798838747548,
+          "ttft_change_percent": -68.75754915613874,
+          "base_pass": true,
+          "candidate_pass": true,
+          "both_pass": true
+        },
+        {
+          "level": 4,
+          "base_total_tps_per_gpu": 2689.9952917987694,
+          "candidate_total_tps_per_gpu": 3182.337031072031,
+          "gain_percent": 18.302698921976113,
+          "ttft_change_percent": -17.31356212174874,
+          "base_pass": true,
+          "candidate_pass": true,
+          "both_pass": true
+        },
+        {
+          "level": 8,
+          "base_total_tps_per_gpu": 3998.854258065367,
+          "candidate_total_tps_per_gpu": 4392.764020067233,
+          "gain_percent": 9.85056560156905,
+          "ttft_change_percent": -4.597209525743551,
+          "base_pass": true,
+          "candidate_pass": true,
+          "both_pass": true
+        },
+        {
+          "level": 16,
+          "base_total_tps_per_gpu": 5429.023815477838,
+          "candidate_total_tps_per_gpu": 5874.647823212386,
+          "gain_percent": 8.208179276430872,
+          "ttft_change_percent": 0.29172145580376174,
+          "base_pass": true,
+          "candidate_pass": true,
+          "both_pass": true
+        },
+        {
+          "level": 32,
+          "base_total_tps_per_gpu": 7681.429211061257,
+          "candidate_total_tps_per_gpu": 7946.81352358924,
+          "gain_percent": 3.4548819657913343,
+          "ttft_change_percent": -5.124611700669379,
+          "base_pass": true,
+          "candidate_pass": true,
+          "both_pass": true
+        }
+      ]
+    },
+    {
+      "base": "controlled-nvfp4-eager",
+      "candidate": "controlled-nvfp4-breakable",
+      "loads": [
+        {
+          "level": 1,
+          "repeat": 1,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 41,
+          "max_abs_input_length_delta": 65,
+          "prompt_token_delta_percent": -0.0696124327804946
+        },
+        {
+          "level": 1,
+          "repeat": 2,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 42,
+          "max_abs_input_length_delta": 41,
+          "prompt_token_delta_percent": 0.04138189389682405
+        },
+        {
+          "level": 2,
+          "repeat": 1,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 45,
+          "max_abs_input_length_delta": 22,
+          "prompt_token_delta_percent": 0.040934348272918884
+        },
+        {
+          "level": 2,
+          "repeat": 2,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 41,
+          "max_abs_input_length_delta": 19,
+          "prompt_token_delta_percent": -0.022201036919018452
+        },
+        {
+          "level": 4,
+          "repeat": 1,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 39,
+          "max_abs_input_length_delta": 13,
+          "prompt_token_delta_percent": 0.010014978925000872
+        },
+        {
+          "level": 4,
+          "repeat": 2,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 37,
+          "max_abs_input_length_delta": 19,
+          "prompt_token_delta_percent": 0.0021772167332169247
+        },
+        {
+          "level": 8,
+          "repeat": 1,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 44,
+          "max_abs_input_length_delta": 25,
+          "prompt_token_delta_percent": 0.011759377014337729
+        },
+        {
+          "level": 8,
+          "repeat": 2,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 39,
+          "max_abs_input_length_delta": 10,
+          "prompt_token_delta_percent": 0.005659728420108579
+        },
+        {
+          "level": 16,
+          "repeat": 1,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 90,
+          "max_abs_input_length_delta": 31,
+          "prompt_token_delta_percent": 0.03549110544995319
+        },
+        {
+          "level": 16,
+          "repeat": 2,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 82,
+          "max_abs_input_length_delta": 31,
+          "prompt_token_delta_percent": -0.059634185623373116
+        },
+        {
+          "level": 32,
+          "repeat": 1,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 164,
+          "max_abs_input_length_delta": 39,
+          "prompt_token_delta_percent": 0.017744490226922635
+        },
+        {
+          "level": 32,
+          "repeat": 2,
+          "first_turn_input_lengths_equal": true,
+          "output_lengths_equal": true,
+          "changed_history_input_lengths": 161,
+          "max_abs_input_length_delta": 61,
+          "prompt_token_delta_percent": 0.03363887739772257
+        }
+      ],
+      "metrics": [
+        {
+          "level": 1,
+          "base_total_tps_per_gpu": 1058.0314118320548,
+          "candidate_total_tps_per_gpu": 1537.2288546948353,
+          "gain_percent": 45.291419281495315,
+          "ttft_change_percent": -69.10880059730916,
+          "base_pass": true,
+          "candidate_pass": true,
+          "both_pass": true
+        },
+        {
+          "level": 2,
+          "base_total_tps_per_gpu": 1767.702923094956,
+          "candidate_total_tps_per_gpu": 2544.081382574642,
+          "gain_percent": 43.92018870005461,
+          "ttft_change_percent": -71.9184842779369,
+          "base_pass": true,
+          "candidate_pass": true,
+          "both_pass": true
+        },
+        {
+          "level": 4,
+          "base_total_tps_per_gpu": 2701.0519059383932,
+          "candidate_total_tps_per_gpu": 3747.570798548748,
+          "gain_percent": 38.74486418826428,
+          "ttft_change_percent": -28.75331832106506,
+          "base_pass": true,
+          "candidate_pass": true,
+          "both_pass": true
+        },
+        {
+          "level": 8,
+          "base_total_tps_per_gpu": 4560.3838871377675,
+          "candidate_total_tps_per_gpu": 5313.312698339538,
+          "gain_percent": 16.510206812311388,
+          "ttft_change_percent": -19.123538233882552,
+          "base_pass": true,
+          "candidate_pass": true,
+          "both_pass": true
+        },
+        {
+          "level": 16,
+          "base_total_tps_per_gpu": 6107.794901381809,
+          "candidate_total_tps_per_gpu": 7083.776363321571,
+          "gain_percent": 15.979276935428178,
+          "ttft_change_percent": -3.4305468861706157,
+          "base_pass": true,
+          "candidate_pass": true,
+          "both_pass": true
+        },
+        {
+          "level": 32,
+          "base_total_tps_per_gpu": 9080.522420291878,
+          "candidate_total_tps_per_gpu": 9681.79231460029,
+          "gain_percent": 6.621534163769893,
+          "ttft_change_percent": -4.6866760182649125,
+          "base_pass": true,
+          "candidate_pass": true,
+          "both_pass": true
+        }
+      ]
+    }
+  ],
+  "best_measured": {
+    "label": "controlled-nvfp4-breakable",
+    "score": 9681.79231460029,
+    "ttft": 2.0722613885300234,
+    "interactivity": 85.5215867375449,
+    "accept_length": 3.5,
+    "level": 32,
+    "repeats": [
+      {
+        "counter_delta_including_warmup": {
+          "generation_tokens_total": 32896.0,
+          "spec_verify_calls_total": 9252.0
+        },
+        "completion_per_verify_including_warmup": 3.5555555555555554,
+        "score": 9755.397319813339,
+        "ttft": 2.099468747503124,
+        "interactivity": 85.59960179439656,
+        "accept_length": 3.55,
+        "intervals": 31741
+      },
+      {
+        "counter_delta_including_warmup": {
+          "generation_tokens_total": 32896.0,
+          "spec_verify_calls_total": 9572.0
+        },
+        "completion_per_verify_including_warmup": 3.4366903468449643,
+        "score": 9608.187309387242,
+        "ttft": 2.0450540295569226,
+        "interactivity": 85.44357168069322,
+        "accept_length": 3.45,
+        "intervals": 31861
+      }
+    ],
+    "pass": true
+  },
+  "within_two_percent_of_best": [
+    "controlled-nvfp4-breakable"
+  ],
+  "graph_prefills": {
+    "controlled-fp8-eager": 0,
+    "controlled-nvfp4-eager": 0,
+    "controlled-fp8-breakable": 461,
+    "controlled-nvfp4-breakable": 472
+  },
+  "scope": "Single server startup per cell, two client repetitions per point. Common user-message workload; generated assistant histories differ. Equal memory fraction gives model-dependent KV capacity. Whole-client graph windows include warmup; throughput uses the measured client duration. Simulated acceptance length 3.5 is performance-only. Reported acceptance and completion/verify counter ratios have distinct accounting; full stopping qualification is separate."
+}

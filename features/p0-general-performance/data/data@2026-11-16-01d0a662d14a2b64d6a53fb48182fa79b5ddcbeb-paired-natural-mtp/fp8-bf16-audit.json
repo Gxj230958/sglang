@@ -1,0 +1,207 @@
+{
+  "candidate": "fp8-kv-bf16-mtp-natural",
+  "requests": 1280,
+  "loads": 12,
+  "natural_sanity_stops": 3,
+  "rows": [
+    {
+      "score": 822.4808314865093,
+      "ttft": 0.3886603159247898,
+      "interactivity": 131.78346046051115,
+      "accept_length": 2.5328703703703703,
+      "level": 1,
+      "repeats": [
+        {
+          "score": 824.1629249364489,
+          "ttft": 0.3881699707824737,
+          "interactivity": 131.88905122335225,
+          "accept_length": 2.53641975308642,
+          "intervals": 8055
+        },
+        {
+          "score": 820.7987380365695,
+          "ttft": 0.38915066106710583,
+          "interactivity": 131.67786969767005,
+          "accept_length": 2.529320987654321,
+          "intervals": 8037
+        }
+      ],
+      "pass": true,
+      "gain_over_mtp_off_percent": 46.39147310544307
+    },
+    {
+      "score": 1130.4674931889544,
+      "ttft": 0.6637892976286826,
+      "interactivity": 82.6025085963244,
+      "accept_length": 2.472396125813094,
+      "level": 2,
+      "repeats": [
+        {
+          "score": 1119.965175375982,
+          "ttft": 0.6148323666071527,
+          "interactivity": 59.41176811202561,
+          "accept_length": 2.4340692124105012,
+          "intervals": 8043
+        },
+        {
+          "score": 1140.969811001927,
+          "ttft": 0.7127462286502123,
+          "interactivity": 105.79324908062318,
+          "accept_length": 2.5107230392156863,
+          "intervals": 8046
+        }
+      ],
+      "pass": true,
+      "gain_over_mtp_off_percent": 30.620703510927804
+    },
+    {
+      "score": 1477.3568306974,
+      "ttft": 0.7274073464097455,
+      "interactivity": 43.64121265543547,
+      "accept_length": 2.5154664422136106,
+      "level": 4,
+      "repeats": [
+        {
+          "score": 1472.3811142630807,
+          "ttft": 0.7278604580555111,
+          "interactivity": 43.52399236496009,
+          "accept_length": 2.4427161232425965,
+          "intervals": 8044
+        },
+        {
+          "score": 1482.3325471317194,
+          "ttft": 0.7269542347639799,
+          "interactivity": 43.75843294591084,
+          "accept_length": 2.588216761184625,
+          "intervals": 8042
+        }
+      ],
+      "pass": true,
+      "gain_over_mtp_off_percent": 0.01970808052169648
+    },
+    {
+      "score": 1882.7739533107397,
+      "ttft": 1.1873315693927005,
+      "interactivity": 20.887125669288597,
+      "accept_length": 2.521475970762992,
+      "level": 8,
+      "repeats": [
+        {
+          "score": 1907.7162020841345,
+          "ttft": 1.223476824164391,
+          "interactivity": 29.854405496633415,
+          "accept_length": 2.528051787916153,
+          "intervals": 8036
+        },
+        {
+          "score": 1857.831704537345,
+          "ttft": 1.1511863146210102,
+          "interactivity": 11.91984584194378,
+          "accept_length": 2.514900153609831,
+          "intervals": 8050
+        }
+      ],
+      "pass": false,
+      "gain_over_mtp_off_percent": -23.647646921223185
+    },
+    {
+      "score": 2354.967847405629,
+      "ttft": 1.4550157832331017,
+      "interactivity": 8.702198736855383,
+      "accept_length": 2.5414931821044076,
+      "level": 16,
+      "repeats": [
+        {
+          "score": 2388.534293283476,
+          "ttft": 1.5315141777740777,
+          "interactivity": 8.632636133819204,
+          "accept_length": 2.4982578397212545,
+          "intervals": 16078
+        },
+        {
+          "score": 2321.4014015277817,
+          "ttft": 1.3785173886921256,
+          "interactivity": 8.771761339891563,
+          "accept_length": 2.5847285244875606,
+          "intervals": 16064
+        }
+      ],
+      "pass": false,
+      "gain_over_mtp_off_percent": -33.391363593333345
+    },
+    {
+      "score": 3119.4525970121977,
+      "ttft": 2.066755891428329,
+      "interactivity": 5.859115751655667,
+      "accept_length": 2.4822758766581448,
+      "level": 32,
+      "repeats": [
+        {
+          "score": 3159.0516459101887,
+          "ttft": 1.906051440979354,
+          "interactivity": 5.824795433372803,
+          "accept_length": 2.4988977575066516,
+          "intervals": 32131
+        },
+        {
+          "score": 3079.853548114207,
+          "ttft": 2.227460341877304,
+          "interactivity": 5.89343606993853,
+          "accept_length": 2.465653995809638,
+          "intervals": 32136
+        }
+      ],
+      "pass": false,
+      "gain_over_mtp_off_percent": -38.944895434703184
+    }
+  ],
+  "best_passing": {
+    "score": 1477.3568306974,
+    "ttft": 0.7274073464097455,
+    "interactivity": 43.64121265543547,
+    "accept_length": 2.5154664422136106,
+    "level": 4,
+    "repeats": [
+      {
+        "score": 1472.3811142630807,
+        "ttft": 0.7278604580555111,
+        "interactivity": 43.52399236496009,
+        "accept_length": 2.4427161232425965,
+        "intervals": 8044
+      },
+      {
+        "score": 1482.3325471317194,
+        "ttft": 0.7269542347639799,
+        "interactivity": 43.75843294591084,
+        "accept_length": 2.588216761184625,
+        "intervals": 8042
+      }
+    ],
+    "pass": true,
+    "gain_over_mtp_off_percent": 0.01970808052169648
+  },
+  "archive_sha256": "7bfec7fd8c7a880b2810482c2371bafd6ebbdd30422043b74ae5c5e9958e7247",
+  "token_count_provenance": "Chunk token counts captured with the runtime tokenizer; interval distribution independently reconstructed from raw chunks/counts/ITLs.",
+  "resolved_checked": {
+    "tp_size": 4,
+    "ep_size": 1,
+    "attn_dp_size": 1,
+    "moe_runner_backend": "flashinfer_trtllm",
+    "dsa_prefill_backend": "flashmla_sparse",
+    "dsa_decode_backend": "flashmla_sparse",
+    "kv_cache_dtype": "bfloat16",
+    "speculative_algorithm": "EAGLE",
+    "disable_hybrid_swa_memory": false,
+    "speculative_num_steps": 3,
+    "speculative_eagle_topk": 1,
+    "speculative_num_draft_tokens": 4,
+    "speculative_draft_model_quantization": "fp8",
+    "speculative_draft_model_path": "/scratch/models/GLM-5-1028-Provider"
+  },
+  "gpu_ownership_samples": 471,
+  "gpu_ownership_failures": 0,
+  "rust_extension_sha256": [
+    "c933d62cbea75638fc7a1c4c1e114cac83fe7e149cfc65591492252ec5536055"
+  ],
+  "server_random_seed": 136602530
+}

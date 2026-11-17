@@ -1,0 +1,292 @@
+{
+  "candidate": "fp8-prefill-eager-mtp-off",
+  "requests": 1280,
+  "loads": 12,
+  "natural_sanity_stops": 3,
+  "rows": [
+    {
+      "score": 561.2085835913769,
+      "ttft": 0.3727682824712247,
+      "interactivity": 97.46432231411173,
+      "accept_length": 0.0,
+      "level": 1,
+      "repeats": [
+        {
+          "score": 561.2621624271175,
+          "ttft": 0.3722429777728394,
+          "interactivity": 97.47058271728109,
+          "accept_length": 0,
+          "intervals": 8080
+        },
+        {
+          "score": 561.1550047556362,
+          "ttft": 0.37329358716961,
+          "interactivity": 97.45806191094236,
+          "accept_length": 0,
+          "intervals": 8095
+        }
+      ],
+      "pass": true
+    },
+    {
+      "score": 873.6207679095301,
+      "ttft": 0.7192570565384813,
+      "interactivity": 84.93179907160317,
+      "accept_length": 0.0,
+      "level": 2,
+      "repeats": [
+        {
+          "score": 875.4601994735812,
+          "ttft": 0.718078170530498,
+          "interactivity": 84.91421837076776,
+          "accept_length": 0,
+          "intervals": 8083
+        },
+        {
+          "score": 871.781336345479,
+          "ttft": 0.7204359425464645,
+          "interactivity": 84.94937977243859,
+          "accept_length": 0,
+          "intervals": 8094
+        }
+      ],
+      "pass": true
+    },
+    {
+      "score": 1476.0995417494735,
+      "ttft": 0.7358842183020897,
+      "interactivity": 69.54548601189718,
+      "accept_length": 0.0,
+      "level": 4,
+      "repeats": [
+        {
+          "score": 1474.1040630842972,
+          "ttft": 0.738605129136704,
+          "interactivity": 69.544526853852,
+          "accept_length": 0,
+          "intervals": 8090
+        },
+        {
+          "score": 1478.0950204146498,
+          "ttft": 0.7331633074674755,
+          "interactivity": 69.54644516994236,
+          "accept_length": 0,
+          "intervals": 8101
+        }
+      ],
+      "pass": true
+    },
+    {
+      "score": 2468.417142446897,
+      "ttft": 1.0191412182408386,
+      "interactivity": 55.689257380486495,
+      "accept_length": 0.0,
+      "level": 8,
+      "repeats": [
+        {
+          "score": 2461.6408084375903,
+          "ttft": 0.8397227169247344,
+          "interactivity": 55.76022557952199,
+          "accept_length": 0,
+          "intervals": 8088
+        },
+        {
+          "score": 2475.193476456204,
+          "ttft": 1.1985597195569428,
+          "interactivity": 55.618289181451004,
+          "accept_length": 0,
+          "intervals": 8088
+        }
+      ],
+      "pass": true
+    },
+    {
+      "score": 3552.122271311946,
+      "ttft": 1.6517978712916372,
+      "interactivity": 42.56198522843454,
+      "accept_length": 0.0,
+      "level": 16,
+      "repeats": [
+        {
+          "score": 3552.5240867506586,
+          "ttft": 1.65496069539804,
+          "interactivity": 42.603728553955456,
+          "accept_length": 0,
+          "intervals": 16187
+        },
+        {
+          "score": 3551.720455873233,
+          "ttft": 1.6486350471852347,
+          "interactivity": 42.52024190291362,
+          "accept_length": 0,
+          "intervals": 16183
+        }
+      ],
+      "pass": true
+    },
+    {
+      "score": 5119.118636171923,
+      "ttft": 2.307999240991194,
+      "interactivity": 32.1738992761878,
+      "accept_length": 0.0,
+      "level": 32,
+      "repeats": [
+        {
+          "score": 5126.54538582943,
+          "ttft": 2.268065092503093,
+          "interactivity": 32.16701554401115,
+          "accept_length": 0,
+          "intervals": 32355
+        },
+        {
+          "score": 5111.691886514416,
+          "ttft": 2.3479333894792944,
+          "interactivity": 32.18078300836444,
+          "accept_length": 0,
+          "intervals": 32363
+        }
+      ],
+      "pass": true
+    }
+  ],
+  "best_passing": {
+    "score": 5119.118636171923,
+    "ttft": 2.307999240991194,
+    "interactivity": 32.1738992761878,
+    "accept_length": 0.0,
+    "level": 32,
+    "repeats": [
+      {
+        "score": 5126.54538582943,
+        "ttft": 2.268065092503093,
+        "interactivity": 32.16701554401115,
+        "accept_length": 0,
+        "intervals": 32355
+      },
+      {
+        "score": 5111.691886514416,
+        "ttft": 2.3479333894792944,
+        "interactivity": 32.18078300836444,
+        "accept_length": 0,
+        "intervals": 32363
+      }
+    ],
+    "pass": true
+  },
+  "archive_sha256": "63b38da3bd2d68b1a1c326a59edeaa7f203c42b2585d273f56206b324f961ed1",
+  "token_count_provenance": "MTP-off client uses raw inter-token intervals without the natural-MTP token-count normalization. Captured request ITLs and TTFTs match the raw benchmark arrays.",
+  "sampling_errors_after_shutdown": [],
+  "shutdown_epoch": null,
+  "resolved_checked": {
+    "tp_size": 4,
+    "ep_size": 1,
+    "attn_dp_size": 1,
+    "moe_runner_backend": "flashinfer_trtllm",
+    "dsa_prefill_backend": "flashmla_sparse",
+    "dsa_decode_backend": "flashmla_sparse",
+    "kv_cache_dtype": "bfloat16",
+    "speculative_algorithm": null,
+    "disable_hybrid_swa_memory": false,
+    "random_seed": 1,
+    "disable_prefill_cuda_graph": true,
+    "cuda_graph_backend_prefill": null
+  },
+  "gpu_ownership_samples": 451,
+  "gpu_ownership_failures": 0,
+  "rust_extension_sha256": [
+    "c933d62cbea75638fc7a1c4c1e114cac83fe7e149cfc65591492252ec5536055"
+  ],
+  "server_random_seed": 1,
+  "manifest_files_verified": 191,
+  "prefill_graph_evidence": {
+    "scope": "Whole client execution including warmup; raw server byte windows independently matched.",
+    "loads": [
+      {
+        "level": 1,
+        "repeat": 1,
+        "backend": "disabled",
+        "graph": 0,
+        "eager": 68
+      },
+      {
+        "level": 1,
+        "repeat": 2,
+        "backend": "disabled",
+        "graph": 0,
+        "eager": 68
+      },
+      {
+        "level": 2,
+        "repeat": 1,
+        "backend": "disabled",
+        "graph": 0,
+        "eager": 62
+      },
+      {
+        "level": 2,
+        "repeat": 2,
+        "backend": "disabled",
+        "graph": 0,
+        "eager": 63
+      },
+      {
+        "level": 4,
+        "repeat": 1,
+        "backend": "disabled",
+        "graph": 0,
+        "eager": 36
+      },
+      {
+        "level": 4,
+        "repeat": 2,
+        "backend": "disabled",
+        "graph": 0,
+        "eager": 36
+      },
+      {
+        "level": 8,
+        "repeat": 1,
+        "backend": "disabled",
+        "graph": 0,
+        "eager": 21
+      },
+      {
+        "level": 8,
+        "repeat": 2,
+        "backend": "disabled",
+        "graph": 0,
+        "eager": 21
+      },
+      {
+        "level": 16,
+        "repeat": 1,
+        "backend": "disabled",
+        "graph": 0,
+        "eager": 30
+      },
+      {
+        "level": 16,
+        "repeat": 2,
+        "backend": "disabled",
+        "graph": 0,
+        "eager": 30
+      },
+      {
+        "level": 32,
+        "repeat": 1,
+        "backend": "disabled",
+        "graph": 0,
+        "eager": 41
+      },
+      {
+        "level": 32,
+        "repeat": 2,
+        "backend": "disabled",
+        "graph": 0,
+        "eager": 42
+      }
+    ],
+    "graph_replays": 0,
+    "eager_prefills": 518
+  }
+}

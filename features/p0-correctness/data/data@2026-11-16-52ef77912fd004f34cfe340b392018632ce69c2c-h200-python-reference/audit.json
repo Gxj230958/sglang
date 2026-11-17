@@ -1,0 +1,75 @@
+{
+  "runtime": "52ef77912fd004f34cfe340b392018632ce69c2c",
+  "rows": 1319,
+  "correct": 1256,
+  "score": 0.9522365428354814,
+  "finish_reasons": {
+    "stop": 1316,
+    "length": 3
+  },
+  "stop_rate": 0.9977255496588324,
+  "length_rows": [
+    {
+      "id": "gsm8k-505",
+      "tokens": 32768,
+      "correct": false
+    },
+    {
+      "id": "gsm8k-552",
+      "tokens": 32768,
+      "correct": false
+    },
+    {
+      "id": "gsm8k-1035",
+      "tokens": 32768,
+      "correct": false
+    }
+  ],
+  "sampling": {
+    "chat_template_kwargs": null,
+    "extra_body": null,
+    "max_tokens": 32768,
+    "min_p": 0.0,
+    "reasoning_effort": null,
+    "repetition_penalty": 1.0,
+    "seed": 1,
+    "system_message": null,
+    "temperature": 1.0,
+    "top_p": 0.95
+  },
+  "resolved": {
+    "tp_size": 8,
+    "ep_size": 1,
+    "attn_dp_size": 1,
+    "kv_cache_dtype": "bfloat16",
+    "dsa_prefill_backend": "flashmla_sparse",
+    "dsa_decode_backend": "flashmla_sparse",
+    "moe_runner_backend": "auto",
+    "context_length": 65536,
+    "mem_fraction_static": 0.75,
+    "chunked_prefill_size": 32768,
+    "max_running_requests": 32,
+    "random_seed": 1,
+    "speculative_algorithm": "EAGLE",
+    "speculative_num_steps": 3,
+    "speculative_eagle_topk": 1,
+    "speculative_num_draft_tokens": 4,
+    "speculative_draft_model_quantization": "fp8",
+    "disable_prefill_cuda_graph": true
+  },
+  "eight_live_python_workers_verified": true,
+  "gpu_samples": 637,
+  "gpu_process_records": 5746,
+  "sampling_errors": [],
+  "measurement_sampling_errors": [],
+  "counters": {
+    "generation_tokens_total": 656509.0,
+    "spec_verify_calls_total": 246039.0
+  },
+  "counter_derived_natural_acceptance": 2.6683127471661,
+  "prediction_completion_tokens": 656509,
+  "archive_sha256": "fc541ff2bb8dd682b6dc16e766a3de5c645dd52f2917ba5b7bdddc6e8cf07902",
+  "raw_files": 51,
+  "all_requests_stopped": false,
+  "scope": "One same-candidate Python TreeCore reference for E22 on revision 52ef77912fd004f34cfe340b392018632ce69c2c. Checkpoint, dependencies, service and evaluation settings match; TreeCore selection differs. Single-run variation remains. Image-level and NVFP4 qualification are separate."
+}

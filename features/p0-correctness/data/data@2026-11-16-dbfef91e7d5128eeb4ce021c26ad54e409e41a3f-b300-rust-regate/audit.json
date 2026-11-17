@@ -1,0 +1,274 @@
+{
+  "runtime": "dbfef91e7d5128eeb4ce021c26ad54e409e41a3f",
+  "source": {
+    "revision": "dbfef91e7d5128eeb4ce021c26ad54e409e41a3f",
+    "verified_files": 12580,
+    "mismatches": []
+  },
+  "terminal_exit": 0,
+  "idle": {
+    "idle": true,
+    "blocked": [],
+    "memory_mib": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "gpu_pids": []
+  },
+  "arms": {
+    "tp8-bf16": {
+      "runtime": "dbfef91e7d5128eeb4ce021c26ad54e409e41a3f",
+      "rows": 1319,
+      "unique_complete_ids": true,
+      "correct": 1243,
+      "score": 0.9423805913570887,
+      "finish_reasons": {
+        "stop": 1315,
+        "length": 4
+      },
+      "stop_rate": 0.9969673995451099,
+      "length_rows": [
+        {
+          "id": "gsm8k-796",
+          "tokens": 65441,
+          "correct": false
+        },
+        {
+          "id": "gsm8k-135",
+          "tokens": 65454,
+          "correct": false
+        },
+        {
+          "id": "gsm8k-87",
+          "tokens": 65423,
+          "correct": false
+        },
+        {
+          "id": "gsm8k-1176",
+          "tokens": 65353,
+          "correct": false
+        }
+      ],
+      "sampling": {
+        "chat_template_kwargs": null,
+        "extra_body": null,
+        "max_tokens": null,
+        "min_p": 0.0,
+        "reasoning_effort": null,
+        "repetition_penalty": 1.0,
+        "seed": null,
+        "system_message": null,
+        "temperature": 1.0,
+        "top_p": 0.95
+      },
+      "resolved": {
+        "tp_size": 8,
+        "ep_size": 1,
+        "attn_dp_size": 1,
+        "context_length": 65536,
+        "kv_cache_dtype": "bfloat16",
+        "dsa_prefill_backend": "flashmla_sparse",
+        "dsa_decode_backend": "flashmla_sparse",
+        "speculative_algorithm": "EAGLE",
+        "speculative_num_steps": 3,
+        "speculative_num_draft_tokens": 4,
+        "speculative_eagle_topk": 1
+      },
+      "rust_all_ranks_mapped": true,
+      "gpu_process_samples": 5151,
+      "foreign_gpu_processes": [],
+      "unresolved_gpu_processes": [],
+      "counters": {
+        "generation_tokens_total": 842847.0,
+        "spec_verify_calls_total": 312098.0
+      },
+      "counter_derived_natural_acceptance": 2.7005844318130845,
+      "prediction_completion_tokens": 842847,
+      "server_minus_prediction_completion_tokens": 0.0,
+      "archive_sha256": "7272dba62913008905d1df0868e21e5a411284840c261d2a50338fd129724136",
+      "gate": "stopping_nonregression_unmet",
+      "caveat": "Unseeded single historical/current runs do not establish a causal Rust effect.",
+      "historical_fi074_python": {
+        "path": "glm-next/sglang-glm5lp-rust-validation/features/p0-correctness/data/data@2026-11-16-dbfef91e7d5128eeb4ce021c26ad54e409e41a3f-flashinfer-073-074-accept-length/fi074",
+        "correct": 1254,
+        "finish_reasons": {
+          "stop": 1318,
+          "length": 1
+        }
+      },
+      "score_delta_percentage_points": -0.8339651250947687,
+      "stop_delta_percentage_points": -0.22744503411675512,
+      "baseline_comparison": {
+        "source": "Correctness E16 FI0.7.4 Python TP8 BF16",
+        "correct": 1254,
+        "finish_reasons": {
+          "stop": 1318,
+          "length": 1
+        },
+        "accuracy_delta_pp": -0.8339651250947687,
+        "stop_delta_pp": -0.22744503411675512,
+        "launch_flag_differences": {
+          "--port": [
+            "31746",
+            "31749"
+          ]
+        }
+      }
+    },
+    "tp8-fp8": {
+      "runtime": "dbfef91e7d5128eeb4ce021c26ad54e409e41a3f",
+      "rows": 1319,
+      "unique_complete_ids": true,
+      "correct": 1251,
+      "score": 0.9484457922668689,
+      "finish_reasons": {
+        "stop": 1319
+      },
+      "stop_rate": 1.0,
+      "length_rows": [],
+      "sampling": {
+        "chat_template_kwargs": null,
+        "extra_body": null,
+        "max_tokens": null,
+        "min_p": 0.0,
+        "reasoning_effort": null,
+        "repetition_penalty": 1.0,
+        "seed": null,
+        "system_message": null,
+        "temperature": 1.0,
+        "top_p": 0.95
+      },
+      "resolved": {
+        "tp_size": 8,
+        "ep_size": 1,
+        "attn_dp_size": 1,
+        "context_length": 65536,
+        "kv_cache_dtype": "fp8_e4m3",
+        "dsa_prefill_backend": "trtllm",
+        "dsa_decode_backend": "trtllm",
+        "speculative_algorithm": "EAGLE",
+        "speculative_num_steps": 3,
+        "speculative_num_draft_tokens": 4,
+        "speculative_eagle_topk": 1
+      },
+      "rust_all_ranks_mapped": true,
+      "gpu_process_samples": 4625,
+      "foreign_gpu_processes": [],
+      "unresolved_gpu_processes": [],
+      "counters": {
+        "generation_tokens_total": 709019.0,
+        "spec_verify_calls_total": 269609.0
+      },
+      "counter_derived_natural_acceptance": 2.629804643020077,
+      "prediction_completion_tokens": 709019,
+      "server_minus_prediction_completion_tokens": 0.0,
+      "archive_sha256": "c2addb0ab6c65945b860a4fb499589c406a3cd151c36c3dfd7a0f9cb320dc80d",
+      "gate": "passes_observed_accuracy_and_stop_nonregression_for_this_configuration",
+      "caveat": "Unseeded single historical/current runs do not establish a causal Rust effect.",
+      "historical_python": {
+        "path": "glm-next/sglang-glm5lp-rust-validation/features/p0-correctness/data/data@2026-11-16-dbfef91e7d5128eeb4ce021c26ad54e409e41a3f-tp8-fp8-kv/tp8-fp8",
+        "correct": 1254,
+        "finish_reasons": {
+          "stop": 1316,
+          "length": 3
+        }
+      },
+      "score_delta_percentage_points": -0.22744503411675512,
+      "stop_delta_percentage_points": 0.22744503411675512,
+      "launch_flag_differences": {
+        "--port": [
+          [
+            "31747"
+          ],
+          [
+            "31749"
+          ]
+        ]
+      }
+    },
+    "dep8": {
+      "runtime": "dbfef91e7d5128eeb4ce021c26ad54e409e41a3f",
+      "rows": 1319,
+      "unique_complete_ids": true,
+      "correct": 1245,
+      "score": 0.9438968915845337,
+      "finish_reasons": {
+        "stop": 1318,
+        "length": 1
+      },
+      "stop_rate": 0.9992418498862775,
+      "length_rows": [
+        {
+          "id": "gsm8k-1176",
+          "tokens": 147273,
+          "correct": false
+        }
+      ],
+      "sampling": {
+        "chat_template_kwargs": null,
+        "extra_body": null,
+        "max_tokens": null,
+        "min_p": 0.0,
+        "reasoning_effort": null,
+        "repetition_penalty": 1.0,
+        "seed": null,
+        "system_message": null,
+        "temperature": 1.0,
+        "top_p": 0.95
+      },
+      "resolved": {
+        "tp_size": 8,
+        "ep_size": 8,
+        "attn_dp_size": 8,
+        "context_length": 147456,
+        "kv_cache_dtype": "fp8_e4m3",
+        "dsa_prefill_backend": "trtllm",
+        "dsa_decode_backend": "trtllm",
+        "speculative_algorithm": "EAGLE",
+        "speculative_num_steps": 3,
+        "speculative_num_draft_tokens": 4,
+        "speculative_eagle_topk": 1,
+        "moe_runner_backend": "flashinfer_trtllm",
+        "moe_a2a_backend": "none"
+      },
+      "rust_all_ranks_mapped": true,
+      "gpu_process_samples": 8098,
+      "foreign_gpu_processes": [],
+      "unresolved_gpu_processes": [],
+      "counters": {
+        "generation_tokens_total": 904180.0,
+        "spec_verify_calls_total": 333542.0
+      },
+      "counter_derived_natural_acceptance": 2.7108430122743163,
+      "prediction_completion_tokens": 904180,
+      "server_minus_prediction_completion_tokens": 0.0,
+      "archive_sha256": "5d2e0b727389677bfb8c824d031531bda97ce8dcb76383364b49f9b8914382d2",
+      "gate": "stopping_nonregression_unmet",
+      "caveat": "Unseeded single historical/current runs do not establish a causal Rust effect.",
+      "baseline_comparison": {
+        "source": "Correctness E15 Python DEP8",
+        "correct": 1254,
+        "finish_reasons": {
+          "stop": 1319
+        },
+        "accuracy_delta_pp": -0.6823351023502654,
+        "stop_delta_pp": -0.0758150113722517,
+        "launch_flag_differences": {
+          "--port": [
+            "31874",
+            "31749"
+          ]
+        }
+      }
+    }
+  },
+  "archive_sha256": "75f8204dd1d36f5c1e0a208319674af56c847968f74fdbf0dafa1d5074f6a3a8",
+  "overall_gate": "stopping_nonregression_unmet",
+  "scope": "Historical baseline Rust correctness only. Current integration, H200 and other feature combinations remain separate."
+}

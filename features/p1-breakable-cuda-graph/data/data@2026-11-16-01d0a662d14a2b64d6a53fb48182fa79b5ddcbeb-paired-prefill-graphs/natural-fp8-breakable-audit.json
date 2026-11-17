@@ -1,0 +1,370 @@
+{
+  "candidate": "fp8-prefill-breakable-mtp-natural",
+  "requests": 1280,
+  "loads": 12,
+  "natural_sanity_stops": 3,
+  "rows": [
+    {
+      "score": 1043.6398981110667,
+      "ttft": 0.13644448837731032,
+      "interactivity": 131.40904627340404,
+      "accept_length": 2.4978658536585368,
+      "level": 1,
+      "repeats": [
+        {
+          "counter_delta_including_warmup": {
+            "generation_tokens_total": 8320.0,
+            "spec_verify_calls_total": 3317.0
+          },
+          "completion_per_verify_including_warmup": 2.5082906240578837,
+          "score": 1045.0552256754331,
+          "ttft": 0.1369562500156462,
+          "interactivity": 131.45325374989713,
+          "accept_length": 2.5021341463414632,
+          "intervals": 8046
+        },
+        {
+          "counter_delta_including_warmup": {
+            "generation_tokens_total": 8320.0,
+            "spec_verify_calls_total": 3326.0
+          },
+          "completion_per_verify_including_warmup": 2.5015033072760073,
+          "score": 1042.2245705467003,
+          "ttft": 0.13593272673897444,
+          "interactivity": 131.36483879691096,
+          "accept_length": 2.49359756097561,
+          "intervals": 8046
+        }
+      ],
+      "pass": true
+    },
+    {
+      "score": 1559.6733000643592,
+      "ttft": 0.17512924700276933,
+      "interactivity": 70.70384893019244,
+      "accept_length": 2.425366098733071,
+      "level": 2,
+      "repeats": [
+        {
+          "counter_delta_including_warmup": {
+            "generation_tokens_total": 8320.0,
+            "spec_verify_calls_total": 3541.0
+          },
+          "completion_per_verify_including_warmup": 2.349618751765038,
+          "score": 1517.4471497641366,
+          "ttft": 0.19223584097344443,
+          "interactivity": 55.58697788030542,
+          "accept_length": 2.3482857142857143,
+          "intervals": 8014
+        },
+        {
+          "counter_delta_including_warmup": {
+            "generation_tokens_total": 8320.0,
+            "spec_verify_calls_total": 3313.0
+          },
+          "completion_per_verify_including_warmup": 2.5113190461817085,
+          "score": 1601.8994503645818,
+          "ttft": 0.15802265303209426,
+          "interactivity": 85.82071998007945,
+          "accept_length": 2.502446483180428,
+          "intervals": 8046
+        }
+      ],
+      "pass": true
+    },
+    {
+      "score": 2197.917867671101,
+      "ttft": 0.24064849480055275,
+      "interactivity": 43.286245363304666,
+      "accept_length": 2.4427725606727844,
+      "level": 4,
+      "repeats": [
+        {
+          "counter_delta_including_warmup": {
+            "generation_tokens_total": 8320.0,
+            "spec_verify_calls_total": 3395.0
+          },
+          "completion_per_verify_including_warmup": 2.4506627393225333,
+          "score": 2172.6571332367653,
+          "ttft": 0.2254323053872213,
+          "interactivity": 43.16030600019715,
+          "accept_length": 2.451393005334914,
+          "intervals": 8050
+        },
+        {
+          "counter_delta_including_warmup": {
+            "generation_tokens_total": 8320.0,
+            "spec_verify_calls_total": 3405.0
+          },
+          "completion_per_verify_including_warmup": 2.4434654919236416,
+          "score": 2223.1786021054368,
+          "ttft": 0.2558646842138842,
+          "interactivity": 43.41218472641218,
+          "accept_length": 2.434152116010654,
+          "intervals": 8020
+        }
+      ],
+      "pass": true
+    },
+    {
+      "score": 2926.247300908024,
+      "ttft": 1.1187478099367587,
+      "interactivity": 32.81310601238907,
+      "accept_length": 2.434814256078144,
+      "level": 8,
+      "repeats": [
+        {
+          "counter_delta_including_warmup": {
+            "generation_tokens_total": 8320.0,
+            "spec_verify_calls_total": 3476.0
+          },
+          "completion_per_verify_including_warmup": 2.3935558112773303,
+          "score": 2896.88923449875,
+          "ttft": 1.0609610437881214,
+          "interactivity": 32.661503618026714,
+          "accept_length": 2.3875181422351233,
+          "intervals": 8034
+        },
+        {
+          "counter_delta_including_warmup": {
+            "generation_tokens_total": 8320.0,
+            "spec_verify_calls_total": 3357.0
+          },
+          "completion_per_verify_including_warmup": 2.4784033363121836,
+          "score": 2955.6053673172983,
+          "ttft": 1.176534576085396,
+          "interactivity": 32.96470840675143,
+          "accept_length": 2.4821103699211644,
+          "intervals": 8023
+        }
+      ],
+      "pass": true
+    },
+    {
+      "score": 3949.178297372644,
+      "ttft": 1.9361704694572837,
+      "interactivity": 22.585954181241732,
+      "accept_length": 2.446121002642151,
+      "level": 16,
+      "repeats": [
+        {
+          "counter_delta_including_warmup": {
+            "generation_tokens_total": 16512.0,
+            "spec_verify_calls_total": 6770.0
+          },
+          "completion_per_verify_including_warmup": 2.438995568685377,
+          "score": 3969.2128620900935,
+          "ttft": 2.013180044735782,
+          "interactivity": 22.699065281312347,
+          "accept_length": 2.435022354694486,
+          "intervals": 16065
+        },
+        {
+          "counter_delta_including_warmup": {
+            "generation_tokens_total": 16512.0,
+            "spec_verify_calls_total": 6713.0
+          },
+          "completion_per_verify_including_warmup": 2.4597050499031727,
+          "score": 3929.143732655195,
+          "ttft": 1.8591608941787854,
+          "interactivity": 22.472843081171114,
+          "accept_length": 2.4572196505898165,
+          "intervals": 16061
+        }
+      ],
+      "pass": false
+    },
+    {
+      "score": 5469.134172963593,
+      "ttft": 1.8850425289710984,
+      "interactivity": 13.8356938969259,
+      "accept_length": 2.437422554205546,
+      "level": 32,
+      "repeats": [
+        {
+          "counter_delta_including_warmup": {
+            "generation_tokens_total": 32896.0,
+            "spec_verify_calls_total": 13612.0
+          },
+          "completion_per_verify_including_warmup": 2.416691154863356,
+          "score": 5404.3102746330005,
+          "ttft": 1.8827025929931551,
+          "interactivity": 13.402348851198171,
+          "accept_length": 2.4139323203406002,
+          "intervals": 32088
+        },
+        {
+          "counter_delta_including_warmup": {
+            "generation_tokens_total": 32896.0,
+            "spec_verify_calls_total": 13368.0
+          },
+          "completion_per_verify_including_warmup": 2.4608019150209457,
+          "score": 5533.958071294186,
+          "ttft": 1.8873824649490416,
+          "interactivity": 14.26903894265363,
+          "accept_length": 2.4609127880704924,
+          "intervals": 32133
+        }
+      ],
+      "pass": false
+    }
+  ],
+  "best_passing": {
+    "score": 2926.247300908024,
+    "ttft": 1.1187478099367587,
+    "interactivity": 32.81310601238907,
+    "accept_length": 2.434814256078144,
+    "level": 8,
+    "repeats": [
+      {
+        "counter_delta_including_warmup": {
+          "generation_tokens_total": 8320.0,
+          "spec_verify_calls_total": 3476.0
+        },
+        "completion_per_verify_including_warmup": 2.3935558112773303,
+        "score": 2896.88923449875,
+        "ttft": 1.0609610437881214,
+        "interactivity": 32.661503618026714,
+        "accept_length": 2.3875181422351233,
+        "intervals": 8034
+      },
+      {
+        "counter_delta_including_warmup": {
+          "generation_tokens_total": 8320.0,
+          "spec_verify_calls_total": 3357.0
+        },
+        "completion_per_verify_including_warmup": 2.4784033363121836,
+        "score": 2955.6053673172983,
+        "ttft": 1.176534576085396,
+        "interactivity": 32.96470840675143,
+        "accept_length": 2.4821103699211644,
+        "intervals": 8023
+      }
+    ],
+    "pass": true
+  },
+  "archive_sha256": "24ae27f625bedaabc4e065e5913ee911845101eb46bad95c95d6b33472586450",
+  "token_count_provenance": "Chunk token counts captured with the runtime tokenizer; interval distribution independently reconstructed from raw chunks/counts/ITLs.",
+  "simulation": {},
+  "sampling_errors_after_shutdown": [],
+  "shutdown_epoch": null,
+  "resolved_checked": {
+    "tp_size": 4,
+    "ep_size": 1,
+    "attn_dp_size": 1,
+    "moe_runner_backend": "flashinfer_trtllm",
+    "dsa_prefill_backend": "flashmla_sparse",
+    "dsa_decode_backend": "flashmla_sparse",
+    "kv_cache_dtype": "bfloat16",
+    "speculative_algorithm": "EAGLE",
+    "disable_hybrid_swa_memory": false,
+    "speculative_num_steps": 3,
+    "speculative_eagle_topk": 1,
+    "speculative_num_draft_tokens": 4,
+    "speculative_draft_model_quantization": "fp8",
+    "speculative_draft_model_path": "/scratch/models/GLM-5-1028-Provider",
+    "random_seed": 1,
+    "disable_prefill_cuda_graph": false,
+    "cuda_graph_backend_prefill": "breakable"
+  },
+  "gpu_ownership_samples": 393,
+  "gpu_ownership_failures": 0,
+  "rust_extension_sha256": [
+    "c933d62cbea75638fc7a1c4c1e114cac83fe7e149cfc65591492252ec5536055"
+  ],
+  "server_random_seed": 1,
+  "manifest_files_verified": 191,
+  "mode": "natural",
+  "scope": "Natural acceptance with three startup stopping probes. Reported server average acceptance and completion/verify counter ratio have distinct accounting; both retained. Full-model stopping qualification is separate.",
+  "prefill_graph_evidence": {
+    "scope": "Whole client execution including warmup; raw server byte windows independently matched.",
+    "loads": [
+      {
+        "level": 1,
+        "repeat": 1,
+        "backend": "breakable",
+        "graph": 68,
+        "eager": 0
+      },
+      {
+        "level": 1,
+        "repeat": 2,
+        "backend": "breakable",
+        "graph": 68,
+        "eager": 0
+      },
+      {
+        "level": 2,
+        "repeat": 1,
+        "backend": "breakable",
+        "graph": 68,
+        "eager": 0
+      },
+      {
+        "level": 2,
+        "repeat": 2,
+        "backend": "breakable",
+        "graph": 67,
+        "eager": 0
+      },
+      {
+        "level": 4,
+        "repeat": 1,
+        "backend": "breakable",
+        "graph": 65,
+        "eager": 0
+      },
+      {
+        "level": 4,
+        "repeat": 2,
+        "backend": "breakable",
+        "graph": 65,
+        "eager": 0
+      },
+      {
+        "level": 8,
+        "repeat": 1,
+        "backend": "breakable",
+        "graph": 59,
+        "eager": 0
+      },
+      {
+        "level": 8,
+        "repeat": 2,
+        "backend": "breakable",
+        "graph": 58,
+        "eager": 0
+      },
+      {
+        "level": 16,
+        "repeat": 1,
+        "backend": "breakable",
+        "graph": 107,
+        "eager": 0
+      },
+      {
+        "level": 16,
+        "repeat": 2,
+        "backend": "breakable",
+        "graph": 107,
+        "eager": 0
+      },
+      {
+        "level": 32,
+        "repeat": 1,
+        "backend": "breakable",
+        "graph": 180,
+        "eager": 0
+      },
+      {
+        "level": 32,
+        "repeat": 2,
+        "backend": "breakable",
+        "graph": 169,
+        "eager": 0
+      }
+    ],
+    "graph_replays": 1081,
+    "eager_prefills": 0
+  }
+}

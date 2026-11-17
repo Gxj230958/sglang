@@ -1,0 +1,25 @@
+{
+  "observed_at": "2026-11-17T00:55:52.531268+00:00",
+  "runtime": "52ef77912fd004f34cfe340b392018632ce69c2c",
+  "rust_workers": 4,
+  "live_probe": {
+    "pid": 1116844,
+    "start_ticks": "381536178",
+    "argv": [
+      "/opt/sglang/bin/python",
+      "/scratch/glm5lp-fallback-cp-retrieval-52ef77912f/tp4/fp8/diagnostic.py",
+      "http://127.0.0.1:32230",
+      "/scratch/glm5lp-fallback-cp-retrieval-52ef77912f/tp4/fp8/results/tp4/diagnostic"
+    ],
+    "owner": "glm5lp-cp-retrieval-tp4-fp8-52ef",
+    "network_environment": {
+      "NCCL_SOCKET_IFNAME": "cilium_host",
+      "GLOO_SOCKET_IFNAME": "cilium_host",
+      "NCCL_DEBUG": "WARN"
+    },
+    "simulation": {},
+    "pythonpath": "/scratch/glm5lp-fallback-tp4-52ef77912f-v2/overlay:/scratch/glm5lp-fallback-tp4-52ef77912f/src/python"
+  },
+  "receipt_sha256": "16d4698138106603355d46392c31c42876e014cea498c748d46d8733644a3c9f",
+  "scope": "Live source/backend/process and functional probe evidence; terminal audit remains pending."
+}

@@ -1,0 +1,23 @@
+{
+  "exclusion-mapping-check.json": "6d5cf4a653ccf7652cbf666f7800b2d5ab7cbc952d2df21a4b0fac991cba78f7",
+  "exclusion-mapping-check.log": "8c8e53b617e6b8dd391701dff849b917298107bf84aa4805a21b5c5befab6624",
+  "nvfp4-full-driver.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+  "nvfp4-full-prelaunch-probe.json": "ddf78940e7552aed68e2d1db46c8b02061170ff65578d36c8b8bb70c4ca1422d",
+  "nvfp4-full.log": "d559b330b604c57925d10a1bea836910eed9be3fd19391b4838663f6b04dfcd0",
+  "paired-full-accounting.json": "d20bce7fd6f18328d11ead04e6ac610a8d71e43ad0992dc35f4e20a7ff7f8c3e",
+  "runs/nvfp4-full-current1/chat.json": "2127efe42dca32d3e255c99013a79682d4657aa753fb67a03816d86dea722f94",
+  "runs/nvfp4-full-current1/gpu-before.csv": "32ce3558bdc787d2938242e8c920ae5fcd159b6166acb6b98dd06f2a3a9cceb3",
+  "runs/nvfp4-full-current1/gpu-final.csv": "32ce3558bdc787d2938242e8c920ae5fcd159b6166acb6b98dd06f2a3a9cceb3",
+  "runs/nvfp4-full-current1/gpu-processes-before.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "runs/nvfp4-full-current1/gpu-ready.csv": "6b10084de6740f24b8938be2a1dd336ab961cafff0cd59d80f820c2bebe21a6d",
+  "runs/nvfp4-full-current1/gsm8k/sgl_eval_gsm8k_20261116-101724/metrics.json": "ed9fd2d912fd73046c577fe896facaecc194c2d395490d94d9956529add3b079",
+  "runs/nvfp4-full-current1/gsm8k/sgl_eval_gsm8k_20261116-101724/output-rs0.jsonl": "d88e40c65a562b3a9e834e18a4248b3796f87d2d90fefbb11f07845fd7903fb5",
+  "runs/nvfp4-full-current1/gsm8k-command.json": "2b6fcd5a38aeed8e449c85c63d8c19c2638ab043f740922b91a8c7b084ff3ea0",
+  "runs/nvfp4-full-current1/gsm8k.log": "fbe01a0f9dab574a06e264e6bab262bb7b4808321a2624b22ca6a78bd4a097cb",
+  "runs/nvfp4-full-current1/launch.json": "6a0cd32fd16dd6e70fb6e75221a5f7a30b121bcfe702769c53340c94796529b2",
+  "runs/nvfp4-full-current1/server-info-ready.json": "c43e1c2929ecf2f0b7de26817f54d6d9bad4f557e308492dc31b91824535c7b4",
+  "runs/nvfp4-full-current1/server-process.json": "0cc61035d4fae5f9c6e2cf4271e1558b183a9d35fb4752e137b36d3a642fb69f",
+  "runs/nvfp4-full-current1/server.log": "9b031d6db4398fdb9e7a63afa97fbaf8b9ab0d4b72ca3005f1bf6fe9036b8813",
+  "runs/nvfp4-full-current1/status.json": "85262d1c9c7d992bc3725ce5101017f80f53e9c8a11ec60ae2419ac5663ce842",
+  "runs/nvfp4-full-current1/tree-core.json": "cb9daec0f7c7769aad2a3d9dd7e99a64bb7c060cf265fc467869aabcc3abc11b"
+}

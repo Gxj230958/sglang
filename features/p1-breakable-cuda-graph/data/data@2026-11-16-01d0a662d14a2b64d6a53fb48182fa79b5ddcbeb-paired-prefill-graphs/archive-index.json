@@ -1,0 +1,70 @@
+[
+  {
+    "archive": "off-fp8-eager-snapshot.tar.gz",
+    "sha256": "63b38da3bd2d68b1a1c326a59edeaa7f203c42b2585d273f56206b324f961ed1",
+    "files": 191
+  },
+  {
+    "archive": "off-nvfp4-eager-snapshot.tar.gz",
+    "sha256": "7819b351dae5eaa671cf5fdb7fa4083a8f6792bb3cf9c59be980d02254741a64",
+    "files": 191
+  },
+  {
+    "archive": "off-fp8-breakable-snapshot.tar.gz",
+    "sha256": "1904c3420de1bf010b03db77b9aa175f45b025c42cb9a6d9d052123e66f3a918",
+    "files": 191
+  },
+  {
+    "archive": "off-nvfp4-breakable-snapshot.tar.gz",
+    "sha256": "d3e071252a31da950cea01daf7b92447341b78d5d7c73d0c9c2b53b0aa3f12f3",
+    "files": 191
+  },
+  {
+    "archive": "natural-fp8-eager-snapshot.tar.gz",
+    "sha256": "1481730c6724ec65c039281520f8a1a489e189cb1926b8c4f79af6b10994a477",
+    "files": 191
+  },
+  {
+    "archive": "natural-nvfp4-eager-snapshot.tar.gz",
+    "sha256": "14e93d12406d09d016069864bf81f2b567fa0e3ee76cf93a5e987495dbd3c064",
+    "files": 191
+  },
+  {
+    "archive": "natural-fp8-breakable-snapshot.tar.gz",
+    "sha256": "24ae27f625bedaabc4e065e5913ee911845101eb46bad95c95d6b33472586450",
+    "files": 191
+  },
+  {
+    "archive": "natural-nvfp4-breakable-snapshot.tar.gz",
+    "sha256": "58b170abf7e546bdd343663d0957428655b6c69e9ddbf18beda3bf0ff9b15a8a",
+    "files": 191
+  },
+  {
+    "archive": "controlled-fp8-eager-snapshot.tar.gz",
+    "sha256": "edbeccf7f0739f181df662e2dbca2700ba9c534b42dd6033d6f914e63483b7ca",
+    "files": 184
+  },
+  {
+    "archive": "controlled-nvfp4-eager-snapshot.tar.gz",
+    "sha256": "5744617fc57bcde464789892da943803aa1943c6ccfee0320e57def4e54e3d58",
+    "files": 184
+  },
+  {
+    "archive": "controlled-fp8-breakable-snapshot.tar.gz",
+    "sha256": "5358967e2a798059e41627d1548423188b49093c0af844c90a18e8654742bddb",
+    "files": 184
+  },
+  {
+    "archive": "controlled-nvfp4-breakable-snapshot.tar.gz",
+    "sha256": "c8697059e8154b7b8413c94ca93cbd28fbc8db474c4dd380d81e8212d4679635",
+    "files": 184
+  },
+  {
+    "archive": "terminal-evidence.tar.gz",
+    "sha256": "16abdf4831acf3fac81eaaa57f12b5d315533e8737d6538846e4f34a5c2b31a2",
+    "files": 41,
+    "source_archive_sha256": "361f6a7ca925c47716dd558a5b1e2a37db7d989faa50144a0b97e7d80e20bec6",
+    "omitted_member": "workload.json",
+    "omitted_sha256": "235ea06164ba2a9f4700d5bee5ca12206a6ea21ed246ed64c8022b3bbb0d8688"
+  }
+]

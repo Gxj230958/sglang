@@ -1,0 +1,12 @@
+{
+  "capture_sha256": "65b44c5adeeaa19d108a9f4804c1b2a7d8e5a7cbd6ff7e9ed1cdcd959dd4543d",
+  "omitted_operational_files": [
+    "recovery.md",
+    "runtime.patch",
+    "sgl-eval-help.txt",
+    "sglang.benchmark.serving.help.txt",
+    "sglang.launch_server.help.txt"
+  ],
+  "measurement_files": "byte-preserved",
+  "manifest": "SHA256SUMS"
+}

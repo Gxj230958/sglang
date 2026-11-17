@@ -1,0 +1,130 @@
+{
+  "observed_at": "2026-11-16T23:21:35.630892+00:00",
+  "runtime": "52ef77912fd004f34cfe340b392018632ce69c2c",
+  "rust_workers": 4,
+  "extension_sha256": [
+    "c933d62cbea75638fc7a1c4c1e114cac83fe7e149cfc65591492252ec5536055"
+  ],
+  "imports": {
+    "pid": 1072501,
+    "simulation": {},
+    "fused_h64_decode": "0",
+    "versions": {
+      "torch": "2.14.1+cu130",
+      "transformers": "5.19.0",
+      "flashinfer-python": "0.7.4",
+      "flashinfer-cubin": "0.7.4",
+      "flashinfer-jit-cache": "0.7.4+cu130",
+      "flashinfer-jit-cache-sm103a": "0.7.4+cu130",
+      "sglang-kernel": "0.4.11",
+      "sgl-deep-gemm": "0.2.8",
+      "sgl-flash-mla": "1.0.5",
+      "kernels": "0.14.1",
+      "sgl-eval": "0.1.2"
+    },
+    "flashinfer_file": "/scratch/glm5lp-fallback-tp4-52ef77912f-v2/overlay/flashinfer/__init__.py",
+    "sglang_file": "/scratch/glm5lp-fallback-tp4-52ef77912f/src/python/sglang/__init__.py",
+    "torch_cuda": "13.0",
+    "jit_providers": [
+      {
+        "id": "sm103a",
+        "version": "0.7.4+cu130",
+        "path": "/scratch/glm5lp-fallback-tp4-52ef77912f-v2/overlay/flashinfer_jit_cache/providers/sm103a/jit_cache"
+      }
+    ],
+    "network_environment": {
+      "NCCL_SOCKET_IFNAME": "cilium_host",
+      "GLOO_SOCKET_IFNAME": "cilium_host",
+      "NCCL_DEBUG": "WARN"
+    },
+    "observation_environment": {
+      "SPT_NOENV": "1"
+    }
+  },
+  "resolved": {
+    "tp_size": 4,
+    "ep_size": 1,
+    "attn_dp_size": 1,
+    "kv_cache_dtype": "bfloat16",
+    "dsa_prefill_backend": "flashmla_sparse",
+    "dsa_decode_backend": "flashmla_sparse",
+    "moe_runner_backend": "flashinfer_trtllm",
+    "context_length": 131072,
+    "mem_fraction_static": 0.8,
+    "chunked_prefill_size": 8192,
+    "max_running_requests": 64,
+    "random_seed": 1,
+    "speculative_algorithm": "EAGLE",
+    "speculative_num_steps": 3,
+    "speculative_eagle_topk": 1,
+    "speculative_num_draft_tokens": 4,
+    "speculative_draft_model_quantization": "fp8",
+    "disable_prefill_cuda_graph": false,
+    "enable_prefill_cp": true,
+    "cp_strategy": "interleave",
+    "attn_cp_size": 4,
+    "cuda_graph_backend_prefill": "breakable",
+    "disable_hybrid_swa_memory": false,
+    "enable_fp32_lm_head": true,
+    "disable_shared_experts_fusion": true,
+    "quantization": "modelopt_mixed"
+  },
+  "eval_command": [
+    "/opt/sglang/bin/sgl-eval",
+    "run",
+    "gsm8k",
+    "--base-url",
+    "http://127.0.0.1:32210/v1",
+    "--temperature",
+    "1.0",
+    "--top-p",
+    "0.95",
+    "--seed",
+    "1",
+    "--num-threads",
+    "64",
+    "--max-tokens",
+    "32768",
+    "--out-dir",
+    "/scratch/glm5lp-fallback-cp4-52ef77912f/nvfp4/results/cp4/eval-t1"
+  ],
+  "actual_evaluator": {
+    "pid": 1079211,
+    "start_ticks": "380966343",
+    "argv": [
+      "/opt/sglang/bin/python3",
+      "/opt/sglang/bin/sgl-eval",
+      "run",
+      "gsm8k",
+      "--base-url",
+      "http://127.0.0.1:32210/v1",
+      "--temperature",
+      "1.0",
+      "--top-p",
+      "0.95",
+      "--seed",
+      "1",
+      "--num-threads",
+      "64",
+      "--max-tokens",
+      "32768",
+      "--out-dir",
+      "/scratch/glm5lp-fallback-cp4-52ef77912f/nvfp4/results/cp4/eval-t1"
+    ],
+    "owner": "glm5lp-fallback-cp4-nvfp4-52ef",
+    "network_environment": {
+      "NCCL_SOCKET_IFNAME": "cilium_host",
+      "GLOO_SOCKET_IFNAME": "cilium_host",
+      "NCCL_DEBUG": "WARN"
+    },
+    "simulation": {},
+    "pythonpath": "/scratch/glm5lp-fallback-tp4-52ef77912f-v2/overlay:/scratch/glm5lp-fallback-tp4-52ef77912f/src/python"
+  },
+  "source_verification": {
+    "revision": "52ef77912fd004f34cfe340b392018632ce69c2c",
+    "verified_files": 12586,
+    "mismatches": []
+  },
+  "receipt_sha256": "d2bd4263a9a170645b8fb7ce677aceb93f8c7735dab1e77c423718f62619528a",
+  "scope": "Live source/backend/process and evaluator command evidence; full results and final cleanup remain pending."
+}

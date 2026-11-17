@@ -1,0 +1,22 @@
+{
+  "commit": "dbfef91e7d5128eeb4ce021c26ad54e409e41a3f",
+  "scope": [
+    "python",
+    "rust"
+  ],
+  "archive_files_match_git_blobs": true,
+  "file_count": 6915,
+  "archives": [
+    {
+      "archive": "source.tar",
+      "sha256": "0bc685adbdffb285e19b767c2e341510c6edb912c1265643391976a478511ba6",
+      "files": 6608
+    },
+    {
+      "archive": "rust-source.tar",
+      "sha256": "6d9cf5edabc51b6e4285e5a6a9539b48f745b28e445174a19cfd960462c0c9b1",
+      "files": 307
+    }
+  ],
+  "limit": "Validates preserved deployment source archives against Git objects; does not independently rehash every live remote file."
+}

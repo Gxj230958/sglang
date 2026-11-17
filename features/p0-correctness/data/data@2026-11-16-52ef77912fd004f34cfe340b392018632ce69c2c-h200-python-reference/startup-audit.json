@@ -1,0 +1,81 @@
+{
+  "observed_at": "2026-11-16T20:45:56.130881+00:00",
+  "runtime": "52ef77912fd004f34cfe340b392018632ce69c2c",
+  "python_workers": 8,
+  "extension_sha256": [],
+  "imports": {
+    "pid": 2954352,
+    "simulation": {},
+    "requested_tree_core": "python",
+    "fused_h64_decode": "0",
+    "versions": {
+      "flashinfer-python": "0.7.4",
+      "flashinfer-cubin": "0.7.4",
+      "flashinfer-jit-cache": "0.7.4+cu130",
+      "sglang-kernel": "0.4.11",
+      "sgl-deep-gemm": "0.2.8",
+      "sgl-flash-mla": "1.0.5",
+      "kernels": "0.14.1",
+      "torch": "2.14.1",
+      "transformers": "5.19.0",
+      "sgl-fa3": "0.1.0",
+      "sgl-eval": "0.1.2"
+    },
+    "flashinfer_file": "/scratch/codex-fi074/overlay/flashinfer/__init__.py",
+    "sglang_file": "/scratch/glm5lp-h200-python-reference-52ef77912f/src/python/sglang/__init__.py",
+    "torch_cuda": "13.0",
+    "jit_providers": [
+      {
+        "id": "sm90a",
+        "version": "0.7.4+cu130",
+        "path": "/scratch/codex-fi074/overlay/flashinfer_jit_cache/providers/sm90a/jit_cache"
+      }
+    ]
+  },
+  "resolved": {
+    "tp_size": 8,
+    "ep_size": 1,
+    "attn_dp_size": 1,
+    "kv_cache_dtype": "bfloat16",
+    "dsa_prefill_backend": "flashmla_sparse",
+    "dsa_decode_backend": "flashmla_sparse",
+    "moe_runner_backend": "auto",
+    "context_length": 65536,
+    "mem_fraction_static": 0.75,
+    "chunked_prefill_size": 32768,
+    "max_running_requests": 32,
+    "random_seed": 1,
+    "speculative_algorithm": "EAGLE",
+    "speculative_num_steps": 3,
+    "speculative_eagle_topk": 1,
+    "speculative_num_draft_tokens": 4,
+    "speculative_draft_model_quantization": "fp8",
+    "disable_prefill_cuda_graph": true
+  },
+  "eval_command": [
+    "/opt/sglang/bin/sgl-eval",
+    "run",
+    "gsm8k",
+    "--base-url",
+    "http://127.0.0.1:31882/v1",
+    "--temperature",
+    "1.0",
+    "--top-p",
+    "0.95",
+    "--seed",
+    "1",
+    "--num-threads",
+    "64",
+    "--max-tokens",
+    "32768",
+    "--out-dir",
+    "/scratch/glm5lp-h200-python-reference-52ef77912f/results/h200-tp8/eval-t1"
+  ],
+  "source_verification": {
+    "revision": "52ef77912fd004f34cfe340b392018632ce69c2c",
+    "verified_files": 12586,
+    "mismatches": []
+  },
+  "receipt_sha256": "bdcdb889ce79e84c5b072ada09acf4d3ff39c00cab57398969dea24b8a40412b",
+  "scope": "Live startup and command evidence; full evaluation and final cleanup remain pending."
+}

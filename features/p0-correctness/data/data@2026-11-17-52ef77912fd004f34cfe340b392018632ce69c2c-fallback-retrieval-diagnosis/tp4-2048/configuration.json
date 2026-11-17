@@ -1,0 +1,108 @@
+{
+  "runtime": "52ef77912fd004f34cfe340b392018632ce69c2c",
+  "precision": "fp8",
+  "owner": "glm5lp-cp-retrieval-budget-tp4-fp8-52ef",
+  "remote": "/scratch/glm5lp-fallback-cp-retrieval-budget-52ef77912f/tp4/fp8",
+  "preparation_root": "/scratch/glm5lp-fallback-tp4-52ef77912f-v2",
+  "source": "/scratch/glm5lp-fallback-tp4-52ef77912f/src",
+  "overlay": "/scratch/glm5lp-fallback-tp4-52ef77912f-v2/overlay",
+  "model": "/scratch/models/GLM-5-1028-Provider",
+  "draft_model": "/scratch/models/GLM-5-1028-Provider",
+  "model_revisions": {
+    "fp8": "9c24449260e89d2d2bb6ed8f92d5f386c04ad7ff",
+    "nvfp4": "f2c64cebac62b1888c92c9d317adbb0b0aef5955"
+  },
+  "package_versions": {
+    "torch": "2.14.1+cu130",
+    "transformers": "5.19.0",
+    "flashinfer-python": "0.7.4",
+    "flashinfer-cubin": "0.7.4",
+    "flashinfer-jit-cache": "0.7.4+cu130",
+    "flashinfer-jit-cache-sm103a": "0.7.4+cu130",
+    "sglang-kernel": "0.4.11",
+    "sgl-deep-gemm": "0.2.8",
+    "sgl-flash-mla": "1.0.5",
+    "kernels": "0.14.1",
+    "sgl-eval": "0.1.2"
+  },
+  "model_metadata": {
+    "config.json": "99d7088de1960a51c0f1ae58553815c4c6c223fdbde44d13dc3ebca479e0c80f",
+    "model.safetensors.index.json": "55979a9446143325fac64918861333910a3f776d5719d2021d2b75a5c16112c1",
+    "tokenizer_config.json": "98b1271574f41abf89427ae2dda030d94dc9478f0edc5a8bd240db213c6fd5fc",
+    "tokenizer.json": "19e773648cb4e65de8660ea6365e10acca112d42a854923df93db4a6f333a82d"
+  },
+  "draft_metadata": {
+    "config.json": "99d7088de1960a51c0f1ae58553815c4c6c223fdbde44d13dc3ebca479e0c80f",
+    "model.safetensors.index.json": "55979a9446143325fac64918861333910a3f776d5719d2021d2b75a5c16112c1",
+    "tokenizer_config.json": "98b1271574f41abf89427ae2dda030d94dc9478f0edc5a8bd240db213c6fd5fc",
+    "tokenizer.json": "19e773648cb4e65de8660ea6365e10acca112d42a854923df93db4a6f333a82d"
+  },
+  "expected": {
+    "tp_size": 4,
+    "ep_size": 1,
+    "attn_dp_size": 1,
+    "kv_cache_dtype": "bfloat16",
+    "dsa_prefill_backend": "flashmla_sparse",
+    "dsa_decode_backend": "flashmla_sparse",
+    "moe_runner_backend": "flashinfer_trtllm",
+    "context_length": 131072,
+    "mem_fraction_static": 0.8,
+    "chunked_prefill_size": 8192,
+    "max_running_requests": 64,
+    "random_seed": 1,
+    "speculative_algorithm": "EAGLE",
+    "speculative_num_steps": 3,
+    "speculative_eagle_topk": 1,
+    "speculative_num_draft_tokens": 4,
+    "speculative_draft_model_quantization": "fp8",
+    "disable_prefill_cuda_graph": false,
+    "enable_prefill_cp": false,
+    "cp_strategy": null,
+    "attn_cp_size": 1,
+    "cuda_graph_backend_prefill": "breakable",
+    "disable_hybrid_swa_memory": false,
+    "enable_fp32_lm_head": true,
+    "disable_shared_experts_fusion": true,
+    "quantization": "fp8"
+  },
+  "port": 32230,
+  "dist_port": 32231,
+  "timeout_seconds": 5400,
+  "scope": "Bounded long-context retrieval diagnosis; no performance or full-evaluation claim.",
+  "network_environment": {
+    "NCCL_SOCKET_IFNAME": "cilium_host",
+    "GLOO_SOCKET_IFNAME": "cilium_host",
+    "NCCL_DEBUG": "WARN"
+  },
+  "observation_environment": {
+    "SPT_NOENV": "1"
+  },
+  "worktree": "glm-next/sglang-glm5lp-fallback-cp-retrieval",
+  "prerequisite_roots": [
+    "/scratch/glm5lp-fallback-cp4-52ef77912f/fp8",
+    "/scratch/glm5lp-fallback-cp4-52ef77912f/nvfp4",
+    "/scratch/glm5lp-fallback-dp4-retrieval-52ef77912f/fp8",
+    "/scratch/glm5lp-fallback-dp4-retrieval-52ef77912f/nvfp4"
+  ],
+  "arm": "tp4",
+  "reference_retrieval": {
+    "path": "/scratch/glm5lp-fallback-cp4-52ef77912f/fp8/results/cp4/retrieval.json",
+    "sha256": "f6055c871eda7e985dba364aa9da49e9a14388a166cc4f925eaa40655392558f",
+    "failed_record": 4230,
+    "expected": "709295",
+    "actual": "968752"
+  },
+  "diagnostic": {
+    "requests": 22,
+    "original_sequence_requests": 18,
+    "isolated_cold_requests": 1,
+    "long_sequence_requests": 3,
+    "temperature": 0,
+    "max_tokens": 96,
+    "enable_thinking": false,
+    "state_difference": "Fresh server after startup; preceding full GSM8K state is not reproduced.",
+    "retrieval_max_tokens": 2048,
+    "reference_max_tokens": 96,
+    "reason": "Checkpoint template always enables reasoning; preserve original prompts and allow final answers after reasoning."
+  }
+}

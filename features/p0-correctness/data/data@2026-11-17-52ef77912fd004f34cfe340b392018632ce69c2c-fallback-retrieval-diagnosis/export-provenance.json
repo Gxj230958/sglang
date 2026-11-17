@@ -1,0 +1,26 @@
+{
+  "cp4-96": {
+    "original_archive_sha256": "238a62354cb020999dae3fc43a5c8c50e35bb4389604bfc3d50a9d3b203a273a",
+    "original_files": 100,
+    "published_archive_sha256": "61a618f11eed28fd42efbb4d6e1f4ed45a73e4d3624e5f2a8f2bcae2d13de987",
+    "published_files": 99,
+    "member_policy": "Selected original files are byte-identical. Machine-specific plan metadata is represented by derived configuration.json; its original hash remains in the archived input manifest.",
+    "independent_live_startup_receipt": true
+  },
+  "tp4-96": {
+    "original_archive_sha256": "61ef7c54569349b7e1259091e4a1a52fc7579343e62ebc537969503ce356c379",
+    "original_files": 100,
+    "published_archive_sha256": "4e6dc22f3b8c292b78425573d011d802cfe226d9f5a3e748736729d875d1e257",
+    "published_files": 99,
+    "member_policy": "Selected original files are byte-identical. Machine-specific plan metadata is represented by derived configuration.json; its original hash remains in the archived input manifest.",
+    "independent_live_startup_receipt": true
+  },
+  "tp4-2048": {
+    "original_archive_sha256": "cb03176274bdc499b41388bd329dcc7e60d4893fce6c224e6a2c2661c7385266",
+    "original_files": 100,
+    "published_archive_sha256": "f5c309475d363570c9cad12ac914b2c0d87a25927dc00d5122b794dc753861bc",
+    "published_files": 99,
+    "member_policy": "Selected original files are byte-identical. Machine-specific plan metadata is represented by derived configuration.json; its original hash remains in the archived input manifest.",
+    "independent_live_startup_receipt": false
+  }
+}

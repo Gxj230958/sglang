@@ -1,0 +1,83 @@
+{
+  "runtime": "dbfef91e7d5128eeb4ce021c26ad54e409e41a3f",
+  "rows": 1319,
+  "unique_complete_ids": true,
+  "correct": 1251,
+  "score": 0.9484457922668689,
+  "finish_reasons": {
+    "stop": 1316,
+    "length": 3
+  },
+  "stop_rate": 0.9977255496588324,
+  "length_rows": [
+    {
+      "id": "gsm8k-306",
+      "tokens": 65449,
+      "correct": false
+    },
+    {
+      "id": "gsm8k-119",
+      "tokens": 65421,
+      "correct": false
+    },
+    {
+      "id": "gsm8k-652",
+      "tokens": 65450,
+      "correct": false
+    }
+  ],
+  "sampling": {
+    "chat_template_kwargs": null,
+    "extra_body": null,
+    "max_tokens": null,
+    "min_p": 0.0,
+    "reasoning_effort": null,
+    "repetition_penalty": 1.0,
+    "seed": null,
+    "system_message": null,
+    "temperature": 1.0,
+    "top_p": 0.95
+  },
+  "resolved": {
+    "tp_size": 8,
+    "ep_size": 1,
+    "attn_dp_size": 1,
+    "context_length": 65536,
+    "kv_cache_dtype": "bfloat16",
+    "dsa_prefill_backend": "flashmla_sparse",
+    "dsa_decode_backend": "flashmla_sparse",
+    "speculative_algorithm": "EAGLE",
+    "speculative_num_steps": 3,
+    "speculative_num_draft_tokens": 4,
+    "speculative_eagle_topk": 1
+  },
+  "rust_all_ranks_mapped": true,
+  "gpu_process_samples": 8604,
+  "foreign_gpu_processes": [],
+  "unresolved_gpu_processes": [],
+  "counters": {
+    "generation_tokens_total": 896553.0,
+    "spec_verify_calls_total": 327375.0
+  },
+  "counter_derived_natural_acceptance": 2.7386116838487973,
+  "prediction_completion_tokens": 896553,
+  "server_minus_prediction_completion_tokens": 0.0,
+  "archive_sha256": "50ea05f0246861a7de41a1f330c4bb9741aa3b69b80bc4b341674ee22b19cb07",
+  "gate": "stopping_nonregression_unmet",
+  "caveat": "Unseeded single historical/current runs do not establish a causal Rust effect.",
+  "python_baseline": {
+    "correct": 1250,
+    "finish_reasons": {
+      "stop": 1317,
+      "length": 2
+    },
+    "predictions_sha256": "9dfa6298aa4d4bdc175e251b1cfd22ddd61b8f77f75c78c75445b4d65bbdd4fc",
+    "source_path": "glm-next/sglang-glm5lp-rust-validation/features/p0-correctness/data/data@2026-11-16-dbfef91e7d5128eeb4ce021c26ad54e409e41a3f-flashinfer-074-h200/h200/h200-tp8-fa3/eval/sgl_eval_gsm8k_20261116-003133/output-rs0.jsonl.gz"
+  },
+  "rust_minus_python": {
+    "correct": 1,
+    "stop": -1
+  },
+  "manifest_files_verified": 33,
+  "rust_extension_sha256": "5465ff96ba96e1dc4f0e41387bda0c5608ec86303b9ac95dfd6a622ea785f947"
+}

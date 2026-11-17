@@ -1,0 +1,31 @@
+{
+  "captured_at": "2026-11-16T15:31:35.309144+00:00",
+  "scope": "Postrun metadata inventory from the same recorded overlay and Python executable; not a live server import receipt.",
+  "python": "/opt/sglang/bin/python",
+  "versions": {
+    "flashinfer-python": "0.7.4",
+    "flashinfer-cubin": "0.7.4",
+    "flashinfer-jit-cache": "0.7.4+cu130",
+    "sglang-kernel": "0.4.11",
+    "sgl-deep-gemm": "0.2.8",
+    "sgl-flash-mla": "1.0.5",
+    "kernels": "0.14.1",
+    "torch": "2.14.1",
+    "transformers": "5.19.0",
+    "sgl-eval": "0.1.2",
+    "sgl-fa3": "0.1.0"
+  },
+  "distributions": {
+    "flashinfer-python": "/scratch/codex-fi074/overlay/flashinfer_python-0.7.4.dist-info",
+    "flashinfer-cubin": "/scratch/codex-fi074/overlay/flashinfer_cubin-0.7.4.dist-info",
+    "flashinfer-jit-cache": "/scratch/codex-fi074/overlay/flashinfer_jit_cache-0.7.4+cu130.dist-info",
+    "sglang-kernel": "/scratch/codex-fi074/overlay/sglang_kernel-0.4.11.dist-info",
+    "sgl-deep-gemm": "/scratch/codex-fi074/overlay/sgl_deep_gemm-0.2.8.dist-info",
+    "sgl-flash-mla": "/scratch/codex-fi074/overlay/sgl_flash_mla-1.0.5.dist-info",
+    "kernels": "/scratch/codex-fi074/overlay/kernels-0.14.1.dist-info",
+    "torch": "/opt/sglang/lib/python3.12/site-packages/torch-2.14.1.dist-info",
+    "transformers": "/opt/sglang/lib/python3.12/site-packages/transformers-5.19.0.dist-info",
+    "sgl-eval": "/opt/sglang/lib/python3.12/site-packages/sgl_eval-0.1.2.dist-info",
+    "sgl-fa3": "/scratch/codex-fi074/overlay/sgl_fa3-0.1.0.dist-info"
+  }
+}

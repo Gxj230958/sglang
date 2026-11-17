@@ -1,0 +1,50 @@
+{
+  "terminal-evidence.tar.gz": {
+    "sha256": "d3debee06e79db5f020e7429590b9b4986a4c3eb45d7aae89e4a2001a1677b2d",
+    "bytes": 27850718
+  },
+  "terminal-snapshot.json": {
+    "sha256": "1e919d9200e45eb48faefd79c4a0bfc4649ce46ccc9ea6a1494c29f5693f909d",
+    "bytes": 205
+  },
+  "independent-report.json": {
+    "sha256": "6fff7021c8269f311af1775d52a4ef242cc0ccc81a6aea854eb57d50952fb79c",
+    "bytes": 154148
+  },
+  "independent-report.md": {
+    "sha256": "41263836a3b5c5207f3e5d879a757ea57ae95141ff30c897c06f2a18a4452cba",
+    "bytes": 2609
+  },
+  "final-audit.json": {
+    "sha256": "1658da74268bf9fa5653d389871a4631aa378c94482d2dd9f20c156eea5843e4",
+    "bytes": 8803
+  },
+  "summary.md": {
+    "sha256": "e0cca1bc6ecf9d71669132916f97b2fc723af1f01882efb4b6e85c48c63f6e70",
+    "bytes": 1114
+  },
+  "command-dump.json": {
+    "sha256": "0cc8b2cbc0d845e0ab00d062671fc9f775ebba187f030a2f5749b94fd4941002",
+    "bytes": 228
+  },
+  "benchmark_commands_20261117_133125.json": {
+    "sha256": "fc1c13d86a15194c2407720c41032ccf3781b7f39adf8adf0d710206e0637f83",
+    "bytes": 166441
+  },
+  "benchmark_report_20261117_133125.json": {
+    "sha256": "6fff7021c8269f311af1775d52a4ef242cc0ccc81a6aea854eb57d50952fb79c",
+    "bytes": 154148
+  },
+  "preparation-review.json": {
+    "sha256": "4357f21b72803735edd24aff0301bb45e660c905177ab73ab692e91d7ec8a270",
+    "bytes": 991
+  },
+  "launch-call.json": {
+    "sha256": "3e4d14163c53b7b7aa3a3f610836fd0cb73cd31fd6aaa8b1470c49589fc23342",
+    "bytes": 2080
+  },
+  "lock-release.json": {
+    "sha256": "4af29838056a79fb925415c7ad1f0a579455917d07932e45ae68f87761d40135",
+    "bytes": 145
+  }
+}

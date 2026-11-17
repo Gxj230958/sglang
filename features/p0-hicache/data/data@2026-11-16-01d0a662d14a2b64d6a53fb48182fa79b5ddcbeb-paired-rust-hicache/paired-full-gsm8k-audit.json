@@ -1,0 +1,515 @@
+{
+  "runtime": "01d0a662d14a2b64d6a53fb48182fa79b5ddcbeb",
+  "phases": {
+    "host": {
+      "arguments_environment_imports_sampling_probes_matched": true,
+      "formats": {
+        "fp8-hicache": {
+          "runtime": "01d0a662d14a2b64d6a53fb48182fa79b5ddcbeb",
+          "phase": "host",
+          "format": "fp8-hicache",
+          "archive_sha256": "cf63eec62160880fa495d9e40c41022124f8fb3c11258cab22b16d4612ee0d3f",
+          "files_verified": 189,
+          "rows": 1319,
+          "correct": 1251,
+          "score": 0.9484457922668689,
+          "finish_reasons": {
+            "stop": 1315,
+            "length": 4
+          },
+          "stop_rate": 0.9969673995451099,
+          "error_rate": 0,
+          "length_rows": [
+            {
+              "id": "gsm8k-267",
+              "tokens": 32768,
+              "correct": false
+            },
+            {
+              "id": "gsm8k-1042",
+              "tokens": 32768,
+              "correct": false
+            },
+            {
+              "id": "gsm8k-675",
+              "tokens": 32768,
+              "correct": false
+            },
+            {
+              "id": "gsm8k-1176",
+              "tokens": 32768,
+              "correct": false
+            }
+          ],
+          "sampling": {
+            "chat_template_kwargs": null,
+            "extra_body": null,
+            "max_tokens": 32768,
+            "min_p": 0.0,
+            "reasoning_effort": null,
+            "repetition_penalty": 1.0,
+            "seed": 1,
+            "system_message": null,
+            "temperature": 1.0,
+            "top_p": 0.95
+          },
+          "resolved": {
+            "tp_size": 4,
+            "ep_size": 1,
+            "attn_dp_size": 1,
+            "moe_runner_backend": "flashinfer_trtllm",
+            "dsa_prefill_backend": "flashmla_sparse",
+            "dsa_decode_backend": "flashmla_sparse",
+            "kv_cache_dtype": "bfloat16",
+            "speculative_algorithm": "EAGLE",
+            "disable_hybrid_swa_memory": false,
+            "speculative_num_steps": 3,
+            "speculative_eagle_topk": 1,
+            "speculative_num_draft_tokens": 4,
+            "speculative_draft_model_quantization": "fp8",
+            "speculative_draft_model_path": "/scratch/models/GLM-5-1028-Provider",
+            "context_length": 65536,
+            "max_total_tokens": 262144,
+            "enable_hierarchical_cache": true,
+            "hicache_size": 64,
+            "hicache_storage_backend": "file",
+            "hicache_write_policy": "write_through",
+            "disable_prefill_cuda_graph": true,
+            "random_seed": 1
+          },
+          "rust_extension_sha256": [
+            "d2547a9f9a3edc3f79318922dfd2aceb162c0339c9c00d69514e00aafb979cc3"
+          ],
+          "gpu_samples": 522,
+          "gpu_ownership_failures": 0,
+          "sampling_errors_after_generation": [
+            {
+              "time": 1794837726.7634282,
+              "server_pid": 135549,
+              "gpus": [
+                [
+                  "0",
+                  " GPU-bcbbbd61-8f26-feb4-df63-b05e7c50b1b7",
+                  " 222116",
+                  " 0"
+                ],
+                [
+                  "1",
+                  " GPU-a3c8c81c-9eb4-0156-119a-e80d9acb52bc",
+                  " 221420",
+                  " 0"
+                ],
+                [
+                  "2",
+                  " GPU-d6ff10e7-ec77-6ee0-0e10-bdabbb2207b1",
+                  " 221420",
+                  " 0"
+                ],
+                [
+                  "3",
+                  " GPU-0e8737d0-5bea-3b9e-3728-9716febe8967",
+                  " 220940",
+                  " 0"
+                ]
+              ],
+              "processes": [],
+              "processes_error": "",
+              "active_loads": []
+            }
+          ],
+          "counters": {
+            "generation_tokens_total": 644852.0,
+            "spec_verify_calls_total": 242170.0
+          },
+          "natural_acceptance": 2.6628071189660156,
+          "probes": {
+            "cold": {
+              "cached_tokens": 0,
+              "details": null,
+              "correct": true,
+              "finish_reason": "stop"
+            },
+            "device": {
+              "cached_tokens": 6656,
+              "details": {
+                "device": 6656,
+                "host": 0,
+                "storage": 0,
+                "storage_backend": "HiCacheFile"
+              },
+              "correct": true,
+              "finish_reason": "stop"
+            },
+            "host": {
+              "cached_tokens": 6656,
+              "details": {
+                "device": 0,
+                "host": 6656,
+                "storage": 0,
+                "storage_backend": "HiCacheFile"
+              },
+              "correct": true,
+              "finish_reason": "stop"
+            }
+          },
+          "prefix_passed": 6,
+          "fill_requests": 70,
+          "fill_prompt_tokens": 467835,
+          "device_capacity": 262144,
+          "storage_files": 41957,
+          "storage_bytes": 121425552384,
+          "scope": "Completed single phase; paired-format and storage/negative-control conclusions require their separate raw results. Stopping nonregression is not established."
+        },
+        "nvfp4-hicache": {
+          "runtime": "01d0a662d14a2b64d6a53fb48182fa79b5ddcbeb",
+          "phase": "host",
+          "format": "nvfp4-hicache",
+          "archive_sha256": "e642688e7bb367ff16369566a7da2c340e8fe6c72a4d70d2a58142ae22167b00",
+          "files_verified": 189,
+          "rows": 1319,
+          "correct": 1242,
+          "score": 0.9416224412433661,
+          "finish_reasons": {
+            "stop": 1314,
+            "length": 5
+          },
+          "stop_rate": 0.9962092494313874,
+          "error_rate": 0,
+          "length_rows": [
+            {
+              "id": "gsm8k-552",
+              "tokens": 32768,
+              "correct": false
+            },
+            {
+              "id": "gsm8k-924",
+              "tokens": 32768,
+              "correct": false
+            },
+            {
+              "id": "gsm8k-858",
+              "tokens": 32768,
+              "correct": false
+            },
+            {
+              "id": "gsm8k-1074",
+              "tokens": 32768,
+              "correct": false
+            },
+            {
+              "id": "gsm8k-1176",
+              "tokens": 32768,
+              "correct": false
+            }
+          ],
+          "sampling": {
+            "chat_template_kwargs": null,
+            "extra_body": null,
+            "max_tokens": 32768,
+            "min_p": 0.0,
+            "reasoning_effort": null,
+            "repetition_penalty": 1.0,
+            "seed": 1,
+            "system_message": null,
+            "temperature": 1.0,
+            "top_p": 0.95
+          },
+          "resolved": {
+            "tp_size": 4,
+            "ep_size": 1,
+            "attn_dp_size": 1,
+            "moe_runner_backend": "flashinfer_trtllm",
+            "dsa_prefill_backend": "flashmla_sparse",
+            "dsa_decode_backend": "flashmla_sparse",
+            "kv_cache_dtype": "bfloat16",
+            "speculative_algorithm": "EAGLE",
+            "disable_hybrid_swa_memory": false,
+            "speculative_num_steps": 3,
+            "speculative_eagle_topk": 1,
+            "speculative_num_draft_tokens": 4,
+            "speculative_draft_model_quantization": "fp8",
+            "speculative_draft_model_path": "/scratch/models/GLM-5-1028-Provider",
+            "context_length": 65536,
+            "max_total_tokens": 262144,
+            "enable_hierarchical_cache": true,
+            "hicache_size": 64,
+            "hicache_storage_backend": "file",
+            "hicache_write_policy": "write_through",
+            "disable_prefill_cuda_graph": true,
+            "random_seed": 1
+          },
+          "rust_extension_sha256": [
+            "d2547a9f9a3edc3f79318922dfd2aceb162c0339c9c00d69514e00aafb979cc3"
+          ],
+          "gpu_samples": 531,
+          "gpu_ownership_failures": 0,
+          "sampling_errors_after_generation": [],
+          "counters": {
+            "generation_tokens_total": 695833.0,
+            "spec_verify_calls_total": 262183.0
+          },
+          "natural_acceptance": 2.653997398763459,
+          "probes": {
+            "cold": {
+              "cached_tokens": 0,
+              "details": null,
+              "correct": true,
+              "finish_reason": "stop"
+            },
+            "device": {
+              "cached_tokens": 6656,
+              "details": {
+                "device": 6656,
+                "host": 0,
+                "storage": 0,
+                "storage_backend": "HiCacheFile"
+              },
+              "correct": true,
+              "finish_reason": "stop"
+            },
+            "host": {
+              "cached_tokens": 6656,
+              "details": {
+                "device": 0,
+                "host": 6656,
+                "storage": 0,
+                "storage_backend": "HiCacheFile"
+              },
+              "correct": true,
+              "finish_reason": "stop"
+            }
+          },
+          "prefix_passed": 6,
+          "fill_requests": 70,
+          "fill_prompt_tokens": 467815,
+          "device_capacity": 262144,
+          "storage_files": 43523,
+          "storage_bytes": 126109143552,
+          "scope": "Completed single phase; paired-format and storage/negative-control conclusions require their separate raw results. Stopping nonregression is not established."
+        }
+      },
+      "nvfp4_minus_fp8": {
+        "correct": -9,
+        "stop": -1
+      }
+    },
+    "storage": {
+      "arguments_environment_imports_sampling_probes_matched": true,
+      "formats": {
+        "fp8-hicache": {
+          "runtime": "01d0a662d14a2b64d6a53fb48182fa79b5ddcbeb",
+          "phase": "storage",
+          "format": "fp8-hicache",
+          "archive_sha256": "4f69d36a95f277348710a7ddc89bf5dd52d29a6bb5d49ed7f3e89632f6cfac5d",
+          "files_verified": 25,
+          "rows": 1319,
+          "correct": 1256,
+          "score": 0.9522365428354814,
+          "finish_reasons": {
+            "stop": 1311,
+            "length": 8
+          },
+          "stop_rate": 0.9939347990902199,
+          "error_rate": 0,
+          "length_rows": [
+            {
+              "id": "gsm8k-135",
+              "tokens": 32768,
+              "correct": false
+            },
+            {
+              "id": "gsm8k-255",
+              "tokens": 32768,
+              "correct": false
+            },
+            {
+              "id": "gsm8k-87",
+              "tokens": 32768,
+              "correct": false
+            },
+            {
+              "id": "gsm8k-423",
+              "tokens": 32768,
+              "correct": false
+            },
+            {
+              "id": "gsm8k-924",
+              "tokens": 32768,
+              "correct": false
+            },
+            {
+              "id": "gsm8k-505",
+              "tokens": 32768,
+              "correct": false
+            },
+            {
+              "id": "gsm8k-796",
+              "tokens": 32768,
+              "correct": false
+            },
+            {
+              "id": "gsm8k-1074",
+              "tokens": 32768,
+              "correct": false
+            }
+          ],
+          "sampling": {
+            "chat_template_kwargs": null,
+            "extra_body": null,
+            "max_tokens": 32768,
+            "min_p": 0.0,
+            "reasoning_effort": null,
+            "repetition_penalty": 1.0,
+            "seed": 1,
+            "system_message": null,
+            "temperature": 1.0,
+            "top_p": 0.95
+          },
+          "resolved": {
+            "tp_size": 4,
+            "ep_size": 1,
+            "attn_dp_size": 1,
+            "moe_runner_backend": "flashinfer_trtllm",
+            "dsa_prefill_backend": "flashmla_sparse",
+            "dsa_decode_backend": "flashmla_sparse",
+            "kv_cache_dtype": "bfloat16",
+            "speculative_algorithm": "EAGLE",
+            "disable_hybrid_swa_memory": false,
+            "speculative_num_steps": 3,
+            "speculative_eagle_topk": 1,
+            "speculative_num_draft_tokens": 4,
+            "speculative_draft_model_quantization": "fp8",
+            "speculative_draft_model_path": "/scratch/models/GLM-5-1028-Provider",
+            "context_length": 65536,
+            "max_total_tokens": 262144,
+            "enable_hierarchical_cache": true,
+            "hicache_size": 64,
+            "hicache_storage_backend": "file",
+            "hicache_write_policy": "write_through",
+            "disable_prefill_cuda_graph": true,
+            "random_seed": 1
+          },
+          "rust_extension_sha256": [
+            "d2547a9f9a3edc3f79318922dfd2aceb162c0339c9c00d69514e00aafb979cc3"
+          ],
+          "gpu_samples": 557,
+          "gpu_ownership_failures": 0,
+          "sampling_errors_after_generation": [],
+          "counters": {
+            "generation_tokens_total": 833843.0,
+            "spec_verify_calls_total": 315740.0
+          },
+          "natural_acceptance": 2.640916576930386,
+          "probes": {
+            "storage": {
+              "cached_tokens": 6656,
+              "details": {
+                "device": 0,
+                "host": 0,
+                "storage": 6656,
+                "storage_backend": "HiCacheFile"
+              },
+              "correct": true,
+              "finish_reason": "stop"
+            }
+          },
+          "scope": "Completed single phase; paired-format and storage/negative-control conclusions require their separate raw results. Stopping nonregression is not established."
+        },
+        "nvfp4-hicache": {
+          "runtime": "01d0a662d14a2b64d6a53fb48182fa79b5ddcbeb",
+          "phase": "storage",
+          "format": "nvfp4-hicache",
+          "archive_sha256": "57a4f40a727f9fbf759941b25b8af4340e3ffb4e93ca2dfcaafed7453764d742",
+          "files_verified": 25,
+          "rows": 1319,
+          "correct": 1252,
+          "score": 0.9492039423805914,
+          "finish_reasons": {
+            "stop": 1317,
+            "length": 2
+          },
+          "stop_rate": 0.9984836997725549,
+          "error_rate": 0,
+          "length_rows": [
+            {
+              "id": "gsm8k-182",
+              "tokens": 32768,
+              "correct": false
+            },
+            {
+              "id": "gsm8k-1303",
+              "tokens": 32768,
+              "correct": false
+            }
+          ],
+          "sampling": {
+            "chat_template_kwargs": null,
+            "extra_body": null,
+            "max_tokens": 32768,
+            "min_p": 0.0,
+            "reasoning_effort": null,
+            "repetition_penalty": 1.0,
+            "seed": 1,
+            "system_message": null,
+            "temperature": 1.0,
+            "top_p": 0.95
+          },
+          "resolved": {
+            "tp_size": 4,
+            "ep_size": 1,
+            "attn_dp_size": 1,
+            "moe_runner_backend": "flashinfer_trtllm",
+            "dsa_prefill_backend": "flashmla_sparse",
+            "dsa_decode_backend": "flashmla_sparse",
+            "kv_cache_dtype": "bfloat16",
+            "speculative_algorithm": "EAGLE",
+            "disable_hybrid_swa_memory": false,
+            "speculative_num_steps": 3,
+            "speculative_eagle_topk": 1,
+            "speculative_num_draft_tokens": 4,
+            "speculative_draft_model_quantization": "fp8",
+            "speculative_draft_model_path": "/scratch/models/GLM-5-1028-Provider",
+            "context_length": 65536,
+            "max_total_tokens": 262144,
+            "enable_hierarchical_cache": true,
+            "hicache_size": 64,
+            "hicache_storage_backend": "file",
+            "hicache_write_policy": "write_through",
+            "disable_prefill_cuda_graph": true,
+            "random_seed": 1
+          },
+          "rust_extension_sha256": [
+            "d2547a9f9a3edc3f79318922dfd2aceb162c0339c9c00d69514e00aafb979cc3"
+          ],
+          "gpu_samples": 496,
+          "gpu_ownership_failures": 0,
+          "sampling_errors_after_generation": [],
+          "counters": {
+            "generation_tokens_total": 626112.0,
+            "spec_verify_calls_total": 236446.0
+          },
+          "natural_acceptance": 2.648012654052088,
+          "probes": {
+            "storage": {
+              "cached_tokens": 6656,
+              "details": {
+                "device": 0,
+                "host": 0,
+                "storage": 6656,
+                "storage_backend": "HiCacheFile"
+              },
+              "correct": true,
+              "finish_reason": "stop"
+            }
+          },
+          "scope": "Completed single phase; paired-format and storage/negative-control conclusions require their separate raw results. Stopping nonregression is not established."
+        }
+      },
+      "nvfp4_minus_fp8": {
+        "correct": -4,
+        "stop": 6
+      }
+    }
+  },
+  "scope": "Four complete fixed-seed full1319 GSM8K runs; negative controls and terminal source/cleanup reviewed separately. Single paired observations do not establish causal effects or stopping nonregression."
+}

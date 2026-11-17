@@ -1,0 +1,40 @@
+{
+  "runtime": "01d0a662d14a2b64d6a53fb48182fa79b5ddcbeb",
+  "format": "fp8-hicache",
+  "files_verified": 18,
+  "archive_sha256": "f3de1673fc3829f6410482251e75d76a3b37623344d941a7b078ca4c26addd83",
+  "correct": true,
+  "finish_reason": "stop",
+  "cached_tokens": 0,
+  "cache_details": null,
+  "fresh_store_path": "/scratch/glm5lp-hicache-full-01d0a662d1/stores/fp8-hicache/negative",
+  "positive_store_path": "/scratch/glm5lp-hicache-full-01d0a662d1/stores/fp8-hicache/positive",
+  "resolved": {
+    "tp_size": 4,
+    "ep_size": 1,
+    "attn_dp_size": 1,
+    "moe_runner_backend": "flashinfer_trtllm",
+    "dsa_prefill_backend": "flashmla_sparse",
+    "dsa_decode_backend": "flashmla_sparse",
+    "kv_cache_dtype": "bfloat16",
+    "speculative_algorithm": "EAGLE",
+    "disable_hybrid_swa_memory": false,
+    "speculative_num_steps": 3,
+    "speculative_eagle_topk": 1,
+    "speculative_num_draft_tokens": 4,
+    "speculative_draft_model_quantization": "fp8",
+    "speculative_draft_model_path": "/scratch/models/GLM-5-1028-Provider",
+    "context_length": 65536,
+    "max_total_tokens": 262144,
+    "enable_hierarchical_cache": true,
+    "hicache_size": 64,
+    "hicache_storage_backend": "file",
+    "hicache_write_policy": "write_through",
+    "disable_prefill_cuda_graph": true,
+    "random_seed": 1,
+    "file_storage_path": "/scratch/glm5lp-hicache-full-01d0a662d1/stores/fp8-hicache/negative"
+  },
+  "rust_extension_sha256": [
+    "d2547a9f9a3edc3f79318922dfd2aceb162c0339c9c00d69514e00aafb979cc3"
+  ]
+}

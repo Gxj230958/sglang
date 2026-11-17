@@ -1,0 +1,150 @@
+{
+  "cache-probe.py": {
+    "bytes": 3742,
+    "sha256": "1fda6bc79c5c6791244c2aedb21f5dbe296986e31d82bac5e70ed05ac6dc4104"
+  },
+  "cleanup.json": {
+    "bytes": 93,
+    "sha256": "d5a4a39b5789ede6356215ab1c2ff5fee7b446d4deaa5bd751d8a09cefac335e"
+  },
+  "cleanup.py": {
+    "bytes": 1561,
+    "sha256": "9204123b6197b9a18cc76af5d306662816a3fd8f50c0db994e1f274664138f60"
+  },
+  "driver.exit": {
+    "bytes": 2,
+    "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+  },
+  "driver.log": {
+    "bytes": 993,
+    "sha256": "383d6e31bcdb175202baed64f3c9f3c391ec59ff4f64dfd0af50cd7dee34c093"
+  },
+  "driver.pid": {
+    "bytes": 6,
+    "sha256": "513d5d540a9fd465ed50c891d5b58b34240d58ad0ecd5facc00570337da8a0b8"
+  },
+  "files.json": {
+    "bytes": 846,
+    "sha256": "7becaf4dbac70e63cb1a098ed9371a325aea171cb8540baceb1869c0b265157f"
+  },
+  "gpu-final-memory.csv": {
+    "bytes": 8,
+    "sha256": "6a33a504c8d16194914401f4f46532de96e1b63119fc5981341c6b65c6c27096"
+  },
+  "gpu-final-processes.csv": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "launch.json": {
+    "bytes": 130,
+    "sha256": "7134687e787760965bafa59116c041cccb6c958ce716bebab531ac99ee2d2b59"
+  },
+  "launch.py": {
+    "bytes": 1517,
+    "sha256": "03852ffd5c6ee062be2a95595d942c336bf36de630935425cb158bd4ca92cd20"
+  },
+  "launcher-idle.json": {
+    "bytes": 103,
+    "sha256": "3bc879a788b2f4e27972d08548ad03a623ffcaa04643e5a0f7f24c7b5b9eb11c"
+  },
+  "midfork.py": {
+    "bytes": 2391,
+    "sha256": "57a55e5696f9ab61f23023443c9964b707362b9e1566a6400affd27712e4ba35"
+  },
+  "plan.json": {
+    "bytes": 7539,
+    "sha256": "966c4afd8788a41256abb4678083a0e87bd4fb7093992d0ba4d4c3048416346d"
+  },
+  "prelaunch-probe.json": {
+    "bytes": 74,
+    "sha256": "065b4221af00673449b9484309c548d0b02bad2d74fa961154b61978f668ec81"
+  },
+  "result.json": {
+    "bytes": 1427,
+    "sha256": "558422d39023d20701884f92638db0f2c5d443aceadd068da4e5b3a2e8e23b9a"
+  },
+  "results/fp8-hicache/host/cold/before.metrics": {
+    "bytes": 197811,
+    "sha256": "0b7e291a7aa13acee244ab84ed299878471d85b55f9010f10cc3eba7205aada4"
+  },
+  "results/fp8-hicache/host/cold/cold-request.json": {
+    "bytes": 17103,
+    "sha256": "24f8e7cbb338c102363fbcaa08d26b72307fc8761cf8ecfea4a9f776b41a50c8"
+  },
+  "results/fp8-hicache/host/cold/cold-response.json": {
+    "bytes": 60202,
+    "sha256": "0f96bf0c71e7bada11350ce9225c457cfb224cc28bcaa9141d3041fd5f62f46f"
+  },
+  "results/fp8-hicache/host/cold-command.json": {
+    "bytes": 204,
+    "sha256": "0f4c297f6bd5d46168949a1ccc01694bb8424977f5c925ac862f9784b7a05bcd"
+  },
+  "results/fp8-hicache/host/cold.log": {
+    "bytes": 271,
+    "sha256": "6db7ba8bf789d9a01bd3b409cbd365c9c232cc1bd567914e5c2ced0c3544e325"
+  },
+  "results/fp8-hicache/host/flush-response.txt": {
+    "bytes": 142,
+    "sha256": "8cdea2a5c5b674710a54ffe32275c8d96a2f1bfeb88fdc7f0431b279f12f10b7"
+  },
+  "results/fp8-hicache/host/gpu-before.json": {
+    "bytes": 482,
+    "sha256": "de1a12bb8c6e6ba7d0819a0c89f2c1f20e7a2b9374cf4e607d2b4f4923717480"
+  },
+  "results/fp8-hicache/host/gpu-samples.jsonl": {
+    "bytes": 93380,
+    "sha256": "3e806e7183a11730929bb65bd8485b975a5e868b41f218be6c981a2b23ae6052"
+  },
+  "results/fp8-hicache/host/launch.json": {
+    "bytes": 2338,
+    "sha256": "ac421a331835a40a7f6023a9a7e5fafe9564962cf79705355b9380ad35a165f9"
+  },
+  "results/fp8-hicache/host/replica-0.log": {
+    "bytes": 111014,
+    "sha256": "7aa8232ea9a43866258310b5f43804934e5cb2e1f84cbca70d9d76301ea4b16d"
+  },
+  "results/fp8-hicache/host/runtime-evidence-command.json": {
+    "bytes": 1142,
+    "sha256": "8a79176ecbf8c80a4f50c676eb55eb3a57ae88b1ba4774339e771157da7e73a5"
+  },
+  "results/fp8-hicache/host/runtime-evidence.json": {
+    "bytes": 3247,
+    "sha256": "e4a399ad2f30ce653c0f58a1e0186cdcfd1110d1a7a92dc516a1b29b7bd23d49"
+  },
+  "results/fp8-hicache/host/runtime-evidence.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "results/fp8-hicache/host/server-imports.json": {
+    "bytes": 943,
+    "sha256": "9ff18b2b5adb735b5026a1397fbbc4eddc43c35302cd9bd88ff835d4a20bdab7"
+  },
+  "results/fp8-hicache/host/server-process.json": {
+    "bytes": 38,
+    "sha256": "74463da9d82b49d3a99c2836f80b08d8764ad8e9bb4ed2ca146e92b959b600b5"
+  },
+  "results/fp8-hicache/host/tree-core.json": {
+    "bytes": 2302,
+    "sha256": "2ef44542af411d1e38f90d579ffaf1cc4788bd74ebeb99c6a313f504ed2fd35e"
+  },
+  "run.py": {
+    "bytes": 7139,
+    "sha256": "2c8047356cd95c5ba530756e61d49f1d7987dd604f1b234275e61d5cb7c704a8"
+  },
+  "runtime-evidence.py": {
+    "bytes": 1463,
+    "sha256": "e388b74f53b7a18d882e794119d2b51c05b546780017ac3c6dad9e458cc24896"
+  },
+  "server.py": {
+    "bytes": 3060,
+    "sha256": "a51c5341f64c8d55934fe5dc803022fae5698265f5239025c4dbf072d0626bf1"
+  },
+  "source-verification.json": {
+    "bytes": 100,
+    "sha256": "66f16a3e9eb2c6e80dabdb0db3e6cd2d3cce91f23aeeca42e9b1e4601733f680"
+  },
+  "start.sh": {
+    "bytes": 1128,
+    "sha256": "d0cf84c33943358fbcb16fcf116774424f9db7c5f0227c4a95bf47b50accff9a"
+  }
+}

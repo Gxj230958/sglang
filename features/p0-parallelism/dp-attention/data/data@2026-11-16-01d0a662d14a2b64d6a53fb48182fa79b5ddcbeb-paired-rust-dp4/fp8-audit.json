@@ -1,0 +1,314 @@
+{
+  "runtime": "01d0a662d14a2b64d6a53fb48182fa79b5ddcbeb",
+  "candidate": "fp8-dp4",
+  "archive_sha256": "c8b02de9858db552429a7f4f59f32bf37008c471ec660642c43fc85fa4250b21",
+  "files_verified": 76,
+  "rows": 1319,
+  "correct": 1249,
+  "score": 0.9469294920394238,
+  "finish_reasons": {
+    "stop": 1308,
+    "length": 11
+  },
+  "stop_rate": 0.9916603487490523,
+  "error_rate": 0,
+  "length_rows": [
+    {
+      "id": "gsm8k-255",
+      "tokens": 32768,
+      "correct": false
+    },
+    {
+      "id": "gsm8k-654",
+      "tokens": 32768,
+      "correct": true
+    },
+    {
+      "id": "gsm8k-1303",
+      "tokens": 32768,
+      "correct": false
+    },
+    {
+      "id": "gsm8k-380",
+      "tokens": 32768,
+      "correct": false
+    },
+    {
+      "id": "gsm8k-189",
+      "tokens": 32768,
+      "correct": false
+    },
+    {
+      "id": "gsm8k-505",
+      "tokens": 32768,
+      "correct": false
+    },
+    {
+      "id": "gsm8k-552",
+      "tokens": 32768,
+      "correct": false
+    },
+    {
+      "id": "gsm8k-690",
+      "tokens": 32768,
+      "correct": false
+    },
+    {
+      "id": "gsm8k-1016",
+      "tokens": 32768,
+      "correct": false
+    },
+    {
+      "id": "gsm8k-835",
+      "tokens": 32768,
+      "correct": false
+    },
+    {
+      "id": "gsm8k-926",
+      "tokens": 32768,
+      "correct": false
+    }
+  ],
+  "sampling": {
+    "chat_template_kwargs": null,
+    "extra_body": null,
+    "max_tokens": 32768,
+    "min_p": 0.0,
+    "reasoning_effort": null,
+    "repetition_penalty": 1.0,
+    "seed": 1,
+    "system_message": null,
+    "temperature": 1.0,
+    "top_p": 0.95
+  },
+  "resolved": {
+    "tp_size": 4,
+    "ep_size": 4,
+    "attn_dp_size": 4,
+    "moe_runner_backend": "flashinfer_trtllm",
+    "dsa_prefill_backend": "trtllm",
+    "dsa_decode_backend": "trtllm",
+    "kv_cache_dtype": "fp8_e4m3",
+    "speculative_algorithm": "EAGLE",
+    "disable_hybrid_swa_memory": false,
+    "speculative_num_steps": 3,
+    "speculative_eagle_topk": 1,
+    "speculative_num_draft_tokens": 4,
+    "speculative_draft_model_quantization": "fp8",
+    "speculative_draft_model_path": "/scratch/models/GLM-5-1028-Provider",
+    "enable_prefill_cp": false,
+    "attn_cp_size": 1,
+    "context_length": 131072,
+    "moe_a2a_backend": "none",
+    "disable_prefill_cuda_graph": true,
+    "random_seed": 1
+  },
+  "actual_chunked_prefill_size": 2048,
+  "effective_max_running_requests_per_dp": [
+    16,
+    16,
+    16,
+    16
+  ],
+  "rust_extension_sha256": [
+    "d2547a9f9a3edc3f79318922dfd2aceb162c0339c9c00d69514e00aafb979cc3"
+  ],
+  "gpu_samples": 946,
+  "gpu_ownership_failures": 0,
+  "sampling_errors_after_generation": [],
+  "counters": {
+    "generation_tokens_total": 918544.0,
+    "spec_verify_calls_total": 343453.0
+  },
+  "natural_acceptance": 2.6744387150498032,
+  "routing_cache_probes": [
+    {
+      "rank": 0,
+      "phase": "cold",
+      "expected": "995242",
+      "cached_tokens": 0,
+      "actual_prefill_dp_ranks": [
+        0
+      ],
+      "correct": true,
+      "finish_reason": "stop"
+    },
+    {
+      "rank": 0,
+      "phase": "warm",
+      "expected": "995242",
+      "cached_tokens": 6656,
+      "actual_prefill_dp_ranks": [
+        0
+      ],
+      "correct": true,
+      "finish_reason": "stop"
+    },
+    {
+      "rank": 0,
+      "phase": "fork",
+      "expected": "325117",
+      "cached_tokens": 1984,
+      "actual_prefill_dp_ranks": [
+        0
+      ],
+      "correct": true,
+      "finish_reason": "stop"
+    },
+    {
+      "rank": 0,
+      "phase": "warm-fork",
+      "expected": "325117",
+      "cached_tokens": 6656,
+      "actual_prefill_dp_ranks": [
+        0
+      ],
+      "correct": true,
+      "finish_reason": "stop"
+    },
+    {
+      "rank": 1,
+      "phase": "cold",
+      "expected": "995242",
+      "cached_tokens": 0,
+      "actual_prefill_dp_ranks": [
+        1
+      ],
+      "correct": true,
+      "finish_reason": "stop"
+    },
+    {
+      "rank": 1,
+      "phase": "warm",
+      "expected": "995242",
+      "cached_tokens": 6656,
+      "actual_prefill_dp_ranks": [
+        1
+      ],
+      "correct": true,
+      "finish_reason": "stop"
+    },
+    {
+      "rank": 1,
+      "phase": "fork",
+      "expected": "325117",
+      "cached_tokens": 1984,
+      "actual_prefill_dp_ranks": [
+        1
+      ],
+      "correct": true,
+      "finish_reason": "stop"
+    },
+    {
+      "rank": 1,
+      "phase": "warm-fork",
+      "expected": "325117",
+      "cached_tokens": 6656,
+      "actual_prefill_dp_ranks": [
+        1
+      ],
+      "correct": true,
+      "finish_reason": "stop"
+    },
+    {
+      "rank": 2,
+      "phase": "cold",
+      "expected": "995242",
+      "cached_tokens": 0,
+      "actual_prefill_dp_ranks": [
+        2
+      ],
+      "correct": true,
+      "finish_reason": "stop"
+    },
+    {
+      "rank": 2,
+      "phase": "warm",
+      "expected": "995242",
+      "cached_tokens": 6656,
+      "actual_prefill_dp_ranks": [
+        2
+      ],
+      "correct": true,
+      "finish_reason": "stop"
+    },
+    {
+      "rank": 2,
+      "phase": "fork",
+      "expected": "325117",
+      "cached_tokens": 1984,
+      "actual_prefill_dp_ranks": [
+        2
+      ],
+      "correct": true,
+      "finish_reason": "stop"
+    },
+    {
+      "rank": 2,
+      "phase": "warm-fork",
+      "expected": "325117",
+      "cached_tokens": 6656,
+      "actual_prefill_dp_ranks": [
+        2
+      ],
+      "correct": true,
+      "finish_reason": "stop"
+    },
+    {
+      "rank": 3,
+      "phase": "cold",
+      "expected": "995242",
+      "cached_tokens": 0,
+      "actual_prefill_dp_ranks": [
+        3
+      ],
+      "correct": true,
+      "finish_reason": "stop"
+    },
+    {
+      "rank": 3,
+      "phase": "warm",
+      "expected": "995242",
+      "cached_tokens": 6656,
+      "actual_prefill_dp_ranks": [
+        3
+      ],
+      "correct": true,
+      "finish_reason": "stop"
+    },
+    {
+      "rank": 3,
+      "phase": "fork",
+      "expected": "325117",
+      "cached_tokens": 1984,
+      "actual_prefill_dp_ranks": [
+        3
+      ],
+      "correct": true,
+      "finish_reason": "stop"
+    },
+    {
+      "rank": 3,
+      "phase": "warm-fork",
+      "expected": "325117",
+      "cached_tokens": 6656,
+      "actual_prefill_dp_ranks": [
+        3
+      ],
+      "correct": true,
+      "finish_reason": "stop"
+    }
+  ],
+  "retrieval_correct_and_stop": 18,
+  "retrieval_failures": [],
+  "scope": "Completed single FP8/NVFP4 arm; paired-format and overall qualification require separate evidence. Stopping nonregression is not established.",
+  "unchanged_probe_snapshot_files": 65,
+  "simulation_environment_evidence": {
+    "live_full_environment_captured": false,
+    "launch_environment_is_whitelist": true,
+    "pinned_wrappers_remove_inherited_simulation": {
+      "run.py": "63982d8cdcd31b010909f98eb034dee4f63aa3bedd848de472d10bea8bd06fa1",
+      "server.py": "3663c2a66831d8129f7ef08cdc82caa7190745eca1f09714c92afa886992be01"
+    }
+  }
+}

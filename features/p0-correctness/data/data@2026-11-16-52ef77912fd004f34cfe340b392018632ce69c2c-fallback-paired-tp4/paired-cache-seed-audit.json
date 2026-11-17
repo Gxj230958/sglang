@@ -1,0 +1,10 @@
+{
+  "matched_seed_inventory_entries": 2230,
+  "bytes": 1303468379,
+  "inventory_file_sha256": "ef545255c6ae3973c9a9884b6a90ca1eeeeb0249bf16aed4597b0f440eca57c7",
+  "evidence": [
+    "fp8/evidence.tar.gz:cache-seed-files.json",
+    "nvfp4/evidence.tar.gz:cache-seed-files.json"
+  ],
+  "scope": "Identical initial cache inventory; correctness runs, not cold-start timing."
+}

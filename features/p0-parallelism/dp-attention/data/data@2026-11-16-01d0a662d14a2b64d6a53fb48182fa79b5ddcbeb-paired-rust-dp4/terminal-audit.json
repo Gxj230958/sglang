@@ -1,0 +1,24 @@
+{
+  "runtime": "01d0a662d14a2b64d6a53fb48182fa79b5ddcbeb",
+  "archive_sha256": "cf0ca5edf563c4edfe499165df62c7141b8f5940c6e1918c561e54f1f5c5cfca",
+  "raw_files_verified": 27,
+  "input_files_verified": 11,
+  "source_files_before_and_after": 12581,
+  "source_manifest_matches_audited_hicache_predecessor": true,
+  "source_manifest_sha256": "7d5c25bfdb350703262e343c73c4e2c0598930583c8b6db89d724947a6be192a",
+  "driver_exit": 0,
+  "driver_pid": 157315,
+  "owned_cleanup_remaining": [],
+  "final_gpu_memory_mib": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "completed_arms": [
+    "fp8-dp4",
+    "nvfp4-dp4"
+  ],
+  "finished": 1794845660.2902212,
+  "scope": "Experiment lifecycle and raw evidence complete; full stopping qualification is a separate quality decision."
+}

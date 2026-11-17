@@ -1,0 +1,10 @@
+{
+  "capture_sha256": "d61a38b0a17ac3d98e87263070e9dd5bf3b94ded09a72de58ed0ad03e60dd638",
+  "captured_file_count": 47,
+  "exported_file_count": 45,
+  "excluded_operational_files": [
+    "runner.py",
+    "start-current.sh"
+  ],
+  "raw_measurements_rewritten": false
+}

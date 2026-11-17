@@ -1,0 +1,123 @@
+{
+  "runtime": "52ef77912fd004f34cfe340b392018632ce69c2c",
+  "precision": "fp8",
+  "owner": "glm5lp-fallback-dp4-fp8-retrieval-52ef",
+  "remote": "/scratch/glm5lp-fallback-dp4-retrieval-52ef77912f/fp8",
+  "devbox": "xinyuan-gb300-1",
+  "preparation_root": "/scratch/glm5lp-fallback-tp4-52ef77912f-v2",
+  "source": "/scratch/glm5lp-fallback-tp4-52ef77912f/src",
+  "overlay": "/scratch/glm5lp-fallback-tp4-52ef77912f-v2/overlay",
+  "model": "/scratch/models/GLM-5-1028-Provider",
+  "draft_model": "/scratch/models/GLM-5-1028-Provider",
+  "model_revisions": {
+    "fp8": "9c24449260e89d2d2bb6ed8f92d5f386c04ad7ff",
+    "nvfp4": "f2c64cebac62b1888c92c9d317adbb0b0aef5955"
+  },
+  "package_versions": {
+    "torch": "2.14.1+cu130",
+    "transformers": "5.19.0",
+    "flashinfer-python": "0.7.4",
+    "flashinfer-cubin": "0.7.4",
+    "flashinfer-jit-cache": "0.7.4+cu130",
+    "flashinfer-jit-cache-sm103a": "0.7.4+cu130",
+    "sglang-kernel": "0.4.11",
+    "sgl-deep-gemm": "0.2.8",
+    "sgl-flash-mla": "1.0.5",
+    "kernels": "0.14.1",
+    "sgl-eval": "0.1.2"
+  },
+  "model_metadata": {
+    "config.json": "99d7088de1960a51c0f1ae58553815c4c6c223fdbde44d13dc3ebca479e0c80f",
+    "model.safetensors.index.json": "55979a9446143325fac64918861333910a3f776d5719d2021d2b75a5c16112c1",
+    "tokenizer_config.json": "98b1271574f41abf89427ae2dda030d94dc9478f0edc5a8bd240db213c6fd5fc",
+    "tokenizer.json": "19e773648cb4e65de8660ea6365e10acca112d42a854923df93db4a6f333a82d"
+  },
+  "draft_metadata": {
+    "config.json": "99d7088de1960a51c0f1ae58553815c4c6c223fdbde44d13dc3ebca479e0c80f",
+    "model.safetensors.index.json": "55979a9446143325fac64918861333910a3f776d5719d2021d2b75a5c16112c1",
+    "tokenizer_config.json": "98b1271574f41abf89427ae2dda030d94dc9478f0edc5a8bd240db213c6fd5fc",
+    "tokenizer.json": "19e773648cb4e65de8660ea6365e10acca112d42a854923df93db4a6f333a82d"
+  },
+  "expected": {
+    "tp_size": 4,
+    "ep_size": 4,
+    "attn_dp_size": 4,
+    "kv_cache_dtype": "fp8_e4m3",
+    "dsa_prefill_backend": "trtllm",
+    "dsa_decode_backend": "trtllm",
+    "moe_runner_backend": "flashinfer_trtllm",
+    "context_length": 131072,
+    "mem_fraction_static": 0.8,
+    "chunked_prefill_size": 2048,
+    "max_running_requests": 64,
+    "random_seed": 1,
+    "speculative_algorithm": "EAGLE",
+    "speculative_num_steps": 3,
+    "speculative_eagle_topk": 1,
+    "speculative_num_draft_tokens": 4,
+    "speculative_draft_model_quantization": "fp8",
+    "disable_prefill_cuda_graph": true,
+    "enable_prefill_cp": false,
+    "attn_cp_size": 1,
+    "disable_hybrid_swa_memory": false,
+    "enable_fp32_lm_head": true,
+    "disable_shared_experts_fusion": true,
+    "quantization": "fp8",
+    "moe_a2a_backend": "none",
+    "speculative_draft_model_path": "/scratch/models/GLM-5-1028-Provider"
+  },
+  "port": 32240,
+  "dist_port": 32241,
+  "timeout_seconds": 21600,
+  "evaluation": {
+    "samples": 1319,
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "seed": 1,
+    "threads": 64,
+    "max_tokens": 32768
+  },
+  "scope": "Candidate DP4 full correctness, eighteen retrieval and sixteen directed routing/cache probes; natural MTP; no performance claim",
+  "network_environment": {
+    "NCCL_SOCKET_IFNAME": "cilium_host",
+    "GLOO_SOCKET_IFNAME": "cilium_host",
+    "NCCL_DEBUG": "WARN"
+  },
+  "observation_environment": {
+    "SPT_NOENV": "1"
+  },
+  "worktree": "glm-next/sglang-glm5lp-fallback-dp4",
+  "functional": {
+    "retrieval_targets": [
+      300,
+      3000,
+      9000,
+      24000,
+      60000,
+      110000
+    ],
+    "retrieval_requests": 18,
+    "retrieval_max_tokens": 2048,
+    "directed_prefix_requests": 16,
+    "directed_prefix_max_tokens": 512,
+    "routed_ranks": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "order": "flush, retrieval, flush, directed prefix, flush, full GSM8K",
+    "semantic_failure": "Record failures and retain complete measurements; acceptance requires all exact answers, natural stops, expected cache isolation/reuse and actual rank routing.",
+    "template_mode": "Checkpoint template ignores enable_thinking and starts with <think>; retrieval allows 2048 tokens for reasoning and final answer."
+  },
+  "prerequisite_roots": [
+    "/scratch/glm5lp-fallback-cp4-52ef77912f/fp8",
+    "/scratch/glm5lp-fallback-cp4-52ef77912f/nvfp4",
+    "/scratch/glm5lp-fallback-cp-retrieval-52ef77912f/cp4/fp8",
+    "/scratch/glm5lp-fallback-cp-retrieval-52ef77912f/tp4/fp8"
+  ],
+  "drain_predecessor": "/scratch/glm5lp-fallback-hicache-repro-52ef77912f",
+  "launch_chunked_prefill_size": 8192,
+  "effective_max_running_requests_per_dp": 16,
+  "predecessor_package": "/tmp/glm5lp-fallback-dp4-52ef77912f/fp8"
+}

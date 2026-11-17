@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "repo": "RadixArk/GLM-5-1028-Provider-NVFP4-perf",
+  "commit": "f2c64cebac62b1888c92c9d317adbb0b0aef5955",
+  "private": true,
+  "files": 163,
+  "total_file_bytes": 439756337764,
+  "lfs_sha256_verified": 144,
+  "metadata_download_hashes_verified": 19
+}

@@ -1,0 +1,102 @@
+{
+  "runtime": "01d0a662d14a2b64d6a53fb48182fa79b5ddcbeb",
+  "candidates": [
+    {
+      "candidate": "fp8-kv-bf16-mtp-natural",
+      "seed": 1,
+      "natural_stops": 3,
+      "requests": 64,
+      "score": 797.980672740658,
+      "ttft_p90": 0.3863618903560564,
+      "interactivity_p90": 130.67050363214284,
+      "simulation": {},
+      "gpu_samples": 137,
+      "versions": {
+        "flashinfer-python": "0.7.4",
+        "flashinfer-cubin": "0.7.4",
+        "flashinfer-jit-cache": "0.7.4+cu130",
+        "flashinfer-jit-cache-sm103a": "0.7.4+cu130",
+        "sglang-kernel": "0.4.11",
+        "sgl-deep-gemm": "0.2.8",
+        "sgl-flash-mla": "1.0.5",
+        "kernels": "0.14.1",
+        "torch": "2.14.1+cu130",
+        "transformers": "5.19.0"
+      }
+    },
+    {
+      "candidate": "fp8-kv-fp8_e4m3-mtp-natural",
+      "seed": 1,
+      "natural_stops": 3,
+      "requests": 64,
+      "score": 786.7445444604933,
+      "ttft_p90": 0.4050126306246966,
+      "interactivity_p90": 126.30239815086,
+      "simulation": {},
+      "gpu_samples": 140,
+      "versions": {
+        "flashinfer-python": "0.7.4",
+        "flashinfer-cubin": "0.7.4",
+        "flashinfer-jit-cache": "0.7.4+cu130",
+        "flashinfer-jit-cache-sm103a": "0.7.4+cu130",
+        "sglang-kernel": "0.4.11",
+        "sgl-deep-gemm": "0.2.8",
+        "sgl-flash-mla": "1.0.5",
+        "kernels": "0.14.1",
+        "torch": "2.14.1+cu130",
+        "transformers": "5.19.0"
+      }
+    },
+    {
+      "candidate": "nvfp4-kv-bf16-mtp-natural",
+      "seed": 1,
+      "natural_stops": 3,
+      "requests": 64,
+      "score": 846.0446103426937,
+      "ttft_p90": 0.39915306146722285,
+      "interactivity_p90": 144.79693603979015,
+      "simulation": {},
+      "gpu_samples": 181,
+      "versions": {
+        "flashinfer-python": "0.7.4",
+        "flashinfer-cubin": "0.7.4",
+        "flashinfer-jit-cache": "0.7.4+cu130",
+        "flashinfer-jit-cache-sm103a": "0.7.4+cu130",
+        "sglang-kernel": "0.4.11",
+        "sgl-deep-gemm": "0.2.8",
+        "sgl-flash-mla": "1.0.5",
+        "kernels": "0.14.1",
+        "torch": "2.14.1+cu130",
+        "transformers": "5.19.0"
+      }
+    },
+    {
+      "candidate": "nvfp4-kv-fp8_e4m3-mtp-natural",
+      "seed": 1,
+      "natural_stops": 3,
+      "requests": 64,
+      "score": 815.4726745845454,
+      "ttft_p90": 0.41229948550462725,
+      "interactivity_p90": 138.3494415507233,
+      "simulation": {},
+      "gpu_samples": 181,
+      "versions": {
+        "flashinfer-python": "0.7.4",
+        "flashinfer-cubin": "0.7.4",
+        "flashinfer-jit-cache": "0.7.4+cu130",
+        "flashinfer-jit-cache-sm103a": "0.7.4+cu130",
+        "sglang-kernel": "0.4.11",
+        "sgl-deep-gemm": "0.2.8",
+        "sgl-flash-mla": "1.0.5",
+        "kernels": "0.14.1",
+        "torch": "2.14.1+cu130",
+        "transformers": "5.19.0"
+      }
+    }
+  ],
+  "loads": 4,
+  "requests": 256,
+  "natural_stops": 12,
+  "archive_sha256": "7b1f909651a91c210ca4b9a8ba589b33c8a911d19018d8395e060df6a2f18067",
+  "scope": "Startup and low-load sanity only; full GSM8K stopping nonregression remains unmet."
+}

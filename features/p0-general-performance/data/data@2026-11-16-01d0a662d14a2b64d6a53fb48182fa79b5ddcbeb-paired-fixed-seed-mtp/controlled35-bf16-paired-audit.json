@@ -1,0 +1,127 @@
+{
+  "runtime": "01d0a662d14a2b64d6a53fb48182fa79b5ddcbeb",
+  "server_seed": 1,
+  "request_seeds": [
+    1,
+    2
+  ],
+  "workload_sha256": "235ea06164ba2a9f4700d5bee5ca12206a6ea21ed246ed64c8022b3bbb0d8688",
+  "loads": 24,
+  "requests": 2560,
+  "natural_sanity_stops": 0,
+  "pairs": {
+    "bf16": {
+      "rows": [
+        {
+          "concurrency": 1,
+          "fp8_total_tps_per_gpu": 1025.4592247379715,
+          "nvfp4_total_tps_per_gpu": 1059.1152529314838,
+          "nvfp4_gain_percent": 3.2820445105569362,
+          "fp8_ttft_p90_s": 0.3846410399768502,
+          "nvfp4_ttft_p90_s": 0.3956367378588766,
+          "fp8_interactivity_p90": 199.37174800241422,
+          "nvfp4_interactivity_p90": 219.59754421852205,
+          "both_pass": true
+        },
+        {
+          "concurrency": 2,
+          "fp8_total_tps_per_gpu": 1717.3051541789332,
+          "nvfp4_total_tps_per_gpu": 1785.2558308711768,
+          "nvfp4_gain_percent": 3.9568201683253923,
+          "fp8_ttft_p90_s": 0.7130912373773753,
+          "nvfp4_ttft_p90_s": 0.7528784379013813,
+          "fp8_interactivity_p90": 166.6313855341745,
+          "nvfp4_interactivity_p90": 193.06691021136103,
+          "both_pass": true
+        },
+        {
+          "concurrency": 4,
+          "fp8_total_tps_per_gpu": 2703.4743104119743,
+          "nvfp4_total_tps_per_gpu": 2743.8609579400495,
+          "nvfp4_gain_percent": 1.4938794636417674,
+          "fp8_ttft_p90_s": 0.7988020305288955,
+          "nvfp4_ttft_p90_s": 0.779665611940436,
+          "fp8_interactivity_p90": 132.39073197152504,
+          "nvfp4_interactivity_p90": 160.63807172647608,
+          "both_pass": true
+        },
+        {
+          "concurrency": 8,
+          "fp8_total_tps_per_gpu": 4095.72734560355,
+          "nvfp4_total_tps_per_gpu": 4582.018158499513,
+          "nvfp4_gain_percent": 11.873124645808254,
+          "fp8_ttft_p90_s": 1.1124617893132394,
+          "nvfp4_ttft_p90_s": 1.1316641674260612,
+          "fp8_interactivity_p90": 103.23625000229174,
+          "nvfp4_interactivity_p90": 128.38118792435833,
+          "both_pass": true
+        },
+        {
+          "concurrency": 16,
+          "fp8_total_tps_per_gpu": 5401.273196184666,
+          "nvfp4_total_tps_per_gpu": 6121.810614277987,
+          "nvfp4_gain_percent": 13.340140221055519,
+          "fp8_ttft_p90_s": 1.6998826489085328,
+          "nvfp4_ttft_p90_s": 1.6253754668519833,
+          "fp8_interactivity_p90": 79.82832593765444,
+          "nvfp4_interactivity_p90": 100.54810382572236,
+          "both_pass": true
+        },
+        {
+          "concurrency": 32,
+          "fp8_total_tps_per_gpu": 7689.4952448246695,
+          "nvfp4_total_tps_per_gpu": 9106.716744605963,
+          "nvfp4_gain_percent": 18.43061806605757,
+          "fp8_ttft_p90_s": 2.6027239382383414,
+          "nvfp4_ttft_p90_s": 2.144481904048007,
+          "fp8_interactivity_p90": 64.77699522735641,
+          "nvfp4_interactivity_p90": 85.42681201410619,
+          "both_pass": true
+        }
+      ],
+      "archives": {
+        "controlled35-fp8-bf16": "f37409fc4a1f4057a4f6c7c6d56d345f6994f9024336f16f0a7e7a6262f893f7",
+        "controlled35-nvfp4-bf16": "7c03dfa3d8ac67013d862b072c273dcd153fb47f60e582df229662ebafb6bae4"
+      },
+      "server_client_arguments_matched": true,
+      "versions_environment_matched": true
+    }
+  },
+  "scope": "Fixed-seed controlled3.5 BF16 pair; expected acceptance, real draft tokens. Natural correctness is separate. Two-repeat medians; all C1-C32 points pass but SLO boundary is not reached. FP8-KV pair pending. Model/tokenizer paths normalized; tokenizer bytes separately verified equal.",
+  "tokenizer_hashes_equal": {
+    "tokenizer.json": "19e773648cb4e65de8660ea6365e10acca112d42a854923df93db4a6f333a82d",
+    "tokenizer_config.json": "98b1271574f41abf89427ae2dda030d94dc9478f0edc5a8bd240db213c6fd5fc"
+  },
+  "acceptance_accounting": [
+    {
+      "level": 1,
+      "reported_acceptance_equal": true,
+      "warmup_inclusive_counters_equal": true
+    },
+    {
+      "level": 2,
+      "reported_acceptance_equal": true,
+      "warmup_inclusive_counters_equal": true
+    },
+    {
+      "level": 4,
+      "reported_acceptance_equal": true,
+      "warmup_inclusive_counters_equal": true
+    },
+    {
+      "level": 8,
+      "reported_acceptance_equal": true,
+      "warmup_inclusive_counters_equal": true
+    },
+    {
+      "level": 16,
+      "reported_acceptance_equal": true,
+      "warmup_inclusive_counters_equal": true
+    },
+    {
+      "level": 32,
+      "reported_acceptance_equal": true,
+      "warmup_inclusive_counters_equal": true
+    }
+  ]
+}

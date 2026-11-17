@@ -1,0 +1,109 @@
+{
+  "runtime": "52ef77912fd004f34cfe340b392018632ce69c2c",
+  "rows": 1319,
+  "correct": 1247,
+  "score": 0.9454131918119788,
+  "finish_reasons": {
+    "stop": 1312,
+    "length": 7
+  },
+  "stop_rate": 0.9946929492039424,
+  "length_rows": [
+    {
+      "id": "gsm8k-410",
+      "tokens": 32768,
+      "correct": false
+    },
+    {
+      "id": "gsm8k-164",
+      "tokens": 32768,
+      "correct": true
+    },
+    {
+      "id": "gsm8k-380",
+      "tokens": 32768,
+      "correct": false
+    },
+    {
+      "id": "gsm8k-675",
+      "tokens": 32768,
+      "correct": false
+    },
+    {
+      "id": "gsm8k-1016",
+      "tokens": 32768,
+      "correct": false
+    },
+    {
+      "id": "gsm8k-1176",
+      "tokens": 32768,
+      "correct": false
+    },
+    {
+      "id": "gsm8k-1074",
+      "tokens": 32768,
+      "correct": false
+    }
+  ],
+  "sampling": {
+    "chat_template_kwargs": null,
+    "extra_body": null,
+    "max_tokens": 32768,
+    "min_p": 0.0,
+    "reasoning_effort": null,
+    "repetition_penalty": 1.0,
+    "seed": 1,
+    "system_message": null,
+    "temperature": 1.0,
+    "top_p": 0.95
+  },
+  "resolved": {
+    "tp_size": 4,
+    "ep_size": 1,
+    "attn_dp_size": 1,
+    "kv_cache_dtype": "bfloat16",
+    "dsa_prefill_backend": "flashmla_sparse",
+    "dsa_decode_backend": "flashmla_sparse",
+    "moe_runner_backend": "flashinfer_trtllm",
+    "context_length": 131072,
+    "mem_fraction_static": 0.8,
+    "chunked_prefill_size": 8192,
+    "max_running_requests": 64,
+    "random_seed": 1,
+    "speculative_algorithm": "EAGLE",
+    "speculative_num_steps": 3,
+    "speculative_eagle_topk": 1,
+    "speculative_num_draft_tokens": 4,
+    "speculative_draft_model_quantization": "fp8",
+    "disable_prefill_cuda_graph": false,
+    "enable_prefill_cp": true,
+    "cp_strategy": "interleave",
+    "attn_cp_size": 4,
+    "cuda_graph_backend_prefill": "breakable",
+    "disable_hybrid_swa_memory": false,
+    "enable_fp32_lm_head": true,
+    "disable_shared_experts_fusion": true,
+    "quantization": "fp8"
+  },
+  "live_rust_workers_verified": 4,
+  "precision": "fp8",
+  "arm": "cp4",
+  "gpu_samples": 669,
+  "gpu_process_records": 3128,
+  "sampling_errors": [],
+  "measurement_sampling_errors": [],
+  "counters": {
+    "generation_tokens_total": 794707.0,
+    "spec_verify_calls_total": 292916.0
+  },
+  "counter_derived_natural_acceptance": 2.7130883939422907,
+  "prediction_completion_tokens": 794707,
+  "archive_sha256": "1b27bcad03af49d29788627983426e2b7bb7c2d9197ce81669831918925d0336",
+  "raw_files": 62,
+  "chat_http_statuses": {
+    "200": 1344
+  },
+  "failed_http_attempts": 0,
+  "all_requests_stopped": false,
+  "scope": "One candidate correctness run with explicit seed and output bound; single-run variation remains. Image-level qualification and bounded performance selection require separate evidence."
+}

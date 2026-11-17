@@ -1,0 +1,25 @@
+{
+  "observed_at": 1794915633.2369812,
+  "original_root": "/tmp/glm5lp-delivery-sweep-e9a0a02872",
+  "root": "/tmp/glm5lp-delivery-perf-e9a0a02872",
+  "inputs": 24,
+  "runtime": "e9a0a0287215c18b08ecb120f9d00db52986052b",
+  "source": "/scratch/glm5lp-delivery-sweep-e9a0a02872/src",
+  "manifest_sha256": "3459f2c61b66f5a784a6bd6dd990e9f668b7bfde964ed41f54ef7822c1df7efe",
+  "archive_sha256": "19a70fab3966bcf5e689cc206e5bef6c7b551738749ef004da29323e05d759e1",
+  "load_adapter_unchanged_except_paths": true,
+  "workload_sha256": "235ea06164ba2a9f4700d5bee5ca12206a6ea21ed246ed64c8022b3bbb0d8688",
+  "starts": 8,
+  "loads": 96,
+  "phase_order": [
+    "natural",
+    "off"
+  ],
+  "recipe_review": {
+    "sources": [
+      "https://github.com/sgl-project/sglang/blob/main/docs/cookbook/autoregressive/GLM/GLM-5.mdx",
+      "https://github.com/vllm-project/recipes/blob/main/GLM/GLM5.md"
+    ],
+    "scope": "Public family guidance; exact candidate uses the previously source/CLI-validated private deployment matrix."
+  }
+}

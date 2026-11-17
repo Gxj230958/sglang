@@ -1,0 +1,137 @@
+{
+  "points": [
+    {
+      "candidate": "tp4-auto",
+      "level": 1,
+      "score": 561.9365898742051,
+      "ttft": 0.3809371546143666,
+      "interactivity": 98.11341069682396,
+      "repeats": [
+        {
+          "score": 561.2359856205582,
+          "ttft": 0.38279536287300286,
+          "interactivity": 98.1311486658513,
+          "pass": true
+        },
+        {
+          "score": 562.6371941278519,
+          "ttft": 0.3790789463557303,
+          "interactivity": 98.09567272779663,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "candidate": "tp4-auto",
+      "level": 2,
+      "score": 874.1481186605001,
+      "ttft": 0.7280221035704018,
+      "interactivity": 85.2529054055428,
+      "repeats": [
+        {
+          "score": 891.7196525546067,
+          "ttft": 0.7285438104066998,
+          "interactivity": 85.22367016389174,
+          "pass": true
+        },
+        {
+          "score": 856.5765847663936,
+          "ttft": 0.7275003967341036,
+          "interactivity": 85.28214064719388,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "candidate": "tp4-auto",
+      "level": 4,
+      "score": 1470.4944916240793,
+      "ttft": 0.7540781893068924,
+      "interactivity": 69.65120607381056,
+      "repeats": [
+        {
+          "score": 1468.7714033598768,
+          "ttft": 0.7650319607928395,
+          "interactivity": 69.63768154479145,
+          "pass": true
+        },
+        {
+          "score": 1472.217579888282,
+          "ttft": 0.7431244178209454,
+          "interactivity": 69.66473060282968,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "candidate": "tp4-auto",
+      "level": 8,
+      "score": 2453.7539753819374,
+      "ttft": 1.069002215564252,
+      "interactivity": 55.700929895688596,
+      "repeats": [
+        {
+          "score": 2457.431127125279,
+          "ttft": 1.0665578464977452,
+          "interactivity": 55.643113715550534,
+          "pass": true
+        },
+        {
+          "score": 2450.0768236385957,
+          "ttft": 1.0714465846307586,
+          "interactivity": 55.75874607582666,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "candidate": "tp4-auto",
+      "level": 16,
+      "score": 3528.8496123198593,
+      "ttft": 1.662185089290142,
+      "interactivity": 42.33927605337492,
+      "repeats": [
+        {
+          "score": 3513.820018480065,
+          "ttft": 1.6673807500861584,
+          "interactivity": 42.4919421110304,
+          "pass": true
+        },
+        {
+          "score": 3543.879206159654,
+          "ttft": 1.6569894284941256,
+          "interactivity": 42.18660999571943,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "candidate": "tp4-auto",
+      "level": 32,
+      "score": 5098.1056428393895,
+      "ttft": 2.3061964580556378,
+      "interactivity": 32.02766742306875,
+      "repeats": [
+        {
+          "score": 5053.537178387867,
+          "ttft": 2.322357313008979,
+          "interactivity": 31.986095464698177,
+          "pass": true
+        },
+        {
+          "score": 5142.674107290913,
+          "ttft": 2.2900356031022966,
+          "interactivity": 32.069239381439324,
+          "pass": true
+        }
+      ],
+      "pass": true
+    }
+  ],
+  "source_round": "General Performance E05"
+}

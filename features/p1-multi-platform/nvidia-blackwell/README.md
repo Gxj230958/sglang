@@ -2,6 +2,8 @@
 
 ## Summary
 
+[Correctness E18](../../p0-correctness/data/data@2026-11-16-01d0a662d14a2b64d6a53fb48182fa79b5ddcbeb-rust-current-head/repro.md) verifies the default Rust core on all four GB300 ranks at `01d0a662d1`: full FP8 GSM8K 95.22% accuracy, 99.77% stop and zero errors. [Full NVFP4 evaluation](../../p0-correctness/data/data@2026-11-16-01d0a662d14a2b64d6a53fb48182fa79b5ddcbeb-rust-current-head/nvfp4-full/repro.md) completed at 94.24% accuracy and 99.55% stop. Its stopping nonregression gate remains open; B300 Rust reruns are pending.
+
 `zai-org/GLM-5-1028-Provider` tracking for establishing and validating the selected NVIDIA Blackwell configurations. Status: In progress. E03 used `a15aa7c3`; E04 used `8451a1bf` on `fix/glm5-lp-implementation`. The B300 TP8 MTP configuration completed full GSM8K at 93.86% accuracy with 99.24% stop rate, and GPQA-Diamond with a 4096-token output budget at 45.52% pass@1 and 69.19% pass@8 ([Correctness E03](../../p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6-b300-mtp-evaluation/repro.md)). The optional vision SwiGLU fix passed unit, text/image, and full-GSM8K validation ([Correctness E04](../../p0-correctness/data/data@2026-11-03-8451a1bf9d6156a8ff76f8d603abe9a89c1b1002-swiglu-fix/repro.md)). GPQA truncation reached 51.33%. Small-head kernel/serving and host-L2/file-L3 experiments now have B300 evidence; non-MTP baselines, release performance gates, and additional configurations remain unvalidated.
 
 ## Scope

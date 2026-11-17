@@ -1,0 +1,60 @@
+{
+  "runtime": "01d0a662d14a2b64d6a53fb48182fa79b5ddcbeb",
+  "phase": "natural_startup",
+  "rows": [
+    {
+      "candidate": "fp8-tp4-fp8kv-mtp-natural",
+      "archive_sha256": "8d71285683c78562c013d64f17b144b3beeba9165aa6a42a6f67548e54baab8f",
+      "files": 30,
+      "requests": 64,
+      "startup_stops": 3,
+      "runtime_chunk": 8192,
+      "per_dp_running_cap": 64,
+      "scheduler_capacity_lines": [
+        "[2026-11-16 16:19:12 TP0 PID168701] max_total_num_tokens=857664, chunked_prefill_size=8192, max_prefill_tokens=16384, max_running_requests=64, context_len=32768, available_gpu_mem=51.81 GB"
+      ]
+    },
+    {
+      "candidate": "nvfp4-tp4-fp8kv-mtp-natural",
+      "archive_sha256": "5af84420451ba68940d85149f53305c07bd9ccb51667f5a51c8a5fcc3945a85c",
+      "files": 30,
+      "requests": 64,
+      "startup_stops": 3,
+      "runtime_chunk": 8192,
+      "per_dp_running_cap": 64,
+      "scheduler_capacity_lines": [
+        "[2026-11-16 16:25:43 TP0 PID172463] max_total_num_tokens=2441280, chunked_prefill_size=8192, max_prefill_tokens=16384, max_running_requests=64, context_len=32768, available_gpu_mem=51.68 GB"
+      ]
+    },
+    {
+      "candidate": "fp8-dep4-fp8kv-mtp-natural",
+      "archive_sha256": "44f4270cabf7de6af106b1aa9c98fd2edca3d187bd0a6e42b942ed4f49506f95",
+      "files": 30,
+      "requests": 64,
+      "startup_stops": 3,
+      "runtime_chunk": 2048,
+      "per_dp_running_cap": 16,
+      "scheduler_capacity_lines": [
+        "[2026-11-16 16:30:22 DP0 TP0 EP0 PID176323] max_total_num_tokens=443264, chunked_prefill_size=2048, max_prefill_tokens=16384, max_running_requests=16, context_len=32768, available_gpu_mem=54.19 GB"
+      ]
+    },
+    {
+      "candidate": "nvfp4-dep4-fp8kv-mtp-natural",
+      "archive_sha256": "c38a8cb8c9f0da8a0e786d0bb43f496a01cb0985a6bc62337391e292a8cbbad8",
+      "files": 30,
+      "requests": 64,
+      "startup_stops": 3,
+      "runtime_chunk": 2048,
+      "per_dp_running_cap": 16,
+      "scheduler_capacity_lines": [
+        "[2026-11-16 16:36:16 DP0 TP0 EP0 PID179880] max_total_num_tokens=2152384, chunked_prefill_size=2048, max_prefill_tokens=16384, max_running_requests=16, context_len=32768, available_gpu_mem=53.89 GB"
+      ]
+    }
+  ],
+  "requests": 256,
+  "startup_stops": 12,
+  "raw_files": 120,
+  "report_sha256": "f59cadcea1b5bdfc52b0fc3d3781e4e3cd9b7a5edc2222c3c3a4ad902ac163e7",
+  "imports_equal_except_pid": true,
+  "scope": "Four startup cells, one C1 load each. FP8/NVFP4 pair commands match per layout. Layout comparisons include attention DP, EP, scheduler subdivision and model-dependent KV capacity; no isolated EP performance claim."
+}

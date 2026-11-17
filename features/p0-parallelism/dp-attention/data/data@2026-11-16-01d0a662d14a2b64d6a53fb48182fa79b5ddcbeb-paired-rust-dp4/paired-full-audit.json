@@ -1,0 +1,149 @@
+{
+  "runtime": "01d0a662d14a2b64d6a53fb48182fa79b5ddcbeb",
+  "arms": {
+    "fp8": {
+      "archive_sha256": "c8b02de9858db552429a7f4f59f32bf37008c471ec660642c43fc85fa4250b21",
+      "rows": 1319,
+      "correct": 1249,
+      "finish_reasons": {
+        "stop": 1308,
+        "length": 11
+      },
+      "stop_rate": 0.9916603487490523,
+      "error_rate": 0,
+      "natural_acceptance": 2.6744387150498032,
+      "length_rows": [
+        {
+          "id": "gsm8k-255",
+          "tokens": 32768,
+          "correct": false
+        },
+        {
+          "id": "gsm8k-654",
+          "tokens": 32768,
+          "correct": true
+        },
+        {
+          "id": "gsm8k-1303",
+          "tokens": 32768,
+          "correct": false
+        },
+        {
+          "id": "gsm8k-380",
+          "tokens": 32768,
+          "correct": false
+        },
+        {
+          "id": "gsm8k-189",
+          "tokens": 32768,
+          "correct": false
+        },
+        {
+          "id": "gsm8k-505",
+          "tokens": 32768,
+          "correct": false
+        },
+        {
+          "id": "gsm8k-552",
+          "tokens": 32768,
+          "correct": false
+        },
+        {
+          "id": "gsm8k-690",
+          "tokens": 32768,
+          "correct": false
+        },
+        {
+          "id": "gsm8k-1016",
+          "tokens": 32768,
+          "correct": false
+        },
+        {
+          "id": "gsm8k-835",
+          "tokens": 32768,
+          "correct": false
+        },
+        {
+          "id": "gsm8k-926",
+          "tokens": 32768,
+          "correct": false
+        }
+      ],
+      "gpu_samples": 946
+    },
+    "nvfp4": {
+      "archive_sha256": "ee28e25cbd930e6c6fb4a96210d7fc31ea12666b11a2731299b389cd21159d39",
+      "rows": 1319,
+      "correct": 1251,
+      "finish_reasons": {
+        "stop": 1313,
+        "length": 6
+      },
+      "stop_rate": 0.9954510993176648,
+      "error_rate": 0,
+      "natural_acceptance": 2.6535110686258316,
+      "length_rows": [
+        {
+          "id": "gsm8k-161",
+          "tokens": 32768,
+          "correct": false
+        },
+        {
+          "id": "gsm8k-423",
+          "tokens": 32768,
+          "correct": false
+        },
+        {
+          "id": "gsm8k-835",
+          "tokens": 32768,
+          "correct": false
+        },
+        {
+          "id": "gsm8k-796",
+          "tokens": 32768,
+          "correct": false
+        },
+        {
+          "id": "gsm8k-1035",
+          "tokens": 32768,
+          "correct": false
+        },
+        {
+          "id": "gsm8k-1254",
+          "tokens": 32768,
+          "correct": false
+        }
+      ],
+      "gpu_samples": 908
+    }
+  },
+  "actual_server_commands_match_except_target_and_output": true,
+  "recorded_environments_equal": true,
+  "imports_match_except_pid": true,
+  "eval_commands_match_except_target_and_output": true,
+  "generation_policy": {
+    "chat_template_kwargs": null,
+    "extra_body": null,
+    "max_tokens": 32768,
+    "min_p": 0.0,
+    "reasoning_effort": null,
+    "repetition_penalty": 1.0,
+    "seed": 1,
+    "system_message": null,
+    "temperature": 1.0,
+    "top_p": 0.95
+  },
+  "sgl_eval_version": "0.1.3",
+  "identical_problem_and_expected_answer_rows": 1319,
+  "equal_total_prompt_tokens": 123963,
+  "early_probe_snapshots_unchanged": [
+    65,
+    65
+  ],
+  "paired_probe_audit_sha256": "84ab3a887347c528a70e71014925018b872d25e1ef6391986271092139f1435c",
+  "nvfp4_minus_fp8": {
+    "correct": 2,
+    "stop": 5
+  },
+  "scope": "Single paired correctness observations; no causal quantization claim. Startup/probe success does not establish full stopping nonregression."
+}

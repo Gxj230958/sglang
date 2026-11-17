@@ -1,0 +1,11 @@
+{
+  "runtime": "52ef77912fd004f34cfe340b392018632ce69c2c",
+  "started": 1794860051.8793862,
+  "status": "built_requires_gpu_validation",
+  "tag": "glm5lp-fallback:52ef77912f-arm64-20261116",
+  "builder": "glm5lp-fallback-52ef",
+  "build_returncode": 0,
+  "image_id": "sha256:5f7484840d748eede4c87cf85de632bc35e1eba48ccda63d308f37b9db98a02a",
+  "builder_stop_returncode": 0,
+  "finished": 1794864065.3890078
+}

@@ -1,4 +1,6 @@
-# Docker Template
+# Fallback Docker
+
+The [November16 ARM64 candidate build](data/data@2026-11-16-52ef77912fd004f34cfe340b392018632ce69c2c-arm64-build/repro.md) completed for runtime `52ef77912fd004f34cfe340b392018632ce69c2c`. Loaded-image CPU checks pass; private registry publication and image-level GPU qualification are pending.
 
 ## Purpose
 

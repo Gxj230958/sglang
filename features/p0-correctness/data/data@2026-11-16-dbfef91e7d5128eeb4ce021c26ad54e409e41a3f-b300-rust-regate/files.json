@@ -1,0 +1,222 @@
+{
+  "driver.log": {
+    "sha256": "db28403faa4ec238b14b8a349c20f3afb647938f0df72c47d4ac4a7e0840b587",
+    "bytes": 3308139
+  },
+  "driver.pid": {
+    "sha256": "3b779b19f580698e5b598ef2f4ba1fb152127e9614d475a8ad4ff028ca3cebaf",
+    "bytes": 7
+  },
+  "exit-code": {
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "bytes": 2
+  },
+  "postrun-idle.json": {
+    "sha256": "7a8f0e84641d7d7804ce7ffc7b70e208bf6dd34d9f42c464bf79935c8215d2ee",
+    "bytes": 86
+  },
+  "postrun-source-verification.json": {
+    "sha256": "adf502f49e6854cf4082957979e3cbe3b69656075577ab5b81b91563d93a7ada",
+    "bytes": 100
+  },
+  "prelaunch-probe.json": {
+    "sha256": "7a8f0e84641d7d7804ce7ffc7b70e208bf6dd34d9f42c464bf79935c8215d2ee",
+    "bytes": 86
+  },
+  "probe.py": {
+    "sha256": "09b2b632e402b74bdb371f7e3f27f0c5920a599b5776ba9f15d8942dda5bbdde",
+    "bytes": 1663
+  },
+  "results/dep8/after-t1.metrics": {
+    "sha256": "93263ef883faf267d89d4a231d4784b188f55bb9480a918ab77f67ebf237aa66",
+    "bytes": 422696
+  },
+  "results/dep8/argv.txt": {
+    "sha256": "5e289266a113829edd23ac2586937f7f6819181dc2dbd37300700cf50791bbd2",
+    "bytes": 772
+  },
+  "results/dep8/before-t1.metrics": {
+    "sha256": "500403b8f20045286fd4071fcb6db4a3f288a023247c7a9f7bf1852139c34768",
+    "bytes": 258917
+  },
+  "results/dep8/eval-t1/sgl_eval_gsm8k_20261116-123227/metrics.json": {
+    "sha256": "b83c750959a45c3f299286a5099533ffe0b9dd086235b701cbfafb9c584e31b4",
+    "bytes": 1163
+  },
+  "results/dep8/eval-t1/sgl_eval_gsm8k_20261116-123227/output-rs0.jsonl": {
+    "sha256": "6c057c74141ba98854362ee08354ec73af1f35550668027d5347b0389794d17e",
+    "bytes": 4002072
+  },
+  "results/dep8/gpu-ownership.log": {
+    "sha256": "585ec6fb46ad41d839004b8ad1332631d94e7be29d268c761c8f0c1e7fd1d993",
+    "bytes": 1625502
+  },
+  "results/dep8/gsm8k-t1.log": {
+    "sha256": "26181fe2df54683257d2e77fe10eab524e5bc170350d91d1b65e33683ec76683",
+    "bytes": 534775
+  },
+  "results/dep8/serve.log": {
+    "sha256": "c6d2f9a6f02fc6f0b9a42d83dad378a3c3a732e0a27f8e436ce0505aaf44fde5",
+    "bytes": 1677401
+  },
+  "results/dep8/server-pgid.txt": {
+    "sha256": "9f6b5c5eb2d0f1d6de1b70cdb47e8bf722a445bf93910d7d024a971b263d2042",
+    "bytes": 8
+  },
+  "results/dep8/server_info.json": {
+    "sha256": "a2e65d80d08bea6443b5fb688f93726269fca1c886dc12c6958df62cbe966b4a",
+    "bytes": 175416
+  },
+  "results/dep8/tree-core-mapped.json": {
+    "sha256": "6c447b6f462614a00ad842618e3e3e6eb677a065b8e5c6f3855774a75bfc5c5c",
+    "bytes": 4549
+  },
+  "results/dep8/treecore.txt": {
+    "sha256": "8208a392e3282e6d9ca7514826870dbeb22b5cad286a8e874b2816ec22971425",
+    "bytes": 1320
+  },
+  "results/gpu-memory-before.txt": {
+    "sha256": "2de84622a56b51c09e96feabbe375cb7b1fdb1502810076b130475a40a7dc5a1",
+    "bytes": 16
+  },
+  "results/gpu-processes-before.txt": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/rust-build.log": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/rust-extension.txt": {
+    "sha256": "ec73b74eff5d714671072bbd84e54e15a7fa8a0fa8948a9ba44730fedcd0fd65",
+    "bytes": 171
+  },
+  "results/status": {
+    "sha256": "1f60cd09342191f97824b92a9994b9778ce4186804ab6834268966e2c4af4695",
+    "bytes": 480
+  },
+  "results/toolchain.txt": {
+    "sha256": "7df61f5196f4c235374c18aa3e96ebd876c5166c33e40b65c4198179162e0120",
+    "bytes": 72
+  },
+  "results/tp8-bf16/after-t1.metrics": {
+    "sha256": "5a781b73b2e5b7c6e214a7f7b7daae58fa7a21a0abb2a85cf8d591065e5f3d62",
+    "bytes": 344584
+  },
+  "results/tp8-bf16/argv.txt": {
+    "sha256": "206125ebcfd1d7bcd5a68c7f6790d6eb9f676f652427c766fc375f38dd5a24d9",
+    "bytes": 575
+  },
+  "results/tp8-bf16/before-t1.metrics": {
+    "sha256": "eacbd5202bc85c2871423fdec277f2f81cbdb8ff4e525392c4d47c914a65a1cd",
+    "bytes": 315702
+  },
+  "results/tp8-bf16/environment-audit.json": {
+    "sha256": "fa3bfc3205b2293e84fc835b016aabddea661c906ebc254d6d643b891f34fc58",
+    "bytes": 1334
+  },
+  "results/tp8-bf16/eval-t1/sgl_eval_gsm8k_20261116-115358/metrics.json": {
+    "sha256": "7a6f7a44b307dad4409315e8c9fbea38d2216230a71fdbe6903efe8936cfa7c0",
+    "bytes": 1163
+  },
+  "results/tp8-bf16/eval-t1/sgl_eval_gsm8k_20261116-115358/output-rs0.jsonl": {
+    "sha256": "104453316bcd589e923e757c76a682e3e813d539338cc63bbf8e8142f9523667",
+    "bytes": 3765215
+  },
+  "results/tp8-bf16/gpu-ownership.log": {
+    "sha256": "b0880905cf1115d4c3b480a557cdcd4785996e43e0afe1b4fc7369b83c3e6c40",
+    "bytes": 1237883
+  },
+  "results/tp8-bf16/gsm8k-t1.log": {
+    "sha256": "333e7708638af8587356cfc292daffa981426cca9258446d5e0100e6dabb3d68",
+    "bytes": 345307
+  },
+  "results/tp8-bf16/serve.log": {
+    "sha256": "2ded49b8cdbcb7469ebfc104ebd746dfa1e39eda0b9c748936c13af0dce755b4",
+    "bytes": 834056
+  },
+  "results/tp8-bf16/server-pgid.txt": {
+    "sha256": "eb38b04e1b9bbdbd135775d0e95300f0ec31abdf8706959add088e2ec6b59ee5",
+    "bytes": 8
+  },
+  "results/tp8-bf16/server_info.json": {
+    "sha256": "88fca45c5af141ddcad20c71ff93d0386549560760d54162e25e2d52569cf278",
+    "bytes": 39363
+  },
+  "results/tp8-bf16/tree-core-mapped.json": {
+    "sha256": "5d9c254836be56d5ab96d82641074108995eba4aaada10caa37575462cff5a4c",
+    "bytes": 4451
+  },
+  "results/tp8-bf16/treecore.txt": {
+    "sha256": "ff3f855fee80bbc10e0332ef9cb3247ddff2d7f2e42d38de879ac44279abbb2c",
+    "bytes": 1256
+  },
+  "results/tp8-fp8/after-t1.metrics": {
+    "sha256": "ecf434e344b97e308417292857eaf30fa7c95ed1666bbd67792dce270ae3c9d3",
+    "bytes": 344624
+  },
+  "results/tp8-fp8/argv.txt": {
+    "sha256": "296986184f2d69940a80a90d1e0b84ac910604afdd8398e856a03c4c0b57999d",
+    "bytes": 658
+  },
+  "results/tp8-fp8/before-t1.metrics": {
+    "sha256": "33d2ec6178f2707dd6e4852c51ba027ec621c8d39bad4a39e2c67cbdf2acefc8",
+    "bytes": 315856
+  },
+  "results/tp8-fp8/eval-t1/sgl_eval_gsm8k_20261116-121535/metrics.json": {
+    "sha256": "869ff7f34db83480485a1af521785bbca1c639325a2de49beb3d39d24f429205",
+    "bytes": 1130
+  },
+  "results/tp8-fp8/eval-t1/sgl_eval_gsm8k_20261116-121535/output-rs0.jsonl": {
+    "sha256": "6a0fc39ebc91608c74bd28c048c27ae81739f0775ac723c0b3f3e30d53baea19",
+    "bytes": 3281933
+  },
+  "results/tp8-fp8/gpu-ownership.log": {
+    "sha256": "4603c3d98df542b40d484614a4a68fa9b641131800b9d7e3a7c71d77e03d7620",
+    "bytes": 1200880
+  },
+  "results/tp8-fp8/gsm8k-t1.log": {
+    "sha256": "9b22519e5c0f38f616360d25158dbff6e1a3de37c65d64c0174aeba499cb9f08",
+    "bytes": 317629
+  },
+  "results/tp8-fp8/serve.log": {
+    "sha256": "b29ad4a5f08e3166e8092c5d60d65d44d5cc7b51162043bf16097880382bd231",
+    "bytes": 796100
+  },
+  "results/tp8-fp8/server-pgid.txt": {
+    "sha256": "d45c734a072be84b0237b2bf6495ce51ddec883dd822dd515f70537fbcc0babe",
+    "bytes": 8
+  },
+  "results/tp8-fp8/server_info.json": {
+    "sha256": "74045f58b24bbf89d228bb8d449d3cdc07274fcdffa6716e8d311e39e1a62432",
+    "bytes": 39409
+  },
+  "results/tp8-fp8/tree-core-mapped.json": {
+    "sha256": "147631df36e5b963e6852bccd3db28c4234d6a20c1649e11817c6c0d016b04a2",
+    "bytes": 4485
+  },
+  "results/tp8-fp8/treecore.txt": {
+    "sha256": "63e870e10ee7885785f8335784e7133ec3b179037f243a0950affb9a448a961f",
+    "bytes": 1256
+  },
+  "runner.sh": {
+    "sha256": "182fcb193ac590271a5a951e95ee0af97f501cb713b794a0cf948053963c1762",
+    "bytes": 5209
+  },
+  "source-manifest.json": {
+    "sha256": "8c1332ce43436b71c320e2cc58a85f9ab2d631beb9b25b5cf6c8eea17345a24a",
+    "bytes": 1708666
+  },
+  "source-verification.json": {
+    "sha256": "adf502f49e6854cf4082957979e3cbe3b69656075577ab5b81b91563d93a7ada",
+    "bytes": 100
+  },
+  "start.sh": {
+    "sha256": "c69595876d6e356205b8ffcf67b1d4f9d0ddf984f97d5540e98dd4a01d4a0ac0",
+    "bytes": 778
+  },
+  "verify_source.py": {
+    "sha256": "60b796111b134f3534aee0e876ae391c2e0d3a61f7d36ad8e53246e956ae59fb",
+    "bytes": 881
+  }
+}

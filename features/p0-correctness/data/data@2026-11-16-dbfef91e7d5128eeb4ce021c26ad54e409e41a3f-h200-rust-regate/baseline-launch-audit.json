@@ -1,0 +1,48 @@
+{
+  "server_flag_differences": {
+    "--port": [
+      "31874",
+      "31876"
+    ]
+  },
+  "python_baseline_environment": {
+    "PYTHONPATH": "/scratch/codex-fi074/overlay:/scratch/codex-fi074/src/python",
+    "HF_HOME": "/scratch/codex-fi074/hf-home",
+    "HF_HUB_CACHE": "/scratch/codex-fi074/hf-home/hub",
+    "SGLANG_UNIFIED_RADIX_TREE_CORE_BACKEND": "python"
+  },
+  "python_baseline_launch_sha256": "b9dce025b3af328debec16a454453d67b1df6056d61d2fe57a91f9ddc97e1d23",
+  "rust_argv_sha256": "34994755d4009806020dfce81c525e736d5084308b14a7cb8f37542f14f6581f",
+  "manifest_files_verified": 33,
+  "archive_scan_findings": [],
+  "postrun_versions_match_baseline_imports": true,
+  "baseline_imports": {
+    "pid": 2699556,
+    "versions": {
+      "flashinfer-python": "0.7.4",
+      "flashinfer-cubin": "0.7.4",
+      "flashinfer-jit-cache": "0.7.4+cu130",
+      "sglang-kernel": "0.4.11",
+      "sgl-deep-gemm": "0.2.8",
+      "sgl-flash-mla": "1.0.5",
+      "kernels": "0.14.1",
+      "torch": "2.14.1",
+      "transformers": "5.19.0",
+      "sgl-eval": "0.1.2",
+      "sgl-fa3": "0.1.0"
+    },
+    "flashinfer_file": "/scratch/codex-fi074/overlay/flashinfer/__init__.py",
+    "flashinfer_version": "0.7.4",
+    "sglang_file": "/scratch/codex-fi074/src/python/sglang/__init__.py",
+    "jit_providers": [
+      {
+        "id": "sm90a",
+        "version": "0.7.4+cu130",
+        "path": "/scratch/codex-fi074/overlay/flashinfer_jit_cache/providers/sm90a/jit_cache"
+      }
+    ],
+    "sgl_fa3_file": "/scratch/codex-fi074/overlay/sgl_fa3/__init__.py",
+    "torch_cuda": "13.0"
+  },
+  "scope": "Launch flags match except port. Final runtime uses default Rust; baseline selects Python. Postrun versions match baseline imports, but no complete live import receipt was captured for the Rust server."
+}

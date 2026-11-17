@@ -84,21 +84,21 @@ P1 projects are omitted because the bullets below specify selection rules, not f
 | [p0-correctness/](p0-correctness/README.md) | P0 | Validate model quality, API behavior, feature compatibility, and release-gating regressions. | In progress |
 | [p0-tool-call-parser/](p0-tool-call-parser/README.md) | P0 | Implement and validate the tool-call detector and parser auto-detection against the model's native call format. | Not started |
 | [p0-reasoning-parser/](p0-reasoning-parser/README.md) | P0 | Implement and validate the reasoning parser, thinking defaults, and supported reasoning levels. | Not started |
-| [p0-general-performance/](p0-general-performance/README.md) | P0 | Measure one-batch and online-serving performance and enforce release regression gates. | Not started |
+| [p0-general-performance/](p0-general-performance/README.md) | P0 | Measure one-batch and online-serving performance and enforce release regression gates. | In progress; E10–E13 delivery sweeps complete, integrated default profiles running |
 | [p0-agentx-performance/](p0-agentx-performance/README.md) | P0 | Measure agentic-workload latency, throughput, concurrency scaling, and cache behavior. | Not started |
 | [p0-kernel-opt/](p0-kernel-opt/README.md) | P0 | Connect profile evidence to kernel changes, microbenchmarks, and end-to-end impact. | `<STATUS>` |
 | [p0-spec-decoding-training/](p0-spec-decoding-training/README.md) | P0 | Train, evaluate, select, and hand off a speculative-decoding draft model. | In progress |
 | [p0-pd-disagg/](p0-pd-disagg/README.md) | P0 | Separate prefill and decode resources for predictable latency and independent capacity tuning. | In progress |
-| [p0-hicache/](p0-hicache/README.md) | P0 | Reuse prompt prefixes across GPU, host, and storage cache tiers. | `<STATUS>` |
+| [p0-hicache/](p0-hicache/README.md) | P0 | Reuse prompt prefixes across GPU, host, and storage cache tiers. | In progress; Rust FP8/NVFP4 host/file measured, stopping gate unmet |
 | [p0-megamoe/](p0-megamoe/README.md) | P0 | Evaluate and integrate the selected MegaMoE implementation. | `<STATUS>` |
 | [p0-parallelism/](p0-parallelism/README.md) | P0 | Choose and implement the parallelism design for the target workload and topology. | In progress |
 | [p0-parallelism/analysis-and-design/](p0-parallelism/analysis-and-design/README.md) | P0 | Prerequisite design: topology, rank mapping, composition constraints, and validation plan. | In progress |
-| [p0-parallelism/dp-attention/](p0-parallelism/dp-attention/README.md) | P0 | Scale attention request capacity with data-parallel attention. | In progress |
+| [p0-parallelism/dp-attention/](p0-parallelism/dp-attention/README.md) | P0 | Scale attention request capacity with data-parallel attention. | In progress; E04 paired serving sweep complete |
 | [p0-parallelism/prefill-cp/](p0-parallelism/prefill-cp/README.md) | P0 | Partition long-prompt computation across GPUs during prefill. | In progress |
 | [p0-parallelism/decode-cp/](p0-parallelism/decode-cp/README.md) | P0 | Reduce per-rank decode KV storage and reads. | Not started |
 | [p0-parallelism/pp/](p0-parallelism/pp/README.md) | P0 | Partition model execution across pipeline stages. | Not started |
 | [p0-parallelism/wide-ep/](p0-parallelism/wide-ep/README.md) | P0 | Plan and validate expert parallelism across the device and node topology. | `<STATUS>` |
-| [p1-breakable-cuda-graph/](p1-breakable-cuda-graph/README.md) | P1 | Retain graph replay benefits around operations that require eager execution. | In progress |
+| [p1-breakable-cuda-graph/](p1-breakable-cuda-graph/README.md) | P1 | Retain graph replay benefits around operations that require eager execution. | In progress; default after #85; E03 FP8-KV sweep complete |
 | [p1-unified-memory/](p1-unified-memory/README.md) | P1 | Evaluate unified-memory support, capacity, and latency tradeoffs. | In progress |
 | [p1-multimodal-opt/](p1-multimodal-opt/README.md) | P1 | Select encoder and serving optimizations for multimodal workloads. | Not started |
 | [p1-multimodal-opt/epd-disagg/](p1-multimodal-opt/epd-disagg/README.md) | P1 | Scale multimodal encoding separately from prefill and decode. | `<STATUS>` |

@@ -1,0 +1,203 @@
+{
+  "runtime_commit": "dbfef91e7d5128eeb4ce021c26ad54e409e41a3f",
+  "lane": "FP8 weights; historical runtime; matched NVFP4 pending in separate source lane",
+  "loads": 12,
+  "points": 6,
+  "requests": 1280,
+  "natural_stop_sanity": 3,
+  "rust_ranks_each": 4,
+  "independently_recomputed": [
+    "input/output totals",
+    "throughput",
+    "linear P90 TTFT",
+    "MTP-off flattened ITL P90",
+    "median scores and candidate selection"
+  ],
+  "limitation": "This audit covers the historical FP8 MTP-off BCG arm only; matched NVFP4 BCG measurements are pending.",
+  "best": [
+    {
+      "candidate": "tp4-auto-bcg",
+      "level": 32,
+      "score": 5242.681687673083,
+      "ttft": 2.289218406425789,
+      "interactivity": 32.12569885992227,
+      "pass": true
+    }
+  ],
+  "mixed_repeat_outcomes": [],
+  "raw_file_sha256": {
+    "bcg/run1/candidates/tp4-auto-bcg/level-1/repeat-1/bench.jsonl": "455d41fb0c8d11f9b69200b3c7b303bfe3d47ef377e17f0a5af1d47f48e95fe7",
+    "bcg/run1/candidates/tp4-auto-bcg/level-1/repeat-2/bench.jsonl": "cce880e746afd93546c67c2a1b67d79704ed628ed593f17eb4e7cd48b34a8967",
+    "bcg/run1/candidates/tp4-auto-bcg/level-2/repeat-1/bench.jsonl": "3648628df20299fc0ec01ed695f8a4b5d971b0d89e2624dc3c31350938754bce",
+    "bcg/run1/candidates/tp4-auto-bcg/level-2/repeat-2/bench.jsonl": "c02504ad84ce22926b58dcffb0d4db0bf3a69061cd82723b9b6c1ad0f1af3d1d",
+    "bcg/run1/candidates/tp4-auto-bcg/level-4/repeat-1/bench.jsonl": "b6108670b64459ea0c082af7aedb59ec3f9a4d2a1a56218089066352c788bc44",
+    "bcg/run1/candidates/tp4-auto-bcg/level-4/repeat-2/bench.jsonl": "2b1c58d22d3b766c2bd9dbd4e6ae0045c70586b4546b7074096291e0f60cb2b8",
+    "bcg/run1/candidates/tp4-auto-bcg/level-8/repeat-1/bench.jsonl": "968d306869305b57c0d9c9afd20b4eccfa25c70753eab930bc7c4f49e1ee031e",
+    "bcg/run1/candidates/tp4-auto-bcg/level-8/repeat-2/bench.jsonl": "9a25eee815c236340016b57adc5d2ad08ed2c10ec0b64ed7c6e3ca02d19e8244",
+    "bcg/run1/candidates/tp4-auto-bcg/level-16/repeat-1/bench.jsonl": "bc588cfdef74509e7f646f40b95089e340b322f05cacc54a122187eb74ef327a",
+    "bcg/run1/candidates/tp4-auto-bcg/level-16/repeat-2/bench.jsonl": "8d258f6d44fea820de8df6c653094a31074ae3ff927202651c21f1feaf2cd6a3",
+    "bcg/run1/candidates/tp4-auto-bcg/level-32/repeat-1/bench.jsonl": "466fceefb3fb694b28ae28d0d2e93851d40135a93abab5da6eb2a2fc216e68e9",
+    "bcg/run1/candidates/tp4-auto-bcg/level-32/repeat-2/bench.jsonl": "7db2d82a0c70a40313afa382913455665591e18a064303d2ba812b81c84de740"
+  },
+  "points_detail": [
+    {
+      "candidate": "tp4-auto-bcg",
+      "level": 1,
+      "score": 661.0858761384429,
+      "ttft": 0.12523152062203735,
+      "interactivity": 97.90224848501133,
+      "repeats": [
+        {
+          "score": 660.8103313721642,
+          "ttft": 0.12531039365567267,
+          "interactivity": 97.89312015679502,
+          "pass": true
+        },
+        {
+          "score": 661.3614209047216,
+          "ttft": 0.12515264758840203,
+          "interactivity": 97.91137681322763,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "candidate": "tp4-auto-bcg",
+      "level": 2,
+      "score": 1102.0336576303143,
+      "ttft": 0.24572811981197457,
+      "interactivity": 85.66850223749458,
+      "repeats": [
+        {
+          "score": 1101.9207814142635,
+          "ttft": 0.2462886108085514,
+          "interactivity": 85.66431046466431,
+          "pass": true
+        },
+        {
+          "score": 1102.146533846365,
+          "ttft": 0.2451676288153977,
+          "interactivity": 85.67269401032483,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "candidate": "tp4-auto-bcg",
+      "level": 4,
+      "score": 1727.825493102539,
+      "ttft": 0.5798678947612645,
+      "interactivity": 69.75480519463775,
+      "repeats": [
+        {
+          "score": 1729.7352102808002,
+          "ttft": 0.6043945862911642,
+          "interactivity": 69.72111232328469,
+          "pass": true
+        },
+        {
+          "score": 1725.915775924278,
+          "ttft": 0.5553412032313649,
+          "interactivity": 69.78849806599082,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "candidate": "tp4-auto-bcg",
+      "level": 8,
+      "score": 2645.4353035361596,
+      "ttft": 1.0121956458548087,
+      "interactivity": 55.74319334869898,
+      "repeats": [
+        {
+          "score": 2656.8164831941353,
+          "ttft": 1.095496961008758,
+          "interactivity": 55.727437934640676,
+          "pass": true
+        },
+        {
+          "score": 2634.054123878184,
+          "ttft": 0.9288943307008595,
+          "interactivity": 55.75894876275728,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "candidate": "tp4-auto-bcg",
+      "level": 16,
+      "score": 3755.269398732995,
+      "ttft": 1.6475781207438558,
+      "interactivity": 42.328266554618175,
+      "repeats": [
+        {
+          "score": 3742.83499866102,
+          "ttft": 1.7011617769952863,
+          "interactivity": 42.430260717058566,
+          "pass": true
+        },
+        {
+          "score": 3767.703798804969,
+          "ttft": 1.5939944644924253,
+          "interactivity": 42.22627239217778,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "candidate": "tp4-auto-bcg",
+      "level": 32,
+      "score": 5242.681687673083,
+      "ttft": 2.289218406425789,
+      "interactivity": 32.12569885992227,
+      "repeats": [
+        {
+          "score": 5250.363313666202,
+          "ttft": 2.3218914326280355,
+          "interactivity": 32.05928531484733,
+          "pass": true
+        },
+        {
+          "score": 5235.0000616799625,
+          "ttft": 2.2565453802235425,
+          "interactivity": 32.192112404997204,
+          "pass": true
+        }
+      ],
+      "pass": true
+    }
+  ],
+  "gsm8k200": {
+    "examples": 200,
+    "unique_ids": 200,
+    "correct": 182,
+    "finish_reasons": {
+      "stop": 198,
+      "length": 2
+    },
+    "empty_final": 2,
+    "raw_sha256": "9ece1cee60b41703ad13c67ced06e281c4d448d8a4ce7eb3b766610e13205850",
+    "prefill_capture_lines": [
+      "[2026-11-16 10:35:00 TP0 PID1009207] Capture target prefill CUDA graph begin. backend=breakable, num_tokens=[4, 8, 12, 16, 20, 24, 28, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 240, 256, 288, 320, 352, 384, 416, 448, 480, 512, 576, 640, 704, 768, 832, 896, 960, 1024, 1280, 1536, 1792, 2048, 2304, 2560, 2816, 3072, 3328, 3584, 3840, 4096, 4608, 5120, 5632, 6144, 6656, 7168, 7680, 8192], avail mem=52.41 GB",
+      "[2026-11-16 10:35:00 TP1 PID1009209] Capture target prefill CUDA graph begin. backend=breakable, num_tokens=[4, 8, 12, 16, 20, 24, 28, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 240, 256, 288, 320, 352, 384, 416, 448, 480, 512, 576, 640, 704, 768, 832, 896, 960, 1024, 1280, 1536, 1792, 2048, 2304, 2560, 2816, 3072, 3328, 3584, 3840, 4096, 4608, 5120, 5632, 6144, 6656, 7168, 7680, 8192], avail mem=52.35 GB",
+      "[2026-11-16 10:35:00 TP3 PID1009213] Capture target prefill CUDA graph begin. backend=breakable, num_tokens=[4, 8, 12, 16, 20, 24, 28, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 240, 256, 288, 320, 352, 384, 416, 448, 480, 512, 576, 640, 704, 768, 832, 896, 960, 1024, 1280, 1536, 1792, 2048, 2304, 2560, 2816, 3072, 3328, 3584, 3840, 4096, 4608, 5120, 5632, 6144, 6656, 7168, 7680, 8192], avail mem=52.66 GB",
+      "[2026-11-16 10:35:00 TP2 PID1009211] Capture target prefill CUDA graph begin. backend=breakable, num_tokens=[4, 8, 12, 16, 20, 24, 28, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 240, 256, 288, 320, 352, 384, 416, 448, 480, 512, 576, 640, 704, 768, 832, 896, 960, 1024, 1280, 1536, 1792, 2048, 2304, 2560, 2816, 3072, 3328, 3584, 3840, 4096, 4608, 5120, 5632, 6144, 6656, 7168, 7680, 8192], avail mem=52.35 GB",
+      "[2026-11-16 10:36:10 TP0 PID1009207] Capture target prefill CUDA graph end. elapsed=69.29 s, mem usage=5.77 GB, avail mem=46.63 GB.",
+      "[2026-11-16 10:36:10 TP3 PID1009213] Capture target prefill CUDA graph end. elapsed=69.29 s, mem usage=5.78 GB, avail mem=46.88 GB.",
+      "[2026-11-16 10:36:10 TP1 PID1009209] Capture target prefill CUDA graph end. elapsed=69.31 s, mem usage=5.78 GB, avail mem=46.57 GB.",
+      "[2026-11-16 10:36:10 TP2 PID1009211] Capture target prefill CUDA graph end. elapsed=69.31 s, mem usage=5.78 GB, avail mem=46.57 GB."
+    ]
+  },
+  "prefill_replay_census": {
+    "load_windows": 12,
+    "logged_prefill_forwards": 524,
+    "logged_graph_forwards": 524,
+    "limitation": "Includes client warmup; windows use GPU samples with two-second margins and one-second server timestamps."
+  }
+}

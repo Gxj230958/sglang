@@ -1,0 +1,22 @@
+{
+  "candidate": "52ef77912fd004f34cfe340b392018632ce69c2c",
+  "reference_for": "E22",
+  "unchanged_plan_fields": [
+    "runtime",
+    "source_archive_sha256",
+    "model",
+    "model_revision",
+    "model_metadata",
+    "package_versions",
+    "expected",
+    "full_gsm8k",
+    "bound_hours"
+  ],
+  "only_serving_environment_change": {
+    "SGLANG_UNIFIED_RADIX_TREE_CORE_BACKEND": {
+      "E22": "unset (default rust)",
+      "reference": "python"
+    }
+  },
+  "input_manifest_sha256": "4f6ecfd2a5794d3ae480d3793f6ded784b4c7c7e36b371ea1afacc4e67fdc6a9"
+}

@@ -1,0 +1,92 @@
+{
+  "runtime_commit": "01d0a662d14a2b64d6a53fb48182fa79b5ddcbeb",
+  "runs": {
+    "fp8-gate-current1": {
+      "examples": 1319,
+      "correct": 1256,
+      "finish_reasons": {
+        "stop": 1316,
+        "length": 3
+      },
+      "accuracy": 0.9522365428354814,
+      "stop_rate": 0.9977255496588324,
+      "prediction_sha256": "ef5e0406e507b5fcd130f2738079d744aed17b34f273c6207c4655419e1e6138",
+      "nonstop": [
+        {
+          "id": "gsm8k-423",
+          "finish_reason": "length",
+          "num_generated_tokens": 32768,
+          "symbolic_correct": false
+        },
+        {
+          "id": "gsm8k-87",
+          "finish_reason": "length",
+          "num_generated_tokens": 32768,
+          "symbolic_correct": false
+        },
+        {
+          "id": "gsm8k-1176",
+          "finish_reason": "length",
+          "num_generated_tokens": 32768,
+          "symbolic_correct": false
+        }
+      ]
+    },
+    "nvfp4-full-current1": {
+      "examples": 1319,
+      "correct": 1243,
+      "finish_reasons": {
+        "stop": 1313,
+        "length": 6
+      },
+      "accuracy": 0.9423805913570887,
+      "stop_rate": 0.9954510993176648,
+      "prediction_sha256": "d88e40c65a562b3a9e834e18a4248b3796f87d2d90fefbb11f07845fd7903fb5",
+      "nonstop": [
+        {
+          "id": "gsm8k-87",
+          "finish_reason": "length",
+          "num_generated_tokens": 32768,
+          "symbolic_correct": false
+        },
+        {
+          "id": "gsm8k-652",
+          "finish_reason": "length",
+          "num_generated_tokens": 32768,
+          "symbolic_correct": false
+        },
+        {
+          "id": "gsm8k-135",
+          "finish_reason": "length",
+          "num_generated_tokens": 32768,
+          "symbolic_correct": false
+        },
+        {
+          "id": "gsm8k-984",
+          "finish_reason": "length",
+          "num_generated_tokens": 32768,
+          "symbolic_correct": false
+        },
+        {
+          "id": "gsm8k-858",
+          "finish_reason": "length",
+          "num_generated_tokens": 32768,
+          "symbolic_correct": false
+        },
+        {
+          "id": "gsm8k-1254",
+          "finish_reason": "length",
+          "num_generated_tokens": 32768,
+          "symbolic_correct": false
+        }
+      ]
+    }
+  },
+  "matched_runtime_environment_and_commands": true,
+  "acceptance": "natural",
+  "accuracy_delta_percentage_points": -0.9855951478392688,
+  "stop_delta_percentage_points": -0.22744503411675776,
+  "paired_stop_rate_nonregression": false,
+  "quality_scope": "performance-only checkpoint; production quality parity unvalidated",
+  "local_prediction_and_rank_audit_passed": true
+}

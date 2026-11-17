@@ -1,0 +1,64 @@
+{
+  "runtime": "52ef77912fd004f34cfe340b392018632ce69c2c",
+  "request_count": 22,
+  "same_actual_service_arguments": true,
+  "request_difference": {
+    "max_tokens": [
+      96,
+      2048
+    ]
+  },
+  "exact_stopped": {
+    "96": 20,
+    "2048": 22
+  },
+  "cache_passed": {
+    "96": 22,
+    "2048": 22
+  },
+  "resolved_truncations": [
+    {
+      "index": 14,
+      "target": 60000,
+      "record": 4612,
+      "expected": "512401",
+      "before": {
+        "finish_reason": "length",
+        "completion_tokens": 96,
+        "final_content": "",
+        "correct_code_in_reasoning": true
+      },
+      "after": {
+        "finish_reason": "stop",
+        "completion_tokens": 5,
+        "final_content": "512401"
+      }
+    },
+    {
+      "index": 21,
+      "target": 110000,
+      "record": 8458,
+      "expected": "968427",
+      "before": {
+        "finish_reason": "length",
+        "completion_tokens": 96,
+        "final_content": "",
+        "correct_code_in_reasoning": true
+      },
+      "after": {
+        "finish_reason": "stop",
+        "completion_tokens": 56,
+        "final_content": "968427"
+      }
+    }
+  ],
+  "independent_live_startup_receipt": {
+    "96": true,
+    "2048": false
+  },
+  "archive_sha256": {
+    "96": "61ef7c54569349b7e1259091e4a1a52fc7579343e62ebc537969503ce356c379",
+    "2048": "cb03176274bdc499b41388bd329dcc7e60d4893fce6c224e6a2c2661c7385266"
+  },
+  "scope": "The two bounded TP4 reasoning truncations produce correct stopped final answers with the larger output budget. Runner-side Rust mapping and terminal source evidence were preserved; the follow-up lacks the separate independent live startup receipt. The original CP4 post-GSM8K wrong answer remains unreproduced and unattributed."
+}

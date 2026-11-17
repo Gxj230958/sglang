@@ -1,0 +1,70 @@
+[
+  {
+    "archive": "gate-fp8-tp4-snapshot.tar.gz",
+    "sha256": "8d71285683c78562c013d64f17b144b3beeba9165aa6a42a6f67548e54baab8f",
+    "files": 30
+  },
+  {
+    "archive": "gate-nvfp4-tp4-snapshot.tar.gz",
+    "sha256": "5af84420451ba68940d85149f53305c07bd9ccb51667f5a51c8a5fcc3945a85c",
+    "files": 30
+  },
+  {
+    "archive": "gate-fp8-dep4-snapshot.tar.gz",
+    "sha256": "44f4270cabf7de6af106b1aa9c98fd2edca3d187bd0a6e42b942ed4f49506f95",
+    "files": 30
+  },
+  {
+    "archive": "gate-nvfp4-dep4-snapshot.tar.gz",
+    "sha256": "c38a8cb8c9f0da8a0e786d0bb43f496a01cb0985a6bc62337391e292a8cbbad8",
+    "files": 30
+  },
+  {
+    "archive": "off-fp8-tp4-snapshot.tar.gz",
+    "sha256": "1d8c63ad497e6c36e926fd01935a65c7dd88a33ad497e867b5dbeaccc9477f61",
+    "files": 167
+  },
+  {
+    "archive": "off-nvfp4-tp4-snapshot.tar.gz",
+    "sha256": "c2df4e241cfd7dccdcdc2a58530f63a0aac574121dd2d02651648e10113b0252",
+    "files": 167
+  },
+  {
+    "archive": "off-fp8-dep4-snapshot.tar.gz",
+    "sha256": "3a2b62e9d7f9e0fd9f2c455dc4c2a28ff4f8615b1af00c32dbcb9e8f04decbbd",
+    "files": 167
+  },
+  {
+    "archive": "off-nvfp4-dep4-snapshot.tar.gz",
+    "sha256": "54250aa2c75a792b1d96ae314b18486848ef93bd54477bd67d52e7e27befb0a5",
+    "files": 167
+  },
+  {
+    "archive": "controlled-fp8-tp4-snapshot.tar.gz",
+    "sha256": "b17eea802cd06f48faf93e76efa23b935368ba0ffc8905a35b6f9808a57c5e19",
+    "files": 160
+  },
+  {
+    "archive": "controlled-nvfp4-tp4-snapshot.tar.gz",
+    "sha256": "6006a0b58f6ca1a4457a427257af3bc737bbe67f9135240299ab891a4f1602cb",
+    "files": 160
+  },
+  {
+    "archive": "controlled-fp8-dep4-snapshot.tar.gz",
+    "sha256": "e01c827fad24948db0023f7439b54b1fd3ad77e6749d23a6842198bf602f7c00",
+    "files": 160
+  },
+  {
+    "archive": "controlled-nvfp4-dep4-snapshot.tar.gz",
+    "sha256": "75f0526b54337fa427213d8ff33a0e4eaa772c2ac3a82e570435222cd26dd2c6",
+    "files": 160
+  },
+  {
+    "archive": "terminal-evidence.tar.gz",
+    "sha256": "caf0b8b18140ec816bef7ef3a9a58cecb1d6977348d2c9400eb88397ef6538a4",
+    "files": 40,
+    "source_archive_sha256": "6adef101c58e01a34f175c97aa8913f65b3611413e0e11058d2db6af0b65ad28",
+    "omitted_member": "workload.json",
+    "omitted_sha256": "235ea06164ba2a9f4700d5bee5ca12206a6ea21ed246ed64c8022b3bbb0d8688"
+  }
+]

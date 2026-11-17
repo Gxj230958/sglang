@@ -1,0 +1,1389 @@
+{
+  "runtime": "52ef77912fd004f34cfe340b392018632ce69c2c",
+  "arm": "dp4",
+  "matched_source_dependencies_draft_service_evaluation": true,
+  "normalized_commands": {
+    "launch": [
+      "/opt/sglang/bin/python",
+      "TASK/server.py",
+      "TASK/results/dp4",
+      "--model-path",
+      "TARGET_MODEL",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "32240",
+      "--dist-init-addr",
+      "127.0.0.1:32241",
+      "--max-running-requests",
+      "64",
+      "--cuda-graph-max-bs-decode",
+      "64",
+      "--ep-size",
+      "4",
+      "--attn-dp-size",
+      "4",
+      "--moe-a2a-backend",
+      "none",
+      "--disable-prefill-cuda-graph",
+      "--enable-cache-report",
+      "--reasoning-parser",
+      "glm45",
+      "--tool-call-parser",
+      "glm47",
+      "--enable-metrics",
+      "--speculative-algorithm",
+      "EAGLE",
+      "--speculative-num-steps",
+      "3",
+      "--speculative-eagle-topk",
+      "1",
+      "--speculative-num-draft-tokens",
+      "4",
+      "--speculative-draft-model-path",
+      "/scratch/models/GLM-5-1028-Provider",
+      "--speculative-draft-model-quantization",
+      "fp8",
+      "--random-seed",
+      "1",
+      "--moe-runner-backend",
+      "flashinfer_trtllm",
+      "--disable-shared-experts-fusion",
+      "--dsa-prefill-backend",
+      "trtllm",
+      "--dsa-decode-backend",
+      "trtllm",
+      "--kv-cache-dtype",
+      "fp8_e4m3",
+      "--enable-fp32-lm-head",
+      "--tp-size",
+      "4",
+      "--mem-fraction-static",
+      "0.80",
+      "--context-length",
+      "131072",
+      "--chunked-prefill-size",
+      "8192"
+    ],
+    "eval": [
+      "/opt/sglang/bin/sgl-eval",
+      "run",
+      "gsm8k",
+      "--base-url",
+      "http://127.0.0.1:32240/v1",
+      "--temperature",
+      "1.0",
+      "--top-p",
+      "0.95",
+      "--seed",
+      "1",
+      "--num-threads",
+      "64",
+      "--max-tokens",
+      "32768",
+      "--out-dir",
+      "TASK/results/dp4/eval-t1"
+    ]
+  },
+  "fp8": {
+    "runtime": "52ef77912fd004f34cfe340b392018632ce69c2c",
+    "rows": 1319,
+    "correct": 1250,
+    "score": 0.9476876421531463,
+    "finish_reasons": {
+      "stop": 1313,
+      "length": 6
+    },
+    "stop_rate": 0.9954510993176648,
+    "length_rows": [
+      {
+        "id": "gsm8k-135",
+        "tokens": 32768,
+        "correct": false
+      },
+      {
+        "id": "gsm8k-255",
+        "tokens": 32768,
+        "correct": false
+      },
+      {
+        "id": "gsm8k-1042",
+        "tokens": 32768,
+        "correct": false
+      },
+      {
+        "id": "gsm8k-811",
+        "tokens": 32768,
+        "correct": false
+      },
+      {
+        "id": "gsm8k-835",
+        "tokens": 32768,
+        "correct": false
+      },
+      {
+        "id": "gsm8k-858",
+        "tokens": 32768,
+        "correct": false
+      }
+    ],
+    "sampling": {
+      "chat_template_kwargs": null,
+      "extra_body": null,
+      "max_tokens": 32768,
+      "min_p": 0.0,
+      "reasoning_effort": null,
+      "repetition_penalty": 1.0,
+      "seed": 1,
+      "system_message": null,
+      "temperature": 1.0,
+      "top_p": 0.95
+    },
+    "resolved": {
+      "tp_size": 4,
+      "ep_size": 4,
+      "attn_dp_size": 4,
+      "kv_cache_dtype": "fp8_e4m3",
+      "dsa_prefill_backend": "trtllm",
+      "dsa_decode_backend": "trtllm",
+      "moe_runner_backend": "flashinfer_trtllm",
+      "context_length": 131072,
+      "mem_fraction_static": 0.8,
+      "chunked_prefill_size": 2048,
+      "max_running_requests": 64,
+      "random_seed": 1,
+      "speculative_algorithm": "EAGLE",
+      "speculative_num_steps": 3,
+      "speculative_eagle_topk": 1,
+      "speculative_num_draft_tokens": 4,
+      "speculative_draft_model_quantization": "fp8",
+      "disable_prefill_cuda_graph": true,
+      "enable_prefill_cp": false,
+      "attn_cp_size": 1,
+      "disable_hybrid_swa_memory": false,
+      "enable_fp32_lm_head": true,
+      "disable_shared_experts_fusion": true,
+      "quantization": "fp8",
+      "moe_a2a_backend": "none",
+      "speculative_draft_model_path": "/scratch/models/GLM-5-1028-Provider"
+    },
+    "live_rust_workers_verified": 4,
+    "precision": "fp8",
+    "arm": "dp4",
+    "gpu_samples": 990,
+    "gpu_process_records": 4654,
+    "sampling_errors": [],
+    "measurement_sampling_errors": [],
+    "counters": {
+      "generation_tokens_total": 741918.0,
+      "spec_verify_calls_total": 280929.0
+    },
+    "counter_derived_natural_acceptance": 2.6409448650726697,
+    "prediction_completion_tokens": 741918,
+    "archive_sha256": "503db5813c2ff9847b5df4b272e2406343a2d36634385603af7e66e4b91154b5",
+    "raw_files": 112,
+    "chat_http_statuses": {
+      "200": 1354
+    },
+    "failed_http_attempts": 0,
+    "all_requests_stopped": false,
+    "scope": "One candidate correctness run with explicit seed and output bound; single-run variation remains. Image-level qualification and bounded performance selection require separate evidence."
+  },
+  "nvfp4": {
+    "runtime": "52ef77912fd004f34cfe340b392018632ce69c2c",
+    "rows": 1319,
+    "correct": 1247,
+    "score": 0.9454131918119788,
+    "finish_reasons": {
+      "stop": 1313,
+      "length": 6
+    },
+    "stop_rate": 0.9954510993176648,
+    "length_rows": [
+      {
+        "id": "gsm8k-754",
+        "tokens": 32768,
+        "correct": false
+      },
+      {
+        "id": "gsm8k-135",
+        "tokens": 32768,
+        "correct": false
+      },
+      {
+        "id": "gsm8k-87",
+        "tokens": 32768,
+        "correct": false
+      },
+      {
+        "id": "gsm8k-255",
+        "tokens": 32768,
+        "correct": false
+      },
+      {
+        "id": "gsm8k-423",
+        "tokens": 32768,
+        "correct": false
+      },
+      {
+        "id": "gsm8k-1303",
+        "tokens": 32768,
+        "correct": false
+      }
+    ],
+    "sampling": {
+      "chat_template_kwargs": null,
+      "extra_body": null,
+      "max_tokens": 32768,
+      "min_p": 0.0,
+      "reasoning_effort": null,
+      "repetition_penalty": 1.0,
+      "seed": 1,
+      "system_message": null,
+      "temperature": 1.0,
+      "top_p": 0.95
+    },
+    "resolved": {
+      "tp_size": 4,
+      "ep_size": 4,
+      "attn_dp_size": 4,
+      "kv_cache_dtype": "fp8_e4m3",
+      "dsa_prefill_backend": "trtllm",
+      "dsa_decode_backend": "trtllm",
+      "moe_runner_backend": "flashinfer_trtllm",
+      "context_length": 131072,
+      "mem_fraction_static": 0.8,
+      "chunked_prefill_size": 2048,
+      "max_running_requests": 64,
+      "random_seed": 1,
+      "speculative_algorithm": "EAGLE",
+      "speculative_num_steps": 3,
+      "speculative_eagle_topk": 1,
+      "speculative_num_draft_tokens": 4,
+      "speculative_draft_model_quantization": "fp8",
+      "disable_prefill_cuda_graph": true,
+      "enable_prefill_cp": false,
+      "attn_cp_size": 1,
+      "disable_hybrid_swa_memory": false,
+      "enable_fp32_lm_head": true,
+      "disable_shared_experts_fusion": true,
+      "quantization": "modelopt_mixed",
+      "moe_a2a_backend": "none",
+      "speculative_draft_model_path": "/scratch/models/GLM-5-1028-Provider"
+    },
+    "live_rust_workers_verified": 4,
+    "precision": "nvfp4",
+    "arm": "dp4",
+    "gpu_samples": 989,
+    "gpu_process_records": 4596,
+    "sampling_errors": [],
+    "measurement_sampling_errors": [],
+    "counters": {
+      "generation_tokens_total": 773852.0,
+      "spec_verify_calls_total": 290492.0
+    },
+    "counter_derived_natural_acceptance": 2.6639356677636563,
+    "prediction_completion_tokens": 773852,
+    "archive_sha256": "ea53f27249a8ecd0602a1c6fdf6e2398bcdffcf773611e98aa73e4614f921352",
+    "raw_files": 112,
+    "chat_http_statuses": {
+      "200": 1354
+    },
+    "failed_http_attempts": 0,
+    "all_requests_stopped": false,
+    "scope": "One candidate correctness run with explicit seed and output bound; single-run variation remains. Image-level qualification and bounded performance selection require separate evidence."
+  },
+  "nvfp4_minus_fp8": {
+    "correct": -3,
+    "normal_stop": 0,
+    "accuracy_percentage_points": -0.22744503411674666,
+    "stop_percentage_points": 0.0
+  },
+  "scope": "Single paired correctness runs. NVFP4 remains performance-only; this does not establish quality parity or performance superiority.",
+  "functional_audits": {
+    "fp8": {
+      "runtime": "52ef77912fd004f34cfe340b392018632ce69c2c",
+      "precision": "fp8",
+      "reconstructed_requests": 34,
+      "retrieval_exact_passed": 17,
+      "routing_exact_passed": 16,
+      "retrieval_failures": [
+        {
+          "kind": "retrieval",
+          "target": 60000,
+          "record": 2307,
+          "request_sha256": "be18fe99128d012f5b0e653a674cec4a47b4e0a392ee0edf3400e0e0b6dfead2",
+          "expected": "946335",
+          "finish_reason": "stop",
+          "completion_tokens": 6,
+          "prompt_tokens": 64737,
+          "cached_tokens": 0,
+          "recorded_contains_answer": false,
+          "only_expected_six_digit_code": false,
+          "exact_answer": false,
+          "passed": false
+        }
+      ],
+      "routing_failures": [],
+      "retrieval_records": [
+        {
+          "kind": "retrieval",
+          "target": 300,
+          "record": 3,
+          "request_sha256": "6814352867207b6402caadbf93e7fce38f5439e655c14a8c5664054e18ccd7b5",
+          "expected": "101567",
+          "finish_reason": "stop",
+          "completion_tokens": 5,
+          "prompt_tokens": 320,
+          "cached_tokens": 0,
+          "recorded_contains_answer": true,
+          "only_expected_six_digit_code": true,
+          "exact_answer": true,
+          "passed": true
+        },
+        {
+          "kind": "retrieval",
+          "target": 300,
+          "record": 11,
+          "request_sha256": "83af1d0bc18e97dd61297ce9a60cd222e4c66ddd775ca1be3d7d0ea02599632c",
+          "expected": "273766",
+          "finish_reason": "stop",
+          "completion_tokens": 6,
+          "prompt_tokens": 320,
+          "cached_tokens": 0,
+          "recorded_contains_answer": true,
+          "only_expected_six_digit_code": true,
+          "exact_answer": true,
+          "passed": true
+        },
+        {
+          "kind": "retrieval",
+          "target": 300,
+          "record": 20,
+          "request_sha256": "0d6ceaec455a0a3160a12ae32f20ebc8b745a228d1010c2a728869389bfb4b10",
+          "expected": "358307",
+          "finish_reason": "stop",
+          "completion_tokens": 6,
+          "prompt_tokens": 320,
+          "cached_tokens": 0,
+          "recorded_contains_answer": true,
+          "only_expected_six_digit_code": true,
+          "exact_answer": true,
+          "passed": true
+        },
+        {
+          "kind": "retrieval",
+          "target": 3000,
+          "record": 32,
+          "request_sha256": "7820c2c655c0358169f193fd98738f9a847c30e140661f9894d927537f19b3e9",
+          "expected": "398074",
+          "finish_reason": "stop",
+          "completion_tokens": 6,
+          "prompt_tokens": 2938,
+          "cached_tokens": 0,
+          "recorded_contains_answer": true,
+          "only_expected_six_digit_code": true,
+          "exact_answer": true,
+          "passed": true
+        },
+        {
+          "kind": "retrieval",
+          "target": 3000,
+          "record": 115,
+          "request_sha256": "dbec73e45ed3a575e2185bba8f33fafbc34428e95373eca7fcd029417896c04e",
+          "expected": "404367",
+          "finish_reason": "stop",
+          "completion_tokens": 6,
+          "prompt_tokens": 2938,
+          "cached_tokens": 0,
+          "recorded_contains_answer": true,
+          "only_expected_six_digit_code": true,
+          "exact_answer": true,
+          "passed": true
+        },
+        {
+          "kind": "retrieval",
+          "target": 3000,
+          "record": 227,
+          "request_sha256": "abb5c8cacbaacb96466a362faa5c4f1283aa2e4645dd784a45db0acac04b7fe8",
+          "expected": "548633",
+          "finish_reason": "stop",
+          "completion_tokens": 6,
+          "prompt_tokens": 2939,
+          "cached_tokens": 0,
+          "recorded_contains_answer": true,
+          "only_expected_six_digit_code": true,
+          "exact_answer": true,
+          "passed": true
+        },
+        {
+          "kind": "retrieval",
+          "target": 9000,
+          "record": 98,
+          "request_sha256": "f29450b2bf76f108ab4cf9189c8b1a1fbf37f8390fc3a2232979851cb4402465",
+          "expected": "581885",
+          "finish_reason": "stop",
+          "completion_tokens": 6,
+          "prompt_tokens": 9225,
+          "cached_tokens": 0,
+          "recorded_contains_answer": true,
+          "only_expected_six_digit_code": true,
+          "exact_answer": true,
+          "passed": true
+        },
+        {
+          "kind": "retrieval",
+          "target": 9000,
+          "record": 346,
+          "request_sha256": "1e8d8296f42351e285fac3f704ad35d1ad23e2860c6924a52a81fe9bfa80cb56",
+          "expected": "556033",
+          "finish_reason": "stop",
+          "completion_tokens": 6,
+          "prompt_tokens": 9226,
+          "cached_tokens": 0,
+          "recorded_contains_answer": true,
+          "only_expected_six_digit_code": true,
+          "exact_answer": true,
+          "passed": true
+        },
+        {
+          "kind": "retrieval",
+          "target": 9000,
+          "record": 689,
+          "request_sha256": "8ecf96e043ac2deaaffb92a9f4cd931af5a980a10c6ccf5ead9f1d88282c722e",
+          "expected": "840262",
+          "finish_reason": "stop",
+          "completion_tokens": 6,
+          "prompt_tokens": 9226,
+          "cached_tokens": 0,
+          "recorded_contains_answer": true,
+          "only_expected_six_digit_code": true,
+          "exact_answer": true,
+          "passed": true
+        },
+        {
+          "kind": "retrieval",
+          "target": 24000,
+          "record": 263,
+          "request_sha256": "ac9aa0008fc17a4a74cba6942511f52dd8d41ddea939f187bbe3f832f36da6f6",
+          "expected": "541954",
+          "finish_reason": "stop",
+          "completion_tokens": 6,
+          "prompt_tokens": 24916,
+          "cached_tokens": 0,
+          "recorded_contains_answer": true,
+          "only_expected_six_digit_code": true,
+          "exact_answer": true,
+          "passed": true
+        },
+        {
+          "kind": "retrieval",
+          "target": 24000,
+          "record": 923,
+          "request_sha256": "0cc504ac452209fa94f2f354d171eac12f829ee19eba2a4d3ed72e4467d5649a",
+          "expected": "455118",
+          "finish_reason": "stop",
+          "completion_tokens": 5,
+          "prompt_tokens": 24916,
+          "cached_tokens": 0,
+          "recorded_contains_answer": true,
+          "only_expected_six_digit_code": true,
+          "exact_answer": true,
+          "passed": true
+        },
+        {
+          "kind": "retrieval",
+          "target": 24000,
+          "record": 1843,
+          "request_sha256": "95f19d8dd0b081f3416c05565e7d85ff75fcb6833af1f01c58e466da2307913e",
+          "expected": "766127",
+          "finish_reason": "stop",
+          "completion_tokens": 5,
+          "prompt_tokens": 24916,
+          "cached_tokens": 0,
+          "recorded_contains_answer": true,
+          "only_expected_six_digit_code": true,
+          "exact_answer": true,
+          "passed": true
+        },
+        {
+          "kind": "retrieval",
+          "target": 60000,
+          "record": 659,
+          "request_sha256": "9bbfacb9ffdac2b030734cbe9938a1e0a682a0c55ebd850a79f0465cde9ace18",
+          "expected": "165357",
+          "finish_reason": "stop",
+          "completion_tokens": 5,
+          "prompt_tokens": 64737,
+          "cached_tokens": 0,
+          "recorded_contains_answer": true,
+          "only_expected_six_digit_code": true,
+          "exact_answer": true,
+          "passed": true
+        },
+        {
+          "kind": "retrieval",
+          "target": 60000,
+          "record": 2307,
+          "request_sha256": "be18fe99128d012f5b0e653a674cec4a47b4e0a392ee0edf3400e0e0b6dfead2",
+          "expected": "946335",
+          "finish_reason": "stop",
+          "completion_tokens": 6,
+          "prompt_tokens": 64737,
+          "cached_tokens": 0,
+          "recorded_contains_answer": false,
+          "only_expected_six_digit_code": false,
+          "exact_answer": false,
+          "passed": false
+        },
+        {
+          "kind": "retrieval",
+          "target": 60000,
+          "record": 4612,
+          "request_sha256": "dd2620a737e05e0ccf0d137905a0521efb686a06a08a1a1b1fe05e48d8c7cdf7",
+          "expected": "512401",
+          "finish_reason": "stop",
+          "completion_tokens": 5,
+          "prompt_tokens": 64738,
+          "cached_tokens": 0,
+          "recorded_contains_answer": true,
+          "only_expected_six_digit_code": true,
+          "exact_answer": true,
+          "passed": true
+        },
+        {
+          "kind": "retrieval",
+          "target": 110000,
+          "record": 1208,
+          "request_sha256": "84b87a2d342cd38fce5af4a4c704b98edf279370e82bbd5d156dca346bdfb31a",
+          "expected": "797221",
+          "finish_reason": "stop",
+          "completion_tokens": 6,
+          "prompt_tokens": 120935,
+          "cached_tokens": 0,
+          "recorded_contains_answer": true,
+          "only_expected_six_digit_code": true,
+          "exact_answer": true,
+          "passed": true
+        },
+        {
+          "kind": "retrieval",
+          "target": 110000,
+          "record": 4230,
+          "request_sha256": "b1cf988baa077e94b43ba72e6a404bc311ba1214a89420426e899eff714ae01e",
+          "expected": "709295",
+          "finish_reason": "stop",
+          "completion_tokens": 6,
+          "prompt_tokens": 120936,
+          "cached_tokens": 0,
+          "recorded_contains_answer": true,
+          "only_expected_six_digit_code": true,
+          "exact_answer": true,
+          "passed": true
+        },
+        {
+          "kind": "retrieval",
+          "target": 110000,
+          "record": 8458,
+          "request_sha256": "3e5f10b5af7ac7b6500b283d86b21b6179f4d2788aab9db2af63f83f8873913e",
+          "expected": "968427",
+          "finish_reason": "stop",
+          "completion_tokens": 6,
+          "prompt_tokens": 120936,
+          "cached_tokens": 0,
+          "recorded_contains_answer": true,
+          "only_expected_six_digit_code": true,
+          "exact_answer": true,
+          "passed": true
+        }
+      ],
+      "routing_records": [
+        {
+          "rank": 0,
+          "phase": "cold",
+          "expected": "995242",
+          "correct": true,
+          "finish_reason": "stop",
+          "cached_tokens": 0,
+          "routing_dp_ranks": [
+            0
+          ],
+          "routing_pass": true,
+          "cache_pass": true,
+          "request_sha256": "0c352fd8f3dcc56a74893b84740d382b12d327d92fe103764dce0d2900c89014",
+          "passed": true
+        },
+        {
+          "rank": 0,
+          "phase": "warm",
+          "expected": "995242",
+          "correct": true,
+          "finish_reason": "stop",
+          "cached_tokens": 6656,
+          "routing_dp_ranks": [
+            0
+          ],
+          "routing_pass": true,
+          "cache_pass": true,
+          "request_sha256": "0c352fd8f3dcc56a74893b84740d382b12d327d92fe103764dce0d2900c89014",
+          "passed": true
+        },
+        {
+          "rank": 0,
+          "phase": "fork",
+          "expected": "325117",
+          "correct": true,
+          "finish_reason": "stop",
+          "cached_tokens": 1984,
+          "routing_dp_ranks": [
+            0
+          ],
+          "routing_pass": true,
+          "cache_pass": true,
+          "request_sha256": "d2d7eaa5bf6b9f73dc04e7d96eff252c38087c9fe9c4490a68ce0ed25dd6f7b0",
+          "passed": true
+        },
+        {
+          "rank": 0,
+          "phase": "warm-fork",
+          "expected": "325117",
+          "correct": true,
+          "finish_reason": "stop",
+          "cached_tokens": 6656,
+          "routing_dp_ranks": [
+            0
+          ],
+          "routing_pass": true,
+          "cache_pass": true,
+          "request_sha256": "d2d7eaa5bf6b9f73dc04e7d96eff252c38087c9fe9c4490a68ce0ed25dd6f7b0",
+          "passed": true
+        },
+        {
+          "rank": 1,
+          "phase": "cold",
+          "expected": "995242",
+          "correct": true,
+          "finish_reason": "stop",
+          "cached_tokens": 0,
+          "routing_dp_ranks": [
+            1
+          ],
+          "routing_pass": true,
+          "cache_pass": true,
+          "request_sha256": "658fd0d2960cb3d766b9c7a744e77aca5d63befda93a94766476a2d0f869e6ad",
+          "passed": true
+        },
+        {
+          "rank": 1,
+          "phase": "warm",
+          "expected": "995242",
+          "correct": true,
+          "finish_reason": "stop",
+          "cached_tokens": 6656,
+          "routing_dp_ranks": [
+            1
+          ],
+          "routing_pass": true,
+          "cache_pass": true,
+          "request_sha256": "658fd0d2960cb3d766b9c7a744e77aca5d63befda93a94766476a2d0f869e6ad",
+          "passed": true
+        },
+        {
+          "rank": 1,
+          "phase": "fork",
+          "expected": "325117",
+          "correct": true,
+          "finish_reason": "stop",
+          "cached_tokens": 1984,
+          "routing_dp_ranks": [
+            1
+          ],
+          "routing_pass": true,
+          "cache_pass": true,
+          "request_sha256": "44c701bfac242bba1932b1555e73883a2a9019b2d76ebcc099a369700695a00d",
+          "passed": true
+        },
+        {
+          "rank": 1,
+          "phase": "warm-fork",
+          "expected": "325117",
+          "correct": true,
+          "finish_reason": "stop",
+          "cached_tokens": 6656,
+          "routing_dp_ranks": [
+            1
+          ],
+          "routing_pass": true,
+          "cache_pass": true,
+          "request_sha256": "44c701bfac242bba1932b1555e73883a2a9019b2d76ebcc099a369700695a00d",
+          "passed": true
+        },
+        {
+          "rank": 2,
+          "phase": "cold",
+          "expected": "995242",
+          "correct": true,
+          "finish_reason": "stop",
+          "cached_tokens": 0,
+          "routing_dp_ranks": [
+            2
+          ],
+          "routing_pass": true,
+          "cache_pass": true,
+          "request_sha256": "a05684fbe488e24e01de5b8c41272df81f2494dc5ed3c748d7d406a5b9910566",
+          "passed": true
+        },
+        {
+          "rank": 2,
+          "phase": "warm",
+          "expected": "995242",
+          "correct": true,
+          "finish_reason": "stop",
+          "cached_tokens": 6656,
+          "routing_dp_ranks": [
+            2
+          ],
+          "routing_pass": true,
+          "cache_pass": true,
+          "request_sha256": "a05684fbe488e24e01de5b8c41272df81f2494dc5ed3c748d7d406a5b9910566",
+          "passed": true
+        },
+        {
+          "rank": 2,
+          "phase": "fork",
+          "expected": "325117",
+          "correct": true,
+          "finish_reason": "stop",
+          "cached_tokens": 1984,
+          "routing_dp_ranks": [
+            2
+          ],
+          "routing_pass": true,
+          "cache_pass": true,
+          "request_sha256": "6e60885f56613e5e2cdfd2881d036bb825a9fdf7cf372304eb14cea476912bf7",
+          "passed": true
+        },
+        {
+          "rank": 2,
+          "phase": "warm-fork",
+          "expected": "325117",
+          "correct": true,
+          "finish_reason": "stop",
+          "cached_tokens": 6656,
+          "routing_dp_ranks": [
+            2
+          ],
+          "routing_pass": true,
+          "cache_pass": true,
+          "request_sha256": "6e60885f56613e5e2cdfd2881d036bb825a9fdf7cf372304eb14cea476912bf7",
+          "passed": true
+        },
+        {
+          "rank": 3,
+          "phase": "cold",
+          "expected": "995242",
+          "correct": true,
+          "finish_reason": "stop",
+          "cached_tokens": 0,
+          "routing_dp_ranks": [
+            3
+          ],
+          "routing_pass": true,
+          "cache_pass": true,
+          "request_sha256": "6b95428d3deb3a609aae7ea4abc644e3e79fbb4eec817ff759a605f580c88d50",
+          "passed": true
+        },
+        {
+          "rank": 3,
+          "phase": "warm",
+          "expected": "995242",
+          "correct": true,
+          "finish_reason": "stop",
+          "cached_tokens": 6656,
+          "routing_dp_ranks": [
+            3
+          ],
+          "routing_pass": true,
+          "cache_pass": true,
+          "request_sha256": "6b95428d3deb3a609aae7ea4abc644e3e79fbb4eec817ff759a605f580c88d50",
+          "passed": true
+        },
+        {
+          "rank": 3,
+          "phase": "fork",
+          "expected": "325117",
+          "correct": true,
+          "finish_reason": "stop",
+          "cached_tokens": 1984,
+          "routing_dp_ranks": [
+            3
+          ],
+          "routing_pass": true,
+          "cache_pass": true,
+          "request_sha256": "f2c387c0e920bcbde31d82db19e6db21ecab3bb5ea2f0e29b2b3f534cddf785e",
+          "passed": true
+        },
+        {
+          "rank": 3,
+          "phase": "warm-fork",
+          "expected": "325117",
+          "correct": true,
+          "finish_reason": "stop",
+          "cached_tokens": 6656,
+          "routing_dp_ranks": [
+            3
+          ],
+          "routing_pass": true,
+          "cache_pass": true,
+          "request_sha256": "f2c387c0e920bcbde31d82db19e6db21ecab3bb5ea2f0e29b2b3f534cddf785e",
+          "passed": true
+        }
+      ],
+      "all_functional_passed": false,
+      "effective_chunked_prefill_size": 2048,
+      "effective_max_running_requests_per_dp": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "scope": "Independent complete raw functional audit; full GSM8K stopping/accuracy qualification remains separate.",
+      "evidence_phase": "terminal"
+    },
+    "nvfp4": {
+      "runtime": "52ef77912fd004f34cfe340b392018632ce69c2c",
+      "precision": "nvfp4",
+      "reconstructed_requests": 34,
+      "retrieval_exact_passed": 18,
+      "routing_exact_passed": 16,
+      "retrieval_failures": [],
+      "routing_failures": [],
+      "retrieval_records": [
+        {
+          "kind": "retrieval",
+          "target": 300,
+          "record": 3,
+          "request_sha256": "58d3ca4323caaa79981468cad355149fb699a3d83f176600123d0a91acf8d9ee",
+          "expected": "101567",
+          "finish_reason": "stop",
+          "completion_tokens": 5,
+          "prompt_tokens": 320,
+          "cached_tokens": 0,
+          "recorded_contains_answer": true,
+          "only_expected_six_digit_code": true,
+          "exact_answer": true,
+          "passed": true
+        },
+        {
+          "kind": "retrieval",
+          "target": 300,
+          "record": 11,
+          "request_sha256": "0d031a9c76f17a3adbc394ebeaa941f3b5dc3c30b137433f7d8b516761b35e01",
+          "expected": "273766",
+          "finish_reason": "stop",
+          "completion_tokens": 6,
+          "prompt_tokens": 320,
+          "cached_tokens": 0,
+          "recorded_contains_answer": true,
+          "only_expected_six_digit_code": true,
+          "exact_answer": true,
+          "passed": true
+        },
+        {
+          "kind": "retrieval",
+          "target": 300,
+          "record": 20,
+          "request_sha256": "15ddd9a1c8f5b95945d3fce890969e77ae9e0c04aa44ec6a004fc6ffe59cba36",
+          "expected": "358307",
+          "finish_reason": "stop",
+          "completion_tokens": 6,
+          "prompt_tokens": 320,
+          "cached_tokens": 0,
+          "recorded_contains_answer": true,
+          "only_expected_six_digit_code": true,
+          "exact_answer": true,
+          "passed": true
+        },
+        {
+          "kind": "retrieval",
+          "target": 3000,
+          "record": 32,
+          "request_sha256": "5c5545e7af64435238e6e4d34a1fb3a50af6373cf6b97aaa59365c701fe004b3",
+          "expected": "398074",
+          "finish_reason": "stop",
+          "completion_tokens": 6,
+          "prompt_tokens": 2938,
+          "cached_tokens": 0,
+          "recorded_contains_answer": true,
+          "only_expected_six_digit_code": true,
+          "exact_answer": true,
+          "passed": true
+        },
+        {
+          "kind": "retrieval",
+          "target": 3000,
+          "record": 115,
+          "request_sha256": "fe76dd09b1c49f7981227454e3d3237b7d1276e944f126a5112ffc81b9fdf2db",
+          "expected": "404367",
+          "finish_reason": "stop",
+          "completion_tokens": 6,
+          "prompt_tokens": 2938,
+          "cached_tokens": 0,
+          "recorded_contains_answer": true,
+          "only_expected_six_digit_code": true,
+          "exact_answer": true,
+          "passed": true
+        },
+        {
+          "kind": "retrieval",
+          "target": 3000,
+          "record": 227,
+          "request_sha256": "0b5eb98f2fd73b7727ac05341f73fb1d7113e5a179ec09893ee0dea7e18015ce",
+          "expected": "548633",
+          "finish_reason": "stop",
+          "completion_tokens": 6,
+          "prompt_tokens": 2939,
+          "cached_tokens": 0,
+          "recorded_contains_answer": true,
+          "only_expected_six_digit_code": true,
+          "exact_answer": true,
+          "passed": true
+        },
+        {
+          "kind": "retrieval",
+          "target": 9000,
+          "record": 98,
+          "request_sha256": "1c575a07c9aff4aaafc334752637380371d78fecbf324edbc7e5f994936e449a",
+          "expected": "581885",
+          "finish_reason": "stop",
+          "completion_tokens": 6,
+          "prompt_tokens": 9225,
+          "cached_tokens": 0,
+          "recorded_contains_answer": true,
+          "only_expected_six_digit_code": true,
+          "exact_answer": true,
+          "passed": true
+        },
+        {
+          "kind": "retrieval",
+          "target": 9000,
+          "record": 346,
+          "request_sha256": "d9bb095f0473305ef7b59f7dcb56cd121692a579ce614eae0738ec4b63afa418",
+          "expected": "556033",
+          "finish_reason": "stop",
+          "completion_tokens": 6,
+          "prompt_tokens": 9226,
+          "cached_tokens": 0,
+          "recorded_contains_answer": true,
+          "only_expected_six_digit_code": true,
+          "exact_answer": true,
+          "passed": true
+        },
+        {
+          "kind": "retrieval",
+          "target": 9000,
+          "record": 689,
+          "request_sha256": "9d2d9ce4459373bdc09959f0ec4ce571a168cabad90d9e0f2ba2af4f68fdfba7",
+          "expected": "840262",
+          "finish_reason": "stop",
+          "completion_tokens": 6,
+          "prompt_tokens": 9226,
+          "cached_tokens": 0,
+          "recorded_contains_answer": true,
+          "only_expected_six_digit_code": true,
+          "exact_answer": true,
+          "passed": true
+        },
+        {
+          "kind": "retrieval",
+          "target": 24000,
+          "record": 263,
+          "request_sha256": "8f0fbf5684c8a2eae14837d3d318edf101d8a94ca8ecd1ff9da3deb463ece4fd",
+          "expected": "541954",
+          "finish_reason": "stop",
+          "completion_tokens": 6,
+          "prompt_tokens": 24916,
+          "cached_tokens": 0,
+          "recorded_contains_answer": true,
+          "only_expected_six_digit_code": true,
+          "exact_answer": true,
+          "passed": true
+        },
+        {
+          "kind": "retrieval",
+          "target": 24000,
+          "record": 923,
+          "request_sha256": "1b61350e1f2a1f2b09249fa64f055a05f29c786cc15fb1e2762bffde84079ce6",
+          "expected": "455118",
+          "finish_reason": "stop",
+          "completion_tokens": 5,
+          "prompt_tokens": 24916,
+          "cached_tokens": 0,
+          "recorded_contains_answer": true,
+          "only_expected_six_digit_code": true,
+          "exact_answer": true,
+          "passed": true
+        },
+        {
+          "kind": "retrieval",
+          "target": 24000,
+          "record": 1843,
+          "request_sha256": "0ee056cf9a1bd5b580b2ec443a65e1969ea333d7b9e231853b8227c2e2d87284",
+          "expected": "766127",
+          "finish_reason": "stop",
+          "completion_tokens": 5,
+          "prompt_tokens": 24916,
+          "cached_tokens": 0,
+          "recorded_contains_answer": true,
+          "only_expected_six_digit_code": true,
+          "exact_answer": true,
+          "passed": true
+        },
+        {
+          "kind": "retrieval",
+          "target": 60000,
+          "record": 659,
+          "request_sha256": "c41e12655369cb13cad1c0fa26a7009bb7cbed37dc498995537c59790762f5ff",
+          "expected": "165357",
+          "finish_reason": "stop",
+          "completion_tokens": 5,
+          "prompt_tokens": 64737,
+          "cached_tokens": 0,
+          "recorded_contains_answer": true,
+          "only_expected_six_digit_code": true,
+          "exact_answer": true,
+          "passed": true
+        },
+        {
+          "kind": "retrieval",
+          "target": 60000,
+          "record": 2307,
+          "request_sha256": "71a5f68d08f182f4ac2bb39b20a94fce1b5c18976be8c1f8b3ffd75820706c0b",
+          "expected": "946335",
+          "finish_reason": "stop",
+          "completion_tokens": 6,
+          "prompt_tokens": 64737,
+          "cached_tokens": 0,
+          "recorded_contains_answer": true,
+          "only_expected_six_digit_code": true,
+          "exact_answer": true,
+          "passed": true
+        },
+        {
+          "kind": "retrieval",
+          "target": 60000,
+          "record": 4612,
+          "request_sha256": "3feccff13bc95688d5a0d0d239a52c1cc3eaccb9c623d63dbceca499c6b392e3",
+          "expected": "512401",
+          "finish_reason": "stop",
+          "completion_tokens": 5,
+          "prompt_tokens": 64738,
+          "cached_tokens": 0,
+          "recorded_contains_answer": true,
+          "only_expected_six_digit_code": true,
+          "exact_answer": true,
+          "passed": true
+        },
+        {
+          "kind": "retrieval",
+          "target": 110000,
+          "record": 1208,
+          "request_sha256": "f1e8185801790dd109a489e964a3c660bdd8cf53745435271e659db5d64b8972",
+          "expected": "797221",
+          "finish_reason": "stop",
+          "completion_tokens": 6,
+          "prompt_tokens": 120935,
+          "cached_tokens": 0,
+          "recorded_contains_answer": true,
+          "only_expected_six_digit_code": true,
+          "exact_answer": true,
+          "passed": true
+        },
+        {
+          "kind": "retrieval",
+          "target": 110000,
+          "record": 4230,
+          "request_sha256": "72bfdddfd25ef71541170d4784ad70372d0a4b5d5a661163754d29a389a7260d",
+          "expected": "709295",
+          "finish_reason": "stop",
+          "completion_tokens": 6,
+          "prompt_tokens": 120936,
+          "cached_tokens": 0,
+          "recorded_contains_answer": true,
+          "only_expected_six_digit_code": true,
+          "exact_answer": true,
+          "passed": true
+        },
+        {
+          "kind": "retrieval",
+          "target": 110000,
+          "record": 8458,
+          "request_sha256": "4af91782be45b56d87cfefff6be21e68cebe3ff8e71c9a70b69deee24849e571",
+          "expected": "968427",
+          "finish_reason": "stop",
+          "completion_tokens": 6,
+          "prompt_tokens": 120936,
+          "cached_tokens": 0,
+          "recorded_contains_answer": true,
+          "only_expected_six_digit_code": true,
+          "exact_answer": true,
+          "passed": true
+        }
+      ],
+      "routing_records": [
+        {
+          "rank": 0,
+          "phase": "cold",
+          "expected": "995242",
+          "correct": true,
+          "finish_reason": "stop",
+          "cached_tokens": 0,
+          "routing_dp_ranks": [
+            0
+          ],
+          "routing_pass": true,
+          "cache_pass": true,
+          "request_sha256": "0cac1b8313a82595a1b258aefaeb2d6367ec6a1ee2c8af8ae7afc7eb242672ce",
+          "passed": true
+        },
+        {
+          "rank": 0,
+          "phase": "warm",
+          "expected": "995242",
+          "correct": true,
+          "finish_reason": "stop",
+          "cached_tokens": 6656,
+          "routing_dp_ranks": [
+            0
+          ],
+          "routing_pass": true,
+          "cache_pass": true,
+          "request_sha256": "0cac1b8313a82595a1b258aefaeb2d6367ec6a1ee2c8af8ae7afc7eb242672ce",
+          "passed": true
+        },
+        {
+          "rank": 0,
+          "phase": "fork",
+          "expected": "325117",
+          "correct": true,
+          "finish_reason": "stop",
+          "cached_tokens": 1984,
+          "routing_dp_ranks": [
+            0
+          ],
+          "routing_pass": true,
+          "cache_pass": true,
+          "request_sha256": "57434c836137ae9a0d8dc781580c90cf9267103b72c072858d57f6b1f2b9c479",
+          "passed": true
+        },
+        {
+          "rank": 0,
+          "phase": "warm-fork",
+          "expected": "325117",
+          "correct": true,
+          "finish_reason": "stop",
+          "cached_tokens": 6656,
+          "routing_dp_ranks": [
+            0
+          ],
+          "routing_pass": true,
+          "cache_pass": true,
+          "request_sha256": "57434c836137ae9a0d8dc781580c90cf9267103b72c072858d57f6b1f2b9c479",
+          "passed": true
+        },
+        {
+          "rank": 1,
+          "phase": "cold",
+          "expected": "995242",
+          "correct": true,
+          "finish_reason": "stop",
+          "cached_tokens": 0,
+          "routing_dp_ranks": [
+            1
+          ],
+          "routing_pass": true,
+          "cache_pass": true,
+          "request_sha256": "2ae3ee9ae96c7dd86ce47868850a967e619aec1bb9147185128ef2b05dcaf772",
+          "passed": true
+        },
+        {
+          "rank": 1,
+          "phase": "warm",
+          "expected": "995242",
+          "correct": true,
+          "finish_reason": "stop",
+          "cached_tokens": 6656,
+          "routing_dp_ranks": [
+            1
+          ],
+          "routing_pass": true,
+          "cache_pass": true,
+          "request_sha256": "2ae3ee9ae96c7dd86ce47868850a967e619aec1bb9147185128ef2b05dcaf772",
+          "passed": true
+        },
+        {
+          "rank": 1,
+          "phase": "fork",
+          "expected": "325117",
+          "correct": true,
+          "finish_reason": "stop",
+          "cached_tokens": 1984,
+          "routing_dp_ranks": [
+            1
+          ],
+          "routing_pass": true,
+          "cache_pass": true,
+          "request_sha256": "9fc6be59f19f4a9bc63397c50251c4655b0081328fa341c5ee29988b463b673f",
+          "passed": true
+        },
+        {
+          "rank": 1,
+          "phase": "warm-fork",
+          "expected": "325117",
+          "correct": true,
+          "finish_reason": "stop",
+          "cached_tokens": 6656,
+          "routing_dp_ranks": [
+            1
+          ],
+          "routing_pass": true,
+          "cache_pass": true,
+          "request_sha256": "9fc6be59f19f4a9bc63397c50251c4655b0081328fa341c5ee29988b463b673f",
+          "passed": true
+        },
+        {
+          "rank": 2,
+          "phase": "cold",
+          "expected": "995242",
+          "correct": true,
+          "finish_reason": "stop",
+          "cached_tokens": 0,
+          "routing_dp_ranks": [
+            2
+          ],
+          "routing_pass": true,
+          "cache_pass": true,
+          "request_sha256": "e257b4f649e27b1e7bcabf8102c3e0e3088ffe3a6d730377de8b77b62fed968d",
+          "passed": true
+        },
+        {
+          "rank": 2,
+          "phase": "warm",
+          "expected": "995242",
+          "correct": true,
+          "finish_reason": "stop",
+          "cached_tokens": 6656,
+          "routing_dp_ranks": [
+            2
+          ],
+          "routing_pass": true,
+          "cache_pass": true,
+          "request_sha256": "e257b4f649e27b1e7bcabf8102c3e0e3088ffe3a6d730377de8b77b62fed968d",
+          "passed": true
+        },
+        {
+          "rank": 2,
+          "phase": "fork",
+          "expected": "325117",
+          "correct": true,
+          "finish_reason": "stop",
+          "cached_tokens": 1984,
+          "routing_dp_ranks": [
+            2
+          ],
+          "routing_pass": true,
+          "cache_pass": true,
+          "request_sha256": "8ccd165504d79f8eced3df1f953404abb71e55cb9e189ddddbe74a6cb568f244",
+          "passed": true
+        },
+        {
+          "rank": 2,
+          "phase": "warm-fork",
+          "expected": "325117",
+          "correct": true,
+          "finish_reason": "stop",
+          "cached_tokens": 6656,
+          "routing_dp_ranks": [
+            2
+          ],
+          "routing_pass": true,
+          "cache_pass": true,
+          "request_sha256": "8ccd165504d79f8eced3df1f953404abb71e55cb9e189ddddbe74a6cb568f244",
+          "passed": true
+        },
+        {
+          "rank": 3,
+          "phase": "cold",
+          "expected": "995242",
+          "correct": true,
+          "finish_reason": "stop",
+          "cached_tokens": 0,
+          "routing_dp_ranks": [
+            3
+          ],
+          "routing_pass": true,
+          "cache_pass": true,
+          "request_sha256": "3aeadb9305a8f965769f7a88ded43a3bb6f74428bc500f38b1fd16720d13322e",
+          "passed": true
+        },
+        {
+          "rank": 3,
+          "phase": "warm",
+          "expected": "995242",
+          "correct": true,
+          "finish_reason": "stop",
+          "cached_tokens": 6656,
+          "routing_dp_ranks": [
+            3
+          ],
+          "routing_pass": true,
+          "cache_pass": true,
+          "request_sha256": "3aeadb9305a8f965769f7a88ded43a3bb6f74428bc500f38b1fd16720d13322e",
+          "passed": true
+        },
+        {
+          "rank": 3,
+          "phase": "fork",
+          "expected": "325117",
+          "correct": true,
+          "finish_reason": "stop",
+          "cached_tokens": 1984,
+          "routing_dp_ranks": [
+            3
+          ],
+          "routing_pass": true,
+          "cache_pass": true,
+          "request_sha256": "2c15dacb848886b21768b77d8a4a96a433018671b560010a69e8d929fd4a154d",
+          "passed": true
+        },
+        {
+          "rank": 3,
+          "phase": "warm-fork",
+          "expected": "325117",
+          "correct": true,
+          "finish_reason": "stop",
+          "cached_tokens": 6656,
+          "routing_dp_ranks": [
+            3
+          ],
+          "routing_pass": true,
+          "cache_pass": true,
+          "request_sha256": "2c15dacb848886b21768b77d8a4a96a433018671b560010a69e8d929fd4a154d",
+          "passed": true
+        }
+      ],
+      "all_functional_passed": true,
+      "effective_chunked_prefill_size": 2048,
+      "effective_max_running_requests_per_dp": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "scope": "Independent complete raw functional audit; full GSM8K stopping/accuracy qualification remains separate.",
+      "evidence_phase": "terminal"
+    }
+  },
+  "identical_full_evaluation_problems": 1319,
+  "matched_functional_protocol_requests": 34
+}

@@ -1,0 +1,134 @@
+{
+  "driver.log": {
+    "bytes": 1013671,
+    "sha256": "cb89577bae5a09d07e7d8d8d7ada30097f9d4df17ed64f20b502fe04725eff05"
+  },
+  "driver.pid": {
+    "bytes": 7,
+    "sha256": "6eec0a5e89f3ff041efd51240a9598af9d29216b1c61583725d2501119a4c775"
+  },
+  "exit-code": {
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  "postrun-probe.json": {
+    "bytes": 205,
+    "sha256": "8e39b20a5fb63581653c05bccb4510f8b845f6363702ecbd7486a7f0a8f31dfc"
+  },
+  "postrun-source-verification.json": {
+    "bytes": 100,
+    "sha256": "adf502f49e6854cf4082957979e3cbe3b69656075577ab5b81b91563d93a7ada"
+  },
+  "prelaunch-probe.json": {
+    "bytes": 205,
+    "sha256": "8e39b20a5fb63581653c05bccb4510f8b845f6363702ecbd7486a7f0a8f31dfc"
+  },
+  "probe.py": {
+    "bytes": 3339,
+    "sha256": "c567c8c7de910dead00cd210cef95174590aa1929650e5bc707bcc606ba14dd8"
+  },
+  "results/fa3-import.txt": {
+    "bytes": 63,
+    "sha256": "a0bddae8be1acb8c339ffa8b2b12c5e044a106976b788d5c2f805e3b8ba6a196"
+  },
+  "results/gpu-memory-before.txt": {
+    "bytes": 16,
+    "sha256": "2de84622a56b51c09e96feabbe375cb7b1fdb1502810076b130475a40a7dc5a1"
+  },
+  "results/gpu-models.txt": {
+    "bytes": 96,
+    "sha256": "d446de1817dab7b6e08d99bb1fa11a19961290420f5ceaa9f405479386c543af"
+  },
+  "results/gpu-processes-before.txt": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "results/h200-tp8/after-t1.metrics": {
+    "bytes": 403419,
+    "sha256": "193a78d9db6f2eb9950e1221c403bd344f35f1a1ff005d3616b18c8dc0b52042"
+  },
+  "results/h200-tp8/argv.txt": {
+    "bytes": 575,
+    "sha256": "34994755d4009806020dfce81c525e736d5084308b14a7cb8f37542f14f6581f"
+  },
+  "results/h200-tp8/before-t1.metrics": {
+    "bytes": 315575,
+    "sha256": "1ab3b25afe9ecddc66356d8b53f7ca5ab8fc17319bca00daa2db105726d5c80c"
+  },
+  "results/h200-tp8/eval-t1/sgl_eval_gsm8k_20261116-145103/metrics.json": {
+    "bytes": 1163,
+    "sha256": "8dc7c541f96baaac71a86fdadc177f345f703f9deb83c0e3f49622c534c8c4a6"
+  },
+  "results/h200-tp8/eval-t1/sgl_eval_gsm8k_20261116-145103/output-rs0.jsonl": {
+    "bytes": 4204105,
+    "sha256": "656f54bcc760b9a57fda3308fe3b4d1f73bb41946d357b1a39401e3f2ad79fe8"
+  },
+  "results/h200-tp8/gpu-ownership.log": {
+    "bytes": 1802447,
+    "sha256": "9f9d15026f54d145a093f06c8916c9b6b5e963f048624a3e4bf72ff7c5203ba0"
+  },
+  "results/h200-tp8/gsm8k-t1.log": {
+    "bytes": 423519,
+    "sha256": "4964ef93c7e5ab67a527eb08e84a0dce12d69696482ead5fcdc44c5e4294e622"
+  },
+  "results/h200-tp8/live-runtime-evidence.json": {
+    "bytes": 59627,
+    "sha256": "fd86073e418f84b4ce25ca99169094a5d66392333ecd0c418e66d769bff692ca"
+  },
+  "results/h200-tp8/serve.log": {
+    "bytes": 1013477,
+    "sha256": "1069fb08e0651db1e2b4ee7950190e1ad0b8bcaf03b2065f7540c37f8eb9f789"
+  },
+  "results/h200-tp8/server-pgid.txt": {
+    "bytes": 8,
+    "sha256": "a2abc4fec8a90bf684220db048e1f2b0648d5958943c4cd8ea55a3c6d86ad3c9"
+  },
+  "results/h200-tp8/server_info.json": {
+    "bytes": 39324,
+    "sha256": "2a44e2d002310dc534e322ad178bff20b6179a2e7c57668c77924defbd7fd65e"
+  },
+  "results/h200-tp8/treecore.txt": {
+    "bytes": 1256,
+    "sha256": "f938441a5fd14a592cf029b7cb26d27544184ba5fde12b23c32ff55b3c7afd5a"
+  },
+  "results/rust-build.log": {
+    "bytes": 263,
+    "sha256": "2a87eb62c88dc679d70f5a60007665d5f1da5271b51d67b585b42b1e876c15da"
+  },
+  "results/rust-extension.txt": {
+    "bytes": 171,
+    "sha256": "c1211dd392111869d096c9eb6b4dde46dc513c8448a5efa7cf1c140aedc612cf"
+  },
+  "results/source-verification.json": {
+    "bytes": 100,
+    "sha256": "adf502f49e6854cf4082957979e3cbe3b69656075577ab5b81b91563d93a7ada"
+  },
+  "results/status": {
+    "bytes": 191,
+    "sha256": "6ab9187f35a4cc8c31b6d442f9c4f8dfbaa52fbe4318316cc180ef12bdcc2b37"
+  },
+  "results/toolchain.txt": {
+    "bytes": 72,
+    "sha256": "7df61f5196f4c235374c18aa3e96ebd876c5166c33e40b65c4198179162e0120"
+  },
+  "runner.sh": {
+    "bytes": 4699,
+    "sha256": "a2e04d3ab6af4334a5ca175cb751e1c6ab9d4745de63485d06a93450ad8e2e72"
+  },
+  "source-manifest.json": {
+    "bytes": 1708666,
+    "sha256": "8c1332ce43436b71c320e2cc58a85f9ab2d631beb9b25b5cf6c8eea17345a24a"
+  },
+  "source-verification.json": {
+    "bytes": 100,
+    "sha256": "adf502f49e6854cf4082957979e3cbe3b69656075577ab5b81b91563d93a7ada"
+  },
+  "start.sh": {
+    "bytes": 857,
+    "sha256": "f621f644a0d7f606f9b65f3de03b1d0158de80d0cc947d60b8ddc328fdd9fe5c"
+  },
+  "verify_source.py": {
+    "bytes": 881,
+    "sha256": "60b796111b134f3534aee0e876ae391c2e0d3a61f7d36ad8e53246e956ae59fb"
+  }
+}

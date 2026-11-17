@@ -8,22 +8,24 @@ The cookbook turns validated Day-0 model results into reproducible deployment gu
 
 | Field | Value |
 |---|---|
-| Model | `<MODEL_NAME>` |
-| Audience | `<TARGET_AUDIENCE>` |
-| SGLang commit | `<FULL_CODE_SHA>` |
-| Model revision | `<MODEL_REVISION>` |
-| Draft-model revision | `<DRAFT_MODEL_REVISION_OR_NOT_USED>` |
+| Model | `zai-org/GLM-5-1028-Provider` |
+| Audience | Deployment and performance engineers |
+| SGLang commit | Current integration `4ef2500d29ca90bc415247d5e476fe25ddd47f29`; release pin pending |
+| Model revision | FP8 `9c24449260e89d2d2bb6ed8f92d5f386c04ad7ff`; NVFP4 `f2c64cebac62b1888c92c9d317adbb0b0aef5955` |
+| Draft-model revision | FP8 checkpoint revision above; NVFP4 self-draft remains under validation |
 | Container digest | `<IMAGE_DIGEST>` |
-| Supported platforms | `<PLATFORM_SET>` |
-| Owner | `<OWNER>` |
+| Supported platforms | H200, GB300 and B300 under active validation |
+| Owner | `xinyuan` |
 | Reviewers | `<REVIEWERS>` |
-| Status | `<STATUS>` |
+| Status | Local draft `a62b1db914357ed5430191f005471c7c30d05f0d`; unpublished; refresh after default sweeps |
 
 ## Supported Configuration Matrix
 
 | Platform | Workload | Profile | Parallelism | Backend | Precision | Speculative Decoding | Status | Evidence |
 |---|---|---|---|---|---|---|---|---|
-| `<PLATFORM>` | `<WORKLOAD>` | `<PROFILE>` | `<PARALLELISM>` | `<BACKEND>` | `<PRECISION>` | `<SPEC_CONFIGURATION>` | `<STATUS>` | `<ROUND_LINK>` |
+| H200 | Four-turn chat | Latency and throughput | TP8 | BF16 KV, FlashMLA Sparse | FP8 | Natural and off measured | Historical measured; default sweep running | [E10](../../features/p0-general-performance/data/data@2026-11-17-e9a0a0287215c18b08ecb120f9d00db52986052b-h200-delivery/repro.md) |
+| GB300 | Four-turn chat | Latency and throughput | TP4 | BF16/FP8 KV, breakable prefill | FP8/NVFP4 | Natural and off measured | Historical measured; default sweep running | [E11](../../features/p0-general-performance/data/data@2026-11-17-e9a0a0287215c18b08ecb120f9d00db52986052b-gb300-delivery/repro.md), [E13](../../features/p0-general-performance/data/data@2026-11-17-e9a0a0287215c18b08ecb120f9d00db52986052b-gb300-fp8kv-breakable/repro.md) |
+| B300 | Four-turn chat | Latency and throughput | TP8 preferred over DEP8 in the eager baseline | FP8 KV, TRTLLM | FP8/NVFP4 | Natural and off measured | Eager baseline only; default sweep running | [E12](../../features/p0-general-performance/data/data@2026-11-17-e9a0a0287215c18b08ecb120f9d00db52986052b-b300-delivery/repro.md) |
 
 ## Required Page Structure
 

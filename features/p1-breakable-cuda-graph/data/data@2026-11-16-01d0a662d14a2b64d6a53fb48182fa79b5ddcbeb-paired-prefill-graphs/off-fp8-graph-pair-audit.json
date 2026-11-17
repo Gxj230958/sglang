@@ -1,0 +1,60 @@
+{
+  "runtime": "01d0a662d14a2b64d6a53fb48182fa79b5ddcbeb",
+  "archives": {
+    "off-fp8-eager": "63b38da3bd2d68b1a1c326a59edeaa7f203c42b2585d273f56206b324f961ed1",
+    "off-fp8-breakable": "1904c3420de1bf010b03db77b9aa175f45b025c42cb9a6d9d052123e66f3a918"
+  },
+  "server_commands_equal_except_prefill_graph_flags": true,
+  "all_12_client_commands_equal_except_output_paths": true,
+  "rows": [
+    {
+      "level": 1,
+      "eager_total_tps_per_gpu": 561.2085835913769,
+      "breakable_total_tps_per_gpu": 656.5105361344943,
+      "gain_percent": 16.981556471079926,
+      "ttft_change_percent": -63.78092209672113,
+      "both_pass": true
+    },
+    {
+      "level": 2,
+      "eager_total_tps_per_gpu": 873.6207679095301,
+      "breakable_total_tps_per_gpu": 1099.0335508139021,
+      "gain_percent": 25.802131907161254,
+      "ttft_change_percent": -64.54900595145469,
+      "both_pass": true
+    },
+    {
+      "level": 4,
+      "eager_total_tps_per_gpu": 1476.0995417494735,
+      "breakable_total_tps_per_gpu": 1715.8659683198937,
+      "gain_percent": 16.24324239585151,
+      "ttft_change_percent": -28.266345532251304,
+      "both_pass": true
+    },
+    {
+      "level": 8,
+      "eager_total_tps_per_gpu": 2468.417142446897,
+      "breakable_total_tps_per_gpu": 2639.5515108677328,
+      "gain_percent": 6.932959809669503,
+      "ttft_change_percent": -4.433382129514674,
+      "both_pass": true
+    },
+    {
+      "level": 16,
+      "eager_total_tps_per_gpu": 3552.122271311946,
+      "breakable_total_tps_per_gpu": 3737.87607502201,
+      "gain_percent": 5.22937527264391,
+      "ttft_change_percent": -7.825746200345362,
+      "both_pass": true
+    },
+    {
+      "level": 32,
+      "eager_total_tps_per_gpu": 5119.118636171923,
+      "breakable_total_tps_per_gpu": 5224.383370735193,
+      "gain_percent": 2.056305822245741,
+      "ttft_change_percent": -0.9649656993161337,
+      "both_pass": true
+    }
+  ],
+  "scope": "Single startup per graph mode, two client repetitions per point. Paired deployment observation; model-generated conversation histories vary. Complete NVFP4 graph pair and natural/controlled phases pending."
+}

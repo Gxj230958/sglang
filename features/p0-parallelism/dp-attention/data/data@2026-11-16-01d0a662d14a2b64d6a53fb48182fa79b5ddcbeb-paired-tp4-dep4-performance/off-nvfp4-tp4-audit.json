@@ -1,0 +1,212 @@
+{
+  "candidate": "nvfp4-tp4-fp8kv-mtp-off",
+  "requests": 1280,
+  "loads": 12,
+  "natural_sanity_stops": 3,
+  "rows": [
+    {
+      "score": 537.4589253720056,
+      "ttft": 0.42833420175593345,
+      "interactivity": 96.14672668666626,
+      "accept_length": 0.0,
+      "level": 1,
+      "repeats": [
+        {
+          "score": 536.9775572037386,
+          "ttft": 0.42857144395820795,
+          "interactivity": 96.11596298638504,
+          "accept_length": 0,
+          "intervals": 8095
+        },
+        {
+          "score": 537.9402935402727,
+          "ttft": 0.42809695955365895,
+          "interactivity": 96.17749038694745,
+          "accept_length": 0,
+          "intervals": 8099
+        }
+      ],
+      "pass": true
+    },
+    {
+      "score": 835.0935627637359,
+      "ttft": 0.8371190538862721,
+      "interactivity": 85.309853401526,
+      "accept_length": 0.0,
+      "level": 2,
+      "repeats": [
+        {
+          "score": 828.3510564242713,
+          "ttft": 0.8342468176037073,
+          "interactivity": 85.30688347219002,
+          "accept_length": 0,
+          "intervals": 8090
+        },
+        {
+          "score": 841.8360691032007,
+          "ttft": 0.8399912901688367,
+          "interactivity": 85.31282333086196,
+          "accept_length": 0,
+          "intervals": 8088
+        }
+      ],
+      "pass": true
+    },
+    {
+      "score": 1466.3318888850304,
+      "ttft": 0.8525988248642533,
+      "interactivity": 73.61699894952022,
+      "accept_length": 0.0,
+      "level": 4,
+      "repeats": [
+        {
+          "score": 1465.3047060634356,
+          "ttft": 0.8581851537339389,
+          "interactivity": 73.61661661898434,
+          "accept_length": 0,
+          "intervals": 8089
+        },
+        {
+          "score": 1467.3590717066252,
+          "ttft": 0.8470124959945678,
+          "interactivity": 73.6173812800561,
+          "accept_length": 0,
+          "intervals": 8093
+        }
+      ],
+      "pass": true
+    },
+    {
+      "score": 2618.2287305411346,
+      "ttft": 0.8577526963548735,
+      "interactivity": 63.777360645524645,
+      "accept_length": 0.0,
+      "level": 8,
+      "repeats": [
+        {
+          "score": 2617.4563975236165,
+          "ttft": 0.8655266634654254,
+          "interactivity": 63.832290302299896,
+          "accept_length": 0,
+          "intervals": 8087
+        },
+        {
+          "score": 2619.0010635586523,
+          "ttft": 0.8499787292443216,
+          "interactivity": 63.722430988749394,
+          "accept_length": 0,
+          "intervals": 8091
+        }
+      ],
+      "pass": true
+    },
+    {
+      "score": 3888.0891580406187,
+      "ttft": 1.7060703285736962,
+      "interactivity": 50.58193373695532,
+      "accept_length": 0.0,
+      "level": 16,
+      "repeats": [
+        {
+          "score": 3888.779045725597,
+          "ttft": 1.6966515559703113,
+          "interactivity": 50.41111600450213,
+          "accept_length": 0,
+          "intervals": 16171
+        },
+        {
+          "score": 3887.399270355641,
+          "ttft": 1.7154891011770814,
+          "interactivity": 50.75275146940851,
+          "accept_length": 0,
+          "intervals": 16180
+        }
+      ],
+      "pass": true
+    },
+    {
+      "score": 6070.240525393307,
+      "ttft": 2.1936976816505194,
+      "interactivity": 42.34578313390885,
+      "accept_length": 0.0,
+      "level": 32,
+      "repeats": [
+        {
+          "score": 6065.993864590466,
+          "ttft": 2.1868651979602873,
+          "interactivity": 42.287460629779,
+          "accept_length": 0,
+          "intervals": 32360
+        },
+        {
+          "score": 6074.487186196147,
+          "ttft": 2.2005301653407514,
+          "interactivity": 42.404105638038715,
+          "accept_length": 0,
+          "intervals": 32369
+        }
+      ],
+      "pass": true
+    }
+  ],
+  "best_passing": {
+    "score": 6070.240525393307,
+    "ttft": 2.1936976816505194,
+    "interactivity": 42.34578313390885,
+    "accept_length": 0.0,
+    "level": 32,
+    "repeats": [
+      {
+        "score": 6065.993864590466,
+        "ttft": 2.1868651979602873,
+        "interactivity": 42.287460629779,
+        "accept_length": 0,
+        "intervals": 32360
+      },
+      {
+        "score": 6074.487186196147,
+        "ttft": 2.2005301653407514,
+        "interactivity": 42.404105638038715,
+        "accept_length": 0,
+        "intervals": 32369
+      }
+    ],
+    "pass": true
+  },
+  "archive_sha256": "c2df4e241cfd7dccdcdc2a58530f63a0aac574121dd2d02651648e10113b0252",
+  "token_count_provenance": "MTP-off client uses raw inter-token intervals without the natural-MTP token-count normalization. Captured request ITLs and TTFTs match the raw benchmark arrays.",
+  "sampling_errors_post_measurement": [],
+  "shutdown_log_second_epoch": null,
+  "last_measurement_write_epoch": null,
+  "sampling_error_scope": "All errors retained. Error sample timestamps are after completed benchmark writes, have no active load, and are at or after the shutdown log second; within-second ordering relative to SIGTERM is not established.",
+  "resolved_checked": {
+    "tp_size": 4,
+    "ep_size": 1,
+    "attn_dp_size": 1,
+    "moe_runner_backend": "flashinfer_trtllm",
+    "dsa_prefill_backend": "trtllm",
+    "dsa_decode_backend": "trtllm",
+    "kv_cache_dtype": "fp8_e4m3",
+    "speculative_algorithm": null,
+    "disable_hybrid_swa_memory": false,
+    "random_seed": 1,
+    "context_length": 32768,
+    "disable_prefill_cuda_graph": true,
+    "enable_dp_attention": false
+  },
+  "gpu_ownership_samples": 488,
+  "gpu_ownership_failures": 0,
+  "rust_extension_sha256": [
+    "d2547a9f9a3edc3f79318922dfd2aceb162c0339c9c00d69514e00aafb979cc3"
+  ],
+  "server_random_seed": 1,
+  "manifest_files_verified": 167,
+  "scheduler": {
+    "chunked_prefill_size": 8192,
+    "per_dp_running_cap": 64,
+    "lines": [
+      "[2026-11-16 16:59:16 TP0 PID191547] max_total_num_tokens=2551424, chunked_prefill_size=8192, max_prefill_tokens=16384, max_running_requests=64, context_len=32768, available_gpu_mem=51.79 GB"
+    ]
+  },
+  "scope": "One startup and two client repetitions per level. Full deployment comparison includes attention DP, EP and scheduler subdivision. Quality qualification is separate."
+}

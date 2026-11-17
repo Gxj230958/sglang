@@ -1,0 +1,86 @@
+{
+  "runtime": "52ef77912fd004f34cfe340b392018632ce69c2c",
+  "precision": "fp8",
+  "owner": "glm5lp-fallback-b300-tp8-bf16-fp8-52ef-o2",
+  "remote": "/scratch/glm5lp-fallback-b300-eval-observe-v2-52ef77912f/tp8-bf16/fp8",
+  "devbox": "mobius-8b300-share",
+  "preparation_root": "/scratch/glm5lp-fallback-b300-52ef77912f",
+  "source": "/scratch/glm5lp-fallback-b300-52ef77912f/src",
+  "overlay": "/scratch/glm5lp-fallback-b300-52ef77912f/overlay",
+  "model": "/scratch/models/GLM-5-1028-Provider",
+  "draft_model": "/scratch/models/GLM-5-1028-Provider",
+  "model_revisions": {
+    "fp8": "9c24449260e89d2d2bb6ed8f92d5f386c04ad7ff",
+    "nvfp4": "f2c64cebac62b1888c92c9d317adbb0b0aef5955"
+  },
+  "package_versions": {
+    "torch": "2.14.1+cu130",
+    "transformers": "5.19.0",
+    "flashinfer-python": "0.7.4",
+    "flashinfer-cubin": "0.7.4",
+    "flashinfer-jit-cache": "0.7.4+cu130",
+    "flashinfer-jit-cache-sm103a": "0.7.4+cu130",
+    "sglang-kernel": "0.4.11",
+    "sgl-deep-gemm": "0.2.8",
+    "sgl-flash-mla": "1.0.5",
+    "kernels": "0.14.1",
+    "sgl-eval": "0.1.2"
+  },
+  "model_metadata": {
+    "config.json": "99d7088de1960a51c0f1ae58553815c4c6c223fdbde44d13dc3ebca479e0c80f",
+    "model.safetensors.index.json": "55979a9446143325fac64918861333910a3f776d5719d2021d2b75a5c16112c1",
+    "tokenizer_config.json": "98b1271574f41abf89427ae2dda030d94dc9478f0edc5a8bd240db213c6fd5fc",
+    "tokenizer.json": "19e773648cb4e65de8660ea6365e10acca112d42a854923df93db4a6f333a82d"
+  },
+  "draft_metadata": {
+    "config.json": "99d7088de1960a51c0f1ae58553815c4c6c223fdbde44d13dc3ebca479e0c80f",
+    "model.safetensors.index.json": "55979a9446143325fac64918861333910a3f776d5719d2021d2b75a5c16112c1",
+    "tokenizer_config.json": "98b1271574f41abf89427ae2dda030d94dc9478f0edc5a8bd240db213c6fd5fc",
+    "tokenizer.json": "19e773648cb4e65de8660ea6365e10acca112d42a854923df93db4a6f333a82d"
+  },
+  "expected": {
+    "tp_size": 8,
+    "ep_size": 1,
+    "attn_dp_size": 1,
+    "kv_cache_dtype": "bfloat16",
+    "dsa_prefill_backend": "flashmla_sparse",
+    "dsa_decode_backend": "flashmla_sparse",
+    "moe_runner_backend": "flashinfer_trtllm",
+    "context_length": 65536,
+    "mem_fraction_static": 0.75,
+    "chunked_prefill_size": 32768,
+    "max_running_requests": 32,
+    "random_seed": 1,
+    "speculative_algorithm": "EAGLE",
+    "speculative_num_steps": 3,
+    "speculative_eagle_topk": 1,
+    "speculative_num_draft_tokens": 4,
+    "speculative_draft_model_quantization": "fp8",
+    "disable_prefill_cuda_graph": true,
+    "enable_fp32_lm_head": true,
+    "disable_shared_experts_fusion": true,
+    "moe_a2a_backend": "none",
+    "quantization": "fp8"
+  },
+  "port": 32190,
+  "dist_port": 32191,
+  "timeout_seconds": 21600,
+  "evaluation": {
+    "samples": 1319,
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "seed": 1,
+    "threads": 64,
+    "max_tokens": 32768
+  },
+  "scope": "Paired source-level B300 basic-feature/correctness qualification; full GSM8K and natural MTP. Image qualification and performance selection remain separate.",
+  "network_environment": {
+    "NCCL_SOCKET_IFNAME": "eth0",
+    "GLOO_SOCKET_IFNAME": "eth0",
+    "NCCL_DEBUG": "WARN"
+  },
+  "arm": "tp8-bf16",
+  "observation_environment": {
+    "SPT_NOENV": "1"
+  }
+}

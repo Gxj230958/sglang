@@ -1,0 +1,303 @@
+{
+  "runtime": "52ef77912fd004f34cfe340b392018632ce69c2c",
+  "arm": "cp4",
+  "matched_source_dependencies_draft_service_evaluation": true,
+  "normalized_commands": {
+    "launch": [
+      "/opt/sglang/bin/python",
+      "TASK/server.py",
+      "TASK/results/cp4",
+      "--model-path",
+      "TARGET_MODEL",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "32210",
+      "--dist-init-addr",
+      "127.0.0.1:32211",
+      "--max-running-requests",
+      "64",
+      "--cuda-graph-max-bs-decode",
+      "64",
+      "--enable-prefill-cp",
+      "--cp-strategy",
+      "interleave",
+      "--attn-cp-size",
+      "4",
+      "--cuda-graph-backend-prefill",
+      "breakable",
+      "--enable-cache-report",
+      "--reasoning-parser",
+      "glm45",
+      "--tool-call-parser",
+      "glm47",
+      "--enable-metrics",
+      "--speculative-algorithm",
+      "EAGLE",
+      "--speculative-num-steps",
+      "3",
+      "--speculative-eagle-topk",
+      "1",
+      "--speculative-num-draft-tokens",
+      "4",
+      "--speculative-draft-model-path",
+      "/scratch/models/GLM-5-1028-Provider",
+      "--speculative-draft-model-quantization",
+      "fp8",
+      "--random-seed",
+      "1",
+      "--moe-runner-backend",
+      "flashinfer_trtllm",
+      "--disable-shared-experts-fusion",
+      "--dsa-prefill-backend",
+      "flashmla_sparse",
+      "--dsa-decode-backend",
+      "flashmla_sparse",
+      "--kv-cache-dtype",
+      "bf16",
+      "--enable-fp32-lm-head",
+      "--tp-size",
+      "4",
+      "--mem-fraction-static",
+      "0.80",
+      "--context-length",
+      "131072",
+      "--chunked-prefill-size",
+      "8192"
+    ],
+    "eval": [
+      "/opt/sglang/bin/sgl-eval",
+      "run",
+      "gsm8k",
+      "--base-url",
+      "http://127.0.0.1:32210/v1",
+      "--temperature",
+      "1.0",
+      "--top-p",
+      "0.95",
+      "--seed",
+      "1",
+      "--num-threads",
+      "64",
+      "--max-tokens",
+      "32768",
+      "--out-dir",
+      "TASK/results/cp4/eval-t1"
+    ]
+  },
+  "fp8": {
+    "runtime": "52ef77912fd004f34cfe340b392018632ce69c2c",
+    "rows": 1319,
+    "correct": 1247,
+    "score": 0.9454131918119788,
+    "finish_reasons": {
+      "stop": 1312,
+      "length": 7
+    },
+    "stop_rate": 0.9946929492039424,
+    "length_rows": [
+      {
+        "id": "gsm8k-410",
+        "tokens": 32768,
+        "correct": false
+      },
+      {
+        "id": "gsm8k-164",
+        "tokens": 32768,
+        "correct": true
+      },
+      {
+        "id": "gsm8k-380",
+        "tokens": 32768,
+        "correct": false
+      },
+      {
+        "id": "gsm8k-675",
+        "tokens": 32768,
+        "correct": false
+      },
+      {
+        "id": "gsm8k-1016",
+        "tokens": 32768,
+        "correct": false
+      },
+      {
+        "id": "gsm8k-1176",
+        "tokens": 32768,
+        "correct": false
+      },
+      {
+        "id": "gsm8k-1074",
+        "tokens": 32768,
+        "correct": false
+      }
+    ],
+    "sampling": {
+      "chat_template_kwargs": null,
+      "extra_body": null,
+      "max_tokens": 32768,
+      "min_p": 0.0,
+      "reasoning_effort": null,
+      "repetition_penalty": 1.0,
+      "seed": 1,
+      "system_message": null,
+      "temperature": 1.0,
+      "top_p": 0.95
+    },
+    "resolved": {
+      "tp_size": 4,
+      "ep_size": 1,
+      "attn_dp_size": 1,
+      "kv_cache_dtype": "bfloat16",
+      "dsa_prefill_backend": "flashmla_sparse",
+      "dsa_decode_backend": "flashmla_sparse",
+      "moe_runner_backend": "flashinfer_trtllm",
+      "context_length": 131072,
+      "mem_fraction_static": 0.8,
+      "chunked_prefill_size": 8192,
+      "max_running_requests": 64,
+      "random_seed": 1,
+      "speculative_algorithm": "EAGLE",
+      "speculative_num_steps": 3,
+      "speculative_eagle_topk": 1,
+      "speculative_num_draft_tokens": 4,
+      "speculative_draft_model_quantization": "fp8",
+      "disable_prefill_cuda_graph": false,
+      "enable_prefill_cp": true,
+      "cp_strategy": "interleave",
+      "attn_cp_size": 4,
+      "cuda_graph_backend_prefill": "breakable",
+      "disable_hybrid_swa_memory": false,
+      "enable_fp32_lm_head": true,
+      "disable_shared_experts_fusion": true,
+      "quantization": "fp8"
+    },
+    "live_rust_workers_verified": 4,
+    "precision": "fp8",
+    "arm": "cp4",
+    "gpu_samples": 669,
+    "gpu_process_records": 3128,
+    "sampling_errors": [],
+    "measurement_sampling_errors": [],
+    "counters": {
+      "generation_tokens_total": 794707.0,
+      "spec_verify_calls_total": 292916.0
+    },
+    "counter_derived_natural_acceptance": 2.7130883939422907,
+    "prediction_completion_tokens": 794707,
+    "archive_sha256": "1b27bcad03af49d29788627983426e2b7bb7c2d9197ce81669831918925d0336",
+    "raw_files": 62,
+    "chat_http_statuses": {
+      "200": 1344
+    },
+    "failed_http_attempts": 0,
+    "all_requests_stopped": false,
+    "scope": "One candidate correctness run with explicit seed and output bound; single-run variation remains. Image-level qualification and bounded performance selection require separate evidence."
+  },
+  "nvfp4": {
+    "runtime": "52ef77912fd004f34cfe340b392018632ce69c2c",
+    "rows": 1319,
+    "correct": 1246,
+    "score": 0.9446550416982562,
+    "finish_reasons": {
+      "stop": 1314,
+      "length": 5
+    },
+    "stop_rate": 0.9962092494313874,
+    "length_rows": [
+      {
+        "id": "gsm8k-87",
+        "tokens": 32768,
+        "correct": false
+      },
+      {
+        "id": "gsm8k-494",
+        "tokens": 32768,
+        "correct": false
+      },
+      {
+        "id": "gsm8k-423",
+        "tokens": 32768,
+        "correct": false
+      },
+      {
+        "id": "gsm8k-1176",
+        "tokens": 32768,
+        "correct": false
+      },
+      {
+        "id": "gsm8k-1059",
+        "tokens": 32768,
+        "correct": false
+      }
+    ],
+    "sampling": {
+      "chat_template_kwargs": null,
+      "extra_body": null,
+      "max_tokens": 32768,
+      "min_p": 0.0,
+      "reasoning_effort": null,
+      "repetition_penalty": 1.0,
+      "seed": 1,
+      "system_message": null,
+      "temperature": 1.0,
+      "top_p": 0.95
+    },
+    "resolved": {
+      "tp_size": 4,
+      "ep_size": 1,
+      "attn_dp_size": 1,
+      "kv_cache_dtype": "bfloat16",
+      "dsa_prefill_backend": "flashmla_sparse",
+      "dsa_decode_backend": "flashmla_sparse",
+      "moe_runner_backend": "flashinfer_trtllm",
+      "context_length": 131072,
+      "mem_fraction_static": 0.8,
+      "chunked_prefill_size": 8192,
+      "max_running_requests": 64,
+      "random_seed": 1,
+      "speculative_algorithm": "EAGLE",
+      "speculative_num_steps": 3,
+      "speculative_eagle_topk": 1,
+      "speculative_num_draft_tokens": 4,
+      "speculative_draft_model_quantization": "fp8",
+      "disable_prefill_cuda_graph": false,
+      "enable_prefill_cp": true,
+      "cp_strategy": "interleave",
+      "attn_cp_size": 4,
+      "cuda_graph_backend_prefill": "breakable",
+      "disable_hybrid_swa_memory": false,
+      "enable_fp32_lm_head": true,
+      "disable_shared_experts_fusion": true,
+      "quantization": "modelopt_mixed"
+    },
+    "live_rust_workers_verified": 4,
+    "precision": "nvfp4",
+    "arm": "cp4",
+    "gpu_samples": 662,
+    "gpu_process_records": 2968,
+    "sampling_errors": [],
+    "measurement_sampling_errors": [],
+    "counters": {
+      "generation_tokens_total": 751512.0,
+      "spec_verify_calls_total": 284424.0
+    },
+    "counter_derived_natural_acceptance": 2.642224284870475,
+    "prediction_completion_tokens": 751512,
+    "archive_sha256": "075f99a4d85f1fbd764c0a8b380ba70428cfcbaa46c2b4acbf631f7d7f5294d9",
+    "raw_files": 62,
+    "chat_http_statuses": {
+      "200": 1344
+    },
+    "failed_http_attempts": 0,
+    "all_requests_stopped": false,
+    "scope": "One candidate correctness run with explicit seed and output bound; single-run variation remains. Image-level qualification and bounded performance selection require separate evidence."
+  },
+  "nvfp4_minus_fp8": {
+    "correct": -1,
+    "normal_stop": 2,
+    "accuracy_percentage_points": -0.07581501137225999,
+    "stop_percentage_points": 0.15163002274450887
+  },
+  "scope": "Single paired correctness runs. NVFP4 remains performance-only; this does not establish quality parity or performance superiority."
+}

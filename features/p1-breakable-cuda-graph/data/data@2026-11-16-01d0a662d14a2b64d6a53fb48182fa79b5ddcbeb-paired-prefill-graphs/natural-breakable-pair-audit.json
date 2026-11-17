@@ -1,0 +1,262 @@
+{
+  "runtime": "01d0a662d14a2b64d6a53fb48182fa79b5ddcbeb",
+  "phase": "natural",
+  "graph": "breakable",
+  "loads": 24,
+  "requests": 2560,
+  "startup_stops": 6,
+  "raw_files": 382,
+  "archives": {
+    "natural-fp8-breakable": "24ae27f625bedaabc4e065e5913ee911845101eb46bad95c95d6b33472586450",
+    "natural-nvfp4-breakable": "58b170abf7e546bdd343663d0957428655b6c69e9ddbf18beda3bf0ff9b15a8a"
+  },
+  "actual_server_commands_equal_except_target": true,
+  "same_original_fp8_draft": true,
+  "actual_client_commands_equal_except_target_and_output": true,
+  "imports_equal_except_pid": true,
+  "first_turn_input_lengths_equal": true,
+  "all_output_lengths_equal": true,
+  "history_length_deltas": [
+    {
+      "level": 1,
+      "repeat": 1,
+      "changed_history_input_lengths": 29,
+      "max_abs_input_length_delta": 4,
+      "prompt_token_delta_percent": -0.0026111364971603893
+    },
+    {
+      "level": 1,
+      "repeat": 2,
+      "changed_history_input_lengths": 27,
+      "max_abs_input_length_delta": 2,
+      "prompt_token_delta_percent": -0.00913937547600914
+    },
+    {
+      "level": 2,
+      "repeat": 1,
+      "changed_history_input_lengths": 30,
+      "max_abs_input_length_delta": 3,
+      "prompt_token_delta_percent": 0.007834602829162133
+    },
+    {
+      "level": 2,
+      "repeat": 2,
+      "changed_history_input_lengths": 40,
+      "max_abs_input_length_delta": 4,
+      "prompt_token_delta_percent": -0.011314826339174976
+    },
+    {
+      "level": 4,
+      "repeat": 1,
+      "changed_history_input_lengths": 30,
+      "max_abs_input_length_delta": 5,
+      "prompt_token_delta_percent": -0.0034816213910818274
+    },
+    {
+      "level": 4,
+      "repeat": 2,
+      "changed_history_input_lengths": 39,
+      "max_abs_input_length_delta": 4,
+      "prompt_token_delta_percent": 0.0013057841886945205
+    },
+    {
+      "level": 8,
+      "repeat": 1,
+      "changed_history_input_lengths": 32,
+      "max_abs_input_length_delta": 4,
+      "prompt_token_delta_percent": -0.0008703901959248331
+    },
+    {
+      "level": 8,
+      "repeat": 2,
+      "changed_history_input_lengths": 32,
+      "max_abs_input_length_delta": 3,
+      "prompt_token_delta_percent": -0.0021760701913200913
+    },
+    {
+      "level": 16,
+      "repeat": 1,
+      "changed_history_input_lengths": 71,
+      "max_abs_input_length_delta": 7,
+      "prompt_token_delta_percent": 0.004787510690293757
+    },
+    {
+      "level": 16,
+      "repeat": 2,
+      "changed_history_input_lengths": 65,
+      "max_abs_input_length_delta": 3,
+      "prompt_token_delta_percent": 0.006093261723000322
+    },
+    {
+      "level": 32,
+      "repeat": 1,
+      "changed_history_input_lengths": 124,
+      "max_abs_input_length_delta": 5,
+      "prompt_token_delta_percent": 0.0036994561799415485
+    },
+    {
+      "level": 32,
+      "repeat": 2,
+      "changed_history_input_lengths": 143,
+      "max_abs_input_length_delta": 5,
+      "prompt_token_delta_percent": -0.003699291150533949
+    }
+  ],
+  "comparisons": [
+    {
+      "level": 1,
+      "fp8_score": 1043.6398981110667,
+      "nvfp4_score": 1090.8658927239044,
+      "nvfp4_gain_percent": 4.525123531432085,
+      "fp8_ttft": 0.13644448837731032,
+      "nvfp4_ttft": 0.12331540960585699,
+      "fp8_interactivity": 131.40904627340404,
+      "nvfp4_interactivity": 109.59472483976504,
+      "fp8_pass": true,
+      "nvfp4_pass": true,
+      "fp8_accept_length": 2.4978658536585368,
+      "nvfp4_accept_length": 2.368826912787587
+    },
+    {
+      "level": 2,
+      "fp8_score": 1559.6733000643592,
+      "nvfp4_score": 1807.514879332627,
+      "nvfp4_gain_percent": 15.89060858181266,
+      "fp8_ttft": 0.17512924700276933,
+      "nvfp4_ttft": 0.15083467550575735,
+      "fp8_interactivity": 70.70384893019244,
+      "nvfp4_interactivity": 90.39100678494694,
+      "fp8_pass": true,
+      "nvfp4_pass": true,
+      "fp8_accept_length": 2.425366098733071,
+      "nvfp4_accept_length": 2.4411330787353065
+    },
+    {
+      "level": 4,
+      "fp8_score": 2197.917867671101,
+      "nvfp4_score": 2613.5921625791534,
+      "nvfp4_gain_percent": 18.91218507398087,
+      "fp8_ttft": 0.24064849480055275,
+      "nvfp4_ttft": 0.2039677091292106,
+      "fp8_interactivity": 43.286245363304666,
+      "nvfp4_interactivity": 52.73254348604645,
+      "fp8_pass": true,
+      "nvfp4_pass": true,
+      "fp8_accept_length": 2.4427725606727844,
+      "nvfp4_accept_length": 2.409860786435124
+    },
+    {
+      "level": 8,
+      "fp8_score": 2926.247300908024,
+      "nvfp4_score": 3687.106090317444,
+      "nvfp4_gain_percent": 26.001178682790172,
+      "fp8_ttft": 1.1187478099367587,
+      "nvfp4_ttft": 0.9370999123784719,
+      "fp8_interactivity": 32.81310601238907,
+      "nvfp4_interactivity": 39.619471419155474,
+      "fp8_pass": true,
+      "nvfp4_pass": true,
+      "fp8_accept_length": 2.434814256078144,
+      "nvfp4_accept_length": 2.453803116400479
+    },
+    {
+      "level": 16,
+      "fp8_score": 3949.178297372644,
+      "nvfp4_score": 4812.172174148072,
+      "nvfp4_gain_percent": 21.852492133605892,
+      "fp8_ttft": 1.9361704694572837,
+      "nvfp4_ttft": 1.2317214662558391,
+      "fp8_interactivity": 22.585954181241732,
+      "nvfp4_interactivity": 25.689309534574473,
+      "fp8_pass": false,
+      "nvfp4_pass": false,
+      "fp8_accept_length": 2.446121002642151,
+      "nvfp4_accept_length": 2.4060108532378948
+    },
+    {
+      "level": 32,
+      "fp8_score": 5469.134172963593,
+      "nvfp4_score": 6836.888098492926,
+      "nvfp4_gain_percent": 25.008600671944727,
+      "fp8_ttft": 1.8850425289710984,
+      "nvfp4_ttft": 2.2278969109174795,
+      "fp8_interactivity": 13.8356938969259,
+      "nvfp4_interactivity": 16.837903527461965,
+      "fp8_pass": false,
+      "nvfp4_pass": false,
+      "fp8_accept_length": 2.437422554205546,
+      "nvfp4_accept_length": 2.448254859930853
+    }
+  ],
+  "best_passing": {
+    "fp8": {
+      "score": 2926.247300908024,
+      "ttft": 1.1187478099367587,
+      "interactivity": 32.81310601238907,
+      "accept_length": 2.434814256078144,
+      "level": 8,
+      "repeats": [
+        {
+          "counter_delta_including_warmup": {
+            "generation_tokens_total": 8320.0,
+            "spec_verify_calls_total": 3476.0
+          },
+          "completion_per_verify_including_warmup": 2.3935558112773303,
+          "score": 2896.88923449875,
+          "ttft": 1.0609610437881214,
+          "interactivity": 32.661503618026714,
+          "accept_length": 2.3875181422351233,
+          "intervals": 8034
+        },
+        {
+          "counter_delta_including_warmup": {
+            "generation_tokens_total": 8320.0,
+            "spec_verify_calls_total": 3357.0
+          },
+          "completion_per_verify_including_warmup": 2.4784033363121836,
+          "score": 2955.6053673172983,
+          "ttft": 1.176534576085396,
+          "interactivity": 32.96470840675143,
+          "accept_length": 2.4821103699211644,
+          "intervals": 8023
+        }
+      ],
+      "pass": true
+    },
+    "nvfp4": {
+      "score": 3687.106090317444,
+      "ttft": 0.9370999123784719,
+      "interactivity": 39.619471419155474,
+      "accept_length": 2.453803116400479,
+      "level": 8,
+      "repeats": [
+        {
+          "counter_delta_including_warmup": {
+            "generation_tokens_total": 8320.0,
+            "spec_verify_calls_total": 3446.0
+          },
+          "completion_per_verify_including_warmup": 2.4143934997098087,
+          "score": 3578.1017695838814,
+          "ttft": 0.8859644192503776,
+          "interactivity": 38.50285457541372,
+          "accept_length": 2.412009512485137,
+          "intervals": 8042
+        },
+        {
+          "counter_delta_including_warmup": {
+            "generation_tokens_total": 8320.0,
+            "spec_verify_calls_total": 3330.0
+          },
+          "completion_per_verify_including_warmup": 2.4984984984984986,
+          "score": 3796.1104110510064,
+          "ttft": 0.9882354055065662,
+          "interactivity": 40.736088262897226,
+          "accept_length": 2.4955967203158216,
+          "intervals": 8032
+        }
+      ],
+      "pass": true
+    }
+  },
+  "scope": "One startup per format and two client repetitions per level. Same user fixture and protocol; generated histories and model-dependent KV capacity differ. Natural acceptance, startup probes, and full quality qualification are separate."
+}

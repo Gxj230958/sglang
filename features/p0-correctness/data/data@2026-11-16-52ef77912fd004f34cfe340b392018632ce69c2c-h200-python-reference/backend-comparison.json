@@ -1,0 +1,82 @@
+{
+  "runtime": "52ef77912fd004f34cfe340b392018632ce69c2c",
+  "rust": {
+    "correct": 1251,
+    "finish_reasons": {
+      "stop": 1314,
+      "length": 5
+    },
+    "score": 0.9484457922668689,
+    "stop_rate": 0.9962092494313874,
+    "archive_sha256": "7cfaaee49483601f78232c108ec35db0119c91d507876ee9f7a4cdca72b847c7"
+  },
+  "python": {
+    "correct": 1256,
+    "finish_reasons": {
+      "stop": 1316,
+      "length": 3
+    },
+    "score": 0.9522365428354814,
+    "stop_rate": 0.9977255496588324,
+    "archive_sha256": "fc541ff2bb8dd682b6dc16e766a3de5c645dd52f2917ba5b7bdddc6e8cf07902"
+  },
+  "length_union": [
+    {
+      "id": "gsm8k-1016",
+      "rust_finish": "length",
+      "python_finish": "stop",
+      "rust_correct": false,
+      "python_correct": false
+    },
+    {
+      "id": "gsm8k-1035",
+      "rust_finish": "stop",
+      "python_finish": "length",
+      "rust_correct": false,
+      "python_correct": false
+    },
+    {
+      "id": "gsm8k-1176",
+      "rust_finish": "length",
+      "python_finish": "stop",
+      "rust_correct": false,
+      "python_correct": true
+    },
+    {
+      "id": "gsm8k-423",
+      "rust_finish": "length",
+      "python_finish": "stop",
+      "rust_correct": false,
+      "python_correct": true
+    },
+    {
+      "id": "gsm8k-505",
+      "rust_finish": "stop",
+      "python_finish": "length",
+      "rust_correct": false,
+      "python_correct": false
+    },
+    {
+      "id": "gsm8k-552",
+      "rust_finish": "stop",
+      "python_finish": "length",
+      "rust_correct": false,
+      "python_correct": false
+    },
+    {
+      "id": "gsm8k-87",
+      "rust_finish": "length",
+      "python_finish": "stop",
+      "rust_correct": false,
+      "python_correct": true
+    },
+    {
+      "id": "gsm8k-89",
+      "rust_finish": "length",
+      "python_finish": "stop",
+      "rust_correct": true,
+      "python_correct": true
+    }
+  ],
+  "scope": "One run per backend on the same source, checkpoint, dependency and request settings. Different length-limited rows and both backends truncating do not establish cause or statistical nonregression. Delivery stopping qualification remains open."
+}

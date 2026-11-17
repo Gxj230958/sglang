@@ -1,0 +1,82 @@
+{
+  "runtime": "01d0a662d14a2b64d6a53fb48182fa79b5ddcbeb",
+  "clean_worktree": true,
+  "source_files": {
+    "python/sglang/srt/layers/quantization/modelopt_quant.py": "7279f5b87ca44432864ca20b80309586e4e029c0284945c81fa70c1e77a748ad",
+    "python/sglang/srt/layers/quantization/fp8.py": "01f48e979744a4f9ac829f8b7ad5c7c27eea44dce7bc195b3cd9eec4eaa25de5"
+  },
+  "methods": {
+    "ModelOptNvFp4FusedMoEMethod.create_moe_runner": {
+      "start_line": 3143,
+      "end_line": 3182,
+      "backend_predicates": [
+        "is_auto",
+        "is_cutlass",
+        "is_flashinfer_cutedsl",
+        "is_flashinfer_cutlass",
+        "is_lora",
+        "is_megamoe"
+      ]
+    },
+    "ModelOptNvFp4FusedMoEMethod.apply": {
+      "start_line": 3216,
+      "end_line": 3402,
+      "backend_predicates": [
+        "is_flashinfer_cutedsl",
+        "is_flashinfer_cutlass",
+        "is_flashinfer_megamoe",
+        "is_flashinfer_trtllm",
+        "is_flashinfer_trtllm_routed",
+        "is_marlin"
+      ],
+      "terminal_unhandled_backend": "NotImplementedError"
+    },
+    "Fp8MoEMethod._resolve_moe_runner_backend": {
+      "start_line": 3311,
+      "end_line": 3333,
+      "backend_predicates": [
+        "is_auto",
+        "is_deepgemm_moe_runner_backend_enabled",
+        "is_flashinfer_cutedsl",
+        "is_flashinfer_cutlass"
+      ],
+      "cutlass_cutedsl_resolve_to": "TRITON"
+    },
+    "Fp8MoEMethod.create_moe_runner": {
+      "start_line": 3335,
+      "end_line": 3383,
+      "backend_predicates": [
+        "is_aiter",
+        "is_deep_gemm",
+        "is_flashinfer_cutedsl",
+        "is_flashinfer_cutlass",
+        "is_flashinfer_megamoe",
+        "is_flashinfer_trtllm",
+        "is_flashinfer_trtllm_routed",
+        "is_hpc_ops",
+        "is_triton"
+      ]
+    }
+  },
+  "fp8_config_sha256": "99d7088de1960a51c0f1ae58553815c4c6c223fdbde44d13dc3ebca479e0c80f",
+  "scope": "Static source inspection only; backend availability is not a model startup or performance result.",
+  "fp8_quantization_config": {
+    "quant_method": "fp8",
+    "activation_scheme": "dynamic",
+    "fmt": "e4m3",
+    "weight_block_size": [
+      128,
+      128
+    ]
+  },
+  "inspection": {
+    "python": "3.12.3",
+    "method": "Python ast method traversal plus direct source inspection",
+    "gpu_runs": 0,
+    "scope": "Standard fused MoE with a2a none; method availability does not prove checkpoint startup, kernel compatibility, quality or performance."
+  },
+  "unsupported": {
+    "nvfp4_deep_gemm": "No deep_gemm branch in ModelOptNvFp4FusedMoEMethod.apply; unhandled runner raises NotImplementedError.",
+    "nvfp4_cutlass": "create_moe_runner explicitly raises NotImplementedError for cutlass, distinct from flashinfer_cutlass."
+  }
+}

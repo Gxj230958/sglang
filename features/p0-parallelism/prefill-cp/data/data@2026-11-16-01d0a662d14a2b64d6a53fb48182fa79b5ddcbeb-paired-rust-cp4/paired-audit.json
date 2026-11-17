@@ -1,0 +1,65 @@
+{
+  "runtime": "01d0a662d14a2b64d6a53fb48182fa79b5ddcbeb",
+  "launch_flag_differences": {
+    "--model-path": [
+      "/scratch/models/GLM-5-1028-Provider",
+      "/scratch/codex-humanx-perf/models/nvfp4-f2c64cebac62b1888c92c9d317adbb0b0aef5955"
+    ],
+    "--dist-init-addr": [
+      "127.0.0.1:31981",
+      "127.0.0.1:31985"
+    ],
+    "--port": [
+      "31980",
+      "31984"
+    ]
+  },
+  "environment_differences": {
+    "GLM5LP_SWEEP_OWNER": [
+      "glm5lp-cp4-rust-01d0a662d1",
+      "glm5lp-cp4-nvfp4-full-rust-01d0a662d1"
+    ]
+  },
+  "versions": {
+    "flashinfer-python": "0.7.4",
+    "flashinfer-cubin": "0.7.4",
+    "flashinfer-jit-cache": "0.7.4+cu130",
+    "flashinfer-jit-cache-sm103a": "0.7.4+cu130",
+    "sglang-kernel": "0.4.11",
+    "sgl-deep-gemm": "0.2.8",
+    "sgl-flash-mla": "1.0.5",
+    "kernels": "0.14.1",
+    "torch": "2.14.1+cu130",
+    "transformers": "5.19.0"
+  },
+  "server_seed": 1,
+  "request_sampling": {
+    "chat_template_kwargs": null,
+    "extra_body": null,
+    "max_tokens": 32768,
+    "min_p": 0.0,
+    "reasoning_effort": null,
+    "repetition_penalty": 1.0,
+    "seed": 1,
+    "system_message": null,
+    "temperature": 1.0,
+    "top_p": 0.95
+  },
+  "accuracy_delta_pp": 0.9097801364670199,
+  "stop_rate_delta_pp": 0.15163002274450887,
+  "fp8": {
+    "correct": 1238,
+    "finish_reasons": {
+      "stop": 1313,
+      "length": 6
+    }
+  },
+  "nvfp4": {
+    "correct": 1250,
+    "finish_reasons": {
+      "stop": 1315,
+      "length": 4
+    }
+  },
+  "conclusion": "NVFP4 has higher observed accuracy and stop rate in this single paired CP4 run; its separate long-context retrieval gate remains failed. Neither run reaches 100% stopping. No causal claim about Rust versus Python."
+}

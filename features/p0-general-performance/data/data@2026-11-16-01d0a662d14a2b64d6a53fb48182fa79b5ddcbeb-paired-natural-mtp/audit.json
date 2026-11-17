@@ -1,0 +1,248 @@
+{
+  "runtime": "01d0a662d14a2b64d6a53fb48182fa79b5ddcbeb",
+  "loads": 48,
+  "successful_requests": 5120,
+  "natural_sanity_stops": 12,
+  "arms": [
+    {
+      "candidate": "fp8-kv-bf16-mtp-natural",
+      "requests": 1280,
+      "loads": 12,
+      "natural_sanity_stops": 3,
+      "best_passing": {
+        "score": 1477.3568306974,
+        "ttft": 0.7274073464097455,
+        "interactivity": 43.64121265543547,
+        "accept_length": 2.5154664422136106,
+        "level": 4,
+        "repeats": [
+          {
+            "score": 1472.3811142630807,
+            "ttft": 0.7278604580555111,
+            "interactivity": 43.52399236496009,
+            "accept_length": 2.4427161232425965,
+            "intervals": 8044
+          },
+          {
+            "score": 1482.3325471317194,
+            "ttft": 0.7269542347639799,
+            "interactivity": 43.75843294591084,
+            "accept_length": 2.588216761184625,
+            "intervals": 8042
+          }
+        ],
+        "pass": true,
+        "gain_over_mtp_off_percent": 0.01970808052169648
+      },
+      "archive_sha256": "7bfec7fd8c7a880b2810482c2371bafd6ebbdd30422043b74ae5c5e9958e7247",
+      "token_count_provenance": "Chunk token counts captured with the runtime tokenizer; interval distribution independently reconstructed from raw chunks/counts/ITLs.",
+      "resolved_checked": {
+        "tp_size": 4,
+        "ep_size": 1,
+        "attn_dp_size": 1,
+        "moe_runner_backend": "flashinfer_trtllm",
+        "dsa_prefill_backend": "flashmla_sparse",
+        "dsa_decode_backend": "flashmla_sparse",
+        "kv_cache_dtype": "bfloat16",
+        "speculative_algorithm": "EAGLE",
+        "disable_hybrid_swa_memory": false,
+        "speculative_num_steps": 3,
+        "speculative_eagle_topk": 1,
+        "speculative_num_draft_tokens": 4,
+        "speculative_draft_model_quantization": "fp8",
+        "speculative_draft_model_path": "/scratch/models/GLM-5-1028-Provider"
+      },
+      "gpu_ownership_samples": 471,
+      "gpu_ownership_failures": 0,
+      "rust_extension_sha256": [
+        "c933d62cbea75638fc7a1c4c1e114cac83fe7e149cfc65591492252ec5536055"
+      ],
+      "server_random_seed": 136602530
+    },
+    {
+      "candidate": "nvfp4-kv-bf16-mtp-natural",
+      "requests": 1280,
+      "loads": 12,
+      "natural_sanity_stops": 3,
+      "best_passing": {
+        "score": 1533.1851788784,
+        "ttft": 0.7486960489186458,
+        "interactivity": 52.889645788429384,
+        "accept_length": 2.4308140822421076,
+        "level": 4,
+        "repeats": [
+          {
+            "score": 1529.8506110627127,
+            "ttft": 0.7425780586898327,
+            "interactivity": 52.95524181483274,
+            "accept_length": 2.423648247177659,
+            "intervals": 8041
+          },
+          {
+            "score": 1536.5197466940872,
+            "ttft": 0.754814039147459,
+            "interactivity": 52.82404976202603,
+            "accept_length": 2.4379799173065564,
+            "intervals": 8042
+          }
+        ],
+        "pass": true,
+        "gain_over_matched_fp8_natural_percent": 3.7789345824221554,
+        "gain_over_mtp_off_percent": -2.719340213979715
+      },
+      "archive_sha256": "15b3eccc7025ff944d8a64a37ec225c74bd7f66a2ea1e445f8620f03f260aa94",
+      "token_count_provenance": "Chunk token counts captured with the runtime tokenizer; interval distribution independently reconstructed from raw chunks/counts/ITLs.",
+      "resolved_checked": {
+        "tp_size": 4,
+        "ep_size": 1,
+        "attn_dp_size": 1,
+        "moe_runner_backend": "flashinfer_trtllm",
+        "dsa_prefill_backend": "flashmla_sparse",
+        "dsa_decode_backend": "flashmla_sparse",
+        "kv_cache_dtype": "bfloat16",
+        "speculative_algorithm": "EAGLE",
+        "disable_hybrid_swa_memory": false,
+        "speculative_num_steps": 3,
+        "speculative_eagle_topk": 1,
+        "speculative_num_draft_tokens": 4,
+        "speculative_draft_model_quantization": "fp8",
+        "speculative_draft_model_path": "/scratch/models/GLM-5-1028-Provider"
+      },
+      "gpu_ownership_samples": 503,
+      "gpu_ownership_failures": 0,
+      "rust_extension_sha256": [
+        "c933d62cbea75638fc7a1c4c1e114cac83fe7e149cfc65591492252ec5536055"
+      ],
+      "server_random_seed": 459115525
+    },
+    {
+      "candidate": "fp8-kv-fp8_e4m3-mtp-natural",
+      "requests": 1280,
+      "loads": 12,
+      "natural_sanity_stops": 3,
+      "best_passing": {
+        "score": 1351.8590555515802,
+        "ttft": 0.7705210272106342,
+        "interactivity": 40.83301761180704,
+        "accept_length": 2.4632874146001615,
+        "level": 4,
+        "repeats": [
+          {
+            "score": 1327.32499319266,
+            "ttft": 0.7821894252672792,
+            "interactivity": 40.72197874180851,
+            "accept_length": 2.448967375037414,
+            "intervals": 8032
+          },
+          {
+            "score": 1376.3931179105007,
+            "ttft": 0.7588526291539892,
+            "interactivity": 40.94405648180556,
+            "accept_length": 2.4776074541629094,
+            "intervals": 8048
+          }
+        ],
+        "pass": true,
+        "gain_over_same_weight_bf16kv_percent": -8.494750390572692,
+        "gain_over_mtp_off_percent": -4.283882664837568
+      },
+      "archive_sha256": "df6dbb6c10efac102722ee63afac3b658dab86822fb8613151874e9c294fcf42",
+      "token_count_provenance": "Chunk token counts captured with the runtime tokenizer; interval distribution independently reconstructed from raw chunks/counts/ITLs.",
+      "resolved_checked": {
+        "tp_size": 4,
+        "ep_size": 1,
+        "attn_dp_size": 1,
+        "moe_runner_backend": "flashinfer_trtllm",
+        "dsa_prefill_backend": "trtllm",
+        "dsa_decode_backend": "trtllm",
+        "kv_cache_dtype": "fp8_e4m3",
+        "speculative_algorithm": "EAGLE",
+        "disable_hybrid_swa_memory": false,
+        "speculative_num_steps": 3,
+        "speculative_eagle_topk": 1,
+        "speculative_num_draft_tokens": 4,
+        "speculative_draft_model_quantization": "fp8",
+        "speculative_draft_model_path": "/scratch/models/GLM-5-1028-Provider"
+      },
+      "gpu_ownership_samples": 492,
+      "gpu_ownership_failures": 0,
+      "rust_extension_sha256": [
+        "c933d62cbea75638fc7a1c4c1e114cac83fe7e149cfc65591492252ec5536055"
+      ],
+      "server_random_seed": 1013935116
+    },
+    {
+      "candidate": "nvfp4-kv-fp8_e4m3-mtp-natural",
+      "requests": 1280,
+      "loads": 12,
+      "natural_sanity_stops": 3,
+      "best_passing": {
+        "score": 1456.682249351542,
+        "ttft": 0.7900445226579904,
+        "interactivity": 49.18520669638811,
+        "accept_length": 2.4676826129260925,
+        "level": 4,
+        "repeats": [
+          {
+            "score": 1466.7787475665111,
+            "ttft": 0.772939297161065,
+            "interactivity": 49.32870071094971,
+            "accept_length": 2.5019726858877087,
+            "intervals": 8041
+          },
+          {
+            "score": 1446.5857511365725,
+            "ttft": 0.8071497481549159,
+            "interactivity": 49.041712681826496,
+            "accept_length": 2.4333925399644762,
+            "intervals": 8037
+          }
+        ],
+        "pass": true,
+        "gain_over_matched_fp8_natural_percent": 7.754003153619604,
+        "gain_over_same_weight_bf16kv_percent": -4.989803618035471,
+        "gain_over_mtp_off_percent": -3.1033022008016498
+      },
+      "archive_sha256": "53ca7385ce7dbd62e1ef07dd8ae0498b5fc29ddeebbaa5858f50257fdb18b964",
+      "token_count_provenance": "Chunk token counts captured with the runtime tokenizer; interval distribution independently reconstructed from raw chunks/counts/ITLs.",
+      "resolved_checked": {
+        "tp_size": 4,
+        "ep_size": 1,
+        "attn_dp_size": 1,
+        "moe_runner_backend": "flashinfer_trtllm",
+        "dsa_prefill_backend": "trtllm",
+        "dsa_decode_backend": "trtllm",
+        "kv_cache_dtype": "fp8_e4m3",
+        "speculative_algorithm": "EAGLE",
+        "disable_hybrid_swa_memory": false,
+        "speculative_num_steps": 3,
+        "speculative_eagle_topk": 1,
+        "speculative_num_draft_tokens": 4,
+        "speculative_draft_model_quantization": "fp8",
+        "speculative_draft_model_path": "/scratch/models/GLM-5-1028-Provider"
+      },
+      "gpu_ownership_samples": 522,
+      "gpu_ownership_failures": 0,
+      "rust_extension_sha256": [
+        "c933d62cbea75638fc7a1c4c1e114cac83fe7e149cfc65591492252ec5536055"
+      ],
+      "server_random_seed": 70322572
+    }
+  ],
+  "final_source": {
+    "revision": "01d0a662d14a2b64d6a53fb48182fa79b5ddcbeb",
+    "verified_files": 12581,
+    "mismatches": []
+  },
+  "idle": {
+    "compute": "",
+    "memory_mib": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "archive_sha256": "3e3501db6dbeaa14aa4644d82a9fe93e11e3f651f49f60290194c1e73c2c2a6e",
+  "limitation": "Server seeds differ across arms; only request seeds are matched. Two-repeat descriptive medians. Quality gate remains separate."
+}
