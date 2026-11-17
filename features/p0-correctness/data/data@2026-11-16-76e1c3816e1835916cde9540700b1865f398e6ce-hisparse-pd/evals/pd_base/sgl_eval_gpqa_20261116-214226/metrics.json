@@ -1,0 +1,55 @@
+{
+  "aggregate": {
+    "error_rate": 0.0,
+    "majority@2": 0.7474747474747475,
+    "no_answer": 0.23484848484848483,
+    "pass@1": 0.6994949494949495,
+    "pass@1_sem": 0.002525252525252486,
+    "pass@1_std": 0.0035712463696289725,
+    "pass@2": 0.7626262626262625,
+    "score": 0.6994949494949495,
+    "stop_rate": 0.7626262626262627,
+    "truncated_rate": 0.23737373737373738
+  },
+  "base_url": "http://127.0.0.1:32022/v1",
+  "gen": {
+    "chat_template_kwargs": {
+      "thinking": true
+    },
+    "extra_body": null,
+    "max_tokens": 32768,
+    "min_p": 0.0,
+    "reasoning_effort": null,
+    "repetition_penalty": 1.0,
+    "seed": null,
+    "system_message": null,
+    "temperature": 1.0,
+    "top_p": 0.95
+  },
+  "latency_seconds": 4472.418381285854,
+  "model": "glm-loop",
+  "n_repeats": 2,
+  "name": "gpqa",
+  "ns_commit_sha": "645cf567ff08c0ae9cc3fc8e1edbb975b3067816",
+  "num_examples": 198,
+  "num_threads": 32,
+  "output_throughput_tps": 1095.4241267990328,
+  "sgl_eval_version": "0.1.3",
+  "timestamp": "20261116-214226",
+  "token_usage": {
+    "completion_tokens": {
+      "count": 396,
+      "mean": 12371.704545454546
+    },
+    "prompt_tokens": {
+      "count": 396,
+      "mean": 258.3131313131313
+    },
+    "reasoning_tokens": {
+      "count": 396,
+      "mean": 11753.674242424242
+    }
+  },
+  "total_completion_tokens": 4899195,
+  "total_prompt_tokens": 102292
+}

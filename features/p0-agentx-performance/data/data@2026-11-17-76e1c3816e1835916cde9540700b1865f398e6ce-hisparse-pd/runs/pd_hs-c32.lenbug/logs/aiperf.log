@@ -1,0 +1,187 @@
+2026-11-17 04:19:41.580 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-11-17 04:19:41.582 - aiperf.common.scenario.validator - INFO - Scenario 'agentx': setting profiling-phase timing_mode=agentic_replay.
+2026-11-17 04:19:41.582 - aiperf.common.scenario.validator - INFO - Scenario 'agentx': injecting extra_inputs.ignore_eos=true (was absent).
+2026-11-17 04:19:41.583 - aiperf.common.scenario.validator - INFO - Scenario 'agentx': auto-set --cache-bust=first_turn_prefix (was at default none).
+2026-11-17 04:19:41.583 - aiperf.common.scenario.validator - INFO - Scenario 'agentx': auto-set --system-idle-gap-cap-seconds=10.0 (was unset).
+2026-11-17 04:19:41.784 - system_controller - INFO - GPU telemetry disabled via --no-gpu-telemetry
+2026-11-17 04:19:41.792 - system_controller - INFO - Registered Worker Manager (id: 'worker_manager')
+2026-11-17 04:19:41.809 - server_metrics_manager - INFO - Server Metrics: Discovered 1 endpoints: ['http://<PREFILL_NODE_IP>:32022/metrics']
+2026-11-17 04:19:41.852 - OTelMetricsResultsProcessor_d2dfbab9 - INFO - Telemetry streaming is disabled (set --otel-url and/or --mlflow-tracking-uri to enable)
+2026-11-17 04:19:41.854 - RecordExportJSONLWriter_5c4fab1d - INFO - Record metrics export enabled: $WORK/agentx/pd_hs-c32/profile_export.jsonl
+2026-11-17 04:19:41.984 - system_controller - INFO - Registered Dataset Manager (id: 'dataset_manager')
+2026-11-17 04:19:41.985 - system_controller - INFO - Registered Server Metrics Manager (id: 'server_metrics_manager')
+2026-11-17 04:19:41.986 - system_controller - INFO - Registered Records Manager (id: 'records_manager')
+2026-11-17 04:19:41.988 - system_controller - INFO - Registered Record Processor (id: 'record_processor_bf861e5f')
+2026-11-17 04:19:41.993 - system_controller - INFO - Registered Record Processor (id: 'record_processor_6422b911')
+2026-11-17 04:19:41.997 - system_controller - INFO - Registered Record Processor (id: 'record_processor_67b498a8')
+2026-11-17 04:19:42.000 - system_controller - INFO - Registered Record Processor (id: 'record_processor_ce1e751b')
+2026-11-17 04:19:42.002 - system_controller - INFO - Registered Record Processor (id: 'record_processor_4454936a')
+2026-11-17 04:19:42.005 - system_controller - INFO - Registered Record Processor (id: 'record_processor_d7356069')
+2026-11-17 04:19:42.005 - system_controller - INFO - Registered Record Processor (id: 'record_processor_0cfbd6d5')
+2026-11-17 04:19:42.022 - system_controller - INFO - Registered Worker (id: 'worker_3bce775b')
+2026-11-17 04:19:42.022 - system_controller - INFO - Registered Timing Manager (id: 'timing_manager')
+2026-11-17 04:19:42.027 - system_controller - INFO - Registered Worker (id: 'worker_41e81a25')
+2026-11-17 04:19:42.040 - system_controller - INFO - Registered Worker (id: 'worker_b6e77330')
+2026-11-17 04:19:42.041 - system_controller - INFO - Registered Worker (id: 'worker_cee6cab9')
+2026-11-17 04:19:42.041 - system_controller - INFO - Registered Worker (id: 'worker_26d2d95e')
+2026-11-17 04:19:42.043 - system_controller - INFO - Registered Worker (id: 'worker_7962dc2b')
+2026-11-17 04:19:42.057 - system_controller - INFO - Registered Worker (id: 'worker_9706aa8c')
+2026-11-17 04:19:42.065 - system_controller - INFO - Registered Worker (id: 'worker_fdd1bd4c')
+2026-11-17 04:19:42.080 - system_controller - INFO - Registered Worker (id: 'worker_02f1bde3')
+2026-11-17 04:19:42.081 - system_controller - INFO - Registered Record Processor (id: 'record_processor_436d95d3')
+2026-11-17 04:19:42.083 - system_controller - INFO - Registered Worker (id: 'worker_bb63a3c3')
+2026-11-17 04:19:42.087 - system_controller - INFO - Registered Worker (id: 'worker_ca41d326')
+2026-11-17 04:19:42.088 - system_controller - INFO - Registered Worker (id: 'worker_f216e79c')
+2026-11-17 04:19:42.091 - system_controller - INFO - Registered Worker (id: 'worker_a4d3481a')
+2026-11-17 04:19:42.091 - system_controller - INFO - Registered Worker (id: 'worker_26cb38e1')
+2026-11-17 04:19:42.098 - system_controller - INFO - Registered Worker (id: 'worker_c3edc502')
+2026-11-17 04:19:42.104 - system_controller - INFO - Registered Worker (id: 'worker_665994c1')
+2026-11-17 04:19:42.105 - system_controller - INFO - Registered Worker (id: 'worker_378aafe1')
+2026-11-17 04:19:42.106 - system_controller - INFO - Registered Worker (id: 'worker_56cc8abc')
+2026-11-17 04:19:42.198 - system_controller - INFO - Registered Worker (id: 'worker_3f90871a')
+2026-11-17 04:19:42.204 - system_controller - INFO - Registered Worker (id: 'worker_38d55609')
+2026-11-17 04:19:42.211 - system_controller - INFO - Registered Worker (id: 'worker_e296cb75')
+2026-11-17 04:19:42.217 - system_controller - INFO - Registered Worker (id: 'worker_b108c496')
+2026-11-17 04:19:42.221 - system_controller - INFO - Registered Worker (id: 'worker_81df8fc7')
+2026-11-17 04:19:42.221 - system_controller - INFO - Registered Worker (id: 'worker_d010c12d')
+2026-11-17 04:19:42.225 - system_controller - INFO - Registered Worker (id: 'worker_cbaae93d')
+2026-11-17 04:19:42.247 - system_controller - INFO - Registered Worker (id: 'worker_0277bd73')
+2026-11-17 04:19:42.285 - system_controller - INFO - Registered Worker (id: 'worker_33f0d22f')
+2026-11-17 04:19:42.288 - system_controller - INFO - AIPerf System is CONFIGURING
+2026-11-17 04:19:42.288 - system_controller - INFO - Configuring all services to start profiling
+2026-11-17 04:19:42.289 - timing_manager - INFO - Waiting for dataset to be configured before configuring timing
+2026-11-17 04:19:42.289 - InferenceResultParser_a83f7d83 - INFO - Tokenization is disabled for this endpoint, skipping tokenizer configuration
+2026-11-17 04:19:42.289 - InferenceResultParser_0ef4f4e3 - INFO - Tokenization is disabled for this endpoint, skipping tokenizer configuration
+2026-11-17 04:19:42.289 - InferenceResultParser_f4ccaf21 - INFO - Tokenization is disabled for this endpoint, skipping tokenizer configuration
+2026-11-17 04:19:42.289 - InferenceResultParser_b63fd7cf - INFO - Tokenization is disabled for this endpoint, skipping tokenizer configuration
+2026-11-17 04:19:42.289 - InferenceResultParser_721edda6 - INFO - Tokenization is disabled for this endpoint, skipping tokenizer configuration
+2026-11-17 04:19:42.289 - InferenceResultParser_0f1fef07 - INFO - Tokenization is disabled for this endpoint, skipping tokenizer configuration
+2026-11-17 04:19:42.289 - InferenceResultParser_7570d7a8 - INFO - Tokenization is disabled for this endpoint, skipping tokenizer configuration
+2026-11-17 04:19:42.289 - InferenceResultParser_b5e649fc - INFO - Tokenization is disabled for this endpoint, skipping tokenizer configuration
+2026-11-17 04:19:42.293 - dataset_manager - INFO - Memory-mapped dataset cache HIT (key=551869ee80ed2e656e490990f1fadcde); skipping tokenizer + composer.
+2026-11-17 04:19:42.293 - system_controller - INFO - Registered Worker (id: 'worker_df0bf708')
+2026-11-17 04:19:42.294 - aiperf.dataset.mmap_cache - INFO - Restored mmap cache file dataset.dat via hardlink in 0.000s (0.19 GiB)
+2026-11-17 04:19:42.294 - aiperf.dataset.mmap_cache - INFO - Restored mmap cache file index.dat via hardlink in 0.000s (0.00 GiB)
+2026-11-17 04:19:42.294 - aiperf.dataset.mmap_cache - INFO - Restored mmap cache files in 0.001s via dataset=hardlink index=hardlink (dataset=0.19 GiB, index=0.00 GiB)
+2026-11-17 04:19:42.294 - system_controller - INFO - Registered Worker (id: 'worker_a2ae3363')
+2026-11-17 04:19:42.295 - system_controller - INFO - Registered Worker (id: 'worker_995211ce')
+2026-11-17 04:19:42.295 - system_controller - INFO - Registered Worker (id: 'worker_e8e65b6a')
+2026-11-17 04:19:42.295 - system_controller - INFO - Registered Worker (id: 'worker_3e9919d5')
+2026-11-17 04:19:42.343 - server_metrics_manager - INFO - Server Metrics: Capturing baseline metrics...
+2026-11-17 04:19:42.361 - dataset_manager - INFO - sampling strategy: sequential, unique conversations: 730, unique turn count: 6018
+2026-11-17 04:19:42.411 - aiperf.timing.trajectory_source - INFO - TrajectorySource: built 32 trajectories from 107 traces
+2026-11-17 04:19:42.412 - aiperf.timing.trajectory_source - INFO -   range cfg=[0.25, 0.75]  observed sample pct: min= 25% median= 48% max= 74%
+2026-11-17 04:19:42.412 - aiperf.timing.trajectory_source - INFO -     lane=00  sample_time= 38%  root_next=  5/33  ( 15% turns)  live=1 ready=1  trace_id=006c98de37d819e95b0840e25426bb7ca99d
+2026-11-17 04:19:42.412 - aiperf.timing.trajectory_source - INFO -     lane=01  sample_time= 50%  root_next=  3/7   ( 43% turns)  live=1 ready=1  trace_id=04dba6fe621301a1d01fd63b8d02c9645c48
+2026-11-17 04:19:42.412 - aiperf.timing.trajectory_source - INFO -     lane=02  sample_time= 45%  root_next= 49/52  ( 94% turns)  live=1 ready=1  trace_id=05f72f78a037cfa5cd4e4541960a574701d9
+2026-11-17 04:19:42.412 - aiperf.timing.trajectory_source - INFO -     lane=03  sample_time= 40%  root_next=  0/1   (  0% turns)  live=1 ready=1  trace_id=063179eb93f4337a662e859c5a2c5638e03f
+2026-11-17 04:19:42.412 - aiperf.timing.trajectory_source - INFO -     lane=04  sample_time= 49%  root_next= 26/34  ( 76% turns)  live=1 ready=1  trace_id=077ea9e6554f45bbad9c24a8462bae9a8512
+2026-11-17 04:19:42.412 - aiperf.timing.trajectory_source - INFO -     lane=05  sample_time= 25%  root_next=  8/9   ( 89% turns)  live=5 ready=4  trace_id=07dd40536557a1d6440a923557c3129dc929
+2026-11-17 04:19:42.412 - aiperf.timing.trajectory_source - INFO -     lane=06  sample_time= 74%  root_next= 21/31  ( 68% turns)  live=1 ready=1  trace_id=0a688303b1ae62a97607af8021f2130c2caf
+2026-11-17 04:19:42.412 - aiperf.timing.trajectory_source - INFO -     lane=07  sample_time= 66%  root_next= 19/24  ( 79% turns)  live=1 ready=1  trace_id=0bcd99353218b9a386b1c4aec13d77abecdb
+2026-11-17 04:19:42.412 - aiperf.timing.trajectory_source - INFO -     lane=08  sample_time= 47%  root_next= 24/46  ( 52% turns)  live=1 ready=1  trace_id=0bed163ac9566086e14ffd85c7481096d49d
+2026-11-17 04:19:42.412 - aiperf.timing.trajectory_source - INFO -     lane=09  sample_time= 37%  root_next=  0/2   (  0% turns)  live=1 ready=1  trace_id=0f909e7d63c0d5e1f060d727ada25d910d89
+2026-11-17 04:19:42.412 - aiperf.timing.trajectory_source - INFO -     lane=10  sample_time= 46%  root_next= 75/84  ( 89% turns)  live=1 ready=1  trace_id=1007f04d2c64580308858bb42f292992929d
+2026-11-17 04:19:42.412 - aiperf.timing.trajectory_source - INFO -     lane=11  sample_time= 58%  root_next=  3/5   ( 60% turns)  live=4 ready=3  trace_id=12bd4c7c82ae413b035253cb800fc5312111
+2026-11-17 04:19:42.412 - aiperf.timing.trajectory_source - INFO -     lane=12  sample_time= 50%  root_next= 19/20  ( 95% turns)  live=1 ready=1  trace_id=12cfecf98c158ab54fb65980602421f00d69
+2026-11-17 04:19:42.412 - aiperf.timing.trajectory_source - INFO -     lane=13  sample_time= 51%  root_next= 14/27  ( 52% turns)  live=1 ready=1  trace_id=14129d470e508b236be22188aa78548ef805
+2026-11-17 04:19:42.412 - aiperf.timing.trajectory_source - INFO -     lane=14  sample_time= 36%  root_next=  9/27  ( 33% turns)  live=1 ready=1  trace_id=17808bf55e26681520f3f11f47b5e1260108
+2026-11-17 04:19:42.412 - aiperf.timing.trajectory_source - INFO -     lane=15  sample_time= 64%  root_next= 24/27  ( 89% turns)  live=1 ready=1  trace_id=1b5229e3aa8893ca2f4d07d248f9cd9752fb
+2026-11-17 04:19:42.412 - aiperf.timing.trajectory_source - INFO -     lane=16  sample_time= 31%  root_next= 14/34  ( 41% turns)  live=1 ready=1  trace_id=203147a7ad6c355f99290d8ac7811e6de5be
+2026-11-17 04:19:42.412 - aiperf.timing.trajectory_source - INFO -     lane=17  sample_time= 32%  root_next= 34/38  ( 89% turns)  live=1 ready=1  trace_id=20c87b0b00ac5895cc4528c971b71cce3960
+2026-11-17 04:19:42.412 - aiperf.timing.trajectory_source - INFO -     lane=18  sample_time= 66%  root_next= 12/17  ( 71% turns)  live=1 ready=1  trace_id=23074f92872cd4f8212d04cd87e71a2ced7b
+2026-11-17 04:19:42.412 - aiperf.timing.trajectory_source - INFO -     lane=19  sample_time= 44%  root_next= 41/67  ( 61% turns)  live=1 ready=1  trace_id=23a576b18cd4bacef3d1aa138b060b9407ce
+2026-11-17 04:19:42.412 - aiperf.timing.trajectory_source - INFO -     lane=20  sample_time= 57%  root_next=  5/19  ( 26% turns)  live=1 ready=1  trace_id=240cd2e1b10e5b738ac6fee166b2aca7eff2
+2026-11-17 04:19:42.412 - aiperf.timing.trajectory_source - INFO -     lane=21  sample_time= 47%  root_next= 28/29  ( 97% turns)  live=1 ready=1  trace_id=24f457bf9e42d6ffb1cc4bbd279c650bb8b6
+2026-11-17 04:19:42.412 - aiperf.timing.trajectory_source - INFO -     lane=22  sample_time= 68%  root_next= 16/29  ( 55% turns)  live=1 ready=1  trace_id=259d1cc35e11b72660b8d6a33867cbb93759
+2026-11-17 04:19:42.412 - aiperf.timing.trajectory_source - INFO -     lane=23  sample_time= 46%  root_next=  2/5   ( 40% turns)  live=2 ready=1  trace_id=2a2da059b7425d9dc1f999fca1177bc1cdb9
+2026-11-17 04:19:42.412 - aiperf.timing.trajectory_source - INFO -     lane=24  sample_time= 50%  root_next= 31/34  ( 91% turns)  live=1 ready=1  trace_id=2d5f050bf77e34d6650e4af92c61bb82a1c9
+2026-11-17 04:19:42.412 - aiperf.timing.trajectory_source - INFO -     lane=25  sample_time= 32%  root_next=  5/63  (  8% turns)  live=1 ready=1  trace_id=3317a925c2a7f40e9eafe5f5532793a23c67
+2026-11-17 04:19:42.412 - aiperf.timing.trajectory_source - INFO -     lane=26  sample_time= 35%  root_next=  6/20  ( 30% turns)  live=1 ready=1  trace_id=3531533f1f293048fc9691b112feafc44e62
+2026-11-17 04:19:42.412 - aiperf.timing.trajectory_source - INFO -     lane=27  sample_time= 65%  root_next= 39/60  ( 65% turns)  live=1 ready=1  trace_id=35de830dbe1dbe90e6eaa36bc4814c7410ec
+2026-11-17 04:19:42.412 - aiperf.timing.trajectory_source - INFO -     lane=28  sample_time= 70%  root_next= 23/27  ( 85% turns)  live=1 ready=1  trace_id=3735de09df4f9ac454aee913e2a00633ad0d
+2026-11-17 04:19:42.412 - aiperf.timing.trajectory_source - INFO -     lane=29  sample_time= 48%  root_next= 33/34  ( 97% turns)  live=1 ready=1  trace_id=37c8d244d81e01d3b70c9f7fe619d9392a24
+2026-11-17 04:19:42.412 - aiperf.timing.trajectory_source - INFO -     lane=30  sample_time= 58%  root_next= 13/38  ( 34% turns)  live=1 ready=1  trace_id=3a066e6ad705e8792dec8c84610bbee401cb
+2026-11-17 04:19:42.412 - aiperf.timing.trajectory_source - INFO -     lane=31  sample_time= 74%  root_next= 26/30  ( 87% turns)  live=1 ready=1  trace_id=3c1fbf5cf98484c7f9ef07f2d4b00e65d829
+2026-11-17 04:19:42.413 - PhaseOrchestrator_05de4538 - INFO - Initialized 2 phase(s): ['Warmup', 'Profiling']
+2026-11-17 04:19:42.419 - system_controller - WARNING - Received command response for service we were not expecting: worker_df0bf708. Ignoring.
+2026-11-17 04:19:42.420 - system_controller - WARNING - Received command response for service we were not expecting: worker_3e9919d5. Ignoring.
+2026-11-17 04:19:42.420 - system_controller - WARNING - Received command response for service we were not expecting: worker_a2ae3363. Ignoring.
+2026-11-17 04:19:42.420 - system_controller - WARNING - Received command response for service we were not expecting: worker_e8e65b6a. Ignoring.
+2026-11-17 04:19:42.420 - system_controller - WARNING - Received command response for service we were not expecting: worker_995211ce. Ignoring.
+2026-11-17 04:19:42.423 - http://<DECODE_NODE_IP>:32021/metrics - WARNING - Dropping non-finite (NaN/Inf) sample(s) from metric 'sglang:fwd_occupancy': 4 in this scrape; affected data will be missing from server_metrics_export. Further occurrences for this metric name will not be logged.
+2026-11-17 04:19:42.427 - system_controller - INFO - Server metrics enabled - 1/2 endpoint(s) reachable.
+2026-11-17 04:19:42.427 - system_controller - WARNING - Unreachable endpoints: http://<PREFILL_NODE_IP>:32022/metrics
+2026-11-17 04:19:42.427 - system_controller - INFO - Waiting for result domains: profile, server_metrics
+2026-11-17 04:19:42.510 - dataset_manager - INFO - Dataset client initialized and freed 0 conversations from memory
+2026-11-17 04:19:42.510 - system_controller - INFO - All services configured in 0.22 seconds
+2026-11-17 04:19:42.511 - system_controller - INFO - AIPerf System is CONFIGURED
+2026-11-17 04:19:42.511 - server_metrics_manager - INFO - Server Metrics: Started 1 collector(s) successfully
+2026-11-17 04:19:42.512 - system_controller - INFO - All services started profiling successfully
+2026-11-17 04:19:42.512 - system_controller - INFO - AIPerf System is PROFILING
+2026-11-17 04:19:42.519 - PhaseRunner - NOTICE - Phase warmup (warmup) started | target: 355 requests
+2026-11-17 04:19:42.519 - AgenticReplayTiming - INFO - WARMUP execute: dispatching 35 trajectory credits
+2026-11-17 04:19:42.519 - records_manager - INFO - Credit phase start: warmup
+2026-11-17 04:19:42.520 - AgenticReplayTiming - INFO - WARMUP count budget: 10 additional requests per lane after 35 mandatory snapshot primers
+2026-11-17 04:19:42.520 - AgenticReplayTiming - INFO - WARMUP spread: 9.3s ramp aligning 35 request(s) on t* (earliest fires at 0, last at 9.3s)
+2026-11-17 04:20:12.524 - PhaseRunner - INFO - Phase warmup progress | returned=7/355 | sent=35 | in_flight=28 | errors=0 | elapsed=30.0s
+2026-11-17 04:20:42.530 - PhaseRunner - INFO - Phase warmup progress | returned=12/355 | sent=35 | in_flight=23 | errors=0 | elapsed=60.0s
+2026-11-17 04:21:12.540 - PhaseRunner - INFO - Phase warmup progress | returned=18/355 | sent=35 | in_flight=17 | errors=0 | elapsed=90.0s
+2026-11-17 04:21:42.546 - PhaseRunner - INFO - Phase warmup progress | returned=24/355 | sent=35 | in_flight=11 | errors=0 | elapsed=120.0s
+2026-11-17 04:22:12.553 - PhaseRunner - INFO - Phase warmup progress | returned=27/355 | sent=35 | in_flight=8 | errors=0 | elapsed=150.0s
+2026-11-17 04:22:42.557 - PhaseRunner - INFO - Phase warmup progress | returned=33/355 | sent=35 | in_flight=2 | errors=0 | elapsed=180.0s
+2026-11-17 04:23:12.567 - PhaseRunner - INFO - Phase warmup progress | returned=33/355 | sent=35 | in_flight=2 | errors=0 | elapsed=210.0s
+2026-11-17 04:23:42.578 - PhaseRunner - INFO - Phase warmup progress | returned=33/355 | sent=35 | in_flight=2 | errors=0 | elapsed=240.1s
+2026-11-17 04:24:12.583 - PhaseRunner - INFO - Phase warmup progress | returned=33/355 | sent=35 | in_flight=2 | errors=0 | elapsed=270.1s
+2026-11-17 04:24:42.588 - PhaseRunner - INFO - Phase warmup progress | returned=33/355 | sent=35 | in_flight=2 | errors=0 | elapsed=300.1s
+2026-11-17 04:24:44.161 - aiperf.timing.replay_dependencies - INFO - Replay interval barriers active: 6018 requests, 2363 gated turns, join-widths={1: 2031, 2: 277, 3: 25, 4: 19, 5: 11}
+2026-11-17 04:24:44.161 - AgenticReplayTiming - INFO - WARMUP cache pressure: replaying live trajectories until each lane reaches 10 additional requests with zero idle delay and max_tokens=1
+2026-11-17 04:25:12.595 - PhaseRunner - INFO - Phase warmup progress | returned=47/355 | sent=82 | in_flight=35 | errors=0 | elapsed=330.1s
+2026-11-17 04:25:42.603 - PhaseRunner - INFO - Phase warmup progress | returned=53/355 | sent=88 | in_flight=35 | errors=0 | elapsed=360.1s
+2026-11-17 04:26:12.612 - PhaseRunner - INFO - Phase warmup progress | returned=58/355 | sent=93 | in_flight=35 | errors=0 | elapsed=390.1s
+2026-11-17 04:26:42.618 - PhaseRunner - INFO - Phase warmup progress | returned=62/355 | sent=97 | in_flight=35 | errors=0 | elapsed=420.1s
+2026-11-17 04:27:12.626 - PhaseRunner - INFO - Phase warmup progress | returned=66/355 | sent=101 | in_flight=35 | errors=0 | elapsed=450.1s
+2026-11-17 04:27:42.631 - PhaseRunner - INFO - Phase warmup progress | returned=77/355 | sent=112 | in_flight=35 | errors=0 | elapsed=480.1s
+2026-11-17 04:28:12.633 - PhaseRunner - INFO - Phase warmup progress | returned=83/355 | sent=118 | in_flight=35 | errors=0 | elapsed=510.1s
+2026-11-17 04:28:42.637 - PhaseRunner - INFO - Phase warmup progress | returned=88/355 | sent=123 | in_flight=35 | errors=0 | elapsed=540.1s
+2026-11-17 04:29:12.639 - PhaseRunner - INFO - Phase warmup progress | returned=95/355 | sent=133 | in_flight=38 | errors=0 | elapsed=570.1s
+2026-11-17 04:29:42.645 - PhaseRunner - INFO - Phase warmup progress | returned=99/355 | sent=137 | in_flight=38 | errors=0 | elapsed=600.1s
+2026-11-17 04:30:12.649 - PhaseRunner - INFO - Phase warmup progress | returned=112/355 | sent=154 | in_flight=42 | errors=0 | elapsed=630.1s
+2026-11-17 04:30:42.653 - PhaseRunner - INFO - Phase warmup progress | returned=118/355 | sent=160 | in_flight=42 | errors=0 | elapsed=660.1s
+2026-11-17 04:31:12.657 - PhaseRunner - INFO - Phase warmup progress | returned=122/355 | sent=164 | in_flight=42 | errors=0 | elapsed=690.1s
+2026-11-17 04:31:42.662 - PhaseRunner - INFO - Phase warmup progress | returned=127/355 | sent=169 | in_flight=42 | errors=0 | elapsed=720.1s
+2026-11-17 04:32:12.666 - PhaseRunner - INFO - Phase warmup progress | returned=135/355 | sent=177 | in_flight=42 | errors=0 | elapsed=750.1s
+2026-11-17 04:32:42.670 - PhaseRunner - INFO - Phase warmup progress | returned=146/355 | sent=181 | in_flight=35 | errors=0 | elapsed=780.2s
+2026-11-17 04:33:12.675 - PhaseRunner - INFO - Phase warmup progress | returned=154/355 | sent=187 | in_flight=33 | errors=0 | elapsed=810.2s
+2026-11-17 04:33:42.682 - PhaseRunner - INFO - Phase warmup progress | returned=160/355 | sent=193 | in_flight=33 | errors=0 | elapsed=840.2s
+2026-11-17 04:34:12.688 - PhaseRunner - INFO - Phase warmup progress | returned=164/355 | sent=197 | in_flight=33 | errors=0 | elapsed=870.2s
+2026-11-17 04:34:42.693 - PhaseRunner - INFO - Phase warmup progress | returned=172/355 | sent=203 | in_flight=31 | errors=0 | elapsed=900.2s
+2026-11-17 04:35:12.701 - PhaseRunner - INFO - Phase warmup progress | returned=179/355 | sent=209 | in_flight=30 | errors=0 | elapsed=930.2s
+2026-11-17 04:35:42.706 - PhaseRunner - INFO - Phase warmup progress | returned=188/355 | sent=217 | in_flight=29 | errors=0 | elapsed=960.2s
+2026-11-17 04:36:12.711 - PhaseRunner - INFO - Phase warmup progress | returned=194/355 | sent=223 | in_flight=29 | errors=0 | elapsed=990.2s
+2026-11-17 04:36:42.717 - PhaseRunner - INFO - Phase warmup progress | returned=199/355 | sent=228 | in_flight=29 | errors=0 | elapsed=1020.2s
+2026-11-17 04:37:12.725 - PhaseRunner - INFO - Phase warmup progress | returned=204/355 | sent=232 | in_flight=28 | errors=0 | elapsed=1050.2s
+2026-11-17 04:37:42.730 - PhaseRunner - INFO - Phase warmup progress | returned=212/355 | sent=240 | in_flight=28 | errors=0 | elapsed=1080.2s
+2026-11-17 04:38:12.735 - PhaseRunner - INFO - Phase warmup progress | returned=218/355 | sent=246 | in_flight=28 | errors=0 | elapsed=1110.2s
+2026-11-17 04:38:42.741 - PhaseRunner - INFO - Phase warmup progress | returned=223/355 | sent=251 | in_flight=28 | errors=0 | elapsed=1140.2s
+2026-11-17 04:39:12.754 - PhaseRunner - INFO - Phase warmup progress | returned=229/355 | sent=257 | in_flight=28 | errors=0 | elapsed=1170.2s
+2026-11-17 04:39:42.762 - PhaseRunner - INFO - Phase warmup progress | returned=236/355 | sent=264 | in_flight=28 | errors=0 | elapsed=1200.2s
+2026-11-17 04:40:12.768 - PhaseRunner - INFO - Phase warmup progress | returned=244/355 | sent=272 | in_flight=28 | errors=0 | elapsed=1230.2s
+2026-11-17 04:40:42.772 - PhaseRunner - INFO - Phase warmup progress | returned=250/355 | sent=278 | in_flight=28 | errors=0 | elapsed=1260.3s
+2026-11-17 04:41:12.781 - PhaseRunner - INFO - Phase warmup progress | returned=256/355 | sent=284 | in_flight=28 | errors=0 | elapsed=1290.3s
+2026-11-17 04:41:42.787 - PhaseRunner - INFO - Phase warmup progress | returned=264/355 | sent=292 | in_flight=28 | errors=0 | elapsed=1320.3s
+2026-11-17 04:42:12.793 - PhaseRunner - INFO - Phase warmup progress | returned=271/355 | sent=299 | in_flight=28 | errors=0 | elapsed=1350.3s
+2026-11-17 04:42:42.796 - PhaseRunner - INFO - Phase warmup progress | returned=275/355 | sent=303 | in_flight=28 | errors=0 | elapsed=1380.3s
+2026-11-17 04:43:12.801 - PhaseRunner - INFO - Phase warmup progress | returned=280/355 | sent=308 | in_flight=28 | errors=0 | elapsed=1410.3s
+2026-11-17 04:43:42.807 - PhaseRunner - INFO - Phase warmup progress | returned=285/355 | sent=313 | in_flight=28 | errors=0 | elapsed=1440.3s
+2026-11-17 04:44:12.817 - PhaseRunner - INFO - Phase warmup progress | returned=293/355 | sent=321 | in_flight=28 | errors=0 | elapsed=1470.3s
+2026-11-17 04:44:42.829 - PhaseRunner - INFO - Phase warmup progress | returned=298/355 | sent=326 | in_flight=28 | errors=0 | elapsed=1500.3s
+2026-11-17 04:45:12.836 - PhaseRunner - INFO - Phase warmup progress | returned=304/355 | sent=332 | in_flight=28 | errors=0 | elapsed=1530.3s
+2026-11-17 04:45:42.841 - PhaseRunner - INFO - Phase warmup progress | returned=310/355 | sent=338 | in_flight=28 | errors=0 | elapsed=1560.3s
+2026-11-17 04:46:12.849 - PhaseRunner - INFO - Phase warmup progress | returned=319/355 | sent=346 | in_flight=27 | errors=0 | elapsed=1590.3s
+2026-11-17 04:46:42.859 - PhaseRunner - INFO - Phase warmup progress | returned=325/355 | sent=347 | in_flight=22 | errors=0 | elapsed=1620.3s
+2026-11-17 04:47:12.864 - PhaseRunner - INFO - Phase warmup progress | returned=330/355 | sent=347 | in_flight=17 | errors=0 | elapsed=1650.3s
+2026-11-17 04:47:42.870 - PhaseRunner - INFO - Phase warmup progress | returned=336/355 | sent=347 | in_flight=11 | errors=0 | elapsed=1680.4s
+2026-11-17 04:48:12.878 - PhaseRunner - INFO - Phase warmup progress | returned=343/355 | sent=347 | in_flight=4 | errors=0 | elapsed=1710.4s
+2026-11-17 04:48:42.884 - PhaseRunner - INFO - Phase warmup progress | returned=349/355 | sent=350 | in_flight=1 | errors=0 | elapsed=1740.4s
+2026-11-17 04:49:12.898 - PhaseRunner - INFO - Phase warmup progress | returned=349/355 | sent=350 | in_flight=1 | errors=0 | elapsed=1770.4s

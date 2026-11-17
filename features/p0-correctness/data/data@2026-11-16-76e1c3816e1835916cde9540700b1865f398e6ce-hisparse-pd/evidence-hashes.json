@@ -1,0 +1,217 @@
+[
+ {
+  "file": ".gitattributes",
+  "source": "generated for this round",
+  "sha256": "ff678780f02f8f24cab3903b12a4bf568ba769edffd9994537dd8b830019a232"
+ },
+ {
+  "file": "2026-11-17-1730-alphabetc1-76e1c3816e-hisparse-pd-accuracy.md",
+  "source": "generated for this round",
+  "sha256": "815e7dd2d06c30ecbdb1e2cd367b2d057ab7056bb263a11834ca85b0b9e30480"
+ },
+ {
+  "file": "evals/pd_base/sgl_eval_gpqa_20261116-193908/metrics.json",
+  "source": "raw run output, with endpoints and paths redacted; files over 256 KiB gzip-compressed",
+  "sha256": "6dc2695ac562c0c1f6a559f59ab2a28b1ad213d1d464a6b1721c0746cddb1762"
+ },
+ {
+  "file": "evals/pd_base/sgl_eval_gpqa_20261116-193908/output-rs0.jsonl.gz",
+  "source": "raw run output, with endpoints and paths redacted; files over 256 KiB gzip-compressed",
+  "sha256": "57a6a9790ed12ad670c80a42f93eb66998ea6a21f05e818bbbc81a6bf0d900ed"
+ },
+ {
+  "file": "evals/pd_base/sgl_eval_gpqa_20261116-193908/output-rs1.jsonl.gz",
+  "source": "raw run output, with endpoints and paths redacted; files over 256 KiB gzip-compressed",
+  "sha256": "06b385c34576a3c637ca9ecc30eea28acf445ac1b92b6fb85ec734f6a8e7545e"
+ },
+ {
+  "file": "evals/pd_base/sgl_eval_gpqa_20261116-214226/metrics.json",
+  "source": "raw run output, with endpoints and paths redacted; files over 256 KiB gzip-compressed",
+  "sha256": "413dc3d426d088a220a9cd45b256e371ae4f032272f1d455004dfa78fc660272"
+ },
+ {
+  "file": "evals/pd_base/sgl_eval_gpqa_20261116-214226/output-rs0.jsonl.gz",
+  "source": "raw run output, with endpoints and paths redacted; files over 256 KiB gzip-compressed",
+  "sha256": "1af6ce6aa8efafb736949ef896633528a951d3b84af9760274c471933909ef4c"
+ },
+ {
+  "file": "evals/pd_base/sgl_eval_gpqa_20261116-214226/output-rs1.jsonl.gz",
+  "source": "raw run output, with endpoints and paths redacted; files over 256 KiB gzip-compressed",
+  "sha256": "68ac66552be23162a94dfb57ec316cec0a316b02aa9a215f38faa878ae6e1152"
+ },
+ {
+  "file": "evals/pd_base/sgl_eval_gsm8k_20261116-193337/metrics.json",
+  "source": "raw run output, with endpoints and paths redacted; files over 256 KiB gzip-compressed",
+  "sha256": "8dd5bd78c2a5bbc8b8289275aa43f28c3893d56106c768499ea1708af252300e"
+ },
+ {
+  "file": "evals/pd_base/sgl_eval_gsm8k_20261116-193337/output-rs0.jsonl.gz",
+  "source": "raw run output, with endpoints and paths redacted; files over 256 KiB gzip-compressed",
+  "sha256": "0079f1e11f3446c1a811f17491997d407f4421a6b3676531ec9da1a99ff06781"
+ },
+ {
+  "file": "evals/pd_base/sgl_eval_ruler2_20261116-204403/metrics.json",
+  "source": "raw run output, with endpoints and paths redacted; files over 256 KiB gzip-compressed",
+  "sha256": "9bc252c8838f640e08a10a0f619d8e805c2fdada40841d7e75bc1bac29fa25e5"
+ },
+ {
+  "file": "evals/pd_base/sgl_eval_ruler2_20261116-204403/output-rs0.jsonl.gz",
+  "source": "raw run output, with endpoints and paths redacted; files over 256 KiB gzip-compressed",
+  "sha256": "877d5c729d6a81b650f8a8cffd42c9160731cb0fe8fbfaa63a9ffde3126516ae"
+ },
+ {
+  "file": "evals/pd_hs/sgl_eval_gpqa_20261117-002932/metrics.json",
+  "source": "raw run output, with endpoints and paths redacted; files over 256 KiB gzip-compressed",
+  "sha256": "5cbabb0470ff1d3236c1b89b4748ceaeda3287c9656f7d24987eab5e3747e84f"
+ },
+ {
+  "file": "evals/pd_hs/sgl_eval_gpqa_20261117-002932/output-rs0.jsonl.gz",
+  "source": "raw run output, with endpoints and paths redacted; files over 256 KiB gzip-compressed",
+  "sha256": "5f0c229705e05ede38feb5c4aee2261fda758d196e5b39b5116456864a2bcdbf"
+ },
+ {
+  "file": "evals/pd_hs/sgl_eval_gpqa_20261117-002932/output-rs1.jsonl.gz",
+  "source": "raw run output, with endpoints and paths redacted; files over 256 KiB gzip-compressed",
+  "sha256": "14387c368846d13b79794dc7eb05bae96a08c59c55b70900f4fddedced719ca7"
+ },
+ {
+  "file": "evals/pd_hs/sgl_eval_gsm8k_20261117-002538/metrics.json",
+  "source": "raw run output, with endpoints and paths redacted; files over 256 KiB gzip-compressed",
+  "sha256": "90f5dd8d52102daf89f29f3f03bd8b75a13b321ea91de68d795b89aaea8eb834"
+ },
+ {
+  "file": "evals/pd_hs/sgl_eval_gsm8k_20261117-002538/output-rs0.jsonl.gz",
+  "source": "raw run output, with endpoints and paths redacted; files over 256 KiB gzip-compressed",
+  "sha256": "b9682cde3fa493bf4abaab07876a38c88d731f6d905b654c1fc27b83266ce277"
+ },
+ {
+  "file": "evals/pd_hs/sgl_eval_ruler2_20261117-020513/metrics.json",
+  "source": "raw run output, with endpoints and paths redacted; files over 256 KiB gzip-compressed",
+  "sha256": "fe012bd1beba1b6a38bf97d7c17e0331526659037df01ad5f10c57ea2e851c1e"
+ },
+ {
+  "file": "evals/pd_hs/sgl_eval_ruler2_20261117-020513/output-rs0.jsonl.gz",
+  "source": "raw run output, with endpoints and paths redacted; files over 256 KiB gzip-compressed",
+  "sha256": "3dd7641808ddbc8e02d3653d9e8362c263a91ada1400556ab5b694fa587edafc"
+ },
+ {
+  "file": "logs/pd_acc_base.out",
+  "source": "raw run output, with endpoints and paths redacted; files over 256 KiB gzip-compressed",
+  "sha256": "2d9472adb2c40bd906a42ea34676ef72cc47e567c457f789eb97946d8d59c719"
+ },
+ {
+  "file": "logs/pd_acc_base2.out",
+  "source": "raw run output, with endpoints and paths redacted; files over 256 KiB gzip-compressed",
+  "sha256": "8246aa53d49c5f2f0e6bcf06ee1f2ac9ab2258efe594908c2d63985598f31f0f"
+ },
+ {
+  "file": "logs/pd_acc_base3.out",
+  "source": "raw run output, with endpoints and paths redacted; files over 256 KiB gzip-compressed",
+  "sha256": "9f4e4c7b228a68a93fbc11fe6e31c98b60f4efe3429385b9a58677930e7cf0d9"
+ },
+ {
+  "file": "logs/pd_acc_hs.out",
+  "source": "raw run output, with endpoints and paths redacted; files over 256 KiB gzip-compressed",
+  "sha256": "2f180670e00c88ccb1d5bffe52a709716294567a3a1b23051ef44c6107edc1f0"
+ },
+ {
+  "file": "logs/pd_base_gpqa.log.gz",
+  "source": "raw run output, with endpoints and paths redacted; files over 256 KiB gzip-compressed",
+  "sha256": "2b253f6086a7117fff3e2b9ae7e7062e084c8081d137859ae7b3668f39d6895d"
+ },
+ {
+  "file": "logs/pd_base_gpqa.t128.log.gz",
+  "source": "raw run output, with endpoints and paths redacted; files over 256 KiB gzip-compressed",
+  "sha256": "3e10b997b2aaa8ebfc6151649cf45d44aa81e3f7fc5fe34daf5799d64f432d9b"
+ },
+ {
+  "file": "logs/pd_base_gsm8k.log",
+  "source": "raw run output, with endpoints and paths redacted; files over 256 KiB gzip-compressed",
+  "sha256": "c473ad3d09b6bc68ec5eaf904f7e4be932a694769d506605db3516c0b01086ce"
+ },
+ {
+  "file": "logs/pd_base_ruler2.log.gz",
+  "source": "raw run output, with endpoints and paths redacted; files over 256 KiB gzip-compressed",
+  "sha256": "d020fae34e51ddce7ea6fa18a9a322d9290267776a0c377aada3193a56203e68"
+ },
+ {
+  "file": "logs/pd_decode_base.acc.log.gz",
+  "source": "raw run output, with endpoints and paths redacted; files over 256 KiB gzip-compressed",
+  "sha256": "b808d00ab30629bffd53091d657012c2b1fb1793e0a6d422a6cfeba1034de47b"
+ },
+ {
+  "file": "logs/pd_decode_hs.lenbug.log.gz",
+  "source": "raw run output, with endpoints and paths redacted; files over 256 KiB gzip-compressed",
+  "sha256": "f84f00fd835b1b887fa85c4b243659fc2ae57c62ac2b65efd5ae2a7ca368b63e"
+ },
+ {
+  "file": "logs/pd_hs_gpqa.log.gz",
+  "source": "raw run output, with endpoints and paths redacted; files over 256 KiB gzip-compressed",
+  "sha256": "4c8dbb3c6f4bdac4b49bcf2f678197359fbf3920dafdec28df7807ee2bf8a0ce"
+ },
+ {
+  "file": "logs/pd_hs_gsm8k.log",
+  "source": "raw run output, with endpoints and paths redacted; files over 256 KiB gzip-compressed",
+  "sha256": "cbcaf4a715013a326f769e4c418aa56e80680c54bcbfb894a2cf7adbc1668be2"
+ },
+ {
+  "file": "logs/pd_hs_ruler2.log.gz",
+  "source": "raw run output, with endpoints and paths redacted; files over 256 KiB gzip-compressed",
+  "sha256": "91c19a094cb4ee77121cc7c88c1cca9f37992472891def29f50148238be5e173"
+ },
+ {
+  "file": "logs/pd_master.r1.log.gz",
+  "source": "raw run output, with endpoints and paths redacted; files over 256 KiB gzip-compressed",
+  "sha256": "5bc57dd36cbb549095b029397037daf3cae5c653158d8e5b509361e6bfdcc543"
+ },
+ {
+  "file": "logs/pd_prefill.r1.log.gz",
+  "source": "raw run output, with endpoints and paths redacted; files over 256 KiB gzip-compressed",
+  "sha256": "b54725993c930aa1069905be103ade9ee73ed4793c8e227ed6bfd224180a258f"
+ },
+ {
+  "file": "logs/pd_router.r1.log",
+  "source": "raw run output, with endpoints and paths redacted; files over 256 KiB gzip-compressed",
+  "sha256": "10d18e7e2465ed3bb51cc03ee200798da005b8d9e71a73ecfdf224f0a919c020"
+ },
+ {
+  "file": "repro.md",
+  "source": "generated for this round",
+  "sha256": "0fa32f8c5df06b68da2b8e982d251c81894a3cbf4738bccd8d312d0ae9f3993e"
+ },
+ {
+  "file": "scripts/pd_acc.sh",
+  "source": "run script as executed, with endpoints and paths redacted",
+  "sha256": "51d9b726cd57d35e2fc5340dd6f2da2d877b648550324cfe8766a08e9f440d2f"
+ },
+ {
+  "file": "scripts/pd_decode.sh",
+  "source": "run script as executed, with endpoints and paths redacted",
+  "sha256": "a221f9cfd017f34f90846e8f568573ec8f01996d05ecd26ca3e5eabf047f40a7"
+ },
+ {
+  "file": "scripts/pd_env.sh",
+  "source": "run script as executed, with endpoints and paths redacted",
+  "sha256": "fdc65117ae93fb9c39299d6b688e46aa5ef790e92acd15ec2e9d086949ee5ea1"
+ },
+ {
+  "file": "scripts/pd_master.sh",
+  "source": "run script as executed, with endpoints and paths redacted",
+  "sha256": "cca4a1d9d89fd100e106df7f154def04318854cc869ef7626457937bb0649645"
+ },
+ {
+  "file": "scripts/pd_prefill.sh",
+  "source": "run script as executed, with endpoints and paths redacted",
+  "sha256": "621855116b84f814c71a8a4468c3b3e51d0d25e0a2c792aecd11b7a18151efcc"
+ },
+ {
+  "file": "scripts/pd_router.sh",
+  "source": "run script as executed, with endpoints and paths redacted",
+  "sha256": "3f8eabfe445b1508610c4bc5194f4a36c20ce731ace36d325c1bb919f5b758f3"
+ },
+ {
+  "file": "without-request-capacity.patch",
+  "source": "generated for this round",
+  "sha256": "2a3b031f91bc1cf97735e6391b4aa223d30d8337b2a282601bee9849c9f846ba"
+ }
+]

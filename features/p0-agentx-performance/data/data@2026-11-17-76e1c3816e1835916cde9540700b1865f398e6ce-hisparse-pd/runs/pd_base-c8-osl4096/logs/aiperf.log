@@ -1,0 +1,538 @@
+2026-11-17 08:52:52.263 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-11-17 08:52:52.264 - aiperf.common.scenario.validator - INFO - Scenario 'agentx': setting profiling-phase timing_mode=agentic_replay.
+2026-11-17 08:52:52.265 - aiperf.common.scenario.validator - INFO - Scenario 'agentx': injecting extra_inputs.ignore_eos=true (was absent).
+2026-11-17 08:52:52.265 - aiperf.common.scenario.validator - INFO - Scenario 'agentx': auto-set --cache-bust=first_turn_prefix (was at default none).
+2026-11-17 08:52:52.265 - aiperf.common.scenario.validator - INFO - Scenario 'agentx': auto-set --system-idle-gap-cap-seconds=10.0 (was unset).
+2026-11-17 08:52:52.432 - system_controller - INFO - GPU telemetry disabled via --no-gpu-telemetry
+2026-11-17 08:52:52.454 - system_controller - INFO - Registered Dataset Manager (id: 'dataset_manager')
+2026-11-17 08:52:52.455 - server_metrics_manager - INFO - Server Metrics: Discovered 1 endpoints: ['http://<PREFILL_NODE_IP>:32022/metrics']
+2026-11-17 08:52:52.458 - system_controller - INFO - Registered Server Metrics Manager (id: 'server_metrics_manager')
+2026-11-17 08:52:52.487 - OTelMetricsResultsProcessor_fb7e0ce1 - INFO - Telemetry streaming is disabled (set --otel-url and/or --mlflow-tracking-uri to enable)
+2026-11-17 08:52:52.488 - RecordExportJSONLWriter_bac67420 - INFO - Record metrics export enabled: $WORK/agentx/pd_base-c8-osl4096/profile_export.jsonl
+2026-11-17 08:52:52.493 - system_controller - INFO - Registered Records Manager (id: 'records_manager')
+2026-11-17 08:52:52.541 - system_controller - INFO - Registered Worker Manager (id: 'worker_manager')
+2026-11-17 08:52:52.585 - system_controller - INFO - Registered Record Processor (id: 'record_processor_c43a9199')
+2026-11-17 08:52:52.586 - system_controller - INFO - Registered Record Processor (id: 'record_processor_a10aa6d8')
+2026-11-17 08:52:52.651 - system_controller - INFO - Registered Timing Manager (id: 'timing_manager')
+2026-11-17 08:52:52.716 - system_controller - INFO - Registered Worker (id: 'worker_d892ae6a')
+2026-11-17 08:52:52.808 - system_controller - INFO - Registered Worker (id: 'worker_a14cdaf0')
+2026-11-17 08:52:52.810 - system_controller - INFO - Registered Worker (id: 'worker_74efa3e0')
+2026-11-17 08:52:52.810 - system_controller - INFO - Registered Worker (id: 'worker_69bdf5dd')
+2026-11-17 08:52:52.811 - system_controller - INFO - Registered Worker (id: 'worker_c976fb92')
+2026-11-17 08:52:52.811 - system_controller - INFO - Registered Worker (id: 'worker_ca016226')
+2026-11-17 08:52:52.812 - system_controller - INFO - Registered Worker (id: 'worker_eb4a66cb')
+2026-11-17 08:52:52.816 - system_controller - INFO - Registered Worker (id: 'worker_ed643a2e')
+2026-11-17 08:52:52.937 - system_controller - INFO - AIPerf System is CONFIGURING
+2026-11-17 08:52:52.937 - system_controller - INFO - Configuring all services to start profiling
+2026-11-17 08:52:52.938 - timing_manager - INFO - Waiting for dataset to be configured before configuring timing
+2026-11-17 08:52:52.938 - InferenceResultParser_e5379802 - INFO - Tokenization is disabled for this endpoint, skipping tokenizer configuration
+2026-11-17 08:52:52.938 - InferenceResultParser_c510c7a6 - INFO - Tokenization is disabled for this endpoint, skipping tokenizer configuration
+2026-11-17 08:52:52.941 - dataset_manager - INFO - Memory-mapped dataset cache HIT (key=c5646fe4cce86df393a8548b7f1f4fc8); skipping tokenizer + composer.
+2026-11-17 08:52:52.942 - aiperf.dataset.mmap_cache - INFO - Restored mmap cache file dataset.dat via hardlink in 0.000s (0.18 GiB)
+2026-11-17 08:52:52.942 - aiperf.dataset.mmap_cache - INFO - Restored mmap cache file index.dat via hardlink in 0.000s (0.00 GiB)
+2026-11-17 08:52:52.942 - aiperf.dataset.mmap_cache - INFO - Restored mmap cache files in 0.001s via dataset=hardlink index=hardlink (dataset=0.18 GiB, index=0.00 GiB)
+2026-11-17 08:52:53.003 - server_metrics_manager - INFO - Server Metrics: Capturing baseline metrics...
+2026-11-17 08:52:53.013 - dataset_manager - INFO - sampling strategy: sequential, unique conversations: 689, unique turn count: 5674
+2026-11-17 08:52:53.055 - aiperf.timing.trajectory_source - INFO - TrajectorySource: built 8 trajectories from 100 traces
+2026-11-17 08:52:53.055 - aiperf.timing.trajectory_source - INFO -   range cfg=[0.25, 0.75]  observed sample pct: min= 25% median= 47% max= 74%
+2026-11-17 08:52:53.055 - aiperf.timing.trajectory_source - INFO -     lane=00  sample_time= 38%  root_next=  5/33  ( 15% turns)  live=1 ready=1  trace_id=006c98de37d819e95b0840e25426bb7ca99d
+2026-11-17 08:52:53.055 - aiperf.timing.trajectory_source - INFO -     lane=01  sample_time= 50%  root_next=  3/7   ( 43% turns)  live=1 ready=1  trace_id=04dba6fe621301a1d01fd63b8d02c9645c48
+2026-11-17 08:52:53.055 - aiperf.timing.trajectory_source - INFO -     lane=02  sample_time= 45%  root_next= 49/52  ( 94% turns)  live=1 ready=1  trace_id=05f72f78a037cfa5cd4e4541960a574701d9
+2026-11-17 08:52:53.055 - aiperf.timing.trajectory_source - INFO -     lane=03  sample_time= 40%  root_next=  0/1   (  0% turns)  live=1 ready=1  trace_id=063179eb93f4337a662e859c5a2c5638e03f
+2026-11-17 08:52:53.055 - aiperf.timing.trajectory_source - INFO -     lane=04  sample_time= 49%  root_next= 26/34  ( 76% turns)  live=1 ready=1  trace_id=077ea9e6554f45bbad9c24a8462bae9a8512
+2026-11-17 08:52:53.055 - aiperf.timing.trajectory_source - INFO -     lane=05  sample_time= 25%  root_next=  8/9   ( 89% turns)  live=5 ready=4  trace_id=07dd40536557a1d6440a923557c3129dc929
+2026-11-17 08:52:53.055 - aiperf.timing.trajectory_source - INFO -     lane=06  sample_time= 74%  root_next= 21/31  ( 68% turns)  live=1 ready=1  trace_id=0a688303b1ae62a97607af8021f2130c2caf
+2026-11-17 08:52:53.055 - aiperf.timing.trajectory_source - INFO -     lane=07  sample_time= 66%  root_next= 19/24  ( 79% turns)  live=1 ready=1  trace_id=0bcd99353218b9a386b1c4aec13d77abecdb
+2026-11-17 08:52:53.056 - PhaseOrchestrator_33415a09 - INFO - Initialized 2 phase(s): ['Warmup', 'Profiling']
+2026-11-17 08:52:53.087 - http://<DECODE_NODE_IP>:32021/metrics - WARNING - Dropping non-finite (NaN/Inf) sample(s) from metric 'sglang:fwd_occupancy': 4 in this scrape; affected data will be missing from server_metrics_export. Further occurrences for this metric name will not be logged.
+2026-11-17 08:52:53.092 - system_controller - INFO - Server metrics enabled - 1/2 endpoint(s) reachable.
+2026-11-17 08:52:53.092 - system_controller - WARNING - Unreachable endpoints: http://<PREFILL_NODE_IP>:32022/metrics
+2026-11-17 08:52:53.093 - system_controller - INFO - Waiting for result domains: profile, server_metrics
+2026-11-17 08:52:53.143 - dataset_manager - INFO - Dataset client initialized and freed 0 conversations from memory
+2026-11-17 08:52:53.144 - system_controller - INFO - All services configured in 0.21 seconds
+2026-11-17 08:52:53.144 - system_controller - INFO - AIPerf System is CONFIGURED
+2026-11-17 08:52:53.145 - server_metrics_manager - INFO - Server Metrics: Started 1 collector(s) successfully
+2026-11-17 08:52:53.145 - system_controller - INFO - All services started profiling successfully
+2026-11-17 08:52:53.145 - system_controller - INFO - AIPerf System is PROFILING
+2026-11-17 08:52:53.152 - PhaseRunner - NOTICE - Phase warmup (warmup) started | target: 18 requests
+2026-11-17 08:52:53.152 - AgenticReplayTiming - INFO - WARMUP execute: dispatching 10 trajectory credits
+2026-11-17 08:52:53.152 - AgenticReplayTiming - INFO - WARMUP count budget: 1 additional requests per lane after 10 mandatory snapshot primers
+2026-11-17 08:52:53.152 - records_manager - INFO - Credit phase start: warmup
+2026-11-17 08:52:53.152 - AgenticReplayTiming - INFO - WARMUP spread: 9.3s ramp aligning 10 request(s) on t* (earliest fires at 0, last at 9.3s)
+2026-11-17 08:53:23.160 - PhaseRunner - INFO - Phase warmup progress | returned=0/18 | sent=10 | in_flight=10 | errors=0 | elapsed=30.0s
+2026-11-17 08:53:53.167 - PhaseRunner - INFO - Phase warmup progress | returned=0/18 | sent=10 | in_flight=10 | errors=0 | elapsed=60.0s
+2026-11-17 08:54:10.895 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 1, diff 409500.0%)
+2026-11-17 08:54:17.570 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 1, diff 409500.0%)
+2026-11-17 08:54:18.571 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 1, diff 409500.0%)
+2026-11-17 08:54:23.174 - PhaseRunner - INFO - Phase warmup progress | returned=3/18 | sent=10 | in_flight=7 | errors=0 | elapsed=90.0s
+2026-11-17 08:54:28.360 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 1, diff 409500.0%)
+2026-11-17 08:54:29.864 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 1, diff 409500.0%)
+2026-11-17 08:54:32.391 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 1, diff 409500.0%)
+2026-11-17 08:54:36.690 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 1, diff 409500.0%)
+2026-11-17 08:54:39.428 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 1, diff 409500.0%)
+2026-11-17 08:54:49.069 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 1, diff 409500.0%)
+2026-11-17 08:54:49.742 - aiperf.timing.replay_dependencies - INFO - Replay interval barriers active: 5674 requests, 2291 gated turns, join-widths={1: 1983, 2: 265, 3: 14, 4: 18, 5: 11}
+2026-11-17 08:54:49.742 - AgenticReplayTiming - INFO - WARMUP cache pressure: replaying live trajectories until each lane reaches 1 additional requests with zero idle delay and max_tokens=1
+2026-11-17 08:54:49.743 - AgenticReplayTiming - INFO - WARMUP cache pressure request budget reached: 1 additional requests on each of 8 lanes; draining requests
+2026-11-17 08:54:49.744 - PhaseRunner - NOTICE - Phase warmup (warmup) sending complete | sent=18, completed=10, in_flight=8 | sessions: sent=7, completed=0
+2026-11-17 08:54:49.751 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 1, diff 409500.0%)
+2026-11-17 08:54:53.180 - PhaseRunner - INFO - Phase warmup progress | returned=10/18 | sent=18 | in_flight=8 | errors=0 | elapsed=120.0s
+2026-11-17 08:55:23.184 - PhaseRunner - INFO - Phase warmup progress | returned=10/18 | sent=18 | in_flight=8 | errors=0 | elapsed=150.0s
+2026-11-17 08:55:33.510 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 1, diff 409500.0%)
+2026-11-17 08:55:37.206 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 1, diff 409500.0%)
+2026-11-17 08:55:50.510 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 1, diff 409500.0%)
+2026-11-17 08:55:53.191 - PhaseRunner - INFO - Phase warmup progress | returned=13/18 | sent=18 | in_flight=5 | errors=0 | elapsed=180.0s
+2026-11-17 08:55:55.389 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 1, diff 409500.0%)
+2026-11-17 08:55:56.844 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 1, diff 409500.0%)
+2026-11-17 08:56:00.403 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 1, diff 409500.0%)
+2026-11-17 08:56:06.768 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 1, diff 409500.0%)
+2026-11-17 08:56:16.818 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 1, diff 409500.0%)
+2026-11-17 08:56:16.835 - PhaseRunner - INFO - All accelerated-warmup wire requests returned; preserving paused DAG work for profiling handoff.
+2026-11-17 08:56:16.836 - PhaseRunner - NOTICE - Phase warmup (warmup) complete | completed=18, cancelled=0, errors=0 | sessions: completed=0, cancelled=0 | elapsed=203.68s
+2026-11-17 08:56:16.836 - AgenticReplayTiming - INFO - Global system-idle cap summary: limit=10s, jumps=0, skipped=0.000s
+2026-11-17 08:56:16.836 - server_metrics_manager - INFO - Server Metrics: Warmup complete, capturing final warmup metrics...
+2026-11-17 08:56:16.837 - AgenticReplayTiming - INFO - WARMUP cache pressure handoff: persisted 12 live streams
+2026-11-17 08:56:16.837 - aiperf.timing.branch_orchestrator - INFO - BranchOrchestrator stats: spawned=5 completed=0 errored=0 suspended=1 resumed=0 parents_failed_due_to_child_error=0 joins_suppressed=0 delayed=0
+2026-11-17 08:56:16.837 - PhaseRunner - INFO - Session-tree slots for phase warmup: peak_open=8 (target concurrency 8); released 8 still-open at teardown; late_events=0
+2026-11-17 08:56:16.845 - aiperf.timing.replay_dependencies - INFO - Replay interval barriers active: 5674 requests, 2291 gated turns, join-widths={1: 1983, 2: 265, 3: 14, 4: 18, 5: 11}
+2026-11-17 08:56:16.845 - AgenticReplayTiming - INFO - PROFILING setup: 8 trajectory lanes; recycle draws roots from the dataset sampler
+2026-11-17 08:56:16.845 - AgenticReplayTiming - INFO - PROFILING: 1 rootless + 1 gated-parent lanes of 8 dispatch no root credit at start and hold a lane credit instead (so they still count toward concurrency); rootless lanes recycle into a fresh root once their background subagents drain
+2026-11-17 08:56:16.845 - PhaseRunner - NOTICE - Phase profiling (profiling) started | phase_index=0 | profiling_index=0 | target: 900.0s duration
+2026-11-17 08:56:16.846 - records_manager - INFO - Credit phase start: profiling
+2026-11-17 08:56:16.846 - PhaseRunner - INFO - Waiting for event 'profiling phase sending' with timeout of 899.999200123s
+2026-11-17 08:56:16.846 - AgenticReplayTiming - INFO - PROFILING execute: resuming 8 trajectory sessions (spread; first-request spread 52157.1s)
+2026-11-17 08:57:05.265 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 120, diff 3313.3%)
+2026-11-17 08:57:22.517 - records_manager - INFO - [realtime 01:05 profiling]
+2026-11-17 08:57:22.517 - records_manager - INFO -   rps=0.0 (avg 0.0)  tput_in=698/s  tput_out=85/s  done=1 ok=1 err=0
+2026-11-17 08:57:22.517 - records_manager - INFO -   ttft    p50=   685ms  p75=   685ms  p95=   685ms  p99=   685ms
+2026-11-17 08:57:22.517 - records_manager - INFO -   itl     p50=    12ms  p75=    12ms  p95=    12ms  p99=    12ms
+2026-11-17 08:57:22.517 - records_manager - INFO -   e2e     p50=48,405ms  p75=48,405ms  p95=48,405ms  p99=48,405ms
+2026-11-17 08:57:22.518 - records_manager - INFO -   intvty  p50=      86  p75=      86  p95=      86  p99=      86  (1/tpot tok/s)
+2026-11-17 08:57:22.518 - records_manager - INFO -   isl     p50=  33,805  p75=  33,805  p90=  33,805  p99=  33,805  (tokens)
+2026-11-17 08:57:22.518 - records_manager - INFO -   osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=   4,096  (tokens)
+2026-11-17 08:57:22.518 - records_manager - INFO -   tot     in=33,805  out=4,096
+2026-11-17 08:57:22.518 - records_manager - INFO -   trace  theoretical_prefix_cache_hit=95.0%
+2026-11-17 08:57:22.518 - records_manager - INFO -   srv    prefix_cache_hit=91.3% unique_in_srv=2,957 kv_usage=26.0% queue=1r/0w tput_in_srv=518/s tput_out_srv=63/s
+2026-11-17 08:57:25.508 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 125, diff 3176.8%)
+2026-11-17 08:57:26.127 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 204, diff 1907.8%)
+2026-11-17 08:57:52.523 - records_manager - INFO - [realtime 01:35 profiling]
+2026-11-17 08:57:52.523 - records_manager - INFO -   rps=0.1 (avg 0.0)  tput_in=1,670/s  tput_out=177/s  done=3 ok=3 err=0
+2026-11-17 08:57:52.523 - records_manager - INFO -   ttft    p50=   685ms  p75=   748ms  p95=   798ms  p99=   808ms
+2026-11-17 08:57:52.523 - records_manager - INFO -   itl     p50=    15ms  p75=    16ms  p95=    16ms  p99=    16ms
+2026-11-17 08:57:52.523 - records_manager - INFO -   e2e     p50=62,878ms  p75=64,303ms  p95=65,443ms  p99=65,671ms
+2026-11-17 08:57:52.523 - records_manager - INFO -   intvty  p50=      66  p75=      76  p95=      84  p99=      85  (1/tpot tok/s)
+2026-11-17 08:57:52.523 - records_manager - INFO -   isl     p50=  33,805  p75=  42,452  p90=  47,639  p99=  50,752  (tokens)
+2026-11-17 08:57:52.523 - records_manager - INFO -   osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=   4,096  (tokens)
+2026-11-17 08:57:52.523 - records_manager - INFO -   tot     in=115,701  out=12,288
+2026-11-17 08:57:52.523 - records_manager - INFO -   trace  theoretical_prefix_cache_hit=94.9%
+2026-11-17 08:57:52.523 - records_manager - INFO -   srv    prefix_cache_hit=88.8% unique_in_srv=12,917 kv_usage=28.0% queue=1r/0w tput_in_srv=1,214/s tput_out_srv=129/s
+2026-11-17 08:58:08.634 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 222, diff 1745.0%)
+2026-11-17 08:58:22.244 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 207, diff 1878.7%)
+2026-11-17 08:58:22.528 - records_manager - INFO - [realtime 02:05 profiling]
+2026-11-17 08:58:22.529 - records_manager - INFO -   rps=0.1 (avg 0.0)  tput_in=1,691/s  tput_out=163/s  done=5 ok=5 err=0
+2026-11-17 08:58:22.529 - records_manager - INFO -   ttft    p50=   685ms  p75=   686ms  p95=   786ms  p99=   806ms
+2026-11-17 08:58:22.529 - records_manager - INFO -   itl     p50=    15ms  p75=    15ms  p95=    16ms  p99=    16ms
+2026-11-17 08:58:22.529 - records_manager - INFO -   e2e     p50=62,693ms  p75=62,878ms  p95=65,158ms  p99=65,614ms
+2026-11-17 08:58:22.529 - records_manager - INFO -   intvty  p50=      66  p75=      75  p95=      84  p99=      85  (1/tpot tok/s)
+2026-11-17 08:58:22.529 - records_manager - INFO -   isl     p50=  38,798  p75=  51,098  p90=  54,901  p99=  57,183  (tokens)
+2026-11-17 08:58:22.529 - records_manager - INFO -   osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=   4,096  (tokens)
+2026-11-17 08:58:22.529 - records_manager - INFO -   tot     in=211,936  out=20,480
+2026-11-17 08:58:22.529 - records_manager - INFO -   trace  theoretical_prefix_cache_hit=94.5%
+2026-11-17 08:58:22.529 - records_manager - INFO -   srv    prefix_cache_hit=88.4% unique_in_srv=17,923 kv_usage=30.0% queue=1r/0w tput_in_srv=1,233/s tput_out_srv=131/s
+2026-11-17 08:58:29.256 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 140, diff 2825.7%)
+2026-11-17 08:58:52.535 - records_manager - INFO - [realtime 02:35 profiling]
+2026-11-17 08:58:52.536 - records_manager - INFO -   rps=0.0 (avg 0.0)  tput_in=1,852/s  tput_out=186/s  done=6 ok=6 err=0
+2026-11-17 08:58:52.536 - records_manager - INFO -   ttft    p50=   675ms  p75=   686ms  p95=   779ms  p99=   804ms
+2026-11-17 08:58:52.536 - records_manager - INFO -   itl     p50=    15ms  p75=    15ms  p95=    16ms  p99=    16ms
+2026-11-17 08:58:52.536 - records_manager - INFO -   e2e     p50=62,785ms  p75=63,018ms  p95=65,062ms  p99=65,595ms
+2026-11-17 08:58:52.536 - records_manager - INFO -   intvty  p50=      66  p75=      73  p95=      83  p99=      85  (1/tpot tok/s)
+2026-11-17 08:58:52.536 - records_manager - INFO -   isl     p50=  36,302  p75=  48,023  p90=  54,268  p99=  57,120  (tokens)
+2026-11-17 08:58:52.536 - records_manager - INFO -   osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=   4,096  (tokens)
+2026-11-17 08:58:52.536 - records_manager - INFO -   tot     in=245,168  out=24,576
+2026-11-17 08:58:52.536 - records_manager - INFO -   trace  theoretical_prefix_cache_hit=94.4%
+2026-11-17 08:58:52.536 - records_manager - INFO -   srv    prefix_cache_hit=89.1% unique_in_srv=26,736 kv_usage=47.0% queue=1r/0w tput_in_srv=1,579/s tput_out_srv=158/s
+2026-11-17 08:59:18.994 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 138, diff 2868.1%)
+2026-11-17 08:59:19.932 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 200, diff 1948.0%)
+2026-11-17 08:59:22.544 - records_manager - INFO - [realtime 03:05 profiling]
+2026-11-17 08:59:22.544 - records_manager - INFO -   rps=0.1 (avg 0.0)  tput_in=1,942/s  tput_out=179/s  done=8 ok=8 err=0
+2026-11-17 08:59:22.544 - records_manager - INFO -   ttft    p50=   675ms  p75=   717ms  p95= 1,095ms  p99= 1,218ms
+2026-11-17 08:59:22.544 - records_manager - INFO -   itl     p50=    14ms  p75=    15ms  p95=    16ms  p99=    16ms
+2026-11-17 08:59:22.544 - records_manager - INFO -   e2e     p50=59,614ms  p75=62,925ms  p95=64,796ms  p99=65,541ms
+2026-11-17 08:59:22.544 - records_manager - INFO -   intvty  p50=      70  p75=      78  p95=      86  p99=      86  (1/tpot tok/s)
+2026-11-17 08:59:22.545 - records_manager - INFO -   isl     p50=  43,402  p75=  52,683  p90=  58,916  p99=  62,023  (tokens)
+2026-11-17 08:59:22.545 - records_manager - INFO -   osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=   4,096  (tokens)
+2026-11-17 08:59:22.545 - records_manager - INFO -   tot     in=355,541  out=32,768
+2026-11-17 08:59:22.545 - records_manager - INFO -   trace  theoretical_prefix_cache_hit=93.7%
+2026-11-17 08:59:22.545 - records_manager - INFO -   srv    prefix_cache_hit=86.9% unique_in_srv=46,485 kv_usage=48.0% queue=1r/0w tput_in_srv=1,919/s tput_out_srv=177/s
+2026-11-17 08:59:24.845 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 141, diff 2805.0%)
+2026-11-17 08:59:37.293 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 1188, diff 244.8%)
+2026-11-17 08:59:52.554 - records_manager - INFO - [realtime 03:35 profiling]
+2026-11-17 08:59:52.554 - records_manager - INFO -   rps=0.1 (avg 0.0)  tput_in=2,487/s  tput_out=204/s  done=10 ok=10 err=0
+2026-11-17 08:59:52.554 - records_manager - INFO -   ttft    p50=   675ms  p75=   749ms  p95= 1,051ms  p99= 1,209ms
+2026-11-17 08:59:52.554 - records_manager - INFO -   itl     p50=    15ms  p75=    15ms  p95=    17ms  p99=    18ms
+2026-11-17 08:59:52.554 - records_manager - INFO -   e2e     p50=62,785ms  p75=63,897ms  p95=71,064ms  p99=74,556ms
+2026-11-17 08:59:52.554 - records_manager - INFO -   intvty  p50=      66  p75=      75  p95=      86  p99=      86  (1/tpot tok/s)
+2026-11-17 08:59:52.554 - records_manager - INFO -   isl     p50=  47,178  p75=  55,852  p90=  65,780  p99=  93,418  (tokens)
+2026-11-17 08:59:52.554 - records_manager - INFO -   osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=   4,096  (tokens)
+2026-11-17 08:59:52.555 - records_manager - INFO -   tot     in=498,382  out=40,960
+2026-11-17 08:59:52.555 - records_manager - INFO -   trace  theoretical_prefix_cache_hit=93.7%
+2026-11-17 08:59:52.555 - records_manager - INFO -   srv    prefix_cache_hit=88.9% unique_in_srv=55,502 kv_usage=49.0% queue=1r/0w tput_in_srv=2,315/s tput_out_srv=190/s
+2026-11-17 09:00:10.837 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 145, diff 2724.8%)
+2026-11-17 09:00:22.559 - records_manager - INFO - [realtime 04:05 profiling]
+2026-11-17 09:00:22.560 - records_manager - INFO -   rps=0.0 (avg 0.0)  tput_in=2,420/s  tput_out=193/s  done=11 ok=11 err=0
+2026-11-17 09:00:22.560 - records_manager - INFO -   ttft    p50=   665ms  p75=   728ms  p95= 1,030ms  p99= 1,205ms
+2026-11-17 09:00:22.560 - records_manager - INFO -   itl     p50=    15ms  p75=    15ms  p95=    17ms  p99=    18ms
+2026-11-17 09:00:22.560 - records_manager - INFO -   e2e     p50=62,693ms  p75=63,620ms  p95=70,579ms  p99=74,459ms
+2026-11-17 09:00:22.560 - records_manager - INFO -   intvty  p50=      66  p75=      81  p95=      87  p99=      89  (1/tpot tok/s)
+2026-11-17 09:00:22.560 - records_manager - INFO -   isl     p50=  48,005  p75=  59,902  p90=  67,809  p99=  93,621  (tokens)
+2026-11-17 09:00:22.560 - records_manager - INFO -   osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=   4,096  (tokens)
+2026-11-17 09:00:22.560 - records_manager - INFO -   tot     in=566,191  out=45,056
+2026-11-17 09:00:22.560 - records_manager - INFO -   trace  theoretical_prefix_cache_hit=93.6%
+2026-11-17 09:00:22.560 - records_manager - INFO -   srv    prefix_cache_hit=89.2% unique_in_srv=60,975 kv_usage=74.0% queue=2r/0w tput_in_srv=2,305/s tput_out_srv=183/s
+2026-11-17 09:00:31.016 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 139, diff 2846.8%)
+2026-11-17 09:00:31.548 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 922, diff 344.3%)
+2026-11-17 09:00:44.263 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 219, diff 1770.3%)
+2026-11-17 09:00:52.565 - records_manager - INFO - [realtime 04:35 profiling]
+2026-11-17 09:00:52.565 - records_manager - INFO -   rps=0.1 (avg 0.1)  tput_in=2,921/s  tput_out=214/s  done=14 ok=14 err=0
+2026-11-17 09:00:52.565 - records_manager - INFO -   ttft    p50=   675ms  p75=   756ms  p95= 1,423ms  p99= 1,683ms
+2026-11-17 09:00:52.565 - records_manager - INFO -   itl     p50=    15ms  p75=    16ms  p95=    19ms  p99=    19ms
+2026-11-17 09:00:52.565 - records_manager - INFO -   e2e     p50=62,785ms  p75=65,339ms  p95=76,484ms  p99=78,050ms
+2026-11-17 09:00:52.565 - records_manager - INFO -   intvty  p50=      66  p75=      78  p95=      87  p99=      89  (1/tpot tok/s)
+2026-11-17 09:00:52.565 - records_manager - INFO -   isl     p50=  49,552  p75=  65,423  p90=  87,885  p99= 100,171  (tokens)
+2026-11-17 09:00:52.565 - records_manager - INFO -   osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=   4,096  (tokens)
+2026-11-17 09:00:52.566 - records_manager - INFO -   tot     in=780,990  out=57,344
+2026-11-17 09:00:52.566 - records_manager - INFO -   trace  theoretical_prefix_cache_hit=93.1%
+2026-11-17 09:00:52.566 - records_manager - INFO -   srv    prefix_cache_hit=89.1% unique_in_srv=84,990 kv_usage=50.0% queue=1r/0w tput_in_srv=2,834/s tput_out_srv=208/s
+2026-11-17 09:01:04.693 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 142, diff 2784.5%)
+2026-11-17 09:01:22.570 - records_manager - INFO - [realtime 05:05 profiling]
+2026-11-17 09:01:22.570 - records_manager - INFO -   rps=0.0 (avg 0.1)  tput_in=3,002/s  tput_out=213/s  done=15 ok=15 err=0
+2026-11-17 09:01:22.570 - records_manager - INFO -   ttft    p50=   685ms  p75=   790ms  p95= 1,512ms  p99= 1,701ms
+2026-11-17 09:01:22.570 - records_manager - INFO -   itl     p50=    15ms  p75=    16ms  p95=    18ms  p99=    19ms
+2026-11-17 09:01:22.570 - records_manager - INFO -   e2e     p50=62,693ms  p75=64,951ms  p95=76,333ms  p99=78,020ms
+2026-11-17 09:01:22.570 - records_manager - INFO -   intvty  p50=      66  p75=      80  p95=      87  p99=      89  (1/tpot tok/s)
+2026-11-17 09:01:22.570 - records_manager - INFO -   isl     p50=  51,098  p75=  67,125  p90=  91,160  p99= 100,129  (tokens)
+2026-11-17 09:01:22.570 - records_manager - INFO -   osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=   4,096  (tokens)
+2026-11-17 09:01:22.570 - records_manager - INFO -   tot     in=864,156  out=61,440
+2026-11-17 09:01:22.571 - records_manager - INFO -   trace  theoretical_prefix_cache_hit=92.7%
+2026-11-17 09:01:22.571 - records_manager - INFO -   srv    prefix_cache_hit=88.4% unique_in_srv=100,380 kv_usage=87.0% queue=2r/0w tput_in_srv=2,828/s tput_out_srv=201/s
+2026-11-17 09:01:29.875 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 743, diff 451.3%)
+2026-11-17 09:01:34.543 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 222, diff 1745.0%)
+2026-11-17 09:01:52.577 - records_manager - INFO - [realtime 05:35 profiling]
+2026-11-17 09:01:52.577 - records_manager - INFO -   rps=0.1 (avg 0.1)  tput_in=3,210/s  tput_out=219/s  done=17 ok=17 err=0
+2026-11-17 09:01:52.577 - records_manager - INFO -   ttft    p50=   685ms  p75=   770ms  p95= 1,478ms  p99= 1,694ms
+2026-11-17 09:01:52.577 - records_manager - INFO -   itl     p50=    14ms  p75=    16ms  p95=    18ms  p99=    19ms
+2026-11-17 09:01:52.577 - records_manager - INFO -   e2e     p50=56,535ms  p75=64,175ms  p95=76,032ms  p99=77,959ms
+2026-11-17 09:01:52.577 - records_manager - INFO -   intvty  p50=      73  p75=      84  p95=      87  p99=      89  (1/tpot tok/s)
+2026-11-17 09:01:52.578 - records_manager - INFO -   isl     p50=  51,989  p75=  67,809  p90=  98,182  p99= 103,140  (tokens)
+2026-11-17 09:01:52.578 - records_manager - INFO -   osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=   4,096  (tokens)
+2026-11-17 09:01:52.578 - records_manager - INFO -   tot     in=1,019,746  out=69,632
+2026-11-17 09:01:52.578 - records_manager - INFO -   trace  theoretical_prefix_cache_hit=92.9%
+2026-11-17 09:01:52.578 - records_manager - INFO -   srv    prefix_cache_hit=89.4% unique_in_srv=107,682 kv_usage=92.0% queue=2r/0w tput_in_srv=3,039/s tput_out_srv=207/s
+2026-11-17 09:01:54.325 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 229, diff 1688.6%)
+2026-11-17 09:02:08.604 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 866, diff 373.0%)
+2026-11-17 09:02:11.497 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 141, diff 2805.0%)
+2026-11-17 09:02:16.162 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 282, diff 1352.5%)
+2026-11-17 09:02:22.582 - records_manager - INFO - [realtime 06:05 profiling]
+2026-11-17 09:02:22.583 - records_manager - INFO -   rps=0.1 (avg 0.1)  tput_in=3,713/s  tput_out=239/s  done=21 ok=21 err=0
+2026-11-17 09:02:22.583 - records_manager - INFO -   ttft    p50=   686ms  p75=   811ms  p95= 2,018ms  p99= 2,528ms
+2026-11-17 09:02:22.583 - records_manager - INFO -   itl     p50=    14ms  p75=    16ms  p95=    19ms  p99=    20ms
+2026-11-17 09:02:22.583 - records_manager - INFO -   e2e     p50=59,303ms  p75=65,335ms  p95=78,441ms  p99=81,273ms
+2026-11-17 09:02:22.583 - records_manager - INFO -   intvty  p50=      71  p75=      83  p95=      86  p99=      88  (1/tpot tok/s)
+2026-11-17 09:02:22.583 - records_manager - INFO -   isl     p50=  62,368  p75=  83,166  p90=  96,489  p99= 103,025  (tokens)
+2026-11-17 09:02:22.583 - records_manager - INFO -   osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=   4,096  (tokens)
+2026-11-17 09:02:22.583 - records_manager - INFO -   tot     in=1,334,163  out=86,016
+2026-11-17 09:02:22.583 - records_manager - INFO -   trace  theoretical_prefix_cache_hit=93.1%
+2026-11-17 09:02:22.583 - records_manager - INFO -   srv    prefix_cache_hit=90.8% unique_in_srv=122,643 kv_usage=94.0% queue=2r/0w tput_in_srv=3,649/s tput_out_srv=235/s
+2026-11-17 09:02:26.047 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 246, diff 1565.0%)
+2026-11-17 09:02:27.660 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 684, diff 498.8%)
+2026-11-17 09:02:28.219 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 86, diff 4662.8%)
+2026-11-17 09:02:41.059 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 730, diff 461.1%)
+2026-11-17 09:02:51.704 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 1746, diff 134.6%)
+2026-11-17 09:02:52.588 - records_manager - INFO - [realtime 06:35 profiling]
+2026-11-17 09:02:52.589 - records_manager - INFO -   rps=0.2 (avg 0.1)  tput_in=4,583/s  tput_out=270/s  done=26 ok=26 err=0
+2026-11-17 09:02:52.589 - records_manager - INFO -   ttft    p50=   704ms  p75= 1,673ms  p95=11,149ms  p99=32,231ms
+2026-11-17 09:02:52.589 - records_manager - INFO -   itl     p50=    15ms  p75=    16ms  p95=    19ms  p99=    20ms
+2026-11-17 09:02:52.589 - records_manager - INFO -   e2e     p50=62,785ms  p75=69,160ms  p95=83,644ms  p99=92,184ms
+2026-11-17 09:02:52.589 - records_manager - INFO -   intvty  p50=      69  p75=      80  p95=      86  p99=      88  (1/tpot tok/s)
+2026-11-17 09:02:52.589 - records_manager - INFO -   isl     p50=  66,854  p75=  91,424  p90= 104,388  p99= 117,286  (tokens)
+2026-11-17 09:02:52.589 - records_manager - INFO -   osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=   4,096  (tokens)
+2026-11-17 09:02:52.589 - records_manager - INFO -   tot     in=1,809,439  out=106,496
+2026-11-17 09:02:52.589 - records_manager - INFO -   trace  theoretical_prefix_cache_hit=93.8%
+2026-11-17 09:02:52.589 - records_manager - INFO -   srv    prefix_cache_hit=92.6% unique_in_srv=133,407 kv_usage=88.0% queue=2r/0w tput_in_srv=4,574/s tput_out_srv=269/s
+2026-11-17 09:02:58.684 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 755, diff 442.5%)
+2026-11-17 09:03:03.708 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 219, diff 1770.3%)
+2026-11-17 09:03:22.594 - records_manager - INFO - [realtime 07:05 profiling]
+2026-11-17 09:03:22.594 - records_manager - INFO -   rps=0.1 (avg 0.1)  tput_in=4,764/s  tput_out=282/s  done=28 ok=28 err=0
+2026-11-17 09:03:22.594 - records_manager - INFO -   ttft    p50=   742ms  p75= 1,816ms  p95=26,839ms  p99=37,085ms
+2026-11-17 09:03:22.594 - records_manager - INFO -   itl     p50=    14ms  p75=    16ms  p95=    19ms  p99=    20ms
+2026-11-17 09:03:22.594 - records_manager - INFO -   e2e     p50=62,785ms  p75=69,731ms  p95=86,772ms  p99=93,040ms
+2026-11-17 09:03:22.594 - records_manager - INFO -   intvty  p50=      72  p75=      81  p95=      88  p99=      98  (1/tpot tok/s)
+2026-11-17 09:03:22.594 - records_manager - INFO -   isl     p50=  66,854  p75=  88,352  p90= 104,073  p99= 117,003  (tokens)
+2026-11-17 09:03:22.594 - records_manager - INFO -   osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=   4,096  (tokens)
+2026-11-17 09:03:22.594 - records_manager - INFO -   tot     in=1,938,203  out=114,688
+2026-11-17 09:03:22.594 - records_manager - INFO -   trace  theoretical_prefix_cache_hit=93.7%
+2026-11-17 09:03:22.594 - records_manager - INFO -   srv    prefix_cache_hit=92.4% unique_in_srv=146,843 kv_usage=89.0% queue=2r/0w tput_in_srv=4,554/s tput_out_srv=269/s
+2026-11-17 09:03:26.596 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 140, diff 2825.7%)
+2026-11-17 09:03:30.689 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 308, diff 1229.9%)
+2026-11-17 09:03:44.560 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 872, diff 369.7%)
+2026-11-17 09:03:48.652 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 989, diff 314.2%)
+2026-11-17 09:03:52.608 - records_manager - INFO - [realtime 07:35 profiling]
+2026-11-17 09:03:52.608 - records_manager - INFO -   rps=0.1 (avg 0.1)  tput_in=5,103/s  tput_out=290/s  done=32 ok=32 err=0
+2026-11-17 09:03:52.608 - records_manager - INFO -   ttft    p50= 1,030ms  p75= 2,425ms  p95=32,832ms  p99=36,903ms
+2026-11-17 09:03:52.608 - records_manager - INFO -   itl     p50=    14ms  p75=    16ms  p95=    19ms  p99=    20ms
+2026-11-17 09:03:52.608 - records_manager - INFO -   e2e     p50=63,620ms  p75=76,182ms  p95=93,380ms  p99=94,808ms
+2026-11-17 09:03:52.608 - records_manager - INFO -   intvty  p50=      71  p75=      79  p95=      88  p99=      98  (1/tpot tok/s)
+2026-11-17 09:03:52.609 - records_manager - INFO -   isl     p50=  69,525  p75=  93,842  p90= 105,017  p99= 116,895  (tokens)
+2026-11-17 09:03:52.609 - records_manager - INFO -   osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=   4,096  (tokens)
+2026-11-17 09:03:52.609 - records_manager - INFO -   tot     in=2,305,580  out=131,072
+2026-11-17 09:03:52.609 - records_manager - INFO -   trace  theoretical_prefix_cache_hit=94.0%
+2026-11-17 09:03:52.609 - records_manager - INFO -   srv    prefix_cache_hit=93.2% unique_in_srv=156,652 kv_usage=87.0% queue=2r/0w tput_in_srv=5,061/s tput_out_srv=288/s
+2026-11-17 09:04:22.614 - records_manager - INFO - [realtime 08:05 profiling]
+2026-11-17 09:04:22.614 - records_manager - INFO -   rps=0.0 (avg 0.1)  tput_in=5,103/s  tput_out=290/s  done=32 ok=32 err=0
+2026-11-17 09:04:22.615 - records_manager - INFO -   ttft    p50= 1,030ms  p75= 2,425ms  p95=32,832ms  p99=36,903ms
+2026-11-17 09:04:22.615 - records_manager - INFO -   itl     p50=    14ms  p75=    16ms  p95=    19ms  p99=    20ms
+2026-11-17 09:04:22.615 - records_manager - INFO -   e2e     p50=63,620ms  p75=76,182ms  p95=93,380ms  p99=94,808ms
+2026-11-17 09:04:22.615 - records_manager - INFO -   intvty  p50=      71  p75=      79  p95=      88  p99=      98  (1/tpot tok/s)
+2026-11-17 09:04:22.615 - records_manager - INFO -   isl     p50=  69,525  p75=  93,842  p90= 105,017  p99= 116,895  (tokens)
+2026-11-17 09:04:22.615 - records_manager - INFO -   osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=   4,096  (tokens)
+2026-11-17 09:04:22.615 - records_manager - INFO -   tot     in=2,305,580  out=131,072
+2026-11-17 09:04:22.615 - records_manager - INFO -   trace  theoretical_prefix_cache_hit=94.0%
+2026-11-17 09:04:22.615 - records_manager - INFO -   srv    prefix_cache_hit=93.2% unique_in_srv=156,652 kv_usage=88.0% queue=2r/0w tput_in_srv=4,748/s tput_out_srv=270/s
+2026-11-17 09:04:24.705 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 227, diff 1704.4%)
+2026-11-17 09:04:27.341 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 700, diff 485.1%)
+2026-11-17 09:04:52.092 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 2336, diff 75.3%)
+2026-11-17 09:04:52.620 - records_manager - INFO - [realtime 08:35 profiling]
+2026-11-17 09:04:52.621 - records_manager - INFO -   rps=0.1 (avg 0.1)  tput_in=4,958/s  tput_out=278/s  done=35 ok=35 err=0
+2026-11-17 09:04:52.621 - records_manager - INFO -   ttft    p50= 1,248ms  p75= 2,502ms  p95=35,128ms  p99= 47,930ms
+2026-11-17 09:04:52.621 - records_manager - INFO -   itl     p50=    15ms  p75=    16ms  p95=    19ms  p99=     21ms
+2026-11-17 09:04:52.621 - records_manager - INFO -   e2e     p50=65,335ms  p75=79,477ms  p95=94,759ms  p99=110,760ms
+2026-11-17 09:04:52.621 - records_manager - INFO -   intvty  p50=      66  p75=      79  p95=      87  p99=       97  (1/tpot tok/s)
+2026-11-17 09:04:52.621 - records_manager - INFO -   isl     p50=  71,241  p75=  94,724  p90= 106,079  p99=  116,516  (tokens)
+2026-11-17 09:04:52.621 - records_manager - INFO -   osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=    4,096  (tokens)
+2026-11-17 09:04:52.621 - records_manager - INFO -   tot     in=2,554,298  out=143,360
+2026-11-17 09:04:52.621 - records_manager - INFO -   trace  theoretical_prefix_cache_hit=94.0%
+2026-11-17 09:04:52.621 - records_manager - INFO -   srv    prefix_cache_hit=93.3% unique_in_srv=171,514 kv_usage=96.0% queue=2r/0w tput_in_srv=4,954/s tput_out_srv=278/s
+2026-11-17 09:04:54.774 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 231, diff 1673.2%)
+2026-11-17 09:04:55.028 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 293, diff 1298.0%)
+2026-11-17 09:05:22.627 - records_manager - INFO - [realtime 09:05 profiling]
+2026-11-17 09:05:22.627 - records_manager - INFO -   rps=0.1 (avg 0.1)  tput_in=5,257/s  tput_out=292/s  done=37 ok=37 err=0
+2026-11-17 09:05:22.627 - records_manager - INFO -   ttft    p50= 1,300ms  p75=13,981ms  p95=34,673ms  p99= 47,639ms
+2026-11-17 09:05:22.627 - records_manager - INFO -   itl     p50=    15ms  p75=    16ms  p95=    19ms  p99=     21ms
+2026-11-17 09:05:22.627 - records_manager - INFO -   e2e     p50=65,728ms  p75=81,981ms  p95=94,747ms  p99=110,278ms
+2026-11-17 09:05:22.627 - records_manager - INFO -   intvty  p50=      66  p75=      79  p95=      87  p99=       97  (1/tpot tok/s)
+2026-11-17 09:05:22.627 - records_manager - INFO -   isl     p50=  72,269  p75=  96,488  p90= 105,777  p99=  116,262  (tokens)
+2026-11-17 09:05:22.627 - records_manager - INFO -   osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=    4,096  (tokens)
+2026-11-17 09:05:22.627 - records_manager - INFO -   tot     in=2,723,761  out=151,552
+2026-11-17 09:05:22.627 - records_manager - INFO -   trace  theoretical_prefix_cache_hit=94.1%
+2026-11-17 09:05:22.627 - records_manager - INFO -   srv    prefix_cache_hit=93.4% unique_in_srv=179,185 kv_usage=96.0% queue=2r/0w tput_in_srv=4,992/s tput_out_srv=278/s
+2026-11-17 09:05:31.332 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 219, diff 1770.3%)
+2026-11-17 09:05:39.959 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 1294, diff 216.5%)
+2026-11-17 09:05:52.634 - records_manager - INFO - [realtime 09:35 profiling]
+2026-11-17 09:05:52.634 - records_manager - INFO -   rps=0.1 (avg 0.1)  tput_in=5,146/s  tput_out=284/s  done=39 ok=39 err=0
+2026-11-17 09:05:52.634 - records_manager - INFO -   ttft    p50= 1,300ms  p75=14,089ms  p95=38,920ms  p99= 49,651ms
+2026-11-17 09:05:52.634 - records_manager - INFO -   itl     p50=    15ms  p75=    17ms  p95=    19ms  p99=     21ms
+2026-11-17 09:05:52.634 - records_manager - INFO -   e2e     p50=65,728ms  p75=82,365ms  p95=96,779ms  p99=117,141ms
+2026-11-17 09:05:52.634 - records_manager - INFO -   intvty  p50=      65  p75=      77  p95=      87  p99=       97  (1/tpot tok/s)
+2026-11-17 09:05:52.634 - records_manager - INFO -   isl     p50=  72,269  p75=  96,488  p90= 106,739  p99=  119,566  (tokens)
+2026-11-17 09:05:52.634 - records_manager - INFO -   osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=    4,096  (tokens)
+2026-11-17 09:05:52.634 - records_manager - INFO -   tot     in=2,897,950  out=159,744
+2026-11-17 09:05:52.634 - records_manager - INFO -   trace  theoretical_prefix_cache_hit=93.8%
+2026-11-17 09:05:52.634 - records_manager - INFO -   srv    prefix_cache_hit=93.1% unique_in_srv=201,118 kv_usage=98.0% queue=2r/0w tput_in_srv=5,035/s tput_out_srv=278/s
+2026-11-17 09:05:56.153 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 1306, diff 213.6%)
+2026-11-17 09:05:56.249 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 265, diff 1445.7%)
+2026-11-17 09:05:56.988 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 2388, diff 71.5%)
+2026-11-17 09:06:00.841 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 103, diff 3876.7%)
+2026-11-17 09:06:09.005 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 240, diff 1606.7%)
+2026-11-17 09:06:22.642 - records_manager - INFO - [realtime 10:05 profiling]
+2026-11-17 09:06:22.642 - records_manager - INFO -   rps=0.2 (avg 0.1)  tput_in=5,659/s  tput_out=304/s  done=44 ok=44 err=0
+2026-11-17 09:06:22.642 - records_manager - INFO -   ttft    p50= 1,322ms  p75= 7,192ms  p95=37,631ms  p99= 49,226ms
+2026-11-17 09:06:22.642 - records_manager - INFO -   itl     p50=    15ms  p75=    17ms  p95=    20ms  p99=     21ms
+2026-11-17 09:06:22.642 - records_manager - INFO -   e2e     p50=68,531ms  p75=82,173ms  p95=94,827ms  p99=116,902ms
+2026-11-17 09:06:22.642 - records_manager - INFO -   intvty  p50=      65  p75=      75  p95=      86  p99=       96  (1/tpot tok/s)
+2026-11-17 09:06:22.642 - records_manager - INFO -   isl     p50=  73,648  p75=  97,428  p90= 106,882  p99=  119,401  (tokens)
+2026-11-17 09:06:22.642 - records_manager - INFO -   osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=    4,096  (tokens)
+2026-11-17 09:06:22.642 - records_manager - INFO -   tot     in=3,350,844  out=180,224
+2026-11-17 09:06:22.642 - records_manager - INFO -   trace  theoretical_prefix_cache_hit=94.0%
+2026-11-17 09:06:22.642 - records_manager - INFO -   srv    prefix_cache_hit=93.4% unique_in_srv=222,460 kv_usage=85.0% queue=2r/0w tput_in_srv=5,533/s tput_out_srv=298/s
+2026-11-17 09:06:48.153 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 221, diff 1753.4%)
+2026-11-17 09:06:49.140 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 278, diff 1373.4%)
+2026-11-17 09:06:50.834 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 620, diff 560.6%)
+2026-11-17 09:06:51.619 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 1195, diff 242.8%)
+2026-11-17 09:06:52.649 - records_manager - INFO - [realtime 10:35 profiling]
+2026-11-17 09:06:52.649 - records_manager - INFO -   rps=0.1 (avg 0.1)  tput_in=5,761/s  tput_out=310/s  done=48 ok=48 err=0
+2026-11-17 09:06:52.649 - records_manager - INFO -   ttft    p50= 1,274ms  p75= 3,224ms  p95=36,721ms  p99= 48,885ms
+2026-11-17 09:06:52.649 - records_manager - INFO -   itl     p50=    15ms  p75=    17ms  p95=    20ms  p99=     21ms
+2026-11-17 09:06:52.649 - records_manager - INFO -   e2e     p50=68,167ms  p75=80,372ms  p95=94,803ms  p99=116,711ms
+2026-11-17 09:06:52.649 - records_manager - INFO -   intvty  p50=      65  p75=      76  p95=      88  p99=       96  (1/tpot tok/s)
+2026-11-17 09:06:52.649 - records_manager - INFO -   isl     p50=  73,648  p75=  97,428  p90= 106,768  p99=  119,269  (tokens)
+2026-11-17 09:06:52.649 - records_manager - INFO -   osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=    4,096  (tokens)
+2026-11-17 09:06:52.649 - records_manager - INFO -   tot     in=3,656,649  out=196,608
+2026-11-17 09:06:52.649 - records_manager - INFO -   trace  theoretical_prefix_cache_hit=94.2%
+2026-11-17 09:06:52.649 - records_manager - INFO -   srv    prefix_cache_hit=93.7% unique_in_srv=232,137 kv_usage=87.0% queue=2r/0w tput_in_srv=5,753/s tput_out_srv=309/s
+2026-11-17 09:07:00.071 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 1397, diff 193.2%)
+2026-11-17 09:07:12.930 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 84, diff 4776.2%)
+2026-11-17 09:07:12.965 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 237, diff 1628.3%)
+2026-11-17 09:07:22.657 - records_manager - INFO - [realtime 11:05 profiling]
+2026-11-17 09:07:22.658 - records_manager - INFO -   rps=0.1 (avg 0.1)  tput_in=6,017/s  tput_out=318/s  done=51 ok=51 err=0
+2026-11-17 09:07:22.658 - records_manager - INFO -   ttft    p50= 1,277ms  p75= 2,502ms  p95=36,038ms  p99= 48,630ms
+2026-11-17 09:07:22.658 - records_manager - INFO -   itl     p50=    15ms  p75=    17ms  p95=    20ms  p99=     21ms
+2026-11-17 09:07:22.658 - records_manager - INFO -   e2e     p50=67,986ms  p75=79,477ms  p95=94,784ms  p99=116,567ms
+2026-11-17 09:07:22.658 - records_manager - INFO -   intvty  p50=      65  p75=      75  p95=      87  p99=       95  (1/tpot tok/s)
+2026-11-17 09:07:22.658 - records_manager - INFO -   isl     p50=  74,902  p75=  97,920  p90= 106,968  p99=  119,170  (tokens)
+2026-11-17 09:07:22.658 - records_manager - INFO -   osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=    4,096  (tokens)
+2026-11-17 09:07:22.658 - records_manager - INFO -   tot     in=3,947,477  out=208,896
+2026-11-17 09:07:22.658 - records_manager - INFO -   trace  theoretical_prefix_cache_hit=94.4%
+2026-11-17 09:07:22.658 - records_manager - INFO -   srv    prefix_cache_hit=94.0% unique_in_srv=237,013 kv_usage=72.0% queue=2r/0w tput_in_srv=5,931/s tput_out_srv=314/s
+2026-11-17 09:07:50.704 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 18, diff 22655.6%)
+2026-11-17 09:07:52.408 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 405, diff 911.4%)
+2026-11-17 09:07:52.665 - records_manager - INFO - [realtime 11:35 profiling]
+2026-11-17 09:07:52.665 - records_manager - INFO -   rps=0.1 (avg 0.1)  tput_in=5,932/s  tput_out=312/s  done=53 ok=53 err=0
+2026-11-17 09:07:52.665 - records_manager - INFO -   ttft    p50= 1,248ms  p75= 2,349ms  p95=35,583ms  p99= 48,460ms
+2026-11-17 09:07:52.665 - records_manager - INFO -   itl     p50=    15ms  p75=    17ms  p95=    20ms  p99=     21ms
+2026-11-17 09:07:52.665 - records_manager - INFO -   e2e     p50=65,728ms  p75=79,118ms  p95=94,772ms  p99=116,471ms
+2026-11-17 09:07:52.665 - records_manager - INFO -   intvty  p50=      65  p75=      75  p95=      87  p99=       95  (1/tpot tok/s)
+2026-11-17 09:07:52.665 - records_manager - INFO -   isl     p50=  75,267  p75=  98,262  p90= 106,911  p99=  119,104  (tokens)
+2026-11-17 09:07:52.665 - records_manager - INFO -   osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=    4,096  (tokens)
+2026-11-17 09:07:52.665 - records_manager - INFO -   tot     in=4,126,268  out=217,088
+2026-11-17 09:07:52.666 - records_manager - INFO -   trace  theoretical_prefix_cache_hit=94.5%
+2026-11-17 09:07:52.666 - records_manager - INFO -   srv    prefix_cache_hit=94.2% unique_in_srv=240,700 kv_usage=69.0% queue=3r/0w tput_in_srv=5,932/s tput_out_srv=312/s
+2026-11-17 09:07:58.676 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 216, diff 1796.3%)
+2026-11-17 09:08:09.790 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 405, diff 911.4%)
+2026-11-17 09:08:13.495 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 112, diff 3557.1%)
+2026-11-17 09:08:22.674 - records_manager - INFO - [realtime 12:05 profiling]
+2026-11-17 09:08:22.675 - records_manager - INFO -   rps=0.1 (avg 0.1)  tput_in=6,087/s  tput_out=320/s  done=56 ok=56 err=0
+2026-11-17 09:08:22.675 - records_manager - INFO -   ttft    p50= 1,162ms  p75= 2,349ms  p95=34,901ms  p99= 48,205ms
+2026-11-17 09:08:22.675 - records_manager - INFO -   itl     p50=    15ms  p75=    17ms  p95=    19ms  p99=     21ms
+2026-11-17 09:08:22.675 - records_manager - INFO -   e2e     p50=65,433ms  p75=78,610ms  p95=94,753ms  p99=116,328ms
+2026-11-17 09:08:22.675 - records_manager - INFO -   intvty  p50=      66  p75=      75  p95=      89  p99=      108  (1/tpot tok/s)
+2026-11-17 09:08:22.675 - records_manager - INFO -   isl     p50=  75,299  p75=  98,492  p90= 106,825  p99=  119,005  (tokens)
+2026-11-17 09:08:22.675 - records_manager - INFO -   osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=    4,096  (tokens)
+2026-11-17 09:08:22.675 - records_manager - INFO -   tot     in=4,362,414  out=229,376
+2026-11-17 09:08:22.675 - records_manager - INFO -   trace  theoretical_prefix_cache_hit=94.7%
+2026-11-17 09:08:22.675 - records_manager - INFO -   srv    prefix_cache_hit=94.4% unique_in_srv=242,734 kv_usage=89.0% queue=2r/0w tput_in_srv=6,013/s tput_out_srv=316/s
+2026-11-17 09:08:50.937 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 159, diff 2476.1%)
+2026-11-17 09:08:52.681 - records_manager - INFO - [realtime 12:35 profiling]
+2026-11-17 09:08:52.681 - records_manager - INFO -   rps=0.0 (avg 0.1)  tput_in=5,879/s  tput_out=310/s  done=57 ok=57 err=0
+2026-11-17 09:08:52.681 - records_manager - INFO -   ttft    p50= 1,122ms  p75= 2,349ms  p95=34,673ms  p99= 48,120ms
+2026-11-17 09:08:52.681 - records_manager - INFO -   itl     p50=    15ms  p75=    17ms  p95=    20ms  p99=     22ms
+2026-11-17 09:08:52.681 - records_manager - INFO -   e2e     p50=65,532ms  p75=79,118ms  p95=94,747ms  p99=116,280ms
+2026-11-17 09:08:52.682 - records_manager - INFO -   intvty  p50=      66  p75=      75  p95=      89  p99=      108  (1/tpot tok/s)
+2026-11-17 09:08:52.682 - records_manager - INFO -   isl     p50=  75,267  p75=  98,262  p90= 106,796  p99=  118,972  (tokens)
+2026-11-17 09:08:52.682 - records_manager - INFO -   osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=    4,096  (tokens)
+2026-11-17 09:08:52.682 - records_manager - INFO -   tot     in=4,433,468  out=233,472
+2026-11-17 09:08:52.682 - records_manager - INFO -   trace  theoretical_prefix_cache_hit=94.8%
+2026-11-17 09:08:52.682 - records_manager - INFO -   srv    prefix_cache_hit=94.5% unique_in_srv=243,260 kv_usage=91.0% queue=2r/0w tput_in_srv=5,868/s tput_out_srv=309/s
+2026-11-17 09:08:54.329 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 1351, diff 203.2%)
+2026-11-17 09:08:56.399 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 2127, diff 92.6%)
+2026-11-17 09:09:12.909 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 26, diff 15653.8%)
+2026-11-17 09:09:20.347 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 220, diff 1761.8%)
+2026-11-17 09:09:22.689 - records_manager - INFO - [realtime 13:05 profiling]
+2026-11-17 09:09:22.689 - records_manager - INFO -   rps=0.1 (avg 0.1)  tput_in=6,028/s  tput_out=319/s  done=61 ok=61 err=0
+2026-11-17 09:09:22.689 - records_manager - INFO -   ttft    p50= 1,126ms  p75= 2,349ms  p95=33,763ms  p99= 47,779ms
+2026-11-17 09:09:22.689 - records_manager - INFO -   itl     p50=    15ms  p75=    17ms  p95=    20ms  p99=     22ms
+2026-11-17 09:09:22.689 - records_manager - INFO -   e2e     p50=65,728ms  p75=79,836ms  p95=94,722ms  p99=116,089ms
+2026-11-17 09:09:22.689 - records_manager - INFO -   intvty  p50=      65  p75=      75  p95=      88  p99=      107  (1/tpot tok/s)
+2026-11-17 09:09:22.689 - records_manager - INFO -   isl     p50=  75,267  p75=  99,182  p90= 106,968  p99=  121,463  (tokens)
+2026-11-17 09:09:22.689 - records_manager - INFO -   osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=    4,096  (tokens)
+2026-11-17 09:09:22.689 - records_manager - INFO -   tot     in=4,722,643  out=249,856
+2026-11-17 09:09:22.689 - records_manager - INFO -   trace  theoretical_prefix_cache_hit=94.9%
+2026-11-17 09:09:22.689 - records_manager - INFO -   srv    prefix_cache_hit=94.7% unique_in_srv=249,363 kv_usage=93.0% queue=2r/0w tput_in_srv=6,012/s tput_out_srv=318/s
+2026-11-17 09:09:23.168 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 318, diff 1188.1%)
+2026-11-17 09:09:26.269 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 1290, diff 217.5%)
+2026-11-17 09:09:52.699 - records_manager - INFO - [realtime 13:35 profiling]
+2026-11-17 09:09:52.699 - records_manager - INFO -   rps=0.1 (avg 0.1)  tput_in=6,262/s  tput_out=327/s  done=63 ok=63 err=0
+2026-11-17 09:09:52.699 - records_manager - INFO -   ttft    p50= 1,200ms  p75= 2,502ms  p95=33,594ms  p99= 47,609ms
+2026-11-17 09:09:52.699 - records_manager - INFO -   itl     p50=    15ms  p75=    17ms  p95=    20ms  p99=     22ms
+2026-11-17 09:09:52.699 - records_manager - INFO -   e2e     p50=67,986ms  p75=80,167ms  p95=94,834ms  p99=115,993ms
+2026-11-17 09:09:52.699 - records_manager - INFO -   intvty  p50=      65  p75=      75  p95=      88  p99=      107  (1/tpot tok/s)
+2026-11-17 09:09:52.699 - records_manager - INFO -   isl     p50=  75,331  p75=  99,686  p90= 107,920  p99=  121,431  (tokens)
+2026-11-17 09:09:52.699 - records_manager - INFO -   osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=    4,096  (tokens)
+2026-11-17 09:09:52.699 - records_manager - INFO -   tot     in=4,942,996  out=258,048
+2026-11-17 09:09:52.699 - records_manager - INFO -   trace  theoretical_prefix_cache_hit=95.1%
+2026-11-17 09:09:52.699 - records_manager - INFO -   srv    prefix_cache_hit=94.9% unique_in_srv=253,524 kv_usage=90.0% queue=3r/0w tput_in_srv=6,061/s tput_out_srv=316/s
+2026-11-17 09:09:52.955 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 19, diff 21457.9%)
+2026-11-17 09:10:07.223 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 112, diff 3557.1%)
+2026-11-17 09:10:08.320 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 111, diff 3590.1%)
+2026-11-17 09:10:22.706 - records_manager - INFO - [realtime 14:05 profiling]
+2026-11-17 09:10:22.706 - records_manager - INFO -   rps=0.1 (avg 0.1)  tput_in=6,168/s  tput_out=325/s  done=66 ok=66 err=0
+2026-11-17 09:10:22.706 - records_manager - INFO -   ttft    p50= 1,201ms  p75= 4,361ms  p95= 37,972ms  p99= 56,769ms
+2026-11-17 09:10:22.706 - records_manager - INFO -   itl     p50=    15ms  p75=    17ms  p95=     20ms  p99=     22ms
+2026-11-17 09:10:22.706 - records_manager - INFO -   e2e     p50=66,857ms  p75=80,333ms  p95=101,275ms  p99=124,406ms
+2026-11-17 09:10:22.706 - records_manager - INFO -   intvty  p50=      65  p75=      75  p95=       89  p99=      145  (1/tpot tok/s)
+2026-11-17 09:10:22.706 - records_manager - INFO -   isl     p50=  75,406  p75=  99,777  p90=  108,238  p99=  121,382  (tokens)
+2026-11-17 09:10:22.706 - records_manager - INFO -   osl     p50=   4,096  p75=   4,096  p90=    4,096  p99=    4,096  (tokens)
+2026-11-17 09:10:22.706 - records_manager - INFO -   tot     in=5,128,426  out=270,336
+2026-11-17 09:10:22.706 - records_manager - INFO -   trace  theoretical_prefix_cache_hit=95.2%
+2026-11-17 09:10:22.706 - records_manager - INFO -   srv    prefix_cache_hit=95.0% unique_in_srv=256,554 kv_usage=96.0% queue=3r/0w tput_in_srv=6,065/s tput_out_srv=320/s
+2026-11-17 09:10:25.255 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 743, diff 451.3%)
+2026-11-17 09:10:32.536 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 368, diff 1013.0%)
+2026-11-17 09:10:34.626 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 145, diff 2724.8%)
+2026-11-17 09:10:47.707 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 560, diff 631.4%)
+2026-11-17 09:10:52.713 - records_manager - INFO - [realtime 14:35 profiling]
+2026-11-17 09:10:52.713 - records_manager - INFO -   rps=0.1 (avg 0.1)  tput_in=6,257/s  tput_out=329/s  done=70 ok=70 err=0
+2026-11-17 09:10:52.713 - records_manager - INFO -   ttft    p50= 1,225ms  p75=11,975ms  p95= 37,699ms  p99= 56,325ms
+2026-11-17 09:10:52.713 - records_manager - INFO -   itl     p50=    15ms  p75=    17ms  p95=     20ms  p99=     21ms
+2026-11-17 09:10:52.713 - records_manager - INFO -   e2e     p50=68,167ms  p75=82,141ms  p95=102,944ms  p99=123,783ms
+2026-11-17 09:10:52.714 - records_manager - INFO -   intvty  p50=      65  p75=      74  p95=       89  p99=      141  (1/tpot tok/s)
+2026-11-17 09:10:52.714 - records_manager - INFO -   isl     p50=  75,406  p75= 100,508  p90=  108,174  p99=  121,318  (tokens)
+2026-11-17 09:10:52.714 - records_manager - INFO -   osl     p50=   4,096  p75=   4,096  p90=    4,096  p99=    4,096  (tokens)
+2026-11-17 09:10:52.714 - records_manager - INFO -   tot     in=5,449,234  out=286,720
+2026-11-17 09:10:52.714 - records_manager - INFO -   trace  theoretical_prefix_cache_hit=94.7%
+2026-11-17 09:10:52.714 - records_manager - INFO -   srv    prefix_cache_hit=94.4% unique_in_srv=303,890 kv_usage=85.0% queue=3r/0w tput_in_srv=6,224/s tput_out_srv=327/s
+2026-11-17 09:10:53.724 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 215, diff 1805.1%)
+2026-11-17 09:11:08.674 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 19, diff 21457.9%)
+2026-11-17 09:11:16.266 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 97, diff 4122.7%)
+2026-11-17 09:11:16.845 - PhaseRunner - INFO - Timeout of 899.999200123s elapsed for event 'profiling phase sending'
+2026-11-17 09:11:16.846 - PhaseRunner - NOTICE - Phase profiling (profiling) sending complete | sent=81, completed=73, in_flight=8 | sessions: sent=10, completed=4 | timeout_triggered=True
+2026-11-17 09:11:16.847 - PhaseRunner - INFO - Waiting for event 'profiling phase credits returned' with timeout of 29.998470876000056s
+2026-11-17 09:11:16.847 - records_manager - INFO - Sent 81 requests. Waiting for all to complete...
+2026-11-17 09:11:22.721 - records_manager - INFO - [realtime 15:05 profiling]
+2026-11-17 09:11:22.721 - records_manager - INFO -   rps=0.1 (avg 0.1)  tput_in=6,265/s  tput_out=332/s  done=73 ok=73 err=0
+2026-11-17 09:11:22.721 - records_manager - INFO -   ttft    p50= 1,277ms  p75=13,981ms  p95= 40,739ms  p99= 67,935ms
+2026-11-17 09:11:22.721 - records_manager - INFO -   itl     p50=    15ms  p75=    17ms  p95=     20ms  p99=     22ms
+2026-11-17 09:11:22.721 - records_manager - INFO -   e2e     p50=69,075ms  p75=82,750ms  p95=107,721ms  p99=137,214ms
+2026-11-17 09:11:22.721 - records_manager - INFO -   intvty  p50=      65  p75=      74  p95=       89  p99=      139  (1/tpot tok/s)
+2026-11-17 09:11:22.721 - records_manager - INFO -   isl     p50=  75,331  p75= 100,721  p90=  108,286  p99=  121,270  (tokens)
+2026-11-17 09:11:22.721 - records_manager - INFO -   osl     p50=   4,096  p75=   4,096  p90=    4,096  p99=    4,096  (tokens)
+2026-11-17 09:11:22.721 - records_manager - INFO -   tot     in=5,634,915  out=299,008
+2026-11-17 09:11:22.721 - records_manager - INFO -   trace  theoretical_prefix_cache_hit=94.8%
+2026-11-17 09:11:22.721 - records_manager - INFO -   srv    prefix_cache_hit=94.6% unique_in_srv=306,979 kv_usage=84.0% queue=2r/0w tput_in_srv=6,223/s tput_out_srv=330/s
+2026-11-17 09:11:42.221 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 311, diff 1217.0%)
+2026-11-17 09:11:44.120 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 236, diff 1635.6%)
+2026-11-17 09:11:44.339 - aiperf.metrics.types.osl_mismatch_metrics - WARNING - OSL mismatch: got 4096 tokens (requested 405, diff 911.4%)
+2026-11-17 09:11:46.845 - PhaseRunner - INFO - Timeout of 29.998470876000056s elapsed for event 'profiling phase credits returned'
+2026-11-17 09:11:46.846 - PhaseRunner - WARNING - Phase profiling timed out, cancelling all credits. Stats: sent=81, completed=76, cancelled=0, in_flight=5
+2026-11-17 09:11:46.846 - StickyCreditRouter_3d25765e - INFO - Sent cancellation requests for 5 in-flight credits across 4 workers
+2026-11-17 09:11:46.846 - PhaseRunner - INFO - Waiting for all cancelled credits to be returned for phase profiling. Need 5 more credits.
+2026-11-17 09:11:46.848 - PhaseRunner - INFO - All cancelled credits returned for phase profiling
+2026-11-17 09:11:46.848 - PhaseRunner - NOTICE - Phase profiling (profiling) complete | completed=76, cancelled=5, errors=0 | sessions: completed=4, cancelled=0 | elapsed=930.00s | grace_period_timeout=True
+2026-11-17 09:11:46.848 - AgenticReplayTiming - INFO - Global system-idle cap summary: limit=10s, jumps=0, skipped=0.000s
+2026-11-17 09:11:46.848 - aiperf.timing.branch_orchestrator - INFO - BranchOrchestrator stats: spawned=6 completed=0 errored=0 suspended=1 resumed=0 parents_failed_due_to_child_error=0 joins_suppressed=1 delayed=1
+2026-11-17 09:11:46.849 - PhaseRunner - INFO - Session-tree slots for phase profiling: peak_open=8 (target concurrency 8); released 6 still-open at teardown; late_events=0
+2026-11-17 09:11:46.849 - PhaseOrchestrator_33415a09 - NOTICE - All credits completed
+2026-11-17 09:11:46.849 - records_manager - INFO - Received CREDIT_PHASE_COMPLETE message, Phase complete: PhaseRecordsStats(phase=CreditPhase.PROFILING, phase_index=0, profiling_index=0, phase_name='profiling', phase_kind='profiling', start_ns=1794905776845457009, sent_end_ns=1794906676846185456, requests_end_ns=1794906706848250959, baseline_start_ns=1794905776845436881, baseline_end_ns=1794906706848264847, total_expected_requests=None, expected_duration_sec=None, expected_num_sessions=None, expected_grace_period_sec=None, final_requests_sent=None, final_requests_completed=76, final_requests_cancelled=5, final_request_errors=0, final_sent_sessions=None, final_completed_sessions=None, final_cancelled_sessions=None, timeout_triggered=True, grace_period_timeout_triggered=True, was_cancelled=False, records_end_ns=None, success_records=76, error_records=0)
+2026-11-17 09:11:46.849 - records_manager - NOTICE - All requests have completed, please wait for the results to be processed (currently 76 of 76 records processed)...
+2026-11-17 09:11:46.849 - records_manager - INFO - Processed 76 valid requests and 0 errors (76 total).
+2026-11-17 09:11:46.849 - records_manager - INFO - Received all records, processing now...
+2026-11-17 09:11:46.849 - records_manager - INFO - All credits complete, please wait for the results to be processed...
+2026-11-17 09:11:46.849 - system_controller - INFO - Received credits complete from 'timing_manager'
+2026-11-17 09:11:46.849 - server_metrics_manager - INFO - Server Metrics: Profiling complete, capturing final metrics...
+2026-11-17 09:11:46.850 - records_manager - INFO - Waiting 2.0s for server metrics flush period...
+2026-11-17 09:11:48.847 - records_manager - INFO - Processing records results...
+2026-11-17 09:11:49.149 - records_manager - INFO - Profiling metric coverage passed for 'profiling': TTFT=94.5%, inter-token latency=100.0% (required=95.0%).
+2026-11-17 09:11:49.182 - system_controller - INFO - Waiting for result domains: server_metrics
+2026-11-17 09:12:00.782 - records_manager - INFO - _finalize_and_process_results completed
+2026-11-17 09:12:00.792 - records_manager - INFO - [realtime 15:30 profiling]
+2026-11-17 09:12:00.792 - records_manager - INFO -   rps=0.1 (avg 0.1)  tput_in=6,305/s  tput_out=336/s  done=76 ok=76 err=0
+2026-11-17 09:12:00.792 - records_manager - INFO -   ttft    p50= 1,288ms  p75=14,035ms  p95= 46,503ms  p99= 75,680ms
+2026-11-17 09:12:00.792 - records_manager - INFO -   itl     p50=    15ms  p75=    17ms  p95=     21ms  p99=     22ms
+2026-11-17 09:12:00.792 - records_manager - INFO -   e2e     p50=70,011ms  p75=84,870ms  p95=115,371ms  p99=149,541ms
+2026-11-17 09:12:00.792 - records_manager - INFO -   intvty  p50=      65  p75=      73  p95=       89  p99=      136  (1/tpot tok/s)
+2026-11-17 09:12:00.792 - records_manager - INFO -   isl     p50=  75,406  p75= 100,786  p90=  108,238  p99=  121,222  (tokens)
+2026-11-17 09:12:00.792 - records_manager - INFO -   osl     p50=   4,096  p75=   4,096  p90=    4,096  p99=    4,096  (tokens)
+2026-11-17 09:12:00.792 - records_manager - INFO -   tot     in=5,847,410  out=311,296
+2026-11-17 09:12:00.792 - records_manager - INFO -   trace  theoretical_prefix_cache_hit=94.5%
+2026-11-17 09:12:00.792 - records_manager - INFO -   srv    prefix_cache_hit=94.2% unique_in_srv=339,762 kv_usage=52.0% queue=2r/0w tput_in_srv=6,287/s tput_out_srv=335/s
+2026-11-17 09:12:03.623 - system_controller - INFO - All results received, initiating shutdown
+2026-11-17 09:12:04.232 - ExporterManager - INFO - Exporting all records
+2026-11-17 09:12:06.583 - ExporterManager - INFO - Exporting console data

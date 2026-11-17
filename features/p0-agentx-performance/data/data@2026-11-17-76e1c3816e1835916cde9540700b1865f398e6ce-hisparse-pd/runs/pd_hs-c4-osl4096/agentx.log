@@ -1,0 +1,602 @@
+10:24:28.092 INFO     Starting AIPerf System (_single_run.py:64)
+10:24:28.094 INFO     Scenario 'agentx': setting profiling-phase timing_mode=agentic_replay. (validator.py:226)
+10:24:28.094 INFO     Scenario 'agentx': injecting extra_inputs.ignore_eos=true (was absent). (validator.py:285)
+10:24:28.094 INFO     Scenario 'agentx': auto-set --cache-bust=first_turn_prefix (was at default none). (validator.py:538)
+10:24:28.094 INFO     Scenario 'agentx': auto-set --system-idle-gap-cap-seconds=10.0 (was unset). (validator.py:779)
+10:24:28.263 INFO     GPU telemetry disabled via --no-gpu-telemetry (system_controller.py:269)
+10:24:28.283 INFO     Registered Dataset Manager (id: 'dataset_manager') (system_controller.py:413)
+10:24:28.285 INFO     Server Metrics: Discovered 1 endpoints: ['http://<PREFILL_NODE_IP>:32022/metrics'] (manager.py:97)
+10:24:28.288 INFO     Registered Server Metrics Manager (id: 'server_metrics_manager') (system_controller.py:413)
+10:24:28.318 INFO     Telemetry streaming is disabled (set --otel-url and/or --mlflow-tracking-uri to enable) (otel_metrics_results_processor.py:127)
+10:24:28.318 INFO     Record metrics export enabled: $WORK/agentx/pd_hs-c4-osl4096/profile_export.jsonl (record_export_jsonl_writer.py:62)
+10:24:28.324 INFO     Registered Records Manager (id: 'records_manager') (system_controller.py:413)
+10:24:28.372 INFO     Registered Worker Manager (id: 'worker_manager') (system_controller.py:413)
+10:24:28.405 INFO     Registered Record Processor (id: 'record_processor_2eb96c5c') (system_controller.py:413)
+10:24:28.484 INFO     Registered Timing Manager (id: 'timing_manager') (system_controller.py:413)
+10:24:28.614 INFO     Registered Worker (id: 'worker_fe34ca41') (system_controller.py:413)
+10:24:28.615 INFO     Registered Worker (id: 'worker_3570403c') (system_controller.py:413)
+10:24:28.615 INFO     Registered Worker (id: 'worker_97b569c2') (system_controller.py:413)
+10:24:28.615 INFO     Registered Worker (id: 'worker_37427e3a') (system_controller.py:413)
+10:24:28.767 INFO     AIPerf System is CONFIGURING (system_controller.py:294)
+10:24:28.767 INFO     Configuring all services to start profiling (system_controller.py:307)
+10:24:28.768 INFO     Tokenization is disabled for this endpoint, skipping tokenizer configuration (inference_result_parser.py:110)
+10:24:28.768 INFO     Waiting for dataset to be configured before configuring timing (manager.py:124)
+10:24:28.771 INFO     Memory-mapped dataset cache HIT (key=c5646fe4cce86df393a8548b7f1f4fc8); skipping tokenizer + composer. (dataset_manager.py:206)
+10:24:28.772 INFO     Restored mmap cache file dataset.dat via hardlink in 0.000s (0.18 GiB) (mmap_cache.py:514)
+10:24:28.772 INFO     Restored mmap cache file index.dat via hardlink in 0.000s (0.00 GiB) (mmap_cache.py:514)
+10:24:28.772 INFO     Restored mmap cache files in 0.001s via dataset=hardlink index=hardlink (dataset=0.18 GiB, index=0.00 GiB) (mmap_cache.py:558)
+10:24:28.824 INFO     Server Metrics: Capturing baseline metrics... (manager.py:191)
+10:24:28.840 INFO     sampling strategy: sequential, unique conversations: 689, unique turn count: 5674 (dataset_manager.py:920)
+10:24:28.882 INFO     TrajectorySource: built 4 trajectories from 100 traces (trajectory_source.py:429)
+10:24:28.882 INFO       range cfg=[0.25, 0.75]  observed sample pct: min= 38% median= 43% max= 50% (trajectory_source.py:434)
+10:24:28.882 INFO         lane=00  sample_time= 38%  root_next=  5/33  ( 15% turns)  live=1 ready=1  trace_id=006c98de37d819e95b0840e25426bb7ca99d (trajectory_source.py:436)
+10:24:28.882 INFO         lane=01  sample_time= 50%  root_next=  3/7   ( 43% turns)  live=1 ready=1  trace_id=04dba6fe621301a1d01fd63b8d02c9645c48 (trajectory_source.py:436)
+10:24:28.882 INFO         lane=02  sample_time= 45%  root_next= 49/52  ( 94% turns)  live=1 ready=1  trace_id=05f72f78a037cfa5cd4e4541960a574701d9 (trajectory_source.py:436)
+10:24:28.882 INFO         lane=03  sample_time= 40%  root_next=  0/1   (  0% turns)  live=1 ready=1  trace_id=063179eb93f4337a662e859c5a2c5638e03f (trajectory_source.py:436)
+10:24:28.883 INFO     Initialized 2 phase(s): ['Warmup', 'Profiling'] (phase_orchestrator.py:235)
+10:24:28.907 WARNING  Dropping non-finite (NaN/Inf) sample(s) from metric 'sglang:fwd_occupancy': 4 in this scrape; affected data will be missing from server_metrics_export. Further occurrences for this metric name will not be logged. (data_collector.py:374)
+10:24:28.912 INFO     Server metrics enabled - 1/2 endpoint(s) reachable. (system_controller.py:592)
+10:24:28.912 WARNING  Unreachable endpoints: http://<PREFILL_NODE_IP>:32022/metrics (system_controller.py:599)
+10:24:28.912 INFO     Waiting for result domains: profile, server_metrics (system_controller.py:869)
+10:24:28.961 INFO     Dataset client initialized and freed 0 conversations from memory (dataset_manager.py:345)
+10:24:28.961 INFO     All services configured in 0.19 seconds (system_controller.py:318)
+10:24:28.962 INFO     AIPerf System is CONFIGURED (system_controller.py:296)
+10:24:28.962 INFO     Server Metrics: Started 1 collector(s) successfully (manager.py:281)
+10:24:28.962 INFO     All services started profiling successfully (system_controller.py:340)
+10:24:28.963 INFO     AIPerf System is PROFILING (system_controller.py:298)
+10:24:28.969 NOTICE   Phase warmup (warmup) started | target: 8 requests (runner.py:600)
+10:24:28.969 INFO     WARMUP execute: dispatching 4 trajectory credits (agentic_replay.py:666)
+10:24:28.970 INFO     Credit phase start: warmup (records_manager.py:1171)
+10:24:28.970 INFO     WARMUP count budget: 1 additional requests per lane after 4 mandatory snapshot primers (agentic_replay.py:725)
+10:24:28.970 INFO     WARMUP spread: 0.0s ramp aligning 4 request(s) on t* (earliest fires at 0, last at 0.0s) (agentic_replay.py:764)
+10:24:58.974 INFO     Phase warmup progress | returned=0/8 | sent=4 | in_flight=4 | errors=0 | elapsed=30.0s (runner.py:1300)
+10:25:28.980 INFO     Phase warmup progress | returned=0/8 | sent=4 | in_flight=4 | errors=0 | elapsed=60.0s (runner.py:1300)
+10:25:32.641 WARNING  OSL mismatch: got 4096 tokens (requested 1, diff 409500.0%) (osl_mismatch_metrics.py:193)
+10:25:36.957 WARNING  OSL mismatch: got 4096 tokens (requested 1, diff 409500.0%) (osl_mismatch_metrics.py:193)
+10:25:44.541 WARNING  OSL mismatch: got 4096 tokens (requested 1, diff 409500.0%) (osl_mismatch_metrics.py:193)
+10:25:56.610 INFO     Replay interval barriers active: 5674 requests, 2291 gated turns, join-widths={1: 1983, 2: 265, 3: 14, 4: 18, 5: 11} (replay_dependencies.py:231)
+10:25:56.610 INFO     WARMUP cache pressure: replaying live trajectories until each lane reaches 1 additional requests with zero idle delay and max_tokens=1 (agentic_replay.py:815)
+10:25:56.610 INFO     WARMUP cache pressure request budget reached: 1 additional requests on each of 4 lanes; draining requests (agentic_replay.py:506)
+10:25:56.611 NOTICE   Phase warmup (warmup) sending complete | sent=8, completed=4, in_flight=4 | sessions: sent=3, completed=0 (runner.py:1047)
+10:25:56.618 WARNING  OSL mismatch: got 4096 tokens (requested 1, diff 409500.0%) (osl_mismatch_metrics.py:193)
+10:25:58.985 INFO     Phase warmup progress | returned=4/8 | sent=8 | in_flight=4 | errors=0 | elapsed=90.0s (runner.py:1300)
+10:26:28.992 INFO     Phase warmup progress | returned=4/8 | sent=8 | in_flight=4 | errors=0 | elapsed=120.0s (runner.py:1300)
+10:26:57.870 WARNING  OSL mismatch: got 4096 tokens (requested 1, diff 409500.0%) (osl_mismatch_metrics.py:193)
+10:26:58.997 INFO     Phase warmup progress | returned=5/8 | sent=8 | in_flight=3 | errors=0 | elapsed=150.0s (runner.py:1300)
+10:27:07.215 WARNING  OSL mismatch: got 4096 tokens (requested 1, diff 409500.0%) (osl_mismatch_metrics.py:193)
+10:27:16.388 WARNING  OSL mismatch: got 4096 tokens (requested 1, diff 409500.0%) (osl_mismatch_metrics.py:193)
+10:27:17.229 WARNING  OSL mismatch: got 4096 tokens (requested 1, diff 409500.0%) (osl_mismatch_metrics.py:193)
+10:27:17.307 INFO     All accelerated-warmup wire requests returned; preserving paused DAG work for profiling handoff. (runner.py:996)
+10:27:17.307 NOTICE   Phase warmup (warmup) complete | completed=8, cancelled=0, errors=0 | sessions: completed=0, cancelled=0 | elapsed=168.34s (runner.py:1170)
+10:27:17.308 INFO     Global system-idle cap summary: limit=10s, jumps=0, skipped=0.000s (agentic_replay.py:968)
+10:27:17.308 INFO     Server Metrics: Warmup complete, capturing final warmup metrics... (manager.py:304)
+10:27:17.308 INFO     WARMUP cache pressure handoff: persisted 4 live streams (agentic_replay.py:984)
+10:27:17.309 INFO     BranchOrchestrator stats: spawned=1 completed=0 errored=0 suspended=0 resumed=0 parents_failed_due_to_child_error=0 joins_suppressed=0 delayed=0 (branch_orchestrator.py:1975)
+10:27:17.309 INFO     Session-tree slots for phase warmup: peak_open=4 (target concurrency 4); released 4 still-open at teardown; late_events=0 (runner.py:556)
+10:27:17.316 INFO     Replay interval barriers active: 5674 requests, 2291 gated turns, join-widths={1: 1983, 2: 265, 3: 14, 4: 18, 5: 11} (replay_dependencies.py:231)
+10:27:17.316 INFO     PROFILING setup: 4 trajectory lanes; recycle draws roots from the dataset sampler (agentic_replay.py:431)
+10:27:17.316 INFO     PROFILING: 1 rootless + 0 gated-parent lanes of 4 dispatch no root credit at start and hold a lane credit instead (so they still count toward concurrency); rootless lanes recycle into a fresh root once their background subagents drain (agentic_replay.py:437)
+10:27:17.316 NOTICE   Phase profiling (profiling) started | phase_index=0 | profiling_index=0 | target: 900.0s duration (runner.py:600)
+10:27:17.317 INFO     Waiting for event 'profiling phase sending' with timeout of 899.999207643s (runner.py:1236)
+10:27:17.317 INFO     Credit phase start: profiling (records_manager.py:1171)
+10:27:17.318 INFO     PROFILING execute: resuming 4 trajectory sessions (spread; first-request spread 50141.5s) (agentic_replay.py:1340)
+10:28:19.988 WARNING  OSL mismatch: got 4096 tokens (requested 246, diff 1565.0%) (osl_mismatch_metrics.py:193)
+10:28:28.355 INFO     [realtime 01:11 profiling] (records_manager.py:1521)
+10:28:28.355 INFO       rps=0.0 (avg 0.0)  tput_in=1,074/s  tput_out=65/s  done=1 ok=1 err=0 (records_manager.py:1521)
+10:28:28.355 INFO       ttft    p50=   704ms  p75=   704ms  p95=   704ms  p99=   704ms (records_manager.py:1521)
+10:28:28.355 INFO       itl     p50=    15ms  p75=    15ms  p95=    15ms  p99=    15ms (records_manager.py:1521)
+10:28:28.355 INFO       e2e     p50=62,656ms  p75=62,656ms  p95=62,656ms  p99=62,656ms (records_manager.py:1521)
+10:28:28.355 INFO       intvty  p50=      66  p75=      66  p95=      66  p99=      66  (1/tpot tok/s) (records_manager.py:1521)
+10:28:28.355 INFO       isl     p50=  67,266  p75=  67,266  p90=  67,266  p99=  67,266  (tokens) (records_manager.py:1521)
+10:28:28.355 INFO       osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=   4,096  (tokens) (records_manager.py:1521)
+10:28:28.355 INFO       tot     in=67,266  out=4,096 (records_manager.py:1521)
+10:28:28.355 INFO       trace  theoretical_prefix_cache_hit=94.7% (records_manager.py:1521)
+10:28:28.355 INFO       srv    prefix_cache_hit=97.5% unique_in_srv=1,666 kv_usage=7.0% queue=1r/0w tput_in_srv=953/s tput_out_srv=58/s (records_manager.py:1521)
+10:28:29.328 WARNING  OSL mismatch: got 4096 tokens (requested 282, diff 1352.5%) (osl_mismatch_metrics.py:193)
+10:28:58.361 INFO     [realtime 01:41 profiling] (records_manager.py:1521)
+10:28:58.362 INFO       rps=0.0 (avg 0.0)  tput_in=1,815/s  tput_out=114/s  done=2 ok=2 err=0 (records_manager.py:1521)
+10:28:58.362 INFO       ttft    p50=   711ms  p75=   715ms  p95=   718ms  p99=   718ms (records_manager.py:1521)
+10:28:58.362 INFO       itl     p50=    15ms  p75=    15ms  p95=    15ms  p99=    15ms (records_manager.py:1521)
+10:28:58.362 INFO       e2e     p50=61,853ms  p75=62,254ms  p95=62,576ms  p99=62,640ms (records_manager.py:1521)
+10:28:58.362 INFO       intvty  p50=      67  p75=      67  p95=      68  p99=      68  (1/tpot tok/s) (records_manager.py:1521)
+10:28:58.362 INFO       isl     p50=  65,333  p75=  66,300  p90=  66,879  p99=  67,227  (tokens) (records_manager.py:1521)
+10:28:58.362 INFO       osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=   4,096  (tokens) (records_manager.py:1521)
+10:28:58.362 INFO       tot     in=130,666  out=8,192 (records_manager.py:1521)
+10:28:58.362 INFO       trace  theoretical_prefix_cache_hit=94.8% (records_manager.py:1521)
+10:28:58.362 INFO       srv    prefix_cache_hit=96.8% unique_in_srv=4,138 kv_usage=7.0% queue=1r/0w tput_in_srv=1,299/s tput_out_srv=81/s (records_manager.py:1521)
+10:29:18.861 WARNING  OSL mismatch: got 4096 tokens (requested 755, diff 442.5%) (osl_mismatch_metrics.py:193)
+10:29:28.371 INFO     [realtime 02:11 profiling] (records_manager.py:1521)
+10:29:28.371 INFO       rps=0.0 (avg 0.0)  tput_in=1,697/s  tput_out=101/s  done=3 ok=3 err=0 (records_manager.py:1521)
+10:29:28.371 INFO       ttft    p50=   718ms  p75=   950ms  p95= 1,136ms  p99= 1,173ms (records_manager.py:1521)
+10:29:28.371 INFO       itl     p50=    15ms  p75=    15ms  p95=    15ms  p99=    15ms (records_manager.py:1521)
+10:29:28.371 INFO       e2e     p50=61,050ms  p75=61,853ms  p95=62,495ms  p99=62,624ms (records_manager.py:1521)
+10:29:28.371 INFO       intvty  p50=      68  p75=      77  p95=      84  p99=      86  (1/tpot tok/s) (records_manager.py:1521)
+10:29:28.371 INFO       isl     p50=  67,266  p75=  71,442  p90=  73,948  p99=  75,452  (tokens) (records_manager.py:1521)
+10:29:28.371 INFO       osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=   4,096  (tokens) (records_manager.py:1521)
+10:29:28.371 INFO       tot     in=206,285  out=12,288 (records_manager.py:1521)
+10:29:28.371 INFO       trace  theoretical_prefix_cache_hit=93.8% (records_manager.py:1521)
+10:29:28.371 INFO       srv    prefix_cache_hit=92.1% unique_in_srv=16,397 kv_usage=7.0% queue=1r/0w tput_in_srv=1,575/s tput_out_srv=94/s (records_manager.py:1521)
+10:29:58.377 INFO     [realtime 02:41 profiling] (records_manager.py:1521)
+10:29:58.377 INFO       rps=0.0 (avg 0.0)  tput_in=1,697/s  tput_out=101/s  done=3 ok=3 err=0 (records_manager.py:1521)
+10:29:58.377 INFO       ttft    p50=   718ms  p75=   950ms  p95= 1,136ms  p99= 1,173ms (records_manager.py:1521)
+10:29:58.377 INFO       itl     p50=    15ms  p75=    15ms  p95=    15ms  p99=    15ms (records_manager.py:1521)
+10:29:58.377 INFO       e2e     p50=61,050ms  p75=61,853ms  p95=62,495ms  p99=62,624ms (records_manager.py:1521)
+10:29:58.377 INFO       intvty  p50=      68  p75=      77  p95=      84  p99=      86  (1/tpot tok/s) (records_manager.py:1521)
+10:29:58.377 INFO       isl     p50=  67,266  p75=  71,442  p90=  73,948  p99=  75,452  (tokens) (records_manager.py:1521)
+10:29:58.377 INFO       osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=   4,096  (tokens) (records_manager.py:1521)
+10:29:58.377 INFO       tot     in=206,285  out=12,288 (records_manager.py:1521)
+10:29:58.377 INFO       trace  theoretical_prefix_cache_hit=93.8% (records_manager.py:1521)
+10:29:58.377 INFO       srv    prefix_cache_hit=92.1% unique_in_srv=16,397 kv_usage=7.0% queue=1r/0w tput_in_srv=1,282/s tput_out_srv=76/s (records_manager.py:1521)
+10:30:08.645 WARNING  OSL mismatch: got 4096 tokens (requested 700, diff 485.1%) (osl_mismatch_metrics.py:193)
+10:30:28.383 INFO     [realtime 03:11 profiling] (records_manager.py:1521)
+10:30:28.383 INFO       rps=0.0 (avg 0.0)  tput_in=1,711/s  tput_out=96/s  done=4 ok=4 err=0 (records_manager.py:1521)
+10:30:28.383 INFO       ttft    p50=   950ms  p75= 1,199ms  p95= 1,240ms  p99= 1,248ms (records_manager.py:1521)
+10:30:28.383 INFO       itl     p50=    13ms  p75=    15ms  p95=    15ms  p99=    15ms (records_manager.py:1521)
+10:30:28.383 INFO       e2e     p50=54,959ms  p75=61,451ms  p95=62,415ms  p99=62,608ms (records_manager.py:1521)
+10:30:28.383 INFO       intvty  p50=      77  p75=      86  p95=      86  p99=      86  (1/tpot tok/s) (records_manager.py:1521)
+10:30:28.383 INFO       isl     p50=  71,442  p75=  78,418  p90=  83,456  p99=  86,478  (tokens) (records_manager.py:1521)
+10:30:28.383 INFO       osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=   4,096  (tokens) (records_manager.py:1521)
+10:30:28.383 INFO       tot     in=293,099  out=16,384 (records_manager.py:1521)
+10:30:28.383 INFO       trace  theoretical_prefix_cache_hit=93.1% (records_manager.py:1521)
+10:30:28.383 INFO       srv    prefix_cache_hit=90.6% unique_in_srv=27,627 kv_usage=7.0% queue=1r/0w tput_in_srv=1,535/s tput_out_srv=86/s (records_manager.py:1521)
+10:30:58.389 INFO     [realtime 03:41 profiling] (records_manager.py:1521)
+10:30:58.390 INFO       rps=0.0 (avg 0.0)  tput_in=1,711/s  tput_out=96/s  done=4 ok=4 err=0 (records_manager.py:1521)
+10:30:58.390 INFO       ttft    p50=   950ms  p75= 1,199ms  p95= 1,240ms  p99= 1,248ms (records_manager.py:1521)
+10:30:58.390 INFO       itl     p50=    13ms  p75=    15ms  p95=    15ms  p99=    15ms (records_manager.py:1521)
+10:30:58.390 INFO       e2e     p50=54,959ms  p75=61,451ms  p95=62,415ms  p99=62,608ms (records_manager.py:1521)
+10:30:58.390 INFO       intvty  p50=      77  p75=      86  p95=      86  p99=      86  (1/tpot tok/s) (records_manager.py:1521)
+10:30:58.390 INFO       isl     p50=  71,442  p75=  78,418  p90=  83,456  p99=  86,478  (tokens) (records_manager.py:1521)
+10:30:58.390 INFO       osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=   4,096  (tokens) (records_manager.py:1521)
+10:30:58.390 INFO       tot     in=293,099  out=16,384 (records_manager.py:1521)
+10:30:58.390 INFO       trace  theoretical_prefix_cache_hit=93.1% (records_manager.py:1521)
+10:30:58.390 INFO       srv    prefix_cache_hit=90.6% unique_in_srv=27,627 kv_usage=7.0% queue=1r/0w tput_in_srv=1,327/s tput_out_srv=74/s (records_manager.py:1521)
+10:31:14.004 WARNING  OSL mismatch: got 4096 tokens (requested 2388, diff 71.5%) (osl_mismatch_metrics.py:193)
+10:31:28.394 INFO     [realtime 04:11 profiling] (records_manager.py:1521)
+10:31:28.394 INFO       rps=0.0 (avg 0.0)  tput_in=1,654/s  tput_out=87/s  done=5 ok=5 err=0 (records_manager.py:1521)
+10:31:28.394 INFO       ttft    p50= 1,182ms  p75= 1,250ms  p95= 1,260ms  p99= 1,262ms (records_manager.py:1521)
+10:31:28.394 INFO       itl     p50=    15ms  p75=    15ms  p95=    15ms  p99=    15ms (records_manager.py:1521)
+10:31:28.394 INFO       e2e     p50=61,050ms  p75=62,656ms  p95=64,032ms  p99=64,308ms (records_manager.py:1521)
+10:31:28.394 INFO       intvty  p50=      68  p75=      86  p95=      86  p99=      86  (1/tpot tok/s) (records_manager.py:1521)
+10:31:28.394 INFO       isl     p50=  75,619  p75=  86,814  p90=  93,683  p99=  97,804  (tokens) (records_manager.py:1521)
+10:31:28.394 INFO       osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=   4,096  (tokens) (records_manager.py:1521)
+10:31:28.394 INFO       tot     in=391,361  out=20,480 (records_manager.py:1521)
+10:31:28.394 INFO       trace  theoretical_prefix_cache_hit=92.7% (records_manager.py:1521)
+10:31:28.394 INFO       srv    prefix_cache_hit=90.0% unique_in_srv=39,105 kv_usage=7.0% queue=1r/0w tput_in_srv=1,560/s tput_out_srv=82/s (records_manager.py:1521)
+10:31:44.704 WARNING  OSL mismatch: got 4096 tokens (requested 103, diff 3876.7%) (osl_mismatch_metrics.py:193)
+10:31:58.399 INFO     [realtime 04:41 profiling] (records_manager.py:1521)
+10:31:58.399 INFO       rps=0.0 (avg 0.0)  tput_in=1,720/s  tput_out=92/s  done=6 ok=6 err=0 (records_manager.py:1521)
+10:31:58.399 INFO       ttft    p50=   950ms  p75= 1,233ms  p95= 1,260ms  p99= 1,262ms (records_manager.py:1521)
+10:31:58.399 INFO       itl     p50=    15ms  p75=    15ms  p95=    15ms  p99=    15ms (records_manager.py:1521)
+10:31:58.399 INFO       e2e     p50=60,905ms  p75=62,254ms  p95=63,946ms  p99=64,290ms (records_manager.py:1521)
+10:31:58.399 INFO       intvty  p50=      68  p75=      82  p95=      86  p99=      86  (1/tpot tok/s) (records_manager.py:1521)
+10:31:58.399 INFO       isl     p50=  72,116  p75=  84,015  p90=  92,538  p99=  97,690  (tokens) (records_manager.py:1521)
+10:31:58.399 INFO       osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=   4,096  (tokens) (records_manager.py:1521)
+10:31:58.399 INFO       tot     in=459,975  out=24,576 (records_manager.py:1521)
+10:31:58.399 INFO       trace  theoretical_prefix_cache_hit=93.0% (records_manager.py:1521)
+10:31:58.399 INFO       srv    prefix_cache_hit=91.2% unique_in_srv=40,455 kv_usage=7.0% queue=1r/0w tput_in_srv=1,639/s tput_out_srv=88/s (records_manager.py:1521)
+10:32:23.041 WARNING  OSL mismatch: got 4096 tokens (requested 1195, diff 242.8%) (osl_mismatch_metrics.py:193)
+10:32:28.413 INFO     [realtime 05:11 profiling] (records_manager.py:1521)
+10:32:28.413 INFO       rps=0.0 (avg 0.0)  tput_in=1,831/s  tput_out=94/s  done=7 ok=7 err=0 (records_manager.py:1521)
+10:32:28.413 INFO       ttft    p50=   728ms  p75= 1,216ms  p95= 1,259ms  p99= 1,262ms (records_manager.py:1521)
+10:32:28.413 INFO       itl     p50=    15ms  p75=    15ms  p95=    16ms  p99=    16ms (records_manager.py:1521)
+10:32:28.413 INFO       e2e     p50=61,050ms  p75=63,516ms  p95=66,881ms  p99=67,740ms (records_manager.py:1521)
+10:32:28.414 INFO       intvty  p50=      68  p75=      77  p95=      86  p99=      86  (1/tpot tok/s) (records_manager.py:1521)
+10:32:28.414 INFO       isl     p50=  75,619  p75=  92,538  p90=  98,904  p99=  99,771  (tokens) (records_manager.py:1521)
+10:32:28.414 INFO       osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=   4,096  (tokens) (records_manager.py:1521)
+10:32:28.414 INFO       tot     in=559,842  out=28,672 (records_manager.py:1521)
+10:32:28.414 INFO       trace  theoretical_prefix_cache_hit=93.5% (records_manager.py:1521)
+10:32:28.414 INFO       srv    prefix_cache_hit=92.5% unique_in_srv=42,082 kv_usage=13.0% queue=2r/0w tput_in_srv=1,800/s tput_out_srv=92/s (records_manager.py:1521)
+10:32:33.212 WARNING  OSL mismatch: got 4096 tokens (requested 86, diff 4662.8%) (osl_mismatch_metrics.py:193)
+10:32:46.569 WARNING  OSL mismatch: got 4096 tokens (requested 278, diff 1373.4%) (osl_mismatch_metrics.py:193)
+10:32:58.418 INFO     [realtime 05:41 profiling] (records_manager.py:1521)
+10:32:58.418 INFO       rps=0.1 (avg 0.0)  tput_in=2,143/s  tput_out=112/s  done=9 ok=9 err=0 (records_manager.py:1521)
+10:32:58.418 INFO       ttft    p50=   718ms  p75= 1,182ms  p95= 1,258ms  p99= 1,262ms (records_manager.py:1521)
+10:32:58.418 INFO       itl     p50=    15ms  p75=    15ms  p95=    18ms  p99=    19ms (records_manager.py:1521)
+10:32:58.418 INFO       e2e     p50=61,050ms  p75=64,376ms  p95=75,487ms  p99=79,504ms (records_manager.py:1521)
+10:32:58.418 INFO       intvty  p50=      68  p75=      68  p95=      86  p99=      86  (1/tpot tok/s) (records_manager.py:1521)
+10:32:58.418 INFO       isl     p50=  75,333  p75=  86,814  p90=  98,583  p99=  99,739  (tokens) (records_manager.py:1521)
+10:32:58.418 INFO       osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=   4,096  (tokens) (records_manager.py:1521)
+10:32:58.418 INFO       tot     in=705,714  out=36,864 (records_manager.py:1521)
+10:32:58.418 INFO       trace  theoretical_prefix_cache_hit=93.9% (records_manager.py:1521)
+10:32:58.418 INFO       srv    prefix_cache_hit=93.4% unique_in_srv=46,642 kv_usage=7.0% queue=1r/0w tput_in_srv=2,070/s tput_out_srv=108/s (records_manager.py:1521)
+10:33:17.880 WARNING  OSL mismatch: got 4096 tokens (requested 730, diff 461.1%) (osl_mismatch_metrics.py:193)
+10:33:20.358 WARNING  OSL mismatch: got 4096 tokens (requested 405, diff 911.4%) (osl_mismatch_metrics.py:193)
+10:33:28.425 INFO     [realtime 06:11 profiling] (records_manager.py:1521)
+10:33:28.425 INFO       rps=0.1 (avg 0.0)  tput_in=2,556/s  tput_out=124/s  done=11 ok=11 err=0 (records_manager.py:1521)
+10:33:28.425 INFO       ttft    p50=   728ms  p75= 1,014ms  p95= 1,256ms  p99= 1,262ms (records_manager.py:1521)
+10:33:28.425 INFO       itl     p50=    15ms  p75=    15ms  p95=    18ms  p99=    19ms (records_manager.py:1521)
+10:33:28.425 INFO       e2e     p50=60,904ms  p75=63,516ms  p95=74,231ms  p99=79,253ms (records_manager.py:1521)
+10:33:28.425 INFO       intvty  p50=      68  p75=      71  p95=      86  p99=      86  (1/tpot tok/s) (records_manager.py:1521)
+10:33:28.425 INFO       isl     p50=  75,619  p75=  99,064  p90= 101,215  p99= 118,862  (tokens) (records_manager.py:1521)
+10:33:28.425 INFO       osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=   4,096  (tokens) (records_manager.py:1521)
+10:33:28.425 INFO       tot     in=927,752  out=45,056 (records_manager.py:1521)
+10:33:28.425 INFO       trace  theoretical_prefix_cache_hit=94.5% (records_manager.py:1521)
+10:33:28.426 INFO       srv    prefix_cache_hit=94.6% unique_in_srv=49,736 kv_usage=7.0% queue=1r/0w tput_in_srv=2,501/s tput_out_srv=121/s (records_manager.py:1521)
+10:33:58.431 INFO     [realtime 06:41 profiling] (records_manager.py:1521)
+10:33:58.431 INFO       rps=0.0 (avg 0.0)  tput_in=2,556/s  tput_out=124/s  done=11 ok=11 err=0 (records_manager.py:1521)
+10:33:58.432 INFO       ttft    p50=   728ms  p75= 1,014ms  p95= 1,256ms  p99= 1,262ms (records_manager.py:1521)
+10:33:58.432 INFO       itl     p50=    15ms  p75=    15ms  p95=    18ms  p99=    19ms (records_manager.py:1521)
+10:33:58.432 INFO       e2e     p50=60,904ms  p75=63,516ms  p95=74,231ms  p99=79,253ms (records_manager.py:1521)
+10:33:58.432 INFO       intvty  p50=      68  p75=      71  p95=      86  p99=      86  (1/tpot tok/s) (records_manager.py:1521)
+10:33:58.432 INFO       isl     p50=  75,619  p75=  99,064  p90= 101,215  p99= 118,862  (tokens) (records_manager.py:1521)
+10:33:58.432 INFO       osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=   4,096  (tokens) (records_manager.py:1521)
+10:33:58.432 INFO       tot     in=927,752  out=45,056 (records_manager.py:1521)
+10:33:58.432 INFO       trace  theoretical_prefix_cache_hit=94.5% (records_manager.py:1521)
+10:33:58.432 INFO       srv    prefix_cache_hit=94.6% unique_in_srv=49,736 kv_usage=7.0% queue=1r/0w tput_in_srv=2,314/s tput_out_srv=112/s (records_manager.py:1521)
+10:34:20.051 WARNING  OSL mismatch: got 4096 tokens (requested 1351, diff 203.2%) (osl_mismatch_metrics.py:193)
+10:34:25.038 WARNING  OSL mismatch: got 4096 tokens (requested 159, diff 2476.1%) (osl_mismatch_metrics.py:193)
+10:34:28.437 INFO     [realtime 07:11 profiling] (records_manager.py:1521)
+10:34:28.438 INFO       rps=0.1 (avg 0.0)  tput_in=2,573/s  tput_out=124/s  done=13 ok=13 err=0 (records_manager.py:1521)
+10:34:28.438 INFO       ttft    p50=   728ms  p75=   845ms  p95= 1,255ms  p99= 1,261ms (records_manager.py:1521)
+10:34:28.438 INFO       itl     p50=    15ms  p75=    15ms  p95=    18ms  p99=    19ms (records_manager.py:1521)
+10:34:28.438 INFO       e2e     p50=60,904ms  p75=64,376ms  p95=73,339ms  p99=79,074ms (records_manager.py:1521)
+10:34:28.438 INFO       intvty  p50=      68  p75=      71  p95=      86  p99=      86  (1/tpot tok/s) (records_manager.py:1521)
+10:34:28.438 INFO       isl     p50=  75,619  p75=  99,867  p90= 101,473  p99= 118,509  (tokens) (records_manager.py:1521)
+10:34:28.438 INFO       osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=   4,096  (tokens) (records_manager.py:1521)
+10:34:28.438 INFO       tot     in=1,100,342  out=53,248 (records_manager.py:1521)
+10:34:28.438 INFO       trace  theoretical_prefix_cache_hit=95.1% (records_manager.py:1521)
+10:34:28.438 INFO       srv    prefix_cache_hit=95.4% unique_in_srv=50,614 kv_usage=7.0% queue=1r/0w tput_in_srv=2,553/s tput_out_srv=124/s (records_manager.py:1521)
+10:34:58.443 INFO     [realtime 07:41 profiling] (records_manager.py:1521)
+10:34:58.443 INFO       rps=0.0 (avg 0.0)  tput_in=2,573/s  tput_out=124/s  done=13 ok=13 err=0 (records_manager.py:1521)
+10:34:58.443 INFO       ttft    p50=   728ms  p75=   845ms  p95= 1,255ms  p99= 1,261ms (records_manager.py:1521)
+10:34:58.443 INFO       itl     p50=    15ms  p75=    15ms  p95=    18ms  p99=    19ms (records_manager.py:1521)
+10:34:58.443 INFO       e2e     p50=60,904ms  p75=64,376ms  p95=73,339ms  p99=79,074ms (records_manager.py:1521)
+10:34:58.443 INFO       intvty  p50=      68  p75=      71  p95=      86  p99=      86  (1/tpot tok/s) (records_manager.py:1521)
+10:34:58.443 INFO       isl     p50=  75,619  p75=  99,867  p90= 101,473  p99= 118,509  (tokens) (records_manager.py:1521)
+10:34:58.443 INFO       osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=   4,096  (tokens) (records_manager.py:1521)
+10:34:58.443 INFO       tot     in=1,100,342  out=53,248 (records_manager.py:1521)
+10:34:58.443 INFO       trace  theoretical_prefix_cache_hit=95.1% (records_manager.py:1521)
+10:34:58.443 INFO       srv    prefix_cache_hit=95.4% unique_in_srv=50,614 kv_usage=7.0% queue=1r/0w tput_in_srv=2,387/s tput_out_srv=116/s (records_manager.py:1521)
+10:35:08.833 WARNING  OSL mismatch: got 4096 tokens (requested 743, diff 451.3%) (osl_mismatch_metrics.py:193)
+10:35:13.346 WARNING  OSL mismatch: got 4096 tokens (requested 145, diff 2724.8%) (osl_mismatch_metrics.py:193)
+10:35:28.447 INFO     [realtime 08:11 profiling] (records_manager.py:1521)
+10:35:28.447 INFO       rps=0.1 (avg 0.0)  tput_in=2,678/s  tput_out=129/s  done=15 ok=15 err=0 (records_manager.py:1521)
+10:35:28.448 INFO       ttft    p50=   728ms  p75=   818ms  p95= 1,254ms  p99= 1,261ms (records_manager.py:1521)
+10:35:28.448 INFO       itl     p50=    15ms  p75=    15ms  p95=    17ms  p99=    19ms (records_manager.py:1521)
+10:35:28.448 INFO       e2e     p50=60,760ms  p75=63,516ms  p95=72,145ms  p99=78,835ms (records_manager.py:1521)
+10:35:28.448 INFO       intvty  p50=      68  p75=      80  p95=      88  p99=      88  (1/tpot tok/s) (records_manager.py:1521)
+10:35:28.448 INFO       isl     p50=  75,619  p75= 100,541  p90= 102,462  p99= 118,339  (tokens) (records_manager.py:1521)
+10:35:28.448 INFO       osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=   4,096  (tokens) (records_manager.py:1521)
+10:35:28.448 INFO       tot     in=1,274,604  out=61,440 (records_manager.py:1521)
+10:35:28.448 INFO       trace  theoretical_prefix_cache_hit=95.4% (records_manager.py:1521)
+10:35:28.448 INFO       srv    prefix_cache_hit=95.9% unique_in_srv=52,332 kv_usage=7.0% queue=1r/0w tput_in_srv=2,596/s tput_out_srv=125/s (records_manager.py:1521)
+10:35:58.454 INFO     [realtime 08:41 profiling] (records_manager.py:1521)
+10:35:58.454 INFO       rps=0.0 (avg 0.0)  tput_in=2,678/s  tput_out=129/s  done=15 ok=15 err=0 (records_manager.py:1521)
+10:35:58.454 INFO       ttft    p50=   728ms  p75=   818ms  p95= 1,254ms  p99= 1,261ms (records_manager.py:1521)
+10:35:58.454 INFO       itl     p50=    15ms  p75=    15ms  p95=    17ms  p99=    19ms (records_manager.py:1521)
+10:35:58.454 INFO       e2e     p50=60,760ms  p75=63,516ms  p95=72,145ms  p99=78,835ms (records_manager.py:1521)
+10:35:58.454 INFO       intvty  p50=      68  p75=      80  p95=      88  p99=      88  (1/tpot tok/s) (records_manager.py:1521)
+10:35:58.454 INFO       isl     p50=  75,619  p75= 100,541  p90= 102,462  p99= 118,339  (tokens) (records_manager.py:1521)
+10:35:58.454 INFO       osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=   4,096  (tokens) (records_manager.py:1521)
+10:35:58.454 INFO       tot     in=1,274,604  out=61,440 (records_manager.py:1521)
+10:35:58.454 INFO       trace  theoretical_prefix_cache_hit=95.4% (records_manager.py:1521)
+10:35:58.454 INFO       srv    prefix_cache_hit=95.9% unique_in_srv=52,332 kv_usage=7.0% queue=1r/0w tput_in_srv=2,447/s tput_out_srv=118/s (records_manager.py:1521)
+10:36:06.825 WARNING  OSL mismatch: got 4096 tokens (requested 405, diff 911.4%) (osl_mismatch_metrics.py:193)
+10:36:17.686 WARNING  OSL mismatch: got 4096 tokens (requested 553, diff 640.7%) (osl_mismatch_metrics.py:193)
+10:36:28.460 INFO     [realtime 09:11 profiling] (records_manager.py:1521)
+10:36:28.460 INFO       rps=0.1 (avg 0.0)  tput_in=2,685/s  tput_out=129/s  done=17 ok=17 err=0 (records_manager.py:1521)
+10:36:28.460 INFO       ttft    p50=   728ms  p75=   791ms  p95= 1,252ms  p99= 1,261ms (records_manager.py:1521)
+10:36:28.460 INFO       itl     p50=    15ms  p75=    15ms  p95=    17ms  p99=    19ms (records_manager.py:1521)
+10:36:28.460 INFO       e2e     p50=60,760ms  p75=63,392ms  p95=70,950ms  p99=78,596ms (records_manager.py:1521)
+10:36:28.460 INFO       intvty  p50=      68  p75=      74  p95=      88  p99=      88  (1/tpot tok/s) (records_manager.py:1521)
+10:36:28.460 INFO       isl     p50=  75,619  p75= 101,215  p90= 103,769  p99= 118,260  (tokens) (records_manager.py:1521)
+10:36:28.460 INFO       osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=   4,096  (tokens) (records_manager.py:1521)
+10:36:28.461 INFO       tot     in=1,451,111  out=69,632 (records_manager.py:1521)
+10:36:28.461 INFO       trace  theoretical_prefix_cache_hit=95.7% (records_manager.py:1521)
+10:36:28.461 INFO       srv    prefix_cache_hit=96.2% unique_in_srv=54,631 kv_usage=7.0% queue=1r/0w tput_in_srv=2,634/s tput_out_srv=126/s (records_manager.py:1521)
+10:36:44.011 WARNING  OSL mismatch: got 4096 tokens (requested 620, diff 560.6%) (osl_mismatch_metrics.py:193)
+10:36:58.466 INFO     [realtime 09:41 profiling] (records_manager.py:1521)
+10:36:58.467 INFO       rps=0.0 (avg 0.0)  tput_in=2,694/s  tput_out=130/s  done=18 ok=18 err=0 (records_manager.py:1521)
+10:36:58.467 INFO       ttft    p50=   723ms  p75=   786ms  p95= 1,252ms  p99= 1,261ms (records_manager.py:1521)
+10:36:58.467 INFO       itl     p50=    15ms  p75=    15ms  p95=    17ms  p99=    19ms (records_manager.py:1521)
+10:36:58.467 INFO       e2e     p50=60,655ms  p75=63,208ms  p95=70,352ms  p99=78,477ms (records_manager.py:1521)
+10:36:58.467 INFO       intvty  p50=      68  p75=      74  p95=      88  p99=      88  (1/tpot tok/s) (records_manager.py:1521)
+10:36:58.467 INFO       isl     p50=  75,476  p75= 100,878  p90= 103,596  p99= 118,100  (tokens) (records_manager.py:1521)
+10:36:58.467 INFO       osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=   4,096  (tokens) (records_manager.py:1521)
+10:36:58.467 INFO       tot     in=1,526,380  out=73,728 (records_manager.py:1521)
+10:36:58.467 INFO       trace  theoretical_prefix_cache_hit=95.9% (records_manager.py:1521)
+10:36:58.467 INFO       srv    prefix_cache_hit=96.3% unique_in_srv=57,196 kv_usage=7.0% queue=1r/0w tput_in_srv=2,627/s tput_out_srv=127/s (records_manager.py:1521)
+10:37:02.704 WARNING  OSL mismatch: got 4096 tokens (requested 522, diff 684.7%) (osl_mismatch_metrics.py:193)
+10:37:13.681 WARNING  OSL mismatch: got 4096 tokens (requested 605, diff 577.0%) (osl_mismatch_metrics.py:193)
+10:37:28.471 INFO     [realtime 10:11 profiling] (records_manager.py:1521)
+10:37:28.472 INFO       rps=0.1 (avg 0.0)  tput_in=2,860/s  tput_out=137/s  done=20 ok=20 err=0 (records_manager.py:1521)
+10:37:28.472 INFO       ttft    p50=   739ms  p75=   801ms  p95= 1,251ms  p99= 1,260ms (records_manager.py:1521)
+10:37:28.472 INFO       itl     p50=    15ms  p75=    15ms  p95=    17ms  p99=    19ms (records_manager.py:1521)
+10:37:28.472 INFO       e2e     p50=60,655ms  p75=63,638ms  p95=69,158ms  p99=78,238ms (records_manager.py:1521)
+10:37:28.472 INFO       intvty  p50=      68  p75=      77  p95=      89  p99=     104  (1/tpot tok/s) (records_manager.py:1521)
+10:37:28.472 INFO       isl     p50=  75,476  p75= 101,296  p90= 104,858  p99= 117,878  (tokens) (records_manager.py:1521)
+10:37:28.472 INFO       osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=   4,096  (tokens) (records_manager.py:1521)
+10:37:28.472 INFO       tot     in=1,705,645  out=81,920 (records_manager.py:1521)
+10:37:28.472 INFO       trace  theoretical_prefix_cache_hit=96.1% (records_manager.py:1521)
+10:37:28.472 INFO       srv    prefix_cache_hit=96.5% unique_in_srv=60,013 kv_usage=7.0% queue=1r/0w tput_in_srv=2,792/s tput_out_srv=134/s (records_manager.py:1521)
+10:37:29.602 WARNING  OSL mismatch: got 4096 tokens (requested 18, diff 22655.6%) (osl_mismatch_metrics.py:193)
+10:37:58.477 INFO     [realtime 10:41 profiling] (records_manager.py:1521)
+10:37:58.477 INFO       rps=0.0 (avg 0.0)  tput_in=2,913/s  tput_out=140/s  done=21 ok=21 err=0 (records_manager.py:1521)
+10:37:58.477 INFO       ttft    p50=   728ms  p75=   791ms  p95= 1,250ms  p99= 1,260ms (records_manager.py:1521)
+10:37:58.477 INFO       itl     p50=    15ms  p75=    15ms  p95=    17ms  p99=    19ms (records_manager.py:1521)
+10:37:58.477 INFO       e2e     p50=60,550ms  p75=63,392ms  p95=68,560ms  p99=78,119ms (records_manager.py:1521)
+10:37:58.477 INFO       intvty  p50=      69  p75=      86  p95=      94  p99=     105  (1/tpot tok/s) (records_manager.py:1521)
+10:37:58.477 INFO       isl     p50=  75,619  p75= 101,215  p90= 104,806  p99= 117,723  (tokens) (records_manager.py:1521)
+10:37:58.477 INFO       osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=   4,096  (tokens) (records_manager.py:1521)
+10:37:58.477 INFO       tot     in=1,783,223  out=86,016 (records_manager.py:1521)
+10:37:58.477 INFO       trace  theoretical_prefix_cache_hit=96.1% (records_manager.py:1521)
+10:37:58.477 INFO       srv    prefix_cache_hit=96.5% unique_in_srv=62,327 kv_usage=7.0% queue=1r/0w tput_in_srv=2,782/s tput_out_srv=134/s (records_manager.py:1521)
+10:38:07.539 WARNING  OSL mismatch: got 4096 tokens (requested 580, diff 606.2%) (osl_mismatch_metrics.py:193)
+10:38:10.672 WARNING  OSL mismatch: got 4096 tokens (requested 510, diff 703.1%) (osl_mismatch_metrics.py:193)
+10:38:28.482 INFO     [realtime 11:11 profiling] (records_manager.py:1521)
+10:38:28.482 INFO       rps=0.1 (avg 0.0)  tput_in=3,007/s  tput_out=144/s  done=23 ok=23 err=0 (records_manager.py:1521)
+10:38:28.482 INFO       ttft    p50=   740ms  p75=   790ms  p95= 1,243ms  p99= 1,260ms (records_manager.py:1521)
+10:38:28.483 INFO       itl     p50=    15ms  p75=    15ms  p95=    17ms  p99=    19ms (records_manager.py:1521)
+10:38:28.483 INFO       e2e     p50=60,550ms  p75=63,024ms  p95=68,500ms  p99=77,880ms (records_manager.py:1521)
+10:38:28.483 INFO       intvty  p50=      69  p75=      80  p95=      94  p99=     105  (1/tpot tok/s) (records_manager.py:1521)
+10:38:28.483 INFO       isl     p50=  75,619  p75= 101,376  p90= 105,218  p99= 117,554  (tokens) (records_manager.py:1521)
+10:38:28.483 INFO       osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=   4,096  (tokens) (records_manager.py:1521)
+10:38:28.483 INFO       tot     in=1,964,734  out=94,208 (records_manager.py:1521)
+10:38:28.483 INFO       trace  theoretical_prefix_cache_hit=96.3% (records_manager.py:1521)
+10:38:28.483 INFO       srv    prefix_cache_hit=96.7% unique_in_srv=64,638 kv_usage=7.0% queue=1r/0w tput_in_srv=2,928/s tput_out_srv=140/s (records_manager.py:1521)
+10:38:58.489 INFO     [realtime 11:41 profiling] (records_manager.py:1521)
+10:38:58.489 INFO       rps=0.0 (avg 0.0)  tput_in=3,007/s  tput_out=144/s  done=23 ok=23 err=0 (records_manager.py:1521)
+10:38:58.489 INFO       ttft    p50=   740ms  p75=   790ms  p95= 1,243ms  p99= 1,260ms (records_manager.py:1521)
+10:38:58.489 INFO       itl     p50=    15ms  p75=    15ms  p95=    17ms  p99=    19ms (records_manager.py:1521)
+10:38:58.489 INFO       e2e     p50=60,550ms  p75=63,024ms  p95=68,500ms  p99=77,880ms (records_manager.py:1521)
+10:38:58.489 INFO       intvty  p50=      69  p75=      80  p95=      94  p99=     105  (1/tpot tok/s) (records_manager.py:1521)
+10:38:58.489 INFO       isl     p50=  75,619  p75= 101,376  p90= 105,218  p99= 117,554  (tokens) (records_manager.py:1521)
+10:38:58.489 INFO       osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=   4,096  (tokens) (records_manager.py:1521)
+10:38:58.489 INFO       tot     in=1,964,734  out=94,208 (records_manager.py:1521)
+10:38:58.489 INFO       trace  theoretical_prefix_cache_hit=96.3% (records_manager.py:1521)
+10:38:58.489 INFO       srv    prefix_cache_hit=96.7% unique_in_srv=64,638 kv_usage=7.0% queue=1r/0w tput_in_srv=2,803/s tput_out_srv=134/s (records_manager.py:1521)
+10:39:21.070 WARNING  OSL mismatch: got 4096 tokens (requested 309, diff 1225.6%) (osl_mismatch_metrics.py:193)
+10:39:21.399 WARNING  OSL mismatch: got 4096 tokens (requested 574, diff 613.6%) (osl_mismatch_metrics.py:193)
+10:39:23.821 WARNING  OSL mismatch: got 4096 tokens (requested 2127, diff 92.6%) (osl_mismatch_metrics.py:193)
+10:39:24.790 WARNING  OSL mismatch: got 4096 tokens (requested 606, diff 575.9%) (osl_mismatch_metrics.py:193)
+10:39:28.496 INFO     [realtime 12:11 profiling] (records_manager.py:1521)
+10:39:28.496 INFO       rps=0.1 (avg 0.0)  tput_in=3,189/s  tput_out=152/s  done=27 ok=27 err=0 (records_manager.py:1521)
+10:39:28.496 INFO       ttft    p50=   749ms  p75=   817ms  p95= 1,259ms  p99=  2,900ms (records_manager.py:1521)
+10:39:28.496 INFO       itl     p50=    15ms  p75=    16ms  p95=    19ms  p99=     25ms (records_manager.py:1521)
+10:39:28.496 INFO       e2e     p50=60,904ms  p75=65,826ms  p95=78,651ms  p99=103,678ms (records_manager.py:1521)
+10:39:28.496 INFO       intvty  p50=      68  p75=      74  p95=      93  p99=      104  (1/tpot tok/s) (records_manager.py:1521)
+10:39:28.496 INFO       isl     p50=  77,578  p75= 102,308  p90= 106,502  p99=  122,010  (tokens) (records_manager.py:1521)
+10:39:28.496 INFO       osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=    4,096  (tokens) (records_manager.py:1521)
+10:39:28.496 INFO       tot     in=2,319,504  out=110,592 (records_manager.py:1521)
+10:39:28.496 INFO       trace  theoretical_prefix_cache_hit=94.9% (records_manager.py:1521)
+10:39:28.496 INFO       srv    prefix_cache_hit=94.9% unique_in_srv=117,200 kv_usage=7.0% queue=1r/0w tput_in_srv=3,173/s tput_out_srv=151/s (records_manager.py:1521)
+10:39:58.503 INFO     [realtime 12:41 profiling] (records_manager.py:1521)
+10:39:58.503 INFO       rps=0.0 (avg 0.0)  tput_in=3,189/s  tput_out=152/s  done=27 ok=27 err=0 (records_manager.py:1521)
+10:39:58.503 INFO       ttft    p50=   749ms  p75=   817ms  p95= 1,259ms  p99=  2,900ms (records_manager.py:1521)
+10:39:58.503 INFO       itl     p50=    15ms  p75=    16ms  p95=    19ms  p99=     25ms (records_manager.py:1521)
+10:39:58.503 INFO       e2e     p50=60,904ms  p75=65,826ms  p95=78,651ms  p99=103,678ms (records_manager.py:1521)
+10:39:58.503 INFO       intvty  p50=      68  p75=      74  p95=      93  p99=      104  (1/tpot tok/s) (records_manager.py:1521)
+10:39:58.503 INFO       isl     p50=  77,578  p75= 102,308  p90= 106,502  p99=  122,010  (tokens) (records_manager.py:1521)
+10:39:58.503 INFO       osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=    4,096  (tokens) (records_manager.py:1521)
+10:39:58.503 INFO       tot     in=2,319,504  out=110,592 (records_manager.py:1521)
+10:39:58.503 INFO       trace  theoretical_prefix_cache_hit=94.9% (records_manager.py:1521)
+10:39:58.503 INFO       srv    prefix_cache_hit=94.9% unique_in_srv=117,200 kv_usage=7.0% queue=1r/0w tput_in_srv=3,048/s tput_out_srv=145/s (records_manager.py:1521)
+10:40:25.580 WARNING  OSL mismatch: got 4096 tokens (requested 331, diff 1137.5%) (osl_mismatch_metrics.py:193)
+10:40:28.509 INFO     [realtime 13:11 profiling] (records_manager.py:1521)
+10:40:28.509 INFO       rps=0.0 (avg 0.0)  tput_in=3,079/s  tput_out=145/s  done=28 ok=28 err=0 (records_manager.py:1521)
+10:40:28.509 INFO       ttft    p50=   755ms  p75=   810ms  p95= 1,258ms  p99=  2,878ms (records_manager.py:1521)
+10:40:28.509 INFO       itl     p50=    15ms  p75=    16ms  p95=    19ms  p99=     25ms (records_manager.py:1521)
+10:40:28.510 INFO       e2e     p50=60,977ms  p75=65,771ms  p95=78,341ms  p99=103,365ms (records_manager.py:1521)
+10:40:28.510 INFO       intvty  p50=      68  p75=      74  p95=      92  p99=      104  (1/tpot tok/s) (records_manager.py:1521)
+10:40:28.510 INFO       isl     p50=  78,388  p75= 103,510  p90= 107,426  p99=  121,994  (tokens) (records_manager.py:1521)
+10:40:28.510 INFO       osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=    4,096  (tokens) (records_manager.py:1521)
+10:40:28.510 INFO       tot     in=2,427,202  out=114,688 (records_manager.py:1521)
+10:40:28.510 INFO       trace  theoretical_prefix_cache_hit=95.1% (records_manager.py:1521)
+10:40:28.510 INFO       srv    prefix_cache_hit=95.2% unique_in_srv=117,634 kv_usage=7.0% queue=1r/0w tput_in_srv=3,069/s tput_out_srv=145/s (records_manager.py:1521)
+10:40:33.123 WARNING  OSL mismatch: got 4096 tokens (requested 204, diff 1907.8%) (osl_mismatch_metrics.py:193)
+10:40:34.838 WARNING  OSL mismatch: got 4096 tokens (requested 251, diff 1531.9%) (osl_mismatch_metrics.py:193)
+10:40:34.923 WARNING  OSL mismatch: got 4096 tokens (requested 212, diff 1832.1%) (osl_mismatch_metrics.py:193)
+10:40:58.516 INFO     [realtime 13:41 profiling] (records_manager.py:1521)
+10:40:58.516 INFO       rps=0.1 (avg 0.0)  tput_in=3,268/s  tput_out=159/s  done=31 ok=31 err=0 (records_manager.py:1521)
+10:40:58.516 INFO       ttft    p50=   760ms  p75=   837ms  p95= 2,590ms  p99=  3,869ms (records_manager.py:1521)
+10:40:58.516 INFO       itl     p50=    15ms  p75=    16ms  p95=    19ms  p99=     24ms (records_manager.py:1521)
+10:40:58.516 INFO       e2e     p50=61,936ms  p75=68,257ms  p95=77,412ms  p99=102,426ms (records_manager.py:1521)
+10:40:58.516 INFO       intvty  p50=      67  p75=      74  p95=      91  p99=      104  (1/tpot tok/s) (records_manager.py:1521)
+10:40:58.516 INFO       isl     p50=  77,578  p75= 102,308  p90= 107,310  p99=  121,946  (tokens) (records_manager.py:1521)
+10:40:58.516 INFO       osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=    4,096  (tokens) (records_manager.py:1521)
+10:40:58.516 INFO       tot     in=2,606,703  out=126,976 (records_manager.py:1521)
+10:40:58.516 INFO       trace  theoretical_prefix_cache_hit=93.7% (records_manager.py:1521)
+10:40:58.516 INFO       srv    prefix_cache_hit=93.4% unique_in_srv=172,143 kv_usage=7.0% queue=1r/0w tput_in_srv=3,175/s tput_out_srv=155/s (records_manager.py:1521)
+10:41:28.524 INFO     [realtime 14:11 profiling] (records_manager.py:1521)
+10:41:28.524 INFO       rps=0.0 (avg 0.0)  tput_in=3,268/s  tput_out=159/s  done=31 ok=31 err=0 (records_manager.py:1521)
+10:41:28.524 INFO       ttft    p50=   760ms  p75=   837ms  p95= 2,590ms  p99=  3,869ms (records_manager.py:1521)
+10:41:28.524 INFO       itl     p50=    15ms  p75=    16ms  p95=    19ms  p99=     24ms (records_manager.py:1521)
+10:41:28.524 INFO       e2e     p50=61,936ms  p75=68,257ms  p95=77,412ms  p99=102,426ms (records_manager.py:1521)
+10:41:28.524 INFO       intvty  p50=      67  p75=      74  p95=      91  p99=      104  (1/tpot tok/s) (records_manager.py:1521)
+10:41:28.524 INFO       isl     p50=  77,578  p75= 102,308  p90= 107,310  p99=  121,946  (tokens) (records_manager.py:1521)
+10:41:28.524 INFO       osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=    4,096  (tokens) (records_manager.py:1521)
+10:41:28.524 INFO       tot     in=2,606,703  out=126,976 (records_manager.py:1521)
+10:41:28.524 INFO       trace  theoretical_prefix_cache_hit=93.7% (records_manager.py:1521)
+10:41:28.524 INFO       srv    prefix_cache_hit=93.4% unique_in_srv=172,143 kv_usage=7.0% queue=1r/0w tput_in_srv=3,063/s tput_out_srv=149/s (records_manager.py:1521)
+10:41:36.900 WARNING  OSL mismatch: got 4096 tokens (requested 197, diff 1979.2%) (osl_mismatch_metrics.py:193)
+10:41:45.881 WARNING  OSL mismatch: got 4096 tokens (requested 317, diff 1192.1%) (osl_mismatch_metrics.py:193)
+10:41:49.143 WARNING  OSL mismatch: got 4096 tokens (requested 1553, diff 163.7%) (osl_mismatch_metrics.py:193)
+10:41:49.297 WARNING  OSL mismatch: got 4096 tokens (requested 567, diff 622.4%) (osl_mismatch_metrics.py:193)
+10:41:58.530 INFO     [realtime 14:41 profiling] (records_manager.py:1521)
+10:41:58.531 INFO       rps=0.1 (avg 0.0)  tput_in=3,325/s  tput_out=164/s  done=35 ok=35 err=0 (records_manager.py:1521)
+10:41:58.531 INFO       ttft    p50=   749ms  p75=   817ms  p95= 2,236ms  p99=  3,847ms (records_manager.py:1521)
+10:41:58.531 INFO       itl     p50=    15ms  p75=    16ms  p95=    19ms  p99=     24ms (records_manager.py:1521)
+10:41:58.531 INFO       e2e     p50=62,929ms  p75=68,915ms  p95=79,481ms  p99=101,173ms (records_manager.py:1521)
+10:41:58.531 INFO       intvty  p50=      66  p75=      73  p95=      90  p99=      103  (1/tpot tok/s) (records_manager.py:1521)
+10:41:58.531 INFO       isl     p50=  77,578  p75= 102,308  p90= 107,543  p99=  121,882  (tokens) (records_manager.py:1521)
+10:41:58.531 INFO       osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=    4,096  (tokens) (records_manager.py:1521)
+10:41:58.531 INFO       tot     in=2,899,163  out=143,360 (records_manager.py:1521)
+10:41:58.531 INFO       trace  theoretical_prefix_cache_hit=94.1% (records_manager.py:1521)
+10:41:58.531 INFO       srv    prefix_cache_hit=93.9% unique_in_srv=177,563 kv_usage=7.0% queue=1r/0w tput_in_srv=3,291/s tput_out_srv=163/s (records_manager.py:1521)
+10:42:17.316 INFO     Timeout of 899.999207643s elapsed for event 'profiling phase sending' (runner.py:1224)
+10:42:17.317 NOTICE   Phase profiling (profiling) sending complete | sent=38, completed=35, in_flight=3 | sessions: sent=5, completed=2 | timeout_triggered=True (runner.py:1047)
+10:42:17.317 INFO     Waiting for event 'profiling phase credits returned' with timeout of 29.99933910499999s (runner.py:1236)
+10:42:17.318 INFO     Sent 38 requests. Waiting for all to complete... (records_manager.py:1188)
+10:42:28.538 INFO     [realtime 15:11 profiling] (records_manager.py:1521)
+10:42:28.538 INFO       rps=0.0 (avg 0.0)  tput_in=3,325/s  tput_out=164/s  done=35 ok=35 err=0 (records_manager.py:1521)
+10:42:28.538 INFO       ttft    p50=   749ms  p75=   817ms  p95= 2,236ms  p99=  3,847ms (records_manager.py:1521)
+10:42:28.538 INFO       itl     p50=    15ms  p75=    16ms  p95=    19ms  p99=     24ms (records_manager.py:1521)
+10:42:28.538 INFO       e2e     p50=62,929ms  p75=68,915ms  p95=79,481ms  p99=101,173ms (records_manager.py:1521)
+10:42:28.538 INFO       intvty  p50=      66  p75=      73  p95=      90  p99=      103  (1/tpot tok/s) (records_manager.py:1521)
+10:42:28.538 INFO       isl     p50=  77,578  p75= 102,308  p90= 107,543  p99=  121,882  (tokens) (records_manager.py:1521)
+10:42:28.538 INFO       osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=    4,096  (tokens) (records_manager.py:1521)
+10:42:28.538 INFO       tot     in=2,899,163  out=143,360 (records_manager.py:1521)
+10:42:28.538 INFO       trace  theoretical_prefix_cache_hit=94.1% (records_manager.py:1521)
+10:42:28.538 INFO       srv    prefix_cache_hit=93.9% unique_in_srv=177,563 kv_usage=7.0% queue=1r/0w tput_in_srv=3,183/s tput_out_srv=157/s (records_manager.py:1521)
+10:42:44.495 WARNING  OSL mismatch: got 4096 tokens (requested 120, diff 3313.3%) (osl_mismatch_metrics.py:193)
+10:42:47.316 INFO     Timeout of 29.99933910499999s elapsed for event 'profiling phase credits returned' (runner.py:1224)
+10:42:47.317 WARNING  Phase profiling timed out, cancelling all credits. Stats: sent=38, completed=36, cancelled=0, in_flight=2 (runner.py:1111)
+10:42:47.317 INFO     Sent cancellation requests for 2 in-flight credits across 2 workers (sticky_router.py:511)
+10:42:47.317 INFO     Waiting for all cancelled credits to be returned for phase profiling. Need 2 more credits. (runner.py:1125)
+10:42:47.318 INFO     All cancelled credits returned for phase profiling (runner.py:1144)
+10:42:47.319 NOTICE   Phase profiling (profiling) complete | completed=36, cancelled=2, errors=0 | sessions: completed=2, cancelled=0 | elapsed=930.00s | grace_period_timeout=True (runner.py:1170)
+10:42:47.319 INFO     Global system-idle cap summary: limit=10s, jumps=0, skipped=0.000s (agentic_replay.py:968)
+10:42:47.319 INFO     BranchOrchestrator stats: spawned=1 completed=0 errored=0 suspended=0 resumed=0 parents_failed_due_to_child_error=0 joins_suppressed=0 delayed=0 (branch_orchestrator.py:1975)
+10:42:47.319 INFO     Session-tree slots for phase profiling: peak_open=4 (target concurrency 4); released 3 still-open at teardown; late_events=0 (runner.py:556)
+10:42:47.319 NOTICE   All credits completed (phase_orchestrator.py:252)
+10:42:47.319 INFO     Received CREDIT_PHASE_COMPLETE message, Phase complete: PhaseRecordsStats(phase=CreditPhase.PROFILING, phase_index=0, profiling_index=0, phase_name='profiling', phase_kind='profiling', start_ns=1794911237316853356, sent_end_ns=1794912137316868422, requests_end_ns=1794912167318803781, baseline_start_ns=1794911237316831947, baseline_end_ns=1794912167318817861, total_expected_requests=None, expected_duration_sec=None, expected_num_sessions=None, expected_grace_period_sec=None, final_requests_sent=None, final_requests_completed=36, final_requests_cancelled=2, final_request_errors=0, final_sent_sessions=None, final_completed_sessions=None, final_cancelled_sessions=None, timeout_triggered=True, grace_period_timeout_triggered=True, was_cancelled=False, records_end_ns=None, success_records=36, error_records=0) (records_manager.py:1216)
+10:42:47.320 NOTICE   All requests have completed, please wait for the results to be processed (currently 36 of 36 records processed)... (records_manager.py:1227)
+10:42:47.320 INFO     Received credits complete from 'timing_manager' (system_controller.py:448)
+10:42:47.320 INFO     Processed 36 valid requests and 0 errors (36 total). (records_manager.py:1084)
+10:42:47.320 INFO     Received all records, processing now... (records_manager.py:1090)
+10:42:47.320 INFO     All credits complete, please wait for the results to be processed... (records_manager.py:1253)
+10:42:47.321 INFO     Server Metrics: Profiling complete, capturing final metrics... (manager.py:355)
+10:42:47.321 INFO     Waiting 2.0s for server metrics flush period... (records_manager.py:1144)
+10:42:49.318 INFO     Processing records results... (records_manager.py:2259)
+10:42:49.485 INFO     Profiling metric coverage passed for 'profiling': TTFT=95.7%, inter-token latency=100.0% (required=95.0%). (records_manager.py:1990)
+10:42:49.508 INFO     Waiting for result domains: server_metrics (system_controller.py:869)
+10:43:01.234 INFO     _finalize_and_process_results completed (records_manager.py:1151)
+10:43:01.241 INFO     [realtime 15:30 profiling] (records_manager.py:1521)
+10:43:01.242 INFO       rps=0.1 (avg 0.0)  tput_in=3,182/s  tput_out=159/s  done=36 ok=36 err=0 (records_manager.py:1521)
+10:43:01.242 INFO       ttft    p50=   745ms  p75=   810ms  p95= 2,147ms  p99=  3,841ms (records_manager.py:1521)
+10:43:01.242 INFO       itl     p50=    15ms  p75=    16ms  p95=    19ms  p99=     24ms (records_manager.py:1521)
+10:43:01.242 INFO       e2e     p50=63,161ms  p75=68,815ms  p95=79,407ms  p99=100,860ms (records_manager.py:1521)
+10:43:01.242 INFO       intvty  p50=      66  p75=      73  p95=      90  p99=      103  (1/tpot tok/s) (records_manager.py:1521)
+10:43:01.242 INFO       isl     p50=  76,598  p75= 101,923  p90= 107,504  p99=  121,866  (tokens) (records_manager.py:1521)
+10:43:01.242 INFO       osl     p50=   4,096  p75=   4,096  p90=   4,096  p99=    4,096  (tokens) (records_manager.py:1521)
+10:43:01.242 INFO       tot     in=2,950,370  out=147,456 (records_manager.py:1521)
+10:43:01.242 INFO       trace  theoretical_prefix_cache_hit=94.1% (records_manager.py:1521)
+10:43:01.242 INFO       srv    prefix_cache_hit=94.0% unique_in_srv=177,890 kv_usage=7.0% queue=1r/0w tput_in_srv=3,172/s tput_out_srv=159/s (records_manager.py:1521)
+10:43:04.097 INFO     All results received, initiating shutdown (system_controller.py:864)
+10:43:04.706 INFO     Exporting all records (exporter_manager.py:69)
+10:43:06.728 INFO     Exporting console data (exporter_manager.py:326)
+
+
+                                                NVIDIA AIPerf | LLM Metrics: Effective                                                
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃                                    Metric ┃        avg ┃       min ┃        max ┃        p99 ┃        p90 ┃        p50 ┃       std ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│          Effective Concurrency (requests) │       2.46 │      0.00 │       4.00 │       4.00 │       4.00 │       2.00 │      1.10 │
+│  Effective Decode Throughput (tokens/sec) │     158.52 │      0.00 │  15,549.04 │     397.57 │     244.19 │     144.91 │    150.66 │
+│ Effective Prefill Throughput (tokens/sec) │   3,172.43 │      0.00 │ 142,921.99 │ 118,232.95 │       0.00 │       0.00 │ 18,221.51 │
+│   Effective Decode Concurrency (requests) │       2.42 │      0.00 │       4.00 │       4.00 │       4.00 │       2.00 │      1.10 │
+│  Effective Prefill Concurrency (requests) │       0.04 │      0.00 │       2.00 │       1.00 │       0.00 │       0.00 │      0.20 │
+│   Effective Total Throughput (tokens/sec) │   3,330.95 │      0.00 │ 143,102.16 │ 118,407.25 │     246.77 │     175.87 │ 18,213.82 │
+│      Effective Decode Throughput Per User │      67.63 │      0.00 │  13,660.32 │     156.17 │      87.04 │      64.99 │     76.50 │
+│                         (tokens/sec/user) │            │           │            │            │            │            │           │
+│     Effective Prefill Throughput Per User │   3,116.48 │      0.00 │ 142,921.99 │ 118,232.95 │       0.00 │       0.00 │ 18,090.12 │
+│                         (tokens/sec/user) │            │           │            │            │            │            │           │
+│                 Tokens In Flight (tokens) │ 203,960.02 │      0.00 │ 377,219.59 │ 375,862.57 │ 304,538.50 │ 192,919.48 │ 93,148.07 │
+│         Effective Latency (CO-aware) (ms) │  63,525.06 │ 38,855.19 │ 111,822.23 │ 100,863.08 │  73,903.87 │  63,162.74 │ 12,473.33 │
+└───────────────────────────────────────────┴────────────┴───────────┴────────────┴────────────┴────────────┴────────────┴───────────┘
+                                               NVIDIA AIPerf | LLM Metrics: Active                                                
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃                                 Metric ┃       avg ┃       min ┃        max ┃        p99 ┃        p90 ┃        p50 ┃       std ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│  Active Decode Throughput (tokens/sec) │    160.21 │      0.00 │  15,549.04 │     400.48 │     244.35 │     145.70 │    150.57 │
+│ Active Prefill Throughput (tokens/sec) │ 88,065.48 │ 12,520.72 │ 142,921.99 │ 142,921.99 │ 136,644.86 │ 100,534.29 │ 41,721.59 │
+│      Active Decode Throughput Per User │     68.35 │      0.00 │  13,660.32 │     157.89 │      87.09 │      65.10 │     76.58 │
+│                      (tokens/sec/user) │           │           │            │            │            │            │           │
+│     Active Prefill Throughput Per User │ 86,512.35 │ 12,520.72 │ 142,921.99 │ 142,921.99 │ 136,644.86 │ 100,534.29 │ 43,239.17 │
+│                      (tokens/sec/user) │           │           │            │            │            │            │           │
+│   Active Total Throughput (tokens/sec) │  3,350.60 │     60.33 │ 143,102.16 │ 118,407.25 │     246.77 │     175.87 │ 18,265.66 │
+└────────────────────────────────────────┴───────────┴───────────┴────────────┴────────────┴────────────┴────────────┴───────────┘
+                                                 NVIDIA AIPerf | LLM Metrics: Usage                                                  
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃                                  Metric ┃          avg ┃       min ┃        max ┃        p99 ┃        p90 ┃       p50 ┃       std ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━┩
+│            Usage Prompt Tokens (tokens) │    81,954.72 │ 45,834.00 │ 122,427.00 │ 121,865.60 │ 107,504.00 │ 76,598.50 │ 21,541.77 │
+│ Usage Prompt Cache Read Tokens (tokens) │    77,013.33 │      0.00 │ 120,768.00 │ 120,185.60 │ 106,592.00 │ 74,592.00 │ 27,393.95 │
+│        Usage Completion Tokens (tokens) │     4,096.00 │  4,096.00 │   4,096.00 │   4,096.00 │   4,096.00 │  4,096.00 │      0.00 │
+│         Usage Reasoning Tokens (tokens) │       149.50 │      1.00 │   2,977.00 │   2,583.60 │       1.00 │      1.00 │    571.57 │
+│             Usage Total Tokens (tokens) │    86,050.72 │ 49,930.00 │ 126,523.00 │ 125,961.60 │ 111,600.00 │ 80,694.50 │ 21,541.77 │
+│      Total Usage Prompt Tokens (tokens) │ 2,950,370.00 │       N/A │        N/A │        N/A │        N/A │       N/A │       N/A │
+│    Total Usage Prompt Cache Read Tokens │ 2,772,480.00 │       N/A │        N/A │        N/A │        N/A │       N/A │       N/A │
+│                                (tokens) │              │           │            │            │            │           │           │
+│       Overall Usage Prompt Cache Read % │        93.97 │       N/A │        N/A │        N/A │        N/A │       N/A │       N/A │
+│                                     (%) │              │           │            │            │            │           │           │
+│  Total Usage Completion Tokens (tokens) │   147,456.00 │       N/A │        N/A │        N/A │        N/A │       N/A │       N/A │
+│   Total Usage Reasoning Tokens (tokens) │     5,382.00 │       N/A │        N/A │        N/A │        N/A │       N/A │       N/A │
+│       Total Usage Total Tokens (tokens) │ 3,097,826.00 │       N/A │        N/A │        N/A │        N/A │       N/A │       N/A │
+└─────────────────────────────────────────┴──────────────┴───────────┴────────────┴────────────┴────────────┴───────────┴───────────┘
+                                                       NVIDIA AIPerf | LLM Metrics                                                       
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃                                         Metric ┃       avg ┃       min ┃        max ┃        p99 ┃        p90 ┃       p50 ┃       std ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━┩
+│                       Time to First Token (ms) │    977.97 │    614.94 │   4,038.03 │   3,841.07 │   1,256.40 │    744.72 │    713.17 │
+│                      Time to Second Token (ms) │     37.75 │      0.00 │      73.75 │      71.69 │      49.44 │     39.05 │     14.36 │
+│                Time to First Output Token (ms) │    977.97 │    614.94 │   4,038.03 │   3,841.07 │   1,256.40 │    744.72 │    713.17 │
+│                           Request Latency (ms) │ 63,523.04 │ 38,853.71 │ 111,818.77 │ 100,860.06 │  73,902.06 │ 63,160.87 │ 12,473.11 │
+│                           Decode Duration (ms) │ 62,545.07 │ 38,093.71 │ 108,343.48 │  98,371.43 │  73,218.79 │ 62,449.42 │ 12,174.79 │
+│                      Full Decode Duration (ms) │ 62,545.63 │ 38,094.28 │ 108,343.93 │  98,371.95 │  73,219.38 │ 62,450.01 │ 12,174.77 │
+│                       Inter Token Latency (ms) │     15.27 │      9.30 │      26.46 │      24.02 │      17.88 │     15.25 │      2.97 │
+│              Full-Response Inter Token Latency │     15.27 │      9.30 │      26.46 │      24.02 │      17.88 │     15.25 │      2.97 │
+│                                           (ms) │           │           │            │            │            │           │           │
+│               Output Token Throughput Per User │     67.87 │     37.80 │     107.50 │     102.87 │      86.73 │     65.57 │     13.08 │
+│                              (tokens/sec/user) │           │           │            │            │            │           │           │
+│  E2E Output Token Throughput (tokens/sec/user) │     66.84 │     36.63 │     105.42 │     101.01 │      84.99 │     64.85 │     12.80 │
+│ Full-Response Output Token Throughput Per User │     67.87 │     37.80 │     107.50 │     102.87 │      86.73 │     65.57 │     13.08 │
+│                              (tokens/sec/user) │           │           │            │            │            │           │           │
+│                Output Sequence Length (tokens) │  4,096.00 │  4,096.00 │   4,096.00 │   4,096.00 │   4,096.00 │  4,096.00 │      0.00 │
+│                 Input Sequence Length (tokens) │ 81,954.72 │ 45,834.00 │ 122,427.00 │ 121,865.60 │ 107,504.00 │ 76,598.50 │ 21,541.77 │
+│           Output Token Throughput (tokens/sec) │    158.55 │       N/A │        N/A │        N/A │        N/A │       N/A │       N/A │
+│            Input Token Throughput (tokens/sec) │  3,172.43 │       N/A │        N/A │        N/A │        N/A │       N/A │       N/A │
+│              Request Throughput (requests/sec) │      0.04 │       N/A │        N/A │        N/A │        N/A │       N/A │       N/A │
+│                         Request Error Rate (%) │      0.00 │       N/A │        N/A │        N/A │        N/A │       N/A │       N/A │
+│                       Request Count (requests) │     36.00 │       N/A │        N/A │        N/A │        N/A │       N/A │       N/A │
+│               Theoretical Prefix Cache Hit (%) │     94.09 │       N/A │        N/A │        N/A │        N/A │       N/A │       N/A │
+└────────────────────────────────────────────────┴───────────┴───────────┴────────────┴────────────┴────────────┴───────────┴───────────┘
+
+ NVIDIA AIPerf | Server Metrics: Speculative Decoding  
+┏━━━━━━━━━━━━━━━━━┳━━━━━━┳━━━━━━┳━━━━━━━┳━━━━━━┳━━━━━━┓
+┃ Metric          ┃ mean ┃  min ┃   max ┃  p50 ┃  p90 ┃
+┡━━━━━━━━━━━━━━━━━╇━━━━━━╇━━━━━━╇━━━━━━━╇━━━━━━╇━━━━━━┩
+│ Accept Rate (%) │ 45.2 │ 10.0 │ 100.0 │ 41.7 │ 64.2 │
+│ Accept Length   │ 2.36 │ 1.30 │  4.00 │ 2.25 │ 2.92 │
+└─────────────────┴──────┴──────┴───────┴──────┴──────┘
+
+╭────────────────────────────── Output Sequence Length Mismatch Warning ───────────────────────────────╮
+│  36 of 36 requests (100.0%) have output length differing from requested by more than the threshold.  │
+│  Threshold (tokens): min(requested x 5%, 50)                                                         │
+│  Average mismatch: 1800.8%                                                                           │
+│                                                                                                      │
+│  Why: Server hit EOS token before reaching requested output length.                                  │
+│                                                                                                      │
+│  Fix Options:                                                                                        │
+│    - --extra-inputs ignore_eos:true - Generate until max_tokens (vLLM, TensorRT-LLM)                 │
+│    - --extra-inputs min_tokens:<N> - Set minimum output length (vLLM, TensorRT-LLM, SGLang)          │
+│    - --use-server-token-count - Use server-reported token counts if tokenizer mismatch suspected     │
+│                                                                                                      │
+│  Diagnostics:                                                                                        │
+│    - Review profile_export.jsonl -> osl_mismatch_diff_pct for per-request values                     │
+│    - Adjust: AIPERF_METRICS_OSL_MISMATCH_PCT_THRESHOLD=5                                             │
+│    - Adjust: AIPERF_METRICS_OSL_MISMATCH_MAX_TOKEN_THRESHOLD=50                                      │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+CLI Command: aiperf profile --url 'http://<PREFILL_NODE_IP>:32022' --model 'glm-loop' --tokenizer 
+'$MODEL_PATH' --tokenizer-trust-remote-code --concurrency 4 
+--benchmark-duration 900 --max-context-length 143360 --server-metrics 
+'http://<DECODE_NODE_IP>:32021/metrics' --output-artifact-dir 
+'$WORK/agentx/pd_hs-c4-osl4096' --public-dataset 
+'semianalysis_cc_traces_weka_062126' --extra-inputs '{"separate_reasoning": false, 
+"max_completion_tokens": 4096}' --warmup-requests-per-lane 1
+Benchmark Duration: 927.16 sec
+CSV Export: $WORK/agentx/pd_hs-c4-osl4096/profile_export_aiperf.csv
+JSON Export: 
+$WORK/agentx/pd_hs-c4-osl4096/profile_export_aiperf.json
+Server Metrics CSV Export: 
+$WORK/agentx/pd_hs-c4-osl4096/server_metrics_export.csv
+Server Metrics JSON Export: 
+$WORK/agentx/pd_hs-c4-osl4096/server_metrics_export.json
+Timeslice CSV Export: 
+$WORK/agentx/pd_hs-c4-osl4096/profile_export_aiperf_timeslices.csv
+Timeslice JSON Export: 
+$WORK/agentx/pd_hs-c4-osl4096/profile_export_aiperf_timeslices.json
+Log File: $WORK/agentx/pd_hs-c4-osl4096/logs/aiperf.log
+
+exit 0

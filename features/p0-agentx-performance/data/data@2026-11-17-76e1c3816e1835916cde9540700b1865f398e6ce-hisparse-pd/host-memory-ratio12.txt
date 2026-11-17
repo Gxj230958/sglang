@@ -1,0 +1,17 @@
+measured 2026-11-17T17:30:24Z on the decode node, HiSparse ratio 12 decode server idle after the AgentX runs
+## free -g
+               total        used        free      shared  buff/cache   available
+Mem:             955         537          49         399         818         418
+## /proc/meminfo
+MemTotal:       1002084480 kB
+AnonPages:      28075264 kB
+Shmem:          419143040 kB
+## container cgroup memory.stat (bytes)
+anon 25164447744
+file 846676951040
+shmem 410665091072
+## cgroup memory.current / memory.max (bytes)
+873630400512
+922344226816
+## decode server process group RSS (GiB)
+410.177

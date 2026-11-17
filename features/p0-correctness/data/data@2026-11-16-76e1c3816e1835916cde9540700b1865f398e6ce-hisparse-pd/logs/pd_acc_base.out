@@ -1,0 +1,19 @@
+## gsm8k
+== gsm8k ==
+200 examples (single-shot)  |  226.4s  |  464 tok/s  |  105K tokens
+
+* score                =  96.00%
+  stop_rate            =  99.00%
+  truncated_rate       =  1.00%  [warn: hitting max_tokens]
+  error_rate           =  0.00%
+  avg_input_tokens     =  94.1 tokens
+  avg_output_tokens    =  524.6 tokens
+  avg_thinking_tokens  =  449.0 tokens
+
+Metrics: evals/pd_base/sgl_eval_gsm8k_20261116-193337/metrics.json
+Predictions: evals/pd_base/sgl_eval_gsm8k_20261116-193337  (1 jsonl file(s))
+## gpqa
+    raise DatasetNotFoundError(message) from e
+datasets.exceptions.DatasetNotFoundError: Dataset 'Idavidrein/gpqa' is a gated dataset on the Hub. You must be authenticated to access it.
+## ruler2
+PD_ACC_DONE

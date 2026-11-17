@@ -1,0 +1,7 @@
+*.log -whitespace
+*.out -whitespace
+*.txt -whitespace
+*.csv -whitespace
+*.jsonl -whitespace
+*.patch -whitespace
+*.sh -whitespace

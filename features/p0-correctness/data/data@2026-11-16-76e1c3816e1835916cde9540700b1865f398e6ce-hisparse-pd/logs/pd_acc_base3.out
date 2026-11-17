@@ -1,0 +1,43 @@
+## gsm8k
+== gsm8k ==
+200 examples (single-shot)  |  226.4s  |  464 tok/s  |  105K tokens
+
+* score                =  96.00%
+  stop_rate            =  99.00%
+  truncated_rate       =  1.00%  [warn: hitting max_tokens]
+  error_rate           =  0.00%
+  avg_input_tokens     =  94.1 tokens
+  avg_output_tokens    =  524.6 tokens
+  avg_thinking_tokens  =  449.0 tokens
+
+Metrics: evals/pd_base/sgl_eval_gsm8k_20261116-193337/metrics.json
+Predictions: evals/pd_base/sgl_eval_gsm8k_20261116-193337  (1 jsonl file(s))
+## gpqa
+== gpqa ==
+198 examples x 2 repeats  |  4472.4s  |  1095 tok/s  |  4.9M tokens
+
+* pass@1[avg-of-2]     =  69.95% +/- 0.36% (SEM 0.25%)
+  pass@2               =  76.26%
+  majority@2           =  74.75%
+  no_answer            =  23.48%  [warn: consider --max-tokens]
+  stop_rate            =  76.26%
+  truncated_rate       =  23.74%  [warn: hitting max_tokens]
+  error_rate           =  0.00%
+  avg_input_tokens     =  258.3 tokens
+  avg_output_tokens    =  12,371.7 tokens
+  avg_thinking_tokens  =  11,753.7 tokens
+## ruler2
+== ruler2 ==
+1200 examples (single-shot)  |  3354.6s  |  350 tok/s  |  1.2M tokens
+
+* score                =  91.14%
+  stop_rate            =  98.25%
+  truncated_rate       =  1.75%  [warn: hitting max_tokens]
+  error_rate           =  0.00%
+    mk_niah_basic      =  98.00%
+    mk_niah_easy       =  99.73%
+    mk_niah_hard       =  89.00%
+    mk_niah_medium     =  89.00%
+    mv_niah_basic      =  95.50%
+    mv_niah_easy       =  93.25%
+PD_ACC_DONE

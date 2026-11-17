@@ -1,0 +1,37 @@
+diff --git a/python/sglang/srt/mem_cache/kv_cache_configurator.py b/python/sglang/srt/mem_cache/kv_cache_configurator.py
+index 53caf94..d0c0c3a 100644
+--- a/python/sglang/srt/mem_cache/kv_cache_configurator.py
++++ b/python/sglang/srt/mem_cache/kv_cache_configurator.py
+@@ -529,30 +529,19 @@ class KVCacheConfigurator:
+                 if max_total_tokens is not None
+                 else capacity
+             )
+-        if full_capacity:
+-            return full_capacity * self.logical_ids_per_full_row()
+-        return swa_capacity
++        return full_capacity or swa_capacity
+ 
+     def logical_token_capacity(self, *, max_total_num_tokens: int) -> int:
+         """Request tokens a pool of `max_total_num_tokens` per-rank rows holds."""
+         # SWA allocators never widen under DCP.
+         if self.is_hybrid_swa:
+-            return max_total_num_tokens * self.logical_ids_per_full_row()
++            return max_total_num_tokens
+         # Target rows widen into attn_dcp_size ids; draft sizes already carry
+         # loc_space_scale.
+         return (
+             max_total_num_tokens * get_parallel().attn_dcp_size // self.loc_space_scale
+         )
+ 
+-    def logical_ids_per_full_row(self) -> int:
+-        """Request ids each full-attention device row backs: HiSparse puts
+-        `host_to_device_ratio` host-backed ids behind every device-buffer row."""
+-        if get_memory().enable_hisparse and not self.is_draft_worker:
+-            from sglang.srt.mem_cache.sparsity import parse_hisparse_config
+-
+-            return parse_hisparse_config().host_to_device_ratio
+-        return 1
+-
+     def _resolve_kv_shard(self) -> None:
+         """Resolve the logical-page KV sharding identity: ``(rank, size)`` of
+         the shard group, or ``(None, 1)`` when sharding is off. Consumed by the

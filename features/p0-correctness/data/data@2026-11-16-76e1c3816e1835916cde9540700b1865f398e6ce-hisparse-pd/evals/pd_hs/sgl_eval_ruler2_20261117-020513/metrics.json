@@ -1,0 +1,65 @@
+{
+  "aggregate": {
+    "error_rate": 0.0,
+    "score": 0.9058077115210346,
+    "stop_rate": 0.9883333333333333,
+    "task.mk_niah_basic": 0.98,
+    "task.mk_niah_easy": 0.9968981910946196,
+    "task.mk_niah_hard": 0.91,
+    "task.mk_niah_medium": 0.9,
+    "task.mv_niah_basic": 0.9625,
+    "task.mv_niah_easy": 0.9058333333333334,
+    "task.mv_niah_hard": 0.6407159030030795,
+    "task.mv_niah_medium": 0.8487451108213819,
+    "task.qa_basic": 1.0,
+    "task.qa_easy": 0.91,
+    "task.qa_hard": 0.925,
+    "task.qa_medium": 0.89,
+    "truncated_rate": 0.011666666666666667
+  },
+  "base_url": "http://127.0.0.1:32022/v1",
+  "bench_args": {
+    "dataset_size": 100,
+    "seq_len": 32768,
+    "tokenizer": "$MODEL_PATH",
+    "tokenizer_type": "hf"
+  },
+  "gen": {
+    "chat_template_kwargs": null,
+    "extra_body": null,
+    "max_tokens": 8192,
+    "min_p": 0.0,
+    "reasoning_effort": null,
+    "repetition_penalty": 1.0,
+    "seed": null,
+    "system_message": null,
+    "temperature": 1.0,
+    "top_p": 0.95
+  },
+  "latency_seconds": 3181.8849017620087,
+  "model": "glm-loop",
+  "n_repeats": 1,
+  "name": "ruler2",
+  "ns_commit_sha": "645cf567ff08c0ae9cc3fc8e1edbb975b3067816",
+  "num_examples": 1200,
+  "num_threads": 64,
+  "output_throughput_tps": 356.0807618693506,
+  "sgl_eval_version": "0.1.3",
+  "timestamp": "20261117-020513",
+  "token_usage": {
+    "completion_tokens": {
+      "count": 1200,
+      "mean": 944.1733333333333
+    },
+    "prompt_tokens": {
+      "count": 1200,
+      "mean": 31013.0875
+    },
+    "reasoning_tokens": {
+      "count": 1200,
+      "mean": 610.9858333333333
+    }
+  },
+  "total_completion_tokens": 1133008,
+  "total_prompt_tokens": 37215705
+}
