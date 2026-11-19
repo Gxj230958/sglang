@@ -10,22 +10,22 @@ The cookbook turns validated Day-0 model results into reproducible deployment gu
 |---|---|
 | Model | `zai-org/GLM-5-1028-Provider` |
 | Audience | Deployment and performance engineers |
-| SGLang commit | Current integration `4ef2500d29ca90bc415247d5e476fe25ddd47f29`; release pin pending |
+| SGLang commit | Cutoff candidate `a22079906bf873d1c888b9a0c4b7fdc70a4432f2`; final release acceptance pending |
 | Model revision | FP8 `9c24449260e89d2d2bb6ed8f92d5f386c04ad7ff`; NVFP4 `f2c64cebac62b1888c92c9d317adbb0b0aef5955` |
-| Draft-model revision | FP8 checkpoint revision above; NVFP4 self-draft remains under validation |
-| Container digest | `<IMAGE_DIGEST>` |
-| Supported platforms | H200, GB300 and B300 under active validation |
+| Draft-model revision | FP8 checkpoint revision above; #89 validates NVFP4 self-draft on GB300 |
+| Container digest | `xinyuantongradixark/sglang-private@sha256:c1c0e04063a4e176047ee9f9bcdda82626b8ca63efd3530e958ef3ee8c64a6c9`; exact-digest GPU validation pending |
+| Supported platforms | H200 and GB300 default sweeps complete; cutoff reference-method evidence import and exact-image runtime validation pending on all three platforms |
 | Owner | `xinyuan` |
 | Reviewers | `<REVIEWERS>` |
-| Status | Local draft `a62b1db914357ed5430191f005471c7c30d05f0d`; unpublished; refresh after default sweeps |
+| Status | Local draft `a62b1db914357ed5430191f005471c7c30d05f0d`; unpublished; refresh from raw cutoff results, exact-image validation and the NVFP4 natural-MTP rerun |
 
 ## Supported Configuration Matrix
 
 | Platform | Workload | Profile | Parallelism | Backend | Precision | Speculative Decoding | Status | Evidence |
 |---|---|---|---|---|---|---|---|---|
-| H200 | Four-turn chat | Latency and throughput | TP8 | BF16 KV, FlashMLA Sparse | FP8 | Natural and off measured | Historical measured; default sweep running | [E10](../../features/p0-general-performance/data/data@2026-11-17-e9a0a0287215c18b08ecb120f9d00db52986052b-h200-delivery/repro.md) |
-| GB300 | Four-turn chat | Latency and throughput | TP4 | BF16/FP8 KV, breakable prefill | FP8/NVFP4 | Natural and off measured | Historical measured; default sweep running | [E11](../../features/p0-general-performance/data/data@2026-11-17-e9a0a0287215c18b08ecb120f9d00db52986052b-gb300-delivery/repro.md), [E13](../../features/p0-general-performance/data/data@2026-11-17-e9a0a0287215c18b08ecb120f9d00db52986052b-gb300-fp8kv-breakable/repro.md) |
-| B300 | Four-turn chat | Latency and throughput | TP8 preferred over DEP8 in the eager baseline | FP8 KV, TRTLLM | FP8/NVFP4 | Natural and off measured | Eager baseline only; default sweep running | [E12](../../features/p0-general-performance/data/data@2026-11-17-e9a0a0287215c18b08ecb120f9d00db52986052b-b300-delivery/repro.md) |
+| H200 | Four-turn chat | Latency and throughput | TP8 | BF16 KV, FlashMLA Sparse, breakable prefill | FP8 | Natural and off measured | Default sweep complete; non-release | [E14](../../features/p0-general-performance/data/data@2026-11-17-ac08d9be93598a62dda61191dcc91bda9cd6aa8b-h200-defaults/repro.md) |
+| GB300 | Four-turn chat | Latency and throughput | TP4 | BF16/FP8 KV, breakable prefill | FP8/NVFP4 | Natural and off measured | Default sweep complete; NVFP4 natural-MTP rerun required after #89 | [E15](../../features/p0-general-performance/data/data@2026-11-17-ac08d9be93598a62dda61191dcc91bda9cd6aa8b-gb300-defaults/repro.md) |
+| B300 | Four-turn chat | Latency and throughput | TP8 preferred over DEP8 in the eager baseline | FP8 KV, TRTLLM | FP8/NVFP4 | Natural and off measured | Eager baseline only; FP8-only r4 running | [E12](../../features/p0-general-performance/data/data@2026-11-17-e9a0a0287215c18b08ecb120f9d00db52986052b-b300-delivery/repro.md) |
 
 ## Required Page Structure
 

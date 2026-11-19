@@ -1,0 +1,239 @@
+{
+  "values": {
+    "model_path": "/scratch/models/GLM-5-1028-Provider",
+    "code_commit": "ac08d9be93598a62dda61191dcc91bda9cd6aa8b"
+  },
+  "env": {
+    "PYTHONPATH": "/scratch/glm5lp-fallback-tp4-52ef77912f-v2/overlay:/scratch/glm5lp-pr85-test-ac08d9be93/src/python",
+    "PYTHONNOUSERSITE": "1",
+    "SGLANG_RUST_BUILD_MODE": "auto",
+    "CARGO_BUILD_JOBS": "4",
+    "SGLANG_FLASHINFER_NVFP4_PER_TOKEN_ACTIVATION": "1",
+    "NCCL_SOCKET_IFNAME": "cilium_host",
+    "GLOO_SOCKET_IFNAME": "cilium_host",
+    "NCCL_DEBUG": "WARN",
+    "SPT_NOENV": "1",
+    "HF_HOME": "/scratch/glm5lp-gb300-defaults-perf-ac08d9be93/hf-home",
+    "HF_HUB_CACHE": "/scratch/glm5lp-gb300-defaults-perf-ac08d9be93/hf-home/hub",
+    "HF_HUB_OFFLINE": "1",
+    "TRANSFORMERS_OFFLINE": "1",
+    "SGLANG_CACHE_DIR": "/scratch/glm5lp-gb300-defaults-perf-ac08d9be93/cache/sglang",
+    "TRITON_CACHE_DIR": "/scratch/glm5lp-gb300-defaults-perf-ac08d9be93/cache/triton",
+    "FLASHINFER_WORKSPACE_BASE": "/scratch/glm5lp-gb300-defaults-perf-ac08d9be93/cache/flashinfer",
+    "TORCH_EXTENSIONS_DIR": "/scratch/glm5lp-gb300-defaults-perf-ac08d9be93/cache/torch"
+  },
+  "record_env_keys": [
+    "CARGO_BUILD_JOBS",
+    "CUDA_VISIBLE_DEVICES",
+    "FLASHINFER_WORKSPACE_BASE",
+    "GLOO_SOCKET_IFNAME",
+    "HF_HOME",
+    "HF_HUB_CACHE",
+    "HF_HUB_OFFLINE",
+    "NCCL_DEBUG",
+    "NCCL_SOCKET_IFNAME",
+    "PYTHONNOUSERSITE",
+    "PYTHONPATH",
+    "SGLANG_CACHE_DIR",
+    "SGLANG_ENABLE_GLM_LOOP_FUSED_FP8_DECODE",
+    "SGLANG_ENABLE_GLM_LOOP_FUSED_H64_DECODE",
+    "SGLANG_FLASHINFER_NVFP4_PER_TOKEN_ACTIVATION",
+    "SGLANG_RUST_BUILD_MODE",
+    "SGLANG_SIMULATE_ACC_LEN",
+    "SGLANG_SIMULATE_ACC_METHOD",
+    "SGLANG_SIMULATE_ACC_TOKEN_MODE",
+    "SGLANG_UNIFIED_RADIX_TREE_CORE_BACKEND",
+    "SPT_NOENV",
+    "TORCH_EXTENSIONS_DIR",
+    "TRANSFORMERS_OFFLINE",
+    "TRITON_CACHE_DIR"
+  ],
+  "preflight": {
+    "check_gpus": true,
+    "gpus": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "max_memory_mib": 1000
+  },
+  "candidates": [
+    {
+      "name": "fp8-bf16-breakable-mtp-off",
+      "values": {
+        "model_path": "/scratch/models/GLM-5-1028-Provider",
+        "weight_format": "fp8",
+        "resolved_expectation": "{\"tp_size\": 4, \"ep_size\": 1, \"attn_dp_size\": 1, \"moe_runner_backend\": \"flashinfer_trtllm\", \"dsa_prefill_backend\": \"flashmla_sparse\", \"dsa_decode_backend\": \"flashmla_sparse\", \"kv_cache_dtype\": \"bfloat16\", \"speculative_algorithm\": null, \"disable_hybrid_swa_memory\": false, \"random_seed\": 1, \"max_running_requests\": 64, \"enable_fp32_lm_head\": false}",
+        "graph_mode": "breakable"
+      },
+      "serve_args": [
+        "--tp-size",
+        "4"
+      ]
+    },
+    {
+      "name": "nvfp4-bf16-breakable-mtp-off",
+      "values": {
+        "model_path": "/scratch/glm5lp-fallback-tp4-52ef77912f-v2/models/nvfp4",
+        "weight_format": "nvfp4",
+        "resolved_expectation": "{\"tp_size\": 4, \"ep_size\": 1, \"attn_dp_size\": 1, \"moe_runner_backend\": \"flashinfer_trtllm\", \"dsa_prefill_backend\": \"flashmla_sparse\", \"dsa_decode_backend\": \"flashmla_sparse\", \"kv_cache_dtype\": \"bfloat16\", \"speculative_algorithm\": null, \"disable_hybrid_swa_memory\": false, \"random_seed\": 1, \"max_running_requests\": 64, \"enable_fp32_lm_head\": false}",
+        "graph_mode": "breakable"
+      },
+      "serve_args": [
+        "--tp-size",
+        "4"
+      ]
+    },
+    {
+      "name": "fp8-fp8_e4m3-breakable-mtp-off",
+      "values": {
+        "model_path": "/scratch/models/GLM-5-1028-Provider",
+        "weight_format": "fp8",
+        "resolved_expectation": "{\"tp_size\": 4, \"ep_size\": 1, \"attn_dp_size\": 1, \"moe_runner_backend\": \"flashinfer_trtllm\", \"dsa_prefill_backend\": \"trtllm\", \"dsa_decode_backend\": \"trtllm\", \"kv_cache_dtype\": \"fp8_e4m3\", \"speculative_algorithm\": null, \"disable_hybrid_swa_memory\": false, \"random_seed\": 1, \"max_running_requests\": 64, \"enable_fp32_lm_head\": false}",
+        "graph_mode": "breakable"
+      },
+      "serve_args": [
+        "--tp-size",
+        "4",
+        "--kv-cache-dtype",
+        "fp8_e4m3"
+      ]
+    },
+    {
+      "name": "nvfp4-fp8_e4m3-breakable-mtp-off",
+      "values": {
+        "model_path": "/scratch/glm5lp-fallback-tp4-52ef77912f-v2/models/nvfp4",
+        "weight_format": "nvfp4",
+        "resolved_expectation": "{\"tp_size\": 4, \"ep_size\": 1, \"attn_dp_size\": 1, \"moe_runner_backend\": \"flashinfer_trtllm\", \"dsa_prefill_backend\": \"trtllm\", \"dsa_decode_backend\": \"trtllm\", \"kv_cache_dtype\": \"fp8_e4m3\", \"speculative_algorithm\": null, \"disable_hybrid_swa_memory\": false, \"random_seed\": 1, \"max_running_requests\": 64, \"enable_fp32_lm_head\": false}",
+        "graph_mode": "breakable"
+      },
+      "serve_args": [
+        "--tp-size",
+        "4",
+        "--kv-cache-dtype",
+        "fp8_e4m3"
+      ]
+    }
+  ],
+  "server": {
+    "command": [
+      "/opt/sglang/bin/python",
+      "/scratch/glm5lp-gb300-defaults-perf-ac08d9be93/server.py",
+      "{candidate_dir}"
+    ],
+    "args": [
+      "--model-path",
+      "{model_path}",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "{port}",
+      "--dist-init-addr",
+      "127.0.0.1:32321",
+      "--reasoning-parser",
+      "glm45",
+      "--tool-call-parser",
+      "glm47",
+      "--enable-cache-report",
+      "--enable-metrics",
+      "--random-seed",
+      "1",
+      "--max-running-requests",
+      "64"
+    ],
+    "replicas": [
+      {
+        "values": {
+          "host": "127.0.0.1",
+          "port": 32320,
+          "gpus": "0,1,2,3"
+        }
+      }
+    ],
+    "env": {
+      "CUDA_VISIBLE_DEVICES": "{gpus}"
+    },
+    "health": {
+      "required_log_regex": [
+        "The server is fired up",
+        "max_total_num_tokens=",
+        "Tree Core: RustUnifiedTreeCore"
+      ],
+      "forbidden_log_regex": [
+        "Scheduler hit an exception",
+        "Traceback",
+        "Using the Python TreeCore",
+        "Tree Core: UnifiedTreeCore"
+      ]
+    },
+    "startup_timeout_s": 1800,
+    "cwd": "/scratch/glm5lp-pr85-test-ac08d9be93/src"
+  },
+  "load": {
+    "mode": "closed_loop",
+    "command": [
+      "/opt/sglang/bin/python",
+      "/scratch/glm5lp-gb300-defaults-perf-ac08d9be93/load_adapter.py",
+      "{endpoint}",
+      "{model_path}",
+      "{level}",
+      "{repeat}",
+      "{summary_path}"
+    ],
+    "levels": [
+      1,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "repeat": 2,
+    "timeout_s": 1200,
+    "sum_metrics": [
+      "sent",
+      "ok",
+      "errors",
+      "empty_responses",
+      "input",
+      "output",
+      "cached"
+    ],
+    "gates": {
+      "ttft_p90": {
+        "max": 3
+      },
+      "interactivity_p90": {
+        "min": 30
+      },
+      "ok_ratio": {
+        "min": 1
+      },
+      "empty_rate": {
+        "max": 0
+      }
+    },
+    "selection": {
+      "throughput_metric": "total_tps_per_gpu",
+      "latency_metric": "ttft_p50",
+      "per_user_metric": "interactivity_p90",
+      "interactivity_metric": "interactivity_p90",
+      "interactivity_min": 30,
+      "near_tie_pct": 2
+    }
+  },
+  "teardown_timeout_s": 30,
+  "warmup": {
+    "command": [
+      "/opt/sglang/bin/python",
+      "/scratch/glm5lp-gb300-defaults-perf-ac08d9be93/runtime-evidence.py",
+      "{endpoint}",
+      "{model_path}",
+      "{candidate_dir}/runtime-evidence.json",
+      "{resolved_expectation}",
+      "{graph_mode}"
+    ],
+    "timeout_s": 120
+  }
+}

@@ -84,8 +84,8 @@ P1 projects are omitted because the bullets below specify selection rules, not f
 | [p0-correctness/](p0-correctness/README.md) | P0 | Validate model quality, API behavior, feature compatibility, and release-gating regressions. | In progress |
 | [p0-tool-call-parser/](p0-tool-call-parser/README.md) | P0 | Implement and validate the tool-call detector and parser auto-detection against the model's native call format. | Not started |
 | [p0-reasoning-parser/](p0-reasoning-parser/README.md) | P0 | Implement and validate the reasoning parser, thinking defaults, and supported reasoning levels. | Not started |
-| [p0-general-performance/](p0-general-performance/README.md) | P0 | Measure one-batch and online-serving performance and enforce release regression gates. | In progress; E10–E13 delivery sweeps complete, integrated default profiles running |
-| [p0-agentx-performance/](p0-agentx-performance/README.md) | P0 | Measure agentic-workload latency, throughput, concurrency scaling, and cache behavior. | Not started |
+| [p0-general-performance/](p0-general-performance/README.md) | P0 | Measure one-batch and online-serving performance and enforce release regression gates. | In progress; E14–E15 default sweeps complete, B300 r4 running |
+| [p0-agentx-performance/](p0-agentx-performance/README.md) | P0 | Measure agentic-workload latency, throughput, concurrency scaling, and cache behavior. | In progress; E05 PD HiSparse measured |
 | [p0-kernel-opt/](p0-kernel-opt/README.md) | P0 | Connect profile evidence to kernel changes, microbenchmarks, and end-to-end impact. | `<STATUS>` |
 | [p0-spec-decoding-training/](p0-spec-decoding-training/README.md) | P0 | Train, evaluate, select, and hand off a speculative-decoding draft model. | In progress |
 | [p0-pd-disagg/](p0-pd-disagg/README.md) | P0 | Separate prefill and decode resources for predictable latency and independent capacity tuning. | In progress |

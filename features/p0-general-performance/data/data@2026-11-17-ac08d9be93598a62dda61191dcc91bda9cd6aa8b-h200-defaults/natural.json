@@ -1,0 +1,193 @@
+{
+  "values": {
+    "model_path": "/scratch/models/GLM-5-1028-Provider",
+    "code_commit": "ac08d9be93598a62dda61191dcc91bda9cd6aa8b"
+  },
+  "env": {
+    "PYTHONPATH": "/scratch/codex-fi074/overlay:/scratch/glm5lp-pr85-test-ac08d9be93/src/python",
+    "PYTHONNOUSERSITE": "1",
+    "SGLANG_CACHE_DIR": "/scratch/glm5lp-h200-defaults-perf-ac08d9be93/cache/sglang",
+    "TRITON_CACHE_DIR": "/scratch/glm5lp-h200-defaults-perf-ac08d9be93/cache/triton",
+    "TORCH_EXTENSIONS_DIR": "/scratch/glm5lp-h200-defaults-perf-ac08d9be93/cache/torch",
+    "FLASHINFER_WORKSPACE_BASE": "/scratch/glm5lp-h200-defaults-perf-ac08d9be93/cache/flashinfer",
+    "CARGO_BUILD_JOBS": "4",
+    "SGLANG_RUST_BUILD_MODE": "auto",
+    "SPT_NOENV": "1",
+    "HF_HOME": "/scratch/glm5lp-h200-defaults-perf-ac08d9be93/hf-home",
+    "HF_HUB_CACHE": "/scratch/glm5lp-h200-defaults-perf-ac08d9be93/hf-home/hub",
+    "HF_HUB_OFFLINE": "1",
+    "TRANSFORMERS_OFFLINE": "1"
+  },
+  "record_env_keys": [
+    "CARGO_BUILD_JOBS",
+    "CUDA_VISIBLE_DEVICES",
+    "FLASHINFER_WORKSPACE_BASE",
+    "HF_HOME",
+    "HF_HUB_CACHE",
+    "HF_HUB_OFFLINE",
+    "PYTHONNOUSERSITE",
+    "PYTHONPATH",
+    "SGLANG_CACHE_DIR",
+    "SGLANG_ENABLE_GLM_LOOP_FUSED_H64_DECODE",
+    "SGLANG_RUST_BUILD_MODE",
+    "SGLANG_SIMULATE_ACC_LEN",
+    "SGLANG_SIMULATE_ACC_METHOD",
+    "SGLANG_SIMULATE_ACC_TOKEN_MODE",
+    "SGLANG_UNIFIED_RADIX_TREE_CORE_BACKEND",
+    "SPT_NOENV",
+    "TORCH_EXTENSIONS_DIR",
+    "TRANSFORMERS_OFFLINE",
+    "TRITON_CACHE_DIR"
+  ],
+  "preflight": {
+    "check_gpus": true,
+    "gpus": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "max_memory_mib": 1000
+  },
+  "candidates": [
+    {
+      "name": "fp8-tp8-defaults-mtp-natural",
+      "values": {
+        "model_path": "/scratch/models/GLM-5-1028-Provider",
+        "weight_format": "fp8",
+        "resolved_expectation": "{\"tp_size\": 8, \"ep_size\": 1, \"attn_dp_size\": 1, \"kv_cache_dtype\": \"bfloat16\", \"dsa_prefill_backend\": \"flashmla_sparse\", \"dsa_decode_backend\": \"flashmla_sparse\", \"moe_runner_backend\": \"auto\", \"max_running_requests\": 64, \"random_seed\": 1, \"speculative_algorithm\": \"EAGLE\", \"speculative_num_steps\": 3, \"speculative_eagle_topk\": 1, \"speculative_num_draft_tokens\": 4, \"enable_fp32_lm_head\": false, \"disable_shared_experts_fusion\": false, \"speculative_draft_model_path\": \"/scratch/models/GLM-5-1028-Provider\"}",
+        "graph_mode": "breakable"
+      },
+      "serve_args": [
+        "--tp-size",
+        "8",
+        "--speculative-algorithm",
+        "EAGLE"
+      ]
+    }
+  ],
+  "server": {
+    "command": [
+      "/opt/sglang/bin/python",
+      "/scratch/glm5lp-h200-defaults-perf-ac08d9be93/server.py",
+      "{candidate_dir}"
+    ],
+    "args": [
+      "--model-path",
+      "{model_path}",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "{port}",
+      "--dist-init-addr",
+      "127.0.0.1:32521",
+      "--reasoning-parser",
+      "glm45",
+      "--tool-call-parser",
+      "glm47",
+      "--enable-cache-report",
+      "--enable-metrics",
+      "--random-seed",
+      "1",
+      "--max-running-requests",
+      "64"
+    ],
+    "replicas": [
+      {
+        "values": {
+          "host": "127.0.0.1",
+          "port": 32520,
+          "gpus": "0,1,2,3,4,5,6,7"
+        }
+      }
+    ],
+    "env": {
+      "CUDA_VISIBLE_DEVICES": "{gpus}"
+    },
+    "health": {
+      "required_log_regex": [
+        "The server is fired up",
+        "max_total_num_tokens=",
+        "Tree Core: RustUnifiedTreeCore"
+      ],
+      "forbidden_log_regex": [
+        "Scheduler hit an exception",
+        "Traceback",
+        "Using the Python TreeCore",
+        "Tree Core: UnifiedTreeCore"
+      ]
+    },
+    "startup_timeout_s": 1800,
+    "cwd": "/scratch/glm5lp-pr85-test-ac08d9be93/src"
+  },
+  "load": {
+    "mode": "closed_loop",
+    "command": [
+      "/opt/sglang/bin/python",
+      "/scratch/glm5lp-h200-defaults-perf-ac08d9be93/load_adapter.py",
+      "{endpoint}",
+      "{model_path}",
+      "{level}",
+      "{repeat}",
+      "{summary_path}"
+    ],
+    "levels": [
+      1,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "repeat": 2,
+    "timeout_s": 1200,
+    "sum_metrics": [
+      "sent",
+      "ok",
+      "errors",
+      "empty_responses",
+      "input",
+      "output",
+      "cached"
+    ],
+    "gates": {
+      "ttft_p90": {
+        "max": 3
+      },
+      "interactivity_p90": {
+        "min": 30
+      },
+      "ok_ratio": {
+        "min": 1
+      },
+      "empty_rate": {
+        "max": 0
+      }
+    },
+    "selection": {
+      "throughput_metric": "total_tps_per_gpu",
+      "latency_metric": "ttft_p50",
+      "per_user_metric": "interactivity_p90",
+      "interactivity_metric": "interactivity_p90",
+      "interactivity_min": 30,
+      "near_tie_pct": 2
+    }
+  },
+  "teardown_timeout_s": 30,
+  "warmup": {
+    "command": [
+      "/opt/sglang/bin/python",
+      "/scratch/glm5lp-h200-defaults-perf-ac08d9be93/runtime-evidence.py",
+      "{endpoint}",
+      "{model_path}",
+      "{candidate_dir}/runtime-evidence.json",
+      "{resolved_expectation}",
+      "{graph_mode}"
+    ],
+    "timeout_s": 120
+  }
+}

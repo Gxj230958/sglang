@@ -1,0 +1,92 @@
+== docker inspect
+arch=arm64 os=linux id=sha256:fafb965404837c37d4807f21a4584ebc66994a1b529630b19cebcb8ff8064145 size=16260348092
+PASS arch
+entrypoint=["/opt/nvidia/nvidia_entrypoint.sh"] cmd=null workdir=/sgl-workspace/sglang
+PATH=/root/.cargo/bin:/opt/sglang/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/nvidia/bin
+CUDA_VERSION=13.0.3
+FLASHINFER_VERSION=0.7.4
+VIRTUAL_ENV=/opt/sglang
+ai.radixark.base.digest = lmsysorg/sglang@sha256:b7306e5396c7b5f09cbbbfd714eb03ecfc5908be2188d1ebfddb40857643200f
+ai.radixark.base.image = lmsysorg/sglang:nightly-dev-cu13-20261115-7b5fb39b
+ai.radixark.base.platform_digest = sha256:d42a31385980dd921667d4986909468ae2bd7bec7f98881fa2114308c3891e2c
+ai.radixark.base.sglang_commit = 7b5fb39bb952da5f6da3bb7fe73c671cf449b6fa
+ai.radixark.deep_gemm.patch = docker/patches/deep_gemm/0001-mega-moe-fp8-trtllm-weight-layout.patch sha256:4e5297071d9488df061b0f850accd2dd326c4006f6eb1f238535fc7020131746
+ai.radixark.deep_gemm.ref = sgl-project/DeepGEMM v0.2.8 (e3f6b84093dab1213f50cd1865d847365697ef23)
+ai.radixark.deep_gemm.version = 0.2.8+cu130.megamoefp8
+ai.radixark.sglang.cutoff_commit = a22079906bf873d1c888b9a0c4b7fdc70a4432f2
+ai.radixark.sglang.upstream_merge_base = 6de483b326c7dd4145fde06afcac9866bf491024
+ai.sglang.build.commit = a22079906bf873d1c888b9a0c4b7fdc70a4432f2
+ai.sglang.build.url = 
+ai.sglang.image.tag = xinyuantongradixark/sglang-private:dev-glm-loop-1118
+org.opencontainers.image.revision = a22079906bf873d1c888b9a0c4b7fdc70a4432f2
+org.opencontainers.image.source = https://github.com/radixark/sglang-zai
+org.opencontainers.image.url = 
+org.opencontainers.image.version = xinyuantongradixark/sglang-private:dev-glm-loop-1118
+== source
+a22079906bf873d1c888b9a0c4b7fdc70a4432f2
+tracked files matched: 12578
+symlinks matched: 9
+generated files outside the manifest:
+  python/sglang/_version.py
+  python/sglang/srt/mem_cache/rust_tree_core/mem_cache.cpython-312-aarch64-linux-gnu.so
+  python/sglang/srt/rust_extensions/_bench.cpython-312-aarch64-linux-gnu.so
+  python/sglang/srt/rust_extensions/_grpc.cpython-312-aarch64-linux-gnu.so
+  python/sglang/srt/rust_extensions/_multimodal.cpython-312-aarch64-linux-gnu.so
+  python/sglang/srt/rust_extensions/_server.cpython-312-aarch64-linux-gnu.so
+SOURCE_MATCHES_CUTOFF
+py files outside the cutoff tree: python/sglang/_version.py
+== python
+PASS compileall
+PASS import_sglang
+0.0.0.dev1+ga22079906b /sgl-workspace/sglang/python/sglang/__init__.py
+PASS import_glm_loop
+PASS serve_help
+1612
+PASS launch_server_help
+PASS serve_help_has_glm_flags
+== rust extensions (SGLANG_RUST_BUILD_MODE=never)
+-rwxr-xr-x 1 root root  3094080 Nov 18 03:12 /sgl-workspace/sglang/python/sglang/srt/mem_cache/rust_tree_core/mem_cache.cpython-312-aarch64-linux-gnu.so
+-rwxr-xr-x 1 root root  7431536 Nov 18 03:08 /sgl-workspace/sglang/python/sglang/srt/rust_extensions/_bench.cpython-312-aarch64-linux-gnu.so
+-rwxr-xr-x 1 root root  6064472 Nov 18 03:09 /sgl-workspace/sglang/python/sglang/srt/rust_extensions/_grpc.cpython-312-aarch64-linux-gnu.so
+-rwxr-xr-x 1 root root  2825552 Nov 18 03:10 /sgl-workspace/sglang/python/sglang/srt/rust_extensions/_multimodal.cpython-312-aarch64-linux-gnu.so
+-rwxr-xr-x 1 root root 22918384 Nov 18 03:17 /sgl-workspace/sglang/python/sglang/srt/rust_extensions/_server.cpython-312-aarch64-linux-gnu.so
+da5cc8c30af5facb4c496d9ffbddbb8b1cfb5a33f40442b7ba63a1fa6d013bed  /sgl-workspace/sglang/python/sglang/srt/rust_extensions/_bench.cpython-312-aarch64-linux-gnu.so
+23884008335bd3458dc711e83b8afb5d43e8c2d05a9c6c8cc3c3c91b4f52c425  /sgl-workspace/sglang/python/sglang/srt/rust_extensions/_grpc.cpython-312-aarch64-linux-gnu.so
+071f2196f91d2ed5133483edd88d0369be233349ea117396b1cafee76024ac19  /sgl-workspace/sglang/python/sglang/srt/rust_extensions/_multimodal.cpython-312-aarch64-linux-gnu.so
+cb9c672d38d7c11e4d82a6a0d5070bcf3cfa400648ad9ddc4cc4a1c98ceb1247  /sgl-workspace/sglang/python/sglang/srt/rust_extensions/_server.cpython-312-aarch64-linux-gnu.so
+64f1a516a88f28087c436ed5bd287829381044215b4eeeed5f31b46fb64df6ef  /sgl-workspace/sglang/python/sglang/srt/mem_cache/rust_tree_core/mem_cache.cpython-312-aarch64-linux-gnu.so
+PASS load_rust_server
+PASS load_rust_grpc
+PASS load_rust_multimodal
+PASS load_rust_bench
+PASS load_rust_mem_cache
+== sgl-deep-gemm
+PASS dg_python_patch
+PASS dg_old_error_gone
+PASS dg_header_patch
+PASS dg_binary_patch
+PASS dg_ldd (torch libs resolve at import)
+PASS import_deep_gemm
+INFO import_flash_mla needs libcuda.so.1 from the GPU host driver
+flash_mla: no h64 sparse-decode markers (released 1.0.5 wheel)
+== versions
+apache-tvm-ffi                           0.1.11
+flashinfer-cubin                         0.7.4
+flashinfer-python                        0.7.4
+kernels                                  0.14.1
+mooncake-transfer-engine-cuda13          0.3.14
+sgl-deep-ep                              0.1.2.post1
+sgl-deep-gemm                            0.2.8+cu130.megamoefp8
+sgl-flash-mla                            1.0.5
+sgl-nvidia-mega                          0.1.0.dev0                   /sgl-workspace/sgl-nvidia-mega
+sglang                                   0.0.0.dev1+ga22079906b       /sgl-workspace/sglang/python
+sglang-kernel                            0.4.11
+torch                                    2.14.1+cu130
+transformers                             5.19.0
+triton                                   3.8.0
+torch 2.14.1+cu130 cuda 13.0
+CUDA_VERSION=13.0.3
+Cuda compilation tools, release 13.0, V13.0.88
+Build cuda_13.0.r13.0/compiler.36424714_0
+Python 3.12.16
+rustc 1.100.0 (0ef1bc386 2026-11-09)

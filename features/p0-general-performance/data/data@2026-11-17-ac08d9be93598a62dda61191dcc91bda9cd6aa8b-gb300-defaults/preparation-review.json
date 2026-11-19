@@ -1,0 +1,30 @@
+{
+  "observed_at": 1794933266.13496,
+  "root": "/tmp/glm5lp-gb300-defaults-perf-ac08d9be93",
+  "runtime": "ac08d9be93598a62dda61191dcc91bda9cd6aa8b",
+  "source": "/scratch/glm5lp-pr85-test-ac08d9be93/src",
+  "configs": [
+    {
+      "file": "natural.json",
+      "sha256": "42f8c49af4cfbc309571ad53289b8e950809a09ad8e46cc15730d8cf3d61f16f",
+      "candidates": [
+        "fp8-bf16-breakable-mtp-natural",
+        "nvfp4-bf16-breakable-mtp-natural",
+        "fp8-fp8_e4m3-breakable-mtp-natural",
+        "nvfp4-fp8_e4m3-breakable-mtp-natural"
+      ]
+    },
+    {
+      "file": "mtp-off.json",
+      "sha256": "b097fb109ad4eed1aee0e70f095fc0ec9b55743da615fbe15c89d2d32c0650e8",
+      "candidates": [
+        "fp8-bf16-breakable-mtp-off",
+        "nvfp4-bf16-breakable-mtp-off",
+        "fp8-fp8_e4m3-breakable-mtp-off",
+        "nvfp4-fp8_e4m3-breakable-mtp-off"
+      ]
+    }
+  ],
+  "starts": 8,
+  "manifest_sha256": "ff744ed919e34332920cb9e5e6296bca1ba5bf7548ee2ed1fc9069119099dcba"
+}
