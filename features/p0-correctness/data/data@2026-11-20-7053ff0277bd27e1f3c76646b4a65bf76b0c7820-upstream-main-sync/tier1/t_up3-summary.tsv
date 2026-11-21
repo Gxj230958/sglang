@@ -1,0 +1,4 @@
+test/registered/unit/mem_cache/test_hicache_unified_key_scheme.py	1	4 failed, 25 passed, 15 warnings, 20 subtests passed in 7.48s
+test/registered/unit/mem_cache/test_platform_kv_cache_dtype.py	0	6 passed, 15 warnings, 3 subtests passed in 6.96s
+test/registered/unit/mem_cache/test_unified_cache_linker.py	1	28 failed, 72 passed, 28 skipped, 16 warnings, 7 subtests passed in 20.73s
+DONE

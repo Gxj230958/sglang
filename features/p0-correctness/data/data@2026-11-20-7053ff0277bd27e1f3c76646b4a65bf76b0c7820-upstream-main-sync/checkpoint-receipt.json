@@ -1,0 +1,24 @@
+{
+  "model": "zai-org/GLM-5-1028-Provider",
+  "tracked_revision": "9c24449260e89d2d2bb6ed8f92d5f386c04ad7ff",
+  "draft": "the checkpoint's own NextN head",
+  "config_commit_hash": null,
+  "revision_binding": "Both node-local copies match all four metadata hashes pinned to this revision in Correctness E27; config.json has no _commit_hash field.",
+  "weight_shards_rehashed": false,
+  "ranks": {
+    "0": {
+      "path": "/scratch/models/GLM-5-1028-Provider",
+      "config.json": "99d7088de1960a51c0f1ae58553815c4c6c223fdbde44d13dc3ebca479e0c80f",
+      "model.safetensors.index.json": "55979a9446143325fac64918861333910a3f776d5719d2021d2b75a5c16112c1",
+      "tokenizer.json": "19e773648cb4e65de8660ea6365e10acca112d42a854923df93db4a6f333a82d",
+      "tokenizer_config.json": "98b1271574f41abf89427ae2dda030d94dc9478f0edc5a8bd240db213c6fd5fc"
+    },
+    "1": {
+      "path": "/scratch/models/GLM-5-1028-Provider",
+      "config.json": "99d7088de1960a51c0f1ae58553815c4c6c223fdbde44d13dc3ebca479e0c80f",
+      "model.safetensors.index.json": "55979a9446143325fac64918861333910a3f776d5719d2021d2b75a5c16112c1",
+      "tokenizer.json": "19e773648cb4e65de8660ea6365e10acca112d42a854923df93db4a6f333a82d",
+      "tokenizer_config.json": "98b1271574f41abf89427ae2dda030d94dc9478f0edc5a8bd240db213c6fd5fc"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "baseline": {
+    "code": "13fa8258d2404deedfac9c114c43c4e4069f39b5",
+    "rank": 0,
+    "launch": "2026-11-20T18:52:39Z",
+    "ready": "2026-11-20T19:02:31Z",
+    "eval_rc": 0,
+    "eval_finished": "2026-11-20T19:34:13Z",
+    "server_alive_after_eval": true,
+    "stopped": "2026-11-20T19:34:29Z",
+    "gpu_apps": 0,
+    "terminal": "DONE"
+  },
+  "candidate": {
+    "code": "7053ff0277bd27e1f3c76646b4a65bf76b0c7820",
+    "rank": 1,
+    "launch": "2026-11-20T19:17:14Z",
+    "ready": "2026-11-20T19:28:30Z",
+    "eval_rc": 0,
+    "eval_finished": "2026-11-20T19:43:47Z",
+    "server_alive_after_eval": true,
+    "stopped": "2026-11-20T19:44:07Z",
+    "gpu_apps": 0,
+    "terminal": "DONE"
+  },
+  "gate_devbox_lock_released": true,
+  "checkpoint_readback_lock_released": true
+}

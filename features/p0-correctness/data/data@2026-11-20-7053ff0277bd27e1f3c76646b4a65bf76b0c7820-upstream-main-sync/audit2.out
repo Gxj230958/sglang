@@ -1,0 +1,17 @@
+## (A) unresolved sglang imports in glm-touched files (merged tree)
+
+## (B) names upstream removed (no definition left anywhere) still referenced in glm-touched files
+func   python/sglang/kernels/ops/attention/dsa/triton_sparse_mla_decode.py::triton_sparse_mla_decode -> ['python/sglang/srt/layers/attention/dsa_backend.py']
+method python/sglang/multimodal_gen/runtime/pipelines_core/stages/model_specific_stages/glm_image.py::GlmImageBeforeDenoisingStage.interrupt -> ['docs/docs/advanced_features/pd_disaggregation.mdx']
+field  python/sglang/srt/environ.py::Envs.SGLANG_PREFILL_DELAYER_MAX_DELAY_PASSES -> ['python/sglang/srt/environ.py']
+field  python/sglang/srt/environ.py::Envs.SGLANG_PREFILL_DELAYER_TOKEN_USAGE_LOW_WATERMARK -> ['python/sglang/srt/environ.py']
+field  python/sglang/srt/environ.py::Envs.SGLANG_SCHEDULER_DECREASE_PREFILL_IDLE -> ['python/sglang/srt/environ.py']
+field  python/sglang/srt/environ.py::Envs.SGLANG_DISAGGREGATION_SAMPLING_MASK_MAX_TOKENS -> ['python/sglang/srt/environ.py']
+field  python/sglang/srt/environ.py::Envs.SGLANG_USE_CUDA_IPC_TRANSPORT -> ['python/sglang/srt/environ.py']
+field  python/sglang/srt/environ.py::Envs.SGLANG_ENABLE_DSV41_ENGRAM_HOST_TABLE -> ['python/sglang/srt/environ.py']
+field  python/sglang/srt/environ.py::Envs.SGLANG_DSV41_ENGRAM_HOST_TABLE_LAYOUT -> ['python/sglang/srt/environ.py']
+field  python/sglang/srt/environ.py::Envs.SGLANG_OPT_DSV41_ENGRAM_PEER_SHARDS -> ['python/sglang/srt/environ.py']
+field  sgl-model-gateway/bindings/python/src/sglang_router/router_args.py::RouterArgs.pd_disaggregation -> ['docs/docs/advanced_features/server_arguments.mdx']
+field  sgl-model-gateway/e2e_test/infra/constants.py::ConnectionMode.HTTP -> ['docs/docs/advanced_features/pd_disaggregation.mdx', 'docs/docs/advanced_features/server_arguments.mdx', 'python/sglang/srt/environ.py', 'python/sglang/srt/managers/scheduler.py', 'test/registered/unit/server_args/test_server_args.py']
+
+## (C) calls in glm-touched files passing a keyword upstream removed

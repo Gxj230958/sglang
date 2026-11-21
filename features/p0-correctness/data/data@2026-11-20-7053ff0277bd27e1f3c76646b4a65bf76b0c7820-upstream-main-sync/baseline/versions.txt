@@ -1,0 +1,13 @@
+torch 2.14.1+cu130
+flashinfer-python 0.7.4
+sglang-kernel 0.4.11
+sgl-deep-gemm 0.2.9
+sgl-flash-mla 1.0.5
+transformers 5.19.0
+sgl-deep-ep 0.1.2.post1
+tilelang 0.1.12
+apache-tvm-ffi 0.1.11
+xgrammar 0.2.7
+triton 3.8.0
+nvidia-nccl-cu13 2.30.7
+sglang from /scratch/glm5lp-upstream-sync/13fa8258d2/src/python/sglang/__init__.py

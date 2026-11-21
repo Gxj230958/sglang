@@ -1,0 +1,38 @@
+{
+  "arms": {
+    "baseline": {
+      "accept_len_running_gte_16": {
+        "mean": 2.6584070796460177,
+        "median": 2.68,
+        "samples": 113
+      },
+      "accuracy": 0.9469294920394238,
+      "code": "13fa8258d2404deedfac9c114c43c4e4069f39b5",
+      "correct": 1249,
+      "errors": 0,
+      "finish_reason": {
+        "length": 1,
+        "stop": 1318
+      },
+      "samples": 1319,
+      "terminal": "eval rc=0; server alive after eval; gpu apps 0; DONE"
+    },
+    "candidate": {
+      "accept_len_running_gte_16": {
+        "mean": 2.652578125,
+        "median": 2.6550000000000002,
+        "samples": 128
+      },
+      "accuracy": 0.9492039423805914,
+      "code": "7053ff0277bd27e1f3c76646b4a65bf76b0c7820",
+      "correct": 1252,
+      "errors": 0,
+      "finish_reason": {
+        "stop": 1319
+      },
+      "samples": 1319,
+      "terminal": "eval rc=0; server alive after eval; gpu apps 0; DONE"
+    }
+  },
+  "gate": "PASS"
+}

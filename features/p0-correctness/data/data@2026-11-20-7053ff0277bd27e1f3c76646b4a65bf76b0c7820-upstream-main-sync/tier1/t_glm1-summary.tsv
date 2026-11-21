@@ -1,0 +1,4 @@
+test/registered/unit/cli/test_glm_loop_server_args.py	0	13 passed, 22 subtests passed in 5.90s
+test/registered/unit/configs/test_glm_loop_config.py	1	15 failed in 9.84s
+test/registered/unit/disaggregation/test_decode_hicache_tree_core.py	0	2 passed, 15 warnings in 7.29s
+DONE

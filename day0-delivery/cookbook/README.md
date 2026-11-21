@@ -27,6 +27,8 @@ The cookbook turns validated Day-0 model results into reproducible deployment gu
 | GB300 | Four-turn chat | Latency and throughput | TP4 | BF16/FP8 KV, breakable prefill | FP8/NVFP4 | Natural and off measured | Default sweep complete; NVFP4 natural-MTP rerun required after #89 | [E15](../../features/p0-general-performance/data/data@2026-11-17-ac08d9be93598a62dda61191dcc91bda9cd6aa8b-gb300-defaults/repro.md) |
 | B300 | Four-turn chat | Latency and throughput | TP8 preferred over DEP8 in the eager baseline | FP8 KV, TRTLLM | FP8/NVFP4 | Natural and off measured | Eager baseline only; FP8-only r4 running | [E12](../../features/p0-general-performance/data/data@2026-11-17-e9a0a0287215c18b08ecb120f9d00db52986052b-b300-delivery/repro.md) |
 
+[Correctness E31](../../features/p0-correctness/data/data@2026-11-20-7053ff0277bd27e1f3c76646b4a65bf76b0c7820-upstream-main-sync/repro.md) validates upstream-sync candidate `7053ff0277bd27e1f3c76646b4a65bf76b0c7820` on GB300 TP4 at 94.92% accuracy and 100% stop. This is integration evidence only: it does not replace the cutoff launch profiles, validate DEP/MegaMoE or PD, or select a deployment configuration.
+
 ## Required Page Structure
 
 ### 1. Overview

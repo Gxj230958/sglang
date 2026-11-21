@@ -1,0 +1,7 @@
+test/registered/unit/cli/test_glm_loop_server_args.py	0	13 passed, 22 subtests passed in 5.58s
+test/registered/unit/configs/test_glm_loop_config.py	0	15 passed in 9.68s
+test/registered/unit/disaggregation/test_encode_server.py	0	28 passed, 18 warnings in 10.48s
+test/registered/unit/model_executor/runner/test_flashinfer_autotune_sync.py	0	11 passed, 1 skipped, 15 warnings, 12 subtests passed in 19.12s
+test/registered/unit/models/test_glm_loop.py	1	9 failed, 45 passed, 16 warnings, 17 subtests passed in 9.64s
+test/registered/unit/server_args/test_server_args.py	0	366 passed, 16 warnings, 252 subtests passed in 14.78s
+DONE

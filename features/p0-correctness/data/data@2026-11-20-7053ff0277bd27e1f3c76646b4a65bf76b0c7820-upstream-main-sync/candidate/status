@@ -1,0 +1,7 @@
+2026-11-20T19:17:14Z launch: --model-path /scratch/models/GLM-5-1028-Provider --host 127.0.0.1 --port 31200 --dist-init-addr 127.0.0.1:31201 --tp-size 4 --kv-cache-dtype fp8_e4m3 --speculative-algorithm EAGLE --reasoning-parser glm45
+2026-11-20T19:28:30Z ready
+2026-11-20T19:28:30Z eval start
+2026-11-20T19:43:47Z eval rc=0
+2026-11-20T19:43:47Z server alive after eval
+2026-11-20T19:44:07Z stopped; gpu apps: 0
+2026-11-20T19:44:07Z DONE
