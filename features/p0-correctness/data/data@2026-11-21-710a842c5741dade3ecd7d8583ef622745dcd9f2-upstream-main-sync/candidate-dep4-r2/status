@@ -1,0 +1,8 @@
+2026-11-21T04:58:33Z leg=dep4 env: MEGA_MOE_NUM_MAX_TOKENS_PER_RANK=8192 DP_USE_GATHERV=1 overlay=/scratch/glm5lp-upstream-sync/overlay-deps-ff776255fc
+2026-11-21T04:58:33Z launch: --model-path /scratch/models/GLM-5-1028-Provider --host 127.0.0.1 --port 31200 --dist-init-addr 127.0.0.1:31201 --tp-size 4 --kv-cache-dtype fp8_e4m3 --speculative-algorithm EAGLE --reasoning-parser glm45 --ep-size 4 --attn-dp-size 4 --moe-runner-backend megamoe --mem-fraction-static 0.9 --chunked-prefill-size 32768
+2026-11-21T05:02:04Z ready
+2026-11-21T05:02:05Z eval start
+2026-11-21T05:34:29Z eval rc=0
+2026-11-21T05:34:29Z server alive after eval
+2026-11-21T05:34:49Z stopped; gpu apps: 0
+2026-11-21T05:34:49Z DONE

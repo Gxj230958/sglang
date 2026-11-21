@@ -1,0 +1,8 @@
+2026-11-21T04:05:19Z leg=tp4 env: MEGA_MOE_NUM_MAX_TOKENS_PER_RANK=unset DP_USE_GATHERV=unset overlay=/scratch/glm5lp-upstream-sync/overlay-deps-ff776255fc
+2026-11-21T04:05:19Z launch: --model-path /scratch/models/GLM-5-1028-Provider --host 127.0.0.1 --port 31200 --dist-init-addr 127.0.0.1:31201 --tp-size 4 --kv-cache-dtype fp8_e4m3 --speculative-algorithm EAGLE --reasoning-parser glm45
+2026-11-21T04:14:11Z ready
+2026-11-21T04:14:12Z eval start
+2026-11-21T04:25:57Z eval rc=0
+2026-11-21T04:25:57Z server alive after eval
+2026-11-21T04:26:17Z stopped; gpu apps: 0
+2026-11-21T04:26:17Z DONE

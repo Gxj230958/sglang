@@ -1,0 +1,77 @@
+check for broken symlinks...............................................................(no files to check)Skipped
+detect destroyed symlinks...................................................................................Passed
+trim trailing whitespace....................................................................................Failed
+- hook id: trailing-whitespace
+- exit code: 1
+- files were modified by this hook
+
+Fixing docker/patches/deep_gemm/0001-mega-moe-fp8-trtllm-weight-layout.patch
+Fixing docker/patches/flash_mla/0001-sm100-bf16-sparse-decode-h64.patch
+Fixing docker/patches/flash_mla/0002-sm100-fp8-576-sparse-decode-h64.patch
+
+fix end of files............................................................................................Failed
+- hook id: end-of-file-fixer
+- exit code: 1
+- files were modified by this hook
+
+Fixing docker/patches/flash_mla/0001-sm100-bf16-sparse-decode-h64.patch
+Fixing docker/patches/flash_mla/0002-sm100-fp8-576-sparse-decode-h64.patch
+
+check yaml..............................................................................(no files to check)Skipped
+check toml..............................................................................(no files to check)Skipped
+check python ast............................................................................................Passed
+check for added large files.................................................................................Passed
+check for merge conflicts...................................................................................Passed
+check that scripts with shebangs are executable.............................................................Passed
+detect private key..........................................................................................Passed
+debug statements (python)...................................................................................Passed
+don't commit to branch......................................................................................Passed
+isort.......................................................................................................Failed
+- hook id: isort
+- files were modified by this hook
+
+Fixing /home/ubuntu/github_projects/sglang_worksapce/glm-next/upstream-sync/repo/test/registered/kernels/ops/moe/test_sigmoid_topk_fp8_quant.py
+
+ruff (legacy alias).........................................................................................Passed
+ruff format.................................................................................................Passed
+codespell...................................................................................................Passed
+clang-format................................................................................................Failed
+- hook id: clang-format
+- files were modified by this hook
+
+Formatting [1/4] python/sglang/kernels/jit/include/sgl_kernel/distributed/ptx.cuh
+Formatting [2/4] python/sglang/kernels/jit/csrc/gemm/per_token_group_quant.cuh
+Formatting [3/4] python/sglang/kernels/jit/csrc/attention/glm_loop_fp8_sparse_decode.cuh
+Formatting [4/4] python/sglang/kernels/jit/csrc/elementwise/set_mla_kv_concat_q.cuh
+Formatting [1/4] python/sglang/kernels/jit/csrc/attention/glm_loop_fp8_dual_bank_decode_h64.cuh
+Formatting [2/4] python/sglang/kernels/jit/csrc/moe/fp8_block_decode/moe_fp8_block.cuh
+Formatting [3/4] python/sglang/kernels/jit/csrc/moe/sigmoid_topk_fp8_quant.cuh
+Formatting [4/4] python/sglang/kernels/jit/csrc/distributed/all_reduce_fusion.cuh
+Formatting [1/4] python/sglang/kernels/jit/csrc/moe/trtllm_local_rows.cuh
+Formatting [2/4] python/sglang/kernels/jit/csrc/moe/fp8_block_decode/ep_moe_fp8_block.cuh
+Formatting [3/4] python/sglang/kernels/jit/csrc/moe/route_radix.cuh
+Formatting [4/4] python/sglang/kernels/jit/csrc/moe/sigmoid_topk_mega_pre_dispatch.cuh
+Formatting [1/4] python/sglang/kernels/jit/csrc/gemm/fp8_block_gemv.cuh
+Formatting [2/4] python/sglang/kernels/jit/csrc/elementwise/rmsnorm.cuh
+Formatting [3/4] python/sglang/kernels/jit/csrc/moe/mxfp4_decode/moe_mxfp4.cuh
+Formatting [4/4] python/sglang/kernels/jit/include/sgl_kernel/ptx/tcgen05.cuh
+
+nbstripout..............................................................................(no files to check)Skipped
+forbid test/srt/ (use test/registered/ or test/manual/).................................(no files to check)Skipped
+forbid docs_new/ (renamed to docs/).....................................................(no files to check)Skipped
+check chinese characters in multimodal_gen..............................................(no files to check)Skipped
+sort CI_PERMISSIONS.json................................................................(no files to check)Skipped
+sort Cookbook vendor groups in docs/docs.json...........................................(no files to check)Skipped
+check for duplicate workflow job names..................................................(no files to check)Skipped
+check opt-in CI tiers match their workflows and pr-gate callers skip on opted-in........(no files to check)Skipped
+check rust-ext cache key prefix defaults match..........................................(no files to check)Skipped
+check Dockerfile sgl-deep-gemm/sgl-deep-ep versions match python/pyproject.toml.............................Passed
+reject bare pytest.main calls in __main__ blocks............................................................Passed
+regenerate python/sglang/cli/_commands/ from the Cookbook configs..........................................Skipped
+validate registered test CI registries......................................................................Passed
+reject CI-registered tests inside the sglang package........................................................Passed
+reject importing a name through a module that only re-imports it............................................Passed
+reject srt domain imports in sglang.srt.utils and sglang.utils imports in the runtime.......................Passed
+rustfmt sgl-router.........................................................................................Skipped
+clippy rust/ workspace (auto-fix)..........................................................................Skipped
+rustfmt rust/ workspace....................................................................................Skipped

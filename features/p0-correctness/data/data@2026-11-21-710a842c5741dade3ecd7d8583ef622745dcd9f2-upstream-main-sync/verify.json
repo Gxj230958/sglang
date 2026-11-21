@@ -1,0 +1,103 @@
+{
+  "arms": {
+    "baseline-dep4-r1": {
+      "accept_len": {
+        "mean": 2.666723716381418,
+        "running_floor": 8,
+        "samples": 409
+      },
+      "accuracy": 0.9522365428354814,
+      "code": "45bff30acfb5ec97673046ea7b8d36b822bbc520",
+      "correct": 1256,
+      "finish_reason": {
+        "stop": 1319
+      },
+      "nccl": "2.30.7",
+      "stop_rate": 1.0
+    },
+    "baseline-dep4-r2": {
+      "accept_len": {
+        "mean": 2.652314814814815,
+        "running_floor": 8,
+        "samples": 432
+      },
+      "accuracy": 0.9469294920394238,
+      "code": "45bff30acfb5ec97673046ea7b8d36b822bbc520",
+      "correct": 1249,
+      "finish_reason": {
+        "length": 3,
+        "stop": 1316
+      },
+      "nccl": "2.30.7",
+      "stop_rate": 0.9977255496588324
+    },
+    "baseline-tp4": {
+      "accept_len": {
+        "mean": 2.6922,
+        "running_floor": 16,
+        "samples": 100
+      },
+      "accuracy": 0.9484457922668689,
+      "code": "45bff30acfb5ec97673046ea7b8d36b822bbc520",
+      "correct": 1251,
+      "finish_reason": {
+        "stop": 1319
+      },
+      "nccl": "2.30.7",
+      "stop_rate": 1.0
+    },
+    "candidate-dep4-r1": {
+      "accept_len": {
+        "mean": 2.6786182669789227,
+        "running_floor": 8,
+        "samples": 427
+      },
+      "accuracy": 0.9643669446550417,
+      "code": "710a842c5741dade3ecd7d8583ef622745dcd9f2",
+      "correct": 1272,
+      "finish_reason": {
+        "stop": 1319
+      },
+      "nccl": "2.31.2",
+      "stop_rate": 1.0
+    },
+    "candidate-dep4-r2": {
+      "accept_len": {
+        "mean": 2.6628982300884956,
+        "running_floor": 8,
+        "samples": 452
+      },
+      "accuracy": 0.9529946929492039,
+      "code": "710a842c5741dade3ecd7d8583ef622745dcd9f2",
+      "correct": 1257,
+      "finish_reason": {
+        "length": 1,
+        "stop": 1318
+      },
+      "nccl": "2.31.2",
+      "stop_rate": 0.9992418498862775
+    },
+    "candidate-tp4": {
+      "accept_len": {
+        "mean": 2.6936734693877553,
+        "running_floor": 16,
+        "samples": 98
+      },
+      "accuracy": 0.9507202426080363,
+      "code": "710a842c5741dade3ecd7d8583ef622745dcd9f2",
+      "correct": 1254,
+      "finish_reason": {
+        "stop": 1319
+      },
+      "nccl": "2.31.2",
+      "stop_rate": 1.0
+    }
+  },
+  "dep4_megamoe": {
+    "baseline_mean": 0.9495830174374527,
+    "candidate_mean": 0.9586808188021227,
+    "gate": "PASS"
+  },
+  "gate": "PASS",
+  "tp4": "PASS"
+}

@@ -1,0 +1,5 @@
+*.log -whitespace
+*.diff -whitespace
+*.out -whitespace
+loaded_libs.txt -whitespace
+*.tsv -whitespace

@@ -1,0 +1,21 @@
+torch 2.14.1+cu130 /opt/sglang/lib/python3.12/site-packages
+flashinfer-python 0.7.4 /scratch/codex-glm5lp-nvfp4-perf/fi074
+sglang-kernel 0.4.11 /scratch/cc-regate2/overlay
+sgl-deep-gemm 0.2.9 /scratch/glm5lp-upstream-sync/overlay-dg
+sgl-flash-mla 1.0.5 /scratch/cc-regate2/overlay
+transformers 5.19.0 /opt/sglang/lib/python3.12/site-packages
+sgl-deep-ep 0.1.2.post1 /opt/sglang/lib/python3.12/site-packages
+tilelang 0.1.12 /opt/sglang/lib/python3.12/site-packages
+apache-tvm-ffi 0.1.11 /opt/sglang/lib/python3.12/site-packages
+xgrammar 0.2.7 /opt/sglang/lib/python3.12/site-packages
+triton 3.8.0 /opt/sglang/lib/python3.12/site-packages
+nvidia-nccl-cu13 2.30.7 /opt/sglang/lib/python3.12/site-packages
+module deep_gemm /scratch/glm5lp-upstream-sync/overlay-dg/deep_gemm/__init__.py
+module deep_ep /opt/sglang/lib/python3.12/site-packages/deep_ep/__init__.py
+module flashinfer /scratch/codex-glm5lp-nvfp4-perf/fi074/flashinfer/__init__.py
+module sgl_kernel /scratch/cc-regate2/overlay/sgl_kernel/__init__.py
+torch.cuda.nccl.version (compile-time) (2, 30, 7)
+nccl runtime ncclGetVersion 23007
+libnccl mapped ['/opt/sglang/lib/python3.12/site-packages/nvidia/nccl/lib/libnccl.so.2']
+LD_PRELOAD None
+sglang from /scratch/glm5lp-upstream-sync/45bff30acf/src/python/sglang/__init__.py

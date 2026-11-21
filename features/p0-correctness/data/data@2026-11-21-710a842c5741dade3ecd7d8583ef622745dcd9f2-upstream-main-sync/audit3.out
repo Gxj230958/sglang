@@ -1,0 +1,116 @@
+## env vars referenced by glm-touched files that are not defined in Envs
+undefined SGLANG_BUILD_COMMIT  in docker/Dockerfile.cu134
+undefined SGLANG_BUILD_URL  in docker/Dockerfile.cu134
+undefined SGLANG_DISABLE_COSMOS3_GUARDRAILS  in docker/Dockerfile.cu134
+undefined SGLANG_IMAGE_TAG  in docker/Dockerfile.cu134
+undefined SGLANG_LOG_PATH  in docs/docs/advanced_features/pd_disaggregation.mdx
+undefined SGLANG_NPU_PROFILING  in docs/docs/advanced_features/pd_disaggregation.mdx
+undefined SGLANG_NPU_PROFILING_STAGE  in docs/docs/advanced_features/pd_disaggregation.mdx
+undefined SGLANG_USE_FIA_NZ  in docs/docs/advanced_features/pd_disaggregation.mdx
+undefined SGLANG_DP_USE_GATHERV  in docs/docs/basic_usage/glm_loop.mdx
+REMOVED   SGLANG_AITER_MLA_DCP_DECODE_BACKEND  in python/sglang/srt/environ.py
+undefined SGLANG_AITER_UNIFIED_VERIFY  in python/sglang/srt/environ.py
+REMOVED   SGLANG_DISABLE_CONSECUTIVE_PREFILL_OVERLAP  in python/sglang/srt/environ.py
+REMOVED   SGLANG_DISAGGREGATION_SAMPLING_MASK_MAX_TOKENS  in python/sglang/srt/environ.py
+undefined SGLANG_DP_USE_GATHERV  in python/sglang/srt/environ.py
+undefined SGLANG_DSA_TOPK_ROW_SPLIT  in python/sglang/srt/environ.py
+REMOVED   SGLANG_DSPARK_FAST_SAMPLING  in python/sglang/srt/environ.py
+REMOVED   SGLANG_DSPARK_FOLDED_SAMPLING  in python/sglang/srt/environ.py
+REMOVED   SGLANG_DSV41_ENGRAM_HOST_TABLE_LAYOUT  in python/sglang/srt/environ.py
+REMOVED   SGLANG_ENABLE_CP_V2  in python/sglang/srt/environ.py
+REMOVED   SGLANG_ENABLE_DSV41_ENGRAM_HOST_TABLE  in python/sglang/srt/environ.py
+REMOVED   SGLANG_EPLB_ROCM_P2P_BATCH_CHUNK_SIZE  in python/sglang/srt/environ.py
+undefined SGLANG_EXA_  in python/sglang/srt/environ.py
+REMOVED   SGLANG_FLASHINFER_MNNVL_CUTEDSL_AR_FUSION  in python/sglang/srt/environ.py
+REMOVED   SGLANG_K31_DECODE_MOE  in python/sglang/srt/environ.py
+REMOVED   SGLANG_K3_FLYDSL_SOURCE  in python/sglang/srt/environ.py
+undefined SGLANG_OLD_NAME  in python/sglang/srt/environ.py
+REMOVED   SGLANG_OPT_DSV41_ENGRAM_PEER_SHARDS  in python/sglang/srt/environ.py
+REMOVED   SGLANG_OPT_SM120_MTP_ROUTER_TOP22  in python/sglang/srt/environ.py
+REMOVED   SGLANG_OPT_SWA_RELEASE_LEAF_LOCK_AFTER_WINDOW  in python/sglang/srt/environ.py
+REMOVED   SGLANG_PREFILL_DELAYER_MAX_DELAY_PASSES  in python/sglang/srt/environ.py
+REMOVED   SGLANG_PREFILL_DELAYER_TOKEN_USAGE_LOW_WATERMARK  in python/sglang/srt/environ.py
+REMOVED   SGLANG_Q35MF_BK_VEC_COPY  in python/sglang/srt/environ.py
+REMOVED   SGLANG_Q35MF_EDGE_CHAIN_TREE  in python/sglang/srt/environ.py
+REMOVED   SGLANG_Q35MF_EDGE_MULTIHOST_TCP  in python/sglang/srt/environ.py
+REMOVED   SGLANG_Q35MF_EDGE_PACKED_VERIFY_BCAST  in python/sglang/srt/environ.py
+REMOVED   SGLANG_Q35MF_EDGE_SHM_SYNC  in python/sglang/srt/environ.py
+REMOVED   SGLANG_Q35MF_EDGE_SHM_SYNC_MULTIHOST  in python/sglang/srt/environ.py
+REMOVED   SGLANG_Q35MF_EDGE_SPARSE_VERIFY_SAMPLING  in python/sglang/srt/environ.py
+REMOVED   SGLANG_Q35MF_MKH_N3B  in python/sglang/srt/environ.py
+REMOVED   SGLANG_Q35MF_MKH_N3C  in python/sglang/srt/environ.py
+REMOVED   SGLANG_ROCM_K3_KDA_FUSED_BACKEND  in python/sglang/srt/environ.py
+REMOVED   SGLANG_ROCM_OPT_DSPARK_FP8_LM_HEAD  in python/sglang/srt/environ.py
+REMOVED   SGLANG_SCHEDULER_DECREASE_PREFILL_IDLE  in python/sglang/srt/environ.py
+REMOVED   SGLANG_TRACE_QWEN35_FINAL_NORM  in python/sglang/srt/environ.py
+REMOVED   SGLANG_USE_CUDA_IPC_TRANSPORT  in python/sglang/srt/environ.py
+REMOVED   SGLANG_USE_SGL_XPU  in python/sglang/srt/environ.py
+REMOVED   SGLANG_USE_TRITON_ROUTER_SUM  in python/sglang/srt/environ.py
+undefined SGLANG_DP_USE_GATHERV  in python/sglang/srt/layers/dp_attention.py
+undefined SGLANG_USE_ROCM700A  in python/sglang/srt/layers/dp_attention.py
+undefined SGLANG_ROCM_MUSE_GFX1250_LMHEAD  in python/sglang/srt/layers/logits_processor.py
+undefined SGLANG_MORI_NO_PAD_MASK  in python/sglang/srt/layers/moe/topk.py
+undefined SGLANG_OPT_LORA_FUSED_TOPK_PACK  in python/sglang/srt/layers/moe/topk.py
+undefined SGLANG_FORCE_MXFP8_BLOCK_CONVERT  in python/sglang/srt/layers/quantization/fp8.py
+undefined SGLANG_MXFP4_USE_OFFICIAL_SHUFFLE  in python/sglang/srt/layers/quantization/mxfp4_flashinfer_trtllm_moe.py
+undefined SGLANG_ROUTING_KEY_POLICY_DEBUG_LOG  in python/sglang/srt/managers/schedule_policy.py
+undefined SGLANG_DP_RANK  in python/sglang/srt/managers/scheduler.py
+undefined SGLANG_NPU_USE_FLASH_MLA  in python/sglang/srt/mem_cache/kv_cache_configurator.py
+undefined SGLANG_DP_SHARED_EXPERT_LOCAL  in python/sglang/srt/models/deepseek_v2.py
+REMOVED   SGLANG_ENABLE_CP_V2  in test/registered/unit/server_args/test_server_args.py
+undefined SGLANG_ENABLE_DP_TBO  in test/registered/unit/server_args/test_server_args.py
+undefined SGLANG_GRPC_ENDPOINT_ENV  in test/registered/unit/server_args/test_server_args.py
+
+## --flags in glm docs/scripts/tests not known to merged server args
+--random-input  in docs/docs/advanced_features/hisparse_guide.mdx
+--random-output  in docs/docs/advanced_features/hisparse_guide.mdx
+--config-settings  in docs/docs/advanced_features/pd_disaggregation.mdx
+--gpus  in docs/docs/advanced_features/pd_disaggregation.mdx
+--ipc  in docs/docs/advanced_features/pd_disaggregation.mdx
+--network  in docs/docs/advanced_features/pd_disaggregation.mdx
+--no-deps  in docs/docs/advanced_features/pd_disaggregation.mdx
+--ulimit  in docs/docs/advanced_features/pd_disaggregation.mdx
+--with-ze  in docs/docs/advanced_features/pd_disaggregation.mdx
+--cuda-graph-  in docs/docs/advanced_features/server_arguments.mdx
+--no-allow-local-media-files  in docs/docs/advanced_features/server_arguments.mdx
+--no-dcp-replicate-q-proj  in docs/docs/advanced_features/server_arguments.mdx
+--no-dllm-fdfo  in docs/docs/advanced_features/server_arguments.mdx
+--no-enable-flashmla-prefill-token-packing  in docs/docs/advanced_features/server_arguments.mdx
+--no-enable-fused-qk-norm-rope  in docs/docs/advanced_features/server_arguments.mdx
+--no-experts-shared-outer-loras  in docs/docs/advanced_features/server_arguments.mdx
+--no-ple-offload-embedding  in docs/docs/advanced_features/server_arguments.mdx
+--no-speculative-enable-w4a4-mxfp4-megamoe  in docs/docs/advanced_features/server_arguments.mdx
+--shm-size  in docs/docs/advanced_features/server_arguments.mdx
+--uocr-doc-page-window  in docs/docs/advanced_features/server_arguments.mdx
+--uocr-doc-split  in docs/docs/advanced_features/server_arguments.mdx
+--uocr-max-page-tokens  in docs/docs/advanced_features/server_arguments.mdx
+--decode  in docs/docs/basic_usage/glm_loop.mdx
+--dsa-  in docs/docs/basic_usage/glm_loop.mdx
+--images  in docs/docs/basic_usage/glm_loop.mdx
+--pd-disaggregation  in docs/docs/basic_usage/glm_loop.mdx
+--prefill  in docs/docs/basic_usage/glm_loop.mdx
+--reference  in docs/docs/basic_usage/glm_loop.mdx
+--rpc  in docs/docs/basic_usage/glm_loop.mdx
+--strict-token-parity  in docs/docs/basic_usage/glm_loop.mdx
+--use  in python/sglang/kernels/jit/utils/arch.py
+--gpu-architecture  in python/sglang/kernels/jit/utils/compile/toolchain.py
+--offload-arch  in python/sglang/kernels/jit/utils/compile/toolchain.py
+--use  in python/sglang/kernels/ops/attention/glm_loop_fp8_dual_bank_decode_h64.py
+--use  in python/sglang/kernels/ops/attention/glm_loop_fp8_sparse_decode.py
+--use  in python/sglang/kernels/ops/moe/sigmoid_topk_fp8_quant.py
+--upgrade  in python/sglang/srt/distributed/device_communicators/mooncake_transfer_engine.py
+--gpu-architecture  in python/sglang/srt/environ.py
+--no-enable-dsa-fused-indexer  in python/sglang/srt/layers/attention/dsa/dsa_indexer.py
+--dsa-  in python/sglang/srt/layers/attention/dsa/prims_ts.py
+--dsa-  in python/sglang/srt/layers/attention/dsa_backend.py
+--enable-return-indexer-  in python/sglang/srt/layers/attention/dsa_backend.py
+--fused  in python/sglang/srt/layers/moe/topk.py
+--layer  in python/sglang/srt/layers/moe/topk.py
+--routed  in python/sglang/srt/layers/moe/topk.py
+--top  in python/sglang/srt/layers/moe/topk.py
+--speculative-moe-  in python/sglang/srt/layers/moe/utils.py
+--batch  in test/manual/models/glm_loop_batch_shape_determinism.py
+--concurrency  in test/manual/models/test_glm_loop_inference.py
+--images  in test/manual/models/test_glm_loop_inference.py
+--reference  in test/manual/models/test_glm_loop_inference.py
+--strict-token-parity  in test/manual/models/test_glm_loop_inference.py

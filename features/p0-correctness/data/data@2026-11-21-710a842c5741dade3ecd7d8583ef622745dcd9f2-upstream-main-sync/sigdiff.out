@@ -1,0 +1,31 @@
+CHANGED python/sglang/kernels/ops/speculative/reject_sampling.py::_split_residual_tile
+   (['TargetProbs', 'DraftProbs', 'pid', 'cur_prob_row', 'all_drafts_accepted', 'v_start', 'stride_tp_b', 'stride_tp_s', 'stride_tp_v', 'stride_dp_b', 'stride_dp_s', 'stride_dp_v', 'VOCAB_SIZE', 'BLOCK_V'], 14, [], [])
+-> (['TargetProbs', 'DraftProbs', 'pid', 'cur_prob_row', 'all_drafts_accepted', 'residual_scale', 'v_start', 'stride_tp_b', 'stride_tp_s', 'stride_tp_v', 'stride_dp_b', 'stride_dp_s', 'stride_dp_v', 'VOCAB_SIZE', 'BLOCK_V'], 15, [], [])
+CHANGED python/sglang/srt/disaggregation/ascend/conn.py::AscendKVManager.send_kvcache
+   (['self', 'mooncake_session_id', 'prefill_kv_indices', 'dst_kv_ptrs', 'dst_kv_indices', 'executor', 'dst_layer_ids', 'dst_device_kv_indices', 'dst_kv_item_len', 'dst_attn_tp_size'], 6, [], [])
+-> (['self', 'mooncake_session_id', 'prefill_kv_indices', 'dst_kv_ptrs', 'dst_kv_indices', 'executor', 'dst_layer_ids', 'dst_device_kv_indices', 'dst_kv_item_len', 'dst_attn_tp_size', 'dst_num_draft_entries'], 6, [], [])
+CHANGED python/sglang/srt/disaggregation/mooncake/conn.py::MooncakeKVManager.send_kvcache
+   (['self', 'mooncake_session_id', 'prefill_kv_indices', 'dst_kv_ptrs', 'dst_kv_indices', 'executor', 'dst_layer_ids', 'dst_device_kv_indices', 'dst_kv_item_len', 'dst_attn_tp_size'], 6, [], [])
+-> (['self', 'mooncake_session_id', 'prefill_kv_indices', 'dst_kv_ptrs', 'dst_kv_indices', 'executor', 'dst_layer_ids', 'dst_device_kv_indices', 'dst_kv_item_len', 'dst_attn_tp_size', 'dst_num_draft_entries'], 6, [], [])
+REMOVED python/sglang/srt/managers/scheduler.py::Scheduler.save_remote_model
+REMOVED python/sglang/srt/managers/scheduler.py::Scheduler.save_sharded_model
+REMOVED python/sglang/srt/managers/scheduler_pp_mixin.py::SchedulerPPMixin._pp_pass_release_verdict
+REMOVED python/sglang/srt/managers/scheduler_pp_mixin.py::SchedulerPPMixin._pp_answer_release_requests
+REMOVED python/sglang/srt/mem_cache/allocator/hisparse.py::HiSparseTokenToKVPoolAllocator.size_full
+REMOVED python/sglang/srt/mem_cache/allocator/hisparse.py::HiSparseTokenToKVPoolAllocator.available_size
+REMOVED python/sglang/srt/mem_cache/allocator/hisparse.py::HiSparseTokenToKVPoolAllocator.get_kvcache
+REMOVED python/sglang/srt/mem_cache/allocator/hisparse.py::HiSparseTokenToKVPoolAllocator.alloc_logical_only
+REMOVED python/sglang/srt/mem_cache/allocator/hisparse.py::HiSparseTokenToKVPoolAllocator.free_hisparse_indices
+REMOVED python/sglang/srt/mem_cache/allocator/hisparse.py::HiSparseTokenToKVPoolAllocator.alloc_decode
+REMOVED python/sglang/srt/mem_cache/allocator/hisparse.py::HiSparseTokenToKVPoolAllocator.clear
+REMOVED python/sglang/srt/mem_cache/allocator/hisparse.py::DeepSeekV4HiSparseTokenToKVPoolAllocator.size_full
+REMOVED python/sglang/srt/mem_cache/allocator/hisparse.py::DeepSeekV4HiSparseTokenToKVPoolAllocator.get_kvcache
+REMOVED python/sglang/srt/mem_cache/allocator/hisparse.py::DeepSeekV4HiSparseTokenToKVPoolAllocator.free_full
+REMOVED python/sglang/srt/mem_cache/allocator/hisparse.py::DeepSeekV4HiSparseTokenToKVPoolAllocator.available_size
+REMOVED python/sglang/srt/mem_cache/allocator/hisparse.py::DeepSeekV4HiSparseTokenToKVPoolAllocator.alloc_logical_only
+REMOVED python/sglang/srt/mem_cache/allocator/hisparse.py::DeepSeekV4HiSparseTokenToKVPoolAllocator.free_hisparse_indices
+REMOVED python/sglang/srt/mem_cache/allocator/hisparse.py::DeepSeekV4HiSparseTokenToKVPoolAllocator.alloc_decode
+REMOVED python/sglang/srt/mem_cache/allocator/hisparse.py::DeepSeekV4HiSparseTokenToKVPoolAllocator.clear
+REMOVED python/sglang/srt/mem_cache/allocator/hisparse.py::DeepSeekV4HiSparseTokenToKVPoolAllocator.free
+REMOVED python/sglang/srt/mem_cache/allocator/hisparse.py::DeepSeekV4HiSparseTokenToKVPoolAllocator.free_group_begin
+REMOVED python/sglang/srt/mem_cache/allocator/hisparse.py::DeepSeekV4HiSparseTokenToKVPoolAllocator.free_group_end

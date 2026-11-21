@@ -1,0 +1,80 @@
+{
+ "run_dir": "/scratch/glm5lp-upstream-sync/45bff30acf/gate-dep4-r1/eval/sgl_eval_gsm8k_20261121-044112",
+ "n": 1319,
+ "finish_reason": {
+  "stop": 1319
+ },
+ "stop_rate": 1.0,
+ "acc_from_samples": 0.9522365428354814,
+ "mean_generated_tokens": 591.1213040181956,
+ "metrics_json": {
+  "aggregate": {
+   "error_rate": 0.0,
+   "score": 0.9522365428354814,
+   "stop_rate": 1.0,
+   "truncated_rate": 0.0
+  },
+  "base_url": "http://127.0.0.1:31200/v1",
+  "gen": {
+   "chat_template_kwargs": null,
+   "extra_body": null,
+   "max_tokens": null,
+   "min_p": 0.0,
+   "reasoning_effort": null,
+   "repetition_penalty": 1.0,
+   "seed": null,
+   "system_message": null,
+   "temperature": 1.0,
+   "top_p": 0.95
+  },
+  "latency_seconds": 907.8998103130143,
+  "model": "/scratch/models/GLM-5-1028-Provider",
+  "n_repeats": 1,
+  "name": "gsm8k",
+  "ns_commit_sha": "645cf567ff08c0ae9cc3fc8e1edbb975b3067816",
+  "num_examples": 1319,
+  "num_threads": 64,
+  "output_throughput_tps": 858.7830850313633,
+  "sgl_eval_version": "0.1.3",
+  "timestamp": "20261121-044112",
+  "token_usage": {
+   "completion_tokens": {
+    "count": 1319,
+    "mean": 591.1213040181956
+   },
+   "prompt_tokens": {
+    "count": 1319,
+    "mean": 93.98256254738438
+   },
+   "reasoning_tokens": {
+    "count": 1319,
+    "mean": 504.18423047763457
+   }
+  },
+  "total_completion_tokens": 779689,
+  "total_prompt_tokens": 123963
+ },
+ "accept_len_mean": 2.5804517704517704,
+ "accept_len_samples": 1638,
+ "cuda_graph_true_lines": 2894,
+ "cuda_graph_false_lines": 1,
+ "tracebacks": 0,
+ "moe_runner_backend": "'auto'",
+ "moe_a2a_backend": "'megamoe'",
+ "attention_backend": "'dsa'",
+ "dsa_prefill_backend": "'trtllm'",
+ "dsa_decode_backend": "'trtllm'",
+ "speculative_num_steps": "3",
+ "speculative_num_draft_tokens": "4",
+ "speculative_eagle_topk": "1",
+ "max_running_requests": "48",
+ "page_size": "64",
+ "mem_fraction_static": "0.9",
+ "disable_cuda_graph": "False",
+ "rust_lines": [
+  "ged_experts_host_memory_gb': None, '_max_running_requests_explicitly_set': False, 'hybrid_cache_checkpoints_level': 2, 'disaggregation_max_top_logprobs_num': 128, 'shortest_prefill_aging_factor': 0.0}",
+  "g.launch_server` for pre-compilation to reduce the overhead if you have not run it before. For example: `python3 -m sglang.compile_deep_gemm --model deepseek-ai/DeepSeek-V3 --tp 8 --trust-remote-code`",
+  "g.launch_server` for pre-compilation to reduce the overhead if you have not run it before. For example: `python3 -m sglang.compile_deep_gemm --model deepseek-ai/DeepSeek-V3 --tp 8 --trust-remote-code`",
+  "g.launch_server` for pre-compilation to reduce the overhead if you have not run it before. For example: `python3 -m sglang.compile_deep_gemm --model deepseek-ai/DeepSeek-V3 --tp 8 --trust-remote-code`"
+ ]
+}

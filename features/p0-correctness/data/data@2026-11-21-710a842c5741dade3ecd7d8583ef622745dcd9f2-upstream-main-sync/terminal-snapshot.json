@@ -1,0 +1,78 @@
+{
+  "baseline-tp4": {
+    "code": "45bff30acfb5ec97673046ea7b8d36b822bbc520",
+    "rank": 0,
+    "launch": "2026-11-21T04:04:58Z",
+    "ready": "2026-11-21T04:13:50Z",
+    "eval_rc": 0,
+    "eval_finished": "2026-11-21T04:36:58Z",
+    "server_alive_after_eval": true,
+    "stopped": "2026-11-21T04:37:18Z",
+    "gpu_apps": 0,
+    "terminal": "DONE"
+  },
+  "baseline-dep4-r1": {
+    "code": "45bff30acfb5ec97673046ea7b8d36b822bbc520",
+    "rank": 0,
+    "launch": "2026-11-21T04:37:20Z",
+    "ready": "2026-11-21T04:41:11Z",
+    "eval_rc": 0,
+    "eval_finished": "2026-11-21T04:56:21Z",
+    "server_alive_after_eval": true,
+    "stopped": "2026-11-21T04:56:41Z",
+    "gpu_apps": 0,
+    "terminal": "DONE"
+  },
+  "baseline-dep4-r2": {
+    "code": "45bff30acfb5ec97673046ea7b8d36b822bbc520",
+    "rank": 0,
+    "launch": "2026-11-21T04:56:42Z",
+    "ready": "2026-11-21T05:00:03Z",
+    "eval_rc": 0,
+    "eval_finished": "2026-11-21T05:44:55Z",
+    "server_alive_after_eval": true,
+    "stopped": "2026-11-21T05:45:15Z",
+    "gpu_apps": 0,
+    "terminal": "DONE"
+  },
+  "candidate-tp4": {
+    "code": "710a842c5741dade3ecd7d8583ef622745dcd9f2",
+    "rank": 1,
+    "launch": "2026-11-21T04:05:19Z",
+    "ready": "2026-11-21T04:14:11Z",
+    "eval_rc": 0,
+    "eval_finished": "2026-11-21T04:25:57Z",
+    "server_alive_after_eval": true,
+    "stopped": "2026-11-21T04:26:17Z",
+    "gpu_apps": 0,
+    "terminal": "DONE"
+  },
+  "candidate-dep4-r1": {
+    "code": "710a842c5741dade3ecd7d8583ef622745dcd9f2",
+    "rank": 1,
+    "launch": "2026-11-21T04:26:19Z",
+    "ready": "2026-11-21T04:30:21Z",
+    "eval_rc": 0,
+    "eval_finished": "2026-11-21T04:58:16Z",
+    "server_alive_after_eval": true,
+    "stopped": "2026-11-21T04:58:31Z",
+    "gpu_apps": 0,
+    "terminal": "DONE"
+  },
+  "candidate-dep4-r2": {
+    "code": "710a842c5741dade3ecd7d8583ef622745dcd9f2",
+    "rank": 1,
+    "launch": "2026-11-21T04:58:33Z",
+    "ready": "2026-11-21T05:02:04Z",
+    "eval_rc": 0,
+    "eval_finished": "2026-11-21T05:34:29Z",
+    "server_alive_after_eval": true,
+    "stopped": "2026-11-21T05:34:49Z",
+    "gpu_apps": 0,
+    "terminal": "DONE"
+  },
+  "gate_devbox_lock": {
+    "held": "2026-11-21T04:04:39Z",
+    "released": "2026-11-21T05:46:11Z"
+  }
+}

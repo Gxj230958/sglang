@@ -29,6 +29,8 @@ The cookbook turns validated Day-0 model results into reproducible deployment gu
 
 [Correctness E31](../../features/p0-correctness/data/data@2026-11-20-7053ff0277bd27e1f3c76646b4a65bf76b0c7820-upstream-main-sync/repro.md) validates upstream-sync candidate `7053ff0277bd27e1f3c76646b4a65bf76b0c7820` on GB300 TP4 at 94.92% accuracy and 100% stop. This is integration evidence only: it does not replace the cutoff launch profiles, validate DEP/MegaMoE or PD, or select a deployment configuration.
 
+[Correctness E32](../../features/p0-correctness/data/data@2026-11-21-710a842c5741dade3ecd7d8583ef622745dcd9f2-upstream-main-sync/repro.md) validates `glm-5-lp` `710a842c5741dade3ecd7d8583ef622745dcd9f2` on GB300 with TP4 and with DEP4 + megamoe. This is integration evidence only: it does not replace the cutoff launch profiles or select a deployment configuration.
+
 ## Required Page Structure
 
 ### 1. Overview
