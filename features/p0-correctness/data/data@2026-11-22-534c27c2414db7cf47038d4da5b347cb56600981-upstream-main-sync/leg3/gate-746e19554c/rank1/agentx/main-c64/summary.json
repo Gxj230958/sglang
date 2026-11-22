@@ -1,0 +1,51 @@
+{
+ "requests": 1097.0,
+ "profiling_records": 1097,
+ "errors": 0,
+ "error_types": {},
+ "output_tps": 933.4,
+ "total_tps": 85401.7,
+ "output_tokens": 782694.0,
+ "ttft_ms": {
+  "avg": 25167.5,
+  "p50": 12093.4,
+  "p90": 71231.2
+ },
+ "itl_ms": {
+  "avg": 18.8,
+  "p50": 19.0,
+  "p90": 23.8
+ },
+ "request_latency_ms_avg": 40451.3,
+ "prompt_cache_read_pct": 68.8,
+ "window": [
+  "2026-11-22 13:11:56",
+  "2026-11-22 13:32:49"
+ ],
+ "profiling_window": [
+  "2026-11-22 13:16:45",
+  "2026-11-22 13:32:25"
+ ],
+ "decode": {
+  "lines": 1982,
+  "dp_ranks": 4,
+  "active_seconds_per_dp": 495.5,
+  "running_mean_total": 20.56,
+  "running_max_per_dp": 11.0,
+  "queue_mean_total": 0.0,
+  "queue_max_per_dp": 0.0,
+  "accept_len_mean": 2.394,
+  "gen_tps_mean_total": 1041.9,
+  "kv_usage_mean": 0.671,
+  "kv_usage_max": 1.0,
+  "retracted_max": 0.0,
+  "cuda_graph_lines": {
+   "True": 1982
+  }
+ },
+ "prefill_cached_tokens_delta": {
+  "host": 9686080.0,
+  "device": 23106304.0,
+  "storage": 26267008.0
+ }
+}

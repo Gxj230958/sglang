@@ -1,0 +1,965 @@
+{
+ "tag": "gate-534c27c241",
+ "variant": "full",
+ "harness_rev": "1e31bef84893",
+ "src": "/scratch/glm5lp-upstream-sync/534c27c241/src",
+ "ovl": "/scratch/glm5lp-upstream-sync/overlay-deps-710a842c57:/scratch/glm5lp-upstream-sync/overlay-dg",
+ "started": "2026-11-22T14:47:59Z",
+ "finished": "2026-11-22T15:38:05Z",
+ "launch": {
+  "prefill": "/opt/sglang/bin/python -m sglang.launch_server --model-path /scratch/models/GLM-5-1028-Provider --served-model-name glm-loop --tp-size 4 --ep-size 4 --attn-dp-size 4 --moe-runner-backend megamoe --kv-cache-dtype fp8_e4m3 --speculative-algorithm EAGLE --detokenizer-worker-num 4 --reasoning-parser glm45 --tool-call-parser glm47 --enable-cache-report --enable-metrics --disaggregation-transfer-backend mooncake --disaggregation-ib-device ibp0p0\\,ibp1p0\\,ibp2p0\\,ibp3p0 --host 0.0.0.0 --port 34020 --dist-init-addr 127.0.0.1:34030 --disaggregation-mode prefill --disaggregation-bootstrap-port 34023 --chunked-prefill-size 32768 --mem-fraction-static 0.90 --enable-hierarchical-cache --hicache-storage-backend mooncake --hicache-storage-backend-extra-config \\{\\\"master_server_address\\\":\\\"rank0:34051\\\"\\,\\\"metadata_server\\\":\\\"P2PHANDSHAKE\\\"\\,\\\"protocol\\\":\\\"tcp\\\"\\,\\\"device_name\\\":\\\"\\\"\\,\\\"global_segment_size\\\":0\\}",
+  "decode": "/opt/sglang/bin/python -m sglang.launch_server --model-path /scratch/models/GLM-5-1028-Provider --served-model-name glm-loop --tp-size 4 --ep-size 4 --attn-dp-size 4 --moe-runner-backend megamoe --kv-cache-dtype fp8_e4m3 --speculative-algorithm EAGLE --detokenizer-worker-num 4 --reasoning-parser glm45 --tool-call-parser glm47 --enable-cache-report --enable-metrics --disaggregation-transfer-backend mooncake --disaggregation-ib-device ibp0p0\\,ibp1p0\\,ibp2p0\\,ibp3p0 --host 0.0.0.0 --port 34021 --dist-init-addr 127.0.0.1:34040 --disaggregation-mode decode --mem-fraction-static 0.96",
+  "router": "/opt/sglang/bin/python -m sglang_router.launch_router --host 0.0.0.0 --port 34022 --pd-disaggregation --prefill http://rank0:34020 34023 --decode http://rank1:34021 --health-check-timeout-secs 30 --request-timeout-secs 7200 --prometheus-port 34026"
+ },
+ "versions": {
+  "prefill": {
+   "PYTHONPATH": "/scratch/glm5lp-upstream-sync/overlay-deps-710a842c57:/scratch/glm5lp-upstream-sync/overlay-dg:/scratch/glm5lp-upstream-sync/534c27c241/src/python:/scratch/glm5lp-upstream-sync/fi074:/scratch/glm5lp-upstream-sync/overlay-kernel",
+   "LD_PRELOAD": "/scratch/glm5lp-upstream-sync/overlay-deps-710a842c57/nvidia/nccl/lib/libnccl.so.2",
+   "sglang": {
+    "file": "/scratch/glm5lp-upstream-sync/534c27c241/src/python/sglang/__init__.py",
+    "version": "0.5.22",
+    "dist_version": "0.5.22"
+   },
+   "torch": {
+    "file": "/opt/sglang/lib/python3.12/site-packages/torch/__init__.py",
+    "version": "2.14.1+cu130",
+    "dist_version": "2.14.1+cu130"
+   },
+   "flashinfer": {
+    "file": "/scratch/glm5lp-upstream-sync/fi074/flashinfer/__init__.py",
+    "version": "0.7.4",
+    "dist_version": "0.7.4"
+   },
+   "sgl_kernel": {
+    "file": "/scratch/glm5lp-upstream-sync/overlay-kernel/sgl_kernel/__init__.py",
+    "version": "0.4.11",
+    "dist_version": "0.4.11"
+   },
+   "flash_mla": {
+    "file": "/scratch/glm5lp-upstream-sync/overlay-kernel/flash_mla/__init__.py",
+    "version": "1.0.5",
+    "dist_version": "1.0.5"
+   },
+   "deep_gemm": {
+    "file": "/scratch/glm5lp-upstream-sync/overlay-dg/deep_gemm/__init__.py",
+    "version": "0.2.9",
+    "dist_version": "0.2.9"
+   },
+   "deep_ep": {
+    "file": "/scratch/glm5lp-upstream-sync/overlay-deps-710a842c57/deep_ep/__init__.py",
+    "version": "2.1.0",
+    "dist_version": "0.1.3"
+   },
+   "mooncake": {
+    "file": "/scratch/glm5lp-upstream-sync/overlay-deps-710a842c57/mooncake/__init__.py",
+    "version": null,
+    "dist_version": "0.3.14"
+   },
+   "sglang_router": {
+    "file": "/opt/sglang/lib/python3.12/site-packages/sglang_router/__init__.py",
+    "version": "0.3.2",
+    "dist_version": "0.3.2"
+   },
+   "nccl_runtime": {
+    "lib": "/scratch/glm5lp-upstream-sync/overlay-deps-710a842c57/nvidia/nccl/lib/libnccl.so.2",
+    "version": 23102
+   }
+  },
+  "decode": {
+   "PYTHONPATH": "/scratch/glm5lp-upstream-sync/overlay-deps-710a842c57:/scratch/glm5lp-upstream-sync/overlay-dg:/scratch/glm5lp-upstream-sync/534c27c241/src/python:/scratch/glm5lp-upstream-sync/fi074:/scratch/glm5lp-upstream-sync/overlay-kernel",
+   "LD_PRELOAD": "/scratch/glm5lp-upstream-sync/overlay-deps-710a842c57/nvidia/nccl/lib/libnccl.so.2",
+   "sglang": {
+    "file": "/scratch/glm5lp-upstream-sync/534c27c241/src/python/sglang/__init__.py",
+    "version": "0.5.23",
+    "dist_version": "0.5.23"
+   },
+   "torch": {
+    "file": "/opt/sglang/lib/python3.12/site-packages/torch/__init__.py",
+    "version": "2.14.1+cu130",
+    "dist_version": "2.14.1+cu130"
+   },
+   "flashinfer": {
+    "file": "/scratch/glm5lp-upstream-sync/fi074/flashinfer/__init__.py",
+    "version": "0.7.4",
+    "dist_version": "0.7.4"
+   },
+   "sgl_kernel": {
+    "file": "/scratch/glm5lp-upstream-sync/overlay-kernel/sgl_kernel/__init__.py",
+    "version": "0.4.11",
+    "dist_version": "0.4.11"
+   },
+   "flash_mla": {
+    "file": "/scratch/glm5lp-upstream-sync/overlay-kernel/flash_mla/__init__.py",
+    "version": "1.0.5",
+    "dist_version": "1.0.5"
+   },
+   "deep_gemm": {
+    "file": "/scratch/glm5lp-upstream-sync/overlay-dg/deep_gemm/__init__.py",
+    "version": "0.2.9",
+    "dist_version": "0.2.9"
+   },
+   "deep_ep": {
+    "file": "/scratch/glm5lp-upstream-sync/overlay-deps-710a842c57/deep_ep/__init__.py",
+    "version": "2.1.0",
+    "dist_version": "0.1.3"
+   },
+   "mooncake": {
+    "file": "/scratch/glm5lp-upstream-sync/overlay-deps-710a842c57/mooncake/__init__.py",
+    "version": null,
+    "dist_version": "0.3.14"
+   },
+   "sglang_router": {
+    "file": "/opt/sglang/lib/python3.12/site-packages/sglang_router/__init__.py",
+    "version": "0.3.2",
+    "dist_version": "0.3.2"
+   },
+   "nccl_runtime": {
+    "lib": "/scratch/glm5lp-upstream-sync/overlay-deps-710a842c57/nvidia/nccl/lib/libnccl.so.2",
+    "version": 23102
+   }
+  }
+ },
+ "smoke": {
+  "id": "79e40005e0dc4fe1bd44fabc32e69f50",
+  "object": "chat.completion",
+  "created": 1795359114,
+  "model": "glm-loop",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "391",
+     "reasoning_content": null
+    },
+    "logprobs": null,
+    "finish_reason": "stop",
+    "matched_stop": 154827
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 25,
+   "total_tokens": 29,
+   "completion_tokens": 4,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   },
+   "reasoning_tokens": 1,
+   "completion_tokens_details": {
+    "reasoning_tokens": 1
+   }
+  },
+  "metadata": {
+   "weight_version": "default",
+   "weight_versions": [
+    {
+     "version": "default",
+     "start": 0,
+     "end": 4
+    }
+   ]
+  }
+ },
+ "check1_gsm8k": {
+  "n": 1319,
+  "finish_reason": {
+   "stop": 1319
+  },
+  "stop_rate": 1.0,
+  "correct": 1247,
+  "accuracy": 0.9454131918119788,
+  "mean_completion_tokens": 509.3,
+  "eval_seconds": 626.6324870828539,
+  "window": [
+   "2026-11-22 14:52:07",
+   "2026-11-22 15:02:35"
+  ],
+  "decode": {
+   "lines": 1250,
+   "dp_ranks": 4,
+   "active_seconds_per_dp": 309.5,
+   "running_mean_total": 24.05,
+   "running_max_per_dp": 12.0,
+   "queue_mean_total": 0.0,
+   "queue_max_per_dp": 0.0,
+   "accept_len_mean": 2.559,
+   "gen_tps_mean_total": 1364.7,
+   "kv_usage_mean": 0.016,
+   "kv_usage_max": 0.08,
+   "retracted_max": 0.0,
+   "cuda_graph_lines": {
+    "True": 1250
+   }
+  },
+  "prefill_cached_tokens_delta": {}
+ },
+ "check2_cache_truth": {
+  "vault": "QYXUJT",
+  "code": "9236734",
+  "steps": [
+   {
+    "step": "cold",
+    "answer": "9236734",
+    "answer_has_code": true,
+    "raw_content": "9236734",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 7,
+    "prompt_tokens": 6236,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "tier_delta": {},
+    "latency_s": 0.53
+   },
+   {
+    "step": "device",
+    "answer": "9236734",
+    "answer_has_code": true,
+    "raw_content": "9236734",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 7,
+    "prompt_tokens": 6236,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "tier_delta": {},
+    "latency_s": 0.53
+   },
+   {
+    "step": "storage",
+    "answer": "9236734",
+    "answer_has_code": true,
+    "raw_content": "9236734",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 7,
+    "prompt_tokens": 6236,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "storage": 6208.0
+    },
+    "latency_s": 0.64
+   },
+   {
+    "step": "seed",
+    "answer": "9236734",
+    "answer_has_code": true,
+    "raw_content": "9236734",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 7,
+    "prompt_tokens": 6236,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "storage": 6208.0
+    },
+    "latency_s": 0.42
+   },
+   {
+    "step": "seed",
+    "answer": "9236734",
+    "answer_has_code": true,
+    "raw_content": "9236734",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 7,
+    "prompt_tokens": 6236,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "storage": 6208.0
+    },
+    "latency_s": 0.42
+   },
+   {
+    "step": "seed",
+    "answer": "9236734",
+    "answer_has_code": true,
+    "raw_content": "9236734",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 7,
+    "prompt_tokens": 6236,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.2
+   },
+   {
+    "step": "seed",
+    "answer": "9236734",
+    "answer_has_code": true,
+    "raw_content": "9236734",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 7,
+    "prompt_tokens": 6236,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "storage": 6208.0
+    },
+    "latency_s": 0.35
+   },
+   {
+    "step": "seed",
+    "answer": "9236734",
+    "answer_has_code": true,
+    "raw_content": "9236734",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 7,
+    "prompt_tokens": 6236,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.22
+   },
+   {
+    "step": "seed",
+    "answer": "9236734",
+    "answer_has_code": true,
+    "raw_content": "9236734",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 7,
+    "prompt_tokens": 6236,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.22
+   },
+   {
+    "step": "seed",
+    "answer": "9236734",
+    "answer_has_code": true,
+    "raw_content": "9236734",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 7,
+    "prompt_tokens": 6236,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.21
+   },
+   {
+    "step": "seed",
+    "answer": "9236734",
+    "answer_has_code": true,
+    "raw_content": "9236734",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 7,
+    "prompt_tokens": 6236,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.19
+   },
+   {
+    "step": "seed",
+    "answer": "9236734",
+    "answer_has_code": true,
+    "raw_content": "9236734",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 7,
+    "prompt_tokens": 6236,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.18
+   },
+   {
+    "step": "seed",
+    "answer": "9236734",
+    "answer_has_code": true,
+    "raw_content": "9236734",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 7,
+    "prompt_tokens": 6236,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.18
+   },
+   {
+    "step": "seed",
+    "answer": "9236734",
+    "answer_has_code": true,
+    "raw_content": "9236734",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 7,
+    "prompt_tokens": 6236,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.17
+   },
+   {
+    "step": "seed",
+    "answer": "9236734",
+    "answer_has_code": true,
+    "raw_content": "9236734",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 7,
+    "prompt_tokens": 6236,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.18
+   },
+   {
+    "step": "seed",
+    "answer": "9236734",
+    "answer_has_code": true,
+    "raw_content": "9236734",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 7,
+    "prompt_tokens": 6236,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.2
+   },
+   {
+    "step": "seed",
+    "answer": "9236734",
+    "answer_has_code": true,
+    "raw_content": "9236734",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 7,
+    "prompt_tokens": 6236,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.18
+   },
+   {
+    "step": "seed",
+    "answer": "9236734",
+    "answer_has_code": true,
+    "raw_content": "9236734",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 7,
+    "prompt_tokens": 6236,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.21
+   },
+   {
+    "step": "seed",
+    "answer": "9236734",
+    "answer_has_code": true,
+    "raw_content": "9236734",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 7,
+    "prompt_tokens": 6236,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.2
+   },
+   {
+    "step": "seed",
+    "answer": "9236734",
+    "answer_has_code": true,
+    "raw_content": "9236734",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 7,
+    "prompt_tokens": 6236,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.17
+   },
+   {
+    "step": "seed",
+    "answer": "9236734",
+    "answer_has_code": true,
+    "raw_content": "9236734",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 7,
+    "prompt_tokens": 6236,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.18
+   },
+   {
+    "step": "seed",
+    "answer": "9236734",
+    "answer_has_code": true,
+    "raw_content": "9236734",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 7,
+    "prompt_tokens": 6236,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.2
+   },
+   {
+    "step": "seed",
+    "answer": "9236734",
+    "answer_has_code": true,
+    "raw_content": "9236734",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 7,
+    "prompt_tokens": 6236,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.17
+   },
+   {
+    "step": "seed",
+    "answer": "9236734",
+    "answer_has_code": true,
+    "raw_content": "9236734",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 7,
+    "prompt_tokens": 6236,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.17
+   },
+   {
+    "step": "seed",
+    "answer": "9236734",
+    "answer_has_code": true,
+    "raw_content": "9236734",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 7,
+    "prompt_tokens": 6236,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.19
+   },
+   {
+    "step": "seed",
+    "answer": "9236734",
+    "answer_has_code": true,
+    "raw_content": "9236734",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 7,
+    "prompt_tokens": 6236,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.18
+   },
+   {
+    "step": "seed",
+    "answer": "9236734",
+    "answer_has_code": true,
+    "raw_content": "9236734",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 7,
+    "prompt_tokens": 6236,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.19
+   },
+   {
+    "step": "host",
+    "answer": "9236734",
+    "answer_has_code": true,
+    "raw_content": "9236734",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 7,
+    "prompt_tokens": 6236,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "host": 6208.0
+    },
+    "latency_s": 0.23
+   },
+   {
+    "step": "negative",
+    "answer": "9236734",
+    "answer_has_code": true,
+    "raw_content": "9236734",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 7,
+    "prompt_tokens": 6236,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "tier_delta": {},
+    "latency_s": 0.87
+   }
+  ],
+  "restart_store_kept": {
+   "ok": true,
+   "steps": "READY"
+  },
+  "fill": {
+   "pool_tokens_per_rank": 851456,
+   "requests": 819,
+   "seconds": 155.2
+  },
+  "restart_store_fresh": {
+   "ok": true,
+   "steps": "READY"
+  },
+  "answers": [
+   "9236734"
+  ],
+  "checks": {
+   "host_tier_hit": true,
+   "storage_restore": true,
+   "negative_no_hit": true,
+   "answers_identical": true,
+   "answers_correct": true
+  },
+  "pass": true
+ },
+ "check3_agentx": {
+  "probe": {},
+  "concurrency": "64",
+  "main": {
+   "requests": 1174.0,
+   "profiling_records": 1174,
+   "errors": 0,
+   "error_types": {},
+   "output_tps": 998.6,
+   "total_tps": 92770.8,
+   "output_tokens": 880020.0,
+   "ttft_ms": {
+    "avg": 21173.5,
+    "p50": 14608.1,
+    "p90": 48950.6
+   },
+   "itl_ms": {
+    "avg": 18.9,
+    "p50": 19.0,
+    "p90": 24.0
+   },
+   "request_latency_ms_avg": 36318.1,
+   "prompt_cache_read_pct": 69.2,
+   "window": [
+    "2026-11-22 15:02:51",
+    "2026-11-22 15:24:43"
+   ],
+   "profiling_window": [
+    "2026-11-22 15:08:38",
+    "2026-11-22 15:24:18"
+   ],
+   "decode": {
+    "lines": 1980,
+    "dp_ranks": 4,
+    "active_seconds_per_dp": 495,
+    "running_mean_total": 21.35,
+    "running_max_per_dp": 11.0,
+    "queue_mean_total": 0.0,
+    "queue_max_per_dp": 0.0,
+    "accept_len_mean": 2.444,
+    "gen_tps_mean_total": 1098.3,
+    "kv_usage_mean": 0.686,
+    "kv_usage_max": 1.0,
+    "retracted_max": 0.0,
+    "cuda_graph_lines": {
+     "True": 1980
+    }
+   },
+   "prefill_cached_tokens_delta": {
+    "host": 14404224.0,
+    "storage": 26148032.0,
+    "device": 23407936.0
+   }
+  }
+ },
+ "check4_health": {
+  "rank0": {
+   "totals": {
+    "traceback": 0,
+    "process_crash": 0,
+    "kv_transfer_error": 0,
+    "client_abort": 0,
+    "disagg_timeout": 0,
+    "mooncake_transport": 0,
+    "nixl_error": 0,
+    "oom": 0,
+    "aborted": 0,
+    "python_core_fallback": 0
+   },
+   "per_log": {
+    "/scratch/glm5lp-upstream-sync/qa/runs/gate-534c27c241/logs/cache-truth.log": {
+     "counts": {
+      "traceback": 0,
+      "process_crash": 0,
+      "kv_transfer_error": 0,
+      "client_abort": 0,
+      "disagg_timeout": 0,
+      "mooncake_transport": 0,
+      "nixl_error": 0,
+      "oom": 0,
+      "aborted": 0,
+      "python_core_fallback": 0
+     },
+     "first": {}
+    },
+    "/scratch/glm5lp-upstream-sync/qa/runs/gate-534c27c241/logs/master.0.log": {
+     "counts": {
+      "traceback": 0,
+      "process_crash": 0,
+      "kv_transfer_error": 0,
+      "client_abort": 0,
+      "disagg_timeout": 0,
+      "mooncake_transport": 0,
+      "nixl_error": 0,
+      "oom": 0,
+      "aborted": 0,
+      "python_core_fallback": 0
+     },
+     "first": {}
+    },
+    "/scratch/glm5lp-upstream-sync/qa/runs/gate-534c27c241/logs/master.1.log": {
+     "counts": {
+      "traceback": 0,
+      "process_crash": 0,
+      "kv_transfer_error": 0,
+      "client_abort": 0,
+      "disagg_timeout": 0,
+      "mooncake_transport": 0,
+      "nixl_error": 0,
+      "oom": 0,
+      "aborted": 0,
+      "python_core_fallback": 0
+     },
+     "first": {}
+    },
+    "/scratch/glm5lp-upstream-sync/qa/runs/gate-534c27c241/logs/prefill.0.log": {
+     "counts": {
+      "traceback": 0,
+      "process_crash": 0,
+      "kv_transfer_error": 0,
+      "client_abort": 0,
+      "disagg_timeout": 0,
+      "mooncake_transport": 0,
+      "nixl_error": 0,
+      "oom": 0,
+      "aborted": 0,
+      "python_core_fallback": 0
+     },
+     "first": {}
+    },
+    "/scratch/glm5lp-upstream-sync/qa/runs/gate-534c27c241/logs/prefill.1.log": {
+     "counts": {
+      "traceback": 0,
+      "process_crash": 0,
+      "kv_transfer_error": 0,
+      "client_abort": 0,
+      "disagg_timeout": 0,
+      "mooncake_transport": 0,
+      "nixl_error": 0,
+      "oom": 0,
+      "aborted": 0,
+      "python_core_fallback": 0
+     },
+     "first": {}
+    },
+    "/scratch/glm5lp-upstream-sync/qa/runs/gate-534c27c241/logs/prefill.2.log": {
+     "counts": {
+      "traceback": 0,
+      "process_crash": 0,
+      "kv_transfer_error": 0,
+      "client_abort": 0,
+      "disagg_timeout": 0,
+      "mooncake_transport": 0,
+      "nixl_error": 0,
+      "oom": 0,
+      "aborted": 0,
+      "python_core_fallback": 0
+     },
+     "first": {}
+    },
+    "/scratch/glm5lp-upstream-sync/qa/runs/gate-534c27c241/logs/router.0.log": {
+     "counts": {
+      "traceback": 0,
+      "process_crash": 0,
+      "kv_transfer_error": 0,
+      "client_abort": 0,
+      "disagg_timeout": 0,
+      "mooncake_transport": 0,
+      "nixl_error": 0,
+      "oom": 0,
+      "aborted": 0,
+      "python_core_fallback": 0
+     },
+     "first": {}
+    },
+    "/scratch/glm5lp-upstream-sync/qa/runs/gate-534c27c241/logs/store.0.log": {
+     "counts": {
+      "traceback": 0,
+      "process_crash": 0,
+      "kv_transfer_error": 0,
+      "client_abort": 0,
+      "disagg_timeout": 0,
+      "mooncake_transport": 0,
+      "nixl_error": 0,
+      "oom": 0,
+      "aborted": 0,
+      "python_core_fallback": 0
+     },
+     "first": {}
+    },
+    "/scratch/glm5lp-upstream-sync/qa/runs/gate-534c27c241/logs/store.1.log": {
+     "counts": {
+      "traceback": 0,
+      "process_crash": 0,
+      "kv_transfer_error": 0,
+      "client_abort": 0,
+      "disagg_timeout": 0,
+      "mooncake_transport": 0,
+      "nixl_error": 0,
+      "oom": 0,
+      "aborted": 0,
+      "python_core_fallback": 0
+     },
+     "first": {}
+    }
+   }
+  },
+  "rank1": {
+   "totals": {
+    "traceback": 0,
+    "process_crash": 0,
+    "kv_transfer_error": 0,
+    "client_abort": 14,
+    "disagg_timeout": 0,
+    "mooncake_transport": 0,
+    "nixl_error": 0,
+    "oom": 0,
+    "aborted": 0,
+    "python_core_fallback": 0
+   },
+   "per_log": {
+    "/scratch/glm5lp-upstream-sync/qa/runs/gate-534c27c241/logs/agentx-main-c64.log": {
+     "counts": {
+      "traceback": 0,
+      "process_crash": 0,
+      "kv_transfer_error": 0,
+      "client_abort": 0,
+      "disagg_timeout": 0,
+      "mooncake_transport": 0,
+      "nixl_error": 0,
+      "oom": 0,
+      "aborted": 0,
+      "python_core_fallback": 0
+     },
+     "first": {}
+    },
+    "/scratch/glm5lp-upstream-sync/qa/runs/gate-534c27c241/logs/decode.0.log": {
+     "counts": {
+      "traceback": 0,
+      "process_crash": 0,
+      "kv_transfer_error": 0,
+      "client_abort": 14,
+      "disagg_timeout": 0,
+      "mooncake_transport": 0,
+      "nixl_error": 0,
+      "oom": 0,
+      "aborted": 0,
+      "python_core_fallback": 0
+     },
+     "first": {
+      "client_abort": "[2026-11-22 15:24:09 DP1 TP1 EP1 PID477946] Decode transfer failed for request rank=1 decode_req.req.rid='1ee15471f5954614902adc22798128b5' decode_req.req.bootstrap_room=4139441273559009784 with exception KVTransferError(bootstrap_room=4139441273559009784): Aborted by AbortReq."
+     }
+    },
+    "/scratch/glm5lp-upstream-sync/qa/runs/gate-534c27c241/logs/gsm8k-full.log": {
+     "counts": {
+      "traceback": 0,
+      "process_crash": 0,
+      "kv_transfer_error": 0,
+      "client_abort": 0,
+      "disagg_timeout": 0,
+      "mooncake_transport": 0,
+      "nixl_error": 0,
+      "oom": 0,
+      "aborted": 0,
+      "python_core_fallback": 0
+     },
+     "first": {}
+    }
+   }
+  }
+ },
+ "verdict": {
+  "check1_gsm8k_complete": true,
+  "check2_cache_truth": true,
+  "check3_agentx_zero_errors": true,
+  "check4_no_traceback": true,
+  "check4_no_process_crash": true,
+  "check4_no_transfer_error": true,
+  "check4_no_disagg_timeout": true,
+  "check4_rust_tree_core": true
+ }
+}

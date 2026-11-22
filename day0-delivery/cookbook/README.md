@@ -31,6 +31,8 @@ The cookbook turns validated Day-0 model results into reproducible deployment gu
 
 [Correctness E32](../../features/p0-correctness/data/data@2026-11-21-710a842c5741dade3ecd7d8583ef622745dcd9f2-upstream-main-sync/repro.md) validates `glm-5-lp` `710a842c5741dade3ecd7d8583ef622745dcd9f2` on GB300 with TP4 and with DEP4 + megamoe. This is integration evidence only: it does not replace the cutoff launch profiles or select a deployment configuration.
 
+[Correctness E33](../../features/p0-correctness/data/data@2026-11-22-534c27c2414db7cf47038d4da5b347cb56600981-upstream-main-sync/repro.md) validates upstream-sync candidate `534c27c2414db7cf47038d4da5b347cb56600981` on GB300 with TP4, DEP4 + megamoe and the full PD serving recipe, including hierarchical cache and AgentX. The candidate remains on `sync/glm-5-lp-on-upstream-main` and has not landed on `glm-5-lp`. This is integration evidence only: it does not replace the cutoff launch profiles or select a deployment configuration.
+
 ## Required Page Structure
 
 ### 1. Overview

@@ -1,0 +1,8 @@
+*.log -whitespace
+*.diff -whitespace
+*.out -whitespace
+loaded_libs.txt -whitespace
+*.tsv -whitespace
+*.cmd -whitespace
+cmd-*.txt -whitespace
+profile_export_console.txt -whitespace

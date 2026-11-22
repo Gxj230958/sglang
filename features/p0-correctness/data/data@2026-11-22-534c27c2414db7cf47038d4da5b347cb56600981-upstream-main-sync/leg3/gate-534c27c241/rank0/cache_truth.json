@@ -1,0 +1,488 @@
+{
+ "vault": "QYXUJT",
+ "code": "9236734",
+ "steps": [
+  {
+   "step": "cold",
+   "answer": "9236734",
+   "answer_has_code": true,
+   "raw_content": "9236734",
+   "reasoning_content": null,
+   "finish_reason": "stop",
+   "completion_tokens": 7,
+   "prompt_tokens": 6236,
+   "cached_tokens": 0,
+   "cached_tokens_details": null,
+   "tier_delta": {},
+   "latency_s": 0.53
+  },
+  {
+   "step": "device",
+   "answer": "9236734",
+   "answer_has_code": true,
+   "raw_content": "9236734",
+   "reasoning_content": null,
+   "finish_reason": "stop",
+   "completion_tokens": 7,
+   "prompt_tokens": 6236,
+   "cached_tokens": 0,
+   "cached_tokens_details": null,
+   "tier_delta": {},
+   "latency_s": 0.53
+  },
+  {
+   "step": "storage",
+   "answer": "9236734",
+   "answer_has_code": true,
+   "raw_content": "9236734",
+   "reasoning_content": null,
+   "finish_reason": "stop",
+   "completion_tokens": 7,
+   "prompt_tokens": 6236,
+   "cached_tokens": 6208,
+   "cached_tokens_details": null,
+   "tier_delta": {
+    "storage": 6208.0
+   },
+   "latency_s": 0.64
+  },
+  {
+   "step": "seed",
+   "answer": "9236734",
+   "answer_has_code": true,
+   "raw_content": "9236734",
+   "reasoning_content": null,
+   "finish_reason": "stop",
+   "completion_tokens": 7,
+   "prompt_tokens": 6236,
+   "cached_tokens": 6208,
+   "cached_tokens_details": null,
+   "tier_delta": {
+    "storage": 6208.0
+   },
+   "latency_s": 0.42
+  },
+  {
+   "step": "seed",
+   "answer": "9236734",
+   "answer_has_code": true,
+   "raw_content": "9236734",
+   "reasoning_content": null,
+   "finish_reason": "stop",
+   "completion_tokens": 7,
+   "prompt_tokens": 6236,
+   "cached_tokens": 6208,
+   "cached_tokens_details": null,
+   "tier_delta": {
+    "storage": 6208.0
+   },
+   "latency_s": 0.42
+  },
+  {
+   "step": "seed",
+   "answer": "9236734",
+   "answer_has_code": true,
+   "raw_content": "9236734",
+   "reasoning_content": null,
+   "finish_reason": "stop",
+   "completion_tokens": 7,
+   "prompt_tokens": 6236,
+   "cached_tokens": 6208,
+   "cached_tokens_details": null,
+   "tier_delta": {
+    "device": 6208.0
+   },
+   "latency_s": 0.2
+  },
+  {
+   "step": "seed",
+   "answer": "9236734",
+   "answer_has_code": true,
+   "raw_content": "9236734",
+   "reasoning_content": null,
+   "finish_reason": "stop",
+   "completion_tokens": 7,
+   "prompt_tokens": 6236,
+   "cached_tokens": 6208,
+   "cached_tokens_details": null,
+   "tier_delta": {
+    "storage": 6208.0
+   },
+   "latency_s": 0.35
+  },
+  {
+   "step": "seed",
+   "answer": "9236734",
+   "answer_has_code": true,
+   "raw_content": "9236734",
+   "reasoning_content": null,
+   "finish_reason": "stop",
+   "completion_tokens": 7,
+   "prompt_tokens": 6236,
+   "cached_tokens": 6208,
+   "cached_tokens_details": null,
+   "tier_delta": {
+    "device": 6208.0
+   },
+   "latency_s": 0.22
+  },
+  {
+   "step": "seed",
+   "answer": "9236734",
+   "answer_has_code": true,
+   "raw_content": "9236734",
+   "reasoning_content": null,
+   "finish_reason": "stop",
+   "completion_tokens": 7,
+   "prompt_tokens": 6236,
+   "cached_tokens": 6208,
+   "cached_tokens_details": null,
+   "tier_delta": {
+    "device": 6208.0
+   },
+   "latency_s": 0.22
+  },
+  {
+   "step": "seed",
+   "answer": "9236734",
+   "answer_has_code": true,
+   "raw_content": "9236734",
+   "reasoning_content": null,
+   "finish_reason": "stop",
+   "completion_tokens": 7,
+   "prompt_tokens": 6236,
+   "cached_tokens": 6208,
+   "cached_tokens_details": null,
+   "tier_delta": {
+    "device": 6208.0
+   },
+   "latency_s": 0.21
+  },
+  {
+   "step": "seed",
+   "answer": "9236734",
+   "answer_has_code": true,
+   "raw_content": "9236734",
+   "reasoning_content": null,
+   "finish_reason": "stop",
+   "completion_tokens": 7,
+   "prompt_tokens": 6236,
+   "cached_tokens": 6208,
+   "cached_tokens_details": null,
+   "tier_delta": {
+    "device": 6208.0
+   },
+   "latency_s": 0.19
+  },
+  {
+   "step": "seed",
+   "answer": "9236734",
+   "answer_has_code": true,
+   "raw_content": "9236734",
+   "reasoning_content": null,
+   "finish_reason": "stop",
+   "completion_tokens": 7,
+   "prompt_tokens": 6236,
+   "cached_tokens": 6208,
+   "cached_tokens_details": null,
+   "tier_delta": {
+    "device": 6208.0
+   },
+   "latency_s": 0.18
+  },
+  {
+   "step": "seed",
+   "answer": "9236734",
+   "answer_has_code": true,
+   "raw_content": "9236734",
+   "reasoning_content": null,
+   "finish_reason": "stop",
+   "completion_tokens": 7,
+   "prompt_tokens": 6236,
+   "cached_tokens": 6208,
+   "cached_tokens_details": null,
+   "tier_delta": {
+    "device": 6208.0
+   },
+   "latency_s": 0.18
+  },
+  {
+   "step": "seed",
+   "answer": "9236734",
+   "answer_has_code": true,
+   "raw_content": "9236734",
+   "reasoning_content": null,
+   "finish_reason": "stop",
+   "completion_tokens": 7,
+   "prompt_tokens": 6236,
+   "cached_tokens": 6208,
+   "cached_tokens_details": null,
+   "tier_delta": {
+    "device": 6208.0
+   },
+   "latency_s": 0.17
+  },
+  {
+   "step": "seed",
+   "answer": "9236734",
+   "answer_has_code": true,
+   "raw_content": "9236734",
+   "reasoning_content": null,
+   "finish_reason": "stop",
+   "completion_tokens": 7,
+   "prompt_tokens": 6236,
+   "cached_tokens": 6208,
+   "cached_tokens_details": null,
+   "tier_delta": {
+    "device": 6208.0
+   },
+   "latency_s": 0.18
+  },
+  {
+   "step": "seed",
+   "answer": "9236734",
+   "answer_has_code": true,
+   "raw_content": "9236734",
+   "reasoning_content": null,
+   "finish_reason": "stop",
+   "completion_tokens": 7,
+   "prompt_tokens": 6236,
+   "cached_tokens": 6208,
+   "cached_tokens_details": null,
+   "tier_delta": {
+    "device": 6208.0
+   },
+   "latency_s": 0.2
+  },
+  {
+   "step": "seed",
+   "answer": "9236734",
+   "answer_has_code": true,
+   "raw_content": "9236734",
+   "reasoning_content": null,
+   "finish_reason": "stop",
+   "completion_tokens": 7,
+   "prompt_tokens": 6236,
+   "cached_tokens": 6208,
+   "cached_tokens_details": null,
+   "tier_delta": {
+    "device": 6208.0
+   },
+   "latency_s": 0.18
+  },
+  {
+   "step": "seed",
+   "answer": "9236734",
+   "answer_has_code": true,
+   "raw_content": "9236734",
+   "reasoning_content": null,
+   "finish_reason": "stop",
+   "completion_tokens": 7,
+   "prompt_tokens": 6236,
+   "cached_tokens": 6208,
+   "cached_tokens_details": null,
+   "tier_delta": {
+    "device": 6208.0
+   },
+   "latency_s": 0.21
+  },
+  {
+   "step": "seed",
+   "answer": "9236734",
+   "answer_has_code": true,
+   "raw_content": "9236734",
+   "reasoning_content": null,
+   "finish_reason": "stop",
+   "completion_tokens": 7,
+   "prompt_tokens": 6236,
+   "cached_tokens": 6208,
+   "cached_tokens_details": null,
+   "tier_delta": {
+    "device": 6208.0
+   },
+   "latency_s": 0.2
+  },
+  {
+   "step": "seed",
+   "answer": "9236734",
+   "answer_has_code": true,
+   "raw_content": "9236734",
+   "reasoning_content": null,
+   "finish_reason": "stop",
+   "completion_tokens": 7,
+   "prompt_tokens": 6236,
+   "cached_tokens": 6208,
+   "cached_tokens_details": null,
+   "tier_delta": {
+    "device": 6208.0
+   },
+   "latency_s": 0.17
+  },
+  {
+   "step": "seed",
+   "answer": "9236734",
+   "answer_has_code": true,
+   "raw_content": "9236734",
+   "reasoning_content": null,
+   "finish_reason": "stop",
+   "completion_tokens": 7,
+   "prompt_tokens": 6236,
+   "cached_tokens": 6208,
+   "cached_tokens_details": null,
+   "tier_delta": {
+    "device": 6208.0
+   },
+   "latency_s": 0.18
+  },
+  {
+   "step": "seed",
+   "answer": "9236734",
+   "answer_has_code": true,
+   "raw_content": "9236734",
+   "reasoning_content": null,
+   "finish_reason": "stop",
+   "completion_tokens": 7,
+   "prompt_tokens": 6236,
+   "cached_tokens": 6208,
+   "cached_tokens_details": null,
+   "tier_delta": {
+    "device": 6208.0
+   },
+   "latency_s": 0.2
+  },
+  {
+   "step": "seed",
+   "answer": "9236734",
+   "answer_has_code": true,
+   "raw_content": "9236734",
+   "reasoning_content": null,
+   "finish_reason": "stop",
+   "completion_tokens": 7,
+   "prompt_tokens": 6236,
+   "cached_tokens": 6208,
+   "cached_tokens_details": null,
+   "tier_delta": {
+    "device": 6208.0
+   },
+   "latency_s": 0.17
+  },
+  {
+   "step": "seed",
+   "answer": "9236734",
+   "answer_has_code": true,
+   "raw_content": "9236734",
+   "reasoning_content": null,
+   "finish_reason": "stop",
+   "completion_tokens": 7,
+   "prompt_tokens": 6236,
+   "cached_tokens": 6208,
+   "cached_tokens_details": null,
+   "tier_delta": {
+    "device": 6208.0
+   },
+   "latency_s": 0.17
+  },
+  {
+   "step": "seed",
+   "answer": "9236734",
+   "answer_has_code": true,
+   "raw_content": "9236734",
+   "reasoning_content": null,
+   "finish_reason": "stop",
+   "completion_tokens": 7,
+   "prompt_tokens": 6236,
+   "cached_tokens": 6208,
+   "cached_tokens_details": null,
+   "tier_delta": {
+    "device": 6208.0
+   },
+   "latency_s": 0.19
+  },
+  {
+   "step": "seed",
+   "answer": "9236734",
+   "answer_has_code": true,
+   "raw_content": "9236734",
+   "reasoning_content": null,
+   "finish_reason": "stop",
+   "completion_tokens": 7,
+   "prompt_tokens": 6236,
+   "cached_tokens": 6208,
+   "cached_tokens_details": null,
+   "tier_delta": {
+    "device": 6208.0
+   },
+   "latency_s": 0.18
+  },
+  {
+   "step": "seed",
+   "answer": "9236734",
+   "answer_has_code": true,
+   "raw_content": "9236734",
+   "reasoning_content": null,
+   "finish_reason": "stop",
+   "completion_tokens": 7,
+   "prompt_tokens": 6236,
+   "cached_tokens": 6208,
+   "cached_tokens_details": null,
+   "tier_delta": {
+    "device": 6208.0
+   },
+   "latency_s": 0.19
+  },
+  {
+   "step": "host",
+   "answer": "9236734",
+   "answer_has_code": true,
+   "raw_content": "9236734",
+   "reasoning_content": null,
+   "finish_reason": "stop",
+   "completion_tokens": 7,
+   "prompt_tokens": 6236,
+   "cached_tokens": 6208,
+   "cached_tokens_details": null,
+   "tier_delta": {
+    "host": 6208.0
+   },
+   "latency_s": 0.23
+  },
+  {
+   "step": "negative",
+   "answer": "9236734",
+   "answer_has_code": true,
+   "raw_content": "9236734",
+   "reasoning_content": null,
+   "finish_reason": "stop",
+   "completion_tokens": 7,
+   "prompt_tokens": 6236,
+   "cached_tokens": 0,
+   "cached_tokens_details": null,
+   "tier_delta": {},
+   "latency_s": 0.87
+  }
+ ],
+ "restart_store_kept": {
+  "ok": true,
+  "steps": "READY"
+ },
+ "fill": {
+  "pool_tokens_per_rank": 851456,
+  "requests": 819,
+  "seconds": 155.2
+ },
+ "restart_store_fresh": {
+  "ok": true,
+  "steps": "READY"
+ },
+ "answers": [
+  "9236734"
+ ],
+ "checks": {
+  "host_tier_hit": true,
+  "storage_restore": true,
+  "negative_no_hit": true,
+  "answers_identical": true,
+  "answers_correct": true
+ },
+ "pass": true
+}

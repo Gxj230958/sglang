@@ -1,0 +1,33 @@
+{
+ "n": 1319,
+ "finish_reason": {
+  "stop": 1319
+ },
+ "stop_rate": 1.0,
+ "correct": 1238,
+ "accuracy": 0.9385898407884761,
+ "mean_completion_tokens": 573.7,
+ "eval_seconds": 770.1328577427194,
+ "window": [
+  "2026-11-22 12:58:40",
+  "2026-11-22 13:11:31"
+ ],
+ "decode": {
+  "lines": 1531,
+  "dp_ranks": 4,
+  "active_seconds_per_dp": 378.8,
+  "running_mean_total": 19.49,
+  "running_max_per_dp": 12.0,
+  "queue_mean_total": 0.0,
+  "queue_max_per_dp": 0.0,
+  "accept_len_mean": 2.603,
+  "gen_tps_mean_total": 1136.8,
+  "kv_usage_mean": 0.025,
+  "kv_usage_max": 0.1,
+  "retracted_max": 0.0,
+  "cuda_graph_lines": {
+   "True": 1531
+  }
+ },
+ "prefill_cached_tokens_delta": {}
+}

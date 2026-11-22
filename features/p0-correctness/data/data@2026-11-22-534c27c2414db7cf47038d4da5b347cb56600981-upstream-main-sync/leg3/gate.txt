@@ -1,0 +1,27 @@
+PASS  candidate check1_gsm8k_complete: True
+PASS  candidate check2_cache_truth: True
+PASS  candidate check3_agentx_zero_errors: True
+PASS  candidate check4_no_traceback: True
+PASS  candidate check4_no_process_crash: True
+PASS  candidate check4_no_transfer_error: True
+PASS  candidate check4_no_disagg_timeout: True
+PASS  candidate check4_rust_tree_core: True
+PASS  baseline check1_gsm8k_complete: True
+PASS  baseline check2_cache_truth: True
+PASS  baseline check3_agentx_zero_errors: True
+PASS  baseline check4_no_traceback: True
+PASS  baseline check4_no_process_crash: True
+PASS  baseline check4_no_transfer_error: True
+PASS  baseline check4_no_disagg_timeout: True
+PASS  baseline check4_rust_tree_core: True
+PASS  same harness revision: 1e31bef84893 vs 1e31bef84893
+PASS  gsm8k non-stop <= 3: {'stop': 1319}
+PASS  gsm8k non-stop <= baseline + 2: 0 vs 0
+PASS  gsm8k accuracy >= baseline - 1.0pt: 0.9454 vs 0.9386
+PASS  gsm8k accept length >= baseline - 0.2: 2.559 vs 2.603
+PASS  agentx same concurrency: 64 vs 64
+PASS  agentx total_tps >= 0.90 x baseline: 92770.8 vs 85401.7
+PASS  agentx output_tps >= 0.90 x baseline: 998.6 vs 933.4
+PASS  agentx TTFT p50 <= 1.30 x baseline: 14608.1 vs 12093.4
+PASS  agentx accept length >= baseline - 0.2: 2.444 vs 2.394
+LEG PASS

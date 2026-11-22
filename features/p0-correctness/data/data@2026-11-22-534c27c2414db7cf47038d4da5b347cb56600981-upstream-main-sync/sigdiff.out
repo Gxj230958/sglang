@@ -1,0 +1,346 @@
+CHANGED python/sglang/kernels/jit/utils/compile/cache.py::_target_tag
+   ([], 0, [], [])
+-> (['arch'], 0, [], [])
+CHANGED python/sglang/kernels/jit/utils/compile/cache.py::_environment_fingerprint
+   ([], 0, [], [])
+-> (['arch'], 0, [], [])
+CHANGED python/sglang/kernels/jit/utils/compile/cache.py::build_key_dir
+   ([], 0, ['module_name', 'build_key'], ['module_name', 'build_key'])
+-> ([], 0, ['module_name', 'build_key', 'arch'], ['module_name', 'build_key'])
+CHANGED python/sglang/kernels/jit/utils/compile/loader.py::load_jit
+   ([], 0, ['cpp_files', 'cuda_files', 'cpp_wrappers', 'cuda_wrappers', 'extra_cflags', 'extra_cuda_cflags', 'extra_ldflags', 'extra_include_paths', 'extra_dependencies', 'header_only', 'cuda_units'], [])
+-> ([], 0, ['cpp_files', 'cuda_files', 'cpp_wrappers', 'cuda_wrappers', 'extra_cflags', 'extra_cuda_cflags', 'extra_ldflags', 'extra_include_paths', 'extra_dependencies', 'header_only', 'cuda_units', 'cuda_arch_policy'], [])
+CHANGED python/sglang/kernels/jit/utils/compile/toolchain.py::target_flags
+   (['kernel_name'], 0, [], [])
+-> (['arch'], 0, [], [])
+CHANGED python/sglang/kernels/ops/attention/deep_select.py::_CachedModuleDispatch.__init__
+   (['self', 'mods', 'rows', 'fallback'], 4, [], [])
+-> (['self', 'mods', 'rows', 'fallback', 'multiwave'], 4, [], [])
+CHANGED python/sglang/kernels/ops/diffusion/modulate/scale_shift_triton.py::_fused_scaled_residual_add_exact_kernel
+   (['output_ptr', 'residual_ptr', 'x_ptr', 'scale_ptr', 'numel', 'width', 'BLOCK_SIZE'], 7, [], [])
+-> (['output_ptr', 'residual_ptr', 'x_ptr', 'scale_ptr', 'numel', 'width', 'BLOCK_SIZE', 'OPAQUE_MUL'], 8, [], [])
+CHANGED python/sglang/kernels/ops/diffusion/norm/h3_vae_fused_norm.py::_scale_add_rmsnorm_kernel
+   (['res_in_ptr', 'update_ptr', 'res_out_ptr', 'out_ptr', 'scale_ptr', 'weight_ptr', 'rows', 'eps', 'D', 'BLOCK'], 10, [], [])
+-> (['res_in_ptr', 'update_ptr', 'res_out_ptr', 'out_ptr', 'scale_ptr', 'weight_ptr', 'rows', 'eps', 'D', 'BLOCK', 'OPAQUE_MUL', 'OUT_KIND'], 12, [], [])
+CHANGED python/sglang/kernels/ops/diffusion/norm/h3_vae_fused_norm.py::h3_vae_rmsnorm
+   (['hidden', 'weight', 'eps'], 3, [], [])
+-> (['hidden', 'weight', 'eps', 'out_dtype'], 3, [], [])
+CHANGED python/sglang/kernels/ops/diffusion/norm/h3_vae_fused_norm.py::h3_vae_scale_add_rmsnorm
+   (['residual', 'update', 'scale', 'weight', 'eps'], 5, [], [])
+-> (['residual', 'update', 'scale', 'weight', 'eps', 'out_dtype'], 5, [], [])
+CHANGED python/sglang/kernels/ops/diffusion/norm/rmsnorm_cast_before_weight_bitexact.py::_mean_square_kernel
+   (['X', 'Out', 'M', 'HEADS', 'TOKEN_STRIDE'], 5, [], [])
+-> (['X', 'Out', 'M', 'DIM', 'HEADS', 'TOKEN_STRIDE', 'HEAD_STRIDE'], 7, [], [])
+CHANGED python/sglang/kernels/ops/gemm/fp8_kernel.py::_w8a8_block_fp8_matmul
+   (['A', 'B', 'C', 'As', 'Bs', 'M', 'N', 'K', 'group_n', 'group_k', 'stride_am', 'stride_ak', 'stride_bk', 'stride_bn', 'stride_cm', 'stride_cn', 'stride_As_m', 'stride_As_k', 'stride_Bs_k', 'stride_Bs_n', 'BLOCK_SIZE_M', 'BLOCK_SIZE_N', 'BLOCK_SIZE_K', 'GROUP_SIZE_M', 'needs_masking'], 25, [], [])
+-> (['A', 'B', 'C', 'As', 'Bs', 'M', 'N', 'K', 'group_n', 'group_k', 'stride_am', 'stride_ak', 'stride_bk', 'stride_bn', 'stride_cm', 'stride_cn', 'stride_As_m', 'stride_As_k', 'stride_Bs_k', 'stride_Bs_n', 'BLOCK_SIZE_M', 'BLOCK_SIZE_N', 'BLOCK_SIZE_K', 'GROUP_SIZE_M', 'needs_masking', 'USE_INT64_OFFSETS'], 25, [], [])
+CHANGED python/sglang/kernels/ops/gemm/fp8_kernel.py::_w8a8_block_fp8_matmul_hopper
+   (['A', 'B', 'C', 'As', 'Bs', 'M', 'N', 'K', 'group_n', 'group_k', 'stride_am', 'stride_ak', 'stride_bk', 'stride_bn', 'stride_cm', 'stride_cn', 'stride_As_m', 'stride_As_k', 'stride_Bs_k', 'stride_Bs_n', 'BLOCK_SIZE_M', 'BLOCK_SIZE_N', 'BLOCK_SIZE_K', 'GROUP_SIZE_M', 'needs_masking', 'SWAP_AB', 'SPLIT_K'], 25, [], [])
+-> (['A', 'B', 'C', 'As', 'Bs', 'M', 'N', 'K', 'group_n', 'group_k', 'stride_am', 'stride_ak', 'stride_bk', 'stride_bn', 'stride_cm', 'stride_cn', 'stride_As_m', 'stride_As_k', 'stride_Bs_k', 'stride_Bs_n', 'BLOCK_SIZE_M', 'BLOCK_SIZE_N', 'BLOCK_SIZE_K', 'GROUP_SIZE_M', 'needs_masking', 'SWAP_AB', 'SPLIT_K', 'USE_INT64_OFFSETS'], 25, [], [])
+CHANGED python/sglang/kernels/ops/gemm/fp8_kernel.py::_w8a8_block_fp8_matmul_gfx1250
+   (['A', 'B', 'C', 'As', 'Bs', 'M', 'N', 'K', 'group_n', 'group_k', 'stride_am', 'stride_ak', 'stride_bk', 'stride_bn', 'stride_cm', 'stride_cn', 'stride_As_m', 'stride_As_k', 'stride_Bs_k', 'stride_Bs_n', 'BLOCK_SIZE_M', 'BLOCK_SIZE_N', 'BLOCK_SIZE_K', 'GROUP_SIZE_M', 'needs_masking'], 25, [], [])
+-> (['A', 'B', 'C', 'As', 'Bs', 'M', 'N', 'K', 'group_n', 'group_k', 'stride_am', 'stride_ak', 'stride_bk', 'stride_bn', 'stride_cm', 'stride_cn', 'stride_As_m', 'stride_As_k', 'stride_Bs_k', 'stride_Bs_n', 'BLOCK_SIZE_M', 'BLOCK_SIZE_N', 'BLOCK_SIZE_K', 'GROUP_SIZE_M', 'needs_masking', 'USE_INT64_OFFSETS'], 25, [], [])
+CHANGED python/sglang/kernels/ops/gemm/int8_kernel.py::_w8a8_block_int8_matmul
+   (['A', 'B', 'C', 'As', 'Bs', 'M', 'N', 'K', 'group_n', 'group_k', 'stride_am', 'stride_ak', 'stride_bk', 'stride_bn', 'stride_cm', 'stride_cn', 'stride_As_m', 'stride_As_k', 'stride_Bs_k', 'stride_Bs_n', 'BLOCK_SIZE_M', 'BLOCK_SIZE_N', 'BLOCK_SIZE_K', 'GROUP_SIZE_M'], 24, [], [])
+-> (['A', 'B', 'C', 'As', 'Bs', 'M', 'N', 'K', 'group_n', 'group_k', 'stride_am', 'stride_ak', 'stride_bk', 'stride_bn', 'stride_cm', 'stride_cn', 'stride_As_m', 'stride_As_k', 'stride_Bs_k', 'stride_Bs_n', 'BLOCK_SIZE_M', 'BLOCK_SIZE_N', 'BLOCK_SIZE_K', 'GROUP_SIZE_M', 'USE_INT64_OFFSETS'], 24, [], [])
+CHANGED python/sglang/kernels/ops/layernorm/mhc_head.py::_hc_head_kernel
+   (['x_ptr', 'fn_ptr', 'scale_ptr', 'base_ptr', 'y_ptr', 'hidden_size', 'HC_MULT', 'K_TOTAL', 'BLOCK_K', 'BLOCK_D', 'norm_eps', 'hc_eps', 'EPS_OUTSIDE_SQRT'], 13, [], [])
+-> (['x_ptr', 'fn_ptr', 'scale_ptr', 'base_ptr', 'y_ptr', 'hidden_size', 'HC_MULT', 'HC_BLOCK', 'K_TOTAL', 'BLOCK_K', 'BLOCK_D', 'norm_eps', 'hc_eps', 'EPS_OUTSIDE_SQRT'], 14, [], [])
+CHANGED python/sglang/kernels/ops/mamba/triton_ops/mamba_ssm.py::_selective_scan_update_kernel
+   (['state_ptr', 'x_ptr', 'dt_ptr', 'dt_bias_ptr', 'A_ptr', 'B_ptr', 'C_ptr', 'D_ptr', 'z_ptr', 'out_ptr', 'state_batch_indices_ptr', 'pad_slot_id', 'intermediate_states_buffer', 'cache_steps', 'retrieve_parent_token_ptr', 'intermediate_state_indices_ptr', 'rand_seed_ptr', 'batch', 'T', 'nheads', 'dim', 'dstate', 'nheads_ngroups_ratio', 'stride_state_batch', 'stride_state_head', 'stride_state_dim', 'stride_state_dstate', 'stride_x_batch', 'stride_x_T', 'stride_x_head', 'stride_x_dim', 'stride_dt_batch', 'stride_dt_T', 'stride_dt_head', 'stride_dt_dim', 'stride_dt_bias_head', 'stride_dt_bias_dim', 'stride_A_head', 'stride_A_dim', 'stride_A_dstate', 'stride_B_batch', 'stride_B_T', 'stride_B_group', 'stride_B_dstate', 'stride_C_batch', 'stride_C_T', 'stride_C_group', 'stride_C_dstate', 'stride_D_head', 'stride_D_dim', 'stride_z_batch', 'stride_z_T', 'stride_z_head', 'stride_z_dim', 'stride_out_batch', 'stride_out_T', 'stride_out_head', 'stride_out_dim', 'stride_retrieve_parent_token_batch', 'stride_retrieve_parent_token_T', 'DT_SOFTPLUS', 'TIE_HDIM', 'BLOCK_SIZE_M', 'HAS_DT_BIAS', 'HAS_D', 'HAS_Z', 'HAS_STATE_BATCH_INDICES', 'DISABLE_STATE_UPDATE', 'CACHE_INTERMEDIATE_STATES', 'HAS_EAGLE_TREE_CUSTOM_ATTN_MASK', 'HAS_INTERMEDIATE_STATE_INDICES', 'BLOCK_SIZE_DSTATE', 'USE_RS_ROUNDING', 'PHILOX_ROUNDS', 'USE_GDC'], 74, [], [])
+-> (['state_ptr', 'x_ptr', 'dt_ptr', 'dt_bias_ptr', 'A_ptr', 'B_ptr', 'C_ptr', 'D_ptr', 'z_ptr', 'out_ptr', 'state_batch_indices_ptr', 'pad_slot_id', 'intermediate_states_buffer', 'stride_intermediate_batch', 'retrieve_parent_token_ptr', 'intermediate_state_indices_ptr', 'rand_seed_ptr', 'batch', 'T', 'nheads', 'dim', 'dstate', 'nheads_ngroups_ratio', 'stride_state_batch', 'stride_state_head', 'stride_state_dim', 'stride_state_dstate', 'stride_x_batch', 'stride_x_T', 'stride_x_head', 'stride_x_dim', 'stride_dt_batch', 'stride_dt_T', 'stride_dt_head', 'stride_dt_dim', 'stride_dt_bias_head', 'stride_dt_bias_dim', 'stride_A_head', 'stride_A_dim', 'stride_A_dstate', 'stride_B_batch', 'stride_B_T', 'stride_B_group', 'stride_B_dstate', 'stride_C_batch', 'stride_C_T', 'stride_C_group', 'stride_C_dstate', 'stride_D_head', 'stride_D_dim', 'stride_z_batch', 'stride_z_T', 'stride_z_head', 'stride_z_dim', 'stride_out_batch', 'stride_out_T', 'stride_out_head', 'stride_out_dim', 'stride_retrieve_parent_token_batch', 'stride_retrieve_parent_token_T', 'DT_SOFTPLUS', 'TIE_HDIM', 'BLOCK_SIZE_M', 'HAS_DT_BIAS', 'HAS_D', 'HAS_Z', 'HAS_STATE_BATCH_INDICES', 'DISABLE_STATE_UPDATE', 'CACHE_INTERMEDIATE_STATES', 'HAS_EAGLE_TREE_CUSTOM_ATTN_MASK', 'HAS_INTERMEDIATE_STATE_INDICES', 'BLOCK_SIZE_DSTATE', 'USE_RS_ROUNDING', 'PHILOX_ROUNDS', 'USE_GDC'], 74, [], [])
+CHANGED python/sglang/kernels/ops/moe/paged_experts.py::paged_experts_gather
+   (['hosts', 'gpus', 'row_bytes', 'src', 'dst', 'count'], 6, [], [])
+-> (['hosts', 'gpus', 'row_bytes', 'src', 'dst', 'count', 'blocks'], 6, [], [])
+CHANGED python/sglang/kernels/ops/quantization/int8_kernel.py::_per_token_group_quant_int8
+   (['y_ptr', 'y_q_ptr', 'y_s_ptr', 'y_stride', 'N', 'eps', 'int8_min', 'int8_max', 'BLOCK'], 9, [], [])
+-> (['y_ptr', 'y_q_ptr', 'y_s_ptr', 'y_stride', 'N', 'eps', 'int8_min', 'int8_max', 'BLOCK', 'USE_INT64_OFFSETS'], 9, [], [])
+REMOVED python/sglang/kernels/plugin_kernels/nvidia/spec.py::VerifySamplingView.acc_additive_penalties
+REMOVED python/sglang/kernels/plugin_kernels/nvidia/spec.py::VerifySamplingView.acc_scaling_penalties
+REMOVED python/sglang/multimodal_gen/configs/sample/kandinsky6_sr.py::Kandinsky6SRSamplingParams._set_output_file_name
+REMOVED python/sglang/multimodal_gen/configs/sample/sampling_params.py::_json_safe
+CHANGED python/sglang/multimodal_gen/runtime/entrypoints/http_server.py::_run_server_warmup_after_http_live
+   (['server_args', 'warmup_done'], 2, [], [])
+-> (['app'], 1, [], [])
+CHANGED python/sglang/multimodal_gen/runtime/entrypoints/utils.py::CudaVideoEncoder.__init__
+   (['self', 'command', 'save_file_path'], 3, ['device', 'height', 'width', 'chunk_frames', 'queued_chunks', 'wav_path'], ['device', 'height', 'width', 'chunk_frames', 'queued_chunks', 'wav_path'])
+-> (['self', 'command', 'save_file_path'], 3, ['device', 'height', 'width', 'chunk_frames', 'queued_chunks', 'wav_path', 'write_audio'], ['device', 'height', 'width', 'chunk_frames', 'queued_chunks', 'wav_path'])
+CHANGED python/sglang/multimodal_gen/runtime/layers/attention/STA_configuration.py::save_mask_search_results
+   (['mask_search_final_result', 'prompt', 'mask_strategies', 'output_dir'], 3, [], [])
+-> (['mask_search_final_result', 'artifact_id', 'mask_strategies', 'output_dir'], 3, [], [])
+CHANGED python/sglang/multimodal_gen/runtime/layers/attention/layer.py::_kv_gather_unsupported_reason
+   ([], 0, ['qkv_pre_all_to_all', 'replicated_mode_count', 'attn_mask', 'num_replicated_kv_prefix'], ['qkv_pre_all_to_all', 'replicated_mode_count', 'attn_mask', 'num_replicated_kv_prefix'])
+-> ([], 0, ['qkv_pre_all_to_all', 'replicated_mode_count', 'attn_mask', 'num_replicated_kv_prefix', 'query_len'], ['qkv_pre_all_to_all', 'replicated_mode_count', 'attn_mask', 'num_replicated_kv_prefix', 'query_len'])
+REMOVED python/sglang/multimodal_gen/runtime/layers/linear.py::ReplicatedLinear.forward
+REMOVED python/sglang/multimodal_gen/runtime/layers/linear.py::ColumnParallelLinear.forward
+REMOVED python/sglang/multimodal_gen/runtime/layers/linear.py::RowParallelLinear.forward
+REMOVED python/sglang/multimodal_gen/runtime/layers/lora/linear.py::ColumnParallelLinearWithLoRA.forward
+REMOVED python/sglang/multimodal_gen/runtime/managers/memory_managers/component_residency_strategies.py::SnapshotOffloadStrategy.finish_use
+CHANGED python/sglang/multimodal_gen/runtime/managers/memory_managers/host_memory_budget.py::HostPinBudget.__init__
+   (['self', 'available_bytes'], 1, [], [])
+-> (['self', 'available_bytes'], 1, ['reserve_bytes', 'node_local_ranks'], [])
+CHANGED python/sglang/multimodal_gen/runtime/models/vaes/minimax_h3_vae_cuda_opt.py::maybe_optimize_minimax_h3_vae
+   (['vae'], 1, [], [])
+-> (['vae'], 1, ['fast_attention'], [])
+CHANGED python/sglang/multimodal_gen/runtime/models/vaes/minimax_h3_video_vae/base_module.py::TransformerBlock.forward
+   (['self', 'hidden_states', 'rotary_pos_emb'], 2, ['fused_norm', 'pending', 'pending_scale'], [])
+-> (['self', 'hidden_states', 'rotary_pos_emb'], 2, ['fused_norm', 'pending', 'pending_scale', 'out_dtype'], [])
+CHANGED python/sglang/multimodal_gen/runtime/models/vaes/minimax_h3_video_vae/klvae.py::AutoencoderKL._all_gather_tiled_results
+   (['self', 'tasks', 'num_tiles'], 3, [], [])
+-> (['self', 'tasks', 'owners', 'like'], 3, [], [])
+CHANGED python/sglang/multimodal_gen/runtime/models/vaes/minimax_h3_video_vae/klvae.py::AutoencoderKL._local_tile_indices
+   (['self', 'num_tiles', 'tile_rank', 'tile_world_size'], 4, [], [])
+-> (['self', 'owners', 'tile_rank'], 3, [], [])
+REMOVED python/sglang/multimodal_gen/runtime/pipelines_core/stages/decoding.py::DecodingStage._can_use_parallel_decode
+REMOVED python/sglang/multimodal_gen/runtime/pipelines_core/stages/model_specific_stages/minimax_h3/stages/decoding.py::MiniMaxH3DecodingStage._decode_replica_audio
+CHANGED python/sglang/multimodal_gen/runtime/server_warmup.py::run_async_client_warmup
+   (['server_args', 'forward'], 2, ['fail_open', 'rewarm', 'step_limit'], [])
+-> (['server_args', 'forward'], 2, ['fail_open', 'rewarm', 'step_limit', 'check_backend'], [])
+CHANGED python/sglang/multimodal_gen/test/unit/test_auto_residency.py::_record
+   ([], 0, ['width', 'height', 'num_frames', 'baseline_gib', 'peak_gib', 'succeeded'], [])
+-> ([], 0, ['width', 'height', 'num_frames', 'baseline_gib', 'peak_gib', 'peak_reserved_gib', 'succeeded', 'num_inference_steps', 'total_duration_ms', 'stage_duration_ms', 'step_duration_ms', 'step_duration_ms_by_stage', 'stage_iterations', 'phase_active_components', 'phase_used_components', 'phase_full_weight_transition_components', 'layerwise_layer_uses', 'layerwise_layer_uses_by_stage'], [])
+REMOVED python/sglang/multimodal_gen/test/unit/test_comfyui_lora_node.py::_TupleLinear
+REMOVED python/sglang/multimodal_gen/test/unit/test_comfyui_lora_node.py::_TupleLinear.forward
+CHANGED python/sglang/multimodal_gen/test/unit/test_component_residency.py::test_snapshot_offload_preserves_host_storage_and_live_buffers
+   (['tmp_path', 'monkeypatch', 'host_storage', 'prefetch'], 4, [], [])
+-> (['tmp_path', 'monkeypatch', 'host_storage', 'residency', 'prefetch'], 5, [], [])
+REMOVED python/sglang/multimodal_gen/test/unit/test_kandinsky6_sr_config.py::test_request_needs_exactly_one_video_and_names_its_output_after_it
+CHANGED python/sglang/multimodal_gen/test/unit/test_layerwise_offload.py::test_snapshot_and_layerwise_share_the_residency_managers_pin_budget
+   ([], 0, [], [])
+-> (['monkeypatch'], 1, [], [])
+REMOVED python/sglang/multimodal_gen/test/unit/test_lora_dynamic_delta_in_gemm.py::_ColumnLinear.forward
+CHANGED python/sglang/multimodal_gen/test/unit/test_lora_dynamic_delta_in_gemm.py::_column_layer
+   ([], 0, ['stacked', 'alpha', 'strength', 'output_offset', 'multi'], [])
+-> ([], 0, ['stacked', 'alpha', 'strength', 'output_offset', 'multi', 'dtype'], [])
+REMOVED python/sglang/multimodal_gen/test/unit/test_minimax_h3_vae_parallel_modes.py::test_fused_decoder_is_disabled_off_nvidia
+REMOVED python/sglang/multimodal_gen/test/unit/test_sampling_params.py::TestSamplingParamsSubclass.test_output_file_name_supports_callable_teacache_params
+CHANGED python/sglang/srt/constrained/base_grammar_backend.py::BaseGrammarBackend.__init__
+   (['self'], 1, [], [])
+-> (['self', 'cache_limit_bytes'], 1, [], [])
+CHANGED python/sglang/srt/constrained/llguidance_backend.py::GuidanceBackend.__init__
+   (['self', 'tokenizer', 'any_whitespace', 'whitespace_pattern', 'n_vocab', 'eos_token_ids'], 2, [], [])
+-> (['self', 'tokenizer', 'any_whitespace', 'whitespace_pattern', 'n_vocab', 'eos_token_ids', 'cache_limit_bytes'], 2, [], [])
+CHANGED python/sglang/srt/constrained/outlines_backend.py::OutlinesGrammarBackend.__init__
+   (['self', 'tokenizer', 'whitespace_pattern'], 3, [], [])
+-> (['self', 'tokenizer', 'whitespace_pattern', 'cache_limit_bytes'], 3, [], [])
+CHANGED python/sglang/srt/constrained/reasoner_grammar_backend.py::ReasonerGrammarBackend.__init__
+   (['self', 'grammar_backend', 'reasoning_parser', 'tokenizer', 'enable_strict_thinking'], 4, [], [])
+-> (['self', 'grammar_backend', 'reasoning_parser', 'tokenizer', 'enable_strict_thinking', 'cache_limit_bytes'], 4, [], [])
+CHANGED python/sglang/srt/constrained/xgrammar_backend.py::XGrammarGrammarBackend.__init__
+   (['self', 'tokenizer', 'vocab_size', 'model_eos_token_ids', 'any_whitespace', 'max_whitespace_cnt'], 3, [], [])
+-> (['self', 'tokenizer', 'vocab_size', 'model_eos_token_ids', 'any_whitespace', 'max_whitespace_cnt', 'cache_limit_bytes'], 3, [], [])
+REMOVED python/sglang/srt/disaggregation/ascend/conn.py::AscendKVManager.register_buffer_to_engine
+REMOVED python/sglang/srt/disaggregation/mooncake/conn.py::MooncakeKVManager._registerable_regions
+REMOVED python/sglang/srt/disaggregation/mooncake/conn.py::MooncakeKVManager._transfer_data
+CHANGED python/sglang/srt/disaggregation/mooncake/conn.py::MooncakeKVManager._state_stride_mismatch
+   (['self'], 1, ['src_data_ptrs', 'dst_data_ptrs', 'item_lens', 'dst_item_lens', 'state_type', 'force_flat', 'src_layer_ids', 'dst_layer_ids'], ['src_data_ptrs', 'dst_data_ptrs', 'item_lens', 'dst_item_lens'])
+-> (['self'], 1, ['num_src_entries', 'num_dst_entries', 'item_lens', 'dst_item_lens', 'state_type', 'force_flat', 'src_layer_ids', 'dst_layer_ids'], ['num_src_entries', 'num_dst_entries', 'item_lens', 'dst_item_lens'])
+CHANGED python/sglang/srt/disaggregation/mooncake/conn.py::MooncakeKVManager._send_kvcache_generic
+   (['self', 'mooncake_session_id', 'src_data_ptrs', 'dst_data_ptrs', 'item_lens', 'prefill_data_indices', 'dst_data_indices', 'executor', 'state_type', 'force_flat', 'src_layer_ids', 'dst_layer_ids', 'dst_device_data_indices', 'dst_device_data_ptrs', 'dst_item_lens', 'bootstrap_room'], 8, [], [])
+-> (['self', 'mooncake_session_id', 'item_lens', 'prefill_data_indices', 'dst_data_indices', 'executor', 'state_type', 'force_flat', 'src_layer_ids', 'dst_layer_ids', 'dst_device_data_indices', 'dst_device_entries', 'dst_item_lens', 'bootstrap_room'], 6, ['src_keys', 'dst_keys'], ['src_keys', 'dst_keys'])
+REMOVED python/sglang/srt/disaggregation/mooncake/conn.py::MooncakeKVManager._dsa_index_k_dcp_params
+CHANGED python/sglang/srt/disaggregation/mooncake/conn.py::MooncakeKVManager._send_slot_state
+   (['self', 'req', 'src_ptrs', 'src_item_lens', 'dst_ptrs', 'dst_item_lens', 'src_indices', 'dst_indices', 'label'], 9, [], [])
+-> (['self', 'req', 'src_item_lens', 'dst_item_lens', 'src_indices', 'dst_indices', 'label', 'src_keys', 'dst_keys'], 9, [], [])
+CHANGED python/sglang/srt/disaggregation/mooncake/conn.py::MooncakeKVManager._send_mamba_state
+   (['self', 'req', 'prefill_mamba_index', 'src_state_data_ptrs', 'src_state_item_lens', 'dst_state_data_ptrs', 'dst_mamba_index', 'src_layer_ids', 'dst_layer_ids', 'dst_state_item_lens'], 7, [], [])
+-> (['self', 'req', 'prefill_mamba_index', 'src_state_item_lens', 'dst_mamba_index', 'src_layer_ids', 'dst_layer_ids', 'dst_state_item_lens'], 5, ['src_keys', 'dst_keys'], ['src_keys', 'dst_keys'])
+CHANGED python/sglang/srt/disaggregation/mooncake/conn.py::MooncakeKVManager._send_mamba_state_slice
+   (['self', 'req', 'prefill_mamba_index', 'src_state_data_ptrs', 'src_state_item_lens', 'src_state_dim_per_tensor', 'dst_state_data_ptrs', 'dst_mamba_index', 'dst_state_item_lens', 'dst_state_dim_per_tensor', 'dst_tp_rank', 'dst_attn_tp_size', 'src_state_conv_shard_groups', 'src_state_slice_outer_counts', 'src_layer_ids', 'dst_layer_ids'], 12, [], [])
+-> (['self', 'req', 'prefill_mamba_index', 'src_state_item_lens', 'src_state_dim_per_tensor', 'dst_mamba_index', 'dst_state_item_lens', 'dst_state_dim_per_tensor', 'dst_tp_rank', 'dst_attn_tp_size', 'src_state_conv_shard_groups', 'src_state_slice_outer_counts', 'src_layer_ids', 'dst_layer_ids'], 10, ['src_keys', 'dst_keys'], ['src_keys', 'dst_keys'])
+CHANGED python/sglang/srt/disaggregation/mooncake/conn.py::MooncakeKVManager._send_swa_state_slice
+   (['self', 'req', 'prefill_swa_page_indices', 'src_state_data_ptrs', 'src_state_item_lens', 'dst_state_data_ptrs', 'dst_swa_page_indices', 'dst_state_item_lens', 'dst_tp_rank', 'dst_attn_tp_size', 'executor'], 11, [], [])
+-> (['self', 'req', 'prefill_swa_page_indices', 'src_state_item_lens', 'dst_swa_page_indices', 'dst_state_item_lens', 'dst_tp_rank', 'dst_attn_tp_size', 'executor', 'src_keys', 'dst_keys'], 11, [], [])
+CHANGED python/sglang/srt/layers/dcp/layout.py::filter_dcp_local_chunk_kv_indices
+   (['kv_indices', 'chunk_starts_cpu', 'chunk_seq_lens_cpu'], 3, [], [])
+-> (['kv_indices', 'chunk_starts_cpu', 'chunk_seq_lens_cpu', 'interleave_size'], 3, [], [])
+CHANGED python/sglang/srt/layers/dcp/planner.py::prepare_decode_context_parallel_metadata
+   (['seq_lens', 'extend_prefix_lens', 'extend_prefix_lens_cpu', 'extend_seq_lens', 'req_pool_indices', 'req_to_token', 'seq_lens_sum', 'kv_buffer_shape', 'kv_cache_dtype', 'kv_cache_device', 'create_chunked_prefix_cache_kv_indices_fn'], 11, [], [])
+-> (['seq_lens', 'extend_prefix_lens', 'extend_prefix_lens_cpu', 'extend_seq_lens', 'req_pool_indices', 'req_to_token', 'seq_lens_sum', 'kv_buffer_shape', 'kv_cache_dtype', 'kv_cache_device', 'create_chunked_prefix_cache_kv_indices_fn', 'interleave_size', 'allocate_kv_buffer'], 11, [], [])
+CHANGED python/sglang/srt/layers/moe/fused_moe_triton/fused_marlin_moe.py::fused_marlin_moe
+   (['hidden_states', 'w1', 'w2', 'w1_scale', 'w2_scale', 'gating_output', 'topk_weights', 'topk_ids', 'global_num_experts', 'expert_map', 'g_idx1', 'g_idx2', 'sort_indices1', 'sort_indices2', 'w1_zeros', 'w2_zeros', 'w1_global_scale', 'w2_global_scale', 'w1_bias', 'w2_bias', 'workspace', 'num_bits', 'is_k_full', 'inplace', 'routed_scaling_factor', 'clamp_limit', 'gemm1_alpha', 'activation', 'is_gated', 'no_combine'], 8, [], [])
+-> (['hidden_states', 'w1', 'w2', 'w1_scale', 'w2_scale', 'gating_output', 'topk_weights', 'topk_ids', 'global_num_experts', 'expert_map', 'g_idx1', 'g_idx2', 'sort_indices1', 'sort_indices2', 'w1_zeros', 'w2_zeros', 'w1_global_scale', 'w2_global_scale', 'w1_bias', 'w2_bias', 'workspace', 'num_bits', 'is_k_full', 'inplace', 'routed_scaling_factor', 'clamp_limit', 'gemm1_alpha', 'activation', 'is_gated', 'no_combine', 'no_combine_keep_router_weight'], 8, [], [])
+CHANGED python/sglang/srt/layers/moe/paged_experts/store.py::HostExpertStore.gather
+   (['self', 'src', 'dst', 'count'], 4, [], [])
+-> (['self', 'src', 'dst', 'count', 'blocks'], 4, [], [])
+CHANGED python/sglang/srt/layers/quantization/mxfp4_marlin_moe.py::build_marlin_moe_quant_info
+   (['layer'], 1, [], [])
+-> (['layer', 'weight_bits'], 1, [], [])
+REMOVED python/sglang/srt/layers/sampler.py::Sampler._preprocess_logits
+CHANGED python/sglang/srt/layers/sampler.py::Sampler.compute_logprobs_only
+   (['self', 'logits_output', 'sampling_info', 'top_logprobs_nums', 'token_ids_logprobs'], 5, [], [])
+-> (['self', 'logits_output', 'top_logprobs_nums', 'token_ids_logprobs'], 4, ['preprocess_fn'], ['preprocess_fn'])
+REMOVED python/sglang/srt/layers/sampler.py::apply_custom_logit_processor
+CHANGED python/sglang/srt/managers/schedule_batch.py::Req.__init__
+   (['self', 'rid', 'origin_input_text', 'origin_input_ids', 'sampling_params', 'return_logprob', 'top_logprobs_num', 'dllm_config', 'token_ids_logprob', 'return_sampling_mask', 'sampling_logprobs_mode', 'return_flat_raw_top_logprobs', 'stream', 'origin_input_ids_unpadded', 'lora_id', 'input_embeds', 'positional_embed_overrides', 'token_type_ids', 'session', 'custom_logit_processor', 'require_reasoning', 'return_hidden_states', 'return_routed_experts', 'routed_experts_start_len', 'return_indexer_topk', 'eos_token_ids', 'bootstrap_host', 'bootstrap_port', 'bootstrap_room', 'disagg_mode', 'routed_dp_rank', 'disagg_prefill_dp_rank', 'kv_hints', 'vocab_size', 'priority', 'metrics_collector', 'extra_key', 'routing_key', 'dimensions', 'encoding_format', 'http_worker_ipc', 'time_stats', 'return_pooled_hidden_states', 'multi_item_delimiter_indices', 'token_indices_to_pool', 'decision_layout', 'session_id', 'cache_salt'], 5, [], [])
+-> (['self', 'rid', 'origin_input_text', 'origin_input_ids', 'sampling_params', 'return_logprob', 'top_logprobs_num', 'dllm_config', 'token_ids_logprob', 'return_sampling_mask', 'sampling_logprobs_mode', 'return_flat_raw_top_logprobs', 'stream', 'origin_input_ids_unpadded', 'lora_id', 'input_embeds', 'positional_embed_overrides', 'token_type_ids', 'session', 'custom_logit_processor', 'require_reasoning', 'return_hidden_states', 'return_routed_experts', 'routed_experts_start_len', 'return_indexer_topk', 'eos_token_ids', 'bootstrap_host', 'bootstrap_port', 'bootstrap_room', 'disagg_mode', 'routed_dp_rank', 'disagg_prefill_dp_rank', 'kv_hints', 'vocab_size', 'priority', 'metrics_collector', 'extra_key', 'routing_key', 'dimensions', 'encoding_format', 'http_worker_ipc', 'time_stats', 'return_pooled_hidden_states', 'multi_item_delimiter_indices', 'token_indices_to_pool', 'decision_layout', 'session_id', 'cache_salt', 'filler_seed'], 5, [], [])
+REMOVED python/sglang/srt/managers/schedule_batch.py::ScheduleBatch.cumulate_penalty_output_tokens
+CHANGED python/sglang/srt/managers/schedule_policy.py::SchedulePolicy.__init__
+   (['self', 'policy', 'tree_cache', 'enable_hierarchical_cache', 'enable_priority_scheduling', 'schedule_low_priority_values_first', 'shortest_prefill_aging_factor', 'bounded_lpm_enabled'], 6, ['uniboost_gamma', 'enable_uniboost_gamma_ada', 'uniboost_rank_invariant', 'uniboost_step_clock'], [])
+-> (['self', 'policy', 'tree_cache', 'enable_hierarchical_cache', 'enable_priority_scheduling', 'schedule_low_priority_values_first', 'shortest_prefill_aging_factor', 'bounded_lpm_enabled'], 6, ['uniboost_gamma', 'enable_uniboost_gamma_ada', 'uniboost_rank_invariant', 'uniboost_step_clock', 'shortest_prefill_load_scaling'], [])
+CHANGED python/sglang/srt/managers/schedule_policy.py::SchedulePolicy.calc_priority
+   (['self', 'waiting', 'running_batch', 'processed_tokens', 'bootstrap_queue'], 2, [], [])
+-> (['self', 'waiting', 'running_batch', 'processed_tokens', 'bootstrap_queue', 'chunked_req'], 2, [], [])
+CHANGED python/sglang/srt/managers/schedule_policy.py::PrefillAdder._update_prefill_budget
+   (['self', 'prefix_len', 'extend_input_len', 'max_new_tokens', 'retracted_stain', 'state_slots', 'request_rows', 'request_slot_reserve', 'is_chunked_continuation', 'replay_len', 'unfinished_input_len', 'deferred_max_new_tokens', 'admitted_chunk_limit', 'cached_tokens', 'reuses_kv'], 5, [], [])
+-> (['self', 'prefix_len', 'extend_input_len', 'max_new_tokens', 'retracted_stain', 'state_slots', 'request_rows', 'request_slot_reserve', 'is_chunked_continuation', 'replay_len', 'unfinished_input_len', 'deferred_max_new_tokens', 'admitted_chunk_limit', 'cached_tokens', 'reuses_kv', 'commit_unfinished'], 5, [], [])
+CHANGED python/sglang/srt/managers/scheduler_components/request_retirer.py::RequestRetirer.__init__
+   (['self'], 1, ['tree_cache', 'beam_coordinator', 'hisparse_coordinator', 'uocr_runtime', 'send_abort_output', 'stream_output'], ['tree_cache', 'beam_coordinator', 'hisparse_coordinator', 'uocr_runtime', 'send_abort_output', 'stream_output'])
+-> (['self'], 1, ['tree_cache', 'beam_coordinator', 'hisparse_coordinator', 'uocr_runtime', 'penalty_status_pool', 'send_abort_output', 'stream_output'], ['tree_cache', 'beam_coordinator', 'hisparse_coordinator', 'uocr_runtime', 'penalty_status_pool', 'send_abort_output', 'stream_output'])
+CHANGED python/sglang/srt/managers/utils.py::validate_input_length
+   (['req', 'max_req_input_len', 'allow_auto_truncate'], 3, [], [])
+-> (['req', 'max_req_input_len', 'allow_auto_truncate', 'preserve_last_token_id'], 3, [], [])
+REMOVED python/sglang/srt/mem_cache/pool_host/rocm_budget.py::explicit_size_scope
+CHANGED python/sglang/srt/mem_cache/prefill_budget.py::PrefillBudget.reserve
+   (['self', 'extend_input_len', 'max_new_tokens'], 3, ['extra_tokens', 'state_slots', 'request_rows', 'chunk_limit', 'is_chunked_continuation', 'unfinished_input_len', 'deferred_max_new_tokens', 'admitted_chunk_limit', 'cached_tokens'], [])
+-> (['self', 'extend_input_len', 'max_new_tokens'], 3, ['extra_tokens', 'state_slots', 'request_rows', 'chunk_limit', 'is_chunked_continuation', 'unfinished_input_len', 'deferred_max_new_tokens', 'admitted_chunk_limit', 'cached_tokens', 'commit_unfinished'], [])
+CHANGED python/sglang/srt/mem_cache/prefill_budget.py::SWAPrefillBudget.reserve
+   (['self', 'extend_input_len', 'max_new_tokens'], 3, ['extra_tokens', 'state_slots', 'request_rows', 'chunk_limit', 'is_chunked_continuation', 'unfinished_input_len', 'deferred_max_new_tokens', 'admitted_chunk_limit', 'cached_tokens'], [])
+-> (['self', 'extend_input_len', 'max_new_tokens'], 3, ['extra_tokens', 'state_slots', 'request_rows', 'chunk_limit', 'is_chunked_continuation', 'unfinished_input_len', 'deferred_max_new_tokens', 'admitted_chunk_limit', 'cached_tokens', 'commit_unfinished'], [])
+CHANGED python/sglang/srt/mem_cache/prefill_budget.py::ChainPrefillBudget.reserve
+   (['self', 'extend_input_len', 'max_new_tokens'], 3, ['extra_tokens', 'state_slots', 'request_rows', 'chunk_limit', 'is_chunked_continuation', 'unfinished_input_len', 'deferred_max_new_tokens', 'admitted_chunk_limit', 'cached_tokens'], [])
+-> (['self', 'extend_input_len', 'max_new_tokens'], 3, ['extra_tokens', 'state_slots', 'request_rows', 'chunk_limit', 'is_chunked_continuation', 'unfinished_input_len', 'deferred_max_new_tokens', 'admitted_chunk_limit', 'cached_tokens', 'commit_unfinished'], [])
+REMOVED python/sglang/srt/model_executor/model_runner.py::ModelRunner._preprocess_logits
+REMOVED python/sglang/srt/model_executor/runner/prefill_cuda_graph_runner.py::_is_full_or_bcg_backend
+REMOVED python/sglang/srt/multimodal/processors/qwen_vl.py::_release_preprocess_cache
+REMOVED python/sglang/srt/sampling/penaltylib/frequency_penalty.py::BatchedFrequencyPenalizer
+REMOVED python/sglang/srt/sampling/penaltylib/frequency_penalty.py::BatchedFrequencyPenalizer._is_required
+REMOVED python/sglang/srt/sampling/penaltylib/frequency_penalty.py::BatchedFrequencyPenalizer._prepare
+REMOVED python/sglang/srt/sampling/penaltylib/frequency_penalty.py::BatchedFrequencyPenalizer._cumulate_output_tokens
+REMOVED python/sglang/srt/sampling/penaltylib/frequency_penalty.py::BatchedFrequencyPenalizer._apply
+REMOVED python/sglang/srt/sampling/penaltylib/frequency_penalty.py::BatchedFrequencyPenalizer._filter
+REMOVED python/sglang/srt/sampling/penaltylib/frequency_penalty.py::BatchedFrequencyPenalizer._merge
+REMOVED python/sglang/srt/sampling/penaltylib/frequency_penalty.py::BatchedFrequencyPenalizer._teardown
+REMOVED python/sglang/srt/sampling/penaltylib/min_new_tokens.py::BatchedMinNewTokensPenalizer
+REMOVED python/sglang/srt/sampling/penaltylib/min_new_tokens.py::BatchedMinNewTokensPenalizer._is_required
+REMOVED python/sglang/srt/sampling/penaltylib/min_new_tokens.py::BatchedMinNewTokensPenalizer._prepare
+REMOVED python/sglang/srt/sampling/penaltylib/min_new_tokens.py::BatchedMinNewTokensPenalizer._cumulate_output_tokens
+REMOVED python/sglang/srt/sampling/penaltylib/min_new_tokens.py::BatchedMinNewTokensPenalizer._apply
+REMOVED python/sglang/srt/sampling/penaltylib/min_new_tokens.py::BatchedMinNewTokensPenalizer._filter
+REMOVED python/sglang/srt/sampling/penaltylib/min_new_tokens.py::BatchedMinNewTokensPenalizer._merge
+REMOVED python/sglang/srt/sampling/penaltylib/min_new_tokens.py::BatchedMinNewTokensPenalizer._teardown
+REMOVED python/sglang/srt/sampling/penaltylib/orchestrator.py::BatchedPenalizerOrchestrator
+REMOVED python/sglang/srt/sampling/penaltylib/orchestrator.py::BatchedPenalizerOrchestrator.__init__
+REMOVED python/sglang/srt/sampling/penaltylib/orchestrator.py::BatchedPenalizerOrchestrator.batch
+REMOVED python/sglang/srt/sampling/penaltylib/orchestrator.py::BatchedPenalizerOrchestrator.reqs
+REMOVED python/sglang/srt/sampling/penaltylib/orchestrator.py::BatchedPenalizerOrchestrator.cumulate_output_tokens
+REMOVED python/sglang/srt/sampling/penaltylib/orchestrator.py::BatchedPenalizerOrchestrator.apply
+REMOVED python/sglang/srt/sampling/penaltylib/orchestrator.py::BatchedPenalizerOrchestrator.accumulate_additive_penalties
+REMOVED python/sglang/srt/sampling/penaltylib/orchestrator.py::BatchedPenalizerOrchestrator.accumulate_scaling_penalties
+REMOVED python/sglang/srt/sampling/penaltylib/orchestrator.py::BatchedPenalizerOrchestrator.filter
+REMOVED python/sglang/srt/sampling/penaltylib/orchestrator.py::BatchedPenalizerOrchestrator.release
+REMOVED python/sglang/srt/sampling/penaltylib/orchestrator.py::BatchedPenalizerOrchestrator.__enter__
+REMOVED python/sglang/srt/sampling/penaltylib/orchestrator.py::BatchedPenalizerOrchestrator.__exit__
+REMOVED python/sglang/srt/sampling/penaltylib/orchestrator.py::BatchedPenalizerOrchestrator.merge
+REMOVED python/sglang/srt/sampling/penaltylib/orchestrator.py::_BatchedPenalizer
+REMOVED python/sglang/srt/sampling/penaltylib/orchestrator.py::_BatchedPenalizer.__init__
+REMOVED python/sglang/srt/sampling/penaltylib/orchestrator.py::_BatchedPenalizer.orchestrator
+REMOVED python/sglang/srt/sampling/penaltylib/orchestrator.py::_BatchedPenalizer.is_prepared
+REMOVED python/sglang/srt/sampling/penaltylib/orchestrator.py::_BatchedPenalizer.is_required
+REMOVED python/sglang/srt/sampling/penaltylib/orchestrator.py::_BatchedPenalizer.prepare
+REMOVED python/sglang/srt/sampling/penaltylib/orchestrator.py::_BatchedPenalizer.prepare_if_required
+REMOVED python/sglang/srt/sampling/penaltylib/orchestrator.py::_BatchedPenalizer.teardown
+REMOVED python/sglang/srt/sampling/penaltylib/orchestrator.py::_BatchedPenalizer.cumulate_output_tokens
+REMOVED python/sglang/srt/sampling/penaltylib/orchestrator.py::_BatchedPenalizer.apply
+REMOVED python/sglang/srt/sampling/penaltylib/orchestrator.py::_BatchedPenalizer.filter
+REMOVED python/sglang/srt/sampling/penaltylib/orchestrator.py::_BatchedPenalizer.merge
+REMOVED python/sglang/srt/sampling/penaltylib/orchestrator.py::_BatchedPenalizer._is_required
+REMOVED python/sglang/srt/sampling/penaltylib/orchestrator.py::_BatchedPenalizer._prepare
+REMOVED python/sglang/srt/sampling/penaltylib/orchestrator.py::_BatchedPenalizer._cumulate_output_tokens
+REMOVED python/sglang/srt/sampling/penaltylib/orchestrator.py::_BatchedPenalizer._apply
+REMOVED python/sglang/srt/sampling/penaltylib/orchestrator.py::_BatchedPenalizer.get_scaling_penalties
+REMOVED python/sglang/srt/sampling/penaltylib/orchestrator.py::_BatchedPenalizer._filter
+REMOVED python/sglang/srt/sampling/penaltylib/orchestrator.py::_BatchedPenalizer._merge
+REMOVED python/sglang/srt/sampling/penaltylib/orchestrator.py::_BatchedPenalizer._teardown
+REMOVED python/sglang/srt/sampling/penaltylib/presence_penalty.py::BatchedPresencePenalizer
+REMOVED python/sglang/srt/sampling/penaltylib/presence_penalty.py::BatchedPresencePenalizer._is_required
+REMOVED python/sglang/srt/sampling/penaltylib/presence_penalty.py::BatchedPresencePenalizer._prepare
+REMOVED python/sglang/srt/sampling/penaltylib/presence_penalty.py::BatchedPresencePenalizer._cumulate_output_tokens
+REMOVED python/sglang/srt/sampling/penaltylib/presence_penalty.py::BatchedPresencePenalizer._apply
+REMOVED python/sglang/srt/sampling/penaltylib/presence_penalty.py::BatchedPresencePenalizer._filter
+REMOVED python/sglang/srt/sampling/penaltylib/presence_penalty.py::BatchedPresencePenalizer._merge
+REMOVED python/sglang/srt/sampling/penaltylib/presence_penalty.py::BatchedPresencePenalizer._teardown
+REMOVED python/sglang/srt/sampling/penaltylib/repetition_penalty.py::apply_scaling_penalties
+REMOVED python/sglang/srt/sampling/penaltylib/repetition_penalty.py::BatchedRepetitionPenalizer
+REMOVED python/sglang/srt/sampling/penaltylib/repetition_penalty.py::BatchedRepetitionPenalizer._is_required
+REMOVED python/sglang/srt/sampling/penaltylib/repetition_penalty.py::BatchedRepetitionPenalizer._prepare
+REMOVED python/sglang/srt/sampling/penaltylib/repetition_penalty.py::BatchedRepetitionPenalizer._cumulate_output_tokens
+REMOVED python/sglang/srt/sampling/penaltylib/repetition_penalty.py::BatchedRepetitionPenalizer._apply
+REMOVED python/sglang/srt/sampling/penaltylib/repetition_penalty.py::BatchedRepetitionPenalizer.get_scaling_penalties
+REMOVED python/sglang/srt/sampling/penaltylib/repetition_penalty.py::BatchedRepetitionPenalizer._filter
+REMOVED python/sglang/srt/sampling/penaltylib/repetition_penalty.py::BatchedRepetitionPenalizer._merge
+REMOVED python/sglang/srt/sampling/penaltylib/repetition_penalty.py::BatchedRepetitionPenalizer._teardown
+REMOVED python/sglang/srt/sampling/sampling_batch_info.py::_rows_to_device_indices
+REMOVED python/sglang/srt/sampling/sampling_batch_info.py::_rows_with_seed
+REMOVED python/sglang/srt/sampling/sampling_batch_info.py::_filler_seed
+REMOVED python/sglang/srt/sampling/sampling_batch_info.py::_filler_seeds
+REMOVED python/sglang/srt/sampling/sampling_batch_info.py::has_acc_penalties
+REMOVED python/sglang/srt/sampling/sampling_batch_info.py::apply_acc_penalties
+REMOVED python/sglang/srt/sampling/sampling_batch_info.py::SamplingBatchInfo.from_schedule_batch
+REMOVED python/sglang/srt/sampling/sampling_batch_info.py::SamplingBatchInfo.adjusted_from_schedule_batch
+REMOVED python/sglang/srt/sampling/sampling_batch_info.py::SamplingBatchInfo.adjusted_merge_batch
+REMOVED python/sglang/srt/sampling/sampling_batch_info.py::SamplingBatchInfo.adjusted_filter_batch
+REMOVED python/sglang/srt/sampling/sampling_batch_info.py::SamplingBatchInfo._make_sampling_mask_batch_indices
+REMOVED python/sglang/srt/sampling/sampling_batch_info.py::SamplingBatchInfo._make_sampling_support_logprobs_capture_indices
+REMOVED python/sglang/srt/sampling/sampling_batch_info.py::SamplingBatchInfo.__len__
+REMOVED python/sglang/srt/sampling/sampling_batch_info.py::SamplingBatchInfo.update_regex_vocab_mask
+REMOVED python/sglang/srt/sampling/sampling_batch_info.py::SamplingBatchInfo.update_penalties
+REMOVED python/sglang/srt/sampling/sampling_batch_info.py::SamplingBatchInfo._apply_pre_grammar_logits_transforms
+REMOVED python/sglang/srt/sampling/sampling_batch_info.py::SamplingBatchInfo._apply_post_grammar_logits_transforms
+REMOVED python/sglang/srt/sampling/sampling_batch_info.py::SamplingBatchInfo.apply_logits_bias
+REMOVED python/sglang/srt/sampling/sampling_batch_info.py::SamplingBatchInfo.apply_logits_bias_with_observer
+REMOVED python/sglang/srt/sampling/sampling_batch_info.py::SamplingBatchInfo.filter_batch
+REMOVED python/sglang/srt/sampling/sampling_batch_info.py::SamplingBatchInfo._filter_batch_custom_logit_processor
+REMOVED python/sglang/srt/sampling/sampling_batch_info.py::SamplingBatchInfo.merge_batch
+REMOVED python/sglang/srt/sampling/sampling_batch_info.py::SamplingBatchInfo.refresh_top_k_flags
+REMOVED python/sglang/srt/sampling/sampling_batch_info.py::SamplingBatchInfo._merge_processor_entries
+REMOVED python/sglang/srt/sampling/sampling_batch_info.py::_top_k_flags
+REMOVED python/sglang/srt/sampling/sampling_batch_info.py::merge_bias_tensor
+REMOVED python/sglang/srt/sampling/watermarking/gumbel/adapter.py::GumbelRows.filter
+REMOVED python/sglang/srt/sampling/watermarking/gumbel/adapter.py::GumbelRows.concat
+REMOVED python/sglang/srt/sampling/watermarking/gumbel/adapter.py::GumbelRows.prepend_off
+REMOVED python/sglang/srt/sampling/watermarking/gumbel/adapter.py::_off_rows
+REMOVED python/sglang/srt/sampling/watermarking/gumbel/adapter.py::GumbelEngine.append_accept_tokens
+REMOVED python/sglang/srt/sampling/watermarking/gumbel/adapter.py::GumbelVerify.record
+REMOVED python/sglang/srt/sampling/watermarking/interface.py::WatermarkRows.filter
+REMOVED python/sglang/srt/sampling/watermarking/interface.py::WatermarkRows.concat
+REMOVED python/sglang/srt/sampling/watermarking/interface.py::WatermarkRows.prepend_off
+REMOVED python/sglang/srt/sampling/watermarking/interface.py::merge_watermark_rows
+REMOVED python/sglang/srt/sampling/watermarking/interface.py::VerifyWatermark.record
+REMOVED python/sglang/srt/sampling/watermarking/interface.py::WatermarkEngine.append_accept_tokens
+REMOVED python/sglang/srt/sampling/watermarking/synthid/adapter.py::SynthIDRows.filter
+REMOVED python/sglang/srt/sampling/watermarking/synthid/adapter.py::SynthIDRows.concat
+REMOVED python/sglang/srt/sampling/watermarking/synthid/adapter.py::SynthIDRows.prepend_off
+REMOVED python/sglang/srt/sampling/watermarking/synthid/adapter.py::SynthIDEngine.append_accept_tokens
+REMOVED python/sglang/srt/sampling/watermarking/synthid/adapter.py::SynthIDVerify.record
+REMOVED python/sglang/srt/speculative/dflash_utils.py::apply_dflash_verify_logits_adjustments
+CHANGED python/sglang/srt/speculative/dflash_utils.py::validate_dflash_request
+   (['req', 'enable_overlap'], 2, [], [])
+-> (['req', 'enable_overlap', 'bound_runtime'], 3, [], [])
+REMOVED python/sglang/srt/speculative/dflash_worker_v2.py::_verify_logits_unadjusted
+CHANGED python/sglang/srt/speculative/dspark_components/dspark_observability.py::DsparkStepObservers.observe_verify_step
+   (['self'], 1, ['forward_ct', 'reqs', 'bs', 'proposal_folded', 'verify_ids_2d', 'target_logits', 'layout', 'confidence', 'confidence_raw', 'prefix_lens', 'draft_tokens', 'draft_block', 'sampling_info', 'correct_len', 'cap_trim_lens', 'bonus', 'commit_lens', 'verify_token_budget', 'req_pool_indices', 'verify_tier_num_tokens', 'dp_tier_num_tokens'], ['forward_ct', 'reqs', 'bs', 'proposal_folded', 'verify_ids_2d', 'target_logits', 'layout', 'confidence', 'confidence_raw', 'prefix_lens', 'draft_tokens', 'draft_block', 'sampling_info', 'correct_len', 'cap_trim_lens', 'bonus', 'commit_lens', 'verify_token_budget', 'req_pool_indices', 'verify_tier_num_tokens', 'dp_tier_num_tokens'])
+-> (['self'], 1, ['forward_ct', 'reqs', 'bs', 'proposal_folded', 'verify_ids_2d', 'target_logits', 'layout', 'confidence', 'confidence_raw', 'prefix_lens', 'draft_tokens', 'draft_block', 'sampling_info', 'has_grammar', 'correct_len', 'cap_trim_lens', 'bonus', 'commit_lens', 'verify_token_budget', 'req_pool_indices', 'verify_tier_num_tokens', 'dp_tier_num_tokens'], ['forward_ct', 'reqs', 'bs', 'proposal_folded', 'verify_ids_2d', 'target_logits', 'layout', 'confidence', 'confidence_raw', 'prefix_lens', 'draft_tokens', 'draft_block', 'sampling_info', 'has_grammar', 'correct_len', 'cap_trim_lens', 'bonus', 'commit_lens', 'verify_token_budget', 'req_pool_indices', 'verify_tier_num_tokens', 'dp_tier_num_tokens'])
+REMOVED python/sglang/srt/speculative/dspark_components/dspark_planner.py::apply_logits_adjustments_strided
+CHANGED python/sglang/srt/speculative/dspark_components/dspark_verify.py::verify_logits_adjustments_are_noop
+   (['sampling_info'], 1, [], [])
+-> (['sampling_info'], 1, ['has_grammar'], ['has_grammar'])
+CHANGED python/sglang/srt/speculative/dspark_components/dspark_verify.py::TargetVerifyExecutor.run_non_compact
+   (['self'], 1, ['batch', 'draft_input', 'verify_ids_2d', 'verify_window', 'sampling_info'], ['batch', 'draft_input', 'verify_ids_2d', 'verify_window', 'sampling_info'])
+-> (['self'], 1, ['batch', 'draft_input', 'verify_ids_2d', 'verify_window'], ['batch', 'draft_input', 'verify_ids_2d', 'verify_window'])
+CHANGED python/sglang/srt/speculative/dspark_components/dspark_verify.py::TargetVerifyExecutor._run_ragged
+   (['self'], 1, ['batch', 'layout', 'ragged_window', 'sampling_info', 'iteration_ids'], ['batch', 'layout', 'ragged_window', 'sampling_info', 'iteration_ids'])
+-> (['self'], 1, ['batch', 'layout', 'ragged_window', 'iteration_ids'], ['batch', 'layout', 'ragged_window', 'iteration_ids'])
+CHANGED python/sglang/srt/speculative/dspark_components/dspark_verify.py::TargetVerifyExecutor.run_compact
+   (['self'], 1, ['batch', 'layout', 'draft_block_ids', 'draft_tokens', 'bs', 'device', 'sampling_info', 'verify_window', 'inject_gate'], ['batch', 'layout', 'draft_block_ids', 'draft_tokens', 'bs', 'device', 'sampling_info', 'verify_window'])
+-> (['self'], 1, ['batch', 'layout', 'draft_block_ids', 'draft_tokens', 'bs', 'device', 'verify_window', 'inject_gate'], ['batch', 'layout', 'draft_block_ids', 'draft_tokens', 'bs', 'device', 'verify_window'])
+REMOVED python/sglang/srt/speculative/dspark_components/dspark_worker_v2.py::DSparkWorkerV2._force_watermark
+CHANGED python/sglang/srt/speculative/eagle_utils.py::_sharded_sampling_applies
+   ([], 0, ['verify_input', 'batch', 'grammar_mask', 'watermark', 'has_local_keys'], ['verify_input', 'batch', 'grammar_mask', 'watermark'])
+-> ([], 0, ['verify_input', 'batch', 'grammar_mask', 'watermark', 'has_custom_logit_processor', 'has_local_keys'], ['verify_input', 'batch', 'grammar_mask', 'watermark', 'has_custom_logit_processor'])
+CHANGED python/sglang/srt/speculative/eagle_utils.py::eagle_sample
+   (['verify_input', 'batch', 'logits_output', 'grammar_mask', 'uno_target_max_top_k'], 3, ['watermark', 'simulated_acc_len', 'simulated_acc_len_rng', 'sparse_bonus_argmax', 'local_keys'], [])
+-> (['verify_input', 'batch', 'logits_output', 'grammar_mask', 'uno_target_max_top_k'], 3, ['watermark', 'simulated_acc_len', 'simulated_acc_len_rng', 'sparse_bonus_argmax', 'local_keys', 'has_custom_logit_processor'], [])
+CHANGED python/sglang/srt/speculative/sharded_verify.py::sampling_allows_vocab_shards
+   (['info'], 1, ['return_logprob', 'has_local_keys'], ['return_logprob', 'has_local_keys'])
+-> (['info'], 1, ['adjusts_logits', 'return_logprob', 'has_local_keys'], ['adjusts_logits', 'return_logprob', 'has_local_keys'])

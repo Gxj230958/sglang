@@ -1,0 +1,139 @@
+{
+ "/scratch/glm5lp-upstream-sync/qa/runs/gate-746e19554c/logs/cache-truth.log": {
+  "counts": {
+   "traceback": 0,
+   "process_crash": 0,
+   "kv_transfer_error": 0,
+   "client_abort": 0,
+   "disagg_timeout": 0,
+   "mooncake_transport": 0,
+   "nixl_error": 0,
+   "oom": 0,
+   "aborted": 0,
+   "python_core_fallback": 0
+  },
+  "first": {}
+ },
+ "/scratch/glm5lp-upstream-sync/qa/runs/gate-746e19554c/logs/master.0.log": {
+  "counts": {
+   "traceback": 0,
+   "process_crash": 0,
+   "kv_transfer_error": 0,
+   "client_abort": 0,
+   "disagg_timeout": 0,
+   "mooncake_transport": 0,
+   "nixl_error": 0,
+   "oom": 0,
+   "aborted": 0,
+   "python_core_fallback": 0
+  },
+  "first": {}
+ },
+ "/scratch/glm5lp-upstream-sync/qa/runs/gate-746e19554c/logs/master.1.log": {
+  "counts": {
+   "traceback": 0,
+   "process_crash": 0,
+   "kv_transfer_error": 0,
+   "client_abort": 0,
+   "disagg_timeout": 0,
+   "mooncake_transport": 0,
+   "nixl_error": 0,
+   "oom": 0,
+   "aborted": 0,
+   "python_core_fallback": 0
+  },
+  "first": {}
+ },
+ "/scratch/glm5lp-upstream-sync/qa/runs/gate-746e19554c/logs/prefill.0.log": {
+  "counts": {
+   "traceback": 0,
+   "process_crash": 0,
+   "kv_transfer_error": 0,
+   "client_abort": 1,
+   "disagg_timeout": 0,
+   "mooncake_transport": 0,
+   "nixl_error": 0,
+   "oom": 0,
+   "aborted": 0,
+   "python_core_fallback": 0
+  },
+  "first": {
+   "client_abort": "[2026-11-22 13:32:15 DP0 TP0 EP0 PID818126] Prefill bootstrap failed for request rank=0 req.rid='09d58bf9216f408f9539d61456cadaae' req.bootstrap_room=5964251537466635460 with exception KVTransferError(bootstrap_room=5964251537466635460): Aborted by AbortReq."
+  }
+ },
+ "/scratch/glm5lp-upstream-sync/qa/runs/gate-746e19554c/logs/prefill.1.log": {
+  "counts": {
+   "traceback": 0,
+   "process_crash": 0,
+   "kv_transfer_error": 0,
+   "client_abort": 0,
+   "disagg_timeout": 0,
+   "mooncake_transport": 0,
+   "nixl_error": 0,
+   "oom": 0,
+   "aborted": 0,
+   "python_core_fallback": 0
+  },
+  "first": {}
+ },
+ "/scratch/glm5lp-upstream-sync/qa/runs/gate-746e19554c/logs/prefill.2.log": {
+  "counts": {
+   "traceback": 0,
+   "process_crash": 0,
+   "kv_transfer_error": 0,
+   "client_abort": 0,
+   "disagg_timeout": 0,
+   "mooncake_transport": 0,
+   "nixl_error": 0,
+   "oom": 0,
+   "aborted": 0,
+   "python_core_fallback": 0
+  },
+  "first": {}
+ },
+ "/scratch/glm5lp-upstream-sync/qa/runs/gate-746e19554c/logs/router.0.log": {
+  "counts": {
+   "traceback": 0,
+   "process_crash": 0,
+   "kv_transfer_error": 0,
+   "client_abort": 0,
+   "disagg_timeout": 0,
+   "mooncake_transport": 0,
+   "nixl_error": 0,
+   "oom": 0,
+   "aborted": 0,
+   "python_core_fallback": 0
+  },
+  "first": {}
+ },
+ "/scratch/glm5lp-upstream-sync/qa/runs/gate-746e19554c/logs/store.0.log": {
+  "counts": {
+   "traceback": 0,
+   "process_crash": 0,
+   "kv_transfer_error": 0,
+   "client_abort": 0,
+   "disagg_timeout": 0,
+   "mooncake_transport": 0,
+   "nixl_error": 0,
+   "oom": 0,
+   "aborted": 0,
+   "python_core_fallback": 0
+  },
+  "first": {}
+ },
+ "/scratch/glm5lp-upstream-sync/qa/runs/gate-746e19554c/logs/store.1.log": {
+  "counts": {
+   "traceback": 0,
+   "process_crash": 0,
+   "kv_transfer_error": 0,
+   "client_abort": 0,
+   "disagg_timeout": 0,
+   "mooncake_transport": 0,
+   "nixl_error": 0,
+   "oom": 0,
+   "aborted": 0,
+   "python_core_fallback": 0
+  },
+  "first": {}
+ }
+}

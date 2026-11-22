@@ -1,0 +1,49 @@
+{
+ "/scratch/glm5lp-upstream-sync/qa/runs/gate-746e19554c/logs/agentx-main-c64.log": {
+  "counts": {
+   "traceback": 0,
+   "process_crash": 0,
+   "kv_transfer_error": 0,
+   "client_abort": 0,
+   "disagg_timeout": 0,
+   "mooncake_transport": 0,
+   "nixl_error": 0,
+   "oom": 0,
+   "aborted": 0,
+   "python_core_fallback": 0
+  },
+  "first": {}
+ },
+ "/scratch/glm5lp-upstream-sync/qa/runs/gate-746e19554c/logs/decode.0.log": {
+  "counts": {
+   "traceback": 0,
+   "process_crash": 0,
+   "kv_transfer_error": 0,
+   "client_abort": 10,
+   "disagg_timeout": 0,
+   "mooncake_transport": 0,
+   "nixl_error": 0,
+   "oom": 0,
+   "aborted": 0,
+   "python_core_fallback": 0
+  },
+  "first": {
+   "client_abort": "[2026-11-22 13:32:16 DP3 TP3 EP3 PID464806] Decode transfer failed for request rank=3 decode_req.req.rid='6a659d85373c42a889623f407be63c6c' decode_req.req.bootstrap_room=6085329184548620452 with exception KVTransferError(bootstrap_room=6085329184548620452): Aborted by AbortReq."
+  }
+ },
+ "/scratch/glm5lp-upstream-sync/qa/runs/gate-746e19554c/logs/gsm8k-full.log": {
+  "counts": {
+   "traceback": 0,
+   "process_crash": 0,
+   "kv_transfer_error": 0,
+   "client_abort": 0,
+   "disagg_timeout": 0,
+   "mooncake_transport": 0,
+   "nixl_error": 0,
+   "oom": 0,
+   "aborted": 0,
+   "python_core_fallback": 0
+  },
+  "first": {}
+ }
+}

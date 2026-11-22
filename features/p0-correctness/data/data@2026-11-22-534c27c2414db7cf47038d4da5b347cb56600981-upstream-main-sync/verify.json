@@ -1,0 +1,142 @@
+{
+  "dep4_megamoe": "PASS",
+  "full_recipe": "PASS",
+  "full_recipe_arms": {
+    "baseline": {
+      "agentx": {
+        "accept_len": 2.394,
+        "errors": 0,
+        "itl_p50_ms": 19.0,
+        "output_tps": 933.4,
+        "requests": 1097.0,
+        "total_tps": 85401.7,
+        "ttft_p50_ms": 12093.4
+      },
+      "cache_truth": {
+        "checks": {
+          "answers_correct": true,
+          "answers_identical": true,
+          "host_tier_hit": true,
+          "negative_no_hit": true,
+          "storage_restore": true
+        },
+        "max_completion_tokens": 6,
+        "pass": true,
+        "probe_count": 29
+      },
+      "code": "746e19554cf257b2db34bdb8afa85077ea2fb14e",
+      "finished": "2026-11-22T13:46:38Z",
+      "gsm8k": {
+        "accept_len": 2.603,
+        "accuracy": 0.9385898407884761,
+        "correct": 1238,
+        "finish_reason": {
+          "stop": 1319
+        }
+      },
+      "harness_rev": "1e31bef84893",
+      "started": "2026-11-22T12:54:51Z"
+    },
+    "candidate": {
+      "agentx": {
+        "accept_len": 2.444,
+        "errors": 0,
+        "itl_p50_ms": 19.0,
+        "output_tps": 998.6,
+        "requests": 1174.0,
+        "total_tps": 92770.8,
+        "ttft_p50_ms": 14608.1
+      },
+      "cache_truth": {
+        "checks": {
+          "answers_correct": true,
+          "answers_identical": true,
+          "host_tier_hit": true,
+          "negative_no_hit": true,
+          "storage_restore": true
+        },
+        "max_completion_tokens": 7,
+        "pass": true,
+        "probe_count": 29
+      },
+      "code": "534c27c2414db7cf47038d4da5b347cb56600981",
+      "finished": "2026-11-22T15:38:05Z",
+      "gsm8k": {
+        "accept_len": 2.559,
+        "accuracy": 0.9454131918119788,
+        "correct": 1247,
+        "finish_reason": {
+          "stop": 1319
+        }
+      },
+      "harness_rev": "1e31bef84893",
+      "started": "2026-11-22T14:47:59Z"
+    }
+  },
+  "gate": "PASS",
+  "tier2_arms": {
+    "baseline-dep4": {
+      "accept_len": {
+        "mean": 2.6694607843137255,
+        "running_floor": 8,
+        "samples": 408
+      },
+      "accuracy": 0.9507202426080363,
+      "code": "746e19554cf257b2db34bdb8afa85077ea2fb14e",
+      "correct": 1254,
+      "finish_reason": {
+        "length": 2,
+        "stop": 1317
+      },
+      "non_stop": 2,
+      "stop_rate": 0.9984836997725549
+    },
+    "baseline-tp4": {
+      "accept_len": {
+        "mean": 2.687843137254902,
+        "running_floor": 16,
+        "samples": 102
+      },
+      "accuracy": 0.954510993176649,
+      "code": "746e19554cf257b2db34bdb8afa85077ea2fb14e",
+      "correct": 1259,
+      "finish_reason": {
+        "stop": 1319
+      },
+      "non_stop": 0,
+      "stop_rate": 1.0
+    },
+    "candidate-dep4": {
+      "accept_len": {
+        "mean": 2.6963930348258707,
+        "running_floor": 8,
+        "samples": 402
+      },
+      "accuracy": 0.959059893858984,
+      "code": "534c27c2414db7cf47038d4da5b347cb56600981",
+      "correct": 1265,
+      "finish_reason": {
+        "stop": 1319
+      },
+      "non_stop": 0,
+      "stop_rate": 1.0
+    },
+    "candidate-tp4": {
+      "accept_len": {
+        "mean": 2.680188679245283,
+        "running_floor": 16,
+        "samples": 106
+      },
+      "accuracy": 0.9454131918119788,
+      "code": "534c27c2414db7cf47038d4da5b347cb56600981",
+      "correct": 1247,
+      "finish_reason": {
+        "length": 2,
+        "stop": 1317
+      },
+      "non_stop": 2,
+      "stop_rate": 0.9984836997725549
+    }
+  },
+  "tp4": "PASS"
+}

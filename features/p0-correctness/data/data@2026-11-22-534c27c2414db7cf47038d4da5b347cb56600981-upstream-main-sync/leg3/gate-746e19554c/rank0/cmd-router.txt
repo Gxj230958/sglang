@@ -1,0 +1,1 @@
+/opt/sglang/bin/python -m sglang_router.launch_router --host 0.0.0.0 --port 34022 --pd-disaggregation --prefill http://rank0:34020 34023 --decode http://rank1:34021 --health-check-timeout-secs 30 --request-timeout-secs 7200 --prometheus-port 34026 

@@ -1,0 +1,290 @@
+[
+  {
+    "path": "leg3/gate-534c27c241/rank0/cmd-prefill.txt",
+    "original_bytes": 916,
+    "original_sha256": "4950f513e365e92821c3dca7d6f9ae6f557785b9cc9f6ef050cc9645c95f564a",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-534c27c241/rank0/cmd-router.txt",
+    "original_bytes": 261,
+    "original_sha256": "25e4cd62375ea314a30675713dcc83ef4e4b0fae693c259a0b55b3c08a02a451",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-534c27c241/rank0/logs/master.0.log.gz",
+    "original_bytes": 28011,
+    "original_sha256": "17c895b2df0f699dafbb55678ed315b65b440755ab9be54c1885a04161e75836",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-534c27c241/rank0/logs/master.1.log.gz",
+    "original_bytes": 2790,
+    "original_sha256": "c10b4acf64cbc65a7c17a462d45f82e7af6be08b1b666be85f8680bbf1a21f1f",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-534c27c241/rank0/logs/prefill.0.log.cmd",
+    "original_bytes": 916,
+    "original_sha256": "4950f513e365e92821c3dca7d6f9ae6f557785b9cc9f6ef050cc9645c95f564a",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-534c27c241/rank0/logs/prefill.0.log.gz",
+    "original_bytes": 191012,
+    "original_sha256": "8b88c894499829fd0a03c5291c0a7db6704dfb10b037f8c583ed31af0f3ec5ba",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-534c27c241/rank0/logs/prefill.1.log.cmd",
+    "original_bytes": 916,
+    "original_sha256": "4950f513e365e92821c3dca7d6f9ae6f557785b9cc9f6ef050cc9645c95f564a",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-534c27c241/rank0/logs/prefill.1.log.gz",
+    "original_bytes": 43345,
+    "original_sha256": "d04619a7ac72d7571605aeb9648210476131271abcab502e50c3bf9d8166e3a6",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-534c27c241/rank0/logs/prefill.2.log.cmd",
+    "original_bytes": 916,
+    "original_sha256": "4950f513e365e92821c3dca7d6f9ae6f557785b9cc9f6ef050cc9645c95f564a",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-534c27c241/rank0/logs/prefill.2.log.gz",
+    "original_bytes": 23710,
+    "original_sha256": "77d5ad4fdfa6f28cbd86f7a4078096d60ae8560d3358bdac1e1810876cf6c604",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-534c27c241/rank0/logs/router.0.log.cmd",
+    "original_bytes": 261,
+    "original_sha256": "25e4cd62375ea314a30675713dcc83ef4e4b0fae693c259a0b55b3c08a02a451",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-534c27c241/rank0/logs/router.0.log.gz",
+    "original_bytes": 161643,
+    "original_sha256": "fe3eef7e2cd2c62d873e02e5cac56a764ee187a1c0318bc4876590f4547fca2a",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-534c27c241/rank0/logs/store.0.log.gz",
+    "original_bytes": 1090,
+    "original_sha256": "e0c8052da4c4ef8b7f774a99260a55ead481d567c27ce00dfedad07f37e86315",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-534c27c241/rank0/logs/store.1.log.gz",
+    "original_bytes": 1008,
+    "original_sha256": "e6e130173cef85024b17645ba651e92bafe95f6a6a8ed380b84e64e60ea18a58",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-534c27c241/rank0/run.conf",
+    "original_bytes": 216,
+    "original_sha256": "d132ff6075904462cb1922110caa5e338935a45fb3eacc427cbc9aec11d24179",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-534c27c241/rank0/store.json",
+    "original_bytes": 210,
+    "original_sha256": "389149addb37a1e4d7815bcd20854d8a866c5de7a3d5f41714834f9b0fca064d",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-534c27c241/rank1/agentx/main-c64/agentx.log.gz",
+    "original_bytes": 17199,
+    "original_sha256": "3c7a7a89bd836ad956c396bed057d3dd7510baa9acc04145b247230c1eb6e8f4",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-534c27c241/rank1/agentx/main-c64/logs/aiperf.log.gz",
+    "original_bytes": 14401,
+    "original_sha256": "15e9a4c6daa4f6bb5cb126c083e8e158fe41018021abb39485916fee9075230b",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-534c27c241/rank1/agentx/main-c64/profile_export_aiperf.json",
+    "original_bytes": 44902,
+    "original_sha256": "c54b64b2d71e653cd9964064c4fea1bf1e5348bfca2dc978a4c7f7d256c5e0e4",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-534c27c241/rank1/agentx/main-c64/server_metrics_export.csv.gz",
+    "original_bytes": 16920,
+    "original_sha256": "15011bf40220220c3d64b3e32c8be15d2a8b478e5220ea5896c1acb0fc4b9f87",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-534c27c241/rank1/gsm8k-full/sgl_eval_gsm8k_20261122-145208/metrics.json",
+    "original_bytes": 1108,
+    "original_sha256": "25924b587c5f8f12693b59e9fc63d0ff57d4dcb62bf6807c175d626f0b946da4",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-534c27c241/rank1/logs/decode.0.log.gz",
+    "original_bytes": 136411,
+    "original_sha256": "d3acbca13db58a81add9f7b8cb6f859f5d1ba17537058c36985e644220fcff19",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-534c27c241/rank1/run.conf",
+    "original_bytes": 216,
+    "original_sha256": "d132ff6075904462cb1922110caa5e338935a45fb3eacc427cbc9aec11d24179",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-534c27c241/result.json",
+    "original_bytes": 25508,
+    "original_sha256": "84276c4b9ea2a54d4349127dc39eccfa2f01edce287131abfaa743b584c374bf",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-746e19554c/rank0/cmd-prefill.txt",
+    "original_bytes": 916,
+    "original_sha256": "4950f513e365e92821c3dca7d6f9ae6f557785b9cc9f6ef050cc9645c95f564a",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-746e19554c/rank0/cmd-router.txt",
+    "original_bytes": 261,
+    "original_sha256": "25e4cd62375ea314a30675713dcc83ef4e4b0fae693c259a0b55b3c08a02a451",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-746e19554c/rank0/logs/master.0.log.gz",
+    "original_bytes": 27369,
+    "original_sha256": "a127e5ae3bd6c9abe707303a41f67e8e44ddc0442b34f37cbe0bafd631740424",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-746e19554c/rank0/logs/master.1.log.gz",
+    "original_bytes": 2775,
+    "original_sha256": "d7a56e23d7b9f925fc670b38277756d2c743d8ceb9dfcbd455052f1c5c110fb2",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-746e19554c/rank0/logs/prefill.0.log.cmd",
+    "original_bytes": 916,
+    "original_sha256": "4950f513e365e92821c3dca7d6f9ae6f557785b9cc9f6ef050cc9645c95f564a",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-746e19554c/rank0/logs/prefill.0.log.gz",
+    "original_bytes": 181438,
+    "original_sha256": "3ab6ed5709bb0803aa7a7c2558ade5483536a2ed9509ee5ce18535852c12cb31",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-746e19554c/rank0/logs/prefill.1.log.cmd",
+    "original_bytes": 916,
+    "original_sha256": "4950f513e365e92821c3dca7d6f9ae6f557785b9cc9f6ef050cc9645c95f564a",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-746e19554c/rank0/logs/prefill.1.log.gz",
+    "original_bytes": 43274,
+    "original_sha256": "ae75a5159a3b0d86463ae66dd36be5749658d001bf72f37d92a0711ef59a5683",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-746e19554c/rank0/logs/prefill.2.log.cmd",
+    "original_bytes": 916,
+    "original_sha256": "4950f513e365e92821c3dca7d6f9ae6f557785b9cc9f6ef050cc9645c95f564a",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-746e19554c/rank0/logs/prefill.2.log.gz",
+    "original_bytes": 23880,
+    "original_sha256": "1c38b70295af38459c09db0cac90a46eff89a4b8977b28c5ffb5a684d56e8b6a",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-746e19554c/rank0/logs/router.0.log.cmd",
+    "original_bytes": 261,
+    "original_sha256": "25e4cd62375ea314a30675713dcc83ef4e4b0fae693c259a0b55b3c08a02a451",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-746e19554c/rank0/logs/router.0.log.gz",
+    "original_bytes": 155816,
+    "original_sha256": "dd8adf0d87ae7766383b8b75df2d94398c12c935666568e6dca48612f1285543",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-746e19554c/rank0/logs/store.0.log.gz",
+    "original_bytes": 1087,
+    "original_sha256": "0a9ef99cf6c033b60baac0638c4c2ce1463fb84623c7eb1cdadb3ad98cbb5e32",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-746e19554c/rank0/logs/store.1.log.gz",
+    "original_bytes": 1007,
+    "original_sha256": "0d5f84fed53e70e182d43988c0a3ad29fdda5067e28731aa166fa596015c8f76",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-746e19554c/rank0/run.conf",
+    "original_bytes": 216,
+    "original_sha256": "bd6af9ed1836a19a53181193e95d5fa94d66521b56fbac15ade108239b3de703",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-746e19554c/rank0/store.json",
+    "original_bytes": 210,
+    "original_sha256": "389149addb37a1e4d7815bcd20854d8a866c5de7a3d5f41714834f9b0fca064d",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-746e19554c/rank1/agentx/main-c64/agentx.log.gz",
+    "original_bytes": 17088,
+    "original_sha256": "4bf49fe402e1e93c88f7537c1dfd86dec2416433287cb8f5d7237d0928ad030b",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-746e19554c/rank1/agentx/main-c64/logs/aiperf.log.gz",
+    "original_bytes": 14324,
+    "original_sha256": "f99c44d5203f360efc4d889a912176b5bce9a1a23a4c1700b8ac8cd48f122479",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-746e19554c/rank1/agentx/main-c64/profile_export_aiperf.json",
+    "original_bytes": 44722,
+    "original_sha256": "9fb17caff0a967f60926774694bc0363a92fa7b0169dbafb48c67a293f53481a",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-746e19554c/rank1/agentx/main-c64/server_metrics_export.csv.gz",
+    "original_bytes": 16603,
+    "original_sha256": "7350fb3520e681bf5ffe5052d04494d2b24442eebe19a78229a050987a4a8034",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-746e19554c/rank1/gsm8k-full/sgl_eval_gsm8k_20261122-125841/metrics.json",
+    "original_bytes": 1104,
+    "original_sha256": "26542075bed8ff8b456bf14db9ad5a3efea353b56b080e278e5ff4c60baabf98",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-746e19554c/rank1/logs/decode.0.log.gz",
+    "original_bytes": 141014,
+    "original_sha256": "93b1d56aafb2052e03df5bfe3fb9fbdfe66675da1788302f18acbbacaf88b37b",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-746e19554c/rank1/run.conf",
+    "original_bytes": 216,
+    "original_sha256": "bd6af9ed1836a19a53181193e95d5fa94d66521b56fbac15ade108239b3de703",
+    "replacement": "Node addresses replaced by rank labels"
+  },
+  {
+    "path": "leg3/gate-746e19554c/result.json",
+    "original_bytes": 25824,
+    "original_sha256": "bf41646d2f2cfb3e9e6a890e7c62e2f60e95c49417898e5743690c1dff0544c5",
+    "replacement": "Node addresses replaced by rank labels"
+  }
+]

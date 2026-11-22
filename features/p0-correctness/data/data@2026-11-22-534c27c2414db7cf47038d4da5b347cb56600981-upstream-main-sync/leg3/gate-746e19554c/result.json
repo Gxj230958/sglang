@@ -1,0 +1,969 @@
+{
+ "tag": "gate-746e19554c",
+ "variant": "full",
+ "harness_rev": "1e31bef84893",
+ "src": "/scratch/glm5lp-upstream-sync/746e19554c/src",
+ "ovl": "/scratch/glm5lp-upstream-sync/overlay-deps-710a842c57:/scratch/glm5lp-upstream-sync/overlay-dg",
+ "started": "2026-11-22T12:54:51Z",
+ "finished": "2026-11-22T13:46:38Z",
+ "launch": {
+  "prefill": "/opt/sglang/bin/python -m sglang.launch_server --model-path /scratch/models/GLM-5-1028-Provider --served-model-name glm-loop --tp-size 4 --ep-size 4 --attn-dp-size 4 --moe-runner-backend megamoe --kv-cache-dtype fp8_e4m3 --speculative-algorithm EAGLE --detokenizer-worker-num 4 --reasoning-parser glm45 --tool-call-parser glm47 --enable-cache-report --enable-metrics --disaggregation-transfer-backend mooncake --disaggregation-ib-device ibp0p0\\,ibp1p0\\,ibp2p0\\,ibp3p0 --host 0.0.0.0 --port 34020 --dist-init-addr 127.0.0.1:34030 --disaggregation-mode prefill --disaggregation-bootstrap-port 34023 --chunked-prefill-size 32768 --mem-fraction-static 0.90 --enable-hierarchical-cache --hicache-storage-backend mooncake --hicache-storage-backend-extra-config \\{\\\"master_server_address\\\":\\\"rank0:34051\\\"\\,\\\"metadata_server\\\":\\\"P2PHANDSHAKE\\\"\\,\\\"protocol\\\":\\\"tcp\\\"\\,\\\"device_name\\\":\\\"\\\"\\,\\\"global_segment_size\\\":0\\}",
+  "decode": "/opt/sglang/bin/python -m sglang.launch_server --model-path /scratch/models/GLM-5-1028-Provider --served-model-name glm-loop --tp-size 4 --ep-size 4 --attn-dp-size 4 --moe-runner-backend megamoe --kv-cache-dtype fp8_e4m3 --speculative-algorithm EAGLE --detokenizer-worker-num 4 --reasoning-parser glm45 --tool-call-parser glm47 --enable-cache-report --enable-metrics --disaggregation-transfer-backend mooncake --disaggregation-ib-device ibp0p0\\,ibp1p0\\,ibp2p0\\,ibp3p0 --host 0.0.0.0 --port 34021 --dist-init-addr 127.0.0.1:34040 --disaggregation-mode decode --mem-fraction-static 0.96",
+  "router": "/opt/sglang/bin/python -m sglang_router.launch_router --host 0.0.0.0 --port 34022 --pd-disaggregation --prefill http://rank0:34020 34023 --decode http://rank1:34021 --health-check-timeout-secs 30 --request-timeout-secs 7200 --prometheus-port 34026"
+ },
+ "versions": {
+  "prefill": {
+   "PYTHONPATH": "/scratch/glm5lp-upstream-sync/overlay-deps-710a842c57:/scratch/glm5lp-upstream-sync/overlay-dg:/scratch/glm5lp-upstream-sync/746e19554c/src/python:/scratch/glm5lp-upstream-sync/fi074:/scratch/glm5lp-upstream-sync/overlay-kernel",
+   "LD_PRELOAD": "/scratch/glm5lp-upstream-sync/overlay-deps-710a842c57/nvidia/nccl/lib/libnccl.so.2",
+   "sglang": {
+    "file": "/scratch/glm5lp-upstream-sync/746e19554c/src/python/sglang/__init__.py",
+    "version": "0.5.22",
+    "dist_version": "0.5.22"
+   },
+   "torch": {
+    "file": "/opt/sglang/lib/python3.12/site-packages/torch/__init__.py",
+    "version": "2.14.1+cu130",
+    "dist_version": "2.14.1+cu130"
+   },
+   "flashinfer": {
+    "file": "/scratch/glm5lp-upstream-sync/fi074/flashinfer/__init__.py",
+    "version": "0.7.4",
+    "dist_version": "0.7.4"
+   },
+   "sgl_kernel": {
+    "file": "/scratch/glm5lp-upstream-sync/overlay-kernel/sgl_kernel/__init__.py",
+    "version": "0.4.11",
+    "dist_version": "0.4.11"
+   },
+   "flash_mla": {
+    "file": "/scratch/glm5lp-upstream-sync/overlay-kernel/flash_mla/__init__.py",
+    "version": "1.0.5",
+    "dist_version": "1.0.5"
+   },
+   "deep_gemm": {
+    "file": "/scratch/glm5lp-upstream-sync/overlay-dg/deep_gemm/__init__.py",
+    "version": "0.2.9",
+    "dist_version": "0.2.9"
+   },
+   "deep_ep": {
+    "file": "/scratch/glm5lp-upstream-sync/overlay-deps-710a842c57/deep_ep/__init__.py",
+    "version": "2.1.0",
+    "dist_version": "0.1.3"
+   },
+   "mooncake": {
+    "file": "/scratch/glm5lp-upstream-sync/overlay-deps-710a842c57/mooncake/__init__.py",
+    "version": null,
+    "dist_version": "0.3.14"
+   },
+   "sglang_router": {
+    "file": "/opt/sglang/lib/python3.12/site-packages/sglang_router/__init__.py",
+    "version": "0.3.2",
+    "dist_version": "0.3.2"
+   },
+   "nccl_runtime": {
+    "lib": "/scratch/glm5lp-upstream-sync/overlay-deps-710a842c57/nvidia/nccl/lib/libnccl.so.2",
+    "version": 23102
+   }
+  },
+  "decode": {
+   "PYTHONPATH": "/scratch/glm5lp-upstream-sync/overlay-deps-710a842c57:/scratch/glm5lp-upstream-sync/overlay-dg:/scratch/glm5lp-upstream-sync/746e19554c/src/python:/scratch/glm5lp-upstream-sync/fi074:/scratch/glm5lp-upstream-sync/overlay-kernel",
+   "LD_PRELOAD": "/scratch/glm5lp-upstream-sync/overlay-deps-710a842c57/nvidia/nccl/lib/libnccl.so.2",
+   "sglang": {
+    "file": "/scratch/glm5lp-upstream-sync/746e19554c/src/python/sglang/__init__.py",
+    "version": "0.5.23",
+    "dist_version": "0.5.23"
+   },
+   "torch": {
+    "file": "/opt/sglang/lib/python3.12/site-packages/torch/__init__.py",
+    "version": "2.14.1+cu130",
+    "dist_version": "2.14.1+cu130"
+   },
+   "flashinfer": {
+    "file": "/scratch/glm5lp-upstream-sync/fi074/flashinfer/__init__.py",
+    "version": "0.7.4",
+    "dist_version": "0.7.4"
+   },
+   "sgl_kernel": {
+    "file": "/scratch/glm5lp-upstream-sync/overlay-kernel/sgl_kernel/__init__.py",
+    "version": "0.4.11",
+    "dist_version": "0.4.11"
+   },
+   "flash_mla": {
+    "file": "/scratch/glm5lp-upstream-sync/overlay-kernel/flash_mla/__init__.py",
+    "version": "1.0.5",
+    "dist_version": "1.0.5"
+   },
+   "deep_gemm": {
+    "file": "/scratch/glm5lp-upstream-sync/overlay-dg/deep_gemm/__init__.py",
+    "version": "0.2.9",
+    "dist_version": "0.2.9"
+   },
+   "deep_ep": {
+    "file": "/scratch/glm5lp-upstream-sync/overlay-deps-710a842c57/deep_ep/__init__.py",
+    "version": "2.1.0",
+    "dist_version": "0.1.3"
+   },
+   "mooncake": {
+    "file": "/scratch/glm5lp-upstream-sync/overlay-deps-710a842c57/mooncake/__init__.py",
+    "version": null,
+    "dist_version": "0.3.14"
+   },
+   "sglang_router": {
+    "file": "/opt/sglang/lib/python3.12/site-packages/sglang_router/__init__.py",
+    "version": "0.3.2",
+    "dist_version": "0.3.2"
+   },
+   "nccl_runtime": {
+    "lib": "/scratch/glm5lp-upstream-sync/overlay-deps-710a842c57/nvidia/nccl/lib/libnccl.so.2",
+    "version": 23102
+   }
+  }
+ },
+ "smoke": {
+  "id": "a6bc7c0bb31a49b0bfce4a00d7c2998d",
+  "object": "chat.completion",
+  "created": 1795352306,
+  "model": "glm-loop",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "391",
+     "reasoning_content": null
+    },
+    "logprobs": null,
+    "finish_reason": "stop",
+    "matched_stop": 154827
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 25,
+   "total_tokens": 29,
+   "completion_tokens": 4,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   },
+   "reasoning_tokens": 1,
+   "completion_tokens_details": {
+    "reasoning_tokens": 1
+   }
+  },
+  "metadata": {
+   "weight_version": "default",
+   "weight_versions": [
+    {
+     "version": "default",
+     "start": 0,
+     "end": 4
+    }
+   ]
+  }
+ },
+ "check1_gsm8k": {
+  "n": 1319,
+  "finish_reason": {
+   "stop": 1319
+  },
+  "stop_rate": 1.0,
+  "correct": 1238,
+  "accuracy": 0.9385898407884761,
+  "mean_completion_tokens": 573.7,
+  "eval_seconds": 770.1328577427194,
+  "window": [
+   "2026-11-22 12:58:40",
+   "2026-11-22 13:11:31"
+  ],
+  "decode": {
+   "lines": 1531,
+   "dp_ranks": 4,
+   "active_seconds_per_dp": 378.8,
+   "running_mean_total": 19.49,
+   "running_max_per_dp": 12.0,
+   "queue_mean_total": 0.0,
+   "queue_max_per_dp": 0.0,
+   "accept_len_mean": 2.603,
+   "gen_tps_mean_total": 1136.8,
+   "kv_usage_mean": 0.025,
+   "kv_usage_max": 0.1,
+   "retracted_max": 0.0,
+   "cuda_graph_lines": {
+    "True": 1531
+   }
+  },
+  "prefill_cached_tokens_delta": {}
+ },
+ "check2_cache_truth": {
+  "vault": "GHKPCM",
+  "code": "1085603",
+  "steps": [
+   {
+    "step": "cold",
+    "answer": "1085603",
+    "answer_has_code": true,
+    "raw_content": "1085603",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 6,
+    "prompt_tokens": 6217,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "tier_delta": {},
+    "latency_s": 0.53
+   },
+   {
+    "step": "device",
+    "answer": "1085603",
+    "answer_has_code": true,
+    "raw_content": "1085603",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 6,
+    "prompt_tokens": 6217,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.2
+   },
+   {
+    "step": "storage",
+    "answer": "1085603",
+    "answer_has_code": true,
+    "raw_content": "1085603",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 6,
+    "prompt_tokens": 6217,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "storage": 6208.0
+    },
+    "latency_s": 0.61
+   },
+   {
+    "step": "seed",
+    "answer": "1085603",
+    "answer_has_code": true,
+    "raw_content": "1085603",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 6,
+    "prompt_tokens": 6217,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "storage": 6208.0
+    },
+    "latency_s": 0.4
+   },
+   {
+    "step": "seed",
+    "answer": "1085603",
+    "answer_has_code": true,
+    "raw_content": "1085603",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 6,
+    "prompt_tokens": 6217,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "storage": 6208.0
+    },
+    "latency_s": 0.4
+   },
+   {
+    "step": "seed",
+    "answer": "1085603",
+    "answer_has_code": true,
+    "raw_content": "1085603",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 6,
+    "prompt_tokens": 6217,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.2
+   },
+   {
+    "step": "seed",
+    "answer": "1085603",
+    "answer_has_code": true,
+    "raw_content": "1085603",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 6,
+    "prompt_tokens": 6217,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.19
+   },
+   {
+    "step": "seed",
+    "answer": "1085603",
+    "answer_has_code": true,
+    "raw_content": "1085603",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 6,
+    "prompt_tokens": 6217,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.2
+   },
+   {
+    "step": "seed",
+    "answer": "1085603",
+    "answer_has_code": true,
+    "raw_content": "1085603",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 6,
+    "prompt_tokens": 6217,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.17
+   },
+   {
+    "step": "seed",
+    "answer": "1085603",
+    "answer_has_code": true,
+    "raw_content": "1085603",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 6,
+    "prompt_tokens": 6217,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.17
+   },
+   {
+    "step": "seed",
+    "answer": "1085603",
+    "answer_has_code": true,
+    "raw_content": "1085603",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 6,
+    "prompt_tokens": 6217,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.17
+   },
+   {
+    "step": "seed",
+    "answer": "1085603",
+    "answer_has_code": true,
+    "raw_content": "1085603",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 6,
+    "prompt_tokens": 6217,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "storage": 6208.0
+    },
+    "latency_s": 0.35
+   },
+   {
+    "step": "seed",
+    "answer": "1085603",
+    "answer_has_code": true,
+    "raw_content": "1085603",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 6,
+    "prompt_tokens": 6217,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.2
+   },
+   {
+    "step": "seed",
+    "answer": "1085603",
+    "answer_has_code": true,
+    "raw_content": "1085603",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 6,
+    "prompt_tokens": 6217,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.23
+   },
+   {
+    "step": "seed",
+    "answer": "1085603",
+    "answer_has_code": true,
+    "raw_content": "1085603",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 6,
+    "prompt_tokens": 6217,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.18
+   },
+   {
+    "step": "seed",
+    "answer": "1085603",
+    "answer_has_code": true,
+    "raw_content": "1085603",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 6,
+    "prompt_tokens": 6217,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.19
+   },
+   {
+    "step": "seed",
+    "answer": "1085603",
+    "answer_has_code": true,
+    "raw_content": "1085603",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 6,
+    "prompt_tokens": 6217,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.17
+   },
+   {
+    "step": "seed",
+    "answer": "1085603",
+    "answer_has_code": true,
+    "raw_content": "1085603",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 6,
+    "prompt_tokens": 6217,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.22
+   },
+   {
+    "step": "seed",
+    "answer": "1085603",
+    "answer_has_code": true,
+    "raw_content": "1085603",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 6,
+    "prompt_tokens": 6217,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.2
+   },
+   {
+    "step": "seed",
+    "answer": "1085603",
+    "answer_has_code": true,
+    "raw_content": "1085603",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 6,
+    "prompt_tokens": 6217,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.18
+   },
+   {
+    "step": "seed",
+    "answer": "1085603",
+    "answer_has_code": true,
+    "raw_content": "1085603",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 6,
+    "prompt_tokens": 6217,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.17
+   },
+   {
+    "step": "seed",
+    "answer": "1085603",
+    "answer_has_code": true,
+    "raw_content": "1085603",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 6,
+    "prompt_tokens": 6217,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.19
+   },
+   {
+    "step": "seed",
+    "answer": "1085603",
+    "answer_has_code": true,
+    "raw_content": "1085603",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 6,
+    "prompt_tokens": 6217,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.18
+   },
+   {
+    "step": "seed",
+    "answer": "1085603",
+    "answer_has_code": true,
+    "raw_content": "1085603",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 6,
+    "prompt_tokens": 6217,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.17
+   },
+   {
+    "step": "seed",
+    "answer": "1085603",
+    "answer_has_code": true,
+    "raw_content": "1085603",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 6,
+    "prompt_tokens": 6217,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.22
+   },
+   {
+    "step": "seed",
+    "answer": "1085603",
+    "answer_has_code": true,
+    "raw_content": "1085603",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 6,
+    "prompt_tokens": 6217,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.18
+   },
+   {
+    "step": "seed",
+    "answer": "1085603",
+    "answer_has_code": true,
+    "raw_content": "1085603",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 6,
+    "prompt_tokens": 6217,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "device": 6208.0
+    },
+    "latency_s": 0.17
+   },
+   {
+    "step": "host",
+    "answer": "1085603",
+    "answer_has_code": true,
+    "raw_content": "1085603",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 6,
+    "prompt_tokens": 6217,
+    "cached_tokens": 6208,
+    "cached_tokens_details": null,
+    "tier_delta": {
+     "host": 6208.0
+    },
+    "latency_s": 0.25
+   },
+   {
+    "step": "negative",
+    "answer": "1085603",
+    "answer_has_code": true,
+    "raw_content": "1085603",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "completion_tokens": 6,
+    "prompt_tokens": 6217,
+    "cached_tokens": 0,
+    "cached_tokens_details": null,
+    "tier_delta": {},
+    "latency_s": 0.82
+   }
+  ],
+  "restart_store_kept": {
+   "ok": true,
+   "steps": "READY"
+  },
+  "fill": {
+   "pool_tokens_per_rank": 851456,
+   "requests": 821,
+   "seconds": 155.6
+  },
+  "restart_store_fresh": {
+   "ok": true,
+   "steps": "READY"
+  },
+  "answers": [
+   "1085603"
+  ],
+  "checks": {
+   "host_tier_hit": true,
+   "storage_restore": true,
+   "negative_no_hit": true,
+   "answers_identical": true,
+   "answers_correct": true
+  },
+  "pass": true
+ },
+ "check3_agentx": {
+  "probe": {},
+  "concurrency": "64",
+  "main": {
+   "requests": 1097.0,
+   "profiling_records": 1097,
+   "errors": 0,
+   "error_types": {},
+   "output_tps": 933.4,
+   "total_tps": 85401.7,
+   "output_tokens": 782694.0,
+   "ttft_ms": {
+    "avg": 25167.5,
+    "p50": 12093.4,
+    "p90": 71231.2
+   },
+   "itl_ms": {
+    "avg": 18.8,
+    "p50": 19.0,
+    "p90": 23.8
+   },
+   "request_latency_ms_avg": 40451.3,
+   "prompt_cache_read_pct": 68.8,
+   "window": [
+    "2026-11-22 13:11:56",
+    "2026-11-22 13:32:49"
+   ],
+   "profiling_window": [
+    "2026-11-22 13:16:45",
+    "2026-11-22 13:32:25"
+   ],
+   "decode": {
+    "lines": 1982,
+    "dp_ranks": 4,
+    "active_seconds_per_dp": 495.5,
+    "running_mean_total": 20.56,
+    "running_max_per_dp": 11.0,
+    "queue_mean_total": 0.0,
+    "queue_max_per_dp": 0.0,
+    "accept_len_mean": 2.394,
+    "gen_tps_mean_total": 1041.9,
+    "kv_usage_mean": 0.671,
+    "kv_usage_max": 1.0,
+    "retracted_max": 0.0,
+    "cuda_graph_lines": {
+     "True": 1982
+    }
+   },
+   "prefill_cached_tokens_delta": {
+    "host": 9686080.0,
+    "device": 23106304.0,
+    "storage": 26267008.0
+   }
+  }
+ },
+ "check4_health": {
+  "rank0": {
+   "totals": {
+    "traceback": 0,
+    "process_crash": 0,
+    "kv_transfer_error": 0,
+    "client_abort": 1,
+    "disagg_timeout": 0,
+    "mooncake_transport": 0,
+    "nixl_error": 0,
+    "oom": 0,
+    "aborted": 0,
+    "python_core_fallback": 0
+   },
+   "per_log": {
+    "/scratch/glm5lp-upstream-sync/qa/runs/gate-746e19554c/logs/cache-truth.log": {
+     "counts": {
+      "traceback": 0,
+      "process_crash": 0,
+      "kv_transfer_error": 0,
+      "client_abort": 0,
+      "disagg_timeout": 0,
+      "mooncake_transport": 0,
+      "nixl_error": 0,
+      "oom": 0,
+      "aborted": 0,
+      "python_core_fallback": 0
+     },
+     "first": {}
+    },
+    "/scratch/glm5lp-upstream-sync/qa/runs/gate-746e19554c/logs/master.0.log": {
+     "counts": {
+      "traceback": 0,
+      "process_crash": 0,
+      "kv_transfer_error": 0,
+      "client_abort": 0,
+      "disagg_timeout": 0,
+      "mooncake_transport": 0,
+      "nixl_error": 0,
+      "oom": 0,
+      "aborted": 0,
+      "python_core_fallback": 0
+     },
+     "first": {}
+    },
+    "/scratch/glm5lp-upstream-sync/qa/runs/gate-746e19554c/logs/master.1.log": {
+     "counts": {
+      "traceback": 0,
+      "process_crash": 0,
+      "kv_transfer_error": 0,
+      "client_abort": 0,
+      "disagg_timeout": 0,
+      "mooncake_transport": 0,
+      "nixl_error": 0,
+      "oom": 0,
+      "aborted": 0,
+      "python_core_fallback": 0
+     },
+     "first": {}
+    },
+    "/scratch/glm5lp-upstream-sync/qa/runs/gate-746e19554c/logs/prefill.0.log": {
+     "counts": {
+      "traceback": 0,
+      "process_crash": 0,
+      "kv_transfer_error": 0,
+      "client_abort": 1,
+      "disagg_timeout": 0,
+      "mooncake_transport": 0,
+      "nixl_error": 0,
+      "oom": 0,
+      "aborted": 0,
+      "python_core_fallback": 0
+     },
+     "first": {
+      "client_abort": "[2026-11-22 13:32:15 DP0 TP0 EP0 PID818126] Prefill bootstrap failed for request rank=0 req.rid='09d58bf9216f408f9539d61456cadaae' req.bootstrap_room=5964251537466635460 with exception KVTransferError(bootstrap_room=5964251537466635460): Aborted by AbortReq."
+     }
+    },
+    "/scratch/glm5lp-upstream-sync/qa/runs/gate-746e19554c/logs/prefill.1.log": {
+     "counts": {
+      "traceback": 0,
+      "process_crash": 0,
+      "kv_transfer_error": 0,
+      "client_abort": 0,
+      "disagg_timeout": 0,
+      "mooncake_transport": 0,
+      "nixl_error": 0,
+      "oom": 0,
+      "aborted": 0,
+      "python_core_fallback": 0
+     },
+     "first": {}
+    },
+    "/scratch/glm5lp-upstream-sync/qa/runs/gate-746e19554c/logs/prefill.2.log": {
+     "counts": {
+      "traceback": 0,
+      "process_crash": 0,
+      "kv_transfer_error": 0,
+      "client_abort": 0,
+      "disagg_timeout": 0,
+      "mooncake_transport": 0,
+      "nixl_error": 0,
+      "oom": 0,
+      "aborted": 0,
+      "python_core_fallback": 0
+     },
+     "first": {}
+    },
+    "/scratch/glm5lp-upstream-sync/qa/runs/gate-746e19554c/logs/router.0.log": {
+     "counts": {
+      "traceback": 0,
+      "process_crash": 0,
+      "kv_transfer_error": 0,
+      "client_abort": 0,
+      "disagg_timeout": 0,
+      "mooncake_transport": 0,
+      "nixl_error": 0,
+      "oom": 0,
+      "aborted": 0,
+      "python_core_fallback": 0
+     },
+     "first": {}
+    },
+    "/scratch/glm5lp-upstream-sync/qa/runs/gate-746e19554c/logs/store.0.log": {
+     "counts": {
+      "traceback": 0,
+      "process_crash": 0,
+      "kv_transfer_error": 0,
+      "client_abort": 0,
+      "disagg_timeout": 0,
+      "mooncake_transport": 0,
+      "nixl_error": 0,
+      "oom": 0,
+      "aborted": 0,
+      "python_core_fallback": 0
+     },
+     "first": {}
+    },
+    "/scratch/glm5lp-upstream-sync/qa/runs/gate-746e19554c/logs/store.1.log": {
+     "counts": {
+      "traceback": 0,
+      "process_crash": 0,
+      "kv_transfer_error": 0,
+      "client_abort": 0,
+      "disagg_timeout": 0,
+      "mooncake_transport": 0,
+      "nixl_error": 0,
+      "oom": 0,
+      "aborted": 0,
+      "python_core_fallback": 0
+     },
+     "first": {}
+    }
+   }
+  },
+  "rank1": {
+   "totals": {
+    "traceback": 0,
+    "process_crash": 0,
+    "kv_transfer_error": 0,
+    "client_abort": 10,
+    "disagg_timeout": 0,
+    "mooncake_transport": 0,
+    "nixl_error": 0,
+    "oom": 0,
+    "aborted": 0,
+    "python_core_fallback": 0
+   },
+   "per_log": {
+    "/scratch/glm5lp-upstream-sync/qa/runs/gate-746e19554c/logs/agentx-main-c64.log": {
+     "counts": {
+      "traceback": 0,
+      "process_crash": 0,
+      "kv_transfer_error": 0,
+      "client_abort": 0,
+      "disagg_timeout": 0,
+      "mooncake_transport": 0,
+      "nixl_error": 0,
+      "oom": 0,
+      "aborted": 0,
+      "python_core_fallback": 0
+     },
+     "first": {}
+    },
+    "/scratch/glm5lp-upstream-sync/qa/runs/gate-746e19554c/logs/decode.0.log": {
+     "counts": {
+      "traceback": 0,
+      "process_crash": 0,
+      "kv_transfer_error": 0,
+      "client_abort": 10,
+      "disagg_timeout": 0,
+      "mooncake_transport": 0,
+      "nixl_error": 0,
+      "oom": 0,
+      "aborted": 0,
+      "python_core_fallback": 0
+     },
+     "first": {
+      "client_abort": "[2026-11-22 13:32:16 DP3 TP3 EP3 PID464806] Decode transfer failed for request rank=3 decode_req.req.rid='6a659d85373c42a889623f407be63c6c' decode_req.req.bootstrap_room=6085329184548620452 with exception KVTransferError(bootstrap_room=6085329184548620452): Aborted by AbortReq."
+     }
+    },
+    "/scratch/glm5lp-upstream-sync/qa/runs/gate-746e19554c/logs/gsm8k-full.log": {
+     "counts": {
+      "traceback": 0,
+      "process_crash": 0,
+      "kv_transfer_error": 0,
+      "client_abort": 0,
+      "disagg_timeout": 0,
+      "mooncake_transport": 0,
+      "nixl_error": 0,
+      "oom": 0,
+      "aborted": 0,
+      "python_core_fallback": 0
+     },
+     "first": {}
+    }
+   }
+  }
+ },
+ "verdict": {
+  "check1_gsm8k_complete": true,
+  "check2_cache_truth": true,
+  "check3_agentx_zero_errors": true,
+  "check4_no_traceback": true,
+  "check4_no_process_crash": true,
+  "check4_no_transfer_error": true,
+  "check4_no_disagg_timeout": true,
+  "check4_rust_tree_core": true
+ }
+}
