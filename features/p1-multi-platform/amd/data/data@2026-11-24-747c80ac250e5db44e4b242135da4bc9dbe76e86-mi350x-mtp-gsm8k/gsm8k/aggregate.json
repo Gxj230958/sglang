@@ -1,0 +1,12 @@
+{
+  "error_rate": 0.0,
+  "finish_reasons": {
+    "length": 4,
+    "stop": 1315
+  },
+  "num_correct": 1247,
+  "num_examples": 1319,
+  "score": 0.9454131918119788,
+  "stop_rate": 0.9969673995451099,
+  "truncated_rate": 0.003032600454890068
+}
