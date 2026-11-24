@@ -1,0 +1,3 @@
+n=4096 ok=True 117us busbw=0.1GB/s
+n=1048576 ok=True 45us busbw=81.6GB/s
+n=67108864 ok=True 652us busbw=360.1GB/s

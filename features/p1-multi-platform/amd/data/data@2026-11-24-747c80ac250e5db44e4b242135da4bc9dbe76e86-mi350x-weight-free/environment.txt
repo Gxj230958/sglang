@@ -1,0 +1,23 @@
+10.0.0
+torch 2.11.0+rocm10.0.0
+triton 3.8.0
+transformers 5.19.0
+amd-aiter                                0.1.29.dev156+g581579ab5.d20261117 /sgl-workspace/aiter
+sglang-kernel                            0.4.11
+      1 GPU[0]		: Card Series: 		AMD Instinct MI350X VF
+      1 GPU[0]		: GFX Version: 		gfx950
+      1 GPU[1]		: Card Series: 		AMD Instinct MI350X VF
+      1 GPU[1]		: GFX Version: 		gfx950
+      1 GPU[2]		: Card Series: 		AMD Instinct MI350X VF
+      1 GPU[2]		: GFX Version: 		gfx950
+      1 GPU[3]		: Card Series: 		AMD Instinct MI350X VF
+      1 GPU[3]		: GFX Version: 		gfx950
+      1 GPU[4]		: Card Series: 		AMD Instinct MI350X VF
+      1 GPU[4]		: GFX Version: 		gfx950
+      1 GPU[5]		: Card Series: 		AMD Instinct MI350X VF
+      1 GPU[5]		: GFX Version: 		gfx950
+      1 GPU[6]		: Card Series: 		AMD Instinct MI350X VF
+      1 GPU[6]		: GFX Version: 		gfx950
+      1 GPU[7]		: Card Series: 		AMD Instinct MI350X VF
+      1 GPU[7]		: GFX Version: 		gfx950
+8

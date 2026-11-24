@@ -1,0 +1,92 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.0.3, pluggy-1.7.0 -- /opt/venv/bin/python
+rootdir: /sgl-workspace/sglang-zai/test
+configfile: pytest.ini
+plugins: platformdirs-4.14.5, anyio-4.16.0
+collecting ... collected 44 items
+
+test/registered/kernels/ops/attention/test_glm_loop_attention.py::TestGlmLoopAttention::test_decode_graph_replay_reads_new_queries_and_positions SKIPPED [  2%]
+test/registered/kernels/ops/attention/test_glm_loop_attention.py::TestGlmLoopAttention::test_dep_split_workspace_and_graph_replay 
+test/registered/kernels/ops/attention/test_glm_loop_attention.py::TestGlmLoopAttention::test_dep_split_workspace_and_graph_replay PASSED [  4%]
+test/registered/kernels/ops/attention/test_glm_loop_attention.py::TestGlmLoopAttention::test_flashmla_split_decode_equals_one_softmax SKIPPED [  6%]
+test/registered/kernels/ops/attention/test_glm_loop_attention.py::TestGlmLoopAttention::test_flashmla_split_decode_survives_graph_capture SKIPPED [  9%]
+test/registered/kernels/ops/attention/test_glm_loop_attention.py::TestGlmLoopAttention::test_fused_merge_is_merge_state_bit_for_bit SKIPPED [ 11%]
+test/registered/kernels/ops/attention/test_glm_loop_attention.py::TestGlmLoopAttention::test_later_cycles_share_one_window_per_forward SKIPPED [ 13%]
+test/registered/kernels/ops/attention/test_glm_loop_attention.py::TestGlmLoopAttention::test_mrope_accepts_strided_mla_heads PASSED [ 15%]
+test/registered/kernels/ops/attention/test_glm_loop_attention.py::TestGlmLoopAttention::test_mrope_into_matches_the_in_place_rotation 
+test/registered/kernels/ops/attention/test_glm_loop_attention.py::TestGlmLoopAttention::test_mrope_into_matches_the_in_place_rotation PASSED [ 18%]
+test/registered/kernels/ops/attention/test_glm_loop_attention.py::TestGlmLoopAttention::test_padded_query_reads_like_the_split_query SKIPPED [ 20%]
+test/registered/kernels/ops/attention/test_glm_loop_attention.py::TestGlmLoopAttention::test_split_decode_equals_one_softmax 
+test/registered/kernels/ops/attention/test_glm_loop_attention.py::TestGlmLoopAttention::test_split_decode_equals_one_softmax PASSED [ 22%]
+test/registered/kernels/ops/attention/test_glm_loop_attention.py::TestGlmLoopAttention::test_triton_decode_graph_replay_reads_new_queries_and_positions 
+test/registered/kernels/ops/attention/test_glm_loop_attention.py::TestGlmLoopAttention::test_triton_decode_graph_replay_reads_new_queries_and_positions PASSED [ 25%]
+test/registered/kernels/ops/attention/test_glm_loop_attention.py::TestGlmLoopAttention::test_triton_two_banks_equal_one_softmax 
+test/registered/kernels/ops/attention/test_glm_loop_attention.py::TestGlmLoopAttention::test_triton_two_banks_equal_one_softmax PASSED [ 27%]
+test/registered/kernels/ops/attention/test_glm_loop_attention.py::TestGlmLoopAttention::test_triton_two_banks_read_a_raw_fp8_cache 
+test/registered/kernels/ops/attention/test_glm_loop_attention.py::TestGlmLoopAttention::test_triton_two_banks_read_a_raw_fp8_cache PASSED [ 29%]
+test/registered/kernels/ops/attention/test_glm_loop_attention.py::TestGlmLoopAttention::test_trtllm_backend_entry_preserves_split_query_precision SKIPPED [ 31%]
+test/registered/kernels/ops/attention/test_glm_loop_attention.py::TestGlmLoopAttention::test_trtllm_backend_entry_reads_both_loop_banks SKIPPED [ 34%]
+test/registered/kernels/ops/attention/test_glm_loop_attention.py::TestGlmLoopAttention::test_trtllm_chunked_output_matches_separate_allocations SKIPPED [ 36%]
+test/registered/kernels/ops/attention/test_glm_loop_attention.py::TestGlmLoopAttention::test_trtllm_decode_graph_replay_reads_new_queries_and_positions SKIPPED [ 38%]
+test/registered/kernels/ops/attention/test_glm_loop_attention.py::TestGlmLoopAttention::test_trtllm_lse_autotune_keeps_the_workspace_bounded SKIPPED [ 40%]
+test/registered/kernels/ops/attention/test_glm_loop_attention.py::TestGlmLoopAttention::test_trtllm_split_decode_needs_a_rotated_unit_scale_query 
+test/registered/kernels/ops/attention/test_glm_loop_attention.py::TestGlmLoopAttention::test_trtllm_split_decode_needs_a_rotated_unit_scale_query PASSED [ 43%]
+test/registered/kernels/ops/attention/test_glm_loop_attention.py::TestGlmLoopAttention::test_trtllm_two_banks_equal_one_softmax SKIPPED [ 45%]
+test/registered/kernels/ops/attention/test_glm_loop_attention.py::TestGlmLoopAttention::test_two_banks_equal_one_softmax SKIPPED [ 47%]
+test/registered/kernels/ops/attention/test_glm_loop_attention.py::TestGlmLoopAttention::test_window_pool_reads_the_same_keys 
+test/registered/kernels/ops/attention/test_glm_loop_attention.py::TestGlmLoopAttention::test_window_pool_reads_the_same_keys PASSED [ 50%]
+test/registered/kernels/ops/attention/test_glm_loop_fp8_sparse_decode.py::test_matches_fp32_reference[False-8-1] SKIPPED [ 52%]
+test/registered/kernels/ops/attention/test_glm_loop_fp8_sparse_decode.py::test_matches_fp32_reference[False-8-4] SKIPPED [ 54%]
+test/registered/kernels/ops/attention/test_glm_loop_fp8_sparse_decode.py::test_matches_fp32_reference[False-8-16] SKIPPED [ 56%]
+test/registered/kernels/ops/attention/test_glm_loop_fp8_sparse_decode.py::test_matches_fp32_reference[False-16-1] SKIPPED [ 59%]
+test/registered/kernels/ops/attention/test_glm_loop_fp8_sparse_decode.py::test_matches_fp32_reference[False-16-4] SKIPPED [ 61%]
+test/registered/kernels/ops/attention/test_glm_loop_fp8_sparse_decode.py::test_matches_fp32_reference[False-16-16] SKIPPED [ 63%]
+test/registered/kernels/ops/attention/test_glm_loop_fp8_sparse_decode.py::test_matches_fp32_reference[True-8-1] SKIPPED [ 65%]
+test/registered/kernels/ops/attention/test_glm_loop_fp8_sparse_decode.py::test_matches_fp32_reference[True-8-4] SKIPPED [ 68%]
+test/registered/kernels/ops/attention/test_glm_loop_fp8_sparse_decode.py::test_matches_fp32_reference[True-8-16] SKIPPED [ 70%]
+test/registered/kernels/ops/attention/test_glm_loop_fp8_sparse_decode.py::test_matches_fp32_reference[True-16-1] SKIPPED [ 72%]
+test/registered/kernels/ops/attention/test_glm_loop_fp8_sparse_decode.py::test_matches_fp32_reference[True-16-4] SKIPPED [ 75%]
+test/registered/kernels/ops/attention/test_glm_loop_fp8_sparse_decode.py::test_matches_fp32_reference[True-16-16] SKIPPED [ 77%]
+test/registered/kernels/ops/attention/test_glm_loop_fp8_sparse_decode.py::test_every_launch_config_matches_reference[8-16] SKIPPED [ 79%]
+test/registered/kernels/ops/attention/test_glm_loop_fp8_sparse_decode.py::test_every_launch_config_matches_reference[16-16] SKIPPED [ 81%]
+test/registered/kernels/ops/attention/test_glm_loop_fp8_sparse_decode.py::test_every_launch_config_matches_reference[8-8] SKIPPED [ 84%]
+test/registered/kernels/ops/attention/test_glm_loop_fp8_sparse_decode.py::test_every_launch_config_matches_reference[16-8] SKIPPED [ 86%]
+test/registered/kernels/ops/attention/test_glm_loop_fp8_sparse_decode.py::test_every_launch_config_matches_reference[8-4] SKIPPED [ 88%]
+test/registered/kernels/ops/attention/test_glm_loop_fp8_sparse_decode.py::test_every_launch_config_matches_reference[16-4] SKIPPED [ 90%]
+test/registered/kernels/ops/attention/test_glm_loop_fp8_sparse_decode.py::test_masked_keys_and_invalid_rows SKIPPED [ 93%]
+test/registered/kernels/ops/attention/test_glm_loop_fp8_sparse_decode.py::test_strided_kv_pool_is_read_in_place SKIPPED [ 95%]
+test/registered/kernels/ops/attention/test_glm_loop_fp8_sparse_decode.py::test_padded_query_heads_are_read_in_place SKIPPED [ 97%]
+test/registered/kernels/ops/attention/test_glm_loop_fp8_sparse_decode.py::test_dispatch_runs_the_fused_kernel_only_for_fp8 SKIPPED [100%]
+
+=============================== warnings summary ===============================
+../../opt/venv/lib/python3.12/site-packages/torch/jit/_script.py:365: 14 warnings
+  /opt/venv/lib/python3.12/site-packages/torch/jit/_script.py:365: DeprecationWarning: `torch.jit.script_method` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+../../opt/venv/lib/python3.12/site-packages/Cython/Distutils/old_build_ext.py:15
+../../opt/venv/lib/python3.12/site-packages/Cython/Distutils/old_build_ext.py:15
+  /opt/venv/lib/python3.12/site-packages/Cython/Distutils/old_build_ext.py:15: DeprecationWarning: dep_util is Deprecated. Use functions from setuptools instead.
+    from distutils.dep_util import newer, newer_group
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+SKIPPED [1] test/registered/kernels/ops/attention/test_glm_loop_attention.py:915: the flashmla_sparse route needs FlashMLA
+SKIPPED [1] test/registered/kernels/ops/attention/test_glm_loop_attention.py:618: needs SM100 and a FlashMLA with the bf16 sparse decode
+SKIPPED [1] test/registered/kernels/ops/attention/test_glm_loop_attention.py:656: needs SM100 and a FlashMLA with the bf16 sparse decode
+SKIPPED [1] test/registered/kernels/ops/attention/test_glm_loop_attention.py:1126: the fused merge reproduces sgl-kernel's SM100+ merge_state_v2
+SKIPPED [1] test/registered/kernels/ops/attention/test_glm_loop_attention.py:931: the flashmla_sparse route needs FlashMLA
+SKIPPED [1] test/registered/kernels/ops/attention/test_glm_loop_attention.py:1108: the flashmla_sparse route needs FlashMLA
+SKIPPED [1] test/registered/kernels/ops/attention/test_glm_loop_attention.py:230: trtllm-gen sparse MLA needs SM100/SM103
+SKIPPED [1] test/registered/kernels/ops/attention/test_glm_loop_attention.py:208: trtllm-gen sparse MLA needs SM100/SM103
+SKIPPED [1] test/registered/kernels/ops/attention/test_glm_loop_attention.py:373: trtllm-gen sparse MLA needs SM100/SM103
+SKIPPED [1] test/registered/kernels/ops/attention/test_glm_loop_attention.py:1035: trtllm-gen sparse MLA needs SM100/SM103
+SKIPPED [1] test/registered/kernels/ops/attention/test_glm_loop_attention.py:1004: trtllm-gen sparse MLA needs SM100/SM103
+SKIPPED [1] test/registered/kernels/ops/attention/test_glm_loop_attention.py:973: trtllm-gen sparse MLA needs SM100/SM103
+SKIPPED [1] test/registered/kernels/ops/attention/test_glm_loop_attention.py:532: the flashmla_sparse route needs FlashMLA
+SKIPPED [12] test/registered/kernels/ops/attention/test_glm_loop_fp8_sparse_decode.py:85: the fused FP8 sparse decode needs SM100 / SM103 / SM107 and a CUDA 13.2+ JIT toolchain
+SKIPPED [6] test/registered/kernels/ops/attention/test_glm_loop_fp8_sparse_decode.py:96: the fused FP8 sparse decode needs SM100 / SM103 / SM107 and a CUDA 13.2+ JIT toolchain
+SKIPPED [1] test/registered/kernels/ops/attention/test_glm_loop_fp8_sparse_decode.py:118: the fused FP8 sparse decode needs SM100 / SM103 / SM107 and a CUDA 13.2+ JIT toolchain
+SKIPPED [1] test/registered/kernels/ops/attention/test_glm_loop_fp8_sparse_decode.py:131: the fused FP8 sparse decode needs SM100 / SM103 / SM107 and a CUDA 13.2+ JIT toolchain
+SKIPPED [1] test/registered/kernels/ops/attention/test_glm_loop_fp8_sparse_decode.py:140: the fused FP8 sparse decode needs SM100 / SM103 / SM107 and a CUDA 13.2+ JIT toolchain
+SKIPPED [1] test/registered/kernels/ops/attention/test_glm_loop_fp8_sparse_decode.py:160: the fused FP8 sparse decode needs SM100 / SM103 / SM107 and a CUDA 13.2+ JIT toolchain
+======= 9 passed, 35 skipped, 16 warnings, 105 subtests passed in 11.52s =======

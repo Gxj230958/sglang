@@ -1,0 +1,105 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.0.3, pluggy-1.7.0 -- /opt/venv/bin/python
+rootdir: /sgl-workspace/sglang-zai/test
+configfile: pytest.ini
+plugins: platformdirs-4.14.5, anyio-4.16.0
+collecting ... collected 75 items
+
+test/registered/unit/configs/test_glm_loop_config.py::test_vision_config_without_swiglu_limit_round_trips PASSED [  1%]
+test/registered/unit/configs/test_glm_loop_config.py::test_omitted_rope_layout_keys_keep_the_indexer_rope_interleaved PASSED [  2%]
+test/registered/unit/configs/test_glm_loop_config.py::test_config_does_not_import_a_transformers_glm_loop PASSED [  4%]
+test/registered/unit/configs/test_glm_loop_config.py::TestGlmLoopLayout::test_effective_slots_map_onto_physical_layers PASSED [  5%]
+test/registered/unit/configs/test_glm_loop_config.py::TestGlmLoopLayout::test_expansion_is_idempotent PASSED [  6%]
+test/registered/unit/configs/test_glm_loop_config.py::TestGlmLoopLayout::test_later_cycles_never_run_the_indexer PASSED [  8%]
+test/registered/unit/configs/test_glm_loop_config.py::TestGlmLoopLayout::test_mlp_layer_types_derive_the_dense_prefix PASSED [  9%]
+test/registered/unit/configs/test_glm_loop_config.py::TestGlmLoopLayout::test_mrope_layout_reaches_the_rope_factory PASSED [ 10%]
+test/registered/unit/configs/test_glm_loop_config.py::TestGlmLoopLayout::test_quantization_exclusions_follow_the_slots PASSED [ 12%]
+test/registered/unit/configs/test_glm_loop_config.py::TestGlmLoopLayout::test_rejected_layouts PASSED [ 13%]
+test/registered/unit/configs/test_glm_loop_config.py::TestGlmLoopLayout::test_single_cycle_model_runs_one_plain_pass PASSED [ 14%]
+test/registered/unit/configs/test_glm_loop_config.py::TestGlmLoopLayout::test_wrapper_mirrors_and_inherits PASSED [ 16%]
+test/registered/unit/configs/test_glm_loop_config.py::TestGlmLoopHybridSwaLayout::test_full_length_layout_unless_enabled PASSED [ 17%]
+test/registered/unit/configs/test_glm_loop_config.py::TestGlmLoopHybridSwaLayout::test_nextn_draft_keeps_its_full_attention_slot PASSED [ 18%]
+test/registered/unit/configs/test_glm_loop_config.py::TestGlmLoopHybridSwaLayout::test_window_slots_are_the_later_cycles PASSED [ 20%]
+test/registered/unit/cli/test_glm_loop_server_args.py::TestGlmLoopServerArgs::test_default_launch_resolves_onto_the_dual_bank_route PASSED [ 21%]
+test/registered/unit/cli/test_glm_loop_server_args.py::TestGlmLoopServerArgs::test_dsa_defaults_reach_the_new_architecture PASSED [ 22%]
+test/registered/unit/cli/test_glm_loop_server_args.py::TestGlmLoopServerArgs::test_encoder_only_server_skips_the_language_model_checks PASSED [ 24%]
+test/registered/unit/cli/test_glm_loop_server_args.py::TestGlmLoopServerArgs::test_fp8_kv_cache_defaults_onto_trtllm PASSED [ 25%]
+test/registered/unit/cli/test_glm_loop_server_args.py::TestGlmLoopServerArgs::test_hybrid_swa_rejects_unvalidated_deployments PASSED [ 26%]
+test/registered/unit/cli/test_glm_loop_server_args.py::TestGlmLoopServerArgs::test_hybrid_swa_sizes_the_window_sub_pool_small PASSED [ 28%]
+test/registered/unit/cli/test_glm_loop_server_args.py::TestGlmLoopServerArgs::test_language_only_server_and_its_attention_dp_transport PASSED [ 29%]
+test/registered/unit/cli/test_glm_loop_server_args.py::TestGlmLoopServerArgs::test_prefill_cp_runs_interleave_over_whole_kv_layers 
+test/registered/unit/cli/test_glm_loop_server_args.py::TestGlmLoopServerArgs::test_prefill_cp_runs_interleave_over_whole_kv_layers PASSED [ 30%]
+test/registered/unit/cli/test_glm_loop_server_args.py::TestGlmLoopServerArgs::test_recommended_deployment_is_accepted 
+test/registered/unit/cli/test_glm_loop_server_args.py::TestGlmLoopServerArgs::test_recommended_deployment_is_accepted PASSED [ 32%]
+test/registered/unit/cli/test_glm_loop_server_args.py::TestGlmLoopServerArgs::test_rejected_deployments 
+test/registered/unit/cli/test_glm_loop_server_args.py::TestGlmLoopServerArgs::test_rejected_deployments PASSED [ 33%]
+test/registered/unit/cli/test_glm_loop_server_args.py::TestGlmLoopServerArgs::test_single_cycle_skips_the_dual_bank_requirements PASSED [ 34%]
+test/registered/unit/cli/test_glm_loop_server_args.py::TestGlmLoopServerArgs::test_unrelated_model_is_untouched PASSED [ 36%]
+test/registered/unit/cli/test_glm_loop_server_args.py::TestGlmLoopServerArgsRocm::test_an_fp8_cache_stays_on_triton PASSED [ 37%]
+test/registered/unit/cli/test_glm_loop_server_args.py::TestGlmLoopServerArgsRocm::test_cuda_kernels_and_other_cache_dtypes_are_rejected 
+test/registered/unit/cli/test_glm_loop_server_args.py::TestGlmLoopServerArgsRocm::test_cuda_kernels_and_other_cache_dtypes_are_rejected PASSED [ 38%]
+test/registered/unit/cli/test_glm_loop_server_args.py::TestGlmLoopServerArgsRocm::test_default_launch_resolves_onto_triton_with_a_bf16_cache PASSED [ 40%]
+test/registered/unit/cli/test_glm_loop_server_args.py::TestGlmLoopServerArgsRocm::test_tilelang_and_the_aiter_allreduce_fusion_are_accepted PASSED [ 41%]
+test/registered/unit/models/test_glm_loop.py::test_vision_swiglu_respects_optional_clamp[None] PASSED [ 42%]
+test/registered/unit/models/test_glm_loop.py::test_vision_swiglu_respects_optional_clamp[10.0] PASSED [ 44%]
+test/registered/unit/models/test_glm_loop.py::TestLoopParameterAliasing::test_alias_modules_are_marked_for_the_loader PASSED [ 45%]
+test/registered/unit/models/test_glm_loop.py::TestLoopParameterAliasing::test_alias_requires_identical_parameter_trees PASSED [ 46%]
+test/registered/unit/models/test_glm_loop.py::TestLoopParameterAliasing::test_alias_shares_storage_but_not_slot_state PASSED [ 48%]
+test/registered/unit/models/test_glm_loop.py::TestLoopParameterAliasing::test_later_cycle_omits_the_source_indexer PASSED [ 49%]
+test/registered/unit/models/test_glm_loop.py::TestLoopParameterAliasing::test_rebind_mirrors_what_the_postprocess_left_on_the_source PASSED [ 50%]
+test/registered/unit/models/test_glm_loop.py::TestLoopParameterAliasing::test_rebind_repoints_the_router_bias_captures PASSED [ 52%]
+test/registered/unit/models/test_glm_loop.py::TestLoopParameterAliasing::test_rebind_shares_post_quantization_parameters PASSED [ 53%]
+test/registered/unit/models/test_glm_loop.py::TestLoopDampBlend::test_blend_interpolates_towards_the_cycle_output PASSED [ 54%]
+test/registered/unit/models/test_glm_loop.py::TestLoopDampBlend::test_blend_requires_the_saved_region_state PASSED [ 56%]
+test/registered/unit/models/test_glm_loop.py::TestLoopDampBlend::test_damp_beta_normalizes_the_gate_input PASSED [ 57%]
+test/registered/unit/models/test_glm_loop.py::TestLoopDampBlend::test_index_share_forces_mla_on_every_slot PASSED [ 58%]
+test/registered/unit/models/test_glm_loop.py::TestLoopDampBlend::test_slot_wiring_preserves_checkpoint_gate_names PASSED [ 60%]
+test/registered/unit/models/test_glm_loop.py::TestGlmLoopExpertLocation::test_every_later_cycle_slot_shares_its_cycle_zero_placement PASSED [ 61%]
+test/registered/unit/models/test_glm_loop.py::TestGlmLoopWeightRemap::test_damp_gate_completeness PASSED [ 62%]
+test/registered/unit/models/test_glm_loop.py::TestGlmLoopWeightRemap::test_gate_names_are_validated PASSED [ 64%]
+test/registered/unit/models/test_glm_loop.py::TestGlmLoopWeightRemap::test_mtp_layer_is_dropped_before_the_coda_shift PASSED [ 65%]
+test/registered/unit/models/test_glm_loop.py::TestGlmLoopWeightRemap::test_prefixes_and_regions PASSED [ 66%]
+test/registered/unit/models/test_glm_loop.py::TestLoopState::test_reset_drops_every_cycle_snapshot PASSED [ 68%]
+test/registered/unit/models/test_glm_loop.py::TestLoopMxfp8Experts::test_expert_parallel_experts_default_to_mxfp8 
+test/registered/unit/models/test_glm_loop.py::TestLoopMxfp8Experts::test_expert_parallel_experts_default_to_mxfp8 PASSED [ 69%]
+test/registered/unit/models/test_glm_loop.py::TestLoopPrefillGraphInputs::test_breakable_prefill_graph_binds_the_cp_local_embeddings PASSED [ 70%]
+test/registered/unit/models/test_glm_loop.py::TestLoopPaddedQuery::test_every_other_query_path_keeps_its_own_layout 
+test/registered/unit/models/test_glm_loop.py::TestLoopPaddedQuery::test_every_other_query_path_keeps_its_own_layout PASSED [ 72%]
+test/registered/unit/models/test_glm_loop.py::TestLoopPaddedQuery::test_the_serving_path_assembles_into_the_buffer PASSED [ 73%]
+test/registered/unit/models/test_glm_loop.py::TestLoopTopkSchedule::test_a_cycle_zero_slot_without_topk_is_an_error PASSED [ 74%]
+test/registered/unit/models/test_glm_loop.py::TestLoopTopkSchedule::test_an_idle_rank_carries_an_empty_selection PASSED [ 76%]
+test/registered/unit/models/test_glm_loop.py::TestLoopTopkSchedule::test_attention_output_preserves_paired_topk 
+test/registered/unit/models/test_glm_loop.py::TestLoopTopkSchedule::test_attention_output_preserves_paired_topk PASSED [ 77%]
+test/registered/unit/models/test_glm_loop.py::TestLoopTopkSchedule::test_each_later_cycle_attends_its_paired_cycle_zero_topk PASSED [ 78%]
+test/registered/unit/models/test_glm_loop.py::TestLoopTopkSchedule::test_index_share_anchor_is_held_by_reference PASSED [ 80%]
+test/registered/unit/models/test_glm_loop.py::TestLoopTopkSchedule::test_prelude_and_coda_keep_the_adjacent_chain PASSED [ 81%]
+test/registered/unit/models/test_glm_loop.py::TestLoopTopkSchedule::test_snapshots_are_released_after_the_last_cycle PASSED [ 82%]
+test/registered/unit/models/test_glm_loop.py::TestLoopRopeFusion::test_mrope_is_never_fused_into_the_trtllm_backend PASSED [ 84%]
+test/registered/unit/models/test_glm_loop.py::TestLoopWindowSlots::test_checkpoint_window_matches_the_kernel_granularity PASSED [ 85%]
+test/registered/unit/models/test_glm_loop.py::TestLoopWindowSlots::test_flashmla_window_ascends_like_the_reference PASSED [ 86%]
+test/registered/unit/models/test_glm_loop.py::TestLoopWindowSlots::test_padding_rows_read_slot_zero PASSED [ 88%]
+test/registered/unit/models/test_glm_loop.py::TestLoopWindowSlots::test_prefill_cp_window_covers_the_local_query_rows PASSED [ 89%]
+test/registered/unit/models/test_glm_loop.py::TestLoopWindowSlots::test_window_clamps_to_the_request_table PASSED [ 90%]
+test/registered/unit/models/test_glm_loop.py::TestLoopWindowSlots::test_window_is_causal_and_request_local PASSED [ 92%]
+test/registered/unit/models/test_glm_loop.py::TestLoopWindowSlots::test_window_shape_mismatch_is_rejected PASSED [ 93%]
+test/registered/unit/models/test_glm_loop.py::TestLoopWindowSlots::test_window_slot_write_carries_the_window_sub_pool_ids PASSED [ 94%]
+test/registered/unit/models/test_glm_loop.py::TestLoopDraftWeights::test_draft_computes_on_the_reference_kernels PASSED [ 96%]
+test/registered/unit/models/test_glm_loop.py::TestLoopDraftWeights::test_draft_loader_fuses_the_query_and_kv_down_projections PASSED [ 97%]
+test/registered/unit/models/test_glm_loop.py::TestLoopMlaDerivationOrder::test_an_unquantized_checkpoint_derives_once PASSED [ 98%]
+test/registered/unit/models/test_glm_loop.py::TestLoopMlaDerivationOrder::test_mla_tensors_are_rederived_after_the_quantization_postprocess PASSED [100%]
+
+=============================== warnings summary ===============================
+../../opt/venv/lib/python3.12/site-packages/torch/jit/_script.py:365: 14 warnings
+  /opt/venv/lib/python3.12/site-packages/torch/jit/_script.py:365: DeprecationWarning: `torch.jit.script_method` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+../../opt/venv/lib/python3.12/site-packages/Cython/Distutils/old_build_ext.py:15
+../../opt/venv/lib/python3.12/site-packages/Cython/Distutils/old_build_ext.py:15
+  /opt/venv/lib/python3.12/site-packages/Cython/Distutils/old_build_ext.py:15: DeprecationWarning: dep_util is Deprecated. Use functions from setuptools instead.
+    from distutils.dep_util import newer, newer_group
+
+<frozen abc>:106
+  <frozen abc>:106: DeprecationWarning: MultiPlatformOp is deprecated; subclass sglang.kernels.fused_op.BaseFusedOp instead (RFC #29630).
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+============= 75 passed, 17 warnings, 43 subtests passed in 10.42s =============
