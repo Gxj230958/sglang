@@ -1,0 +1,65 @@
+{
+  "aggregate": {
+    "error_rate": 0.0,
+    "score": 0.9103616441528686,
+    "stop_rate": 0.9875,
+    "task.mk_niah_basic": 1.0,
+    "task.mk_niah_easy": 0.9985648577612863,
+    "task.mk_niah_hard": 0.9,
+    "task.mk_niah_medium": 0.88,
+    "task.mv_niah_basic": 0.9325,
+    "task.mv_niah_easy": 0.9225,
+    "task.mv_niah_hard": 0.6718987107948006,
+    "task.mv_niah_medium": 0.8155428279450018,
+    "task.qa_basic": 1.0,
+    "task.qa_easy": 0.97,
+    "task.qa_hard": 0.9233333333333331,
+    "task.qa_medium": 0.91,
+    "truncated_rate": 0.0125
+  },
+  "base_url": "http://127.0.0.1:30000/v1",
+  "bench_args": {
+    "dataset_size": 100,
+    "seq_len": 32768,
+    "tokenizer": "/scratch/hf_home/hub/models--RadixArk--GLM-5-1028-Provider/snapshots/9c24449260e89d2d2bb6ed8f92d5f386c04ad7ff",
+    "tokenizer_type": "hf"
+  },
+  "gen": {
+    "chat_template_kwargs": null,
+    "extra_body": null,
+    "max_tokens": 8192,
+    "min_p": 0.0,
+    "reasoning_effort": null,
+    "repetition_penalty": 1.0,
+    "seed": null,
+    "system_message": null,
+    "temperature": 1.0,
+    "top_p": 0.95
+  },
+  "latency_seconds": 4275.20315694809,
+  "model": "glm-loop",
+  "n_repeats": 1,
+  "name": "ruler2",
+  "ns_commit_sha": "645cf567ff08c0ae9cc3fc8e1edbb975b3067816",
+  "num_examples": 1200,
+  "num_threads": 64,
+  "output_throughput_tps": 270.2376840554032,
+  "sgl_eval_version": "0.1.3",
+  "timestamp": "20261124-191421",
+  "token_usage": {
+    "completion_tokens": {
+      "count": 1200,
+      "mean": 962.7675
+    },
+    "prompt_tokens": {
+      "count": 1200,
+      "mean": 31010.5675
+    },
+    "reasoning_tokens": {
+      "count": 1200,
+      "mean": 638.6375
+    }
+  },
+  "total_completion_tokens": 1155321,
+  "total_prompt_tokens": 37212681
+}

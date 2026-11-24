@@ -1,0 +1,42 @@
+{
+  "id": "e39ae034584c4fbe921857355fb4b1f3",
+  "object": "chat.completion",
+  "created": 1795556262,
+  "model": "glm-loop",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Red",
+        "reasoning_content": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop",
+      "matched_stop": 154827
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 50,
+    "total_tokens": 53,
+    "completion_tokens": 3,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 25
+    },
+    "reasoning_tokens": 1,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1
+    }
+  },
+  "metadata": {
+    "weight_version": "default",
+    "weight_versions": [
+      {
+        "version": "default",
+        "start": 0,
+        "end": 3
+      }
+    ]
+  }
+}

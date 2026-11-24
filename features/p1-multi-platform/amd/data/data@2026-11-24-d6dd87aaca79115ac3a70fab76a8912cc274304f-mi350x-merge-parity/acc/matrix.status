@@ -1,0 +1,150 @@
+=== dep8-fp8 20:25:46
+pid 86627 log logs/dep8-fp8.log
+dep8-fp8 startup: /bin/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+/bin/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+== smoke start 20:27:48
+== smoke exit=0 20:27:52
+[PASS] text: answer='5' finish=stop usage={'prompt_tokens': 22, 'total_tokens': 25, 'completion_tokens': 3, 'prompt_tokens_details': {'cached_tokens': 0}, 'reasoning_tokens': 1, 'completion_tokens_details': {'reasoning_tokens': 1}} time=0.5s
+[PASS] image: answer='Red' finish=stop usage={'prompt_tokens': 50, 'total_tokens': 53, 'completion_tokens': 3, 'prompt_tokens_details': {'cached_tokens': 0, 'image_tokens': 25}, 'reasoning_tokens': 1, 'completion_tokens_details': {'reasoning_tokens': 1}} time=1.8s
+[PASS] long: answer='BLUE-4721' finish=stop usage={'prompt_tokens': 3130, 'total_tokens': 3137, 'completion_tokens': 7, 'prompt_tokens_details': {'cached_tokens': 0}, 'reasoning_tokens': 1, 'completion_tokens_details': {'reasoning_tokens': 1}} time=1.0s
+ALL PASS
+== gsm8k start 20:27:52
+== gsm8k exit=0 20:43:16
+* score                =  95.00%
+  stop_rate            =  99.92%
+  truncated_rate       =  0.08%
+  error_rate           =  0.00%
+=== dep8-hc 20:43:25
+pid 94987 log logs/dep8-hc.log
+dep8-hc startup: /bin/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+pid 103038 log logs/dep8-hc-l3.log
+dep8-hc-l3 startup: /bin/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+hicache L3 read after restart: Traceback (most recent call last):
+hicache L3 read after restart:   File "/scratch/mobius/mi350x/scripts/hicache.py", line 60, in <module>
+hicache L3 read after restart:     ref = json.load(open(state))
+hicache L3 read after restart:                     ^^^^^^^^^^^
+hicache L3 read after restart: FileNotFoundError: [Errno 2] No such file or directory: 'acc/dep8-hc/hc.json'
+=== cp8-graphs 21:00:44
+pid 111481 log logs/cp8-graphs.log
+cp8-graphs startup: /bin/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+=== tp8-hisparse 21:00:55
+pid 111776 log logs/tp8-hisparse.log
+tp8-hisparse startup: /bin/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+=== MATRIX DONE 21:01:06
+=== pd-tp4 21:01:33
+pd prefill startup: /bin/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+pd decode startup: /bin/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+/bin/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+== smoke start 21:09:18
+== smoke exit=0 21:09:27
+[PASS] text: answer='5' finish=stop usage={'prompt_tokens': 22, 'total_tokens': 25, 'completion_tokens': 3, 'prompt_tokens_details': {'cached_tokens': 0}, 'reasoning_tokens': 1, 'completion_tokens_details': {'reasoning_tokens': 1}} time=0.5s
+[PASS] image: answer='Red' finish=stop usage={'prompt_tokens': 50, 'total_tokens': 53, 'completion_tokens': 3, 'prompt_tokens_details': {'cached_tokens': 0, 'image_tokens': 25}, 'reasoning_tokens': 1, 'completion_tokens_details': {'reasoning_tokens': 1}} time=2.2s
+[PASS] long: answer='BLUE-4721' finish=stop usage={'prompt_tokens': 3130, 'total_tokens': 3137, 'completion_tokens': 7, 'prompt_tokens_details': {'cached_tokens': 0}, 'reasoning_tokens': 1, 'completion_tokens_details': {'reasoning_tokens': 1}} time=6.6s
+ALL PASS
+== gsm8k start 21:09:27
+== gsm8k exit=0 21:27:23
+* score                =  94.16%
+  stop_rate            =  99.77%
+  truncated_rate       =  0.23%
+  error_rate           =  0.00%
+=== PD DONE 21:27:31
+=== MATRIX2 start 21:27:33 src=e97f735004+wt
+=== cp8-graphs 21:27:33
+pid 122751 log logs/cp8-graphs.log
+cp8-graphs startup: SERVER EXITED
+=== tp8-hisparse 21:29:02
+pid 126797 log logs/tp8-hisparse.log
+tp8-hisparse startup: SERVER EXITED
+=== dep8-hc 21:30:40
+pid 130851 log logs/dep8-hc.log
+dep8-hc startup: READY
+/bin/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+== smoke start 21:37:40
+== smoke exit=0 21:37:43
+[PASS] text: answer='5' finish=stop usage={'prompt_tokens': 22, 'total_tokens': 25, 'completion_tokens': 3, 'prompt_tokens_details': {'cached_tokens': 0}, 'reasoning_tokens': 1, 'completion_tokens_details': {'reasoning_tokens': 1}} time=0.3s
+[PASS] image: answer='Red' finish=stop usage={'prompt_tokens': 50, 'total_tokens': 53, 'completion_tokens': 3, 'prompt_tokens_details': {'cached_tokens': 0, 'image_tokens': 25}, 'reasoning_tokens': 1, 'completion_tokens_details': {'reasoning_tokens': 1}} time=0.9s
+[PASS] long: answer='BLUE-4721' finish=stop usage={'prompt_tokens': 3130, 'total_tokens': 3137, 'completion_tokens': 7, 'prompt_tokens_details': {'cached_tokens': 0}, 'reasoning_tokens': 1, 'completion_tokens_details': {'reasoning_tokens': 1}} time=1.1s
+ALL PASS
+== gsm8k start 21:37:43
+== gsm8k exit=0 21:54:52
+* score                =  94.77%
+  stop_rate            =  99.47%
+  truncated_rate       =  0.53%
+  error_rate           =  0.00%
+hicache L2 ref: write 6689 0 length False ['The', ' user', ' wants', ' me', ' to', ' list', ' the', ' codes', ' of', ' Records', ' ', '25', '3', ',', ' ', '25', '4', ',', ' ', '255', ',', ' ', '3', ',', ' and', ' ', '50', '5', ',', ' separated', ' by', ' commas', '.\n\n', 'Let', ' me', ' find', ' each', ' one', ':\
+hicache L2 fill 260: fill 260
+hicache L2 read: read 6689 6656 length False same_tokens True max_abs_logprob_diff 0.21906587481498718 bitwise False
+pid 140099 log logs/dep8-hc-l3.log
+dep8-hc-l3 startup: READY
+hicache L3 read after restart: read 6689 6656 length False same_tokens True max_abs_logprob_diff 0.20656359195709229 bitwise False
+=== MATRIX2 DONE 22:10:45
+=== cp8-eager 22:11:54
+pid 148829 log logs/cp8-eager.log
+cp8-eager startup: ERROR IN LOG
+=== cp8-eager 22:16:08
+pid 156346 log logs/cp8-eager.log
+cp8-eager startup: ERROR IN LOG
+=== cp8-eager 22:18:40
+pid 163642 log logs/cp8-eager.log
+cp8-eager startup: ERROR IN LOG
+=== RUNS3 start 22:21:23 src=e97f735004+wt
+=== cp8-graphs 22:21:23
+pid 171031 log logs/cp8-graphs.log
+cp8-graphs startup: SERVER EXITED
+=== tp8-hisparse 22:22:53
+pid 177199 log logs/tp8-hisparse.log
+tp8-hisparse startup: READY
+/bin/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+== smoke start 22:28:46
+== smoke exit=0 22:28:52
+[PASS] text: answer='5' finish=stop usage={'prompt_tokens': 22, 'total_tokens': 25, 'completion_tokens': 3, 'prompt_tokens_details': {'cached_tokens': 0}, 'reasoning_tokens': 1, 'completion_tokens_details': {'reasoning_tokens': 1}} time=0.3s
+[PASS] image: answer='Red' finish=stop usage={'prompt_tokens': 50, 'total_tokens': 53, 'completion_tokens': 3, 'prompt_tokens_details': {'cached_tokens': 0, 'image_tokens': 25}, 'reasoning_tokens': 1, 'completion_tokens_details': {'reasoning_tokens': 1}} time=0.7s
+[PASS] long: answer='BLUE-4721' finish=stop usage={'prompt_tokens': 3130, 'total_tokens': 3137, 'completion_tokens': 7, 'prompt_tokens_details': {'cached_tokens': 0}, 'reasoning_tokens': 1, 'completion_tokens_details': {'reasoning_tokens': 1}} time=4.9s
+ALL PASS
+== gsm8k start 22:28:52
+== gsm8k exit=0 22:52:23
+* score                =  94.77%
+  stop_rate            =  99.70%
+  truncated_rate       =  0.30%
+  error_rate           =  0.00%
+=== RUNS3 DONE 22:53:16
+=== cp8-eager 22:53:30
+pid 185976 log logs/cp8-eager.log
+cp8-eager startup: SERVER EXITED
+=== RUNS4 start 22:55:45 src=e97f735004+wt
+=== cp8-graphs 22:55:45
+pid 190497 log logs/cp8-graphs.log
+cp8-graphs startup: READY
+/bin/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+== smoke start 22:58:42
+== smoke exit=0 22:58:44
+[PASS] text: answer='5' finish=stop usage={'prompt_tokens': 22, 'total_tokens': 25, 'completion_tokens': 3, 'prompt_tokens_details': {'cached_tokens': 0}, 'reasoning_tokens': 1, 'completion_tokens_details': {'reasoning_tokens': 1}} time=0.2s
+[PASS] image: answer='Red' finish=stop usage={'prompt_tokens': 50, 'total_tokens': 53, 'completion_tokens': 3, 'prompt_tokens_details': {'cached_tokens': 0, 'image_tokens': 25}, 'reasoning_tokens': 1, 'completion_tokens_details': {'reasoning_tokens': 1}} time=0.7s
+[PASS] long: answer='BLUE-4721' finish=stop usage={'prompt_tokens': 3130, 'total_tokens': 3137, 'completion_tokens': 7, 'prompt_tokens_details': {'cached_tokens': 0}, 'reasoning_tokens': 1, 'completion_tokens_details': {'reasoning_tokens': 1}} time=0.3s
+ALL PASS
+== gsm8k start 22:58:44
+== gsm8k exit=0 23:21:55
+* score                =  94.54%
+  stop_rate            =  99.62%
+  truncated_rate       =  0.38%
+  error_rate           =  0.00%
+=== RUNS4 DONE 23:22:11
+=== FINAL start 23:22:34 src=d6dd87aaca
+glm_loop_attention test: 11 passed, 15 skipped, 16 warnings, 117 subtests passed in 12.52s
+=== final-tp8-mtp 23:22:51
+pid 199667 log logs/final-tp8-mtp.log
+final-tp8-mtp startup: READY
+/bin/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+== smoke start 23:24:59
+== smoke exit=0 23:25:04
+[PASS] text: answer='5' finish=stop usage={'prompt_tokens': 22, 'total_tokens': 25, 'completion_tokens': 3, 'prompt_tokens_details': {'cached_tokens': 0}, 'reasoning_tokens': 1, 'completion_tokens_details': {'reasoning_tokens': 1}} time=0.2s
+[PASS] image: answer='Red' finish=stop usage={'prompt_tokens': 50, 'total_tokens': 53, 'completion_tokens': 3, 'prompt_tokens_details': {'cached_tokens': 0, 'image_tokens': 25}, 'reasoning_tokens': 1, 'completion_tokens_details': {'reasoning_tokens': 1}} time=0.7s
+[PASS] long: answer='BLUE-4721' finish=stop usage={'prompt_tokens': 3130, 'total_tokens': 3137, 'completion_tokens': 7, 'prompt_tokens_details': {'cached_tokens': 0}, 'reasoning_tokens': 1, 'completion_tokens_details': {'reasoning_tokens': 1}} time=4.4s
+ALL PASS
+== gsm8k start 23:25:04
+== gsm8k exit=0 23:39:08
+* score                =  94.84%
+  stop_rate            =  99.47%
+  truncated_rate       =  0.53%
+  error_rate           =  0.00%
+=== FINAL DONE 23:39:19

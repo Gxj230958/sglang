@@ -1,0 +1,75 @@
+20:25:47 ranks=0 log+=00:00 bs=- evicted= gfx=
+20:26:02 ranks=0 log+=00:00 bs=- evicted= gfx=
+20:26:18 ranks=8 log+=00:00 bs=- evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%
+20:26:33 ranks=8 log+=00:00 bs=- evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%
+20:26:47 ranks=8 log+=00:00 bs=32 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%
+20:27:02 ranks=8 log+=00:00 bs=32 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%
+20:27:17 ranks=8 log+=00:00 bs=32 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%
+20:27:32 ranks=8 log+=00:00 bs=4 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%
+20:27:48 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%
+20:28:03 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%
+20:28:18 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%
+20:28:33 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%
+20:28:48 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%
+20:29:03 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%
+20:29:18 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 90s
+    stacks -> /scratch/mobius/mi350x/logs/dep8-fp8.doctor/202918: tp0: ok tp1: ok tp2: ok tp3: ok tp4: ok tp5: ok tp6: ok tp7: ok
+20:29:33 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 105s
+20:29:48 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 120s
+20:30:03 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 135s
+20:30:18 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 150s
+20:30:33 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 165s
+20:30:48 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 180s
+20:31:03 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 195s
+20:31:18 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 210s
+20:31:33 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 225s
+20:31:48 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 240s
+20:32:03 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 255s
+20:32:18 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 270s
+20:32:33 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 285s
+20:32:48 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 300s
+20:33:03 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 315s
+20:33:18 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 330s
+20:33:33 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 345s
+20:33:48 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 360s
+20:34:03 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 375s
+20:34:18 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 390s
+    stacks -> /scratch/mobius/mi350x/logs/dep8-fp8.doctor/203418: tp0: ok tp1: ok tp2: ok tp3: ok tp4: ok tp5: ok tp6: ok tp7: ok
+20:34:33 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 405s
+20:34:48 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 420s
+20:35:03 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 435s
+20:35:18 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 450s
+20:35:33 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 465s
+20:35:48 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 480s
+20:36:03 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 495s
+20:36:18 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 510s
+20:36:33 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 525s
+20:36:48 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 540s
+20:37:03 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 555s
+20:37:18 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 570s
+20:37:33 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 585s
+20:37:48 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 600s
+20:38:03 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 615s
+20:38:18 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 630s
+20:38:33 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 645s
+20:38:48 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 660s
+20:39:03 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 675s
+20:39:18 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 690s
+    stacks -> /scratch/mobius/mi350x/logs/dep8-fp8.doctor/203918: tp0: ok tp1: ok tp2: ok tp3: ok tp4: ok tp5: ok tp6: ok tp7: ok
+20:39:33 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 705s
+20:39:48 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 720s
+20:40:03 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 735s
+20:40:18 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 750s
+20:40:33 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 765s
+20:40:48 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 780s
+20:41:03 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 795s
+20:41:18 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 810s
+20:41:33 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 825s
+20:41:48 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 840s
+20:42:03 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 855s
+20:42:18 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 870s
+20:42:33 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 885s
+20:42:48 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 900s
+20:43:03 ranks=8 log+=00:00 bs=1 evicted=0%,0%,0%,0%,0%,0%,0%,0% gfx=0%,0%,0%,0%,0%,0%,0%,0%  ALERT: capture bs=1 for 915s
+20:43:17 ranks=0 log+=00:00 bs=1 evicted= gfx=  ALERT: capture bs=1 for 930s
+20:43:32 server gone

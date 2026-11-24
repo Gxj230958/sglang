@@ -1,0 +1,8 @@
+WARNING: could not read the endpoint's context length; ruler2 at seq_len=32768 needs 40960 tokens including room to answer. Too small shows up as error_rate near 100%.
+Run directory: /scratch/mobius/mi350x/acc/merge-mtp/ruler2/sgl_eval_ruler2_20261124-191319
+  generating ruler2/mk_niah_basic at 32768 tokens (100 samples)...
+/bin/python: Error while finding module specification for 'sgl_eval._vendored.nemo_skills.dataset.ruler2.prepare_niah' (ModuleNotFoundError: No module named 'sgl_eval')
+error: ruler2 mk_niah_basic generation failed (exit 1).
+RULER2 dataset generation needs the `longcontext` extra:
+    pip install 'sgl-eval[longcontext]'
+(transformers, nltk, wonderwords, inflect). Scoring an already-generated dataset does not need them.
