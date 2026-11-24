@@ -1,0 +1,1 @@
+rank 0: 40000-token prefill 2.5s, follow-up cached 39936

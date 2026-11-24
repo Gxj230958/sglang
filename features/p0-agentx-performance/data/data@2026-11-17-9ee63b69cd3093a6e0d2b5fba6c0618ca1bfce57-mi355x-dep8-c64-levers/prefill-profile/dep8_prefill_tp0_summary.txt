@@ -1,0 +1,33 @@
+kernels=25916 span=11165.6 ms busy(sum)=9576.1 ms busy(merged)=9574.4 ms (86%)
+gaps: n=25872 median=0.0 us p90=0.0 us sum=1606.0 ms; sum(gaps<20us)=7.9 ms
+ time_ms     %  count  avg_us  name
+ 3354.18 35.0%   1284  2612.3  ncclDevKernel_Generic_1(ncclDevKernelArgsStorage
+ 2191.87 22.9%    624  3512.6  aiter::fmoe_bf16_blockscaleFp8_g1u1_vs_silu_1tg_ps_32x256
+ 1300.32 13.6%    474  2743.3  _sparse_mla_fwd_split_dim_kernel
+  881.67  9.2%   2832   311.3  void ck::kernel_gemm_xdl_cshuffle_v3_multi_d_blockscale_b_preshuffle
+  692.86  7.2%    336  2062.1  _sparse_mla_fused_kernel
+  203.98  2.1%   4098    49.8  _ZN5aiter37dynamic_per_group_scaled_quant_kernelIDF16bDB8_Li32ELi128ELb1ELi64ELb0ELb0ELi0ELb0ELb0ELb0ELb0ELb0E
+  175.94  1.8%   1284   137.0  _batched_gemm_a8w8_a_per_token_group_prequant_w_per_batched_tensor_quant_kernel_HAS_BIAS_0_BLOCK_SIZE_M_64_BLO
+  156.27  1.6%   2628    59.5  void at::native::vectorized_elementwise_kernel
+  111.25  1.2%    132   842.8  _gluon_fp8_mqa_logits_kernel_NUM_HEADS_32_HEAD_SIZE_128_BLOCK_KV_64_NUM_WARPS_2_NUM_BUFFERS_2_NUM_CHAINS_2_USE
+   79.65  0.8%    774   102.9  _triton_mrope_forward_fused
+   79.06  0.8%   2496    31.7  void aiter::opus_moe_sorting_entry
+   76.01  0.8%    132   575.9  void sgl::dsa_topk::coop_topk_kernel
+   70.39  0.7%    624   112.8  Cijk_Alik_Bljk_BBS_BH_Bias_HA_S_SAV_UserArgs_MT256x128x64_MI16x16x1_SN_LDSB0_AFC0_AG1_AGGSUA0_AGNTAB0_AFEM1_AF
+   42.00  0.4%   1308    32.1  void aiter::add_rmsnorm_quant_kernel
+   41.74  0.4%    642    65.0  _ZN7ck_tile6kentryINS_11kernel_attrILb1EEELi4ENS_21QuantGemmMultiDKernelINS_21GemmTile1DPartitionerINS_13TileG
+   30.10  0.3%    168   179.1  _merge_attn_banks_kernel
+   17.73  0.2%    666    26.6  memcpy_triton_kernel
+   14.92  0.2%    624    23.9  void aiter::topk_reg_kernel
+   11.20  0.1%    642    17.4  _ZN7sgl_hip10activation18act_and_mul_kernelI14__hip_bfloat16TnPFT_RKS3_EXadL_Z4siluIS2_ES3_S5_EEEEvPS3_PS4_i
+    6.88  0.1%    264    26.1  void fast_hadamard_transform_kernel
+    6.55  0.1%    642    10.2  void aiter::fused_qk_rmsnorm_kernel
+    6.23  0.1%    474    13.2  set_mla_kv_buffer_fp8_quant_kernel
+    4.57  0.0%    573     8.0  void at::native::elementwise_kernel_manual_unroll
+    3.28  0.0%    512     6.4  Memcpy DtoD (Device -> Device)
+    2.53  0.0%      6   421.5  Cijk_Alik_Bljk_BBS_BH_Bias_HA_S_SAV_UserArgs_MT192x256x64_MI16x16x1_CMS_SN_LDSB0_AFC0_AG0_AGGSUA0_AGNTAB0_AFEM
+    2.37  0.0%    132    17.9  act_quant_kernel__kernel
+    2.09  0.0%    132    15.8  Cijk_Alik_Bljk_BBS_BH_Bias_HA_S_SAV_UserArgs_MT32x16x1024_MI16x16x1_SN_LDSB1_AFC0_AG0_AGGSUA0_AGNTAB0_AFEM1_AF
+    2.01  0.0%    273     7.4  void at::native::index_elementwise_kernel
+    0.85  0.0%    210     4.0  void rocprim::ROCPRIM_400600_NS::detail::trampoline_kernel
+    0.84  0.0%     14    60.3  alloc_extend_kernel

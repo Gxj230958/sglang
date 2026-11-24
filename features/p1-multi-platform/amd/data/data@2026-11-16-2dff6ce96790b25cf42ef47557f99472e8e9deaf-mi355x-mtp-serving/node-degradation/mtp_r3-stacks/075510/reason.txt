@@ -1,0 +1,1 @@
+log silent 345s; capture bs=1 for 390s

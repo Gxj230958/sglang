@@ -1,0 +1,59 @@
+pid 35603 log logs/dep8_hc.log doctor logs/dep8_hc.doctor.log
+[2026-11-17 02:36:16 DP3 TP3 EP3 PID35881] Load weight end. elapsed=15.71 s, type=GlmLoopForConditionalGeneration, quant=fp8, fmt=e4m3, avail mem=179.41 GB, mem usage=101.68 GB.
+[2026-11-17 02:36:16 DP7 TP7 EP7 PID35885] Load weight end. elapsed=15.76 s, type=GlmLoopForConditionalGeneration, quant=fp8, fmt=e4m3, avail mem=179.53 GB, mem usage=101.68 GB.
+[2026-11-17 02:36:16 DP0 TP0 EP0 PID35878] Load weight end. elapsed=15.86 s, type=GlmLoopForConditionalGeneration, quant=fp8, fmt=e4m3, avail mem=179.84 GB, mem usage=101.68 GB.
+[2026-11-17 02:36:17 DP6 TP6 EP6 PID35884] Load weight end. elapsed=16.45 s, type=GlmLoopForConditionalGeneration, quant=fp8, fmt=e4m3, avail mem=179.53 GB, mem usage=101.68 GB.
+[2026-11-17 02:36:17 DP2 TP2 EP2 PID35880] Load weight end. elapsed=16.61 s, type=GlmLoopForConditionalGeneration, quant=fp8, fmt=e4m3, avail mem=179.41 GB, mem usage=101.68 GB.
+[2026-11-17 02:36:17 DP1 TP1 EP1 PID35879] Load weight end. elapsed=16.66 s, type=GlmLoopForConditionalGeneration, quant=fp8, fmt=e4m3, avail mem=179.41 GB, mem usage=101.68 GB.
+[2026-11-17 02:36:17 DP4 TP4 EP4 PID35882] Load weight end. elapsed=17.10 s, type=GlmLoopForConditionalGeneration, quant=fp8, fmt=e4m3, avail mem=179.47 GB, mem usage=101.68 GB.
+[2026-11-17 02:36:17 DP5 TP5 EP5 PID35883] Load weight end. elapsed=17.20 s, type=GlmLoopForConditionalGeneration, quant=fp8, fmt=e4m3, avail mem=179.53 GB, mem usage=101.68 GB.
+Multi-thread loading shards:   0% Completed | 0/142 [00:00<?, ?it/s]Multi-thread loading shards:   1% Completed | 2/142 [00:00<00:15,  9.02it/s]Multi-thread loading shards:   9% Completed | 13/142 [00:00<00:02, 47.05it/s]Multi-thread loading shards:  17% Completed | 24/142 [00:00<00:01, 67.65it/
+[2026-11-17 02:36:23 DP0 TP0 EP0 PID35878] Load weight end. elapsed=2.26 s, type=GlmLoopForConditionalGenerationNextN, quant=fp8, fmt=e4m3, avail mem=176.35 GB, mem usage=3.46 GB.
+[2026-11-17 02:36:23 DP5 TP5 EP5 PID35883] Load weight end. elapsed=2.30 s, type=GlmLoopForConditionalGenerationNextN, quant=fp8, fmt=e4m3, avail mem=176.04 GB, mem usage=3.46 GB.
+[2026-11-17 02:36:23 DP6 TP6 EP6 PID35884] Load weight end. elapsed=2.40 s, type=GlmLoopForConditionalGenerationNextN, quant=fp8, fmt=e4m3, avail mem=176.04 GB, mem usage=3.46 GB.
+ALIVE
+l2-a.json 6/6 correct 6/6 stop cached [0, 6656, 6656, 0, 6656, 6656]
+fill rc=0 fill 260
+[2026-11-17 02:43:25 DP3 TP3 EP3 PID35881] Prefill batch, #new-seq: 1, #new-token: 2114, #cached-token: 0, full token usage: 0.02, window_128 token usage: 0.01, #running-req: 3, #queue-req: 0, #pending-token: 0, cuda graph: False, input throughput (token/s): 4
+l2-b.json 6/6 correct 6/6 stop cached [6656, 6656, 6656, 6656, 6656, 6656]
+l2 done 02:43:28
+1319 examples (single-shot)  |  5669.4s  |  289 tok/s  |  1.6M tokens
+* score                =  95.45%
+  stop_rate            =  99.85%
+  truncated_rate       =  0.15%
+ALIVE_AT_END
+94 94 94 94 94 94 94 94 
+pid 55881 log logs/dep8_l3a.log doctor logs/dep8_l3a.doctor.log
+[2026-11-17 04:19:28 DP0 TP0 EP0 PID56177] Load weight end. elapsed=15.82 s, type=GlmLoopForConditionalGeneration, quant=fp8, fmt=e4m3, avail mem=173.50 GB, mem usage=101.68 GB.
+[2026-11-17 04:19:28 DP6 TP6 EP6 PID56183] Load weight end. elapsed=15.92 s, type=GlmLoopForConditionalGeneration, quant=fp8, fmt=e4m3, avail mem=172.81 GB, mem usage=101.68 GB.
+[2026-11-17 04:19:28 DP4 TP4 EP4 PID56181] Load weight end. elapsed=16.12 s, type=GlmLoopForConditionalGeneration, quant=fp8, fmt=e4m3, avail mem=173.12 GB, mem usage=101.68 GB.
+[2026-11-17 04:19:28 DP2 TP2 EP2 PID56179] Load weight end. elapsed=16.15 s, type=GlmLoopForConditionalGeneration, quant=fp8, fmt=e4m3, avail mem=172.19 GB, mem usage=101.68 GB.
+[2026-11-17 04:19:29 DP3 TP3 EP3 PID56180] Load weight end. elapsed=16.78 s, type=GlmLoopForConditionalGeneration, quant=fp8, fmt=e4m3, avail mem=172.19 GB, mem usage=101.68 GB.
+[2026-11-17 04:19:29 DP1 TP1 EP1 PID56178] Load weight end. elapsed=16.84 s, type=GlmLoopForConditionalGeneration, quant=fp8, fmt=e4m3, avail mem=172.19 GB, mem usage=101.68 GB.
+[2026-11-17 04:19:29 DP5 TP5 EP5 PID56182] Load weight end. elapsed=16.85 s, type=GlmLoopForConditionalGeneration, quant=fp8, fmt=e4m3, avail mem=173.06 GB, mem usage=101.68 GB.
+[2026-11-17 04:19:29 DP7 TP7 EP7 PID56184] Load weight end. elapsed=16.90 s, type=GlmLoopForConditionalGeneration, quant=fp8, fmt=e4m3, avail mem=172.56 GB, mem usage=101.68 GB.
+Multi-thread loading shards:   0% Completed | 0/142 [00:00<?, ?it/s]Multi-thread loading shards:   1% Completed | 2/142 [00:00<00:16,  8.63it/s]Multi-thread loading shards:   8% Completed | 12/142 [00:00<00:02, 43.43it/s]Multi-thread loading shards:  16% Completed | 23/142 [00:00<00:01, 65.21it/
+[2026-11-17 04:19:35 DP0 TP0 EP0 PID56177] Load weight end. elapsed=2.29 s, type=GlmLoopForConditionalGenerationNextN, quant=fp8, fmt=e4m3, avail mem=170.01 GB, mem usage=3.46 GB.
+[2026-11-17 04:19:35 DP6 TP6 EP6 PID56183] Load weight end. elapsed=2.34 s, type=GlmLoopForConditionalGenerationNextN, quant=fp8, fmt=e4m3, avail mem=169.32 GB, mem usage=3.46 GB.
+[2026-11-17 04:19:35 DP5 TP5 EP5 PID56182] Load weight end. elapsed=2.42 s, type=GlmLoopForConditionalGenerationNextN, quant=fp8, fmt=e4m3, avail mem=169.57 GB, mem usage=3.46 GB.
+ALIVE
+l3-a.json 6/6 correct 6/6 stop cached [0, 6656, 6656, 0, 6656, 6656]
+store files 328 932M
+93 94 94 94 93 93 93 93 
+pid 63779 log logs/dep8_l3b.log doctor logs/dep8_l3b.doctor.log
+[2026-11-17 04:24:32 DP0 TP0 EP0 PID64075] Load weight end. elapsed=15.78 s, type=GlmLoopForConditionalGeneration, quant=fp8, fmt=e4m3, avail mem=168.53 GB, mem usage=101.68 GB.
+[2026-11-17 04:24:32 DP6 TP6 EP6 PID64081] Load weight end. elapsed=15.93 s, type=GlmLoopForConditionalGeneration, quant=fp8, fmt=e4m3, avail mem=167.53 GB, mem usage=101.68 GB.
+[2026-11-17 04:24:32 DP2 TP2 EP2 PID64077] Load weight end. elapsed=16.37 s, type=GlmLoopForConditionalGeneration, quant=fp8, fmt=e4m3, avail mem=166.78 GB, mem usage=101.68 GB.
+[2026-11-17 04:24:33 DP3 TP3 EP3 PID64078] Load weight end. elapsed=16.74 s, type=GlmLoopForConditionalGeneration, quant=fp8, fmt=e4m3, avail mem=166.78 GB, mem usage=101.68 GB.
+[2026-11-17 04:24:33 DP4 TP4 EP4 PID64079] Load weight end. elapsed=16.78 s, type=GlmLoopForConditionalGeneration, quant=fp8, fmt=e4m3, avail mem=167.78 GB, mem usage=101.68 GB.
+[2026-11-17 04:24:33 DP5 TP5 EP5 PID64080] Load weight end. elapsed=16.81 s, type=GlmLoopForConditionalGeneration, quant=fp8, fmt=e4m3, avail mem=167.78 GB, mem usage=101.68 GB.
+[2026-11-17 04:24:33 DP7 TP7 EP7 PID64082] Load weight end. elapsed=17.19 s, type=GlmLoopForConditionalGeneration, quant=fp8, fmt=e4m3, avail mem=167.28 GB, mem usage=101.68 GB.
+[2026-11-17 04:24:34 DP1 TP1 EP1 PID64076] Load weight end. elapsed=17.60 s, type=GlmLoopForConditionalGeneration, quant=fp8, fmt=e4m3, avail mem=166.78 GB, mem usage=101.68 GB.
+[2026-11-17 04:24:40 DP0 TP0 EP0 PID64075] Load weight end. elapsed=2.10 s, type=GlmLoopForConditionalGenerationNextN, quant=fp8, fmt=e4m3, avail mem=165.04 GB, mem usage=3.46 GB.
+[2026-11-17 04:24:40 DP1 TP1 EP1 PID64076] Load weight end. elapsed=2.21 s, type=GlmLoopForConditionalGenerationNextN, quant=fp8, fmt=e4m3, avail mem=163.29 GB, mem usage=3.46 GB.
+[2026-11-17 04:24:40 DP2 TP2 EP2 PID64077] Load weight end. elapsed=2.28 s, type=GlmLoopForConditionalGenerationNextN, quant=fp8, fmt=e4m3, avail mem=163.29 GB, mem usage=3.46 GB.
+[2026-11-17 04:24:40 DP5 TP5 EP5 PID64080] Load weight end. elapsed=2.40 s, type=GlmLoopForConditionalGenerationNextN, quant=fp8, fmt=e4m3, avail mem=164.29 GB, mem usage=3.46 GB.
+ALIVE
+l3-b.json 6/6 correct 6/6 stop cached [6656, 6656, 6656, 6656, 6656, 6656]
+prefetch success lines: 2
+DONE

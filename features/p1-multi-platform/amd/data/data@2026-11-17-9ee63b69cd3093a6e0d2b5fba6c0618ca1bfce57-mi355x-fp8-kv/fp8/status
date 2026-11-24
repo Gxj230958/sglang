@@ -1,0 +1,29 @@
+numcheck bf16 reused (16 problems)
+pid 143207 log logs/dep8_fp8.log doctor logs/dep8_fp8.doctor.log
+[2026-11-17 06:23:24 DP1 TP1 EP1 PID143482] Load weight end. elapsed=15.78 s, type=GlmLoopForConditionalGeneration, quant=fp8, fmt=e4m3, avail mem=139.28 GB, mem usage=101.68 GB.
+[2026-11-17 06:23:25 DP4 TP4 EP4 PID143485] Load weight end. elapsed=16.11 s, type=GlmLoopForConditionalGeneration, quant=fp8, fmt=e4m3, avail mem=139.84 GB, mem usage=101.68 GB.
+[2026-11-17 06:23:25 DP5 TP5 EP5 PID143486] Load weight end. elapsed=16.22 s, type=GlmLoopForConditionalGeneration, quant=fp8, fmt=e4m3, avail mem=140.40 GB, mem usage=101.68 GB.
+[2026-11-17 06:23:25 DP7 TP7 EP7 PID143488] Load weight end. elapsed=16.25 s, type=GlmLoopForConditionalGeneration, quant=fp8, fmt=e4m3, avail mem=140.40 GB, mem usage=101.68 GB.
+[2026-11-17 06:23:25 DP0 TP0 EP0 PID143481] Load weight end. elapsed=16.48 s, type=GlmLoopForConditionalGeneration, quant=fp8, fmt=e4m3, avail mem=143.21 GB, mem usage=101.68 GB.
+[2026-11-17 06:23:25 DP6 TP6 EP6 PID143487] Load weight end. elapsed=16.85 s, type=GlmLoopForConditionalGeneration, quant=fp8, fmt=e4m3, avail mem=140.40 GB, mem usage=101.68 GB.
+[2026-11-17 06:23:25 DP3 TP3 EP3 PID143484] Load weight end. elapsed=16.94 s, type=GlmLoopForConditionalGeneration, quant=fp8, fmt=e4m3, avail mem=139.28 GB, mem usage=101.68 GB.
+[2026-11-17 06:23:26 DP2 TP2 EP2 PID143483] Load weight end. elapsed=17.15 s, type=GlmLoopForConditionalGeneration, quant=fp8, fmt=e4m3, avail mem=139.28 GB, mem usage=101.68 GB.
+[2026-11-17 06:23:31 DP5 TP5 EP5 PID143486] Load weight end. elapsed=1.95 s, type=GlmLoopForConditionalGenerationNextN, quant=fp8, fmt=e4m3, avail mem=136.98 GB, mem usage=3.42 GB.
+[2026-11-17 06:23:32 DP7 TP7 EP7 PID143488] Load weight end. elapsed=2.15 s, type=GlmLoopForConditionalGenerationNextN, quant=fp8, fmt=e4m3, avail mem=136.98 GB, mem usage=3.42 GB.
+[2026-11-17 06:23:32 DP1 TP1 EP1 PID143482] Load weight end. elapsed=2.35 s, type=GlmLoopForConditionalGenerationNextN, quant=fp8, fmt=e4m3, avail mem=135.86 GB, mem usage=3.42 GB.
+[2026-11-17 06:23:32 DP6 TP6 EP6 PID143487] Load weight end. elapsed=2.40 s, type=GlmLoopForConditionalGenerationNextN, quant=fp8, fmt=e4m3, avail mem=136.98 GB, mem usage=3.42 GB.
+ALIVE
+[2026-11-17 06:23:33 DP0 TP0 EP0 PID143481] Use sliding window memory pool. full_layer_tokens=2138112, swa_layer_tokens=213760
+[2026-11-17 06:23:33 DP0 TP0 EP0 PID143481] KV Cache is allocated. dtype: torch.float8_e4m3fn, #tokens: 2138112, KV size: 94.99 GB
+5/8 pass
+midfork 6/6 correct 6/6 stop cached [0, 6656, 6656, 0, 6656, 6656]
+numcheck fp8 rc=0
+teacher-forced tokens=4080 mean|dlogp|=0.0406 p50=0.0001 p99=0.5988 max=2.277 top1-agree=96.9853%
+greedy identical 0/16; common prefix median=17.5 min=1
+1319 examples (single-shot)  |  1076.6s  |  759 tok/s  |  818K tokens
+* score                =  94.62%
+  stop_rate            =  99.70%
+  truncated_rate       =  0.30%
+ALIVE_AT_END
+16 90 88 88 88 88 88 88 
+DONE

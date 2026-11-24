@@ -1,0 +1,8 @@
+rank 0: 40000-token prefill 15.5s, follow-up cached 39936
+rank 1: 40000-token prefill 16.7s, follow-up cached 39936
+rank 2: 40000-token prefill 16.7s, follow-up cached 39936
+rank 3: 40000-token prefill 16.6s, follow-up cached 39936
+rank 4: 40000-token prefill 16.6s, follow-up cached 39936
+rank 5: 40000-token prefill 16.6s, follow-up cached 39936
+rank 6: 40000-token prefill 16.6s, follow-up cached 39936
+rank 7: 40000-token prefill 16.6s, follow-up cached 39936

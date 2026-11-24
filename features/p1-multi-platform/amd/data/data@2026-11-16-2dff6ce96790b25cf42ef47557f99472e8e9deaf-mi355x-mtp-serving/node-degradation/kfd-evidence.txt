@@ -1,0 +1,26 @@
+# 2026-11-16T08:21:59Z degraded node, no SGLang process running
+## 2-rank 2 KB all-reduce with in-process KFD SMI listener (scripts/v2/ar_events.py)
+rank1 pid59383 2KB allreduce 155990 us; events {'PROCESS_START': 16, 'QUEUE_EVICTION': 656, 'MIGRATE_START': 7, 'MIGRATE_END': 7, 'QUEUE_RESTORE': 650}
+  rank1 QUEUE_EVICTION: ns: 11019077744334 pid: 0 node: 0x0 evict_trigger: 0
+  rank1 QUEUE_EVICTION: ns: 11019077749254 pid: 0 node: 0x0 evict_trigger: 0
+  rank1 QUEUE_EVICTION: ns: 11019077750424 pid: 0 node: 0x0 evict_trigger: 0
+  rank1 QUEUE_EVICTION: ns: 11019077751784 pid: 0 node: 0x0 evict_trigger: 0
+  rank1 QUEUE_EVICTION: ns: 11019077752844 pid: 0 node: 0x0 evict_trigger: 0
+  rank1 QUEUE_EVICTION: ns: 11019077754164 pid: 0 node: 0x0 evict_trigger: 0
+  rank1 QUEUE_EVICTION: ns: 11019077755634 pid: 0 node: 0x0 evict_trigger: 0
+## same with HSA_USE_SVM=0
+rank1 pid59577 2KB allreduce 156002 us; events {'PROCESS_START': 16, 'QUEUE_EVICTION': 656, 'QUEUE_RESTORE': 650}
+rank0 pid59576 2KB allreduce 155963 us; events {'PROCESS_START': 16, 'QUEUE_EVICTION': 672, 'QUEUE_RESTORE': 672}
+## GTT/VRAM per device (MB)
+card1 gtt_used=327 gtt_total=1547976 vram_used=284
+card17 gtt_used=327 gtt_total=1547976 vram_used=284
+card25 gtt_used=327 gtt_total=1547976 vram_used=284
+card33 gtt_used=327 gtt_total=1547976 vram_used=284
+card41 gtt_used=327 gtt_total=1547976 vram_used=284
+card49 gtt_used=327 gtt_total=1547976 vram_used=284
+card57 gtt_used=327 gtt_total=1547976 vram_used=284
+card9 gtt_used=327 gtt_total=1547976 vram_used=284
+## host knobs
+numa_balancing=0 ksm_run=0 thp=always [madvise] never
+amdgpu.noretry=1 amdgpu.sched_policy=0 amdgpu.mes=0 amdgpu.halt_if_hws_hang=0 amdgpu.svm_default_granularity=9 
+amdgpu module 6.16.6 kernel 5.15.0-163-generic

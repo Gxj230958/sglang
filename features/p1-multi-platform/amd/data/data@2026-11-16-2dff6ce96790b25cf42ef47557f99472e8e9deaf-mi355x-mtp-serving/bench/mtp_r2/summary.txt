@@ -1,0 +1,31 @@
+/bin/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+[short-c1 seed1] Successful requests:                     16        
+[short-c1 seed1] Output token throughput (tok/s):         125.88    
+[short-c1 seed1] Accept length:                           2.49      
+[short-c1 seed1] Median TTFT (ms):                        209.22    
+[short-c1 seed1] Mean TPOT (ms):                          7.53      
+[short-c1 seed2] Successful requests:                     16        
+[short-c1 seed2] Output token throughput (tok/s):         148.97    
+[short-c1 seed2] Accept length:                           2.98      
+[short-c1 seed2] Median TTFT (ms):                        208.31    
+[short-c1 seed2] Mean TPOT (ms):                          6.31      
+[short-c32 seed1] Successful requests:                     128       
+[short-c32 seed1] Output token throughput (tok/s):         1129.96   
+[short-c32 seed1] Accept length:                           2.78      
+[short-c32 seed1] Median TTFT (ms):                        402.53    
+[short-c32 seed1] Mean TPOT (ms):                          24.15     
+[short-c32 seed2] Successful requests:                     128       
+[short-c32 seed2] Output token throughput (tok/s):         1193.85   
+[short-c32 seed2] Accept length:                           2.99      
+[short-c32 seed2] Median TTFT (ms):                        406.06    
+[short-c32 seed2] Mean TPOT (ms):                          22.87     
+[long-c4 seed1] Successful requests:                     16        
+[long-c4 seed1] Output token throughput (tok/s):         95.70     
+[long-c4 seed1] Accept length:                           2.48      
+[long-c4 seed1] Median TTFT (ms):                        2416.89   
+[long-c4 seed1] Mean TPOT (ms):                          29.49     
+[long-c4 seed2] Successful requests:                     16        
+[long-c4 seed2] Output token throughput (tok/s):         95.69     
+[long-c4 seed2] Accept length:                           2.55      
+[long-c4 seed2] Median TTFT (ms):                        2476.93   
+[long-c4 seed2] Mean TPOT (ms):                          28.44     

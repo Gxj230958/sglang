@@ -1,0 +1,24 @@
+[long-c4-seed1] Output token throughput (tok/s):         91.05     
+[long-c4-seed1] Accept length:                           2.63      
+[long-c4-seed1] Median TTFT (ms):                        2528.18   
+[long-c4-seed1] Mean TPOT (ms):                          29.74     
+[long-c4-seed2] Output token throughput (tok/s):         90.94     
+[long-c4-seed2] Accept length:                           2.48      
+[long-c4-seed2] Median TTFT (ms):                        2544.02   
+[long-c4-seed2] Mean TPOT (ms):                          30.65     
+[short-c1-seed1] Output token throughput (tok/s):         116.74    
+[short-c1-seed1] Accept length:                           2.73      
+[short-c1-seed1] Median TTFT (ms):                        228.17    
+[short-c1-seed1] Mean TPOT (ms):                          8.05      
+[short-c1-seed2] Output token throughput (tok/s):         120.42    
+[short-c1-seed2] Accept length:                           2.85      
+[short-c1-seed2] Median TTFT (ms):                        226.79    
+[short-c1-seed2] Mean TPOT (ms):                          7.75      
+[short-c32-seed1] Output token throughput (tok/s):         1046.65   
+[short-c32-seed1] Accept length:                           2.81      
+[short-c32-seed1] Median TTFT (ms):                        441.89    
+[short-c32-seed1] Mean TPOT (ms):                          25.86     
+[short-c32-seed2] Output token throughput (tok/s):         1076.96   
+[short-c32-seed2] Accept length:                           2.93      
+[short-c32-seed2] Median TTFT (ms):                        419.07    
+[short-c32-seed2] Mean TPOT (ms):                          24.86     

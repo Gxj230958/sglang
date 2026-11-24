@@ -1,0 +1,15 @@
+Run directory: evals/gsm8k_mtp_fused/sgl_eval_gsm8k_20261116-065648
+
+== gsm8k ==
+1319 examples (single-shot)  |  1191.0s  |  744 tok/s  |  886K tokens
+
+* score                =  93.78%
+  stop_rate            =  99.77%
+  truncated_rate       =  0.23%
+  error_rate           =  0.00%
+  avg_input_tokens     =  94.0 tokens
+  avg_output_tokens    =  671.4 tokens
+  avg_thinking_tokens  =  585.9 tokens
+
+Metrics: evals/gsm8k_mtp_fused/sgl_eval_gsm8k_20261116-065648/metrics.json
+Predictions: evals/gsm8k_mtp_fused/sgl_eval_gsm8k_20261116-065648  (1 jsonl file(s))

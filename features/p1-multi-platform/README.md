@@ -2,7 +2,7 @@
 
 ## Summary
 
-`zai-org/GLM-5-1028-Provider` tracking for selecting and validating the hardware platforms required for the model release. Status: In progress. Related code work: `radixark/sglang-zai` branch `glm-5-lp` at `a15aa7c3`. [NVIDIA Hopper](nvidia-hopper/README.md) has H200 bring-up and accuracy evidence; [NVIDIA Blackwell](nvidia-blackwell/README.md) has B300 MTP full GSM8K and GPQA-4096 evidence. The other subprojects have no selection decision yet. Target workloads and acceptance thresholds remain to be defined.
+`zai-org/GLM-5-1028-Provider` tracking for selecting and validating the hardware platforms required for the model release. Status: In progress. Related code work: `radixark/sglang-zai` branch `glm-5-lp` at `a15aa7c3`. [NVIDIA Hopper](nvidia-hopper/README.md) has H200 bring-up and accuracy evidence; [NVIDIA Blackwell](nvidia-blackwell/README.md) has B300 MTP full GSM8K and GPQA-4096 evidence. [AMD](amd/README.md) has MI355X TP8 bring-up and full-GSM8K evidence. The other subprojects have no selection decision yet. Target workloads and acceptance thresholds remain to be defined.
 
 ## Subprojects
 
@@ -50,6 +50,7 @@ We select the features we need from the subdirectories below for implementation.
 
 - [NVIDIA Hopper](nvidia-hopper/README.md): In progress; H200 TP8 baseline recorded as [Correctness E01](../p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6/repro.md).
 - [NVIDIA Blackwell](nvidia-blackwell/README.md): In progress; B300 MTP full GSM8K and GPQA-4096 recorded as [Correctness E03](../p0-correctness/data/data@2026-11-02-a15aa7c3edefee67d557f15d640899b825c58ba6-b300-mtp-evaluation/repro.md).
+- [AMD](amd/README.md): In progress; MI355X TP8 bring-up and full GSM8K recorded as [Correctness E36](../p0-correctness/data/data@2026-11-16-8d5d043629dfede1abe081977bdf41d0b299ea8b-mi355x-bringup/repro.md) on `radixark/sglang-zai` branch `amd_support`; MTP serving, fusions and the B300-parity benchmark in [AMD E01](amd/data/data@2026-11-16-2dff6ce96790b25cf42ef47557f99472e8e9deaf-mi355x-mtp-serving/repro.md).
 - [ ] Link implementation work from an exact code commit or pull request.
 - [ ] Record correctness and performance evidence in a self-contained experiment round.
 

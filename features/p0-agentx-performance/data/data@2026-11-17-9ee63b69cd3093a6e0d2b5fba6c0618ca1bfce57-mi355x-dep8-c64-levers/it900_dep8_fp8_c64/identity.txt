@@ -1,0 +1,5 @@
+attempt=it900_dep8_fp8_c64 conc=64 duration=900
+server_args=--tp-size 8 --attn-dp-size 8 --ep-size 8 --moe-a2a-backend none --mem-fraction-static 0.80 --context-length 262144 --chunked-prefill-size 32768 --max-running-requests 256 --cuda-graph-max-bs-decode 32 --disable-prefill-cuda-graph --speculative-algorithm EAGLE --speculative-num-steps 3 --speculative-eagle-topk 1 --speculative-num-draft-tokens 4 --speculative-draft-model-path /persistent/models/GLM-5-1028-Provider --enable-cache-report --enable-metrics --watchdog-timeout 3600 --kv-cache-dtype fp8_e4m3
+sglang=9ee63b69cd3093a6e0d2b5fba6c0618ca1bfce57 dirty=0
+inferencex=67c3ed26f9c196b3e8286053a44838b4f0024756 agentx-harness=1.0.14
+AL=2.49 HC_TOTAL_GB=0

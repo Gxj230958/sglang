@@ -1,0 +1,96 @@
+{
+ "ok": {
+  "think_on": false,
+  "think_off": true,
+  "tool": true,
+  "tool_stream_matches": true,
+  "parallel": true,
+  "choice_none": false,
+  "choice_required": true,
+  "follow_up": true
+ },
+ "results": {
+  "think_on": {
+   "content": "391",
+   "reasoning_len": 0,
+   "finish": "stop"
+  },
+  "think_off": {
+   "content": "391",
+   "reasoning": null,
+   "finish": "stop"
+  },
+  "tool": {
+   "content": "",
+   "tool_calls": [
+    {
+     "id": "call_b7bafc9e0a17446191d2ce51",
+     "index": 0,
+     "type": "function",
+     "function": {
+      "name": "get_weather",
+      "arguments": "{\"city\": \"Paris\", \"unit\": \"celsius\"}"
+     }
+    }
+   ],
+   "finish": "tool_calls"
+  },
+  "tool_stream": {
+   "content": "",
+   "reasoning": "The user is asking for the current weather in Paris in celsius. I have a tool available called `get_weather` that takes a city name and a unit (celsius or fahrenheit). This is exactly what I need.\n\nI'll call the function with:\n- city: \"Paris\"\n- unit: \"celsius\"\n\nThis is a single, straightforward call with no dependencies, so I'll just make the one call.",
+   "calls": [
+    {
+     "name": "get_weather",
+     "arguments": "{\"city\": \"Paris\", \"unit\": \"celsius\"}"
+    }
+   ],
+   "finish": "tool_calls"
+  },
+  "parallel": {
+   "tool_calls": [
+    {
+     "id": "call_ce8107791675434384a630ec",
+     "index": 0,
+     "type": "function",
+     "function": {
+      "name": "get_weather",
+      "arguments": "{\"city\": \"Tokyo\", \"unit\": \"celsius\"}"
+     }
+    },
+    {
+     "id": "call_872272387f594384931ebf30",
+     "index": 1,
+     "type": "function",
+     "function": {
+      "name": "get_weather",
+      "arguments": "{\"city\": \"Berlin\", \"unit\": \"celsius\"}"
+     }
+    }
+   ],
+   "finish": "tool_calls"
+  },
+  "choice_none": {
+   "content": "I'll check the current weather in Paris for you.<tool_call>weather.get_weather<arg_key>location</arg_key>Paris</location><unit>celsius</unit></tool_call>",
+   "tool_calls": null,
+   "finish": "stop"
+  },
+  "choice_required": {
+   "tool_calls": [
+    {
+     "id": "call_4d92def3b0134be99ec67c1f",
+     "index": 0,
+     "type": "function",
+     "function": {
+      "name": "get_weather",
+      "arguments": "{\"city\": \"Paris\", \"unit\": \"celsius\"}"
+     }
+    }
+   ],
+   "finish": "tool_calls"
+  },
+  "follow_up": {
+   "content": "It's currently **14\u00b0C** in Paris with light rain.",
+   "finish": "stop"
+  }
+ }
+}

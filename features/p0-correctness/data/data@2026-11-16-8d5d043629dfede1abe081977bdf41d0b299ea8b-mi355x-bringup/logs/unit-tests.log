@@ -1,0 +1,215 @@
+................................................... [ 86%]
+........                                                                 [100%]
+=============================== warnings summary ===============================
+../../../opt/venv/lib/python3.12/site-packages/torch/jit/_script.py:365: 14 warnings
+  /opt/venv/lib/python3.12/site-packages/torch/jit/_script.py:365: DeprecationWarning: `torch.jit.script_method` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+../../../opt/venv/lib/python3.12/site-packages/Cython/Distutils/old_build_ext.py:15
+../../../opt/venv/lib/python3.12/site-packages/Cython/Distutils/old_build_ext.py:15
+  /opt/venv/lib/python3.12/site-packages/Cython/Distutils/old_build_ext.py:15: DeprecationWarning: dep_util is Deprecated. Use functions from setuptools instead.
+    from distutils.dep_util import newer, newer_group
+
+<frozen abc>:106
+  <frozen abc>:106: DeprecationWarning: MultiPlatformOp is deprecated; subclass sglang.kernels.fused_op.BaseFusedOp instead (RFC #29630).
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+==================================== PASSES ====================================
+_____________ test_vision_config_without_swiglu_limit_round_trips ______________
+----------------------------- Captured stderr call -----------------------------
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'mrope_section', 'mrope_interleaved_glm', 'mrope_interleaved'}
+_______ TestGlmLoopLayout.test_effective_slots_map_onto_physical_layers ________
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestGlmLoopLayout.test_effective_slots_map_onto_physical_layers
+________________ TestGlmLoopLayout.test_expansion_is_idempotent ________________
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestGlmLoopLayout.test_expansion_is_idempotent
+__________ TestGlmLoopLayout.test_later_cycles_never_run_the_indexer ___________
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestGlmLoopLayout.test_later_cycles_never_run_the_indexer
+________ TestGlmLoopLayout.test_mlp_layer_types_derive_the_dense_prefix ________
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestGlmLoopLayout.test_mlp_layer_types_derive_the_dense_prefix
+_________ TestGlmLoopLayout.test_mrope_layout_reaches_the_rope_factory _________
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestGlmLoopLayout.test_mrope_layout_reaches_the_rope_factory
+_______ TestGlmLoopLayout.test_quantization_exclusions_follow_the_slots ________
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestGlmLoopLayout.test_quantization_exclusions_follow_the_slots
+___________________ TestGlmLoopLayout.test_rejected_layouts ____________________
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestGlmLoopLayout.test_rejected_layouts
+________ TestGlmLoopLayout.test_single_cycle_model_runs_one_plain_pass _________
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestGlmLoopLayout.test_single_cycle_model_runs_one_plain_pass
+_____________ TestGlmLoopLayout.test_wrapper_mirrors_and_inherits ______________
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestGlmLoopLayout.test_wrapper_mirrors_and_inherits
+______ TestGlmLoopHybridSwaLayout.test_full_length_layout_unless_enabled _______
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestGlmLoopHybridSwaLayout.test_full_length_layout_unless_enabled
+__ TestGlmLoopHybridSwaLayout.test_nextn_draft_keeps_its_full_attention_slot ___
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestGlmLoopHybridSwaLayout.test_nextn_draft_keeps_its_full_attention_slot
+______ TestGlmLoopHybridSwaLayout.test_window_slots_are_the_later_cycles _______
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestGlmLoopHybridSwaLayout.test_window_slots_are_the_later_cycles
+____ TestLoopParameterAliasing.test_alias_modules_are_marked_for_the_loader ____
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestLoopParameterAliasing.test_alias_modules_are_marked_for_the_loader
+___ TestLoopParameterAliasing.test_alias_requires_identical_parameter_trees ____
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestLoopParameterAliasing.test_alias_requires_identical_parameter_trees
+____ TestLoopParameterAliasing.test_alias_shares_storage_but_not_slot_state ____
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestLoopParameterAliasing.test_alias_shares_storage_but_not_slot_state
+_____ TestLoopParameterAliasing.test_later_cycle_omits_the_source_indexer ______
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestLoopParameterAliasing.test_later_cycle_omits_the_source_indexer
+_ TestLoopParameterAliasing.test_rebind_mirrors_what_the_postprocess_left_on_the_source _
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestLoopParameterAliasing.test_rebind_mirrors_what_the_postprocess_left_on_the_source
+___ TestLoopParameterAliasing.test_rebind_repoints_the_router_bias_captures ____
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestLoopParameterAliasing.test_rebind_repoints_the_router_bias_captures
+__ TestLoopParameterAliasing.test_rebind_shares_post_quantization_parameters ___
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestLoopParameterAliasing.test_rebind_shares_post_quantization_parameters
+______ TestLoopDampBlend.test_blend_interpolates_towards_the_cycle_output ______
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestLoopDampBlend.test_blend_interpolates_towards_the_cycle_output
+_________ TestLoopDampBlend.test_blend_requires_the_saved_region_state _________
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestLoopDampBlend.test_blend_requires_the_saved_region_state
+__________ TestLoopDampBlend.test_damp_beta_normalizes_the_gate_input __________
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestLoopDampBlend.test_damp_beta_normalizes_the_gate_input
+_________ TestLoopDampBlend.test_index_share_forces_mla_on_every_slot __________
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestLoopDampBlend.test_index_share_forces_mla_on_every_slot
+______ TestLoopDampBlend.test_slot_wiring_preserves_checkpoint_gate_names ______
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestLoopDampBlend.test_slot_wiring_preserves_checkpoint_gate_names
+_ TestGlmLoopExpertLocation.test_every_later_cycle_slot_shares_its_cycle_zero_placement _
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestGlmLoopExpertLocation.test_every_later_cycle_slot_shares_its_cycle_zero_placement
+_____________ TestLoopState.test_reset_drops_every_cycle_snapshot ______________
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestLoopState.test_reset_drops_every_cycle_snapshot
+______ TestLoopMxfp8Experts.test_expert_parallel_experts_default_to_mxfp8 ______
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestLoopMxfp8Experts.test_expert_parallel_experts_default_to_mxfp8
+uuuuuuuuu
+_ TestLoopPrefillGraphInputs.test_breakable_prefill_graph_binds_the_cp_local_embeddings _
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestLoopPrefillGraphInputs.test_breakable_prefill_graph_binds_the_cp_local_embeddings
+_____ TestLoopPaddedQuery.test_every_other_query_path_keeps_its_own_layout _____
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestLoopPaddedQuery.test_every_other_query_path_keeps_its_own_layout
+uuuuuu
+_____ TestLoopPaddedQuery.test_the_serving_path_assembles_into_the_buffer ______
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestLoopPaddedQuery.test_the_serving_path_assembles_into_the_buffer
+_______ TestLoopTopkSchedule.test_attention_output_preserves_paired_topk _______
+----------------------------- Captured stdout call -----------------------------
+uuuuuu
+_____ TestLoopRopeFusion.test_mrope_is_never_fused_into_the_trtllm_backend _____
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestLoopRopeFusion.test_mrope_is_never_fused_into_the_trtllm_backend
+__ TestLoopWindowSlots.test_checkpoint_window_matches_the_kernel_granularity ___
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestLoopWindowSlots.test_checkpoint_window_matches_the_kernel_granularity
+_____ TestLoopWindowSlots.test_flashmla_window_ascends_like_the_reference ______
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestLoopWindowSlots.test_flashmla_window_ascends_like_the_reference
+_____________ TestLoopWindowSlots.test_padding_rows_read_slot_zero _____________
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestLoopWindowSlots.test_padding_rows_read_slot_zero
+____ TestLoopWindowSlots.test_prefill_cp_window_covers_the_local_query_rows ____
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestLoopWindowSlots.test_prefill_cp_window_covers_the_local_query_rows
+_________ TestLoopWindowSlots.test_window_clamps_to_the_request_table __________
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestLoopWindowSlots.test_window_clamps_to_the_request_table
+_________ TestLoopWindowSlots.test_window_is_causal_and_request_local __________
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestLoopWindowSlots.test_window_is_causal_and_request_local
+__________ TestLoopWindowSlots.test_window_shape_mismatch_is_rejected __________
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestLoopWindowSlots.test_window_shape_mismatch_is_rejected
+__ TestLoopWindowSlots.test_window_slot_write_carries_the_window_sub_pool_ids __
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestLoopWindowSlots.test_window_slot_write_carries_the_window_sub_pool_ids
+______ TestLoopDraftWeights.test_draft_computes_on_the_reference_kernels _______
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestLoopDraftWeights.test_draft_computes_on_the_reference_kernels
+_ TestLoopDraftWeights.test_draft_loader_fuses_the_query_and_kv_down_projections _
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestLoopDraftWeights.test_draft_loader_fuses_the_query_and_kv_down_projections
+____ TestLoopMlaDerivationOrder.test_an_unquantized_checkpoint_derives_once ____
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestLoopMlaDerivationOrder.test_an_unquantized_checkpoint_derives_once
+_ TestLoopMlaDerivationOrder.test_mla_tensors_are_rederived_after_the_quantization_postprocess _
+----------------------------- Captured stdout call -----------------------------
+[CI Test Method] TestLoopMlaDerivationOrder.test_mla_tensors_are_rederived_after_the_quantization_postprocess
+=========================== short test summary info ============================
+PASSED ../sglang-zai-amd/test/registered/unit/configs/test_glm_loop_config.py::test_vision_config_without_swiglu_limit_round_trips
+PASSED ../sglang-zai-amd/test/registered/unit/configs/test_glm_loop_config.py::test_omitted_rope_layout_keys_keep_the_indexer_rope_interleaved
+PASSED ../sglang-zai-amd/test/registered/unit/configs/test_glm_loop_config.py::test_config_does_not_import_a_transformers_glm_loop
+PASSED ../sglang-zai-amd/test/registered/unit/configs/test_glm_loop_config.py::TestGlmLoopLayout::test_effective_slots_map_onto_physical_layers
+PASSED ../sglang-zai-amd/test/registered/unit/configs/test_glm_loop_config.py::TestGlmLoopLayout::test_expansion_is_idempotent
+PASSED ../sglang-zai-amd/test/registered/unit/configs/test_glm_loop_config.py::TestGlmLoopLayout::test_later_cycles_never_run_the_indexer
+PASSED ../sglang-zai-amd/test/registered/unit/configs/test_glm_loop_config.py::TestGlmLoopLayout::test_mlp_layer_types_derive_the_dense_prefix
+PASSED ../sglang-zai-amd/test/registered/unit/configs/test_glm_loop_config.py::TestGlmLoopLayout::test_mrope_layout_reaches_the_rope_factory
+PASSED ../sglang-zai-amd/test/registered/unit/configs/test_glm_loop_config.py::TestGlmLoopLayout::test_quantization_exclusions_follow_the_slots
+PASSED ../sglang-zai-amd/test/registered/unit/configs/test_glm_loop_config.py::TestGlmLoopLayout::test_rejected_layouts
+PASSED ../sglang-zai-amd/test/registered/unit/configs/test_glm_loop_config.py::TestGlmLoopLayout::test_single_cycle_model_runs_one_plain_pass
+PASSED ../sglang-zai-amd/test/registered/unit/configs/test_glm_loop_config.py::TestGlmLoopLayout::test_wrapper_mirrors_and_inherits
+PASSED ../sglang-zai-amd/test/registered/unit/configs/test_glm_loop_config.py::TestGlmLoopHybridSwaLayout::test_full_length_layout_unless_enabled
+PASSED ../sglang-zai-amd/test/registered/unit/configs/test_glm_loop_config.py::TestGlmLoopHybridSwaLayout::test_nextn_draft_keeps_its_full_attention_slot
+PASSED ../sglang-zai-amd/test/registered/unit/configs/test_glm_loop_config.py::TestGlmLoopHybridSwaLayout::test_window_slots_are_the_later_cycles
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::test_vision_swiglu_respects_optional_clamp[None]
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::test_vision_swiglu_respects_optional_clamp[10.0]
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestLoopParameterAliasing::test_alias_modules_are_marked_for_the_loader
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestLoopParameterAliasing::test_alias_requires_identical_parameter_trees
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestLoopParameterAliasing::test_alias_shares_storage_but_not_slot_state
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestLoopParameterAliasing::test_later_cycle_omits_the_source_indexer
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestLoopParameterAliasing::test_rebind_mirrors_what_the_postprocess_left_on_the_source
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestLoopParameterAliasing::test_rebind_repoints_the_router_bias_captures
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestLoopParameterAliasing::test_rebind_shares_post_quantization_parameters
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestLoopDampBlend::test_blend_interpolates_towards_the_cycle_output
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestLoopDampBlend::test_blend_requires_the_saved_region_state
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestLoopDampBlend::test_damp_beta_normalizes_the_gate_input
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestLoopDampBlend::test_index_share_forces_mla_on_every_slot
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestLoopDampBlend::test_slot_wiring_preserves_checkpoint_gate_names
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestGlmLoopExpertLocation::test_every_later_cycle_slot_shares_its_cycle_zero_placement
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestGlmLoopWeightRemap::test_damp_gate_completeness
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestGlmLoopWeightRemap::test_gate_names_are_validated
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestGlmLoopWeightRemap::test_mtp_layer_is_dropped_before_the_coda_shift
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestGlmLoopWeightRemap::test_prefixes_and_regions
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestLoopState::test_reset_drops_every_cycle_snapshot
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestLoopMxfp8Experts::test_expert_parallel_experts_default_to_mxfp8
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestLoopPrefillGraphInputs::test_breakable_prefill_graph_binds_the_cp_local_embeddings
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestLoopPaddedQuery::test_every_other_query_path_keeps_its_own_layout
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestLoopPaddedQuery::test_the_serving_path_assembles_into_the_buffer
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestLoopTopkSchedule::test_a_cycle_zero_slot_without_topk_is_an_error
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestLoopTopkSchedule::test_an_idle_rank_carries_an_empty_selection
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestLoopTopkSchedule::test_attention_output_preserves_paired_topk
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestLoopTopkSchedule::test_each_later_cycle_attends_its_paired_cycle_zero_topk
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestLoopTopkSchedule::test_index_share_anchor_is_held_by_reference
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestLoopTopkSchedule::test_prelude_and_coda_keep_the_adjacent_chain
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestLoopTopkSchedule::test_snapshots_are_released_after_the_last_cycle
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestLoopRopeFusion::test_mrope_is_never_fused_into_the_trtllm_backend
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestLoopWindowSlots::test_checkpoint_window_matches_the_kernel_granularity
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestLoopWindowSlots::test_flashmla_window_ascends_like_the_reference
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestLoopWindowSlots::test_padding_rows_read_slot_zero
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestLoopWindowSlots::test_prefill_cp_window_covers_the_local_query_rows
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestLoopWindowSlots::test_window_clamps_to_the_request_table
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestLoopWindowSlots::test_window_is_causal_and_request_local
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestLoopWindowSlots::test_window_shape_mismatch_is_rejected
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestLoopWindowSlots::test_window_slot_write_carries_the_window_sub_pool_ids
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestLoopDraftWeights::test_draft_computes_on_the_reference_kernels
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestLoopDraftWeights::test_draft_loader_fuses_the_query_and_kv_down_projections
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestLoopMlaDerivationOrder::test_an_unquantized_checkpoint_derives_once
+PASSED ../sglang-zai-amd/test/registered/unit/models/test_glm_loop.py::TestLoopMlaDerivationOrder::test_mla_tensors_are_rederived_after_the_quantization_postprocess
+59 passed, 17 warnings, 21 subtests passed in 9.49s

@@ -1,0 +1,47 @@
+{
+  "aggregate": {
+    "error_rate": 0.0,
+    "score": 0.9378316906747536,
+    "stop_rate": 0.9977255496588324,
+    "truncated_rate": 0.002274450341167551
+  },
+  "base_url": "http://127.0.0.1:30000/v1",
+  "gen": {
+    "chat_template_kwargs": null,
+    "extra_body": null,
+    "max_tokens": null,
+    "min_p": 0.0,
+    "reasoning_effort": null,
+    "repetition_penalty": 1.0,
+    "seed": null,
+    "system_message": null,
+    "temperature": 1.0,
+    "top_p": 0.95
+  },
+  "latency_seconds": 1190.9664629189992,
+  "model": "glm-loop",
+  "n_repeats": 1,
+  "name": "gsm8k",
+  "ns_commit_sha": "645cf567ff08c0ae9cc3fc8e1edbb975b3067816",
+  "num_examples": 1319,
+  "num_threads": 64,
+  "output_throughput_tps": 743.5473857337558,
+  "sgl_eval_version": "0.1.3",
+  "timestamp": "20261116-065648",
+  "token_usage": {
+    "completion_tokens": {
+      "count": 1319,
+      "mean": 671.3722517058378
+    },
+    "prompt_tokens": {
+      "count": 1319,
+      "mean": 93.98256254738438
+    },
+    "reasoning_tokens": {
+      "count": 1319,
+      "mean": 585.9196360879454
+    }
+  },
+  "total_completion_tokens": 885540,
+  "total_prompt_tokens": 123963
+}

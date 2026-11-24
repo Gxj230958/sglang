@@ -1,0 +1,11 @@
+2026-11-17T09:02:11Z launch server
+pid 234095 log logs/ax_it900_dep8_fp8_sched_gv_c64.log doctor logs/ax_it900_dep8_fp8_sched_gv_c64.doctor.log
+2026-11-17T09:03:49Z ready; sanity {"id":"2291ec0b20b3405ea095d5d89ff609e1","object":"chat.completion","created":1794906229,"model":"glm-loop","choices":[{"index":0,"message":{"role":"assistant","content":"OK","reasoning_content":null},"logprobs":null,"finish_reason":"stop","matched_stop":154827}],"usage":{"prompt_tokens":15,"total_t
+2026-11-17T09:04:06Z warm: rank 0: 40000-token prefill 15.9s, follow-up cached 39936 rank 1: 40000-token prefill 13.4s, follow-up cached 39936 rank 2: 40000-token prefill 15.9s, follow-up cached 39936 rank 3: 40000-token prefill 15.9s, follow-up cached 39936 rank 4: 40000-token prefill 15.9s, follow-up cached 39936 rank 5: 40000-token prefill 15.8s, follow-up cached 39936 rank 6: 40000-token prefill 15.8s, follow-up cached 
+2026-11-17T09:04:06Z flush_cache http=200 body=Cache flushed.
+Please check backend logs for more details. (When there are running or waiting requests, the operation will not be performed.)
+2026-11-17T09:04:06Z replay start
+2026-11-17T09:31:20Z replay+score rc=0
+/bin/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+0 0 0 0 0 0 0 0 
+2026-11-17T09:32:09Z cleanup done; VRAM 0 0 0 0 0 0 0 0 

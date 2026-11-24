@@ -1,0 +1,11 @@
+2026-11-17T14:25:43Z launch server
+pid 359550 log logs/ax_it900_tp8_fp8_c16.log doctor logs/ax_it900_tp8_fp8_c16.doctor.log
+2026-11-17T14:27:48Z ready; sanity {"id":"e75bb6a15c99419eb18ce1f41245c06b","object":"chat.completion","created":1794925668,"model":"glm-loop","choices":[{"index":0,"message":{"role":"assistant","content":"OK（已确认）","reasoning_content":null},"logprobs":null,"finish_reason":"stop","matched_stop":154827}],"usage":{"prompt_toke
+2026-11-17T14:27:52Z warm: rank 0: 40000-token prefill 3.0s, follow-up cached 39936 
+2026-11-17T14:27:52Z flush_cache http=200 body=Cache flushed.
+Please check backend logs for more details. (When there are running or waiting requests, the operation will not be performed.)
+2026-11-17T14:27:52Z replay start
+2026-11-17T14:47:28Z replay+score rc=0
+/bin/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+0 0 0 0 0 0 0 0 
+2026-11-17T14:48:17Z cleanup done; VRAM 0 0 0 0 0 0 0 0 

@@ -1,0 +1,3 @@
+point                                req err  tot/GPU  out/GPU TTFTmean  TTFTp90  ITLmean   ITLp90 tok/s/u p90int   hit
+it900_dep8_fp8_sched_gv4_c64        1219   0    13273     95.4     8.10    19.84     52.0     60.3    19.2   16.6 0.947
+it900rs_dep8_fp8_sched_gv4_c64      1251   0    13673    100.1     7.00    16.14     48.5     56.1    20.6   17.8 0.950

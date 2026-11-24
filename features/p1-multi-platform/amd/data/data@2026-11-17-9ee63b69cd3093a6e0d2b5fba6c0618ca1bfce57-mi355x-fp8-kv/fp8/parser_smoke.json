@@ -1,0 +1,86 @@
+{
+ "ok": {
+  "think_on": false,
+  "think_off": true,
+  "tool": true,
+  "tool_stream_matches": true,
+  "parallel": true,
+  "choice_none": false,
+  "choice_required": false,
+  "follow_up": true
+ },
+ "results": {
+  "think_on": {
+   "content": "391",
+   "reasoning_len": 0,
+   "finish": "stop"
+  },
+  "think_off": {
+   "content": "391",
+   "reasoning": null,
+   "finish": "stop"
+  },
+  "tool": {
+   "content": "",
+   "tool_calls": [
+    {
+     "id": "call_ab1a4c21cb4643128fef8a9f",
+     "index": 0,
+     "type": "function",
+     "function": {
+      "name": "get_weather",
+      "arguments": "{\"city\": \"Paris\", \"unit\": \"celsius\"}"
+     }
+    }
+   ],
+   "finish": "tool_calls"
+  },
+  "tool_stream": {
+   "content": "I'll check the current weather in Paris for you.",
+   "reasoning": "The user is asking for the current weather in Paris in celsius. I have a tool available called `get_weather` that takes a city and a unit (celsius or fahrenheit). This is a straightforward request \u2014 I should call the tool with city=\"Paris\" and unit=\"celsius\". There's only one call needed, no dependencies, so I'll just make the call directly.",
+   "calls": [
+    {
+     "name": "get_weather",
+     "arguments": "{\"city\": \"Paris\", \"unit\": \"celsius\"}"
+    }
+   ],
+   "finish": "tool_calls"
+  },
+  "parallel": {
+   "tool_calls": [
+    {
+     "id": "call_a84fc8daef254e4499f1e27d",
+     "index": 0,
+     "type": "function",
+     "function": {
+      "name": "get_weather",
+      "arguments": "{\"city\": \"Tokyo\", \"unit\": \"celsius\"}"
+     }
+    },
+    {
+     "id": "call_1649f9fb3193470399dd5498",
+     "index": 1,
+     "type": "function",
+     "function": {
+      "name": "get_weather",
+      "arguments": "{\"city\": \"Berlin\", \"unit\": \"celsius\"}"
+     }
+    }
+   ],
+   "finish": "tool_calls"
+  },
+  "choice_none": {
+   "content": "I'll check the current weather in Paris for you.<tool_call>weather(location=\"Paris\", unit=\"celsius\")</tool_call>",
+   "tool_calls": null,
+   "finish": "stop"
+  },
+  "choice_required": {
+   "tool_calls": null,
+   "finish": "length"
+  },
+  "follow_up": {
+   "content": "It's currently **14\u00b0C** in Paris with light rain.",
+   "finish": "stop"
+  }
+ }
+}

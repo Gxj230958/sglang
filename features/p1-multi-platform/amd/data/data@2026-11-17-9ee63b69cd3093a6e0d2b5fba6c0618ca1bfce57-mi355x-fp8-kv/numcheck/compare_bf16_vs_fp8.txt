@@ -1,0 +1,2 @@
+teacher-forced tokens=4080 mean|dlogp|=0.0406 p50=0.0001 p99=0.5988 max=2.277 top1-agree=96.9853%
+greedy identical 0/16; common prefix median=17.5 min=1

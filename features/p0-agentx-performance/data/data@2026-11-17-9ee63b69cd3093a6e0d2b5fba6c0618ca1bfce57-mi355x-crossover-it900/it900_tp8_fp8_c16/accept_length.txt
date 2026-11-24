@@ -1,0 +1,1 @@
+realized accept length: n=559 mean=2.493 p10=2.40 p50=2.50 p90=2.60

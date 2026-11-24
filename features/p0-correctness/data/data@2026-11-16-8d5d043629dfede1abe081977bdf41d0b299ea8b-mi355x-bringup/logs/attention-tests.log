@@ -1,0 +1,55 @@
+s.ssss..s...sssss.ss.                             [100%]
+=============================== warnings summary ===============================
+../../../opt/venv/lib/python3.12/site-packages/torch/jit/_script.py:365: 14 warnings
+  /opt/venv/lib/python3.12/site-packages/torch/jit/_script.py:365: DeprecationWarning: `torch.jit.script_method` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+../../../opt/venv/lib/python3.12/site-packages/Cython/Distutils/old_build_ext.py:15
+../../../opt/venv/lib/python3.12/site-packages/Cython/Distutils/old_build_ext.py:15
+  /opt/venv/lib/python3.12/site-packages/Cython/Distutils/old_build_ext.py:15: DeprecationWarning: dep_util is Deprecated. Use functions from setuptools instead.
+    from distutils.dep_util import newer, newer_group
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+==================================== PASSES ====================================
+________ TestGlmLoopAttention.test_dep_split_workspace_and_graph_replay ________
+----------------------------- Captured stdout call -----------------------------
+uuuuuuuuuuuuuu
+______ TestGlmLoopAttention.test_mrope_into_matches_the_in_place_rotation ______
+----------------------------- Captured stdout call -----------------------------
+uu
+__________ TestGlmLoopAttention.test_split_decode_equals_one_softmax ___________
+----------------------------- Captured stdout call -----------------------------
+uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
+_________ TestGlmLoopAttention.test_triton_two_banks_equal_one_softmax _________
+----------------------------- Captured stdout call -----------------------------
+uuuuu [ 57%]
+uuuuuuuuuuuuuuuuuuu
+_ TestGlmLoopAttention.test_trtllm_split_decode_needs_a_rotated_unit_scale_query _
+----------------------------- Captured stdout call -----------------------------
+uuuuuuuuuuuu
+__________ TestGlmLoopAttention.test_window_pool_reads_the_same_keys ___________
+----------------------------- Captured stdout call -----------------------------
+uuu
+=========================== short test summary info ============================
+PASSED ../sglang-zai-amd/test/registered/kernels/ops/attention/test_glm_loop_attention.py::TestGlmLoopAttention::test_dep_split_workspace_and_graph_replay
+PASSED ../sglang-zai-amd/test/registered/kernels/ops/attention/test_glm_loop_attention.py::TestGlmLoopAttention::test_mrope_accepts_strided_mla_heads
+PASSED ../sglang-zai-amd/test/registered/kernels/ops/attention/test_glm_loop_attention.py::TestGlmLoopAttention::test_mrope_into_matches_the_in_place_rotation
+PASSED ../sglang-zai-amd/test/registered/kernels/ops/attention/test_glm_loop_attention.py::TestGlmLoopAttention::test_split_decode_equals_one_softmax
+PASSED ../sglang-zai-amd/test/registered/kernels/ops/attention/test_glm_loop_attention.py::TestGlmLoopAttention::test_triton_decode_graph_replay_reads_new_queries_and_positions
+PASSED ../sglang-zai-amd/test/registered/kernels/ops/attention/test_glm_loop_attention.py::TestGlmLoopAttention::test_triton_two_banks_equal_one_softmax
+PASSED ../sglang-zai-amd/test/registered/kernels/ops/attention/test_glm_loop_attention.py::TestGlmLoopAttention::test_trtllm_split_decode_needs_a_rotated_unit_scale_query
+PASSED ../sglang-zai-amd/test/registered/kernels/ops/attention/test_glm_loop_attention.py::TestGlmLoopAttention::test_window_pool_reads_the_same_keys
+SKIPPED [1] ../sglang-zai-amd/test/registered/kernels/ops/attention/test_glm_loop_attention.py:861: the flashmla_sparse route needs FlashMLA
+SKIPPED [1] ../sglang-zai-amd/test/registered/kernels/ops/attention/test_glm_loop_attention.py:618: needs SM100 and a FlashMLA with the bf16 sparse decode
+SKIPPED [1] ../sglang-zai-amd/test/registered/kernels/ops/attention/test_glm_loop_attention.py:656: needs SM100 and a FlashMLA with the bf16 sparse decode
+SKIPPED [1] ../sglang-zai-amd/test/registered/kernels/ops/attention/test_glm_loop_attention.py:1072: the fused merge reproduces sgl-kernel's SM100+ merge_state_v2
+SKIPPED [1] ../sglang-zai-amd/test/registered/kernels/ops/attention/test_glm_loop_attention.py:877: the flashmla_sparse route needs FlashMLA
+SKIPPED [1] ../sglang-zai-amd/test/registered/kernels/ops/attention/test_glm_loop_attention.py:1054: the flashmla_sparse route needs FlashMLA
+SKIPPED [1] ../sglang-zai-amd/test/registered/kernels/ops/attention/test_glm_loop_attention.py:230: trtllm-gen sparse MLA needs SM100/SM103
+SKIPPED [1] ../sglang-zai-amd/test/registered/kernels/ops/attention/test_glm_loop_attention.py:208: trtllm-gen sparse MLA needs SM100/SM103
+SKIPPED [1] ../sglang-zai-amd/test/registered/kernels/ops/attention/test_glm_loop_attention.py:373: trtllm-gen sparse MLA needs SM100/SM103
+SKIPPED [1] ../sglang-zai-amd/test/registered/kernels/ops/attention/test_glm_loop_attention.py:981: trtllm-gen sparse MLA needs SM100/SM103
+SKIPPED [1] ../sglang-zai-amd/test/registered/kernels/ops/attention/test_glm_loop_attention.py:950: trtllm-gen sparse MLA needs SM100/SM103
+SKIPPED [1] ../sglang-zai-amd/test/registered/kernels/ops/attention/test_glm_loop_attention.py:919: trtllm-gen sparse MLA needs SM100/SM103
+SKIPPED [1] ../sglang-zai-amd/test/registered/kernels/ops/attention/test_glm_loop_attention.py:532: the flashmla_sparse route needs FlashMLA
+8 passed, 13 skipped, 16 warnings, 95 subtests passed in 9.60s
